@@ -1,13 +1,20 @@
+"""
+Converts the generated bible into different consumable formats.
+"""
 import os
 import json
-import easy_draft
 from collections import defaultdict, OrderedDict
-import yaml
 from datetime import datetime
+import yaml
+import easy_draft
 
 
 
 def convert_to_ryder_jsonl_format(file):
+    """
+    Converts the format into a format used by Ryder in his repo
+    https://github.com/ryderwishart/swarm
+    """
 
     original_config = None
     with open( 'easy_draft.yaml', encoding='utf-8' ) as f:
@@ -174,6 +181,107 @@ def convert_to_usfm(file):
                     f.write( f"\\v {verse_num} {verse['fresh_translation']['text']}\n" )
 
 
+def convert_to_markdown(file):
+    print( f"converting {file} to markdown format" )
+
+
+    original_content = list(map(json.loads, easy_draft.load_file_to_list(f"output/{file}")))
+
+    modified_date = datetime.fromtimestamp(os.path.getmtime(f"output/{file}"))
+
+    with open( 'easy_draft.yaml', encoding='utf-8' ) as f:
+        easy_draft_yaml = yaml.load(f, Loader=yaml.FullLoader)
+    ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
+    vrefs = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'metadata', 'vref.txt' ) )
+
+    with open( 'output_formats.yaml', encoding='utf-8' ) as f:
+        output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
+    
+    if os.path.splitext(file)[0] in output_formats_yaml['configs']:
+        this_config = output_formats_yaml['configs'][os.path.splitext(file)[0]]
+
+        #The first thing I need to do is run through the content and sort it out into books.
+        book_to_chapter_to_verses = defaultdict( lambda: defaultdict( lambda: [] ) )
+        for i,verse in enumerate(original_content):
+            if verse:
+                #reference = verse["fresh_translation"]["reference"]
+                reference = vrefs[i]
+                if " " in reference:
+                    #Index of last space.
+                    last_space_index = reference.rindex(" ")
+                    book =  reference[:last_space_index]
+                    chapter_num,_ = reference[last_space_index+1:].split(":")
+                    verse['vref_line_number'] = i
+                    book_to_chapter_to_verses[book][chapter_num].append(verse)
+
+
+        output_folder = f"output/markdown_format/{os.path.splitext(file)[0]}"
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+
+        with open(f"{output_folder}/README.md", "w", encoding='utf-8') as index:
+            index.write( f"# {os.path.splitext(file)[0]}\n\n" )
+            index.write( "| Key | Value |\n")
+            index.write( "|:---:|:-----:|\n")
+            for key,value in this_config['markdown_format']['outputs'].items():
+                index.write( f"|{key}|{value}|\n")
+            
+            index.write( f"|translation date|{modified_date.strftime("%Y.%m.%d")}|\n")
+            index.write( "\n")
+
+            index.write( "# Books\n" )
+            for book in book_to_chapter_to_verses.keys():
+                index.write( f"- [{book}]({book}/README.md)\n" )
+
+        for book,chapter_to_verses in book_to_chapter_to_verses.items():
+            if not os.path.exists(f"{output_folder}/{book}/README.md"):
+                os.makedirs(f"{output_folder}/{book}", exist_ok=True)
+            with open(f"{output_folder}/{book}/README.md", "w", encoding='utf-8') as book_index:
+                book_index.write( f"# {book}\n\n" )
+                book_index.write( "[Book List](../README.md)\n\n" )
+                book_index.write( "# Chapters\n" )
+                for chapter_num,verses in chapter_to_verses.items():
+                    book_index.write( f"- [{book} {chapter_num}](./chapter_{chapter_num}.md)\n" )
+
+
+                    with open( f"{output_folder}/{book}/chapter_{chapter_num}.md", "w", encoding='utf-8') as chapter_out:
+                        chapter_out.write( f"# {book} {chapter_num}\n" )
+
+                        chapter_out.write( "[Book List](../README.md)\n\n" )
+
+                        if str(int(chapter_num)-1) in chapter_to_verses:
+                            chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
+                        for other_chapter_num in chapter_to_verses.keys():
+                            if other_chapter_num != chapter_num:
+                                chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
+                            else:
+                                chapter_out.write(f"{other_chapter_num} ")
+                        if str(int(chapter_num)+1) in chapter_to_verses:
+                            chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
+
+                        chapter_out.write( "\n\n" )
+
+
+                        chapter_out.write( "| Reference | Verse | Translation Notes |\n")
+                        chapter_out.write( "|:---------:|-------|-------------------|\n")
+
+                        for verse in verses:
+                            vref_line_number = verse['vref_line_number']
+                            vref = vrefs[vref_line_number]
+                            chapter_out.write( f"|{vref}|{verse['fresh_translation']['text']}|{verse['translation_notes']}|\n")
+                            
+
+                        chapter_out.write( "\n\n")
+                        if str(int(chapter_num)-1) in chapter_to_verses:
+                            chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
+                        for other_chapter_num in chapter_to_verses.keys():
+                            if other_chapter_num != chapter_num:
+                                chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
+                            else:
+                                chapter_out.write(f"{other_chapter_num} ")
+                        if str(int(chapter_num)+1) in chapter_to_verses:
+                            chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
+        
 
 
 def main():
@@ -182,7 +290,8 @@ def main():
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
             #convert_to_ryder_jsonl_format(file)
-            convert_to_usfm(file)
+            #convert_to_usfm(file)
+            convert_to_markdown(file)
 
     print( "Done!" )
 
