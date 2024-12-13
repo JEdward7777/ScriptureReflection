@@ -189,7 +189,7 @@ def main():
     """
     This is the main entry point for the script.
     """
-    with open('config.yaml', encoding='utf-8') as f:
+    with open('easy_draft.yaml', encoding='utf-8') as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
     for specific_config in config['configs'].values():

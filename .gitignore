@@ -1,3 +1,4 @@
 key.yaml
 *.swp
 venv/*
+__pycache__
