@@ -38,6 +38,26 @@ def load_translation_data(selected_translation):
     return loaded_lines
 
 
+def load_comment_data(selected_translation):
+    filepath = f"./output/comments/{selected_translation}.jsonl"
+    try:
+        with open(filepath, 'r', encoding='utf-8') as file:
+            loaded_lines = [json.loads(line) for line in file]
+        return loaded_lines
+    except FileNotFoundError:
+        return []
+
+def save_comments(selected_translation,comment_data):
+    filepath = f"./output/comments/{selected_translation}.jsonl"
+    temp_filepath = f"./output/comments/{selected_translation}~.jsonl"
+    if not os.path.exists("./output/comments"):
+        os.makedirs("./output/comments")
+    with open(temp_filepath, 'w', encoding='utf-8') as file:
+        for comment in comment_data:
+            file.write(json.dumps(comment) + "\n")
+    os.replace(temp_filepath, filepath)
+
+
 def get_text_for_reference(data, book, chapter, verse):
     """Fetches the text for a given reference."""
     for item in data:
@@ -45,6 +65,16 @@ def get_text_for_reference(data, book, chapter, verse):
         if b == book and c == chapter and v == verse:
             return item['fresh_translation']['text']
     return "Text not found."
+
+def get_comments_for_reference( comment_data, book, chapter, verse ):
+    id = f"{book} {chapter}:{verse}"
+
+    result = []
+    for comment in comment_data:
+        if id in comment['ids']:
+            result.append(comment)
+
+    return result
 
 def reference_to_index(data,book,chapter,verse):
     for i, item in enumerate(data):
@@ -65,6 +95,11 @@ st.title("Translation Browser and Comment Tool")
 
 # Translation Dropdown
 selected_translation = st.selectbox("Select Translation", loaded_outputs)
+
+if 'selected_translation' not in st.session_state or selected_translation != st.session_state.selected_translation:
+    st.session_state.comment_data = load_comment_data(selected_translation)
+    st.session_state.selected_verses = []
+    st.session_state.selected_translation = selected_translation
 
 # Tabs
 tabs = st.tabs(["Browse", "Add Comments"])
@@ -102,7 +137,7 @@ def collect_references_within_range( start_reference, end_reference ):
 
     for item in translation_data:
         b, c, v = split_ref(item['vref'])
-        
+
         if b == eb and (ec is None or c == ec) and (ev is None or v == ev):
             saw_range_end = True
         elif saw_range_end:
@@ -117,6 +152,14 @@ def collect_references_within_range( start_reference, end_reference ):
         if saw_start_book and saw_start_chapter and saw_start_verse:
             references.append(item['vref'])
 
+    return references
+
+
+def collect_references_with_keyword( keyword ):
+    references = []
+    for item in translation_data:
+        if keyword in item['fresh_translation']['text']:
+            references.append(item['vref'])
     return references
 
 
@@ -156,7 +199,8 @@ if translation_data:
         # Display current reference and text
         reference_text = get_text_for_reference(translation_data, book, chapter, verse)
         st.write(f"**{book} {chapter}:{verse}**")
-        st.text_area("Current Text", reference_text, height=100, disabled=True)
+        #st.text_area("Current Text", reference_text, height=100, disabled=True)
+        st.write( reference_text )
 
         # Next and Previous buttons
         col1, col2 = st.columns(2)
@@ -184,6 +228,25 @@ if translation_data:
         if chapter_before_dropdown != chapter_after_buttons: st.rerun()
         if verse_before_dropdown != verse_after_buttons: st.rerun()
 
+        st.subheader("Comments applying to this verse")
+        found_comment = False
+        for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, book, chapter, verse )):
+            changed_text = st.text_area( verse_parsing.to_range(comment['ids'],all_references), value=comment['comment'], key=f"{i}-edit" )
+            save_col, delete_col = st.columns(2)
+            with save_col:
+                if st.button("Save", key=f"{i}-save"):
+                    comment['comment'] = changed_text
+                    save_comments(selected_translation, st.session_state.comment_data)
+                    st.rerun()
+            with delete_col:
+                if st.button("Delete", key=f"{i}-delete"):
+                    st.session_state.comment_data.remove(comment)
+                    save_comments(selected_translation, st.session_state.comment_data)
+                    st.rerun()
+            found_comment = True
+        if not found_comment:
+            st.write("No comments found")
+
     def select_reference( scope, key ):
         num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
@@ -207,7 +270,8 @@ if translation_data:
 
     # Add Comments Tab
     with tabs[1]:
-        st.header("Add Comment")
+        st.header("Add Comments")
+        st.subheader( "Select verses for comment" )
         if "selected_verses" not in st.session_state:
             st.session_state.selected_verses = []
 
@@ -216,7 +280,7 @@ if translation_data:
         else:
             st.write( f"Selected verses: {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
 
-        type_of_operation = st.radio( f"What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search", "text reference"], horizontal=True )
+        type_of_operation = st.radio( f"What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search"], horizontal=True )
 
 
         scope = "book"
@@ -236,22 +300,36 @@ if translation_data:
             end_reference = select_reference(scope, "range-end")
             selection = collect_references_within_range( start_reference, end_reference )
         elif type_of_operation == "keyword search":
-            st.write( "This isn't implemented yet" )
-            selection = ""
-        elif type_of_operation == "text reference":
-            st.write( "This isn't implemented yet" )
-            selection = ""
-
+            keyword = st.text_input( "Keyword" )
+            selection = collect_references_with_keyword( keyword )
         add_col, remove_col = st.columns(2)
         with add_col:
-            if st.button( "Add" ):
+            if st.button( "Add to selection" ):
                 for addition in selection:
                     if not addition in st.session_state.selected_verses:
                         st.session_state.selected_verses.append( addition )
+                sorted_references = []
+                for verse in all_references:
+                    if verse in st.session_state.selected_verses:
+                        sorted_references.append( verse )
+                st.session_state.selected_verses = sorted_references
                 st.rerun()
         with remove_col:
-            if st.button( "Remove" ):
+            if st.button( "Remove from selection" ):
                 for removal in selection:
                     if removal in st.session_state.selected_verses:
                         st.session_state.selected_verses.remove( removal )
+                st.rerun()
+
+        if st.session_state.selected_verses:
+            st.subheader( f"Type comment to add to {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
+            comment_added = st.text_area( "Comment", key="comment" )
+            if st.button( "Add Comment to selected verses" ):
+
+                st.session_state.comment_data.append( {
+                    "ids": st.session_state.selected_verses,
+                    "comment": comment_added
+                })
+                save_comments(selected_translation,st.session_state.comment_data)
+
                 st.rerun()
