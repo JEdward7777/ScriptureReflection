@@ -84,3 +84,23 @@ def test_range_and_list():
         "GEN 1:4",
     ]
     assert to_range( test_refs, refs ) == "GEN 1:1,3-4"
+
+
+
+def test_not_hide_verse_when_start_showing_verse():
+    """
+    #If the previous range shows a verse, you can't hide the verse
+#otherwise it looks like a verse range.
+    """
+    test_refs = [
+        "GEN 1:2",
+        "GEN 1:3",
+        "GEN 1:4",
+        "GEN 2:1",
+        "GEN 2:2",
+        "GEN 2:3",
+        "GEN 3:1",
+        "GEN 3:2",
+        "GEN 3:3",
+    ]
+    assert to_range( test_refs, refs ) == "GEN 1:2-3:3"

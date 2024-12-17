@@ -2,11 +2,17 @@ import streamlit as st
 import os
 import json, yaml
 import easy_draft
+import verse_parsing
 
 def split_ref( reference ):
+    if " " not in reference:
+        return reference, None, None
     last_space_index = reference.rindex(" ")
     book_split = reference[:last_space_index]
-    chapter_num,verse_num = reference[last_space_index+1:].split(":")
+    chapter_verse_str = reference[last_space_index+1:]
+    if ":" not in chapter_verse_str:
+        return book_split, int(chapter_verse_str), None
+    chapter_num,verse_num = chapter_verse_str.split(":")
     return book_split, int(chapter_num), int(verse_num)
 
 # Load available outputs
@@ -69,13 +75,57 @@ if "chapter" not in st.session_state:
 if "verse" not in st.session_state:
     st.session_state.verse = 1
 
-# Browse Tab
-with tabs[0]:
-    st.header("Browse Translation")
 
-    # Load data for selected translation
-    if selected_translation:
-        translation_data = load_translation_data(selected_translation)
+if selected_translation:
+    translation_data = load_translation_data(selected_translation)
+else:
+    translation_data = []
+
+
+def collect_all_references():
+    references = []
+    for item in translation_data:
+        references.append(item['vref'])
+    return references
+
+def collect_references_within_range( start_reference, end_reference ):
+    saw_start_book = False
+    saw_start_chapter = False
+    saw_start_verse = False
+
+    saw_range_end = False
+
+    sb, sc, sv = split_ref(start_reference)
+    eb, ec, ev = split_ref(end_reference)
+
+    references = []
+
+    for item in translation_data:
+        b, c, v = split_ref(item['vref'])
+        
+        if b == eb and (ec is None or c == ec) and (ev is None or v == ev):
+            saw_range_end = True
+        elif saw_range_end:
+            break
+
+        if b == sb:
+            saw_start_book = True
+            if sc is None or c == sc:
+                saw_start_chapter = True
+                if sv is None or v == sv:
+                    saw_start_verse = True
+        if saw_start_book and saw_start_chapter and saw_start_verse:
+            references.append(item['vref'])
+
+    return references
+
+
+if translation_data:
+    all_references = collect_all_references()
+
+    # Browse Tab
+    with tabs[0]:
+        st.header("Browse Translation")
 
         # Book, Chapter, Verse selectors
         unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
@@ -134,8 +184,74 @@ with tabs[0]:
         if chapter_before_dropdown != chapter_after_buttons: st.rerun()
         if verse_before_dropdown != verse_after_buttons: st.rerun()
 
+    def select_reference( scope, key ):
+        num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
-# Add Comments Tab
-with tabs[1]:
-    st.header("Add Comments")
-    st.text("This feature is under development.")
+        columns = st.columns(num_columns)
+
+        result = ""
+
+        with columns[0]:
+            sel_book = st.selectbox("Select Book", unique_books, key=f"{key}-book")
+            result = sel_book
+        if num_columns >= 2:
+            with columns[1]:
+                sel_chapter = st.number_input("Select Chapter", min_value=1, key=f"{key}-chapter")
+                result += f" {sel_chapter}"
+        if num_columns == 3:
+            with columns[2]:
+                sel_verse = st.session_state.verse = st.number_input("Select Verse", min_value=1, key=f"{key}-verse")
+                result += f":{sel_verse}"
+        return result
+
+
+    # Add Comments Tab
+    with tabs[1]:
+        st.header("Add Comment")
+        if "selected_verses" not in st.session_state:
+            st.session_state.selected_verses = []
+
+        if not st.session_state.selected_verses:
+            st.write( "No selection for comment" )
+        else:
+            st.write( f"Selected verses: {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
+
+        type_of_operation = st.radio( f"What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search", "text reference"], horizontal=True )
+
+
+        scope = "book"
+        if type_of_operation in ["single", "range"]:
+            scope = st.radio( "What scope of selection?", ["book", "chapter", "verse"], horizontal=True )
+
+        selection = ""
+        if type_of_operation == "everything":
+            selection = all_references
+        elif type_of_operation == "single":
+            single_selection = select_reference(scope, "single")
+            selection = collect_references_within_range( single_selection, single_selection )
+        elif type_of_operation == "range":
+            st.write( "Range start:")
+            start_reference = select_reference(scope, "range-start")
+            st.write( "Range end:")
+            end_reference = select_reference(scope, "range-end")
+            selection = collect_references_within_range( start_reference, end_reference )
+        elif type_of_operation == "keyword search":
+            st.write( "This isn't implemented yet" )
+            selection = ""
+        elif type_of_operation == "text reference":
+            st.write( "This isn't implemented yet" )
+            selection = ""
+
+        add_col, remove_col = st.columns(2)
+        with add_col:
+            if st.button( "Add" ):
+                for addition in selection:
+                    if not addition in st.session_state.selected_verses:
+                        st.session_state.selected_verses.append( addition )
+                st.rerun()
+        with remove_col:
+            if st.button( "Remove" ):
+                for removal in selection:
+                    if removal in st.session_state.selected_verses:
+                        st.session_state.selected_verses.remove( removal )
+                st.rerun()
