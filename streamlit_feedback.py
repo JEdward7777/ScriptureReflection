@@ -56,6 +56,10 @@ def index_to_reference(data, index):
 
 
 st.title("Translation Browser and Comment Tool")
+
+# Translation Dropdown
+selected_translation = st.selectbox("Select Translation", loaded_outputs)
+
 # Tabs
 tabs = st.tabs(["Browse", "Add Comments"])
 
@@ -67,10 +71,7 @@ if "verse" not in st.session_state:
 
 # Browse Tab
 with tabs[0]:
-    st.header("Browse Translations")
-
-    # Translation Dropdown
-    selected_translation = st.selectbox("Select Translation", loaded_outputs)
+    st.header("Browse Translation")
 
     # Load data for selected translation
     if selected_translation:
@@ -78,14 +79,29 @@ with tabs[0]:
 
         # Book, Chapter, Verse selectors
         unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
-        book = st.selectbox("Select Book", unique_books)
-        
+
+
+        book_col, chapter_col, verse_col = st.columns(3)
+
+
+        with book_col:
+            book = st.selectbox("Select Book", unique_books)
+
         # Use session state for chapter and verse
         chapter = st.session_state.chapter
         verse = st.session_state.verse
-        
-        st.session_state.chapter = st.number_input("Select Chapter", min_value=1, value=chapter)
-        st.session_state.verse = st.number_input("Select Verse", min_value=1, value=verse)
+
+        chapter_before_dropdown = chapter
+        verse_before_dropdown = verse
+
+        with chapter_col:
+            chapter = st.session_state.chapter = st.number_input("Select Chapter", min_value=1, value=chapter)
+        with verse_col:
+            verse = st.session_state.verse = st.number_input("Select Verse", min_value=1, value=verse)
+
+        chapter_after_dropdown = chapter
+        verse_after_dropdown = verse
+
 
         # Display current reference and text
         reference_text = get_text_for_reference(translation_data, book, chapter, verse)
@@ -112,8 +128,12 @@ with tabs[0]:
                         st.session_state.chapter += 1
                         st.session_state.verse = 1
 
-        if st.button("Test"):
-            st.session_state.chapter += 1
+        chapter_after_buttons = st.session_state.chapter
+        verse_after_buttons = st.session_state.verse
+
+        if chapter_before_dropdown != chapter_after_buttons: st.rerun()
+        if verse_before_dropdown != verse_after_buttons: st.rerun()
+
 
 # Add Comments Tab
 with tabs[1]:
