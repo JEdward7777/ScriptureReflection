@@ -172,7 +172,7 @@ def main():
     def collect_references_with_keyword( keyword ):
         references = []
         for item in translation_data:
-            if keyword in item['fresh_translation']['text']:
+            if keyword.lower() in item['fresh_translation']['text'].lower():
                 references.append(item['vref'])
         return references
 
