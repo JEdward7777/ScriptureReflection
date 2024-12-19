@@ -33,7 +33,7 @@ def load_reference_data():
     ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
     return easy_draft.load_file_to_list(os.path.join(ebible_dir, 'metadata', 'vref.txt'))
 
-@st.cache_data
+#@st.cache_data
 def cached_to_range(selected_verses, all_verses):
     return verse_parsing.to_range(selected_verses, all_verses)
 
@@ -103,7 +103,7 @@ def index_to_reference(data, index):
 
 
 def main():
-    st.title("Translation Browser and Comment Tool")
+    st.title("Translation Comment Collector")
 
     # Translation Dropdown
     selected_translation = st.selectbox("Select Translation", loaded_outputs)
@@ -188,21 +188,36 @@ def main():
         """, unsafe_allow_html=True)
 
     if translation_data:
+
+        # Book, Chapter, Verse selectors
+        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
+        def select_reference( scope, key ):
+            num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
+
+            columns = st.columns(num_columns)
+
+            result = ""
+
+            with columns[0]:
+                sel_book = st.selectbox("Select Book", unique_books, key=f"{key}-book")
+                result = sel_book
+            if num_columns >= 2:
+                with columns[1]:
+                    sel_chapter = st.number_input("Select Chapter", min_value=1, key=f"{key}-chapter")
+                    result += f" {sel_chapter}"
+            if num_columns == 3:
+                with columns[2]:
+                    sel_verse = st.session_state.verse = st.number_input("Select Verse", min_value=1, key=f"{key}-verse")
+                    result += f":{sel_verse}"
+            return result
+
+
         all_references = collect_all_references()
 
         # Browse Tab
         with tabs[0]:
             st.header("Browse Translation")
 
-            # Book, Chapter, Verse selectors
-            unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
-
-
-            book_col, chapter_col, verse_col = st.columns(3)
-
-
-            with book_col:
-                book = st.selectbox("Select Book", unique_books)
 
             # Use session state for chapter and verse
             chapter = st.session_state.chapter
@@ -211,13 +226,8 @@ def main():
             chapter_before_dropdown = chapter
             verse_before_dropdown = verse
 
-            with chapter_col:
-                chapter = st.session_state.chapter = st.number_input("Select Chapter", min_value=1, value=chapter)
-            with verse_col:
-                verse = st.session_state.verse = st.number_input("Select Verse", min_value=1, value=verse)
 
-            chapter_after_dropdown = chapter
-            verse_after_dropdown = verse
+            book, chapter, verse = split_ref(select_reference( "verse", "browse" ))
 
 
             # Display current reference and text
@@ -273,26 +283,6 @@ def main():
                 found_comment = True
             if not found_comment:
                 st.write("No comments found")
-
-        def select_reference( scope, key ):
-            num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
-
-            columns = st.columns(num_columns)
-
-            result = ""
-
-            with columns[0]:
-                sel_book = st.selectbox("Select Book", unique_books, key=f"{key}-book")
-                result = sel_book
-            if num_columns >= 2:
-                with columns[1]:
-                    sel_chapter = st.number_input("Select Chapter", min_value=1, key=f"{key}-chapter")
-                    result += f" {sel_chapter}"
-            if num_columns == 3:
-                with columns[2]:
-                    sel_verse = st.session_state.verse = st.number_input("Select Verse", min_value=1, key=f"{key}-verse")
-                    result += f":{sel_verse}"
-            return result
 
 
         # Add Comments Tab
