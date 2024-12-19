@@ -162,6 +162,18 @@ def collect_references_with_keyword( keyword ):
             references.append(item['vref'])
     return references
 
+# Add custom CSS for scrolling
+st.markdown("""
+    <style>
+    .scrollable-container {
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 if translation_data:
     all_references = collect_all_references()
@@ -231,7 +243,10 @@ if translation_data:
         st.subheader("Comments applying to this verse")
         found_comment = False
         for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, book, chapter, verse )):
-            changed_text = st.text_area( verse_parsing.to_range(comment['ids'],all_references), value=comment['comment'], key=f"{i}-edit" )
+            long_text = verse_parsing.to_range(comment['ids'],all_references)
+            truncation_length = 100
+            truncated_text = long_text[:truncation_length] + "..." if len(long_text) > truncation_length else long_text
+            changed_text = st.text_area( truncated_text, value=comment['comment'], key=f"{i}-edit" )
             save_col, delete_col = st.columns(2)
             with save_col:
                 if st.button("Save", key=f"{i}-save"):
@@ -276,11 +291,19 @@ if translation_data:
             st.session_state.selected_verses = []
 
         if not st.session_state.selected_verses:
-            st.write( "No selection for comment" )
+            long_text = "No selection for comment"
         else:
-            st.write( f"Selected verses: {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
+            #st.write( f"Selected verses: {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
+            long_text = verse_parsing.to_range(st.session_state.selected_verses,all_references)
 
-        type_of_operation = st.radio( f"What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search"], horizontal=True )
+        # Use the scrollable container
+        st.markdown(f"""
+            <div class="scrollable-container">
+                <pre>{long_text}</pre>
+            </div>
+            """, unsafe_allow_html=True)
+
+        type_of_operation = st.radio( "What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search"], horizontal=True )
 
 
         scope = "book"
@@ -322,7 +345,9 @@ if translation_data:
                 st.rerun()
 
         if st.session_state.selected_verses:
-            st.subheader( f"Type comment to add to {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
+            truncation_length = 20
+            truncated_text = long_text[:truncation_length] + "..." if len( long_text ) > truncation_length else long_text
+            st.subheader( f"Type comment to add to {truncated_text}")
             comment_added = st.text_area( "Comment", key="comment" )
             if st.button( "Add Comment to selected verses" ):
 
