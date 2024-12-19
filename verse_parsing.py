@@ -62,28 +62,43 @@ def to_range(selection, everything):
             )
 
         # Large context checks
-        has_whole_book = has_whole_chapter = True
+        has_whole_start_book = has_whole_end_book = has_whole_start_chapter = has_whole_end_chapter = True
         if i >= 1:
             previous_exclude = parsed_range[i - 1]
-            has_whole_book &= previous_exclude.end.book != range_.start.book
-            has_whole_chapter &= previous_exclude.end.chapter != range_.start.chapter
+            has_whole_start_book &= previous_exclude.end.book != range_.start.book
+            has_whole_start_chapter &= previous_exclude.end.chapter != range_.start.chapter
+            has_whole_end_book &= previous_exclude.end.book != range_.end.book
+            has_whole_end_chapter &= previous_exclude.end.chapter != range_.end.chapter
 
         if i < len(parsed_range) - 1:
             next_exclude = parsed_range[i + 1]
-            has_whole_book &= next_exclude.start.book != range_.start.book
-            has_whole_chapter &= next_exclude.start.chapter != range_.start.chapter
+            has_whole_start_book &= next_exclude.start.book != range_.start.book
+            has_whole_start_chapter &= next_exclude.start.chapter != range_.start.chapter
+            has_whole_end_book &= next_exclude.start.book != range_.end.book
+            has_whole_end_chapter &= next_exclude.start.chapter != range_.end.chapter
 
-        if has_whole_book:
-            hide_start_chapter = hide_start_verse = hide_end_chapter = hide_end_verse = True
+        if has_whole_start_book:
+            hide_start_chapter = hide_start_verse = True
 
-        if has_whole_chapter:
-            hide_start_verse = hide_end_verse = True
+        if has_whole_end_book:
+            hide_end_chapter = hide_end_verse = True
+
+        if has_whole_start_chapter:
+            hide_start_verse = True
+
+        #don't hide the end verse even if you have the whole chapter
+        #if you showing the start verse, otherwise the chapter looks
+        #like a verse if you are showing the end chapter.
+        if has_whole_end_chapter and (hide_start_verse or hide_end_chapter):
+            hide_end_verse = True
 
         # Determine if we can skip the range end
+        # Basically, skip showing the end of the range if you can see something which has a distinction.
+        # If you can't see something which makes a distinction, then it will be redundent information.
         skip_range_end = not (
-            (not hide_start_book and not hide_end_book and range_.start.book != range_.end.book) or
-            (not hide_start_chapter and not hide_end_chapter and range_.start.chapter != range_.end.chapter) or
-            (not hide_start_verse and not hide_end_verse and range_.start.verse != range_.end.verse)
+            ((not hide_start_book    or not hide_end_book   ) and range_.start.book    != range_.end.book   ) or
+            ((not hide_start_chapter or not hide_end_chapter) and range_.start.chapter != range_.end.chapter) or
+            ((not hide_start_verse   or not hide_end_verse  ) and range_.start.verse   != range_.end.verse  )
         )
 
         # Small context for end
