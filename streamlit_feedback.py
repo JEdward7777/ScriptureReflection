@@ -117,6 +117,8 @@ def main():
     tabs = st.tabs(["Browse", "Add Comments"])
 
     # Initialize session state variables
+    if "book" not in st.session_state:
+        st.session_state.book = "GEN"
     if "chapter" not in st.session_state:
         st.session_state.chapter = 1
     if "verse" not in st.session_state:
@@ -191,7 +193,7 @@ def main():
 
         # Book, Chapter, Verse selectors
         unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
-        def select_reference( scope, key, init_chapter=None, init_verse=None ):
+        def select_reference( scope, key, init_book=None, init_chapter=None, init_verse=None ):
             num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
             columns = st.columns(num_columns)
@@ -199,7 +201,7 @@ def main():
             result = ""
 
             with columns[0]:
-                sel_book = st.selectbox("Select Book", unique_books, key=f"{key}-book")
+                sel_book = st.selectbox("Select Book", unique_books, index=unique_books.index(init_book) if init_book in unique_books else 0, key=f"{key}-book")
                 result = sel_book
             if num_columns >= 2:
                 with columns[1]:
@@ -247,16 +249,17 @@ def main():
 
 
             # Use session state for chapter and verse
+            book_before_dropdown = st.session_state.book
             chapter_before_dropdown = st.session_state.chapter
             verse_before_dropdown = st.session_state.verse
 
 
-            book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse", init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
+            st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse", init_book=st.session_state.book, init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
 
 
             # Display current reference and text
-            reference_text = get_text_for_reference(translation_data, book, st.session_state.chapter, st.session_state.verse)
-            st.write(f"**{book} {st.session_state.chapter}:{st.session_state.verse}**")
+            reference_text = get_text_for_reference(translation_data, st.session_state.book, st.session_state.chapter, st.session_state.verse)
+            st.write(f"**{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}**")
             #st.text_area("Current Text", reference_text, height=100, disabled=True)
             st.write( reference_text )
 
@@ -268,10 +271,10 @@ def main():
                         st.session_state.verse -= 1
                     elif st.session_state.chapter > 1:
                         st.session_state.chapter -= 1
-                        st.session_state.verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == book and split_ref(item['vref'])[1] == st.session_state.chapter)
+                        st.session_state.verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == st.session_state.book and split_ref(item['vref'])[1] == st.session_state.chapter)
             with col2:
                 if st.button("Next"):
-                    max_verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == book and split_ref(item['vref'])[1] == st.session_state.chapter)
+                    max_verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == st.session_state.book and split_ref(item['vref'])[1] == st.session_state.chapter)
                     if st.session_state.verse < max_verse:
                         st.session_state.verse = st.session_state.verse +1
                     else:
@@ -280,9 +283,12 @@ def main():
                             st.session_state.chapter = next_chapter
                             st.session_state.verse = 1
 
+            book_after_buttons = st.session_state.book
             chapter_after_buttons = st.session_state.chapter
             verse_after_buttons = st.session_state.verse
 
+            if book_before_dropdown != book_after_buttons:
+                st.rerun()
             if chapter_before_dropdown != chapter_after_buttons:
                 st.rerun()
             if verse_before_dropdown != verse_after_buttons:
@@ -290,7 +296,7 @@ def main():
 
             st.subheader("Comments applying to this verse")
             found_comment = False
-            for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, book, st.session_state.chapter, st.session_state.verse )):
+            for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, st.session_state.book, st.session_state.chapter, st.session_state.verse )):
                 long_text = cached_to_range(comment['ids'],all_references)
                 truncation_length = 100
                 truncated_text = long_text[:truncation_length] + "..." if len(long_text) > truncation_length else long_text
