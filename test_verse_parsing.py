@@ -104,3 +104,24 @@ def test_not_hide_verse_when_start_showing_verse():
         "GEN 3:3",
     ]
     assert to_range( test_refs, refs ) == "GEN 1:2-3:3"
+
+def test_not_hide_chapter_when_next_verse_is_next_chapter():
+    test_refs = [
+        "GEN 1:1",
+        #"GEN 1:2",
+        "GEN 1:3",
+        "GEN 1:4",
+        "GEN 2:1",
+        # "GEN 2:2",
+        # "GEN 2:3",
+        # "GEN 3:1",
+        # "GEN 3:2",
+        # "GEN 3:3",
+        # "EXD 1:1",
+        # "EXD 1:2",
+        # "EXD 1:3",
+        # "EXD 2:1",
+        # "EXD 2:2",
+        # "EXD 2:3",    
+    ]
+    assert to_range( test_refs, refs ) == "GEN 1:1,1:3-2:1"

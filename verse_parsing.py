@@ -56,7 +56,12 @@ def to_range( selection, everything ):
             if i >= 2:
                 previous_include = parsed_range[i-2]
                 if range_.start.book == previous_include.end.book: hide_start_book = True
-                if range_.start.chapter == previous_include.end.chapter: hide_start_chapter = True
+                if range_.start.chapter == previous_include.end.chapter: 
+                    #if the end of the range is in a different chapter we can't hide the
+                    #chapter because then when the end of the range shows its chapter
+                    #because it is different it can be confused for looking like a verse.
+                    if range_.start.chapter == range_.end.chapter:
+                        hide_start_chapter = True
             
             #for the large context see if we contain a whole book or chapter
             #so that we don't need to list the chapters or verses.
