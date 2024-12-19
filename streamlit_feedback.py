@@ -53,8 +53,8 @@ def save_comments(selected_translation,comment_data):
     if not os.path.exists("./output/comments"):
         os.makedirs("./output/comments")
     with open(temp_filepath, 'w', encoding='utf-8') as file:
-        for comment in comment_data:
-            file.write(json.dumps(comment) + "\n")
+        for this_comment in comment_data:
+            file.write(json.dumps(this_comment) + "\n")
     os.replace(temp_filepath, filepath)
 
 
@@ -166,7 +166,7 @@ def collect_references_with_keyword( keyword ):
 st.markdown("""
     <style>
     .scrollable-container {
-        height: 300px;
+        max-height: 300px;
         overflow-y: auto;
         border: 1px solid #ccc;
         padding: 10px;
@@ -352,8 +352,8 @@ if translation_data:
             if st.button( "Add Comment to selected verses" ):
 
                 st.session_state.comment_data.append( {
-                    "ids": st.session_state.selected_verses,
-                    "comment": comment_added
+                    "comment": comment_added,
+                    "ids": st.session_state.selected_verses[:]
                 })
                 save_comments(selected_translation,st.session_state.comment_data)
 
