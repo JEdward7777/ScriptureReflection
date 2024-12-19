@@ -34,6 +34,10 @@ def load_reference_data():
     return easy_draft.load_file_to_list(os.path.join(ebible_dir, 'metadata', 'vref.txt'))
 
 @st.cache_data
+def cached_to_range(selected_verses, all_verses):
+    return verse_parsing.to_range(selected_verses, all_verses)
+
+@st.cache_data
 def load_translation_data(selected_translation):
     """Loads the data for the selected translation."""
     vrefs = load_reference_data()
@@ -251,7 +255,7 @@ def main():
             st.subheader("Comments applying to this verse")
             found_comment = False
             for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, book, chapter, verse )):
-                long_text = verse_parsing.to_range(comment['ids'],all_references)
+                long_text = cached_to_range(comment['ids'],all_references)
                 truncation_length = 100
                 truncated_text = long_text[:truncation_length] + "..." if len(long_text) > truncation_length else long_text
                 changed_text = st.text_area( truncated_text, value=comment['comment'], key=f"{i}-edit" )
@@ -301,8 +305,8 @@ def main():
             if not st.session_state.selected_verses:
                 long_text = "No selection for comment"
             else:
-                #st.write( f"Selected verses: {verse_parsing.to_range(st.session_state.selected_verses,all_references)}")
-                long_text = verse_parsing.to_range(st.session_state.selected_verses,all_references)
+                #st.write( f"Selected verses: {cached_to_range(st.session_state.selected_verses,all_references)}")
+                long_text = cached_to_range(st.session_state.selected_verses,all_references)
 
             # Use the scrollable container
             st.markdown(f"""
@@ -382,23 +386,28 @@ def save_profiler_stats(profiler):
 
     # Optionally, you can provide a link to download the file
     st.success(f"Profile results saved to: {filename}")
-    st.download_button(
-        label="Download Profiling Results",
-        data=open(filename, "rb").read(),
-        file_name=filename,
-        mime="text/plain"
-    )
+    # st.download_button(
+    #     label="Download Profiling Results",
+    #     data=open(filename, "rb").read(),
+    #     file_name=filename,
+    #     mime="text/plain"
+    # )
+
+PROFILEING = False    
 
 def profile_main():
-    try:
-        profiler = cProfile.Profile()
-        profiler.run("main()" )
-        save_profiler_stats(profiler)
-    except ValueError as e:
-        if "profiling tool" in str(e):
-            main()
-        else:
-            raise
+    if PROFILEING:
+        try:
+            profiler = cProfile.Profile()
+            profiler.run("main()" )
+            save_profiler_stats(profiler)
+        except ValueError as e:
+            if "profiling tool" in str(e):
+                main()
+            else:
+                raise
+    else:
+        main()
 
 # If this script is run directly, start the profiling
 if __name__ == "__main__":
