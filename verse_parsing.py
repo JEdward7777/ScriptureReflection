@@ -30,11 +30,11 @@ class BibleReferenceRange(object):
 def to_range(selection, everything):
     parsed_range = []
     current_range = None
-    
+
     for string_verse in everything:
         verse = parse_single_ref(string_verse)
         verse_is_in = string_verse in selection
-        
+
         if current_range is None or current_range.inclusive != verse_is_in:
             current_range = BibleReferenceRange(start=verse, end=verse, inclusive=verse_is_in)
             parsed_range.append(current_range)
@@ -45,7 +45,7 @@ def to_range(selection, everything):
     for i, range_ in enumerate(parsed_range):
         if not range_.inclusive:
             continue  # Skip excluded ranges
-        
+
         if result_parts:
             result_parts.append(",")
 
@@ -67,15 +67,15 @@ def to_range(selection, everything):
             previous_exclude = parsed_range[i - 1]
             has_whole_book &= previous_exclude.end.book != range_.start.book
             has_whole_chapter &= previous_exclude.end.chapter != range_.start.chapter
-        
+
         if i < len(parsed_range) - 1:
             next_exclude = parsed_range[i + 1]
             has_whole_book &= next_exclude.start.book != range_.start.book
             has_whole_chapter &= next_exclude.start.chapter != range_.start.chapter
-        
+
         if has_whole_book:
             hide_start_chapter = hide_start_verse = hide_end_chapter = hide_end_verse = True
-        
+
         if has_whole_chapter:
             hide_start_verse = hide_end_verse = True
 
@@ -97,12 +97,12 @@ def to_range(selection, everything):
             result_parts.append(f"{range_.start.book}")
             if not hide_start_chapter:
                 result_parts.append(" ")
-        
+
         if not hide_start_chapter:
             result_parts.append(f"{range_.start.chapter}")
             if not hide_start_verse:
                 result_parts.append(":")
-                
+
         if not hide_start_verse:
             result_parts.append(f"{range_.start.verse}")
 
@@ -113,12 +113,12 @@ def to_range(selection, everything):
                 result_parts.append(f"{range_.end.book}")
                 if not hide_end_chapter:
                     result_parts.append(" ")
-                
+
             if not hide_end_chapter:
                 result_parts.append(f"{range_.end.chapter}")
                 if not hide_end_verse:
                     result_parts.append(":")
-                
+
             if not hide_end_verse:
                 result_parts.append(f"{range_.end.verse}")
 
