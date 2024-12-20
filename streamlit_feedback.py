@@ -151,7 +151,7 @@ def main():
         st.session_state.selected_translation = selected_translation
 
     # Tabs
-    tabs = st.tabs(["Browse", "Add Comments"])
+    browse_chapter_tab, browse_verse_tab, add_comments_tab = st.tabs(["Browse Chapter", "Browse Verse", "Add Comments"])
 
     # Initialize session state variables
     if "book" not in st.session_state:
@@ -284,9 +284,57 @@ def main():
         if "selected_verses" not in st.session_state:
             st.session_state.selected_verses = []
 
-        # Browse Tab
-        with tabs[0]:
-            st.header("Browse Translation")
+
+        # Browse chapter Tab
+        with browse_chapter_tab:
+            st.header("Browse Translation by Chapter")
+            st.write("Select a book and chapter to view the verses in that chapter.")
+
+            book_before_dropdown = st.session_state.book
+            chapter_before_dropdown = st.session_state.chapter
+
+            st.session_state.book, st.session_state.chapter, _ = split_ref(select_reference( "chapter", "browse-chapter", init_book=st.session_state.book, init_chapter=st.session_state.chapter ))
+
+            translation_table_pieces = [ "| **Verse** | **Text** | **Source** |" ]
+
+            translation_table_pieces.append( "| --- | --- | --- |" )
+
+            max_chapter = None
+            min_chapter = None
+            for item in translation_data:
+                b, c, _ = split_ref(item['vref'])
+                if b == st.session_state.book and c == st.session_state.chapter:
+                    translation_table_pieces.append( f"| {item['vref']} | {item['fresh_translation']['text']} | {item['source']} |" )
+                if b == st.session_state.book:
+                    if max_chapter is None or c > max_chapter:
+                        max_chapter = c
+                    if min_chapter is None or c < min_chapter:
+                        min_chapter = c
+                
+
+            st.markdown("\n".join(translation_table_pieces))
+
+
+            # Next and Previous buttons
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                if st.button("Previous", key="chapter-prev"):
+                    if st.session_state.chapter > min_chapter:
+                        st.session_state.chapter -= 1
+            with col2:
+                pass
+            with col3:
+                if st.button("Next", key="chapter-next"):
+                    if st.session_state.chapter < max_chapter:
+                        st.session_state.chapter += 1
+
+
+            if st.session_state.book != book_before_dropdown or st.session_state.chapter != chapter_before_dropdown:
+                st.rerun()
+
+        # Browse verse Tab
+        with browse_verse_tab:
+            st.header("Browse Translation by Verse")
 
 
             # Use session state for chapter and verse
@@ -295,7 +343,7 @@ def main():
             verse_before_dropdown = st.session_state.verse
 
 
-            st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse", init_book=st.session_state.book, init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
+            st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse-verse", init_book=st.session_state.book, init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
 
             st.write(f"**{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}**")
 
@@ -376,7 +424,7 @@ def main():
 
 
         # Add Comments Tab
-        with tabs[1]:
+        with add_comments_tab:
             st.header("Add Comments")
             st.subheader( "Select verses for comment" )
 
