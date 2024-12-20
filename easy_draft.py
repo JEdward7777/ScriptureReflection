@@ -144,7 +144,13 @@ def run_config(config: dict, ebible_dir: str) -> None:
 
                 if i < len( previous_result_jsonl ) and previous_result_jsonl[i]:
                     translation_result = json.loads( previous_result_jsonl[i] )
-                    result = translation_result.fresh_translation.text
+                    if 'fresh_translation' in translation_result:
+                        result = translation_result['fresh_translation']['text']
+
+                        if 'vref' not in translation_result:
+                            translation_result['vref'] = vref
+                        if 'source' not in translation_result:
+                            translation_result['source'] = source[i]
 
                 #of we previously had a result
                 if i < len( previous_result ) and previous_result[i]:
@@ -172,12 +178,14 @@ def run_config(config: dict, ebible_dir: str) -> None:
 
                     translation_result = object_result.model_dump()
                     translation_result['translation_time'] = translation_time
+                    translation_result['vref'] = vref
+                    translation_result['source'] = source_line
                     result = object_result.fresh_translation.text
 
                     print( f"Translated {vref}: {result}" )
 
                 f.write( result + "\n" )
-                f_jsonl.write( json.dumps( translation_result ) + "\n" )
+                f_jsonl.write( json.dumps( translation_result, ensure_ascii=False ) + "\n" )
                 last_result = result
 
 
