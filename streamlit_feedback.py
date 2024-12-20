@@ -284,6 +284,9 @@ def main():
         if "selected_verses" not in st.session_state:
             st.session_state.selected_verses = []
 
+        if "comment_count" not in st.session_state:
+            st.session_state.comment_count = 0
+
 
         # Browse chapter Tab
         with browse_chapter_tab:
@@ -498,11 +501,14 @@ def main():
                             st.session_state.selected_verses.remove( removal )
                     st.rerun()
 
+
+            
+
             if st.session_state.selected_verses:
                 truncation_length = 20
                 truncated_text = long_text[:truncation_length] + "..." if len( long_text ) > truncation_length else long_text
                 st.subheader( f"Type comment to add to {truncated_text}")
-                comment_added = st.text_area( "Comment", key="comment" )
+                comment_added = st.text_area( "Comment", key=f"comment-{st.session_state.comment_count}", value="" )
                 if st.button( "Add Comment to selected verses" ):
 
                     st.session_state.comment_data.append( {
@@ -511,7 +517,12 @@ def main():
                     })
                     save_comments(selected_translation,st.session_state.comment_data)
 
+                    st.write( "Saved" )
+                    st.session_state.comment_count += 1
+
                     st.rerun()
+
+            
 
 
 def save_profiler_stats(profiler):
