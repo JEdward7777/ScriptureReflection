@@ -107,6 +107,13 @@ def get_text_for_reference(data, book, chapter, verse):
             return item['fresh_translation']['text']
     return "Text not found."
 
+def get_source_for_reference(data, book, chapter, verse):
+    for item in data:
+        b, c, v = split_ref(item['vref'])
+        if b == book and c == chapter and v == verse:
+            return item['source']
+    return "Source not found."
+
 def get_comments_for_reference( comment_data, book, chapter, verse ):
     id = f"{book} {chapter}:{verse}"
 
@@ -290,12 +297,17 @@ def main():
 
             st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse", init_book=st.session_state.book, init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
 
+            st.write(f"**{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}**")
 
             # Display current reference and text
             reference_text = get_text_for_reference(translation_data, st.session_state.book, st.session_state.chapter, st.session_state.verse)
-            st.write(f"**{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}**")
-            #st.text_area("Current Text", reference_text, height=100, disabled=True)
             st.write( reference_text )
+
+
+            #display the source text.
+            source_text = get_source_for_reference(translation_data, st.session_state.book, st.session_state.chapter, st.session_state.verse)
+            st.write( "**Source Text:**")
+            st.write( source_text)
 
             # Next and Previous buttons
             col1, col2 = st.columns(2)
@@ -327,6 +339,10 @@ def main():
                 st.rerun()
             if verse_before_dropdown != verse_after_buttons:
                 st.rerun()
+
+
+
+
 
             st.subheader("Comments applying to this verse")
             found_comment = False
