@@ -273,6 +273,10 @@ def main():
 
         all_references = collect_all_references()
 
+
+        if "selected_verses" not in st.session_state:
+            st.session_state.selected_verses = []
+
         # Browse Tab
         with tabs[0]:
             st.header("Browse Translation")
@@ -347,21 +351,18 @@ def main():
                 st.write("No comments found")
 
 
+            add_comment_btn_text = "Add comment to this verse"
             # Create a button to run the JavaScript code
-            if st.button('Switch to Comments Tab'):
-                pass
-
-
-
-            add_button_tab_switch("Switch to Comments Tab", "Add Comments")
+            if st.button(add_comment_btn_text):
+                st.session_state.selected_verses = [f"{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}"]
+                #javascript then switches to the Add Comments tab
+            add_button_tab_switch(add_comment_btn_text, "Add Comments")
 
 
         # Add Comments Tab
         with tabs[1]:
             st.header("Add Comments")
             st.subheader( "Select verses for comment" )
-            if "selected_verses" not in st.session_state:
-                st.session_state.selected_verses = []
 
             if not st.session_state.selected_verses:
                 long_text = "No selection for comment"
