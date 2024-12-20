@@ -295,24 +295,33 @@ def main():
 
             st.session_state.book, st.session_state.chapter, _ = split_ref(select_reference( "chapter", "browse-chapter", init_book=st.session_state.book, init_chapter=st.session_state.chapter ))
 
-            translation_table_pieces = [ "| **Verse** | **Text** | **Source** |" ]
 
-            translation_table_pieces.append( "| --- | --- | --- |" )
+
 
             max_chapter = None
             min_chapter = None
             for item in translation_data:
                 b, c, _ = split_ref(item['vref'])
                 if b == st.session_state.book and c == st.session_state.chapter:
-                    translation_table_pieces.append( f"| {item['vref']} | {item['fresh_translation']['text']} | {item['source']} |" )
+                    #st.write( f"**{item['vref']}**\n - {item['fresh_translation']['text']}\n- {item['source']}" )
+                    #st.write( f"**{item['vref']}**" )
+                    button_text = f"{item['vref']}"
+                    if st.button( button_text ):
+                        _,_,st.session_state.verse = split_ref(item['vref'])
+                    #add_button_tab_switch( button_text, "Browse Verse" )
+
+                    trans_col, source_col = st.columns(2)
+                    with trans_col:
+                        st.write( item['fresh_translation']['text'] )
+                    with source_col:
+                        st.write( item['source'] )
+
                 if b == st.session_state.book:
                     if max_chapter is None or c > max_chapter:
                         max_chapter = c
                     if min_chapter is None or c < min_chapter:
                         min_chapter = c
                 
-
-            st.markdown("\n".join(translation_table_pieces))
 
 
             # Next and Previous buttons
@@ -328,6 +337,13 @@ def main():
                     if st.session_state.chapter < max_chapter:
                         st.session_state.chapter += 1
 
+
+            #put the button to tab connections at the bottom because they produce height.
+            for item in translation_data:
+                b, c, _ = split_ref(item['vref'])
+                if b == st.session_state.book and c == st.session_state.chapter:
+                    button_text = f"{item['vref']}"
+                    add_button_tab_switch( button_text, "Browse Verse" )
 
             if st.session_state.book != book_before_dropdown or st.session_state.chapter != chapter_before_dropdown:
                 st.rerun()
