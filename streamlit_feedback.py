@@ -508,19 +508,25 @@ def main():
                 truncation_length = 20
                 truncated_text = long_text[:truncation_length] + "..." if len( long_text ) > truncation_length else long_text
                 st.subheader( f"Type comment to add to {truncated_text}")
+                name = st.text_input( "Your Name" )
                 comment_added = st.text_area( "Comment", key=f"comment-{st.session_state.comment_count}", value="" )
                 if st.button( "Add Comment to selected verses" ):
 
-                    st.session_state.comment_data.append( {
-                        "comment": comment_added,
-                        "ids": st.session_state.selected_verses[:]
-                    })
-                    save_comments(selected_translation,st.session_state.comment_data)
+                    if name:
 
-                    st.write( "Saved" )
-                    st.session_state.comment_count += 1
+                        st.session_state.comment_data.append( {
+                            "comment": comment_added,
+                            "ids": st.session_state.selected_verses[:],
+                            "name": name
+                        })
+                        save_comments(selected_translation,st.session_state.comment_data)
 
-                    st.rerun()
+                        st.write( "Saved" )
+                        st.session_state.comment_count += 1
+
+                        st.rerun()
+                    else:
+                        st.error( "Please enter your name" )
 
             
 
