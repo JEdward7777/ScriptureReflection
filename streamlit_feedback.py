@@ -10,6 +10,7 @@ import json, yaml
 import streamlit as st
 import easy_draft
 import verse_parsing
+import streamlit.components.v1 as components
 
 def split_ref( reference ):
     if " " not in reference:
@@ -315,6 +316,130 @@ def main():
                 found_comment = True
             if not found_comment:
                 st.write("No comments found")
+
+
+            # Create a button to run the JavaScript code
+            if st.button('Switch to Comments Tab', key="switch_to_comments"):
+                # components.html(
+                #     """
+                #     <script>
+                #         console.log( "I am a potato!" );
+                #         console.log( "I am a potato too!" );
+                #         //const buttons = document.querySelectorAll('button[data-baseweb="tab"]');
+                #         const buttons = window.parent.document.querySelectorAll('button[data-baseweb="tab"]');
+                #         console.log( "buttons is: ", buttons );
+                #         buttons.forEach(button => {
+                #             console.log( "button is: ", button );
+                #             if (button.textContent.trim() === "Add Comments") {
+                #                 console.log( "button with text is: ", button );
+                #                 button.click();
+                #                 console.log( "button clicked" );
+                #             }
+                #         });
+                #     </script>
+                #     """,
+                #     height=0,  # Set height to 0 since we don't need to display the component
+                # )
+                pass
+
+
+            # st.markdown(
+            # """
+            # <script>
+            #     console.log( "script loaded" );
+            #     function clickAddCommentsButton() {
+            #         console.log( "clickAddCommentsButton" );
+            #         const buttons = document.querySelectorAll('button[data-baseweb="tab"]');
+            #         console.log( "buttons is: ", buttons );
+            #         buttons.forEach(button => {
+            #             if (button.textContent.trim() === "Add Comments") {
+            #                 button.click();
+            #             }
+            #         });
+            #     }
+
+            #     // Wait until the DOM loads
+            #     window.onload = function() {
+            #         console.log( "window.onload" );
+            #         // Find the paragraph element and add a click listener
+            #         const switchTabElement = document.getElementById('switch_tab');
+            #         switchTabElement.addEventListener('click', function() {
+            #             console.log( "switchTabElement clicked" );
+            #             clickAddCommentsButton();
+            #         });
+            #     };
+            # </script>
+            # """,
+            # unsafe_allow_html=True, )
+
+
+            components.html(
+                """
+                <script>
+                    console.log( "script loaded" );
+                    function clickAddCommentsButton() {
+                        console.log( "clickAddCommentsButton" );
+                        const buttons = window.parent.document.querySelectorAll('button[data-baseweb="tab"]');
+                        console.log( "buttons is: ", buttons );
+                        buttons.forEach(button => {
+                            if (button.textContent.trim() === "Add Comments") {
+                                button.click();
+                            }
+                        });
+                    }
+
+                    // Wait until the DOM loads
+                    window.onload = function() {
+                        console.log( "window.onload" );
+                        // Find the paragraph element and add a click listener
+                        const switchTabElements = window.parent.document.querySelectorAll('p');
+                        let switchTabElement = null;
+                        for (const element of switchTabElements) {
+                            if (element.textContent.includes("Switch to Comments Tab")) {
+                                switchTabElement = element;
+                                break;
+                            }
+                        }
+                        console.log( "switchTabElement is: ", switchTabElement );
+                        switchTabElement.addEventListener('click', function() {
+                            console.log( "switchTabElement clicked" );
+                            clickAddCommentsButton();
+                        });
+                    };
+                </script>
+                """,
+                height=0,  # Set height to 0 since we don't need to display the component
+            )
+
+
+            # if st.button('Switch to Comments Tab 2'):
+            #     # You may want to adjust the query selector as per the exact button's attributes.
+            #     st.markdown(
+            #         """
+            #         <script>
+            #             const buttonSelector = 'button[data-baseweb="tab"]';
+                        
+            #             function clickAddCommentsButton() {
+            #                 const buttons = document.querySelectorAll(buttonSelector);
+            #                 buttons.forEach(button => {
+            #                     if (button.textContent.trim() === "Add Comments") {
+            #                         button.click();
+            #                     }
+            #                 });
+            #             }
+
+            #             // Wait until the DOM loads then click
+            #             window.onload = function() {
+            #                 clickAddCommentsButton();
+            #             };
+
+            #             // If you want to observe DOM changes to continuously check for the button
+            #             const observer = new MutationObserver(clickAddCommentsButton);
+            #             observer.observe(document.body, { childList: true, subtree: true });
+            #         </script>
+            #         """,
+            #         unsafe_allow_html=True,
+            #     )
 
 
         # Add Comments Tab
