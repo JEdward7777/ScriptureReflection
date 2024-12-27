@@ -39,7 +39,7 @@ class Translation(BaseModel):
     A translation of a verse from the Bible.  Contains the related verses,
     translation notes, and the translation itself.
     """
-    justification_for_forming_verse_range: str
+    thoughts_on_if_words_from_this_verse_should_come_before_words_from_previous_verse: str
     forming_verse_range_with_previous_verse: bool
     related_verses: list[Verse]
     translation_notes: str

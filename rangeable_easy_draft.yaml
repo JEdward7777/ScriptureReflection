@@ -4,7 +4,7 @@ configs:
     start_line: 26190 # John 3:1
     end_line: 26225 # JHN 3:36
     source: grc-grcbyz
-    output: John_3_paraphrase
+    output: John_3_paraphrase2
     model: gpt-4o-mini
     target_language: English
     temperature: 1.2
