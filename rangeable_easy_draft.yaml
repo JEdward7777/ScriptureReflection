@@ -1,0 +1,25 @@
+configs:
+  John:
+    active: true
+    start_line: 26190 # John 3:1
+    end_line: 26225 # JHN 3:36
+    source: grc-grcbyz
+    output: John_3_paraphrase
+    model: gpt-4o-mini
+    target_language: English
+    temperature: 1.2
+    top_p: 0.9
+    translation_command: "Generate a paraphrase targeting the comprehansion level of a seven year old.  However stay true to the content."
+  NT:
+    active: false
+    start_line: 23214 # MAT 1:1
+    end_line: 31170 # REV 22:21
+    source: grc-grcbyz
+    output: eng_NT_paraphrase
+    model: gpt-4o-mini
+    target_language: English
+    temperature: 1.2
+    top_p: 0.9
+    translation_command: "Generate a paraphrase targeting the comprehansion level of a seven year old.  However stay true to the content."
+global_configs:
+  ebible_dir: /home/lansford/bible_token_models/samual_liedes_experiment_data/ebible
