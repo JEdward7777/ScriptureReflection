@@ -4,12 +4,12 @@ configs:
     start_line: 26190 # John 3:1
     end_line: 26225 # JHN 3:36
     source: grc-grcbyz
-    output: John_3_paraphrase2
+    output: John_3_paraphrase_3
     model: gpt-4o-mini
     target_language: English
     temperature: 1.2
     top_p: 0.9
-    translation_command: "Generate a paraphrase targeting the comprehansion level of a seven year old.  However stay true to the content."
+    translation_command: The translation should be a paraphrase targeting the comprehansion level of a seven year old.
   NT:
     active: false
     start_line: 23214 # MAT 1:1
