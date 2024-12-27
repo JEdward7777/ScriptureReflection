@@ -39,6 +39,7 @@ class Translation(BaseModel):
     A translation of a verse from the Bible.  Contains the related verses,
     translation notes, and the translation itself.
     """
+    justification_for_forming_verse_range: str
     forming_verse_range_with_previous_verse: bool
     related_verses: list[Verse]
     translation_notes: str
@@ -74,9 +75,9 @@ def generate_verse(
     start_time = time.time()
 
     message = (f"Generate a fresh translation of {vref} in {target_language}.  Before the verse " +
-      "quote 5 other verses from the Bible in {target_language} which use similar words which " +
+      f"quote 5 other verses from the Bible in {target_language} which use similar words which " +
       "would be useful. Pay attention to the source text and don't plagiarize existing " +
-      "translations. {translation_command}")
+      f"translations. {translation_command}")
     message += f"\nThe source text is: {vref}: {source}"
     if last_translation_dict:
         message += f"\nFor context the previous verse is: {last_translation_dict['vref']}: {last_translation_dict['fresh_translation']['text']}"
@@ -95,7 +96,9 @@ def generate_verse(
             allow_range = False
 
         if allow_range:
-            message += f"\nIf the order of words in this verse and the previous need to be intertwined in order to better express the thought in {target_language}, set forming_verse_range_with_previous_verse to true and then output the translation of {last_translation_dict['vref']} and {vref} together as a unit."
+            # message += f"\nIf words in the current verse {vref} need to occur before words in the last verse {last_translation_dict['vref']}, in order to better express the thought in {target_language}, set forming_verse_range_with_previous_verse to true and then output the translation of {last_translation_dict['vref']} and {vref} together. Do not join verses just because if forms a cohesive thought or because the flow is seamless.  There is a cost to joining the verses, so if the split is visible, it must remain."
+            # message += f"\nSometimes when translating the Bible, two verses become one verse because the words from both verses get mixed together and it is not possible anymore to designate where the second verse goes.  In this case a verse range is specified instead of identifying each individual verses.  If you chose to mix the words of the current verse {vref} with the previous verse {last_translation_dict['vref']}, set the key forming_verse_range_with_previous_verse to true and then output the translation of {last_translation_dict['vref']} and {vref} together.  Don't confuse this with forming a paragraph, or a logical unit.  Forming a verse range is specifically for the case where we can't stick the verse number in there anymore because the verses phisically got mixed together and lost their individual identities.  When this is done the output translation will literally be missing a number.  If the split is visible, it must remain and a verse range shouldn't be formed."
+            message += f"\nIf the meaning or grammar of this verse {vref} is dependent on the previous verse {last_translation_dict['vref']} to the extent that words or ideas from this verse need to be rearranged **before or within** the previous verse for the translation to make sense, indicate that this verse should be merged into a \"verse range.\"\nOnly suggest merging if such reordering is essential and results in a combined, cohesive translation where the individual verses can no longer be clearly identified.\nIf merging is not required, provide a standalone translation for this verse. Clearly state whether merging is needed using forming_verse_range_with_previous_verse."
         else:
             message += "\nSet forming_verse_range_with_previous_verse to false."
     else:
