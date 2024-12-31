@@ -1,5 +1,5 @@
 configs:
-  John:
+  John_paraphrase:
     active: true
     start_line: 26190 # John 3:1
     end_line: 26225 # JHN 3:36
