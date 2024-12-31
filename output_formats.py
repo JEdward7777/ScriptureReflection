@@ -9,6 +9,19 @@ import yaml
 import easy_draft
 
 
+def split_ref( reference ):
+    if " " not in reference:
+        return reference, None, None
+    last_space_index = reference.rindex(" ")
+    book_split = reference[:last_space_index]
+    chapter_verse_str = reference[last_space_index+1:]
+    if ":" not in chapter_verse_str:
+        return book_split, int(chapter_verse_str), None
+    chapter_num,verse_num = chapter_verse_str.split(":")
+    if "-" in verse_num:
+        return book_split, int(chapter_num), verse_num
+    return book_split, int(chapter_num), int(verse_num)
+
 
 def convert_to_ryder_jsonl_format(file):
     """
@@ -152,9 +165,7 @@ def convert_to_usfm(file):
             #reference = verse["fresh_translation"]["reference"]
             reference = vrefs[i]
             if " " in reference:
-                #Index of last space.
-                last_space_index = reference.rindex(" ")
-                book = reference[:last_space_index]
+                book, _, _ = split_ref(reference)
                 usfm_name = USFM_NAME[book]
                 book_to_verses[usfm_name].append(verse)
 
@@ -166,11 +177,7 @@ def convert_to_usfm(file):
             for verse in verses:
                 reference = verse["fresh_translation"]["reference"]
                 if " " in reference:
-                    #Index of last space.
-                    last_space_index = reference.rindex(" ")
-                    book = reference[:last_space_index]
-                    chapter_verse = reference[last_space_index+1:]
-                    chapter_num,verse_num = chapter_verse.split( ":" )
+                    book, chapter_num, verse_num = split_ref( reference )
 
                     #if the chapter is different, change the chapter and put in a paragraph.
                     if chapter_num != current_chapter_num:
@@ -189,30 +196,34 @@ def convert_to_markdown(file):
 
     modified_date = datetime.fromtimestamp(os.path.getmtime(f"output/{file}"))
 
-    with open( 'easy_draft.yaml', encoding='utf-8' ) as f:
-        easy_draft_yaml = yaml.load(f, Loader=yaml.FullLoader)
-    ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
-    vrefs = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'metadata', 'vref.txt' ) )
-
     with open( 'output_formats.yaml', encoding='utf-8' ) as f:
         output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
     
     if os.path.splitext(file)[0] in output_formats_yaml['configs']:
         this_config = output_formats_yaml['configs'][os.path.splitext(file)[0]]
 
-        #The first thing I need to do is run through the content and sort it out into books.
+        #Mark which verse should be dropped because they are overwritten by ranges.
+        verse_to_drop = []
+        last_vref = None
+        for verse in original_content:
+            if verse:
+                if last_vref and "forming_verse_range_with_previous_verse" in verse and verse['forming_verse_range_with_previous_verse']:
+                    verse_to_drop.append( last_vref )
+                last_vref = verse['vref']
+
+        #run through the content and sort it out into books.
         book_to_chapter_to_verses = defaultdict( lambda: defaultdict( lambda: [] ) )
         for i,verse in enumerate(original_content):
             if verse:
                 #reference = verse["fresh_translation"]["reference"]
-                reference = vrefs[i]
+                reference = verse['vref']
                 if " " in reference:
-                    #Index of last space.
-                    last_space_index = reference.rindex(" ")
-                    book =  reference[:last_space_index]
-                    chapter_num,_ = reference[last_space_index+1:].split(":")
-                    verse['vref_line_number'] = i
-                    book_to_chapter_to_verses[book][chapter_num].append(verse)
+                    if reference not in verse_to_drop:
+                        book, chapter_num, _ = split_ref( reference )
+                        verse['vref_line_number'] = i
+                        book_to_chapter_to_verses[book][chapter_num].append(verse)
+                    else:
+                        print( "Dropping verse", verse['vref'] )
 
 
         output_folder = f"output/markdown_format/{os.path.splitext(file)[0]}"
@@ -249,14 +260,14 @@ def convert_to_markdown(file):
 
                         chapter_out.write( "[Book List](../README.md)\n\n" )
 
-                        if str(int(chapter_num)-1) in chapter_to_verses:
+                        if int(chapter_num)-1 in chapter_to_verses:
                             chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
                         for other_chapter_num in chapter_to_verses.keys():
                             if other_chapter_num != chapter_num:
                                 chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
                             else:
                                 chapter_out.write(f"{other_chapter_num} ")
-                        if str(int(chapter_num)+1) in chapter_to_verses:
+                        if int(chapter_num)+1 in chapter_to_verses:
                             chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
 
                         chapter_out.write( "\n\n" )
@@ -266,20 +277,19 @@ def convert_to_markdown(file):
                         chapter_out.write( "|:---------:|-------|-------------------|\n")
 
                         for verse in verses:
-                            vref_line_number = verse['vref_line_number']
-                            vref = vrefs[vref_line_number]
+                            vref = verse['vref']
                             chapter_out.write( f"|{vref}|{verse['fresh_translation']['text']}|{verse['translation_notes']}|\n")
                             
 
                         chapter_out.write( "\n\n")
-                        if str(int(chapter_num)-1) in chapter_to_verses:
+                        if int(chapter_num)-1 in chapter_to_verses:
                             chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
                         for other_chapter_num in chapter_to_verses.keys():
                             if other_chapter_num != chapter_num:
                                 chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
                             else:
                                 chapter_out.write(f"{other_chapter_num} ")
-                        if str(int(chapter_num)+1) in chapter_to_verses:
+                        if int(chapter_num)+1 in chapter_to_verses:
                             chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
         
 
