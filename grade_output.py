@@ -26,7 +26,7 @@ def save_jsonl(filename, data):
     temp_filename = f"{filename}~"
     with open(temp_filename, 'w', encoding='utf-8') as f:
         for line in data:
-            f.write(json.dumps(line) + '\n')
+            f.write(json.dumps(line, ensure_ascii=False) + '\n')
     os.replace(temp_filename, filename)
 
 def load_json(file):
