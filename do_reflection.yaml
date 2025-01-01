@@ -7,7 +7,6 @@ configs:
     translation_key: [fresh_translation,text]
     translation_comment_key: [translation_notes]
     override_key: [forming_verse_range_with_previous_verse]
-    num_grades_per_verse: 5
     translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
     model: gpt-4o-mini
     temperature: 1.2

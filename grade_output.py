@@ -234,6 +234,16 @@ def main():
 
                     previous_verse_translation = translation
 
+            #compute the average grade for the entire work.
+            grade_count = 0
+            grade_sum = 0
+            for reference in translation_grades['verses']:
+                if 'grade' in translation_grades['verses'][reference]:
+                    grade_count += 1
+                    grade_sum += translation_grades['verses'][reference]['grade']
+            translation_grades['average_grade'] = grade_sum / grade_count
+
+
             save_json( translation_grades_filename, translation_grades )
 
 
