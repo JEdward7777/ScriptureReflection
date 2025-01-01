@@ -1,6 +1,9 @@
-
+"""
+This module implements the parsing of Bible references.
+"""
 
 class BibleReference(object):
+    """Represents a Bible reference."""
     def __init__( self, book, chapter, verse ):
         self.book = book
         self.chapter = chapter
@@ -10,15 +13,18 @@ class BibleReference(object):
         return f"{self.book} {self.chapter}:{self.verse}"
 
     def __eq__( self, other ):
-        return self.book == other.book and self.chapter == other.chapter and self.verse == other.verse
+        return self.book == other.book and self.chapter == other.chapter and \
+            self.verse == other.verse
 
 def parse_single_ref( ref ):
+    """Parses a single Bible reference."""
     last_space = ref.rfind( ' ' )
     book = ref[:last_space]
     chapter,verse = ref[last_space+1:].split( ':' )
     return BibleReference( book, chapter, verse )
 
 class BibleReferenceRange(object):
+    """Represents a range of Bible references."""
     def __init__( self, start, end, inclusive ):
         self.start = start
         self.end = end
@@ -28,6 +34,7 @@ class BibleReferenceRange(object):
         return f"{self.start} to {self.end} (inclusive={self.inclusive})"
 
 def to_range(selection, everything):
+    """This allows us to form reference contractions like John 1:1-2:1 from a list of references"""
     parsed_range = []
     current_range = None
 
@@ -57,12 +64,13 @@ def to_range(selection, everything):
             previous_include = parsed_range[i - 2]
             hide_start_book = range_.start.book == previous_include.end.book
             hide_start_chapter = (
-                range_.start.chapter == previous_include.end.chapter and 
+                range_.start.chapter == previous_include.end.chapter and
                 range_.start.chapter == range_.end.chapter
             )
 
         # Large context checks
-        has_whole_start_book = has_whole_end_book = has_whole_start_chapter = has_whole_end_chapter = True
+        has_whole_start_book = has_whole_end_book = has_whole_start_chapter = \
+            has_whole_end_chapter = True
         if i >= 1:
             previous_exclude = parsed_range[i - 1]
             has_whole_start_book &= previous_exclude.end.book != range_.start.book
@@ -93,12 +101,17 @@ def to_range(selection, everything):
             hide_end_verse = True
 
         # Determine if we can skip the range end
-        # Basically, skip showing the end of the range if you can see something which has a distinction.
-        # If you can't see something which makes a distinction, then it will be redundent information.
+        # Basically, skip showing the end of the range if you can see something which has a
+        # distinction.
+        # If you can't see something which makes a distinction, then it will be redundent
+        # information.
         skip_range_end = not (
-            ((not hide_start_book    or not hide_end_book   ) and range_.start.book    != range_.end.book   ) or
-            ((not hide_start_chapter or not hide_end_chapter) and range_.start.chapter != range_.end.chapter) or
-            ((not hide_start_verse   or not hide_end_verse  ) and range_.start.verse   != range_.end.verse  )
+            ((not hide_start_book    or not hide_end_book   )
+              and range_.start.book    != range_.end.book   ) or
+            ((not hide_start_chapter or not hide_end_chapter)
+              and range_.start.chapter != range_.end.chapter) or
+            ((not hide_start_verse   or not hide_end_verse  )
+              and range_.start.verse   != range_.end.verse  )
         )
 
         # Small context for end

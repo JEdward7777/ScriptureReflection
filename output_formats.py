@@ -10,6 +10,9 @@ import easy_draft
 
 
 def split_ref( reference ):
+    """
+    Splits a reference into book, chapter, and verse.
+    """
     if " " not in reference:
         return reference, None, None
     last_space_index = reference.rindex(" ")
@@ -38,7 +41,8 @@ def convert_to_ryder_jsonl_format(file):
 
     ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
     source = original_config['source']
-    source_content = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'corpus', source + '.txt' ) )
+    source_content = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'corpus',
+        source + '.txt' ) )
 
     #get modified date of os.path.splitext(file)[0]
     modified_date = datetime.fromtimestamp(os.path.getmtime(f"output/{file}"))
@@ -144,8 +148,10 @@ USFM_NAME = {
     "Revelation"    : "67-REV.usfm",  "REV" : "67-REV.usfm"
 }
 def convert_to_usfm(file):
-    #so for USFM we have to have a separate file per book.  So I need to play some games to do this correctly.
-    #it would be nice if I could have the correct book number codes.  I think I will just generate them by hand as I need them.
+    """Converts the output of easy_draft to USFM format"""
+    #so for USFM we have to have a separate file per book.  So I need to play some games to do
+    #this correctly. It would be nice if I could have the correct book number codes.  I think I
+    #will just generate them by hand as I need them.
     print( f"converting {file} to usfm format" )
     if not os.path.exists(f"output/usfm_format/{os.path.splitext(file)[0]}"):
         os.makedirs(f"output/usfm_format/{os.path.splitext(file)[0]}")
@@ -171,7 +177,8 @@ def convert_to_usfm(file):
 
     #now spin through the books and generate the USFM files.
     for usfm_name, verses in book_to_verses.items():
-        with open(f"output/usfm_format/{os.path.splitext(file)[0]}/{usfm_name}", "w", encoding='utf-8') as f:
+        with open(f"output/usfm_format/{os.path.splitext(file)[0]}/{usfm_name}",
+                "w", encoding='utf-8') as f:
 
             current_chapter_num = -1
             for verse in verses:
@@ -189,6 +196,9 @@ def convert_to_usfm(file):
 
 
 def convert_to_markdown(file):
+    """
+    Converts the format to be readable as MarkDown.
+    """
     print( f"converting {file} to markdown format" )
 
 
@@ -198,7 +208,7 @@ def convert_to_markdown(file):
 
     with open( 'output_formats.yaml', encoding='utf-8' ) as f:
         output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
-    
+
     if os.path.splitext(file)[0] in output_formats_yaml['configs']:
         this_config = output_formats_yaml['configs'][os.path.splitext(file)[0]]
 
@@ -207,7 +217,8 @@ def convert_to_markdown(file):
         last_vref = None
         for verse in original_content:
             if verse:
-                if last_vref and "forming_verse_range_with_previous_verse" in verse and verse['forming_verse_range_with_previous_verse']:
+                if last_vref and "forming_verse_range_with_previous_verse" in verse and \
+                        verse['forming_verse_range_with_previous_verse']:
                     verse_to_drop.append( last_vref )
                 last_vref = verse['vref']
 
@@ -236,7 +247,7 @@ def convert_to_markdown(file):
             index.write( "|:---:|:-----:|\n")
             for key,value in this_config['markdown_format']['outputs'].items():
                 index.write( f"|{key}|{value}|\n")
-            
+
             index.write( f"|translation date|{modified_date.strftime("%Y.%m.%d")}|\n")
             index.write( "\n")
 
@@ -255,7 +266,8 @@ def convert_to_markdown(file):
                     book_index.write( f"- [{book} {chapter_num}](./chapter_{chapter_num}.md)\n" )
 
 
-                    with open( f"{output_folder}/{book}/chapter_{chapter_num}.md", "w", encoding='utf-8') as chapter_out:
+                    with open( f"{output_folder}/{book}/chapter_{chapter_num}.md",
+                                "w", encoding='utf-8') as chapter_out:
                         chapter_out.write( f"# {book} {chapter_num}\n" )
 
                         chapter_out.write( "[Book List](../README.md)\n\n" )
@@ -264,7 +276,8 @@ def convert_to_markdown(file):
                             chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
                         for other_chapter_num in chapter_to_verses.keys():
                             if other_chapter_num != chapter_num:
-                                chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
+                                chapter_out.write(
+                                    f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
                             else:
                                 chapter_out.write(f"{other_chapter_num} ")
                         if int(chapter_num)+1 in chapter_to_verses:
@@ -278,24 +291,31 @@ def convert_to_markdown(file):
 
                         for verse in verses:
                             vref = verse['vref']
-                            chapter_out.write( f"|{vref}|{verse['fresh_translation']['text']}|{verse['translation_notes']}|\n")
-                            
+                            chapter_out.write(
+                                f"|{vref}|{verse['fresh_translation']['text']}|" +
+                                f"{verse['translation_notes']}|\n")
+
 
                         chapter_out.write( "\n\n")
                         if int(chapter_num)-1 in chapter_to_verses:
                             chapter_out.write(f"[<-](./chapter_{str(int(chapter_num)-1)}.md) ")
                         for other_chapter_num in chapter_to_verses.keys():
                             if other_chapter_num != chapter_num:
-                                chapter_out.write(f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
+                                chapter_out.write(
+                                    f"[{other_chapter_num}](./chapter_{other_chapter_num}.md) ")
                             else:
                                 chapter_out.write(f"{other_chapter_num} ")
                         if int(chapter_num)+1 in chapter_to_verses:
                             chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
-        
+
 
 
 def main():
-    #run through all the different jsonl files in the output folder and convert them to different formats
+    """
+    Main function.
+    """
+    #run through all the different jsonl files in the output folder and convert them to different
+    #formats
 
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
@@ -307,3 +327,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    print( "Done!" )

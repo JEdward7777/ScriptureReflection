@@ -1,4 +1,6 @@
-
+"""
+This module implements the reflection functionality for generating a draft of the Bible.
+"""
 import os
 import time
 import copy
@@ -8,40 +10,48 @@ from pydantic import BaseModel
 import grade_output
 
 
-def perform_reflection( client, reference, from_translation, previous_output_translation, previous_vref, source, translation_objective, model_name, temperature, top_p, grades ):
+def perform_reflection( client, reference, from_translation, previous_output_translation,
+        previous_vref, source, translation_objective, model_name, temperature, top_p, grades ):
     """
     Perform a reflection on the translation.
     :param from_translation: The translation of the verse.
     :param source: The source text of the verse.
     :return: The reflection of the translation.
     """
-    
-    system_message = "You are a gifted Bible student, who is implementing corrections from your teachers, on your Bible translation.  Both you and your teachers operate from a Conservative Christian perspective."
+
+    system_message = "You are a gifted Bible student, who is implementing corrections from " + \
+        "your teachers, on your Bible translation.  Both you and your teachers operate from " + \
+        "a Conservative Christian perspective."
 
     user_message_array = [ "Translation Objective: ", translation_objective, "\n\n" ]
 
 
 
     if previous_output_translation:
-        user_message_array += [ "Verse ", previous_vref, " one up for context:\n```\n", previous_output_translation, "\n```\n\n" ]
+        user_message_array += [ "Verse ", previous_vref, " one up for context:\n```\n",
+        previous_output_translation, "\n```\n\n" ]
 
 
     user_message_array += [ "Current Reference: ", reference, "\n",
         "Current Source Text: ", source, "\n" ]
 
 
-    user_message_array += [ 
+    user_message_array += [
         "Translation to revise:\n```\n", from_translation, "\n```\n"
         "\n##Teachers corrections:\n" ]
 
     for i,grade in enumerate(grades['grades']):
         user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
 
-    user_message_array += ["Attempt to satisfy all provided instructions to the best of your ability. If the instructions are contradictory or mutually exclusive, use your own logic to resolve the conflict while prioritizing consistency and alignment with the overall goal.\n" ]
+    user_message_array += ["Attempt to satisfy all provided instructions to the best of your ",
+        "ability. If the instructions are contradictory or mutually exclusive, use your own ",
+        "logic to resolve the conflict while prioritizing consistency and alignment with the ",
+        "overall goal.\n" ]
 
     if previous_output_translation:
         user_message_array += [ "Make sure your update for ", reference,
-        " works within context of ", previous_vref, " the verse just above it.  Don't repeat yourself.\n" ]
+        " works within context of ", previous_vref, " the verse just above it.  Don't repeat ",
+        "yourself.\n" ]
 
     user_message = "".join(str(s) for s in user_message_array)
 
@@ -108,7 +118,8 @@ def main():
 
             reference_key = config['reference_key']
             source_key = config['source_key']
-            over_ridden_references = grade_output.get_overridden_references( translation_input, reference_key, config.get( 'override_key', None ) )
+            over_ridden_references = grade_output.get_overridden_references( translation_input,
+                reference_key, config.get( 'override_key', None ) )
 
 
             translation_objective = config['translation_objective']
@@ -127,25 +138,29 @@ def main():
             for i,verse in enumerate(reflection_output):
                 reference = grade_output.look_up_key( verse, reference_key )
                 source = grade_output.look_up_key( verse, source_key )
-    
+
 
                 if reference and reference not in over_ridden_references:
 
                     #see if the output has a translation set yet for this verse.
                     if not grade_output.look_up_key( verse, translation_key ):
 
-                        from_translation = grade_output.look_up_key(translation_input[i], translation_key)
+                        from_translation = grade_output.look_up_key(translation_input[i],
+                            translation_key)
 
                         print( "Processing verse", i, reference, from_translation )
                         #do the reflection.
 
-                        grades = translation_grades[reference]
+                        grades = translation_grades['verses'][reference]
 
 
-                        reflection_result = perform_reflection( client, reference, from_translation, previous_output_translation, previous_vref, source, translation_objective, model_name, temperature, top_p, grades )
+                        reflection_result = perform_reflection( client, reference,
+                            from_translation, previous_output_translation, previous_vref, source,
+                            translation_objective, model_name, temperature, top_p, grades )
 
                         if translation_comment_key:
-                            grade_output.set_key( verse, translation_comment_key, reflection_result['planning_thoughts'] )
+                            grade_output.set_key( verse, translation_comment_key,
+                                reflection_result['planning_thoughts'] )
 
                         output_translation = reflection_result['updated_translation']
 
@@ -155,7 +170,7 @@ def main():
 
                         #if we haven't saved in a while, do it now.
                         if time.time() - last_save > save_timeout:
-                            grade_output.save_jsonl( reflection_output_filename, reflection_output )
+                            grade_output.save_jsonl(reflection_output_filename, reflection_output)
                             last_save = time.time()
                     else:
                         output_translation = grade_output.look_up_key( verse, translation_key )

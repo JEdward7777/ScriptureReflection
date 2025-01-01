@@ -121,13 +121,15 @@ def grade_verse( client, reference, translation, source, previous_verse_translat
     return result
 
 def average_grades( grades ):
+    """Averages the grades"""
     return sum( [grade['grade'] for grade in grades] ) / len(grades)
 
 def get_overridden_references(translation, reference_key, override_key):
+    """Find references that have been overridden"""
     overridden_references = []
     if override_key:
         last_reference = None
-        for i,verse in enumerate(translation):
+        for verse in translation:
             reference = look_up_key( verse, reference_key )
             if last_reference:
                 is_override = look_up_key( verse, override_key )
@@ -165,7 +167,7 @@ def main():
             if os.path.exists(translation_grades_filename):
                 translation_grades = load_json( translation_grades_filename )
             else:
-                translation_grades = {}
+                translation_grades = {"verses": {}}
             last_save = time.time()
 
             #now load the translation.
@@ -181,7 +183,8 @@ def main():
             #need to run through the translation and find the overridden verses.
             #this is a thing where to support verse ranges, a verse can declare that it combines
             #with the one before it.
-            over_ridden_references = get_overridden_references( translation, reference_key, config.get( 'override_key', None ) )
+            over_ridden_references = get_overridden_references( translation, reference_key,
+                config.get( 'override_key', None ) )
 
 
             translation_objective = config['translation_objective']
@@ -202,20 +205,22 @@ def main():
                     print( "Processing verse", i, reference, translation )
 
                     #see if we need any more grades for this verse.
-                    while reference not in translation_grades or \
-                            len(translation_grades[reference]['grades']) < num_grades_per_verse:
+                    while reference not in translation_grades['verses'] or \
+                            len(translation_grades['verses'][reference]['grades']) < \
+                            num_grades_per_verse:
 
                         grade_result = grade_verse( client, reference, translation, source,
                             previous_verse_translation, translation_objective, model_name,
                             temperature, top_p )
 
-                        if reference not in translation_grades:
-                            translation_grades[reference] = {'grades': []}
+                        if reference not in translation_grades['verses']:
+                            translation_grades['verses'][reference] = {'grades': []}
 
-                        translation_grades[reference]['grades'].append( grade_result )
+                        translation_grades['verses'][reference]['grades'].append( grade_result )
 
                         #now reduce the grades to a single grade.
-                        translation_grades[reference]['grade'] = average_grades( translation_grades[reference]['grades'] )
+                        translation_grades['verses'][reference]['grade'] = average_grades(
+                            translation_grades['verses'][reference]['grades'] )
 
 
                         #if we haven't saved in a while, do it now.
@@ -223,8 +228,9 @@ def main():
                             save_json( translation_grades_filename, translation_grades )
                             last_save = time.time()
 
-                    if not "grade" in translation_grades[reference]:
-                        translation_grades[reference]['grade'] = average_grades( translation_grades[reference]['grades'] )
+                    if not "grade" in translation_grades['verses'][reference]:
+                        translation_grades['verses'][reference]['grade'] = average_grades(
+                            translation_grades['verses'][reference]['grades'] )
 
                     previous_verse_translation = translation
 

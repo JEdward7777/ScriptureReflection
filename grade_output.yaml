@@ -13,3 +13,17 @@ configs:
     model: gpt-4o-mini
     temperature: 1.2
     top_p: 0.9
+  John_paraphrase_loop1:
+    active: true
+    api_key: [mm_key,key]
+    translation: output/John_3_paraphrase_reflect_1.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_1.json
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
