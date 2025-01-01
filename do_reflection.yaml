@@ -14,3 +14,33 @@ configs:
     translation_input: output/John_3_paraphrase_3.jsonl
     translation_grades: output/grading/John_3_paraphrase_3.json
     reflection_output: output/John_3_paraphrase_reflect_1.jsonl
+  John_paraphrase_loop1:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    translation_comment_key: [translation_notes]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/John_3_paraphrase_reflect_1.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_1.json
+    reflection_output: output/John_3_paraphrase_reflect_2.jsonl
+  John_paraphrase_loop2:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    translation_comment_key: [translation_notes]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/John_3_paraphrase_reflect_2.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_1.json
+    reflection_output: output/John_3_paraphrase_reflect_3.jsonl
