@@ -17,6 +17,18 @@ def load_jsonl(file):
     with open(file, encoding='utf-8') as f:
         return [json.loads(line) for line in f]
 
+def save_jsonl(filename, data):
+    """
+    Save a file with one JSON object per line.
+    """
+    if not os.path.exists(os.path.dirname(filename)):
+        os.makedirs(os.path.dirname(filename))
+    temp_filename = f"{filename}~"
+    with open(temp_filename, 'w', encoding='utf-8') as f:
+        for line in data:
+            f.write(json.dumps(line) + '\n')
+    os.replace(temp_filename, filename)
+
 def load_json(file):
     """
     Load a file with one JSON object at the root.
@@ -30,8 +42,10 @@ def save_json(filename, data, indent=4):
     """
     if not os.path.exists(os.path.dirname(filename)):
         os.makedirs(os.path.dirname(filename))
-    with open(filename, 'w', encoding='utf-8') as f:
+    temp_filename = f"{filename}~"
+    with open(temp_filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=indent)
+    os.replace(temp_filename, filename)
 
 
 def look_up_key( data, keys ):
@@ -47,6 +61,19 @@ def look_up_key( data, keys ):
         else:
             return None
     return data
+
+def set_key( data, keys, value ):
+    """
+    Set a key in a nested dictionary.
+    :param data: The dictionary to set in.
+    :param keys: The list of keys to set.
+    :param value: The value to set.
+    """
+    for key in keys[:-1]:
+        if key not in data:
+            data[key] = {}
+        data = data[key]
+    data[keys[-1]] = value
 
 def grade_verse( client, reference, translation, source, previous_verse_translation,
         translation_objective, model_name, temperature, top_p ):
@@ -95,6 +122,21 @@ def grade_verse( client, reference, translation, source, previous_verse_translat
 
 def average_grades( grades ):
     return sum( [grade['grade'] for grade in grades] ) / len(grades)
+
+def get_overridden_references(translation, reference_key, override_key):
+    overridden_references = []
+    if override_key:
+        last_reference = None
+        for i,verse in enumerate(translation):
+            reference = look_up_key( verse, reference_key )
+            if last_reference:
+                is_override = look_up_key( verse, override_key )
+                if is_override:
+                    overridden_references.append( last_reference )
+            last_reference = reference
+    return overridden_references
+
+
 def main():
     """
     Run the grade output routines.
@@ -117,13 +159,13 @@ def main():
         if config['active']:
             client = OpenAI(api_key=look_up_key( api_keys, config['api_key'] ))
 
-            grade_output_filename = config['grade_output']
+            translation_grades_filename = config['translation_grades']
 
             #load the result if we didn't finish last time.
-            if os.path.exists(grade_output_filename):
-                grade_output = load_json( grade_output_filename )
+            if os.path.exists(translation_grades_filename):
+                translation_grades = load_json( translation_grades_filename )
             else:
-                grade_output = {}
+                translation_grades = {}
             last_save = time.time()
 
             #now load the translation.
@@ -139,17 +181,7 @@ def main():
             #need to run through the translation and find the overridden verses.
             #this is a thing where to support verse ranges, a verse can declare that it combines
             #with the one before it.
-            over_ridden_references = []
-            override_key = config.get( 'override_key', None )
-            if override_key:
-                last_reference = None
-                for i,verse in enumerate(translation):
-                    reference = look_up_key( verse, reference_key )
-                    if last_reference:
-                        is_override = look_up_key( verse, override_key )
-                        if is_override:
-                            over_ridden_references.append( last_reference )
-                    last_reference = reference
+            over_ridden_references = get_overridden_references( translation, reference_key, config.get( 'override_key', None ) )
 
 
             translation_objective = config['translation_objective']
@@ -170,33 +202,33 @@ def main():
                     print( "Processing verse", i, reference, translation )
 
                     #see if we need any more grades for this verse.
-                    while reference not in grade_output or \
-                            len(grade_output[reference]['grades']) < num_grades_per_verse:
+                    while reference not in translation_grades or \
+                            len(translation_grades[reference]['grades']) < num_grades_per_verse:
 
                         grade_result = grade_verse( client, reference, translation, source,
                             previous_verse_translation, translation_objective, model_name,
                             temperature, top_p )
 
-                        if reference not in grade_output:
-                            grade_output[reference] = {'grades': []}
+                        if reference not in translation_grades:
+                            translation_grades[reference] = {'grades': []}
 
-                        grade_output[reference]['grades'].append( grade_result )
+                        translation_grades[reference]['grades'].append( grade_result )
 
                         #now reduce the grades to a single grade.
-                        grade_output[reference]['grade'] = average_grades( grade_output[reference]['grades'] )
+                        translation_grades[reference]['grade'] = average_grades( translation_grades[reference]['grades'] )
 
 
                         #if we haven't saved in a while, do it now.
                         if time.time() - last_save > save_timeout:
-                            save_json( grade_output_filename, grade_output )
+                            save_json( translation_grades_filename, translation_grades )
                             last_save = time.time()
 
-                    if not "grade" in grade_output[reference]:
-                        grade_output[reference]['grade'] = average_grades( grade_output[reference]['grades'] )
+                    if not "grade" in translation_grades[reference]:
+                        translation_grades[reference]['grade'] = average_grades( translation_grades[reference]['grades'] )
 
                     previous_verse_translation = translation
 
-            save_json( grade_output_filename, grade_output )
+            save_json( translation_grades_filename, translation_grades )
 
 
 
