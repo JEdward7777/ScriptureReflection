@@ -55,3 +55,101 @@ configs:
     model: gpt-4o-mini
     temperature: 1.2
     top_p: 0.9
+  John_paraphrase_loop4:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_4.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_4.json
+  John_paraphrase_loop5:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_5.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_5.json
+  John_paraphrase_loop6:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_6.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_6.json
+  John_paraphrase_loop7:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_7.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_7.json
+  John_paraphrase_loop8:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_8.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_8.json
+  John_paraphrase_loop9:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_9.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_9.json
+  John_paraphrase_loop10:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_verse: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_10.jsonl
+    translation_grades: output/grading/John_3_paraphrase_reflect_10.json
