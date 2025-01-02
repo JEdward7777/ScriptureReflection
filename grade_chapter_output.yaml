@@ -1,0 +1,15 @@
+configs:
+  John_paraphrase_loop10:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    num_grades_per_chapter: 5
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation: output/John_3_paraphrase_reflect_10.jsonl
+    translation_chapter_grades: output/chapter_grading/John_3_paraphrase_chapter_reflect_10b.json

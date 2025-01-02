@@ -8,23 +8,7 @@ from datetime import datetime
 import yaml
 import easy_draft
 
-
-def split_ref( reference ):
-    """
-    Splits a reference into book, chapter, and verse.
-    """
-    if " " not in reference:
-        return reference, None, None
-    last_space_index = reference.rindex(" ")
-    book_split = reference[:last_space_index]
-    chapter_verse_str = reference[last_space_index+1:]
-    if ":" not in chapter_verse_str:
-        return book_split, int(chapter_verse_str), None
-    chapter_num,verse_num = chapter_verse_str.split(":")
-    if "-" in verse_num:
-        return book_split, int(chapter_num), verse_num
-    return book_split, int(chapter_num), int(verse_num)
-
+import utils
 
 def convert_to_ryder_jsonl_format(file):
     """
@@ -171,7 +155,7 @@ def convert_to_usfm(file):
             #reference = verse["fresh_translation"]["reference"]
             reference = vrefs[i]
             if " " in reference:
-                book, _, _ = split_ref(reference)
+                book, _, _ = utils.split_ref(reference)
                 usfm_name = USFM_NAME[book]
                 book_to_verses[usfm_name].append(verse)
 
@@ -184,7 +168,7 @@ def convert_to_usfm(file):
             for verse in verses:
                 reference = verse["fresh_translation"]["reference"]
                 if " " in reference:
-                    book, chapter_num, verse_num = split_ref( reference )
+                    book, chapter_num, verse_num = utils.split_ref( reference )
 
                     #if the chapter is different, change the chapter and put in a paragraph.
                     if chapter_num != current_chapter_num:
@@ -230,7 +214,7 @@ def convert_to_markdown(file):
                 reference = verse['vref']
                 if " " in reference:
                     if reference not in verse_to_drop:
-                        book, chapter_num, _ = split_ref( reference )
+                        book, chapter_num, _ = utils.split_ref( reference )
                         verse['vref_line_number'] = i
                         book_to_chapter_to_verses[book][chapter_num].append(verse)
                     else:

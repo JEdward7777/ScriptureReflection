@@ -108,7 +108,7 @@ def generate_verse(
         model=model_name,
         messages=[
             {"role": "system", "content": "You are a Christian Bible translator with 30 years " +
-            "of experience as a linguist who translates the Bible from a Conservative Christain " +
+            "of experience as a linguist who translates the Bible from a Conservative Christian " +
             "perspective."},
             {"role": "user", "content": message },
         ],

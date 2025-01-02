@@ -3,77 +3,12 @@ This module grades a translation using ChatGPT.
 """
 
 import os
-import json
 import time
 import yaml
 from openai import OpenAI
 from pydantic import BaseModel
+import utils
 
-
-def load_jsonl(file):
-    """
-    Load a file with one JSON object per line.
-    """
-    with open(file, encoding='utf-8') as f:
-        return [json.loads(line) for line in f]
-
-def save_jsonl(filename, data):
-    """
-    Save a file with one JSON object per line.
-    """
-    if not os.path.exists(os.path.dirname(filename)):
-        os.makedirs(os.path.dirname(filename))
-    temp_filename = f"{filename}~"
-    with open(temp_filename, 'w', encoding='utf-8') as f:
-        for line in data:
-            f.write(json.dumps(line, ensure_ascii=False) + '\n')
-    os.replace(temp_filename, filename)
-
-def load_json(file):
-    """
-    Load a file with one JSON object at the root.
-    """
-    with open(file, encoding='utf-8') as f:
-        return json.load(f)
-
-def save_json(filename, data, indent=4):
-    """
-    Save a file with one JSON object at the root.
-    """
-    if not os.path.exists(os.path.dirname(filename)):
-        os.makedirs(os.path.dirname(filename))
-    temp_filename = f"{filename}~"
-    with open(temp_filename, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=indent)
-    os.replace(temp_filename, filename)
-
-
-def look_up_key( data, keys ):
-    """
-    Look up a key in a nested dictionary.
-    :param data: The dictionary to look up in.
-    :param keys: The list of keys to look up.
-    :return: The value at the key, or None if it doesn't exist.
-    """
-    for key in keys:
-        if key in data:
-            data = data[key]
-        else:
-            return None
-    return data
-
-def set_key( data, keys, value ):
-    """
-    Set a key in a nested dictionary.
-    :param data: The dictionary to set in.
-    :param keys: The list of keys to set.
-    :param value: The value to set.
-    """
-    for key in keys[:-1]:
-        if key not in data:
-            data[key] = {}
-        data = data[key]
-    data[keys[-1]] = value
 
 def grade_verse( client, reference, translation, source, previous_verse_translation,
         translation_objective, model_name, temperature, top_p ):
@@ -95,7 +30,7 @@ def grade_verse( client, reference, translation, source, previous_verse_translat
     if previous_verse_translation:
         user_message_array += [ "Previous Verse: ", str(previous_verse_translation), "\n" ]
 
-    user_message_array += [ "\nReview the students work from a conservative Christain perspective ",
+    user_message_array += [ "\nReview the students work from a conservative Christian perspective ",
      "and give it a grade comment and a grade from 0 to 100 where 0 is failing and 100 is ",
      "perfection." ]
     user_message = "".join(user_message_array)
@@ -124,19 +59,7 @@ def average_grades( grades ):
     """Averages the grades"""
     return sum( [grade['grade'] for grade in grades] ) / len(grades)
 
-def get_overridden_references(translation, reference_key, override_key):
-    """Find references that have been overridden"""
-    overridden_references = []
-    if override_key:
-        last_reference = None
-        for verse in translation:
-            reference = look_up_key( verse, reference_key )
-            if last_reference:
-                is_override = look_up_key( verse, override_key )
-                if is_override:
-                    overridden_references.append( last_reference )
-            last_reference = reference
-    return overridden_references
+
 
 
 def main():
@@ -159,20 +82,20 @@ def main():
     for config_name, config in grade_output_yaml['configs'].items():
         print( f"Running config {config_name}" )
         if config['active']:
-            client = OpenAI(api_key=look_up_key( api_keys, config['api_key'] ))
+            client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
             translation_grades_filename = config['translation_grades']
 
             #load the result if we didn't finish last time.
             if os.path.exists(translation_grades_filename):
-                translation_grades = load_json( translation_grades_filename )
+                translation_grades = utils.load_json( translation_grades_filename )
             else:
                 translation_grades = {"verses": {}}
             last_save = time.time()
 
             #now load the translation.
             translation_filename = config['translation']
-            translation = load_jsonl( translation_filename )
+            translation = utils.load_jsonl( translation_filename )
 
             reference_key = config['reference_key']
             source_key = config['source_key']
@@ -183,7 +106,7 @@ def main():
             #need to run through the translation and find the overridden verses.
             #this is a thing where to support verse ranges, a verse can declare that it combines
             #with the one before it.
-            over_ridden_references = get_overridden_references( translation, reference_key,
+            over_ridden_references = utils.get_overridden_references( translation, reference_key,
                 config.get( 'override_key', None ) )
 
 
@@ -196,9 +119,9 @@ def main():
             #now loop through the translation and do the grading.
             previous_verse_translation = None
             for i,verse in enumerate(translation):
-                reference = look_up_key( verse, reference_key )
-                translation = look_up_key( verse, translation_key )
-                source = look_up_key( verse, source_key )
+                reference = utils.look_up_key( verse, reference_key )
+                translation = utils.look_up_key( verse, translation_key )
+                source = utils.look_up_key( verse, source_key )
 
                 if reference and translation and reference not in over_ridden_references:
 
@@ -225,7 +148,7 @@ def main():
 
                         #if we haven't saved in a while, do it now.
                         if time.time() - last_save > save_timeout:
-                            save_json( translation_grades_filename, translation_grades )
+                            utils.save_json( translation_grades_filename, translation_grades )
                             last_save = time.time()
 
                     if not "grade" in translation_grades['verses'][reference]:
@@ -244,7 +167,7 @@ def main():
             translation_grades['average_grade'] = grade_sum / grade_count
 
 
-            save_json( translation_grades_filename, translation_grades )
+            utils.save_json( translation_grades_filename, translation_grades )
 
 
 

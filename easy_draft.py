@@ -68,7 +68,7 @@ def generate_verse(
         model=model_name,
         messages=[
             {"role": "system", "content": "You are a Christian Bible translator with 30 years " +
-            "of experience as a linguist who translates the Bible from a Conservative Christain " +
+            "of experience as a linguist who translates the Bible from a Conservative Christian " +
             "perspective."},
             {"role": "user", "content": message },
         ],
@@ -172,7 +172,7 @@ def run_config(config: dict, ebible_dir: str) -> None:
                               last_result, config['model'], config['target_language'],
                               config['temperature'], config['top_p'] )
                             got_it = True
-                        except Exception as e:
+                        except Exception as e:  # pylint: disable=broad-except
                             print( f"Failed to generate verse for {vref}: {e}" )
                             time.sleep( 10 )
 

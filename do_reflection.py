@@ -7,8 +7,8 @@ import copy
 import yaml
 from openai import OpenAI
 from pydantic import BaseModel
-import grade_output
 
+import utils
 
 def perform_reflection( client, reference, from_translation, previous_output_translation,
         previous_vref, source, translation_objective, model_name, temperature, top_p, grades ):
@@ -95,22 +95,22 @@ def main():
     for config_name, config in do_reflection_yaml['configs'].items():
         print( f"Running config {config_name}" )
         if config['active']:
-            client = OpenAI(api_key=grade_output.look_up_key( api_keys, config['api_key'] ))
+            client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
             reflection_output_filename = config['reflection_output']
             translation_key = config['translation_key']
-            translation_input = grade_output.load_jsonl( config['translation_input'] )
+            translation_input = utils.load_jsonl( config['translation_input'] )
 
             #load the result if we didn't finish last time.
             if os.path.exists(reflection_output_filename):
-                reflection_output = grade_output.load_jsonl( reflection_output_filename )
+                reflection_output = utils.load_jsonl( reflection_output_filename )
             else:
                 #otherwise load the existing translation and blank out all the translation keys.
                 reflection_output = copy.deepcopy( translation_input )
 
                 for verse in reflection_output:
-                    if grade_output.look_up_key( verse, translation_key ):
-                        grade_output.set_key( verse, translation_key, "" )
+                    if utils.look_up_key( verse, translation_key ):
+                        utils.set_key( verse, translation_key, "" )
             last_save = time.time()
 
 
@@ -118,7 +118,7 @@ def main():
 
             reference_key = config['reference_key']
             source_key = config['source_key']
-            over_ridden_references = grade_output.get_overridden_references( translation_input,
+            over_ridden_references = utils.get_overridden_references( translation_input,
                 reference_key, config.get( 'override_key', None ) )
 
 
@@ -129,23 +129,23 @@ def main():
 
 
             translation_grades_filename = config['translation_grades']
-            translation_grades = grade_output.load_json( translation_grades_filename )
+            translation_grades = utils.load_json( translation_grades_filename )
 
 
             #now loop through the translation and do the grading.
             previous_output_translation = None
             previous_vref = None
             for i,verse in enumerate(reflection_output):
-                reference = grade_output.look_up_key( verse, reference_key )
-                source = grade_output.look_up_key( verse, source_key )
+                reference = utils.look_up_key( verse, reference_key )
+                source = utils.look_up_key( verse, source_key )
 
 
                 if reference and reference not in over_ridden_references:
 
                     #see if the output has a translation set yet for this verse.
-                    if not grade_output.look_up_key( verse, translation_key ):
+                    if not utils.look_up_key( verse, translation_key ):
 
-                        from_translation = grade_output.look_up_key(translation_input[i],
+                        from_translation = utils.look_up_key(translation_input[i],
                             translation_key)
 
                         print( "Processing verse", i, reference, from_translation )
@@ -159,27 +159,27 @@ def main():
                             translation_objective, model_name, temperature, top_p, grades )
 
                         if translation_comment_key:
-                            grade_output.set_key( verse, translation_comment_key,
+                            utils.set_key( verse, translation_comment_key,
                                 reflection_result['planning_thoughts'] )
 
                         output_translation = reflection_result['updated_translation']
 
                         if output_translation:
-                            grade_output.set_key( verse, translation_key, output_translation )
+                            utils.set_key( verse, translation_key, output_translation )
 
 
                         #if we haven't saved in a while, do it now.
                         if time.time() - last_save > save_timeout:
-                            grade_output.save_jsonl(reflection_output_filename, reflection_output)
+                            utils.save_jsonl(reflection_output_filename, reflection_output)
                             last_save = time.time()
                     else:
-                        output_translation = grade_output.look_up_key( verse, translation_key )
+                        output_translation = utils.look_up_key( verse, translation_key )
 
 
                     previous_output_translation = output_translation
                     previous_vref = reference
 
-            grade_output.save_jsonl( reflection_output_filename, reflection_output )
+            utils.save_jsonl( reflection_output_filename, reflection_output )
 
 
 
