@@ -4,10 +4,9 @@ This module implements the easy_draft functionality for generating a draft of th
 import os
 import time
 import json
-import yaml
 from openai import OpenAI
 from pydantic import BaseModel
-from enum import Enum
+import yaml
 import verse_parsing
 
 
@@ -16,6 +15,9 @@ with open( 'key.yaml', encoding='utf-8' ) as keys_f:
 client = OpenAI(api_key=api_key)
 
 def split_ref( reference ):
+    """
+    Given a Bible reference, return the book, chapter, and verse.
+    """
     if " " not in reference:
         return reference, None, None
     last_space_index = reference.rindex(" ")
@@ -80,7 +82,8 @@ def generate_verse(
       f"translations. {translation_command}")
     message += f"\nThe source text is: {vref}: {source}"
     if last_translation_dict:
-        message += f"\nFor context the previous verse is: {last_translation_dict['vref']}: {last_translation_dict['fresh_translation']['text']}"
+        message += f"\nFor context the previous verse is: {last_translation_dict['vref']}: " + \
+            f"{last_translation_dict['fresh_translation']['text']}"
 
         last_book, last_chapter, _ = split_ref(last_translation_dict['vrefs'][0])
         this_book, this_chapter, _ = split_ref(vref)
@@ -90,15 +93,21 @@ def generate_verse(
         #prevent ranging over max verse range
         if len(last_translation_dict['vrefs']) >= max_verse_range:
             allow_range = False
-        
+
         #prevent ranging over chapter breaks.
         if last_book != this_book or last_chapter != this_chapter:
             allow_range = False
 
         if allow_range:
-            # message += f"\nIf words in the current verse {vref} need to occur before words in the last verse {last_translation_dict['vref']}, in order to better express the thought in {target_language}, set forming_verse_range_with_previous_verse to true and then output the translation of {last_translation_dict['vref']} and {vref} together. Do not join verses just because if forms a cohesive thought or because the flow is seamless.  There is a cost to joining the verses, so if the split is visible, it must remain."
-            # message += f"\nSometimes when translating the Bible, two verses become one verse because the words from both verses get mixed together and it is not possible anymore to designate where the second verse goes.  In this case a verse range is specified instead of identifying each individual verses.  If you chose to mix the words of the current verse {vref} with the previous verse {last_translation_dict['vref']}, set the key forming_verse_range_with_previous_verse to true and then output the translation of {last_translation_dict['vref']} and {vref} together.  Don't confuse this with forming a paragraph, or a logical unit.  Forming a verse range is specifically for the case where we can't stick the verse number in there anymore because the verses phisically got mixed together and lost their individual identities.  When this is done the output translation will literally be missing a number.  If the split is visible, it must remain and a verse range shouldn't be formed."
-            message += f"\nIf the meaning or grammar of this verse {vref} is dependent on the previous verse {last_translation_dict['vref']} to the extent that words or ideas from this verse need to be rearranged **before or within** the previous verse for the translation to make sense, indicate that this verse should be merged into a \"verse range.\"\nOnly suggest merging if such reordering is essential and results in a combined, cohesive translation where the individual verses can no longer be clearly identified.\nIf merging is not required, provide a standalone translation for this verse. Clearly state whether merging is needed using forming_verse_range_with_previous_verse."
+            message += f"\nIf the meaning or grammar of this verse {vref} is dependent on the " + \
+                f"previous verse {last_translation_dict['vref']} to the extent that words or " + \
+                "ideas from this verse need to be rearranged **before or within** the " + \
+                "previous verse for the translation to make sense, indicate that this verse " + \
+                "should be merged into a \"verse range.\"\nOnly suggest merging if such " + \
+                "reordering is essential and results in a combined, cohesive translation " + \
+                "where the individual verses can no longer be clearly identified.\nIf merging " + \
+                "is not required, provide a standalone translation for this verse. Clearly " + \
+                "state whether merging is needed using forming_verse_range_with_previous_verse."
         else:
             message += "\nSet forming_verse_range_with_previous_verse to false."
     else:
@@ -209,11 +218,16 @@ def run_config(config: dict, ebible_dir: str) -> None:
                     got_it = False
                     while not got_it:
                         try:
-                            object_result, translation_time = generate_verse( vref=vref, source=source_line,
-                              last_translation_dict=last_translation_result, model_name=config['model'], target_language=config['target_language'],
-                              temperature=config['temperature'], top_p=config['top_p'], max_verse_range=max_verse_range, translation_command=config['translation_command'] )
+                            object_result, translation_time = generate_verse( vref=vref,
+                              source=source_line,
+                              last_translation_dict=last_translation_result,
+                              model_name=config['model'],
+                              target_language=config['target_language'],
+                              temperature=config['temperature'], top_p=config['top_p'],
+                              max_verse_range=max_verse_range,
+                              translation_command=config['translation_command'] )
                             got_it = True
-                        except Exception as e:
+                        except Exception as e:  # pylint: disable=broad-except
                             print( f"Failed to generate verse for {vref}: {e}" )
                             time.sleep( 10 )
 
@@ -224,17 +238,21 @@ def run_config(config: dict, ebible_dir: str) -> None:
                         translation_result['vrefs'] = [vref]
                         translation_result['vref'] = vref
                     else:
-                        assert not not last_translation_result, "last_translation_result should be truthy if we got a range output."
-                        translation_result['source'] = last_translation_result['source'] + " " + source_line
+                        assert last_translation_result, "last_translation_result should " + \
+                            "be truthy if we got a range output."
+                        translation_result['source'] = last_translation_result['source'] + " " + \
+                            source_line
                         translation_result['vrefs'] = last_translation_result['vrefs'] + [vref]
-                        translation_result['vref'] = verse_parsing.to_range( translation_result['vrefs'],  vrefs )
+                        translation_result['vref'] = verse_parsing.to_range(
+                            translation_result['vrefs'],  vrefs )
 
                     result = object_result.fresh_translation.text
 
                     print( f"Translated {vref}: {result}" )
 
                 plane_text_output_file.write( result + "\n" )
-                jsonl_output_file.write( json.dumps( translation_result, ensure_ascii=False ) + "\n" )
+                jsonl_output_file.write( json.dumps( translation_result, ensure_ascii=False ) +
+                    "\n" )
                 last_translation_result = translation_result
 
 

@@ -37,7 +37,8 @@ def grade_chapter( client, source_and_translation,
 
     user_message_array += [ "\nReview the students work from a conservative Christian perspective ",
      "and give it a grade comment and a grade from 0 to 100 where 0 is failing and 100 is ",
-     "perfection.  In your comments, highlight any instances where added explanations are repeated unnecessarily and suggest how to consolidate those definitions for clarity." ]
+     "perfection.  In your comments, highlight any instances where added explanations are ",
+     "repeated unnecessarily and suggest how to consolidate those definitions for clarity." ]
     user_message = "".join(str(x) for x in user_message_array)
 
     class GradeResponse(BaseModel):
@@ -147,8 +148,8 @@ def main():
 
                 #see if we need any more grades for this verse.
                 while f"{book} {chapter}" not in translation_chapter_grades['chapters'] or \
-                        len(translation_chapter_grades['chapters'][f"{book} {chapter}"]['grades']) < \
-                        num_grades_per_chapter:
+                        len(translation_chapter_grades['chapters'][f"{book} {chapter}"]
+                        ['grades']) < num_grades_per_chapter:
 
                     grade_result = grade_chapter( client, source_and_translation,
         translation_objective, model_name, temperature, top_p )

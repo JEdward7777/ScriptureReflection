@@ -1,0 +1,44 @@
+# JHN 3
+[Book List](../README.md)
+
+3 
+
+| Reference | Verse | Translation Notes |
+|:---------:|-------|-------------------|
+|JHN 3:1|One night, a man named Nicodemus came to see Jesus. He was a Pharisee, which means he was a teacher of God's laws and a leader of the Jewish people. Nicodemus wanted to learn more about God and believed that Jesus came from God, so he had important questions to ask Him.|Consolidate repetitive explanations regarding baptism and being 'born again' for clarity and to avoid confusion among young readers.|
+|JHN 3:2|Nicodemus quietly came to Jesus one night and said, 'Rabbi, we know you are someone sent by God because you do amazing things. No one could do those things unless God is helping him.' A Rabbi is a teacher who helps people know God better.|Streamline the introduction of baptism and clarify its significance in one statement to make it easier for children to grasp.|
+|JHN 3:3|Jesus answered him, 'You must be born again to see God's kingdom. This means you need to start fresh in your heart with God and change your life to be with Him forever in heaven.'|Combine the explanations about being born again to reduce repetition while ensuring the core message remains clear.|
+|JHN 3:4-5|Nicodemus was confused and asked, 'How can an old person be born again? Can they go back inside their mom's tummy to be born again?' Jesus replied, 'Listen carefully! No one can see God's Kingdom unless they are born again, which means they need to start a new life with God. When someone believes in me, God's Spirit helps them change inside. Being baptized shows everyone that they believe in me and want to follow my way. It's important because it shows obedience to God and a fresh start with Him!'|Clarify the explanation about starting new with God without repeating concepts multiple times.|
+|JHN 3:6|When a baby is born, they come from their mom. But when someone believes in Jesus, it’s like getting a special new start from God’s Spirit, which means they change on the inside to become more like Jesus!|Consolidate explanations about physical birth and spiritual rebirth into a single clear statement.|
+|JHN 3:7|Everyone needs to be born again to be a part of God's family. Believing in Jesus means starting fresh with God's Spirit, feeling love in our hearts, and learning to share that love with others.|Reduce repetition in explaining the need to be born again; mention it once and refer back to it as necessary.|
+|JHN 3:8|The Holy Spirit is like the wind; you can’t see it, but you can feel it. When you believe in Jesus, you feel the Holy Spirit working in your heart, helping you love God and others.|Simplify the analogy of the Holy Spirit as the wind, focusing on its importance rather than the details.|
+|JHN 3:9|Nicodemus was curious and asked, 'How can someone be born again? What does that mean?' He couldn’t see how trusting in Jesus could change someone’s heart. But believing in Jesus brings new life inside.|Keep the questions but clarify the significance of believing in Jesus in a single explanation.|
+|JHN 3:10|Jesus answered, 'You are a teacher of God’s people, but you don’t understand what it means to be born again. Trusting in Jesus changes our hearts and helps us understand God's love better.'|Consolidate the explanation of being a teacher and understanding the concept of being born again.|
+|JHN 3:11-12|'I want to share something important! We talk about what we know about God, but some people still don’t believe us. If you don’t believe the everyday things I tell you, how can you trust me about God in Heaven? Believing in Jesus helps us see how much God loves us!'|Summarize the importance of belief and understanding of heavenly truths in one clear statement.|
+|JHN 3:13|No one can go up to Heaven except for Jesus, who came down from there. He is the Son of Man and knows all about Heaven. He tells us the truth about God.|Clarify that Jesus is the only way to God without unnecessary complexity.|
+|JHN 3:14|Just like Moses held up a snake on a stick in the desert to help people feel better when they were sick, Jesus will be lifted up on a cross to help us with our sins. We need to trust Him to save us.|Summarize the analogy of Moses and the importance of believing in Jesus in one explanation.|
+|JHN 3:15|Everyone who believes in Jesus will have life forever with God. Jesus loves us, and when we believe in Him, we can be with God forever!|Combine the idea of believing in Jesus with receiving eternal life into one clear statement.|
+|JHN 3:16|God loves everyone so much that He gave us His one and only Son, Jesus. If you believe in Him, you will be forgiven and able to be with God forever!|Keep the explanation about God's love concise and clear for young readers.|
+|JHN 3:17|God didn’t send Jesus to tell us we’re wrong. He sent Him because He loves everyone! Jesus came to save us, not to judge us.|Summarize God's intentions with Jesus in one simple explanation.|
+|JHN 3:18|If you believe in Jesus, you can be close to Him forever! But if you don’t believe in Him, you are missing out on the happiness that comes from God.|Clarify the difference between believing and not believing in Jesus in a concise manner.|
+|JHN 3:19|Here’s something important: God sent Jesus to be the light that shows us the good things to do. Some people choose to stay away from Jesus and miss out on His love.|Streamline the explanation about light and darkness, emphasizing the choice people have.|
+|JHN 3:20|Some people do wrong things and stay away from Jesus because they don’t want their mistakes seen. But Jesus shows us how much God loves us and helps us choose what is right.|Combine ideas about sin and coming to Jesus into a single cohesive statement.|
+|JHN 3:21|When people choose to do what is right, they get closer to God, and their good actions show that they trust Him.|Encourage good actions as a way to connect with God without repeating phrases.|
+|JHN 3:22|After that, Jesus and His friends went to Judea, where Jesus taught everyone how to love God and baptized people who wanted to follow Him.|Clarify the events of Jesus and John's baptism in a straightforward manner.|
+|JHN 3:23|At the same time, John the Baptist was in Aenon, near Salim, where there was a lot of water. Many people came to him to be baptized, showing they wanted to say sorry for their sins.|Summarize John’s ministry and the purpose of baptism into one clear explanation.|
+|JHN 3:24|John was teaching people about God and helping them prepare to follow Jesus.|Remove repetitive details while keeping the essence of John's ministry.|
+|JHN 3:25|One day, John's friends talked to a Jewish teacher about how to be clean inside and make God happy.|Clarify the discussions between John’s disciples and a teacher succinctly.|
+|JHN 3:26|Some of John's friends told him, 'Remember Jesus? He's baptizing people now, and everyone is going to Him! What do you think about this?'|Summarize John's excitement about Jesus succinctly without repetition.|
+|JHN 3:27|John replied, 'No one can have anything good unless God gives it to them. Everything good comes from God!'|Reinforce the idea of God's gifts in a simplified way.|
+|JHN 3:28|John the Baptist said, 'Don't forget, I told you I’m not the important one. I’m here to help others get ready for Jesus, who can save everyone!'|Clarify John's role in preparing for Jesus without redundancy.|
+|JHN 3:29|John said, 'Jesus is the groom who loves his bride, and I am like his friend who is happy for him! My heart is full of joy because I get to tell everyone how special Jesus is!'|Use a clear metaphor to describe John's joy in relation to Jesus.|
+|JHN 3:30|Jesus should be number one in everyone's hearts! I want everyone to notice Him more and more.|Encourage humility while focusing on Jesus as central.|
+|JHN 3:31|Jesus is the greatest because He came from heaven! He shows us God's love with His actions.|Clarify Jesus's greatness with simplicity.|
+|JHN 3:32|Jesus tells us everything He has seen and heard from God. We need to believe Him because His words show us the truth.|Combine ideas about belief in Jesus and understanding God.|
+|JHN 3:33|When someone believes what Jesus says, they show that they trust God and understand His love.|Reinforce trust in Jesus's message as a pathway to God.|
+|JHN 3:34|God sent Jesus to tell us about His love. Jesus speaks the truth, and we can trust what He says.|Summarize Jesus's mission clearly and simply.|
+|JHN 3:35|God loves Jesus very much! He has given Jesus the power to guide us and show us how to live well.|Reinforce God's love and power through Jesus in one statement.|
+|JHN 3:36|If you believe in Jesus, you get to live forever with God! But if you don’t believe in Him, you miss out on that joy.|Combine the promises of eternal life and the consequences of disbelief in a concise statement.|
+
+
+3 
