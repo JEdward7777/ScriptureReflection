@@ -37,7 +37,7 @@ def grade_chapter( client, source_and_translation,
 
     user_message_array += [ "\nReview the students work from a conservative Christian perspective ",
      "and give it a grade comment and a grade from 0 to 100 where 0 is failing and 100 is ",
-     "perfection." ]
+     "perfection.  In your comments, highlight any instances where added explanations are repeated unnecessarily and suggest how to consolidate those definitions for clarity." ]
     user_message = "".join(str(x) for x in user_message_array)
 
     class GradeResponse(BaseModel):

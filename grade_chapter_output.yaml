@@ -12,4 +12,4 @@ configs:
     temperature: 1.2
     top_p: 0.9
     translation: output/John_3_paraphrase_reflect_10.jsonl
-    translation_chapter_grades: output/chapter_grading/John_3_paraphrase_chapter_reflect_10b.json
+    translation_chapter_grades: output/chapter_grading/John_3_paraphrase_chapter_reflect_10.json
