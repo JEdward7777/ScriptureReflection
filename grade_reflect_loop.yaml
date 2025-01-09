@@ -9,8 +9,42 @@ configs:
     translation_key: [fresh_translation,text]
     override_key: [forming_verse_range_with_previous_verse]
     translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
     model: gpt-4o-mini
     temperature: 1.2
     top_p: 0.9
     translation_input: output/John_3_paraphrase_3.jsonl
     reflection_output: output/seven_year_old_paraphrase__auto_loop.jsonl
+    reflection_loops_per_verse: 10
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/seven_year_old_paraphrase__auto_loop_grades.csv
+
+    translation_comment_key: [translation_notes]
+
+  seven_year_old_paraphrase__auto_15_loops:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/seven_year_old_paraphrase__auto_loop.jsonl
+    reflection_output: output/seven_year_old_paraphrase__auto_15_loops.jsonl
+    reflection_loops_per_verse: 15
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/seven_year_old_paraphrase__auto_loop_grades.csv
+
+    translation_comment_key: [translation_notes]

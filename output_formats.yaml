@@ -80,3 +80,12 @@ configs:
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target langauge: English
+
+  seven_year_old_paraphrase__auto_loop:
+    markdown_format:
+      outputs:
+        source language: Greek
+        source text name: grc-grcbyz
+        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
+        target langauge: English

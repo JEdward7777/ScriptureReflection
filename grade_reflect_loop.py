@@ -39,12 +39,20 @@ def compute_completed_loops( verse ):
     return num_loops - 1
 
 
-def compute_verse_grade( verse ):
+def compute_verse_grade( verse, config ):
+    """
+    Compute the average grade of a verse.
+    """
+    vref = utils.look_up_key( verse, config['reference_key'] )
+
+    if vref is None:
+        return None
+
     if 'reflection_loops' not in verse:
-        return 0
+        return None
 
     if len(verse['reflection_loops']) == 0:
-        return 0
+        return None
 
     #iterate backwords through the reflection_loops until we find
     #one that we can get a grade from.
@@ -65,13 +73,13 @@ def compute_verse_grade( verse ):
             #if this is the correct count, we can stash it.
             if grade_count >= config['grades_per_reflection_loop']:
                 reflection_loop['average_grade'] = averaged_grade
-            
+
             return averaged_grade
 
     return None
-        
 
-def compute_translation_grade( translation ):
+
+def compute_translation_grade( translation, config ):
     """
     Compute the average grade of the translation.
     """
@@ -79,7 +87,7 @@ def compute_translation_grade( translation ):
     verse_sum = 0
 
     for verse in translation:
-        verse_grade = compute_verse_grade( verse )
+        verse_grade = compute_verse_grade( verse, config )
         if verse_grade is not None:
             verse_count += 1
             verse_sum += verse_grade
@@ -94,19 +102,20 @@ def build_common_context( selected_verse, reflection_output, config, over_ridden
     There are different LLM operations but they have common context.  This builds it.
     """
 
-    num_before_verses = config['num_before_verses']
-    num_after_verses = config['num_after_verses']
+    num_context_verses_before = config['num_context_verses_before']
+    num_context_verses_after = config['num_context_verses_after']
 
     selected_verse_index = reflection_output.index( selected_verse )
 
-    first_included_index = max(selected_verse_index - num_before_verses, 0)
-    last_included_index = min(selected_verse_index + num_after_verses, len(reflection_output) - 1)
+    first_included_index = max(selected_verse_index - num_context_verses_before, 0)
+    last_included_index = min(selected_verse_index + num_context_verses_after, 
+        len(reflection_output) - 1)
 
     source_and_translation = []
 
     for index in range( first_included_index, last_included_index + 1 ):
-        verse_reference = utils.look_up_key( reflection_output[index], config['verse_reference_key'] )
-        if verse_reference not in over_ridden_references:
+        verse_reference = utils.look_up_key( reflection_output[index], config['reference_key'] )
+        if verse_reference is not None and verse_reference not in over_ridden_references:
             translation = utils.look_up_key( reflection_output[index], config['translation_key'] )
             source = utils.look_up_key( reflection_output[index], config['source_key'] )
 
@@ -116,13 +125,17 @@ def build_common_context( selected_verse, reflection_output, config, over_ridden
                 'translation': translation
             })
 
+    selected_verse_vref = utils.look_up_key( selected_verse, config['reference_key'] )
+
 
     source_and_translation_json = json.dumps( source_and_translation, ensure_ascii=False, indent=2 )
     user_message_array = [
         "Translation Objective: ", config['translation_objective'], "\n\n",
-        source_and_translation_json, "\n" ]
+        f"Source and target text of {selected_verse_vref} and its surrounding context:\n", source_and_translation_json, "\n" ]
 
-    return "\n".join( str(x) for x in user_message_array )
+    result = "".join( str(x) for x in user_message_array )
+
+    return result
 
 
 def grade_verse( selected_verse, common_context, client, config ):
@@ -136,8 +149,8 @@ def grade_verse( selected_verse, common_context, client, config ):
         "conservitive Christian viewpoint."
 
     user_message_array = [
-        common_context, "\n\n",
-        "\nReview the students work translating ", vref, " from a conservative Christian perspective ",
+        common_context, "\n",
+        "Instructions: Review the students work translating ", vref, " from a conservative Christian perspective ",
         "and give it a grade comment and a grade from 0 to 100 where 0 is failing and 100 is ",
         "perfection.  Grade ", vref, " for clarity, accuracy, perspective, and redundancy with the previous ",
         "verse as well as other verses." 
@@ -152,7 +165,7 @@ def grade_verse( selected_verse, common_context, client, config ):
         grade: int
 
     completion = client.beta.chat.completions.parse(
-        model=config['model_name'],
+        model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": user_message},
@@ -180,15 +193,15 @@ def perform_reflection( selected_verse, common_context, client, config ):
 
     user_message_array = [ common_context, "\n\n" ]
 
-    user_message_array += [ "The reference being revised is ", vref, "\n" ]
+    user_message_array += [ "The the current verse is ", vref, "\n" ]
 
     for i,grade in enumerate(selected_verse['reflection_loops'][-1]['grades']):
         user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
 
-    user_message_array += ["Attempt to satisfy all provided instructions for ", vref, " to the best of your ",
+    user_message_array += ["Instructions: Attempt to satisfy all provided instructions for ", vref, " to the best of your ",
         "ability. If the instructions are contradictory or mutually exclusive, use your own ",
         "logic to resolve the conflict while prioritizing consistency and alignment with the ",
-        "overall goal.  Output your planning_thourhts, the reference ", vref, ", and the updated translation.\n" ]
+        "overall goal.  Output your planning_thoughts, the reference ", vref, ", and the updated translation for ", vref, ".\n" ]
 
     user_message = "".join(str(s) for s in user_message_array)
 
@@ -200,7 +213,7 @@ def perform_reflection( selected_verse, common_context, client, config ):
         updated_translation: str
 
     completion = client.beta.chat.completions.parse(
-        model=config['model_name'],
+        model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": user_message}
@@ -337,21 +350,32 @@ def main():
 
                         #now save if we haven't saved in a while
                         if output_dirty and time.time() - last_save > save_timeout:
-                            utils.save_jsonl( reflection_output, reflection_output_filename )
+                            utils.save_jsonl( reflection_output_filename, reflection_output )
                             last_save = time.time()
                             output_dirty = False
 
                     else:
                         done = True
 
-                    average_grade = compute_translation_grade( reflection_output )
+                    average_grade = compute_translation_grade( reflection_output, config )
                     #spit out the current time and the average_grade and action_done
-                    print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade} - {action_done}" )
+                    print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade:05.2f} - {action_done} - completed loops: {compute_completed_loops( verse_with_fewest_loops )}" )
+
+                    if "average_grade_csv_log" in config:
+                        #create the dir if it doesn't exist
+                        average_grade_csv_log = config['average_grade_csv_log']
+                        log_dir = os.path.dirname( average_grade_csv_log )
+                        if not os.path.exists(log_dir):
+                            os.makedirs(log_dir)
+                        with open( average_grade_csv_log, 'a', encoding='utf-8' ) as f:
+                            if os.path.getsize(average_grade_csv_log) == 0:
+                                f.write( "time,average_grade,action_done,completed_loops\n" )
+                            f.write( f"{time.strftime('%Y-%m-%d %H:%M:%S')},{average_grade},{action_done},{compute_completed_loops( verse_with_fewest_loops )}\n" )
 
             finally:
                 #save the reflection output
                 if output_dirty:
-                    utils.save_jsonl( reflection_output, reflection_output_filename )
+                    utils.save_jsonl( reflection_output_filename, reflection_output )
 
 if __name__ == "__main__":
     main()
