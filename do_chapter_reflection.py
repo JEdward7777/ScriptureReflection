@@ -1,5 +1,8 @@
 """
 This module implements the reflection functionality for generating a draft of the Bible.
+It takes in a translation and grades on it, and outputs an update to the translation with 
+changes requested in the grade file.
+This version does it a chapter at a time instead of a verse at a time like do_reflection.py
 """
 import os
 import time
@@ -7,12 +10,13 @@ import copy
 from typing import List
 import json
 
+from collections import defaultdict
 
-from collections import defaultdict, OrderedDict
 from pydantic import BaseModel
 from openai import OpenAI
 import yaml
 import utils
+
 
 def perform_chapter_reflection( client, source_and_translation, translation_objective, model_name,
         temperature, top_p, grades ):
@@ -136,9 +140,8 @@ def main():
 
 
             #Here I will index all input and output verses by reference.
-            input__reference_to_verse  = { utils.look_up_key( verse, reference_key ): verse for verse in translation_input }
             output__reference_to_verse = { utils.look_up_key( verse, reference_key ): verse for verse in chapter_reflection_output }
-            
+
 
 
             #now loop through the translation and do the grading.
