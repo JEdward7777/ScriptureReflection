@@ -2,7 +2,7 @@ happy: true
 
 configs:
   seven_year_old_paraphrase__auto_loop:
-    active: true
+    active: false
     api_key: [mm_key,key]
     reference_key: [vref]
     source_key: [source]
