@@ -1,5 +1,7 @@
 """
 This module implements the reflection functionality for generating a draft of the Bible.
+It takes in a translation and grades on it, and outputs an update to the translation with 
+changes requested in the grade file.
 """
 import os
 import time
