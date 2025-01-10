@@ -58,9 +58,12 @@ def convert_to_ryder_jsonl_format(file):
             translation_time_key = this_config.get( 'translation_time_key', ['translation_time'] )
 
 
+            output_file = this_config.get( 'output_file', file )
+
+
             if not os.path.exists("output/ryder_format"):
                 os.makedirs("output/ryder_format")
-            with open( f"output/ryder_format/{file}", "w", encoding="utf-8") as f_out:
+            with open( f"output/ryder_format/{output_file}.jsonl", "w", encoding="utf-8") as f_out:
                 for i, in_verse in enumerate(original_content):
                     if in_verse:
                         out_verse = OrderedDict()
@@ -166,8 +169,9 @@ def convert_to_usfm(file):
     #this correctly. It would be nice if I could have the correct book number codes.  I think I
     #will just generate them by hand as I need them.
     print( f"converting {file} to usfm format" )
-    if not os.path.exists(f"output/usfm_format/{os.path.splitext(file)[0]}"):
-        os.makedirs(f"output/usfm_format/{os.path.splitext(file)[0]}")
+    output_file = this_config.get( 'output_file', file )
+    if not os.path.exists(f"output/usfm_format/{output_file}"):
+        os.makedirs(f"output/usfm_format/{output_file}")
 
     translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
     reference_key = this_config.get( 'reference_key', ['vref'] )
@@ -188,7 +192,7 @@ def convert_to_usfm(file):
 
     #now spin through the books and generate the USFM files.
     for usfm_name, verses in book_to_verses.items():
-        with open(f"output/usfm_format/{os.path.splitext(file)[0]}/{usfm_name}",
+        with open(f"output/usfm_format/{output_file}/{usfm_name}",
                 "w", encoding='utf-8') as f:
 
             current_chapter_num = -1
@@ -244,13 +248,13 @@ def convert_to_markdown(file):
                     else:
                         print( "Dropping verse", utils.look_up_key(verse, reference_key) )
 
-
-        output_folder = f"output/markdown_format/{os.path.splitext(file)[0]}"
+        output_file = this_config.get( 'output_file', file )
+        output_folder = f"output/markdown_format/{output_file}"
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
 
         with open(f"{output_folder}/README.md", "w", encoding='utf-8') as index:
-            index.write( f"# {os.path.splitext(file)[0]}\n\n" )
+            index.write( f"# {output_file}\n\n" )
             index.write( "| Key | Value |\n")
             index.write( "|:---:|:-----:|\n")
             for key,value in this_config['markdown_format']['outputs'].items():

@@ -6,7 +6,7 @@
 |source text name|grc-grcbyz|
 |source text description|1904 Patriarchal Greek New Testament with 20 correcctions from later editions|
 |source text link|https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt|
-|target langauge|English|
+|target language|English|
 |translation date|2024.12.20|
 
 # Books

@@ -12,7 +12,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
   John_3_paraphrase_3:
     markdown_format:
@@ -21,7 +21,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
 
   John_3_paraphrase_reflect_1:
@@ -31,7 +31,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
 
   John_3_paraphrase_reflect_2:
@@ -41,7 +41,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
 
   John_3_paraphrase_reflect_3:
@@ -51,7 +51,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
 
   John_3_paraphrase_reflect_10:
@@ -61,7 +61,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
   John_3_paraphrase_chapter_reflect_11:
     markdown_format:
@@ -70,7 +70,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
   John_3_paraphrase_chapter_reflect_12:
     markdown_format:
@@ -79,7 +79,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
   seven_year_old_paraphrase__auto_loop:
     markdown_format:
@@ -88,7 +88,7 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
 
 
   seven_year_old_paraphrase__summarizing_auto_loop:
@@ -98,4 +98,16 @@ configs:
         source text name: grc-grcbyz
         source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
-        target langauge: English
+        target language: English
+
+  
+  seven_year_old_paraphrase__summarizing_auto_loop_iteration_9:
+    translation_key: [reflection_loops][9][graded_verse]
+    output_file: seven_year_old_paraphrase__summarizing_auto_loop_iteration_9
+    markdown_format:
+      outputs:
+        source language: Greek
+        source text name: grc-grcbyz
+        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
+        target language: English

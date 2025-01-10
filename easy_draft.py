@@ -36,7 +36,7 @@ def generate_verse(
     source: str,
     last_result: str,
     model_name: str,
-    target_langauge: str,
+    target_language: str,
     temperature: float,
     top_p: float
 ) -> Translation:
@@ -49,8 +49,8 @@ def generate_verse(
     #going to time how long this takes.
     start_time = time.time()
 
-    message = (f"Generate a fresh translation of {vref} in {target_langauge}.  Before the verse " +
-      "quote 5 other verses from the Bible in {target_langauge} which use similar words which " +
+    message = (f"Generate a fresh translation of {vref} in {target_language}.  Before the verse " +
+      "quote 5 other verses from the Bible in {target_language} which use similar words which " +
       "would be useful. Pay attention to the source text and don't plagiarize existing " +
       "translations.")
     message += f"\nThe original text is: {source}"
