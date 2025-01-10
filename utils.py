@@ -101,3 +101,10 @@ def get_overridden_references(translation, reference_key, override_key):
                     overridden_references.append( last_reference )
             last_reference = reference
     return overridden_references
+
+def load_file_to_list(file_path: str) -> list[str]:
+    """
+    Load a file and return its contents as a list of strings, one for each line.
+    """
+    with open(file_path, encoding='utf-8') as f:
+        return f.read().splitlines()

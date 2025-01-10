@@ -6,9 +6,19 @@ import json
 from collections import defaultdict, OrderedDict
 from datetime import datetime
 import yaml
-import easy_draft
 
 import utils
+
+def get_config_for( file ):
+    """
+    Returns the config for the given file for the output_formats tool.
+    """
+    with open( 'output_formats.yaml', encoding='utf-8' ) as f:
+        output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
+    if os.path.splitext(file)[0] in output_formats_yaml['configs']:
+        return output_formats_yaml['configs'][os.path.splitext(file)[0]]
+    return None
+
 
 def convert_to_ryder_jsonl_format(file):
     """
@@ -24,26 +34,29 @@ def convert_to_ryder_jsonl_format(file):
             original_config = config
 
     ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
-    source = original_config['source']
-    source_content = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'corpus',
-        source + '.txt' ) )
 
     #get modified date of os.path.splitext(file)[0]
     modified_date = datetime.fromtimestamp(os.path.getmtime(f"output/{file}"))
 
     if original_config:
+        source = original_config['source']
+        source_content = utils.load_file_to_list( os.path.join( ebible_dir, 'corpus',
+            source + '.txt' ) )
 
 
-        original_content = list(map(json.loads, easy_draft.load_file_to_list(f"output/{file}")))
+        original_content = utils.load_jsonl(f"output/{file}")
 
         #load output_formats.yaml
-        with open( 'output_formats.yaml', encoding='utf-8' ) as f:
-            output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
+        this_config = get_config_for( file )
 
         #check if the filename sans path and extension is in config.config
-        if os.path.splitext(file)[0] in output_formats_yaml['configs']:
+        if this_config:
             print( f"converting {file} to ryder format" )
-            this_config = output_formats_yaml['configs'][os.path.splitext(file)[0]]
+
+            translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
+            reference_key = this_config.get( 'reference_key', ['vref'] )
+            translation_time_key = this_config.get( 'translation_time_key', ['translation_time'] )
+
 
             if not os.path.exists("output/ryder_format"):
                 os.makedirs("output/ryder_format")
@@ -53,13 +66,14 @@ def convert_to_ryder_jsonl_format(file):
                         out_verse = OrderedDict()
                         for key,value in this_config['ryder_format']['outputs'].items():
                             out_verse[key] = value
-                        out_verse["original"]         = source_content[i]
-                        out_verse["translation"]      = in_verse['fresh_translation']['text']
+                        out_verse["original"]      = source_content[i]
+                        out_verse["translation"]   = utils.look_up_key( in_verse, translation_key )
                         #round to two digits.
-                        out_verse['translation_time'] = round(in_verse['translation_time'], 2)
-                        out_verse['model']            = original_config['model']
-                        out_verse['calver']           = modified_date.strftime("%Y.%m.%d")
-                        out_verse['id']               = in_verse['fresh_translation']['reference']
+                        out_verse['translation_time'] = \
+                            round( utils.look_up_key( in_verse, translation_time_key ), 2)
+                        out_verse['model']         = original_config['model']
+                        out_verse['calver']        = modified_date.strftime("%Y.%m.%d")
+                        out_verse['id']            = utils.look_up_key( in_verse, reference_key )
 
                         f_out.write(json.dumps(out_verse, ensure_ascii=False) + "\n")
 
@@ -131,8 +145,23 @@ USFM_NAME = {
     "Jude"          : "66-JUD.usfm",  "JUD" : "66-JUD.usfm",
     "Revelation"    : "67-REV.usfm",  "REV" : "67-REV.usfm"
 }
+
+
+class GetStub:
+    """
+    A stub class that has a get method that returns a default value.
+    """
+    def get( self, _, default ):
+        """Returns the default value"""
+        return default
+
 def convert_to_usfm(file):
     """Converts the output of easy_draft to USFM format"""
+
+    this_config = get_config_for( file )
+    if this_config is None:
+        this_config = GetStub()
+
     #so for USFM we have to have a separate file per book.  So I need to play some games to do
     #this correctly. It would be nice if I could have the correct book number codes.  I think I
     #will just generate them by hand as I need them.
@@ -140,20 +169,18 @@ def convert_to_usfm(file):
     if not os.path.exists(f"output/usfm_format/{os.path.splitext(file)[0]}"):
         os.makedirs(f"output/usfm_format/{os.path.splitext(file)[0]}")
 
+    translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
+    reference_key = this_config.get( 'reference_key', ['vref'] )
 
-    original_content = list(map(json.loads, easy_draft.load_file_to_list(f"output/{file}")))
+    original_content = utils.load_jsonl(f"output/{file}")
 
-    with open( 'easy_draft.yaml', encoding='utf-8' ) as f:
-        easy_draft_yaml = yaml.load(f, Loader=yaml.FullLoader)
-    ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
-    vrefs = easy_draft.load_file_to_list( os.path.join( ebible_dir, 'metadata', 'vref.txt' ) )
 
     #The first thing I need to do is run through the content and sort it out into books.
     book_to_verses = defaultdict( lambda: [] )
-    for i,verse in enumerate(original_content):
+    for verse in original_content:
         if verse:
             #reference = verse["fresh_translation"]["reference"]
-            reference = vrefs[i]
+            reference = utils.look_up_key(verse, reference_key)
             if " " in reference:
                 book, _, _ = utils.split_ref(reference)
                 usfm_name = USFM_NAME[book]
@@ -166,7 +193,7 @@ def convert_to_usfm(file):
 
             current_chapter_num = -1
             for verse in verses:
-                reference = verse["fresh_translation"]["reference"]
+                reference = utils.look_up_key(verse, reference_key)
                 if " " in reference:
                     book, chapter_num, verse_num = utils.split_ref( reference )
 
@@ -176,7 +203,7 @@ def convert_to_usfm(file):
                         f.write( f"\\c {chapter_num}\n\\p\n" )
 
                     #now spit out the verse.
-                    f.write( f"\\v {verse_num} {verse['fresh_translation']['text']}\n" )
+                    f.write( f"\\v {verse_num} {utils.look_up_key(verse, translation_key)}\n" )
 
 
 def convert_to_markdown(file):
@@ -186,39 +213,36 @@ def convert_to_markdown(file):
     print( f"converting {file} to markdown format" )
 
 
-    original_content = list(map(json.loads, easy_draft.load_file_to_list(f"output/{file}")))
+    original_content = utils.load_jsonl(f"output/{file}")
 
     modified_date = datetime.fromtimestamp(os.path.getmtime(f"output/{file}"))
 
-    with open( 'output_formats.yaml', encoding='utf-8' ) as f:
-        output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
+    this_config = get_config_for( file )
 
-    if os.path.splitext(file)[0] in output_formats_yaml['configs']:
-        this_config = output_formats_yaml['configs'][os.path.splitext(file)[0]]
+    if this_config:
+        translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
+        translation_notes_key = this_config.get( 'translation_notes_key', ['translation_notes'] )
+        reference_key = this_config.get( 'reference_key', ['vref'] )
+        override_key = this_config.get( 'override_key',
+            ['forming_verse_range_with_previous_verse'] )
+
 
         #Mark which verse should be dropped because they are overwritten by ranges.
-        verse_to_drop = []
-        last_vref = None
-        for verse in original_content:
-            if verse:
-                if last_vref and "forming_verse_range_with_previous_verse" in verse and \
-                        verse['forming_verse_range_with_previous_verse']:
-                    verse_to_drop.append( last_vref )
-                last_vref = verse['vref']
+        verse_to_drop = utils.get_overridden_references( original_content, reference_key,
+            override_key )
 
         #run through the content and sort it out into books.
         book_to_chapter_to_verses = defaultdict( lambda: defaultdict( lambda: [] ) )
-        for i,verse in enumerate(original_content):
+        for verse in original_content:
             if verse:
                 #reference = verse["fresh_translation"]["reference"]
-                reference = verse['vref']
+                reference = utils.look_up_key(verse, reference_key)
                 if " " in reference:
                     if reference not in verse_to_drop:
                         book, chapter_num, _ = utils.split_ref( reference )
-                        verse['vref_line_number'] = i
                         book_to_chapter_to_verses[book][chapter_num].append(verse)
                     else:
-                        print( "Dropping verse", verse['vref'] )
+                        print( "Dropping verse", utils.look_up_key(verse, reference_key) )
 
 
         output_folder = f"output/markdown_format/{os.path.splitext(file)[0]}"
@@ -274,10 +298,10 @@ def convert_to_markdown(file):
                         chapter_out.write( "|:---------:|-------|-------------------|\n")
 
                         for verse in verses:
-                            vref = verse['vref']
+                            vref = utils.look_up_key(verse, reference_key)
                             chapter_out.write(
-                                f"|{vref}|{verse['fresh_translation']['text']}|" +
-                                f"{verse['translation_notes']}|\n")
+                                f"|{vref}|{utils.look_up_key(verse, translation_key)}|" +
+                                f"{utils.look_up_key(verse, translation_notes_key)}|\n")
 
 
                         chapter_out.write( "\n\n")
@@ -303,8 +327,8 @@ def main():
 
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
-            #convert_to_ryder_jsonl_format(file)
-            #convert_to_usfm(file)
+            convert_to_ryder_jsonl_format(file)
+            convert_to_usfm(file)
             convert_to_markdown(file)
 
     print( "Done!" )

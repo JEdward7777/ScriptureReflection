@@ -8,6 +8,8 @@ import yaml
 from openai import OpenAI
 from pydantic import BaseModel
 
+import utils
+
 
 with open( 'key.yaml', encoding='utf-8' ) as keys_f:
     api_key = yaml.load(keys_f, Loader=yaml.FullLoader)['openai_key']
@@ -28,15 +30,6 @@ class Translation(BaseModel):
     related_verses: list[Verse]
     translation_notes: str
     fresh_translation: Verse
-
-
-def load_file_to_list(file_path: str) -> list[str]:
-    """
-    Load a file and return its contents as a list of strings, one for each line.
-    """
-    with open(file_path, encoding='utf-8') as f:
-        return f.read().splitlines()
-
 
 def generate_verse(
     vref: str,
@@ -117,8 +110,8 @@ def run_config(config: dict, ebible_dir: str) -> None:
     if not active:
         return
 
-    vrefs = load_file_to_list( os.path.join( ebible_dir, 'metadata', 'vref.txt' ) )
-    source = load_file_to_list( os.path.join( ebible_dir, 'corpus', source + '.txt' ) )
+    vrefs = utils.load_file_to_list( os.path.join( ebible_dir, 'metadata', 'vref.txt' ) )
+    source = utils.load_file_to_list( os.path.join( ebible_dir, 'corpus', source + '.txt' ) )
     out_filename = os.path.join( "output", config['output'] + ".txt" )
     out_filename_jsonl = os.path.join( "output", config['output'] + ".jsonl" )
     temp_out_filename = os.path.join( "output", config['output'] + "~.txt"  )
@@ -127,10 +120,10 @@ def run_config(config: dict, ebible_dir: str) -> None:
     previous_result_jsonl = []
 
     if os.path.exists( out_filename ):
-        previous_result = load_file_to_list( out_filename )
+        previous_result = utils.load_file_to_list( out_filename )
 
     if os.path.exists( out_filename_jsonl ):
-        previous_result_jsonl = load_file_to_list( out_filename_jsonl )
+        previous_result_jsonl = utils.load_file_to_list( out_filename_jsonl )
 
     os.makedirs( os.path.dirname( temp_out_filename ), exist_ok=True )
 

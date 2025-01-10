@@ -1,0 +1,7 @@
+configs:
+  John:
+    active: true
+    file: output/John_3_1-3_36.jsonl
+    source: grc-grcbyz
+global_configs:
+    ebible_dir: /home/lansford/bible_token_models/samual_liedes_experiment_data/ebible

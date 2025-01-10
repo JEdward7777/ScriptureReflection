@@ -140,7 +140,10 @@ def main():
 
 
             #Here I will index all input and output verses by reference.
-            output__reference_to_verse = { utils.look_up_key( verse, reference_key ): verse for verse in chapter_reflection_output }
+            output__reference_to_verse = {
+                utils.look_up_key( verse, reference_key ):
+                verse for verse in chapter_reflection_output
+            }
 
 
 
@@ -162,7 +165,8 @@ def main():
 
                 #see if the output has a translation set yet for the first verse.
                 first_reference = utils.look_up_key( chapter_of_verses[0], reference_key )
-                if not utils.look_up_key( output__reference_to_verse[first_reference], translation_key ):
+                if not utils.look_up_key( output__reference_to_verse[first_reference],
+                        translation_key ):
 
                     print( f"Processing {book_chapter}" )
                     #do the reflection.
@@ -176,8 +180,8 @@ def main():
                     for verse in reflection_result:
                         assert verse['reference'] in output__reference_to_verse, \
                             f"{verse['reference']} is not in output__reference_to_verse"
-                        utils.set_key( output__reference_to_verse[verse['reference']], translation_key,
-                            verse['translation'] )
+                        utils.set_key( output__reference_to_verse[verse['reference']],
+                            translation_key, verse['translation'] )
 
                         if translation_comment_key:
                             utils.set_key( output__reference_to_verse[verse['reference']],
