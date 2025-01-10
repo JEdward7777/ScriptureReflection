@@ -58,7 +58,7 @@ def convert_to_ryder_jsonl_format(file):
             translation_time_key = this_config.get( 'translation_time_key', ['translation_time'] )
 
 
-            output_file = this_config.get( 'output_file', file )
+            output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
 
 
             if not os.path.exists("output/ryder_format"):
@@ -169,7 +169,7 @@ def convert_to_usfm(file):
     #this correctly. It would be nice if I could have the correct book number codes.  I think I
     #will just generate them by hand as I need them.
     print( f"converting {file} to usfm format" )
-    output_file = this_config.get( 'output_file', file )
+    output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
     if not os.path.exists(f"output/usfm_format/{output_file}"):
         os.makedirs(f"output/usfm_format/{output_file}")
 
@@ -248,7 +248,7 @@ def convert_to_markdown(file):
                     else:
                         print( "Dropping verse", utils.look_up_key(verse, reference_key) )
 
-        output_file = this_config.get( 'output_file', file )
+        output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
         output_folder = f"output/markdown_format/{output_file}"
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
