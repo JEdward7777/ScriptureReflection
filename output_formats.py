@@ -331,8 +331,6 @@ def main():
             convert_to_usfm(file)
             convert_to_markdown(file)
 
-    print( "Done!" )
-
 if __name__ == "__main__":
     main()
 
