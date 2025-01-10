@@ -179,6 +179,79 @@ def grade_verse( selected_verse, common_context, client, config ):
 
     return result
 
+def summarize_corrections( selected_verse, client, config ):
+    """
+    Summarize the corrections of a verse.
+    """
+
+    vref = utils.look_up_key( selected_verse, config['reference_key'] )
+
+    system_message = "You are a teacher compiling a summary of corrections from a peer review of the Bible from a " + \
+        "conservitive Christian viewpoint."
+
+    user_message_array = []
+
+    #put the translation history in
+    had_history = False
+    if 'reflection_loops' in selected_verse and len( selected_verse['reflection_loops'] ) > 1:
+        user_message_array += ['##Edit History:\n']
+        for i,reflection_loop in enumerate(selected_verse['reflection_loops'][:-1]):
+            had_history = True
+            user_message_array += [ vref, " version ", (i+1), ":\n```\n",
+                 reflection_loop['graded_verse'], "\n```\n" ]
+
+            if 'correction_summarization' in reflection_loop and 'summary' in reflection_loop['correction_summarization']:
+                user_message_array += [ "Correction ", (i+1), ":\n```\n",
+                    reflection_loop['correction_summarization']['summary'], "\n```\n\n" ]
+
+    #show the current version of the verse.
+    user_message_array += ["Source: " + utils.look_up_key( selected_verse, config['source_key'] ) + "\n"
+        "Current Translation: " + utils.look_up_key( selected_verse, config['translation_key'] ) + "\n\n" ]
+
+
+    #now add the current corrections requests under the persona of a peer review.
+    user_message_array += ["##Peer review comments for ", vref, ":\n"]
+    selected_reflection_loop = selected_verse['reflection_loops'][-1]
+    for i,grade in enumerate(selected_reflection_loop['grades']):
+        user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
+
+
+    #Now add the final instructions.
+    user_message_array += [ "Instructions: Review the peer review comments, prioritize and summarize the most important corrections.", 
+        "Comments which request removing content are highest priority. ",
+        "Comments which request fixing content are the second highest priority. ",
+        "Comments which request adding new content are the lowest priority. " ]
+
+    if had_history:
+        user_message_array += [
+        "Review the edit history to prevent repeating history, for example requesting adding content which was intentionally removed."]
+
+    user_message = "".join(str(x) for x in user_message_array)
+
+
+    class SummarizeResponse(BaseModel):
+        """A def for structured response from ChatGPT"""
+        planning_thoughts: str
+        summary: str
+
+    completion = client.beta.chat.completions.parse(
+        model=config['model'],
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": user_message},
+        ],
+        temperature=config['temperature'],
+        top_p=config['top_p'],
+        response_format=SummarizeResponse
+    )
+
+    result = completion.choices[0].message.parsed.model_dump()
+
+    return result
+
+
+
+
 def perform_reflection( selected_verse, common_context, client, config ):
     """
     Run the reflection step where the grade comments of a verse are utilize to revise a verse.
@@ -195,8 +268,16 @@ def perform_reflection( selected_verse, common_context, client, config ):
 
     user_message_array += [ "The the current verse is ", vref, "\n" ]
 
-    for i,grade in enumerate(selected_verse['reflection_loops'][-1]['grades']):
-        user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
+
+    #check if the config has the boolean summarize_corrections
+    correction_summarization_result = None
+    if 'summarize_corrections' in config and config['summarize_corrections']:
+        correction_summarization_result = summarize_corrections( selected_verse, client, config )
+        user_message_array += [ "Correction:\n```\n", correction_summarization_result["summary"], "\n```\n\n" ]
+    else:
+        selected_reflection_loop = selected_verse['reflection_loops'][-1]
+        for i,grade in enumerate(selected_reflection_loop['grades']):
+            user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
 
     user_message_array += ["Instructions: Attempt to satisfy all provided instructions for ", vref, " to the best of your ",
         "ability. If the instructions are contradictory or mutually exclusive, use your own ",
@@ -224,6 +305,9 @@ def perform_reflection( selected_verse, common_context, client, config ):
     )
     result = completion.choices[0].message.parsed.model_dump()
 
+    if correction_summarization_result:
+        result['correction_summarization'] = correction_summarization_result
+
     return result
 
 
@@ -241,8 +325,8 @@ def main():
     save_timeout = grade_reflect_loop_yaml.get( 'global_configs', {} ).get( 'save_timeout', 20 )
 
     for config_name, config in grade_reflect_loop_yaml['configs'].items():
-        print( f"Running config {config_name}" )
         if config['active']:
+            print( f"Running config {config_name}" )
             client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
             reflection_output_filename = config['reflection_output']
@@ -271,10 +355,10 @@ def main():
                 over_ridden_references = utils.get_overridden_references( translation_input,
                     reference_key, config.get( 'override_key', None ) )
 
-                action_done = "did nothing"
 
                 done = False
                 while not done:
+                    action_done = "did nothing"
                     #so each time we run through the loop we do one of the following:
                     #Figure out which verse has the fewest number of loops done on it.
                     #Then keep running a grade pass for that verse until it has the specified number
@@ -347,6 +431,10 @@ def main():
                             output_dirty = True
                             action_done = f"reflected on verse {utils.look_up_key( selected_verse, reference_key )}"
 
+                            #keep the correction_summarization if it was produced.
+                            if 'correction_summarization' in reflection_result:
+                                last_reflection_loop['correction_summarization'] = reflection_result['correction_summarization']
+
 
                         #now save if we haven't saved in a while
                         if output_dirty and time.time() - last_save > save_timeout:
@@ -356,6 +444,7 @@ def main():
 
                     else:
                         done = True
+                        action_done = "done"
 
                     average_grade = compute_translation_grade( reflection_output, config )
                     #spit out the current time and the average_grade and action_done
