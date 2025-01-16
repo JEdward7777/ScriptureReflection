@@ -547,7 +547,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
         done = False
         while not done:
-            action_done = "did nothing"
+
             #so each time we run through the loop we do one of the following:
             #make sure all the verses are fully graded.
             #Figure out which verse has the lowest average grade.
@@ -581,12 +581,15 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             selected_verse['reflection_loops'] = []
                         if len( selected_verse['reflection_loops'] ) == 0:
                             selected_verse['reflection_loops'].append( {} )
+                        if 'graded_verse' in selected_verse['reflection_loops'][-1]:
+                            selected_verse['reflection_loops'].append( {} )
                         last_reflection_loop = selected_verse['reflection_loops'][-1]
                         if 'grades' not in last_reflection_loop:
                             last_reflection_loop['grades'] = []
                         last_reflection_loop['grades'].append(new_grade)
                         output_dirty = True
                         action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
+                            f"of grade {new_grade['grade']} " \
                             f"to verse {utils.look_up_key( selected_verse, reference_key )}"
 
                         #now break so we can get to the save section.
@@ -629,6 +632,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
                         #add the new reflection to the reflection loop
                         #the existing translation to the loop
+                        last_reflection_loop = selected_verse['reflection_loops'][-1]
                         if translation_comment_key:
                             last_reflection_loop['graded_verse_comment'] = utils.look_up_key(
                                 selected_verse, translation_comment_key )
