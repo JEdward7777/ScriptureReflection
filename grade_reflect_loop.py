@@ -171,7 +171,7 @@ def grade_verse( selected_verse, common_context, client, config ):
     ]
 
     if 'grading_prompt' in config:
-        user_message_array += [config.get( 'grading_prompt').format( vref ), "\n"]
+        user_message_array += [config.get( 'grading_prompt').format( vref=vref ), "\n"]
 
     user_message = "".join(user_message_array)
 
