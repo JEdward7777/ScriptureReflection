@@ -38,6 +38,20 @@ def compute_completed_loops( verse ):
 
     return num_loops - 1
 
+def compute_number_unanswered_grades( verse ):
+    """
+    Determine the number of grades that have not been answered by a reflection.
+    """
+    if 'reflection_loops' not in verse:
+        return 0
+
+    last_reflection_loop = verse['reflection_loops'][-1]
+
+    if 'graded_verse' in last_reflection_loop:
+        return 0
+
+    return len(last_reflection_loop['grades'])
+
 
 def compute_verse_grade( verse, config ):
     """
@@ -232,7 +246,8 @@ def summarize_corrections( selected_verse, client, config ):
 
     if had_history:
         user_message_array += [
-        "Review the edit history to prevent repeating history, for example requesting adding content which was intentionally removed."]
+        "Review the edit history to prevent repeating history, for example requesting adding ",
+        "content which was intentionally removed."]
 
     user_message = "".join(str(x) for x in user_message_array)
 
@@ -281,16 +296,19 @@ def perform_reflection( selected_verse, common_context, client, config ):
     correction_summarization_result = None
     if 'summarize_corrections' in config and config['summarize_corrections']:
         correction_summarization_result = summarize_corrections( selected_verse, client, config )
-        user_message_array += [ "Correction:\n```\n", correction_summarization_result["summary"], "\n```\n\n" ]
+        user_message_array += [ "Correction:\n```\n", correction_summarization_result["summary"],
+            "\n```\n\n" ]
     else:
         selected_reflection_loop = selected_verse['reflection_loops'][-1]
         for i,grade in enumerate(selected_reflection_loop['grades']):
             user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
 
-    user_message_array += ["Instructions: Attempt to satisfy all provided instructions for ", vref, " to the best of your ",
+    user_message_array += ["Instructions: Attempt to satisfy all provided instructions for ",
+        vref, " to the best of your ",
         "ability. If the instructions are contradictory or mutually exclusive, use your own ",
         "logic to resolve the conflict while prioritizing consistency and alignment with the ",
-        "overall goal.  Output your planning_thoughts, the reference ", vref, ", and the updated translation for ", vref, ".\n" ]
+        "overall goal.  Output your planning_thoughts, the reference ", vref, ", and the updated ",
+        "translation for ", vref, ".\n" ]
 
     user_message = "".join(str(s) for s in user_message_array)
 
@@ -320,6 +338,11 @@ def perform_reflection( selected_verse, common_context, client, config ):
 
 
 def run_config__n_loops( config, api_keys, save_timeout ):
+    """
+    Run the reflection and grade loop as defined in the grade_reflect_loop.yaml file.
+
+    Each verse is iterated through a specified number of times.
+    """
     client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
     reflection_output_filename = config['reflection_output']
@@ -364,7 +387,8 @@ def run_config__n_loops( config, api_keys, save_timeout ):
             fewest_loops = None
             for verse in reflection_output:
                 vref = utils.look_up_key( verse, reference_key )
-                if vref is not None and not utils.look_up_key( verse, reference_key ) in over_ridden_references:
+                if vref is not None and not utils.look_up_key( verse, reference_key ) in \
+                        over_ridden_references:
                     num_completed_loops = compute_completed_loops( verse )
                     if fewest_loops is None or num_completed_loops < fewest_loops:
                         verse_with_fewest_loops = verse
@@ -372,15 +396,18 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
             #check if the verse with the fewest loops has the numer requested by the configuration
             #if it does, we are done.
-            if verse_with_fewest_loops is not None and fewest_loops < config['reflection_loops_per_verse']:
+            if verse_with_fewest_loops is not None and fewest_loops < \
+                    config['reflection_loops_per_verse']:
                 selected_verse = verse_with_fewest_loops
 
 
-                common_context = build_common_context( selected_verse, reflection_output, config, over_ridden_references )
+                common_context = build_common_context( selected_verse, reflection_output, config,
+                    over_ridden_references )
 
 
                 #add a new reflection loop if the current last one is None or is complete.
-                last_reflection_loop = selected_verse['reflection_loops'][-1] if len(selected_verse.get('reflection_loops', [])) > 0 else None
+                last_reflection_loop = selected_verse['reflection_loops'][-1] if len(
+                    selected_verse.get('reflection_loops', [])) > 0 else None
                 if last_reflection_loop is None or 'graded_verse' in last_reflection_loop:
                     if 'reflection_loops' not in selected_verse:
                         selected_verse['reflection_loops'] = []
@@ -388,9 +415,10 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                     selected_verse['reflection_loops'].append(last_reflection_loop)
 
 
-                #ok, so now we need to see if this verse has the requested number of grades for this verse
-                #otherwise we need to run another grade run on it.
-                if last_reflection_loop is None or len(last_reflection_loop.get('grades', [])) < config['grades_per_reflection_loop']:
+                #ok, so now we need to see if this verse has the requested number of grades for this
+                #verse otherwise we need to run another grade run on it.
+                if last_reflection_loop is None or len(last_reflection_loop.get('grades', [])) < \
+                        config['grades_per_reflection_loop']:
                     #we need to run a grade pass on this verse.
 
                     new_grade = grade_verse( selected_verse, common_context, client, config )
@@ -405,28 +433,36 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                         last_reflection_loop['grades'] = []
                     last_reflection_loop['grades'].append(new_grade)
                     output_dirty = True
-                    action_done = f"added grade number {len(last_reflection_loop['grades'])} to verse {utils.look_up_key( selected_verse, reference_key )}"
+                    action_done = f"added grade number {len(last_reflection_loop['grades'])} to " \
+                        f"verse {utils.look_up_key( selected_verse, reference_key )}"
 
 
                 else:
                     #we have enough grades, so we need to do the reflection loop
-                    reflection_result = perform_reflection( selected_verse, common_context, client, config )
+                    reflection_result = perform_reflection( selected_verse, common_context, client,
+                        config )
 
                     #the existing translation to the loop
                     if translation_comment_key:
-                        last_reflection_loop['graded_verse_comment'] = utils.look_up_key( selected_verse, translation_comment_key )
-                    last_reflection_loop['graded_verse'] = utils.look_up_key( selected_verse, translation_key )
+                        last_reflection_loop['graded_verse_comment'] = \
+                            utils.look_up_key( selected_verse, translation_comment_key )
+                    last_reflection_loop['graded_verse'] = \
+                        utils.look_up_key( selected_verse, translation_key )
 
                     #and replace it.
-                    utils.set_key( selected_verse, translation_key, reflection_result['updated_translation'] )
+                    utils.set_key( selected_verse, translation_key,
+                        reflection_result['updated_translation'] )
                     if translation_comment_key:
-                        utils.set_key( selected_verse, translation_comment_key, reflection_result['planning_thoughts'] )
+                        utils.set_key( selected_verse, translation_comment_key,
+                            reflection_result['planning_thoughts'] )
                     output_dirty = True
-                    action_done = f"reflected on verse {utils.look_up_key( selected_verse, reference_key )}"
+                    action_done = f"reflected on verse {utils.look_up_key( selected_verse,
+                        reference_key )}"
 
                     #keep the correction_summarization if it was produced.
                     if 'correction_summarization' in reflection_result:
-                        last_reflection_loop['correction_summarization'] = reflection_result['correction_summarization']
+                        last_reflection_loop['correction_summarization'] = \
+                            reflection_result['correction_summarization']
 
 
                 #now save if we haven't saved in a while
@@ -440,8 +476,16 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                 action_done = "done"
 
             average_grade = compute_translation_grade( reflection_output, config )
+
+            #figure out if we are done because we have not had a grade increase.
+
+
+
+
             #spit out the current time and the average_grade and action_done
-            print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade:05.2f} - {action_done} - completed loops: {compute_completed_loops( verse_with_fewest_loops )}" )
+            print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade:05.2f} "
+                f"- {action_done} - completed loops: {compute_completed_loops(
+                verse_with_fewest_loops )}" )
 
             if "average_grade_csv_log" in config:
                 #create the dir if it doesn't exist
@@ -452,7 +496,197 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                 with open( average_grade_csv_log, 'a', encoding='utf-8' ) as f:
                     if os.path.getsize(average_grade_csv_log) == 0:
                         f.write( "time,average_grade,action_done,completed_loops\n" )
-                    f.write( f"{time.strftime('%Y-%m-%d %H:%M:%S')},{average_grade},{action_done},{compute_completed_loops( verse_with_fewest_loops )}\n" )
+                    f.write( f"{time.strftime('%Y-%m-%d %H:%M:%S')},{average_grade},{action_done}"
+                        f",{compute_completed_loops( verse_with_fewest_loops )}\n" )
+
+    finally:
+        #save the reflection output
+        if output_dirty:
+            utils.save_jsonl( reflection_output_filename, reflection_output )
+
+
+def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
+    """
+    Run the reflection loop but with the priority of which verse to process next
+    determined by the lowest average grade of the verses.
+    """
+
+    client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
+
+    reflection_output_filename = config['reflection_output']
+
+    translation_input = utils.load_jsonl( config['translation_input'] )
+
+    output_dirty = False
+
+
+    best_grade_found = 0
+    iterations_without_improvement = 0
+    iterations_without_improvement_max = config['iterations_without_improvement_max']
+
+    #load the result if we didn't finish last time.
+    if os.path.exists(reflection_output_filename):
+        reflection_output = utils.load_jsonl( reflection_output_filename )
+    else:
+        #otherwise load the existing translation and blank out all the translation keys.
+        reflection_output = copy.deepcopy( translation_input )
+
+    try:
+
+        last_save = time.time()
+
+        reference_key = config['reference_key']
+        translation_key = config['translation_key']
+        translation_comment_key = config.get('translation_comment_key', None)
+
+        #figure out what the overridden verses are.  These are verses where
+        #a following verse decided to incorperate the overriden verse into a verse range.
+        over_ridden_references = utils.get_overridden_references( translation_input,
+            reference_key, config.get( 'override_key', None ) )
+
+
+        done = False
+        while not done:
+            action_done = "did nothing"
+            #so each time we run through the loop we do one of the following:
+            #make sure all the verses are fully graded.
+            #Figure out which verse has the lowest average grade.
+            #Run the reflection on that verse which then makes it not have its full verses.
+            #The way we know the difference between a reflected verse and a fully graded verse
+            #is that a reflected verse has the verse graded as part of the grade structure and
+            #then therefore should be considered as having no unanswered grades.
+
+            #We only do one thing at a time to make it so that the content can be saved.
+            #so once we do something we skip the rest of the things we could do and go to the end.
+
+            #Loop through all the verses to find one that is not fully graded.
+            action_done = "did nothing"
+            for verse in reflection_output:
+                vref = utils.look_up_key( verse, reference_key )
+                if vref is not None and not vref in over_ridden_references:
+                    #now need to determine if this verse needs another grade.
+                    #It needs another grade if the current number of grades is less then the
+                    #requirement or if the graded verse reference is set which means the grade was
+                    #already used.
+                    if compute_number_unanswered_grades( verse ) < \
+                            config['grades_per_reflection_loop']:
+                        selected_verse = verse
+
+                        common_context = build_common_context( selected_verse, reflection_output,
+                            config, over_ridden_references )
+                        new_grade = grade_verse( selected_verse, common_context, client, config )
+
+                        #add the new grade to the reflection loop
+                        if 'reflection_loops' not in selected_verse:
+                            selected_verse['reflection_loops'] = []
+                        if len( selected_verse['reflection_loops'] ) == 0:
+                            selected_verse['reflection_loops'].append( {} )
+                        last_reflection_loop = selected_verse['reflection_loops'][-1]
+                        if 'grades' not in last_reflection_loop:
+                            last_reflection_loop['grades'] = []
+                        last_reflection_loop['grades'].append(new_grade)
+                        output_dirty = True
+                        action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
+                            f"to verse {utils.look_up_key( selected_verse, reference_key )}"
+
+                        #now break so we can get to the save section.
+                        break
+            else:
+                #if we got here then all the verses are fully graded.
+                #this is the moment to test if the grade is improving or not.
+                average_grade = compute_translation_grade( reflection_output, config )
+                if average_grade > best_grade_found:
+                    best_grade_found = average_grade
+                    iterations_without_improvement = 0
+                    print( f"New best grade: {best_grade_found}" )
+                else:
+                    iterations_without_improvement += 1
+
+                if iterations_without_improvement > iterations_without_improvement_max:
+                    done = True
+                    action_done = "done because of iterations without improvement"
+
+
+                #If we are not done pick out what verse has the lowest average grade.
+                if not done:
+                    lowest_grade_found = None
+                    lowest_graded_verse = None
+                    for verse in reflection_output:
+                        vref = utils.look_up_key( verse, reference_key )
+                        if vref is not None and not vref in over_ridden_references:
+                            verse_grade = compute_verse_grade( verse, config )
+                            if lowest_grade_found is None or lowest_grade_found > verse_grade:
+                                lowest_grade_found = verse_grade
+                                lowest_graded_verse = verse
+
+                    if lowest_graded_verse is not None:
+                        selected_verse = lowest_graded_verse
+
+                        common_context = build_common_context( selected_verse, reflection_output,
+                            config, over_ridden_references )
+                        reflection_result = perform_reflection( selected_verse, common_context,
+                            client, config )
+
+                        #add the new reflection to the reflection loop
+                        #the existing translation to the loop
+                        if translation_comment_key:
+                            last_reflection_loop['graded_verse_comment'] = utils.look_up_key(
+                                selected_verse, translation_comment_key )
+                        last_reflection_loop['graded_verse'] = utils.look_up_key( selected_verse,
+                            translation_key )
+
+                        #and replace it.
+                        utils.set_key( selected_verse, translation_key,
+                            reflection_result['updated_translation'] )
+                        if translation_comment_key:
+                            utils.set_key( selected_verse, translation_comment_key,
+                                reflection_result['planning_thoughts'] )
+                        output_dirty = True
+                        action_done = f"reflected on verse {utils.look_up_key( selected_verse,
+                            reference_key )}"
+
+                        #keep the correction_summarization if it was produced.
+                        if 'correction_summarization' in reflection_result:
+                            last_reflection_loop['correction_summarization'] = \
+                                reflection_result['correction_summarization']
+                    else:
+                        action_done = "Didn't find a verse to reflect on.  So done."
+                        done = True
+
+
+
+            #now save if we haven't saved in a while
+            if output_dirty and time.time() - last_save > save_timeout:
+                utils.save_jsonl( reflection_output_filename, reflection_output )
+                last_save = time.time()
+                output_dirty = False
+
+            #output the current status
+            average_grade = compute_translation_grade( reflection_output, config )
+            #spit out the current time and the average_grade and action_done
+
+            #output
+            #best_grade_found
+            #iterations_without_improvement
+
+            print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade:05.2f} "
+                f"- {action_done} - Best grade: {best_grade_found:05.2f} - Iterations without "
+                f"improvement: {iterations_without_improvement}" )
+
+
+            #run the log
+            if "average_grade_csv_log" in config:
+                #create the dir if it doesn't exist
+                average_grade_csv_log = config['average_grade_csv_log']
+                log_dir = os.path.dirname( average_grade_csv_log )
+                if not os.path.exists(log_dir):
+                    os.makedirs(log_dir)
+                with open( average_grade_csv_log, 'a', encoding='utf-8' ) as f:
+                    if os.path.getsize(average_grade_csv_log) == 0:
+                        f.write( "time,average_grade,action_done,best_grade_found,"
+                            "iterations_without_improvement\n" )
+                    f.write( f"{time.strftime('%Y-%m-%d %H:%M:%S')},{average_grade},{action_done},"
+                        f"{best_grade_found},{iterations_without_improvement}\n" )
 
     finally:
         #save the reflection output
@@ -476,7 +710,10 @@ def main():
     for config_name, config in grade_reflect_loop_yaml['configs'].items():
         if config['active']:
             print( f"Running config {config_name}" )
-            run_config__n_loops( config, api_keys, save_timeout )
+            if config.get( "mode", "" ) == "lowest_grade_priority":
+                run_config__lowest_grade_priority( config, api_keys, save_timeout )
+            else:
+                run_config__n_loops( config, api_keys, save_timeout )
 
 if __name__ == "__main__":
     main()
