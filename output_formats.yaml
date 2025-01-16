@@ -91,7 +91,7 @@ configs:
         target language: English
 
 
-  seven_year_old_paraphrase__summarizing_auto_loop:
+  seven_year_old_paraphrase__summarizing_auto_loop__disabled:
     markdown_format:
       outputs:
         source language: Greek
@@ -101,9 +101,10 @@ configs:
         target language: English
 
   
-  seven_year_old_paraphrase__summarizing_auto_loop_iteration_9:
-    translation_key: [reflection_loops,9,graded_verse]
-    output_file: seven_year_old_paraphrase__summarizing_auto_loop_iteration_9
+  seven_year_old_paraphrase__summarizing_auto_loop:
+    translation_key: [reflection_loops,8,graded_verse]
+    translation_notes_key: [reflection_loops,8,graded_verse_comment]
+    output_file: seven_year_old_paraphrase__summarizing_auto_loop_iteration_8
     markdown_format:
       outputs:
         source language: Greek

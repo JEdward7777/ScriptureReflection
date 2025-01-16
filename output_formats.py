@@ -229,6 +229,7 @@ def convert_to_markdown(file):
         reference_key = this_config.get( 'reference_key', ['vref'] )
         override_key = this_config.get( 'override_key',
             ['forming_verse_range_with_previous_verse'] )
+        output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
 
 
         #Mark which verse should be dropped because they are overwritten by ranges.
@@ -248,7 +249,6 @@ def convert_to_markdown(file):
                     else:
                         print( "Dropping verse", utils.look_up_key(verse, reference_key) )
 
-        output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
         output_folder = f"output/markdown_format/{output_file}"
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)

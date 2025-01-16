@@ -63,13 +63,17 @@ def save_json(filename, data, indent=4):
 
 def look_up_key( data, keys ):
     """
-    Look up a key in a nested dictionary.
+    Look up a key in a nested dictionary. Which can have arrays in it.
     :param data: The dictionary to look up in.
     :param keys: The list of keys to look up.
     :return: The value at the key, or None if it doesn't exist.
     """
     for key in keys:
-        if key in data:
+        if isinstance(data, list):
+            if key < 0 or key >= len(data):
+                return None
+            data = data[key]
+        elif isinstance(data, dict) and key in data:
             data = data[key]
         else:
             return None
