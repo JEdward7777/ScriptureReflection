@@ -134,7 +134,7 @@ configs:
   john_3_nonparaphrase_lowest_grade_first:
     active: true
 
-    debug_force_vref: JHN 3:32
+    #debug_force_vref: JHN 3:32
 
     api_key: [mm_key,key]
     reference_key: [vref]
