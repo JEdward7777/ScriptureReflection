@@ -167,9 +167,11 @@ def grade_verse( selected_verse, common_context, client, config ):
         common_context, "\n",
         "Instructions: Review the students work translating ", vref, " from a conservative ",
         "Christian perspective and give it a grade comment and a grade from 0 to 100 where 0 is ",
-        "failing and 100 is perfection.  Grade ", vref, " for clarity, accuracy, perspective, ",
-        "and redundancy with the previous verse as well as other verses." 
+        "failing and 100 is perfection.\n"
     ]
+
+    if 'grading_prompt' in config:
+        user_message_array += [config.get( 'grading_prompt').format( vref ), "\n"]
 
     user_message = "".join(user_message_array)
 

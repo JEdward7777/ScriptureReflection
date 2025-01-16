@@ -101,6 +101,7 @@ configs:
 
     summarize_corrections: true
     summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
+    grading_prompt: "Grade {vref} for clarity, accuracy, perspective, and redundancy with the previous verse as well as other verses."
 
 
   john_3_nonparaphrase:
@@ -158,3 +159,5 @@ configs:
 
     mode: lowest_grade_priority
     iterations_without_improvement_max: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective."
