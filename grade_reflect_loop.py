@@ -616,13 +616,20 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 if not done:
                     lowest_grade_found = None
                     lowest_graded_verse = None
-                    for verse in reflection_output:
-                        vref = utils.look_up_key( verse, reference_key )
-                        if vref is not None and not vref in over_ridden_references:
-                            verse_grade = compute_verse_grade( verse, config )
-                            if lowest_grade_found is None or lowest_grade_found > verse_grade:
-                                lowest_grade_found = verse_grade
+                    if not "debug_force_vref" in config:
+                        for verse in reflection_output:
+                            vref = utils.look_up_key( verse, reference_key )
+                            if vref is not None and not vref in over_ridden_references:
+                                verse_grade = compute_verse_grade( verse, config )
+                                if lowest_grade_found is None or lowest_grade_found > verse_grade:
+                                    lowest_grade_found = verse_grade
+                                    lowest_graded_verse = verse
+                    else:
+                        for verse in reflection_output:
+                            vref = utils.look_up_key( verse, reference_key )
+                            if vref == config['debug_force_vref']:
                                 lowest_graded_verse = verse
+
 
                     if lowest_graded_verse is not None:
                         selected_verse = lowest_graded_verse
