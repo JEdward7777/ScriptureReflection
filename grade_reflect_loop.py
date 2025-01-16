@@ -201,7 +201,7 @@ def summarize_corrections( selected_verse, client, config ):
                  reflection_loop['graded_verse'], "\n```\n" ]
 
             if 'correction_summarization' in reflection_loop and 'summary' in reflection_loop['correction_summarization']:
-                user_message_array += [ "Correction ", (i+1), ":\n```\n",
+                user_message_array += [ "Past Fix: ", (i+1), ":\n```\n",
                     reflection_loop['correction_summarization']['summary'], "\n```\n\n" ]
 
     #show the current version of the verse.
@@ -216,11 +216,14 @@ def summarize_corrections( selected_verse, client, config ):
         user_message_array += [ "Correction #", i+1, ":\n```\n", grade['comment'], "\n```\n\n" ]
 
 
-    #Now add the final instructions.
-    user_message_array += [ "Instructions: Review the peer review comments, prioritize and summarize the most important corrections.", 
-        "Comments which request removing content are highest priority. ",
-        "Comments which request fixing content are the second highest priority. ",
-        "Comments which request adding new content are the lowest priority. " ]
+    if "summarize_instructions" in config:
+        user_message_array += [ config['summarize_instructions'], "\n" ]
+    else:
+        #Now add the final instructions.
+        user_message_array += [ "Instructions: Review the peer review comments, prioritize and summarize the most important corrections.",
+            "Comments which request removing content are highest priority. ",
+            "Comments which request fixing content are the second highest priority. ",
+            "Comments which request adding new content are the lowest priority. " ]
 
     if had_history:
         user_message_array += [

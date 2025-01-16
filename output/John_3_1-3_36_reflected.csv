@@ -1,0 +1,266 @@
+time,average_grade,action_done,completed_loops
+2025-01-16 11:03:56,95.0,added grade number 1 to verse JHN 3:1,0
+2025-01-16 11:03:57,95.0,added grade number 2 to verse JHN 3:1,0
+2025-01-16 11:03:59,95.0,added grade number 3 to verse JHN 3:1,0
+2025-01-16 11:04:02,95.0,added grade number 4 to verse JHN 3:1,0
+2025-01-16 11:04:04,95.0,added grade number 5 to verse JHN 3:1,0
+2025-01-16 11:04:06,95.0,added grade number 6 to verse JHN 3:1,0
+2025-01-16 11:04:14,95.0,reflected on verse JHN 3:1,1
+2025-01-16 11:04:17,93.5,added grade number 1 to verse JHN 3:2,0
+2025-01-16 11:04:19,93.0,added grade number 2 to verse JHN 3:2,0
+2025-01-16 11:04:21,93.16666666666666,added grade number 3 to verse JHN 3:2,0
+2025-01-16 11:04:23,93.625,added grade number 4 to verse JHN 3:2,0
+2025-01-16 11:04:26,93.6,added grade number 5 to verse JHN 3:2,0
+2025-01-16 11:04:28,93.66666666666666,added grade number 6 to verse JHN 3:2,0
+2025-01-16 11:11:28,93.66666666666666,reflected on verse JHN 3:2,1
+2025-01-16 11:11:30,91.44444444444444,added grade number 1 to verse JHN 3:3,0
+2025-01-16 11:11:33,92.27777777777777,added grade number 2 to verse JHN 3:3,0
+2025-01-16 11:11:34,92.33333333333333,added grade number 3 to verse JHN 3:3,0
+2025-01-16 11:11:37,92.52777777777777,added grade number 4 to verse JHN 3:3,0
+2025-01-16 11:11:39,92.5111111111111,added grade number 5 to verse JHN 3:3,0
+2025-01-16 11:11:41,92.5,added grade number 6 to verse JHN 3:3,0
+2025-01-16 11:11:47,92.5,reflected on verse JHN 3:3,1
+2025-01-16 11:11:49,92.375,added grade number 1 to verse JHN 3:4,0
+2025-01-16 11:11:51,92.125,added grade number 2 to verse JHN 3:4,0
+2025-01-16 11:11:54,92.04166666666667,added grade number 3 to verse JHN 3:4,0
+2025-01-16 11:11:58,92.3125,added grade number 4 to verse JHN 3:4,0
+2025-01-16 11:12:00,92.125,added grade number 5 to verse JHN 3:4,0
+2025-01-16 11:12:02,92.08333333333333,added grade number 6 to verse JHN 3:4,0
+2025-01-16 11:12:08,92.08333333333333,reflected on verse JHN 3:4,1
+2025-01-16 11:12:11,91.66666666666666,added grade number 1 to verse JHN 3:5,0
+2025-01-16 11:12:15,91.66666666666666,added grade number 2 to verse JHN 3:5,0
+2025-01-16 11:12:18,91.8,added grade number 3 to verse JHN 3:5,0
+2025-01-16 11:12:21,91.76666666666667,added grade number 4 to verse JHN 3:5,0
+2025-01-16 11:12:23,91.94666666666667,added grade number 5 to verse JHN 3:5,0
+2025-01-16 11:12:26,92.06666666666666,added grade number 6 to verse JHN 3:5,0
+2025-01-16 11:12:30,92.06666666666666,reflected on verse JHN 3:5,1
+2025-01-16 11:12:32,91.38888888888887,added grade number 1 to verse JHN 3:6,0
+2025-01-16 11:12:34,91.97222222222221,added grade number 2 to verse JHN 3:6,0
+2025-01-16 11:12:36,92.0,added grade number 3 to verse JHN 3:6,0
+2025-01-16 11:12:40,91.72222222222221,added grade number 4 to verse JHN 3:6,0
+2025-01-16 11:12:42,91.65555555555555,added grade number 5 to verse JHN 3:6,0
+2025-01-16 11:12:44,91.66666666666667,added grade number 6 to verse JHN 3:6,0
+2025-01-16 11:12:51,91.66666666666667,reflected on verse JHN 3:6,1
+2025-01-16 11:12:53,92.14285714285714,added grade number 1 to verse JHN 3:7,0
+2025-01-16 11:12:55,91.42857142857143,added grade number 2 to verse JHN 3:7,0
+2025-01-16 11:12:58,91.33333333333334,added grade number 3 to verse JHN 3:7,0
+2025-01-16 11:13:00,91.42857142857143,added grade number 4 to verse JHN 3:7,0
+2025-01-16 11:13:03,91.42857142857143,added grade number 5 to verse JHN 3:7,0
+2025-01-16 11:13:05,91.30952380952381,added grade number 6 to verse JHN 3:7,0
+2025-01-16 11:13:11,91.30952380952381,reflected on verse JHN 3:7,1
+2025-01-16 11:13:13,91.14583333333333,added grade number 1 to verse JHN 3:8,0
+2025-01-16 11:13:15,91.02083333333333,added grade number 2 to verse JHN 3:8,0
+2025-01-16 11:13:17,91.27083333333333,added grade number 3 to verse JHN 3:8,0
+2025-01-16 11:13:19,91.30208333333333,added grade number 4 to verse JHN 3:8,0
+2025-01-16 11:13:21,91.14583333333333,added grade number 5 to verse JHN 3:8,0
+2025-01-16 11:13:24,91.1875,added grade number 6 to verse JHN 3:8,0
+2025-01-16 11:13:30,91.1875,reflected on verse JHN 3:8,1
+2025-01-16 11:13:33,90.83333333333333,added grade number 1 to verse JHN 3:9,0
+2025-01-16 11:13:41,91.22222222222223,added grade number 2 to verse JHN 3:9,0
+2025-01-16 11:13:44,91.24074074074073,added grade number 3 to verse JHN 3:9,0
+2025-01-16 11:13:46,91.25,added grade number 4 to verse JHN 3:9,0
+2025-01-16 11:13:49,91.21111111111111,added grade number 5 to verse JHN 3:9,0
+2025-01-16 11:13:51,91.18518518518518,added grade number 6 to verse JHN 3:9,0
+2025-01-16 11:13:56,91.18518518518518,reflected on verse JHN 3:9,1
+2025-01-16 11:13:58,91.56666666666666,added grade number 1 to verse JHN 3:10,0
+2025-01-16 11:14:00,91.41666666666666,added grade number 2 to verse JHN 3:10,0
+2025-01-16 11:14:04,91.36666666666666,added grade number 3 to verse JHN 3:10,0
+2025-01-16 11:14:06,91.34166666666667,added grade number 4 to verse JHN 3:10,0
+2025-01-16 11:14:08,91.38666666666667,added grade number 5 to verse JHN 3:10,0
+2025-01-16 11:14:10,91.33333333333333,added grade number 6 to verse JHN 3:10,0
+2025-01-16 11:14:21,91.33333333333333,reflected on verse JHN 3:10,1
+2025-01-16 11:14:26,90.75757575757575,added grade number 1 to verse JHN 3:11,0
+2025-01-16 11:14:30,91.2121212121212,added grade number 2 to verse JHN 3:11,0
+2025-01-16 11:14:33,91.2121212121212,added grade number 3 to verse JHN 3:11,0
+2025-01-16 11:14:34,91.32575757575756,added grade number 4 to verse JHN 3:11,0
+2025-01-16 11:14:39,91.33939393939393,added grade number 5 to verse JHN 3:11,0
+2025-01-16 11:14:45,91.34848484848484,added grade number 6 to verse JHN 3:11,0
+2025-01-16 11:14:52,91.34848484848484,reflected on verse JHN 3:11,1
+2025-01-16 11:14:54,91.65277777777777,added grade number 1 to verse JHN 3:12,0
+2025-01-16 11:14:56,91.3611111111111,added grade number 2 to verse JHN 3:12,0
+2025-01-16 11:14:57,91.45833333333333,added grade number 3 to verse JHN 3:12,0
+2025-01-16 11:14:59,91.50694444444444,added grade number 4 to verse JHN 3:12,0
+2025-01-16 11:15:00,91.45277777777777,added grade number 5 to verse JHN 3:12,0
+2025-01-16 11:15:04,91.41666666666667,added grade number 6 to verse JHN 3:12,0
+2025-01-16 11:15:11,91.41666666666667,reflected on verse JHN 3:12,1
+2025-01-16 11:15:15,91.3076923076923,added grade number 1 to verse JHN 3:13,0
+2025-01-16 11:15:19,91.5,added grade number 2 to verse JHN 3:13,0
+2025-01-16 11:15:23,91.56410256410255,added grade number 3 to verse JHN 3:13,0
+2025-01-16 11:15:27,91.59615384615384,added grade number 4 to verse JHN 3:13,0
+2025-01-16 11:15:34,91.61538461538461,added grade number 5 to verse JHN 3:13,0
+2025-01-16 11:15:38,91.53846153846153,added grade number 6 to verse JHN 3:13,0
+2025-01-16 11:15:43,91.53846153846153,reflected on verse JHN 3:13,1
+2025-01-16 11:15:46,91.42857142857143,added grade number 1 to verse JHN 3:14,0
+2025-01-16 11:15:50,91.35714285714286,added grade number 2 to verse JHN 3:14,0
+2025-01-16 11:15:52,91.5,added grade number 3 to verse JHN 3:14,0
+2025-01-16 11:15:54,91.48214285714286,added grade number 4 to verse JHN 3:14,0
+2025-01-16 11:15:57,91.44285714285715,added grade number 5 to verse JHN 3:14,0
+2025-01-16 11:15:58,91.44047619047619,added grade number 6 to verse JHN 3:14,0
+2025-01-16 11:16:03,91.44047619047619,reflected on verse JHN 3:14,1
+2025-01-16 11:16:05,91.67777777777778,added grade number 1 to verse JHN 3:15,0
+2025-01-16 11:16:07,91.44444444444444,added grade number 2 to verse JHN 3:15,0
+2025-01-16 11:16:09,91.36666666666666,added grade number 3 to verse JHN 3:15,0
+2025-01-16 11:16:11,91.36111111111111,added grade number 4 to verse JHN 3:15,0
+2025-01-16 11:16:14,91.38444444444444,added grade number 5 to verse JHN 3:15,0
+2025-01-16 11:16:15,91.4,added grade number 6 to verse JHN 3:15,0
+2025-01-16 11:16:22,91.4,reflected on verse JHN 3:15,1
+2025-01-16 11:16:24,91.625,added grade number 1 to verse JHN 3:16,0
+2025-01-16 11:16:25,91.625,added grade number 2 to verse JHN 3:16,0
+2025-01-16 11:16:29,91.625,added grade number 3 to verse JHN 3:16,0
+2025-01-16 11:16:31,91.578125,added grade number 4 to verse JHN 3:16,0
+2025-01-16 11:16:33,91.5875,added grade number 5 to verse JHN 3:16,0
+2025-01-16 11:16:35,91.59375,added grade number 6 to verse JHN 3:16,0
+2025-01-16 11:16:40,91.59375,reflected on verse JHN 3:16,1
+2025-01-16 11:16:42,91.79411764705883,added grade number 1 to verse JHN 3:17,0
+2025-01-16 11:16:44,91.79411764705883,added grade number 2 to verse JHN 3:17,0
+2025-01-16 11:16:46,91.79411764705883,added grade number 3 to verse JHN 3:17,0
+2025-01-16 11:16:49,91.79411764705883,added grade number 4 to verse JHN 3:17,0
+2025-01-16 11:16:51,91.79411764705883,added grade number 5 to verse JHN 3:17,0
+2025-01-16 11:16:53,91.74509803921569,added grade number 6 to verse JHN 3:17,0
+2025-01-16 11:16:57,91.74509803921569,reflected on verse JHN 3:17,1
+2025-01-16 11:16:59,91.64814814814815,added grade number 1 to verse JHN 3:18,0
+2025-01-16 11:17:01,91.5925925925926,added grade number 2 to verse JHN 3:18,0
+2025-01-16 11:17:03,91.70370370370371,added grade number 3 to verse JHN 3:18,0
+2025-01-16 11:17:05,91.66203703703704,added grade number 4 to verse JHN 3:18,0
+2025-01-16 11:17:07,91.71481481481482,added grade number 5 to verse JHN 3:18,0
+2025-01-16 11:17:08,91.72222222222223,added grade number 6 to verse JHN 3:18,0
+2025-01-16 11:17:15,91.72222222222223,reflected on verse JHN 3:18,1
+2025-01-16 11:17:17,91.89473684210526,added grade number 1 to verse JHN 3:19,0
+2025-01-16 11:17:21,91.71052631578948,added grade number 2 to verse JHN 3:19,0
+2025-01-16 11:17:23,91.6842105263158,added grade number 3 to verse JHN 3:19,0
+2025-01-16 11:17:24,91.67105263157895,added grade number 4 to verse JHN 3:19,0
+2025-01-16 11:17:27,91.71578947368421,added grade number 5 to verse JHN 3:19,0
+2025-01-16 11:17:28,91.7017543859649,added grade number 6 to verse JHN 3:19,0
+2025-01-16 11:17:33,91.7017543859649,reflected on verse JHN 3:19,1
+2025-01-16 11:17:37,91.86666666666666,added grade number 1 to verse JHN 3:20,0
+2025-01-16 11:17:40,91.79166666666666,added grade number 2 to verse JHN 3:20,0
+2025-01-16 11:17:41,91.73333333333332,added grade number 3 to verse JHN 3:20,0
+2025-01-16 11:17:44,91.70416666666667,added grade number 4 to verse JHN 3:20,0
+2025-01-16 11:17:45,91.73666666666666,added grade number 5 to verse JHN 3:20,0
+2025-01-16 11:17:48,91.73333333333332,added grade number 6 to verse JHN 3:20,0
+2025-01-16 11:17:53,91.73333333333332,reflected on verse JHN 3:20,1
+2025-01-16 11:17:57,91.55555555555554,added grade number 1 to verse JHN 3:21,0
+2025-01-16 11:17:59,91.6031746031746,added grade number 2 to verse JHN 3:21,0
+2025-01-16 11:18:01,91.65079365079364,added grade number 3 to verse JHN 3:21,0
+2025-01-16 11:18:03,91.65079365079364,added grade number 4 to verse JHN 3:21,0
+2025-01-16 11:18:05,91.66984126984127,added grade number 5 to verse JHN 3:21,0
+2025-01-16 11:18:06,91.64285714285714,added grade number 6 to verse JHN 3:21,0
+2025-01-16 11:18:11,91.64285714285714,reflected on verse JHN 3:21,1
+2025-01-16 11:18:15,91.34090909090908,added grade number 1 to verse JHN 3:22,0
+2025-01-16 11:18:17,91.56818181818181,added grade number 2 to verse JHN 3:22,0
+2025-01-16 11:18:19,91.49242424242424,added grade number 3 to verse JHN 3:22,0
+2025-01-16 11:18:21,91.53409090909089,added grade number 4 to verse JHN 3:22,0
+2025-01-16 11:18:23,91.5590909090909,added grade number 5 to verse JHN 3:22,0
+2025-01-16 11:18:24,91.57575757575756,added grade number 6 to verse JHN 3:22,0
+2025-01-16 11:18:30,91.57575757575756,reflected on verse JHN 3:22,1
+2025-01-16 11:18:34,91.5072463768116,added grade number 1 to verse JHN 3:23,0
+2025-01-16 11:18:36,91.55072463768116,added grade number 2 to verse JHN 3:23,0
+2025-01-16 11:18:38,91.5072463768116,added grade number 3 to verse JHN 3:23,0
+2025-01-16 11:18:40,91.45289855072463,added grade number 4 to verse JHN 3:23,0
+2025-01-16 11:18:41,91.5072463768116,added grade number 5 to verse JHN 3:23,0
+2025-01-16 11:18:43,91.5072463768116,added grade number 6 to verse JHN 3:23,0
+2025-01-16 11:18:48,91.5072463768116,reflected on verse JHN 3:23,1
+2025-01-16 11:18:50,91.2361111111111,added grade number 1 to verse JHN 3:24,0
+2025-01-16 11:18:52,91.2361111111111,added grade number 2 to verse JHN 3:24,0
+2025-01-16 11:18:53,91.375,added grade number 3 to verse JHN 3:24,0
+2025-01-16 11:18:55,91.34027777777777,added grade number 4 to verse JHN 3:24,0
+2025-01-16 11:18:57,91.3611111111111,added grade number 5 to verse JHN 3:24,0
+2025-01-16 11:18:59,91.34027777777777,added grade number 6 to verse JHN 3:24,0
+2025-01-16 11:19:04,91.34027777777777,reflected on verse JHN 3:24,1
+2025-01-16 11:19:06,91.08666666666666,added grade number 1 to verse JHN 3:25,0
+2025-01-16 11:19:08,91.14666666666666,added grade number 2 to verse JHN 3:25,0
+2025-01-16 11:19:10,91.12666666666667,added grade number 3 to verse JHN 3:25,0
+2025-01-16 11:19:12,91.16666666666666,added grade number 4 to verse JHN 3:25,0
+2025-01-16 11:19:14,91.15066666666665,added grade number 5 to verse JHN 3:25,0
+2025-01-16 11:19:16,91.16,added grade number 6 to verse JHN 3:25,0
+2025-01-16 11:19:21,91.16,reflected on verse JHN 3:25,1
+2025-01-16 11:19:23,91.11538461538461,added grade number 1 to verse JHN 3:26,0
+2025-01-16 11:19:26,91.07692307692308,added grade number 2 to verse JHN 3:26,0
+2025-01-16 11:19:27,91.06410256410255,added grade number 3 to verse JHN 3:26,0
+2025-01-16 11:19:29,91.02884615384616,added grade number 4 to verse JHN 3:26,0
+2025-01-16 11:19:31,91.08461538461538,added grade number 5 to verse JHN 3:26,0
+2025-01-16 11:19:33,91.08974358974359,added grade number 6 to verse JHN 3:26,0
+2025-01-16 11:19:39,91.08974358974359,reflected on verse JHN 3:26,1
+2025-01-16 11:19:41,90.8641975308642,added grade number 1 to verse JHN 3:27,0
+2025-01-16 11:19:43,90.99382716049384,added grade number 2 to verse JHN 3:27,0
+2025-01-16 11:19:46,91.01234567901236,added grade number 3 to verse JHN 3:27,0
+2025-01-16 11:19:47,91.06790123456791,added grade number 4 to verse JHN 3:27,0
+2025-01-16 11:19:49,91.0493827160494,added grade number 5 to verse JHN 3:27,0
+2025-01-16 11:19:51,91.06172839506173,added grade number 6 to verse JHN 3:27,0
+2025-01-16 11:19:56,91.06172839506173,reflected on verse JHN 3:27,1
+2025-01-16 11:20:00,91.0952380952381,added grade number 1 to verse JHN 3:28,0
+2025-01-16 11:20:02,91.02380952380953,added grade number 2 to verse JHN 3:28,0
+2025-01-16 11:20:06,91.02380952380953,added grade number 3 to verse JHN 3:28,0
+2025-01-16 11:20:08,91.04166666666667,added grade number 4 to verse JHN 3:28,0
+2025-01-16 11:20:10,91.03809523809525,added grade number 5 to verse JHN 3:28,0
+2025-01-16 11:20:12,91.04761904761905,added grade number 6 to verse JHN 3:28,0
+2025-01-16 11:20:17,91.04761904761905,reflected on verse JHN 3:28,1
+2025-01-16 11:20:19,90.9425287356322,added grade number 1 to verse JHN 3:29,0
+2025-01-16 11:20:22,90.97701149425288,added grade number 2 to verse JHN 3:29,0
+2025-01-16 11:20:24,90.98850574712645,added grade number 3 to verse JHN 3:29,0
+2025-01-16 11:20:26,90.95114942528735,added grade number 4 to verse JHN 3:29,0
+2025-01-16 11:20:27,90.92873563218392,added grade number 5 to verse JHN 3:29,0
+2025-01-16 11:20:29,90.95402298850576,added grade number 6 to verse JHN 3:29,0
+2025-01-16 11:20:34,90.95402298850576,reflected on verse JHN 3:29,1
+2025-01-16 11:20:36,91.0888888888889,added grade number 1 to verse JHN 3:30,0
+2025-01-16 11:20:38,91.0888888888889,added grade number 2 to verse JHN 3:30,0
+2025-01-16 11:20:40,91.03333333333335,added grade number 3 to verse JHN 3:30,0
+2025-01-16 11:20:42,90.9888888888889,added grade number 4 to verse JHN 3:30,0
+2025-01-16 11:20:44,90.94222222222223,added grade number 5 to verse JHN 3:30,0
+2025-01-16 11:20:46,90.9388888888889,added grade number 6 to verse JHN 3:30,0
+2025-01-16 11:20:53,90.9388888888889,reflected on verse JHN 3:30,1
+2025-01-16 11:20:59,90.84408602150539,added grade number 1 to verse JHN 3:31,0
+2025-01-16 11:21:02,90.90860215053765,added grade number 2 to verse JHN 3:31,0
+2025-01-16 11:21:05,90.96236559139786,added grade number 3 to verse JHN 3:31,0
+2025-01-16 11:21:07,90.9489247311828,added grade number 4 to verse JHN 3:31,0
+2025-01-16 11:21:09,90.94086021505377,added grade number 5 to verse JHN 3:31,0
+2025-01-16 11:21:11,90.95161290322582,added grade number 6 to verse JHN 3:31,0
+2025-01-16 11:21:18,90.95161290322582,reflected on verse JHN 3:31,1
+2025-01-16 11:21:20,90.98437500000001,added grade number 1 to verse JHN 3:32,0
+2025-01-16 11:21:22,90.95312500000001,added grade number 2 to verse JHN 3:32,0
+2025-01-16 11:21:26,90.89062500000001,added grade number 3 to verse JHN 3:32,0
+2025-01-16 11:21:28,90.85937500000001,added grade number 4 to verse JHN 3:32,0
+2025-01-16 11:21:30,90.85937500000001,added grade number 5 to verse JHN 3:32,0
+2025-01-16 11:21:31,90.86979166666669,added grade number 6 to verse JHN 3:32,0
+2025-01-16 11:21:38,90.86979166666669,reflected on verse JHN 3:32,1
+2025-01-16 11:21:40,90.7828282828283,added grade number 1 to verse JHN 3:33,0
+2025-01-16 11:21:43,90.81313131313134,added grade number 2 to verse JHN 3:33,0
+2025-01-16 11:21:46,90.84343434343437,added grade number 3 to verse JHN 3:33,0
+2025-01-16 11:21:52,90.84343434343437,added grade number 4 to verse JHN 3:33,0
+2025-01-16 11:21:54,90.83131313131315,added grade number 5 to verse JHN 3:33,0
+2025-01-16 11:21:56,90.82323232323235,added grade number 6 to verse JHN 3:33,0
+2025-01-16 11:22:02,90.82323232323235,reflected on verse JHN 3:33,1
+2025-01-16 11:22:04,90.7401960784314,added grade number 1 to verse JHN 3:34,0
+2025-01-16 11:22:06,90.69607843137257,added grade number 2 to verse JHN 3:34,0
+2025-01-16 11:22:08,90.71078431372551,added grade number 3 to verse JHN 3:34,0
+2025-01-16 11:22:10,90.74754901960786,added grade number 4 to verse JHN 3:34,0
+2025-01-16 11:22:13,90.75784313725492,added grade number 5 to verse JHN 3:34,0
+2025-01-16 11:22:15,90.77450980392159,added grade number 6 to verse JHN 3:34,0
+2025-01-16 11:22:19,90.77450980392159,reflected on verse JHN 3:34,1
+2025-01-16 11:22:21,90.89523809523811,added grade number 1 to verse JHN 3:35,0
+2025-01-16 11:22:23,90.89523809523811,added grade number 2 to verse JHN 3:35,0
+2025-01-16 11:22:26,90.82857142857144,added grade number 3 to verse JHN 3:35,0
+2025-01-16 11:22:28,90.82380952380954,added grade number 4 to verse JHN 3:35,0
+2025-01-16 11:22:30,90.83809523809525,added grade number 5 to verse JHN 3:35,0
+2025-01-16 11:22:32,90.84761904761906,added grade number 6 to verse JHN 3:35,0
+2025-01-16 11:22:37,90.84761904761906,reflected on verse JHN 3:35,1
+2025-01-16 11:22:39,90.76851851851853,added grade number 1 to verse JHN 3:36,0
+2025-01-16 11:22:41,90.79629629629632,added grade number 2 to verse JHN 3:36,0
+2025-01-16 11:22:44,90.85185185185188,added grade number 3 to verse JHN 3:36,0
+2025-01-16 11:22:47,90.85879629629632,added grade number 4 to verse JHN 3:36,0
+2025-01-16 11:22:49,90.86296296296298,added grade number 5 to verse JHN 3:36,0
+2025-01-16 11:22:51,90.8564814814815,added grade number 6 to verse JHN 3:36,0
+2025-01-16 11:22:56,90.8564814814815,reflected on verse JHN 3:36,1
+2025-01-16 11:22:58,90.8564814814815,added grade number 1 to verse JHN 3:1,1
+2025-01-16 11:23:00,90.78703703703705,added grade number 2 to verse JHN 3:1,1
+2025-01-16 11:23:02,90.8101851851852,added grade number 3 to verse JHN 3:1,1
+2025-01-16 11:23:06,90.80787037037038,added grade number 4 to verse JHN 3:1,1
+2025-01-16 11:23:08,90.78981481481483,added grade number 5 to verse JHN 3:1,1
+2025-01-16 11:23:10,90.77777777777779,added grade number 6 to verse JHN 3:1,1
+2025-01-16 11:23:16,90.77777777777779,reflected on verse JHN 3:1,2
+2025-01-16 11:23:18,90.71296296296299,added grade number 1 to verse JHN 3:2,1
+2025-01-16 11:23:20,90.71296296296299,added grade number 2 to verse JHN 3:2,1
+2025-01-16 11:23:23,90.71296296296299,added grade number 3 to verse JHN 3:2,1
+2025-01-16 11:23:26,90.67824074074076,added grade number 4 to verse JHN 3:2,1
+2025-01-16 11:23:30,90.67407407407408,added grade number 5 to verse JHN 3:2,1
+2025-01-16 11:23:32,90.67129629629632,added grade number 6 to verse JHN 3:2,1

@@ -50,7 +50,7 @@ configs:
     translation_comment_key: [translation_notes]
 
   seven_year_old_paraphrase__summarizing_auto_loop:
-    active: true
+    active: false
     api_key: [mm_key,key]
     reference_key: [vref]
     source_key: [source]
@@ -74,3 +74,58 @@ configs:
     translation_comment_key: [translation_notes]
 
     summarize_corrections: true
+
+  seven_year_old_paraphrase__summarizing_auto_loop_no_compress:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation should be a paraphrase in English targeting the comprehansion level of a seven year old.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/John_3_paraphrase_3.jsonl
+    reflection_output: output/seven_year_old_paraphrase__summarizing_auto_loop_no_compress.jsonl
+    reflection_loops_per_verse: 10
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/seven_year_old_paraphrase__summarizing_auto_loop_no_compress.csv
+
+    translation_comment_key: [translation_notes]
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
+
+
+  john_3_nonparaphrase:
+    active: true
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation sould be a literal translation in English faithful to the source.  However because of copyright laws, attempt to not plagiarize other known translations.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/John_3_1-3_36.jsonl
+    reflection_output: output/John_3_1-3_36_reflected.jsonl
+    reflection_loops_per_verse: 10
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/John_3_1-3_36_reflected.csv
+
+    translation_comment_key: [translation_notes]
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
