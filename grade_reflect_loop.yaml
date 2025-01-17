@@ -163,4 +163,6 @@ configs:
     mode: lowest_grade_priority
     iterations_without_improvement_max: 30
 
+    reflection_loops_per_verse: 10
+
     grading_prompt: "Grade {vref} in accordance to the translation objective."
