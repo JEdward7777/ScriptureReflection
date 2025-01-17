@@ -112,3 +112,25 @@ def load_file_to_list(file_path: str) -> list[str]:
     """
     with open(file_path, encoding='utf-8') as f:
         return f.read().splitlines()
+
+
+class Tee:
+    """
+    A class that writes to multiple files.
+    """
+    def __init__(self, *files):
+        self.files = files
+
+    def write(self, message):
+        """
+        Write a message to all files.
+        """
+        for f in self.files:
+            f.write(message)
+
+    def flush(self):
+        """
+        Flushes all files.
+        """
+        for f in self.files:
+            f.flush()

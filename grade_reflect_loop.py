@@ -11,6 +11,7 @@ import os
 import time
 import copy
 import json
+import sys
 
 from pydantic import BaseModel
 from openai import OpenAI
@@ -74,7 +75,7 @@ def verse_needs_finialization( verse, config ):
     #if 'graded_verse' not in verse['reflection_loops'][-1]:
     #    return False
 
-    #don't really need this because the code shouldn't get this far if there is anything to 
+    #don't really need this because the code shouldn't get this far if there is anything to
     #grade, but adding it to be complete.
     if len(verse['reflection_loops'][-1]['grades']) < config['grades_per_reflection_loop']:
         return False
@@ -129,7 +130,7 @@ def finalize_verse( verse, config ):
                 verse['reflection_loops'][-1]['graded_verse_comment'] = \
                     utils.look_up_key( verse, config['translation_comment_key'] )
 
-        #now overwrite the official verse with verse with the best grade. 
+        #now overwrite the official verse with verse with the best grade.
         utils.set_key( verse, config['translation_key'],
             best_loop['graded_verse'] )
         if 'translation_comment_key' in config:
@@ -847,6 +848,13 @@ def main():
     Run the reflection and grade loop as defined in the grade_reflect_loop.yaml file.
     """
 
+    def run_mode(config_name, config):
+        print( f"Running config {config_name}" )
+        if config.get( "mode", "" ) == "lowest_grade_priority":
+            run_config__lowest_grade_priority( config, api_keys, save_timeout )
+        else:
+            run_config__n_loops( config, api_keys, save_timeout )
+
     with open( 'key.yaml', encoding='utf-8' ) as keys_f:
         api_keys = yaml.load(keys_f, Loader=yaml.FullLoader)
 
@@ -857,11 +865,31 @@ def main():
 
     for config_name, config in grade_reflect_loop_yaml['configs'].items():
         if config['active']:
-            print( f"Running config {config_name}" )
-            if config.get( "mode", "" ) == "lowest_grade_priority":
-                run_config__lowest_grade_priority( config, api_keys, save_timeout )
+
+
+
+
+            if 'tee_output_filename' in config:
+                tee_output_filename = config['tee_output_filename']
+
+                with open( tee_output_filename, 'a', encoding='utf-8' ) as tee_f:
+
+                    std_out_save = sys.stdout
+                    std_err_save = sys.stderr
+
+                    sys.stdout = utils.Tee(sys.stdout, tee_f)
+                    sys.stderr = utils.Tee(sys.stderr, tee_f)
+
+                    run_mode(config_name, config)
+
+                    sys.stdout = std_out_save
+                    sys.stderr = std_err_save
             else:
-                run_config__n_loops( config, api_keys, save_timeout )
+                run_mode(config_name, config)
+
+
+
+
 
 if __name__ == "__main__":
     main()
