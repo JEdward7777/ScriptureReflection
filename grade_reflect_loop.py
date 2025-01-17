@@ -600,12 +600,12 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 #if we got here then all the verses are fully graded.
                 #this is the moment to test if the grade is improving or not.
                 average_grade = compute_translation_grade( reflection_output, config )
+                iterations_without_improvement += 1
                 if average_grade > best_grade_found:
                     best_grade_found = average_grade
+                    print( f"New best grade: {best_grade_found} after {iterations_without_improvement} iterations" )
                     iterations_without_improvement = 0
-                    print( f"New best grade: {best_grade_found}" )
-                else:
-                    iterations_without_improvement += 1
+                    
 
                 if iterations_without_improvement > iterations_without_improvement_max:
                     done = True
@@ -638,6 +638,15 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             config, over_ridden_references )
                         reflection_result = perform_reflection( selected_verse, common_context,
                             client, config )
+
+                        print( f"Working on verse {utils.look_up_key( selected_verse, reference_key )} which has grade {compute_verse_grade( selected_verse, config )}\n" )
+                        
+                        if 'correction_summarization' in reflection_result:
+                            print( reflection_result['correction_summarization']['summary'] + "\n" )
+
+                        print( f"old: {utils.look_up_key( selected_verse, translation_key )}" )
+                        print( f"new: {reflection_result['updated_translation']}\n" )
+
 
                         #add the new reflection to the reflection loop
                         #the existing translation to the loop
