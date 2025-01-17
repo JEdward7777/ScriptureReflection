@@ -70,7 +70,13 @@ def verse_needs_finialization( verse, config ):
     if len(verse['reflection_loops']) < max(1,config['reflection_loops_per_verse']):
         return False
 
-    if 'graded_verse' not in verse['reflection_loops'][-1]:
+    #This isn't true.  We will just set graded_verse ourselves when we do the finalization.
+    #if 'graded_verse' not in verse['reflection_loops'][-1]:
+    #    return False
+
+    #don't really need this because the code shouldn't get this far if there is anything to 
+    #grade, but adding it to be complete.
+    if len(verse['reflection_loops'][-1]['grades']) < config['grades_per_reflection_loop']:
         return False
 
     return True
@@ -96,6 +102,12 @@ def finalize_verse( verse, config ):
     if 'reflection_loops' not in verse:
         return
 
+    if verse_is_finalized( verse ):
+        return
+
+    if not verse_needs_finialization( verse, config ):
+        return
+
     #compute_verse_grade has a side effect of making all
     #the average grades cached.
     compute_verse_grade( verse, config )
@@ -109,6 +121,15 @@ def finalize_verse( verse, config ):
                 best_grade = reflection_loop['average_grade']
 
     if best_loop is not None:
+        #make sure the last thing graded has its verse marked.
+        if not 'graded_verse' in verse['reflection_loops'][-1]:
+            verse['reflection_loops'][-1]['graded_verse'] = \
+                utils.look_up_key( verse, config['translation_key'] )
+            if 'translation_comment_key' in config:
+                verse['reflection_loops'][-1]['graded_verse_comment'] = \
+                    utils.look_up_key( verse, config['translation_comment_key'] )
+
+        #now overwrite the official verse with verse with the best grade. 
         utils.set_key( verse, config['translation_key'],
             best_loop['graded_verse'] )
         if 'translation_comment_key' in config:
@@ -666,7 +687,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         last_reflection_loop['grades'].append(new_grade)
                         output_dirty = True
                         action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
-                            f"on loop {len(last_reflection_loop)} " \
+                            f"on loop {len(selected_verse['reflection_loops'])} " \
                             f"of grade {new_grade['grade']} " \
                             f"to verse {utils.look_up_key( selected_verse, reference_key )}"
 
@@ -721,6 +742,17 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             action_done = f"finalized verse {utils.look_up_key( selected_verse,
                                 reference_key )}"
                             output_dirty = True
+
+                            print( f"Finilizing {utils.look_up_key( selected_verse,
+                                reference_key )}\n" )
+                            print( f"old: {selected_verse['reflection_loops'][-1] \
+                                ['graded_verse']}" )
+                            print( f"new: {utils.look_up_key( selected_verse, translation_key
+                                )}\n" )
+                            print( f"old grade: {selected_verse['reflection_loops'][-1] \
+                                ['average_grade']}" )
+                            print( f"new grade: {compute_verse_grade( selected_verse,
+                                config )}\n" )
                         else:
 
                             #otherwise we go ahead and run a reflection run on it.
