@@ -204,3 +204,6 @@ configs:
     reflection_loops_per_verse: 10
 
     grading_prompt: "Grade {vref} in accordance to the translation objective."
+
+    start_line: 23214 # MAT 1:1
+    end_line: 24284 # MAT 28:20

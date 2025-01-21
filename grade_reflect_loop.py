@@ -197,7 +197,12 @@ def compute_translation_grade( translation, config ):
     verse_count = 0
     verse_sum = 0
 
-    for verse in translation:
+    for verse_line_number,verse in enumerate(translation):
+        if 'start_line' in config and verse_line_number < config['start_line']-1:
+            continue
+        if 'end_line' in config and verse_line_number > config['end_line']-1:
+            break
+
         verse_grade = compute_verse_grade( verse, config )
         if verse_grade is not None:
             verse_count += 1
@@ -623,6 +628,13 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     iterations_without_improvement = 0
     iterations_without_improvement_max = config['iterations_without_improvement_max']
 
+
+    if 'start_line' in config:
+        print( "Focusing on and after start_line", config['start_line'] )
+
+    if 'end_line' in config:
+        print( "Focusing on and before end_line", config['end_line'] )
+
     #load the result if we didn't finish last time.
     if os.path.exists(reflection_output_filename):
         reflection_output = utils.load_jsonl( reflection_output_filename )
@@ -660,7 +672,12 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
             #Loop through all the verses to find one that is not fully graded.
             action_done = "did nothing"
-            for verse in reflection_output:
+            for verse_line_number,verse in enumerate(reflection_output):
+                if 'start_line' in config and verse_line_number < config['start_line']-1:
+                    continue
+                if 'end_line' in config and verse_line_number > config['end_line']-1:
+                    continue #not break because we have a for else which will get skiped.
+
                 vref = utils.look_up_key( verse, reference_key )
                 if vref is not None and not vref in over_ridden_references:
                     #now need to determine if this verse needs another grade.
@@ -700,9 +717,9 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 average_grade = compute_translation_grade( reflection_output, config )
                 iterations_without_improvement += 1
                 if average_grade > best_grade_found:
+                    print( f"New best grade: {average_grade} after "
+                        f"{iterations_without_improvement} iterations.  Improvement of {average_grade - best_grade_found}" )
                     best_grade_found = average_grade
-                    print( f"New best grade: {best_grade_found} after "
-                        f"{iterations_without_improvement} iterations" )
                     iterations_without_improvement = 0
 
 
@@ -716,7 +733,14 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                     lowest_grade_found = None
                     lowest_graded_verse = None
                     if not "debug_force_vref" in config:
-                        for verse in reflection_output:
+
+                        for verse_line_number,verse in enumerate(reflection_output):
+                            if 'start_line' in config and verse_line_number < config['start_line']-1:
+                                continue
+                            if 'end_line' in config and verse_line_number > config['end_line']-1:
+                                break
+
+
                             vref = utils.look_up_key( verse, reference_key )
                             if vref is not None and not vref in over_ridden_references and \
                                     not verse_is_finalized( verse ):
