@@ -877,13 +877,14 @@ def main():
                     std_out_save = sys.stdout
                     std_err_save = sys.stderr
 
-                    sys.stdout = utils.Tee(sys.stdout, tee_f)
-                    sys.stderr = utils.Tee(sys.stderr, tee_f)
+                    try:
+                        sys.stdout = utils.Tee(sys.stdout, tee_f)
+                        sys.stderr = utils.Tee(sys.stderr, tee_f)
 
-                    run_mode(config_name, config)
-
-                    sys.stdout = std_out_save
-                    sys.stderr = std_err_save
+                        run_mode(config_name, config)
+                    finally:
+                        sys.stdout = std_out_save
+                        sys.stderr = std_err_save
             else:
                 run_mode(config_name, config)
 
