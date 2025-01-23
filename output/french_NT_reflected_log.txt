@@ -16430,3 +16430,517 @@ new: Personne n'ajoute un morceau de tissu neuf sur un vêtement ancien; autreme
 2025-01-23 17:52:29 - Average grade: 91.38 - added grade number 2 on loop 2 of grade 95 to verse MAT 9:16 - Best grade: 91.37 - Iterations without improvement: 0
 2025-01-23 17:52:32 - Average grade: 91.37 - added grade number 3 on loop 2 of grade 85 to verse MAT 9:16 - Best grade: 91.37 - Iterations without improvement: 0
 2025-01-23 17:52:34 - Average grade: 91.37 - added grade number 4 on loop 2 of grade 90 to verse MAT 9:16 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:36 - Average grade: 91.37 - added grade number 5 on loop 2 of grade 95 to verse MAT 9:16 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:42 - Average grade: 91.37 - added grade number 6 on loop 2 of grade 92 to verse MAT 9:16 - Best grade: 91.37 - Iterations without improvement: 0
+New best grade: 91.37254901960773 after 1 iterations.  Improvement of 0.0024898848428307474
+Working on verse MAT 10:18 which has grade 89.33333333333333
+
+The peer review of the translation of MAT 10:18 highlighted several areas for improvement while acknowledging the overall accuracy and fidelity to the original Greek text. Common suggestions include:
+
+1. **Phrase Adjustments**: Consider revising 'pour leur servir de témoignage' to 'pour témoigner devant eux' or 'comme un témoignage pour eux' to more directly express the disciples' role as witnesses.
+2. **Clarity and Connection**: The phrase 'ainsi qu’aux nations' may need to be more explicitly connected to the context of the sentence to enhance flow and clarity.
+3. **Word Choice Precision**: Improving expressions like 'à cause de moi' to reflect a more explicit connection to Christ's identity could increase the translation's depth.
+
+Overall, the translation is sound but could benefit from these minor adjustments to better align with the original intent and improve clarity.
+
+old: Et vous serez amenés devant des gouverneurs et des rois à cause de moi, pour leur servir de témoignage, ainsi qu’aux nations.
+new: Et vous serez amenés devant des gouverneurs et des rois à cause de moi, comme un témoignage pour eux et pour les nations.
+
+2025-01-23 17:52:48 - Average grade: 91.37 - reflected on verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:50 - Average grade: 91.37 - added grade number 1 on loop 2 of grade 90 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:53 - Average grade: 91.37 - added grade number 2 on loop 2 of grade 88 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:55 - Average grade: 91.37 - added grade number 3 on loop 2 of grade 90 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:52:58 - Average grade: 91.37 - added grade number 4 on loop 2 of grade 90 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:00 - Average grade: 91.37 - added grade number 5 on loop 2 of grade 95 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:02 - Average grade: 91.37 - added grade number 6 on loop 2 of grade 85 to verse MAT 10:18 - Best grade: 91.37 - Iterations without improvement: 0
+New best grade: 91.37286025521308 after 1 iterations.  Improvement of 0.00031123560535206707
+Working on verse MAT 13:5 which has grade 89.33333333333333
+
+1. **Phrase Refinement**: Continue using 'elle germa immédiatement' for clarity in representing growth; avoid reverting to 'elle leva immédiatement.' 
+2. **Conciseness**: Simplify the phrase 'où il n'y avait pas assez de terre' to 'où il y avait peu de terre' or consider 'où il n'y avait pas suffisamment de terre' for natural flow. 
+3. **Linguistic Nuances**: Opt for 'terrain rocheux' instead of 'sol rocheux' to enhance fluidity and better reflect traditional biblical language. Consider using direct phrasing like 'parce qu'il n'y avait pas de profondeur dans la terre.' 
+4. **Contextual Awareness**: Include brief explanatory notes about the agricultural significance of the parable to aid comprehension without altering the translation. 
+5. **Avoid Interpretation**: Be cautious with terms like 'immédiatement' to maintain focus on a literal interpretation.  
+6. **Overall Faithfulness**: Ensure that the translation remains faithful to the original Greek meaning, avoiding similarities with established translations to prevent plagiarism.
+
+old: Une autre partie tomba sur le sol rocheux, où il n'y avait pas assez de terre, et elle germa immédiatement, à cause du manque de profondeur de la terre.
+new: Une autre partie tomba sur le terrain rocheux, où il y avait peu de terre, et elle germa immédiatement, parce qu'il n'y avait pas de profondeur dans la terre.
+
+2025-01-23 17:53:09 - Average grade: 91.37 - reflected on verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:12 - Average grade: 91.37 - added grade number 1 on loop 6 of grade 85 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:14 - Average grade: 91.37 - added grade number 2 on loop 6 of grade 85 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:17 - Average grade: 91.37 - added grade number 3 on loop 6 of grade 85 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:20 - Average grade: 91.37 - added grade number 4 on loop 6 of grade 90 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:24 - Average grade: 91.37 - added grade number 5 on loop 6 of grade 90 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:27 - Average grade: 91.37 - added grade number 6 on loop 6 of grade 88 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 0
+Working on verse MAT 13:5 which has grade 87.16666666666667
+
+1. **Word Choice Improvements**: Replace 'terrain rocheux' with 'sol rocheux' or 'rocs' to better reflect the original Greek meaning and maintain clarity in the translation. This aligns with agricultural terminology used in the Bible.  
+2. **Fluidity of Expression**: Consider changing 'à cause du manque de profondeur de la terre' to 'en raison du manque de profondeur du sol' for improved linguistic flow while retaining the original meaning.  
+3. **Agricultural Context**: Include brief explanatory notes regarding the agricultural context and implications of the parable to deepen readers' understanding, without altering the translated text.  
+4. **Literal Translation**: Ensure that terms like 'germa immédiatement' could be reconsidered for common usage, potentially switching to 'poussa immédiatement' where appropriate for a more familiar expression in agricultural contexts.  
+5. **Avoid Over-Interpretation**: Use caution with terms such as 'immédiatement' to maintain the focus on a literal interpretation and avoid implications beyond the text's meaning.  
+6. **Preserving Original Integrity**: Reiterate the importance of avoiding similarities with established translations to prevent any potential plagiarism issues.
+
+old: Une autre partie tomba sur le terrain rocheux, où il y avait peu de terre, et elle germa immédiatement, parce qu'il n'y avait pas de profondeur dans la terre.
+new: Une autre partie tomba sur le sol rocheux, où il y avait peu de terre, et elle poussa immédiatement, en raison du manque de profondeur du sol.
+
+2025-01-23 17:53:34 - Average grade: 91.37 - reflected on verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:36 - Average grade: 91.38 - added grade number 1 on loop 7 of grade 95 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:39 - Average grade: 91.37 - added grade number 2 on loop 7 of grade 85 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:41 - Average grade: 91.37 - added grade number 3 on loop 7 of grade 90 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:43 - Average grade: 91.37 - added grade number 4 on loop 7 of grade 92 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:46 - Average grade: 91.37 - added grade number 5 on loop 7 of grade 90 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:53:48 - Average grade: 91.37 - added grade number 6 on loop 7 of grade 88 to verse MAT 13:5 - Best grade: 91.37 - Iterations without improvement: 1
+New best grade: 91.37348272642379 after 2 iterations.  Improvement of 0.0006224712107041341
+Working on verse MAT 13:32 which has grade 89.33333333333333
+
+1. Word Choice: Replace 'légumes' with 'plantes' for a more accurate representation of the original Greek context.  
+2. Theological Depth: Enhance the translation to reflect the richness of imagery and metaphors related to growth and sheltering in the context of the Kingdom of Heaven.  
+3. Clarity: Consider minor adjustments in phrasing to improve clarity while maintaining adherence to the original structure.  
+4. Overall Faithfulness: Continue ensuring that the translation is literal and captures the essence of the scripture without resorting to plagiarism.
+
+old: Il est le plus petit de tous les semences, mais quand il a poussé, il est plus grand que tous les légumes, et il devient un arbre, de sorte que les oiseaux du ciel viennent s'abriter dans ses branches.
+new: Il est le plus petit de toutes les semences, mais quand il a poussé, il est plus grand que toutes les plantes, et il devient un arbre, de sorte que les oiseaux du ciel viennent s'abriter dans ses branches.
+
+2025-01-23 17:53:54 - Average grade: 91.37 - reflected on verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:56 - Average grade: 91.37 - added grade number 1 on loop 2 of grade 90 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:53:58 - Average grade: 91.37 - added grade number 2 on loop 2 of grade 88 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:01 - Average grade: 91.37 - added grade number 3 on loop 2 of grade 85 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:03 - Average grade: 91.37 - added grade number 4 on loop 2 of grade 95 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:05 - Average grade: 91.37 - added grade number 5 on loop 2 of grade 90 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:07 - Average grade: 91.37 - added grade number 6 on loop 2 of grade 88 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 0
+Working on verse MAT 13:32 which has grade 89.33333333333333
+
+1. **Word Choice Improvements**: Continue using 'plantes' instead of 'légumes' to maintain theological accuracy. Minor adjustments in other phrasing for clarity may be needed.  
+2. **Theological Emphasis**: Strengthen the emphasis on the spiritual significance of the mustard seed as a representation of the Kingdom of Heaven, which is key in conservative Christian interpretation.  
+3. **Clarity Adjustments**: Review the second half of the translation for areas where clarity can be enhanced while remaining faithful to the original Greek text.  
+4. **Maintain Literal Translation**: Ensure that all adjustments respect the original meaning and do not introduce plagiarism issues.  
+5. **Metaphorical Richness**: Integrate language that highlights the transformative journey from seed to tree as a central theme in the parable.
+
+old: Il est le plus petit de toutes les semences, mais quand il a poussé, il est plus grand que toutes les plantes, et il devient un arbre, de sorte que les oiseaux du ciel viennent s'abriter dans ses branches.
+new: Il est le plus petit de toutes les semences, mais lorsque celui-ci est cultivé, il devient plus grand que toutes les plantes et se transforme en arbre, de sorte que les oiseaux du ciel viennent s'abriter dans ses branches.
+
+2025-01-23 17:54:14 - Average grade: 91.37 - reflected on verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:16 - Average grade: 91.37 - added grade number 1 on loop 3 of grade 85 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:18 - Average grade: 91.37 - added grade number 2 on loop 3 of grade 90 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:20 - Average grade: 91.37 - added grade number 3 on loop 3 of grade 95 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:23 - Average grade: 91.37 - added grade number 4 on loop 3 of grade 90 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:26 - Average grade: 91.37 - added grade number 5 on loop 3 of grade 92 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+2025-01-23 17:54:28 - Average grade: 91.37 - added grade number 6 on loop 3 of grade 90 to verse MAT 13:32 - Best grade: 91.37 - Iterations without improvement: 1
+New best grade: 91.37441643323986 after 2 iterations.  Improvement of 0.0009337068160704121
+Working on verse MAT 15:33 which has grade 89.33333333333333
+
+The peer reviews of MAT 15:33 indicate that while the translation is accurate and faithful to the original Greek, several improvements can be made to enhance clarity and flow. Suggestions include:
+1. **Refining Phrasing:** Consider simplifying 'en ce lieu aride et désolé' to 'dans ce désert' for a more natural French expression.
+2. **Improving Flow:** Revisit the phrasing of 'autant de pains' to enhance the sentence's overall rhythm and readability.
+3. **Adding Nuances:** While maintaining the urgency of the disciples' situation, minor stylistic adjustments could improve the translation's fluidity and convey their desperation more effectively.
+Overall, the translation is solid, but implementing these minor suggestions will strengthen its impact while adhering to the guidelines.
+
+old: Les disciples lui dirent : D'où pourrions-nous obtenir, en ce lieu aride et désolé, autant de pains pour rassasier une si grande foule ?
+new: Les disciples lui dirent : D'où pourrions-nous obtenir dans ce désert tant de pains pour rassasier une si grande foule ?
+
+2025-01-23 17:54:34 - Average grade: 91.37 - reflected on verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:37 - Average grade: 91.38 - added grade number 1 on loop 3 of grade 90 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:39 - Average grade: 91.38 - added grade number 2 on loop 3 of grade 90 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:41 - Average grade: 91.38 - added grade number 3 on loop 3 of grade 92 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:43 - Average grade: 91.38 - added grade number 4 on loop 3 of grade 90 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:45 - Average grade: 91.38 - added grade number 5 on loop 3 of grade 90 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+2025-01-23 17:54:47 - Average grade: 91.38 - added grade number 6 on loop 3 of grade 90 to verse MAT 15:33 - Best grade: 91.37 - Iterations without improvement: 0
+New best grade: 91.37535014005591 after 1 iterations.  Improvement of 0.0009337068160562012
+Working on verse MAT 16:17 which has grade 89.33333333333333
+
+1. **Clarity and Flow**: Consider revising certain phrases to enhance readability and fluidity in French, such as using 'révélé à toi' instead of 'révélé cela'.
+2. **Literalness**: Employ a more literal phrasing for 'flesh and blood', like 'chair et sang', to maintain specificity in the translation.
+3. **Nuance and Theological Emphasis**: Emphasize key theological points, such as the significance of divine revelation, by ensuring terms are reflective of conservative Christian beliefs.
+4. **Modern Accessibility**: Evaluate the use of traditional terms like 'bienheureux' and consider alternatives that may resonate better with contemporary readers while staying true to the original meaning.
+
+old: Et Jésus lui répondit : Tu es bienheureux, Simon, fils de Jonas, car ce n'est ni la chair ni le sang qui t'ont révélé cela, mais mon Père qui est dans les cieux.
+new: Et Jésus lui répondit : "Tu es heureux, Simon, fils de Jonas, car ce n'est ni la chair ni le sang qui t'ont révélé à toi cela, mais mon Père qui est dans les cieux."
+
+2025-01-23 17:54:54 - Average grade: 91.38 - reflected on verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:54:57 - Average grade: 91.37 - added grade number 1 on loop 2 of grade 85 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:54:59 - Average grade: 91.38 - added grade number 2 on loop 2 of grade 95 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:02 - Average grade: 91.38 - added grade number 3 on loop 2 of grade 90 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:04 - Average grade: 91.38 - added grade number 4 on loop 2 of grade 95 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:06 - Average grade: 91.38 - added grade number 5 on loop 2 of grade 95 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:09 - Average grade: 91.38 - added grade number 6 on loop 2 of grade 85 to verse MAT 16:17 - Best grade: 91.38 - Iterations without improvement: 0
+New best grade: 91.37675070028 after 1 iterations.  Improvement of 0.0014005602240843018
+Working on verse MAT 21:3 which has grade 89.33333333333333
+
+1. Consider refining the phrase 'si quelqu'un vous demande quelque chose' to 'si quelqu'un vous interroge' for improved literal accuracy. 2. Rephrase 'le Seigneur en a besoin' to convey a more urgent and specific necessity, possibly adding contextual clarification to enhance understanding. 3. Adjust 'et il les enverra immédiatement' to 'il les enverra sur-le-champ' to align with formal biblical language. 4. Ensure the translation maintains a clear reflection of Jesus' authority as expressed in the original text.
+
+old: Et si quelqu'un vous demande quelque chose, vous lui direz que le Seigneur en a besoin; et il les enverra immédiatement.
+new: Et si quelqu'un vous interroge, vous lui direz que le Seigneur a un besoin urgent; il les enverra sur-le-champ.
+
+2025-01-23 17:55:16 - Average grade: 91.38 - reflected on verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:18 - Average grade: 91.38 - added grade number 1 on loop 2 of grade 88 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:21 - Average grade: 91.37 - added grade number 2 on loop 2 of grade 85 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:23 - Average grade: 91.37 - added grade number 3 on loop 2 of grade 85 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:28 - Average grade: 91.37 - added grade number 4 on loop 2 of grade 75 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:30 - Average grade: 91.37 - added grade number 5 on loop 2 of grade 90 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:55:32 - Average grade: 91.37 - added grade number 6 on loop 2 of grade 90 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 0
+Working on verse MAT 21:3 which has grade 85.5
+
+1. Revise the phrase 'le Seigneur a un besoin urgent' to a more literal translation like 'le Seigneur a besoin' to maintain fidelity to the original Greek text. 2. Avoid interpretative phrases such as 'il les enverra sur-le-champ'; instead, use a more straightforward translation like 'il les enverra' to ensure clarity and alignment with the original intent. 3. Ensure that any adjustments maintain respect for the divinity of Christ and reflect the urgency expressed in the original text without using casual language. 4. Strive for a balance between literalness and clarity in future translations, considering how closely each choice reflects the source material.
+
+old: Et si quelqu'un vous interroge, vous lui direz que le Seigneur a un besoin urgent; il les enverra sur-le-champ.
+new: Et si quelqu'un vous interroge, vous lui direz que le Seigneur a besoin; il les enverra.
+
+2025-01-23 17:55:39 - Average grade: 91.37 - reflected on verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:41 - Average grade: 91.38 - added grade number 1 on loop 3 of grade 90 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:43 - Average grade: 91.38 - added grade number 2 on loop 3 of grade 90 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:46 - Average grade: 91.38 - added grade number 3 on loop 3 of grade 85 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:48 - Average grade: 91.38 - added grade number 4 on loop 3 of grade 90 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:50 - Average grade: 91.38 - added grade number 5 on loop 3 of grade 95 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+2025-01-23 17:55:52 - Average grade: 91.38 - added grade number 6 on loop 3 of grade 85 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 1
+Working on verse MAT 21:3 which has grade 89.16666666666667
+
+1. Use 'le Seigneur en a besoin' instead of 'le Seigneur a besoin' to enhance idiomatic expression in French. 2. Consider adding 'd'eux' to specify that the need is for the animals, thus clarifying the urgency. 3. Retain the phrase 'il les enverra' but consider if it might be beneficial to adjust it to 'il les enverra immédiatement' to emphasize urgency without compromising clarity. 4. Ensure that all phrasing reflects respect for the authority of Christ, avoiding casual language, while maintaining a balance between literalness and clarity. 5. Avoid using suggestions that were previously removed, such as those that alter the intended meaning of the need expressed in the original text.
+
+old: Et si quelqu'un vous interroge, vous lui direz que le Seigneur a besoin; il les enverra.
+new: Et si quelqu'un vous interroge, vous lui direz que le Seigneur en a besoin d'eux; il les enverra immédiatement.
+
+2025-01-23 17:55:58 - Average grade: 91.38 - reflected on verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:01 - Average grade: 91.38 - added grade number 1 on loop 4 of grade 92 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:03 - Average grade: 91.38 - added grade number 2 on loop 4 of grade 85 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:04 - Average grade: 91.38 - added grade number 3 on loop 4 of grade 95 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:07 - Average grade: 91.38 - added grade number 4 on loop 4 of grade 95 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:08 - Average grade: 91.38 - added grade number 5 on loop 4 of grade 95 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+2025-01-23 17:56:11 - Average grade: 91.38 - added grade number 6 on loop 4 of grade 95 to verse MAT 21:3 - Best grade: 91.38 - Iterations without improvement: 2
+New best grade: 91.38001867413621 after 3 iterations.  Improvement of 0.003267973856210915
+Working on verse MAT 21:34 which has grade 89.33333333333333
+
+1. **Theological Nuances**: Ensure that theological implications of key terms align with conservative Christian interpretations.
+
+2. **Expectations in Translation**: Rephrase 'pour recevoir les fruits' to better express the master’s expectation regarding the harvest.
+
+3. **Contextual Clarity**: Specify 'les fruits' as 'les fruits de la vigne' for better context.
+
+4. **Use of Traditional Terminology**: Consider employing more traditional biblical language to resonate with conservative readers.
+
+5. **Fluidity and Conciseness**: Improve overall flow while ensuring the translation remains concise and free from redundancy.
+
+6. **Word Choice**: Re-evaluate the use of 'esclaves' versus 'serviteurs' to better reflect the biblical context and maintain a respectful tone in translation.
+
+old: Lorsque le temps des fruits de la vigne fut proche, il envoya ses esclaves vers les vignerons pour recevoir les fruits.
+new: Lorsque le temps des fruits de la vigne fut proche, il envoya ses serviteurs vers les vignerons pour recevoir les fruits de la vigne.
+
+2025-01-23 17:56:17 - Average grade: 91.38 - reflected on verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:20 - Average grade: 91.38 - added grade number 1 on loop 3 of grade 85 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:23 - Average grade: 91.38 - added grade number 2 on loop 3 of grade 88 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:24 - Average grade: 91.38 - added grade number 3 on loop 3 of grade 95 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:26 - Average grade: 91.38 - added grade number 4 on loop 3 of grade 90 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:28 - Average grade: 91.38 - added grade number 5 on loop 3 of grade 95 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:31 - Average grade: 91.38 - added grade number 6 on loop 3 of grade 85 to verse MAT 21:34 - Best grade: 91.38 - Iterations without improvement: 0
+New best grade: 91.38032990974156 after 1 iterations.  Improvement of 0.00031123560535206707
+Working on verse MAT 24:39 which has grade 89.33333333333333
+
+1. Maintain Literal Accuracy: Ensure the translation closely follows the original Greek text without overly interpretative phrases. Consider using a more literal structure, especially in the phrase 'car ils ne savaient rien'.
+
+2. Improve Stylistic Flow: Adjust phrases to reflect a more formal and traditional biblical tone in French. Phrases like 'ainsi en sera-t-il à la venue' could be enhanced for stylistic consistency.
+
+3. Focus on Clarity and Fluidity: Certain expressions, such as 'et ils ne savaient rien', should be phrased more naturally in modern French, while still conveying the seriousness of the message.
+
+4. Enhance Reception Among Conservative Audiences: Aim for a translation that resonates well with conservative Christian readers, possibly by aligning the style with traditional biblical language.
+
+5. Ensure Originality and Adhere to Copyright: The translation should continue to respect copyright guidelines and avoid plagiarism, maintaining originality while remaining faithful to the source material.
+
+old: Et ils ne savaient rien, jusqu'à ce que le déluge vint et emporta tout; ainsi en sera-t-il à la venue du Fils de l'Homme.
+new: Et ils ne connaissaient point, jusqu'à ce que le déluge vint et emporta tous; ainsi en sera-t-il à l'arrivée du Fils de l'homme.
+
+2025-01-23 17:56:37 - Average grade: 91.38 - reflected on verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:40 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 95 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:42 - Average grade: 91.38 - added grade number 2 on loop 2 of grade 90 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:46 - Average grade: 91.38 - added grade number 3 on loop 2 of grade 90 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:48 - Average grade: 91.38 - added grade number 4 on loop 2 of grade 95 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:51 - Average grade: 91.38 - added grade number 5 on loop 2 of grade 92 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:56:53 - Average grade: 91.38 - added grade number 6 on loop 2 of grade 90 to verse MAT 24:39 - Best grade: 91.38 - Iterations without improvement: 0
+New best grade: 91.38281979458439 after 1 iterations.  Improvement of 0.0024898848428307474
+Working on verse MAT 26:10 which has grade 89.33333333333333
+
+The peer review of the translation of Matthew 26:10 generally praises the accuracy and fidelity of the work while suggesting improvements for clarity and fluency. Key suggestions include:
+1. Simplifying phrases for better readability and fluidity in French.
+2. Emphasizing the word 'bon' in 'belle œuvre' to highlight the goodness of the woman's act.
+3. Softening the phrase 'faites-vous de la peine' for improved understanding.
+Overall, the translation is commendable but can benefit from minor stylistic adjustments.
+
+old: Mais Jésus, connaissant cela, leur dit : Pourquoi faites-vous de la peine à cette femme ? Elle a accompli une belle œuvre à mon égard.
+new: Mais Jésus, ayant connaissance de cela, leur dit : Pourquoi gênez-vous cette femme ? Elle a accompli une œuvre bonne à mon égard.
+
+2025-01-23 17:57:03 - Average grade: 91.38 - reflected on verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:05 - Average grade: 91.38 - added grade number 1 on loop 2 of grade 90 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:08 - Average grade: 91.39 - added grade number 2 on loop 2 of grade 95 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:11 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 95 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:13 - Average grade: 91.38 - added grade number 4 on loop 2 of grade 85 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:16 - Average grade: 91.38 - added grade number 5 on loop 2 of grade 90 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:19 - Average grade: 91.38 - added grade number 6 on loop 2 of grade 90 to verse MAT 26:10 - Best grade: 91.38 - Iterations without improvement: 0
+New best grade: 91.38422035480848 after 1 iterations.  Improvement of 0.0014005602240843018
+Working on verse MAT 26:22 which has grade 89.33333333333333
+
+1. **Literal Accuracy**: Consider rephrasing the translation to be more literal and structurally aligned with the Greek text. Suggested phrase: 'Et étant très affligés, ils commencèrent chacun à lui dire: 'Suis-je celui-là, Seigneur ?'
+
+2. **Emotional Resonance**: Reflect on the emotional state of the disciples more directly; instead of 'très affligés', options like 'tristes' or other expressions might convey the sorrow more effectively.
+
+3. **Fluency and Clarity**: Enhance the fluency of the translation in French, making sure it reads naturally while retaining fidelity to the source. Consider minor stylistic adjustments to phrases like 'Est-ce moi'.
+
+4. **Contextual Faithfulness**: Ensure that the translation maintains alignment with traditional Christian terminology and conservatively interprets the biblical context.
+
+old: Et, très affligés, chacun d'eux lui demanda : 'Est-ce moi, Seigneur ?'
+new: Et, étant très tristes, chacun d'eux commença à lui dire : 'Suis-je celui-là, Seigneur ?'
+
+2025-01-23 17:57:26 - Average grade: 91.38 - reflected on verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:29 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 95 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:31 - Average grade: 91.39 - added grade number 2 on loop 2 of grade 90 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:33 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 90 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:35 - Average grade: 91.39 - added grade number 4 on loop 2 of grade 95 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:37 - Average grade: 91.39 - added grade number 5 on loop 2 of grade 92 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+2025-01-23 17:57:39 - Average grade: 91.39 - added grade number 6 on loop 2 of grade 90 to verse MAT 26:22 - Best grade: 91.38 - Iterations without improvement: 0
+New best grade: 91.38671023965131 after 1 iterations.  Improvement of 0.0024898848428307474
+Working on verse MAT 26:74 which has grade 89.33333333333333
+
+1. **Clarity and Precision**: Revise the phrase 'il commença à se maudire et à jurer' to 'il commença à se maudire lui-même' or consider adding 'en jurant' to better capture the intensity of Peter's actions.  
+2. **Phrasing Improvement**: Address the perception of 'se maudire' in French to ensure it aligns with the gravity of the original Greek text.  
+3. **Narrative Flow**: Modify the latter part of the translation for better fluidity and emphasis, for example, using 'en disant : « Je ne connais pas cet homme. »' to enhance the overall reading experience.  
+4. **Consistency with Idiomatic Expressions**: Ensure that the translation feels natural and idiomatic in French while remaining faithful to the source material.  
+5. **Avoidance of Plagiarism**: The translation is praised for avoiding plagiarism, demonstrating original phrasing and respect for copyright constraints.
+
+old: Alors il commença à se maudire et à jurer, en disant : « Je ne connais pas cet homme. » Et aussitôt, un coq chanta.
+new: Alors il commença à se maudire lui-même en jurant : « Je ne connais pas cet homme. » Et aussitôt, un coq chanta.
+
+2025-01-23 17:57:49 - Average grade: 91.39 - reflected on verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:57:52 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 92 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:57:54 - Average grade: 91.39 - added grade number 2 on loop 2 of grade 88 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:57:57 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 92 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:00 - Average grade: 91.39 - added grade number 4 on loop 2 of grade 90 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:04 - Average grade: 91.39 - added grade number 5 on loop 2 of grade 85 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:06 - Average grade: 91.39 - added grade number 6 on loop 2 of grade 90 to verse MAT 26:74 - Best grade: 91.39 - Iterations without improvement: 0
+New best grade: 91.386865857454 after 1 iterations.  Improvement of 0.0001556178026902444
+Working on verse MAT 27:5 which has grade 89.33333333333333
+
+1. Use 's'éloigna' instead of 's'en alla' for a more literal translation of Judas's departure. 2. Reconsider the phrase 's'étant éloigné' for improved directness, possibly simplifying to 'il se pendit' or using 's'est pendu' to clarify the action. 3. Emphasize the emotional weight of Judas's actions while keeping the translation aligned with conservative Christian theology. 4. Ensure fluency and clarity in French without sacrificing fidelity to the original Greek text.
+
+old: Alors il jeta les pièces d'argent dans le temple, s'en alla et, s'étant éloigné, il se pendit.
+new: Alors il jeta les pièces d'argent dans le temple, s'éloigna et, se pendant, il se tua.
+
+2025-01-23 17:58:12 - Average grade: 91.39 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:15 - Average grade: 91.39 - added grade number 1 on loop 4 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:17 - Average grade: 91.39 - added grade number 2 on loop 4 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:20 - Average grade: 91.38 - added grade number 3 on loop 4 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:23 - Average grade: 91.39 - added grade number 4 on loop 4 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:25 - Average grade: 91.39 - added grade number 5 on loop 4 of grade 88 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 17:58:28 - Average grade: 91.38 - added grade number 6 on loop 4 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 0
+Working on verse MAT 27:5 which has grade 87.16666666666667
+
+1. Improve clarity by revising the phrase 'se pendant, il se tua' to 'il s'est pendu' or 'se pendit' to eliminate ambiguity about Judas's suicide. 2. Consider changing 'temple' to 'sanctuaire' for better alignment with original terms and conservative expectations. 3. Add context regarding the theological implications of Judas's actions, possibly discussing the consequences of sin. 4. Maintain urgency and despair in the narrative while ensuring the translation reflects the original Greek's emotional weight. 5. Preserve the structure and fluency of the French translation while enhancing its emotional and theological depth.
+
+old: Alors il jeta les pièces d'argent dans le temple, s'éloigna et, se pendant, il se tua.
+new: Alors il jeta les pièces d'argent dans le sanctuaire, s'éloigna et se pendit.
+
+2025-01-23 17:58:35 - Average grade: 91.38 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:38 - Average grade: 91.39 - added grade number 1 on loop 5 of grade 92 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:40 - Average grade: 91.39 - added grade number 2 on loop 5 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:42 - Average grade: 91.38 - added grade number 3 on loop 5 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:45 - Average grade: 91.38 - added grade number 4 on loop 5 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:47 - Average grade: 91.39 - added grade number 5 on loop 5 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 17:58:51 - Average grade: 91.39 - added grade number 6 on loop 5 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 1
+Working on verse MAT 27:5 which has grade 87.83333333333333
+
+1. Replace 'sanctuaire' with 'temple' to better reflect the specific context of the passage and avoid ambiguity regarding the location. 2. Maintain 's'éloigna' instead of 's'en alla' for a more literal translation of Judas's departure. 3. Clarify the phrase regarding Judas's suicide by considering 'il se pendit' or 'il s'est pendu' to emphasize the gravity of his actions. 4. Explore options for adding context about the theological implications of Judas's actions to enhance emotional resonance, possibly through footnotes or commentary. 5. Ensure the narrative flows smoothly and captures the urgency and despair present in the original text.
+
+old: Alors il jeta les pièces d'argent dans le sanctuaire, s'éloigna et se pendit.
+new: Alors il jeta les pièces d'argent dans le temple, s'éloigna et se pendit.
+
+2025-01-23 17:58:57 - Average grade: 91.39 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:00 - Average grade: 91.39 - added grade number 1 on loop 6 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:01 - Average grade: 91.39 - added grade number 2 on loop 6 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:04 - Average grade: 91.39 - added grade number 3 on loop 6 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:12 - Average grade: 91.39 - added grade number 4 on loop 6 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:14 - Average grade: 91.38 - added grade number 5 on loop 6 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 17:59:19 - Average grade: 91.38 - added grade number 6 on loop 6 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 2
+Working on verse MAT 27:5 which has grade 86.66666666666667
+
+1. Clarify Judas's final act: Consider replacing 'se pendit' with 'il se suicida' or 'il s'est pendu' to convey the gravity of the act more explicitly. 
+2. Maintain literal translation: Use 's'éloigna' instead of 's'en alla' to preserve the original meaning of Judas's departure. 
+3. Enhance emotional depth: Incorporate descriptive language that captures the urgency and despair of Judas's actions while remaining faithful to the text. 
+4. Reassess the term for location: Consider whether 'sanctuaire' or 'temple' better aligns with the context, ensuring clarity and theological significance. 
+5. Add theological context: Enrich the translation by including footnotes or commentary on the implications of Judas's actions within the framework of conservative Christian theology.
+
+old: Alors il jeta les pièces d'argent dans le temple, s'éloigna et se pendit.
+new: Alors il jeta les pièces d'argent dans le temple, s'éloigna avec désespoir et il se suicida.
+
+2025-01-23 17:59:28 - Average grade: 91.38 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:30 - Average grade: 91.38 - added grade number 1 on loop 7 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:33 - Average grade: 91.39 - added grade number 2 on loop 7 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:35 - Average grade: 91.38 - added grade number 3 on loop 7 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:38 - Average grade: 91.38 - added grade number 4 on loop 7 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:42 - Average grade: 91.38 - added grade number 5 on loop 7 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 17:59:44 - Average grade: 91.38 - added grade number 6 on loop 7 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 3
+Working on verse MAT 27:5 which has grade 85.83333333333333
+
+1. **Neutral Language**: Avoid emotional interpretations; replace 's'éloigna avec désespoir' with a more neutral expression like 's'éloigna' to maintain fidelity to the original text. 
+2. **Clarifying Judas's Final Act**: While 'il se suicida' is direct, consider using 'il mit fin à ses jours' for a more sensitive approach that aligns with conservative Christian values. 
+3. **Maintaining Theological Context**: Reiterate the importance of the theological implications of Judas's actions within the translation or through accompanying footnotes, ensuring that the emotional weight is reflected appropriately. 
+4. **Consistent Use of Terms**: Ensure the term for location remains 'temple' to accurately reflect the context, avoiding 'sanctuaire' which has been ruled out in previous edits. 
+5. **Flow and Clarity**: Keep conjunctions and transitions that maintain narrative urgency, ensuring clarity without sacrificing literal translation.  
+6. **Avoiding Repetition**: Previous revisions to enhance emotional resonance were removed; ensure any new adjustments adhere to the goal of clarity and fidelity.
+
+old: Alors il jeta les pièces d'argent dans le temple, s'éloigna avec désespoir et il se suicida.
+new: Alors il jeta les pièces d'argent dans le temple, s'éloigna et mit fin à ses jours.
+
+2025-01-23 17:59:51 - Average grade: 91.38 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 17:59:53 - Average grade: 91.39 - added grade number 1 on loop 8 of grade 88 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 17:59:56 - Average grade: 91.39 - added grade number 2 on loop 8 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 17:59:59 - Average grade: 91.39 - added grade number 3 on loop 8 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 18:00:02 - Average grade: 91.39 - added grade number 4 on loop 8 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 18:00:05 - Average grade: 91.39 - added grade number 5 on loop 8 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+2025-01-23 18:00:06 - Average grade: 91.39 - added grade number 6 on loop 8 of grade 95 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 4
+Working on verse MAT 27:5 which has grade 88.83333333333333
+
+1. Clarify the description of Judas's final act: Consider using direct language such as 'il se suicida' or 'il se pendit' instead of the euphemistic 'mit fin à ses jours.'  
+2. Maintain a literal translation for 's'éloigna' as it better reflects Judas's departure.  
+3. Enhance the emotional resonance of the translation without straying from literal interpretation; consider using expressions that capture urgency and despair.  
+4. Ensure consistency in the term for location; keep 'temple' rather than switching to 'sanctuaire.'  
+5. Incorporate theological implications of Judas's actions either through footnotes or in the translation itself to align with conservative Christian perspectives.
+
+old: Alors il jeta les pièces d'argent dans le temple, s'éloigna et mit fin à ses jours.
+new: Alors il jeta les pièces d'argent dans le temple, s'éloigna et se pendit.
+
+2025-01-23 18:00:13 - Average grade: 91.39 - reflected on verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:16 - Average grade: 91.39 - added grade number 1 on loop 9 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:19 - Average grade: 91.39 - added grade number 2 on loop 9 of grade 92 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:21 - Average grade: 91.39 - added grade number 3 on loop 9 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:24 - Average grade: 91.39 - added grade number 4 on loop 9 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:27 - Average grade: 91.39 - added grade number 5 on loop 9 of grade 90 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+2025-01-23 18:00:29 - Average grade: 91.39 - added grade number 6 on loop 9 of grade 85 to verse MAT 27:5 - Best grade: 91.39 - Iterations without improvement: 5
+New best grade: 91.38702147525667 after 6 iterations.  Improvement of 0.00015561780267603353
+Working on verse MAT 27:23 which has grade 89.33333333333333
+
+1. Maintain the accurate and faithful rendering of Pilate's question: 'Quel mal a-t-il fait ?' but consider alternatives like 'Qu'a-t-il fait de mal ?' or 'Quels torts a-t-il commis ?' for improved emotional depth and conversational clarity. 2. The crowd's response, 'Et ils crièrent encore plus fort : Qu'il soit crucifié.' could be refined to 'Et ils crièrent avec plus de force : Qu'il soit crucifié.' for better literal fidelity and clarity. 3. Aim for natural phrasing that reflects contemporary French usage without losing the translation's literal essence. 4. Consider adding contextual details to enhance understanding of the emotional weight of the situation.
+
+old: Mais le gouverneur répondit : Quel mal a-t-il fait ? Et ils crièrent encore plus fort : Qu'il soit crucifié.
+new: Mais le gouverneur répondit : Qu'a-t-il fait de mal ? Et ils crièrent avec plus de force : Qu'il soit crucifié.
+
+2025-01-23 18:00:35 - Average grade: 91.39 - reflected on verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:38 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 90 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:41 - Average grade: 91.39 - added grade number 2 on loop 2 of grade 95 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:43 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 95 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:45 - Average grade: 91.39 - added grade number 4 on loop 2 of grade 90 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:47 - Average grade: 91.39 - added grade number 5 on loop 2 of grade 95 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:00:50 - Average grade: 91.39 - added grade number 6 on loop 2 of grade 90 to verse MAT 27:23 - Best grade: 91.39 - Iterations without improvement: 0
+New best grade: 91.38997821350753 after 1 iterations.  Improvement of 0.002956738250858848
+Finilizing MAT 28:14
+
+old: Et si cela parvient à l'oreille du gouverneur, nous persuaderons le gouverneur et vous serez en sécurité.
+new: Et si cela parvient à l'oreille du gouverneur, nous persuaderons le gouverneur et vous serez en sécurité.
+
+old grade: 89.33333333333333
+new grade: 89.33333333333333
+
+2025-01-23 18:00:52 - Average grade: 91.39 - finalized verse MAT 28:14 - Best grade: 91.39 - Iterations without improvement: 0
+Working on verse MAT 1:6 which has grade 89.5
+
+1. **Clarity Improvements**: Several reviewers suggest that the phrase 'de la femme d'Urie' could be more explicit to ensure readers understand it refers to Bathsheba, Uriah's wife. Suggested revisions include 'de la femme d'Urie, c'est-à-dire Bath-Shéba' or 'de l'épouse d'Urie'.  
+
+2. **Fluency Enhancements**: To improve readability, some reviewers recommend restructuring the sentence. A smoother phrasing, such as 'David, le roi, a engendré Salomon avec la femme d'Urie', could be considered to enhance flow while preserving meaning.  
+
+3. **Formal Language Choices**: A few reviewers indicate that the translation could benefit from a slightly more formal tone to match the gravity of the biblical passage.  
+
+4. **Maintaining Literal Fidelity**: Overall, the translation effectively captures the literal meaning of the original text, particularly regarding genealogical significance, and adheres to conservative Christian interpretations. Suggestions should aim to refine rather than overhaul the current translation.
+
+old: Jesse engendra David, le roi. David, le roi, engendra Salomon, de la femme d'Urie.
+new: Jesse engendra David, le roi, et David, le roi, a engendré Salomon avec la femme d'Urie, c'est-à-dire Bath-Shéba.
+
+2025-01-23 18:01:00 - Average grade: 91.39 - reflected on verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:02 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:05 - Average grade: 91.39 - added grade number 2 on loop 2 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:07 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:10 - Average grade: 91.39 - added grade number 4 on loop 2 of grade 90 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:12 - Average grade: 91.39 - added grade number 5 on loop 2 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+2025-01-23 18:01:15 - Average grade: 91.39 - added grade number 6 on loop 2 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 1
+Working on verse MAT 1:6 which has grade 85.83333333333333
+
+1. **Clarity and Conciseness**: Simplify the phrase regarding Bathsheba from 'avec la femme d'Urie, c'est-à-dire Bath-Shéba' to 'de la femme d'Urie, Bath-Shéba' or 'Urie', while maintaining the reference to Bathsheba directly without added explanation.
+
+2. **Fluency Enhancements**: Consider rephrasing to improve readability, such as 'et David engendre Salomon' instead of 'David, le roi, a engendré Salomon'.
+
+3. **Formal Language**: Aim for a slightly more formal tone throughout the translation to align with biblical reverence.
+
+4. **Redundancy Avoidance**: Reduce repetition by ensuring that the term 'roi' is used effectively without being unnecessarily repeated.
+
+5. **Maintain Literal Fidelity**: While adjustments are encouraged for style and clarity, ensure that the literal meaning of the original text is preserved.
+
+old: Jesse engendra David, le roi, et David, le roi, a engendré Salomon avec la femme d'Urie, c'est-à-dire Bath-Shéba.
+new: Jesse engendra David, roi, et David engendra Salomon de la femme d'Urie, Bath-Shéba.
+
+2025-01-23 18:01:22 - Average grade: 91.39 - reflected on verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:28 - Average grade: 91.39 - added grade number 1 on loop 3 of grade 88 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:36 - Average grade: 91.39 - added grade number 2 on loop 3 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:42 - Average grade: 91.39 - added grade number 3 on loop 3 of grade 92 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:46 - Average grade: 91.39 - added grade number 4 on loop 3 of grade 85 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:48 - Average grade: 91.39 - added grade number 5 on loop 3 of grade 95 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+2025-01-23 18:01:50 - Average grade: 91.39 - added grade number 6 on loop 3 of grade 90 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 2
+Working on verse MAT 1:6 which has grade 89.16666666666667
+
+1. **Clarity Adjustments**: Replace 'de la femme d'Urie, Bath-Shéba' with 'de la femme d'Urie' to simplify the reference without losing context. This addresses redundancy while maintaining clarity. 
+2. **Fluency Improvements**: Restructure the sentence for better readability, possibly using 'et David engendra Salomon' instead of 'David, le roi, a engendré Salomon'. 
+3. **Formal Tone**: Ensure a slightly more formal tone throughout the translation to align with biblical reverence. 
+4. **Literal Fidelity**: Maintain a strict adherence to the original meaning and genealogy while refining phrasing to enhance the flow of the translation.
+
+old: Jesse engendra David, roi, et David engendra Salomon de la femme d'Urie, Bath-Shéba.
+new: Jesse engendra David, roi, et David engendra Salomon de la femme d'Urie.
+
+2025-01-23 18:01:57 - Average grade: 91.39 - reflected on verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:01:59 - Average grade: 91.39 - added grade number 1 on loop 4 of grade 90 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:02:01 - Average grade: 91.39 - added grade number 2 on loop 4 of grade 90 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:02:03 - Average grade: 91.39 - added grade number 3 on loop 4 of grade 95 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:02:05 - Average grade: 91.39 - added grade number 4 on loop 4 of grade 92 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:02:14 - Average grade: 91.39 - added grade number 5 on loop 4 of grade 90 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+2025-01-23 18:02:16 - Average grade: 91.39 - added grade number 6 on loop 4 of grade 88 to verse MAT 1:6 - Best grade: 91.39 - Iterations without improvement: 3
+New best grade: 91.39122315592894 after 4 iterations.  Improvement of 0.0012449424214082683
+Working on verse MAT 2:16 which has grade 89.5
+
+1. **Emphasize Herod's Anger**: Consider using more impactful phrasing to convey Herod's extreme anger effectively. Possible alternatives include 'furieux au plus haut point' or similar expressions that enhance emotional depth.
+2. **Specify Target Group**: Replace 'tous les enfants' with 'tous les garçons' to accurately reflect the original text's intent regarding the victims.
+3. **Clarify the Command**: While 'ordonna l'exécution de' is a valid option, consider maintaining 'envoya tuer' if it serves better clarity and directness.
+4. **Improve Literal Accuracy**: Refine the phrasing for 'selon le temps qu'il avait rigoureusement établi d'après les mages' to ensure a closer literal alignment with the original text.
+5. **Enhance Fluency**: Refine grammar and stylistic elements for smoother readability while maintaining a literal translation approach.
+6. **Contextual Enrichment**: Maintain relevant historical context where necessary, but avoid altering the original meaning of the text.
+
+old: Alors Hérode, réalisant qu'il avait été dupé par les mages, fut dans une colère terrible et ordonna l'exécution de tous les garçons âgés de deux ans et en dessous à Bethléhem et dans toute sa région, selon le temps qu'il avait soigneusement établi d'après les mages.
+new: Alors Hérode, réalisant qu'il avait été dupé par les mages, fut furieux au plus haut point et envoya tuer tous les garçons âgés de deux ans et en dessous à Bethléhem et dans toute sa région, selon le temps qu'il avait rigoureusement établi d'après les mages.
+
+2025-01-23 18:02:24 - Average grade: 91.39 - reflected on verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:27 - Average grade: 91.39 - added grade number 1 on loop 6 of grade 92 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:29 - Average grade: 91.39 - added grade number 2 on loop 6 of grade 92 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:31 - Average grade: 91.39 - added grade number 3 on loop 6 of grade 90 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:33 - Average grade: 91.39 - added grade number 4 on loop 6 of grade 90 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:36 - Average grade: 91.39 - added grade number 5 on loop 6 of grade 85 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:38 - Average grade: 91.39 - added grade number 6 on loop 6 of grade 95 to verse MAT 2:16 - Best grade: 91.39 - Iterations without improvement: 0
+New best grade: 91.39231248054769 after 1 iterations.  Improvement of 0.0010893246187464456
+Working on verse MAT 3:15 which has grade 89.5
+
+1. **Phrasing Adjustments**: Change 'Laisse faire maintenant' to 'Permets-le maintenant' for a more traditional rendering. Consider enhancing clarity with minor rephrasing throughout.
+2. **Word Choice**: Replace 'convenable' with a term that conveys a stronger sense of necessity, aligning closely with the original Greek implication.
+3. **Maintain Formal Tone**: Strive for a more formal structure to match the style of biblical language while ensuring comprehensibility.
+4. **Clarity and Nuance**: Continue to work on smooth readability without compromising fidelity to the original text.
+
+old: Mais Jésus lui répondit : Laisse faire maintenant, car il est convenable que nous accomplissions ainsi toute justice. Alors Jean lui céda.
+new: Mais Jésus lui répondit : Permets-le maintenant, car il est nécessaire que nous accomplissions ainsi toute justice. Alors Jean lui céda.
+
+2025-01-23 18:02:44 - Average grade: 91.39 - reflected on verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:47 - Average grade: 91.39 - added grade number 1 on loop 2 of grade 90 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:50 - Average grade: 91.40 - added grade number 2 on loop 2 of grade 95 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:53 - Average grade: 91.39 - added grade number 3 on loop 2 of grade 85 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:55 - Average grade: 91.39 - added grade number 4 on loop 2 of grade 95 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:58 - Average grade: 91.39 - added grade number 5 on loop 2 of grade 95 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+2025-01-23 18:02:59 - Average grade: 91.40 - added grade number 6 on loop 2 of grade 95 to verse MAT 3:15 - Best grade: 91.39 - Iterations without improvement: 0
+New best grade: 91.39511360099587 after 1 iterations.  Improvement of 0.0028011204481828145
+Working on verse MAT 4:3 which has grade 89.5
+
+The translation of MAT 4:3 is generally well-executed, reflecting a faithful representation of the original Greek text. Strengths include accurate meaning capture and adherence to a literal translation approach, while avoiding plagiarism. Suggested areas for improvement involve enhancing fluidity in phrasing for better readability, exploring alternative word choices for stylistic flow, and incorporating deeper spiritual and theological connotations to align more closely with conservative Christian interpretations. Additionally, maintaining coherence with known translations could strengthen the work further.
+
+old: Et le tentateur s’approcha de lui et dit : Si tu es le Fils de Dieu, ordonne que ces pierres deviennent du pain.
+new: Et s'approchant de lui, le tentateur dit : Si tu es le Fils de Dieu, ordonne que ces pierres deviennent du pain.
+
+2025-01-23 18:03:06 - Average grade: 91.40 - reflected on verse MAT 4:3 - Best grade: 91.40 - Iterations without improvement: 0

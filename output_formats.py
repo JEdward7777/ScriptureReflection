@@ -312,8 +312,8 @@ def convert_to_markdown(file):
                         for verse in verses:
                             vref = utils.look_up_key(verse, reference_key)
                             chapter_out.write(
-                                f"|{vref}|{utils.look_up_key(verse, translation_key)}|" +
-                                f"{utils.look_up_key(verse, translation_notes_key)}|\n")
+                                f"|{vref}|{utils.look_up_key(verse, translation_key).replace('\n', '<br>')}|" +
+                                f"{utils.look_up_key(verse, translation_notes_key).replace('\n', '<br>')}|\n")
 
 
                         chapter_out.write( "\n\n")
