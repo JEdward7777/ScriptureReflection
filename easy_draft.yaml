@@ -10,13 +10,23 @@ configs:
     temperature: 1.2
     top_p: 0.9
   NT:
-    active: true
+    active: false
     start_line: 23214 # MAT 1:1
     end_line: 31170 # REV 22:21
     source: grc-grcbyz
     output: eng_NT
     model: gpt-4o-mini
     target_language: English
+    temperature: 1.2
+    top_p: 0.9
+  French_NT:
+    active: true
+    start_line: 23214 # MAT 1:1
+    end_line: 31170 # REV 22:21
+    source: grc-grcbyz
+    output: french_NT
+    model: gpt-4o-mini
+    target_language: French
     temperature: 1.2
     top_p: 0.9
 global_configs:

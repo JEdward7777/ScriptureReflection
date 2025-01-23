@@ -19,6 +19,29 @@ import yaml
 import utils
 
 
+def use_model( client, model, messages, temperature, top_p, response_format ):
+    """This calls ChatGPT but wraps it in a try/catch to auto rehandle exceptions."""
+
+    finished = False
+    while not finished:
+        try:
+            completion = client.beta.chat.completions.parse(
+                model=model,
+                messages=messages,
+                temperature=temperature,
+                top_p=top_p,
+                response_format=response_format
+            )
+
+            finished = True
+        except Exception as e: # pylint: disable=broad-except
+            print(f"Error calling the model in use_model: {e}")
+            print("Retrying...")
+            time.sleep(5)
+
+    return completion
+
+
 def compute_completed_loops( verse ):
     """
     Compute the number of loops that have been completed for a given verse.
@@ -283,7 +306,7 @@ def grade_verse( selected_verse, common_context, client, config ):
         comment: str
         grade: int
 
-    completion = client.beta.chat.completions.parse(
+    completion = use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
@@ -361,7 +384,7 @@ def summarize_corrections( selected_verse, client, config ):
         planning_thoughts: str
         summary: str
 
-    completion = client.beta.chat.completions.parse(
+    completion = use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
@@ -423,7 +446,7 @@ def perform_reflection( selected_verse, common_context, client, config ):
         reference: str
         updated_translation: str
 
-    completion = client.beta.chat.completions.parse(
+    completion = use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
@@ -718,7 +741,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 iterations_without_improvement += 1
                 if average_grade > best_grade_found:
                     print( f"New best grade: {average_grade} after "
-                        f"{iterations_without_improvement} iterations.  Improvement of {average_grade - best_grade_found}" )
+                        f"{iterations_without_improvement} iterations.  Improvement of "
+                        f"{average_grade - best_grade_found}" )
                     best_grade_found = average_grade
                     iterations_without_improvement = 0
 
@@ -735,7 +759,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                     if not "debug_force_vref" in config:
 
                         for verse_line_number,verse in enumerate(reflection_output):
-                            if 'start_line' in config and verse_line_number < config['start_line']-1:
+                            if 'start_line' in config and verse_line_number < \
+                                    config['start_line']-1:
                                 continue
                             if 'end_line' in config and verse_line_number > config['end_line']-1:
                                 break
@@ -860,6 +885,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             "iterations_without_improvement\n" )
                     f.write( f"{time.strftime('%Y-%m-%d %H:%M:%S')},{average_grade},{action_done},"
                         f"{best_grade_found},{iterations_without_improvement}\n" )
+
+            sys.stdout.flush()
 
     finally:
         #save the reflection output
