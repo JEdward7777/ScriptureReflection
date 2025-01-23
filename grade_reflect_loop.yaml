@@ -169,7 +169,7 @@ configs:
 
   
   NT_nonparaphrase_lowest_grade_first:
-    active: true
+    active: false
 
     #debug_force_vref: JHN 3:32
 
@@ -192,6 +192,47 @@ configs:
 
     average_grade_csv_log: output/eng_NT_reflected_lowest_grade_first.csv
     tee_output_filename:   output/eng_NT_reflected_lowest_grade_first_log.txt
+
+    translation_comment_key: [translation_notes]
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
+
+    mode: lowest_grade_priority
+    iterations_without_improvement_max: 30
+
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective."
+
+    start_line: 23214 # MAT 1:1
+    end_line: 24284 # MAT 28:20
+
+
+  NT_French:
+    active: true
+
+    #debug_force_vref: JHN 3:32
+
+    api_key: [mm_key,key]
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    override_key: [forming_verse_range_with_previous_verse]
+    translation_objective: The translation sould be a literal translation in French faithful to the source.  However because of copyright laws, attempt to not plagiarize other known translations.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/french_NT.jsonl
+    reflection_output: output/french_NT_reflected.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/french_NT_reflected.csv
+    tee_output_filename:   output/french_NT_reflected_log.txt
 
     translation_comment_key: [translation_notes]
 

@@ -238,7 +238,15 @@ def convert_to_markdown(file):
 
         #run through the content and sort it out into books.
         book_to_chapter_to_verses = defaultdict( lambda: defaultdict( lambda: [] ) )
-        for verse in original_content:
+        for verse_index,verse in enumerate(original_content):
+            if 'start_line' in this_config['markdown_format']:
+                if verse_index < this_config['markdown_format']['start_line']-1:
+                    continue
+
+            if 'end_line' in this_config['markdown_format']:
+                if verse_index > this_config['markdown_format']['end_line']-1:
+                    break
+
             if verse:
                 #reference = verse["fresh_translation"]["reference"]
                 reference = utils.look_up_key(verse, reference_key)

@@ -5,10 +5,10 @@ import os
 import pstats
 import io
 import random
-from io import StringIO
 import json, yaml
 import streamlit as st
 import easy_draft
+import utils
 import verse_parsing
 from streamlit.components.v1 import html
 
@@ -61,7 +61,7 @@ def load_reference_data():
     with open('easy_draft.yaml', encoding='utf-8') as f:
         easy_draft_yaml = yaml.load(f, Loader=yaml.FullLoader)
     ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
-    return easy_draft.load_file_to_list(os.path.join(ebible_dir, 'metadata', 'vref.txt'))
+    return utils.load_file_to_list(os.path.join(ebible_dir, 'metadata', 'vref.txt'))
 
 #@st.cache_data
 def cached_to_range(selected_verses, all_verses):
