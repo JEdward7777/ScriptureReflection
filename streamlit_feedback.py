@@ -575,8 +575,12 @@ def main():
                 
                 if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
                     #iterate the reflection loops in reverse.
-                    for reflection_loop in reversed(selected_verse['reflection_loops']):
+                    for i,reflection_loop in reversed(list(enumerate(selected_verse['reflection_loops']))):
                         if 'graded_verse' in reflection_loop:
+                            if 'average_grade' in reflection_loop:
+                                st.write( f"**Version {i+1}**: _(Grade {reflection_loop['average_grade']:.1f})_" )
+                            else:
+                                st.write( f"Version {i+1}:" )
                             st.write( reflection_loop['graded_verse'] )
                 else:
                     st.write("No history")
