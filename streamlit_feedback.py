@@ -115,6 +115,40 @@ def load_translation_data(selected_translation):
         not in loaded_line else loaded_line for i, loaded_line in enumerate(loaded_lines)]
     return loaded_lines
 
+def edit_verse(selected_verse, old_text, new_text, translation_key, translation_comment_key):
+    """Edits the verse in the jsonl structure honoring the grading loop verse state rules"""
+
+    #if there is a grade collection for the current verse without the verse it was grading tagged
+    #in with it go ahead and copy the translation in there.
+
+    #is there a reflection loops section?
+    if 'reflection_loops' in selected_verse:
+        reflection_loops = selected_verse['reflection_loops']
+        #are there any loops in it?
+        if reflection_loops:
+            last_reflection_loop = reflection_loops[-1]
+            #does it have any grades in it yet?
+            if 'grades' in last_reflection_loop:
+                grades = last_reflection_loop['grades']
+                if grades:
+                    #Is the graded_verse put in it yet?
+                    if 'graded_verse' not in last_reflection_loop:
+                        last_reflection_loop['graded_verse'] = old_text
+
+                        #is there a comment to copy over as well?
+                        comment = utils.look_up_key( selected_verse, translation_comment_key )
+                        if comment:
+                            last_reflection_loop['graded_verse_comment'] = comment
+
+    #now see if there is a finilization flag set.
+    if 'reflection_is_finalized' in selected_verse and selected_verse['reflection_is_finalized']:
+        selected_verse['reflection_is_finalized'] = False
+
+
+    #now we can go ahead and update the translation in the verse.
+    utils.set_key( selected_verse, translation_key, new_text )
+    utils.set_key( selected_verse, translation_comment_key, "" )
+
 def save_translation_data(selected_translation, translation_data):
     """Saves the translation data back out, like when a verse is edited"""
     filepath = f"./output/{selected_translation}.jsonl"
@@ -208,6 +242,7 @@ def main():
     reference_key = ['vref']
     override_key = ['forming_verse_range_with_previous_verse']
     translation_key = ['fresh_translation','text']
+    translation_comment_key = ['translation_notes']
     source_key = ['source']
 
 
@@ -287,7 +322,8 @@ def main():
     def collect_references_with_keyword( keyword ):
         references = []
         for item in filtered_translation_data:
-            if not item: continue
+            if not item:
+                continue
             if keyword.lower() in item['fresh_translation']['text'].lower():
                 references.append(item['vref'])
         return references
@@ -308,7 +344,8 @@ def main():
     if filtered_translation_data:
 
         # Book, Chapter, Verse selectors
-        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in filtered_translation_data if 'vref' in item))
+        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in
+            filtered_translation_data if 'vref' in item))
         def select_reference( scope, key, init_book=None, init_chapter=None, init_verse=None ):
             num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
@@ -326,7 +363,8 @@ def main():
                     max_chapter = 0
                     min_chapter = float('inf')
                     for item in filtered_translation_data:
-                        if not item: continue
+                        if not item:
+                            continue
                         b, c, _ = split_ref(item['vref'])
                         if b == sel_book:
                             max_chapter = max(max_chapter, c)
@@ -345,7 +383,8 @@ def main():
                     max_verse = 0
                     min_verse = float('inf')
                     for item in filtered_translation_data:
-                        if not item: continue
+                        if not item:
+                            continue
                         b, c, v = split_ref(item['vref'])
                         if b == sel_book and c == sel_chapter:
                             max_verse = get_max_verse(max_verse, v)
@@ -394,7 +433,8 @@ def main():
             max_chapter = None
             min_chapter = None
             for item in filtered_translation_data:
-                if not item: continue
+                if not item:
+                    continue
                 vref = utils.look_up_key( item, reference_key )
                 if vref in st.session_state.overridden_references:
                     continue
@@ -435,7 +475,8 @@ def main():
 
             #put the button to tab connections at the bottom because they produce height.
             for item in filtered_translation_data:
-                if not item: continue
+                if not item:
+                    continue
                 b, c, _ = split_ref(item['vref'])
                 if b == st.session_state.book and c == st.session_state.chapter:
                     button_text = f"{item['vref']}"
@@ -462,8 +503,8 @@ def main():
 
 
 
-            selected_verse = get_verse_for_reference( filtered_translation_data, st.session_state.book,
-                st.session_state.chapter, st.session_state.verse,
+            selected_verse = get_verse_for_reference( filtered_translation_data,
+                st.session_state.book, st.session_state.chapter, st.session_state.verse,
                 st.session_state.overridden_references )
 
             st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
@@ -471,9 +512,11 @@ def main():
             # Display current reference and text
             reference_text = utils.look_up_key( selected_verse, translation_key )
 
-            edited_verse = st.text_area( "**Translation:**", value=reference_text, key="verse-edit" )
+            edited_verse = st.text_area( "**Translation:**", value=reference_text,
+                key="verse-edit" )
             if edited_verse != reference_text:
-                utils.set_key( selected_verse, translation_key, edited_verse )
+                edit_verse( selected_verse, reference_text, edited_verse, translation_key,
+                    translation_comment_key )
                 save_translation_data( selected_translation, translation_data )
                 st.rerun()
 
@@ -496,7 +539,8 @@ def main():
                             st.session_state.chapter)
             with col2:
                 if st.button("Next"):
-                    max_verse = max(split_ref(item['vref'])[2] for item in filtered_translation_data if
+                    max_verse = max(split_ref(item['vref'])[2] for item in
+                        filtered_translation_data if
                         split_ref(item['vref'])[0] == st.session_state.book and split_ref(
                         item['vref'])[1] == st.session_state.chapter)
                     if st.session_state.verse < max_verse:
