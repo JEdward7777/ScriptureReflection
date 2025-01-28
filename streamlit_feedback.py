@@ -509,7 +509,16 @@ def main():
                 st.session_state.book, st.session_state.chapter, st.session_state.verse,
                 st.session_state.overridden_references )
 
-            st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
+            if 'reflection_is_finalized' in selected_verse and \
+                selected_verse['reflection_is_finalized']:
+                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** _(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
+            elif 'reflection_loops' in selected_verse and \
+                    len(reflection_loops := selected_verse['reflection_loops']) > 0 and \
+                    'average_grade' in (last_reflection_loop := reflection_loops[-1]) and \
+                    'graded_verse' not in last_reflection_loop:
+                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** _(Grade {last_reflection_loop['average_grade']:.1f})_" )
+            else:
+                st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
 
             # Display current reference and text
             reference_text = utils.look_up_key( selected_verse, translation_key )
@@ -526,6 +535,31 @@ def main():
             source_text = utils.look_up_key( selected_verse, source_key )
             st.write( "**Source Text:**")
             st.write( source_text)
+
+            #see if we have a summarized comment to display:
+            if 'reflection_loops' in selected_verse and \
+                    len(reflection_loops := selected_verse['reflection_loops']) > 0:
+                last_reflection_loop = reflection_loops[-1]
+                #if the verse is finalized, then the grade in the last reflection loop
+                #probably isn't ours because the best verse was picked out.
+                if 'reflection_is_finalized' in selected_verse and \
+                        selected_verse['reflection_is_finalized']:
+                    st.write( "**Suggested Corrections:**")
+                    st.write( "_No corrections.  Verse replaced with best graded verse from history._")
+
+                #if graded_verse is stashed in the last_reflection_loop
+                #Then the grade is not for the current translation.
+                elif 'graded_verse' not in last_reflection_loop:
+                    if 'correction_summarization' in last_reflection_loop and \
+                            'summary' in last_reflection_loop['correction_summarization']:
+                        st.write( "**Suggested Correction:**" )
+                        st.write( last_reflection_loop['correction_summarization']['summary'] )
+
+                    #otherwise see if we can just write out the grade comments.
+                    elif 'grades' in last_reflection_loop:
+                        st.write( "**Suggested Corrections:**" )
+                        for i,grade in enumerate(last_reflection_loop['grades']):
+                            st.write( f"**Review {i+1}** _(Grade {grade['grade']})_: {grade['comment']}" )
 
             # Next and Previous buttons
             col1, col2 = st.columns(2)
@@ -572,11 +606,12 @@ def main():
             with verse_history_tab:
                 st.header("Verse History")
 
-                
+                found_history = False
                 if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
                     #iterate the reflection loops in reverse.
                     for i,reflection_loop in reversed(list(enumerate(selected_verse['reflection_loops']))):
                         if 'graded_verse' in reflection_loop:
+                            found_history = True
                             if 'average_grade' in reflection_loop:
                                 st.write( f"**Version {i+1}**: _(Grade {reflection_loop['average_grade']:.1f})_" )
                             else:
@@ -591,7 +626,8 @@ def main():
                                     st.write( reflection_loop['correction_summarization']['summary'] )
 
                             st.divider()
-                else:
+
+                if not found_history:
                     st.write("No history")
 
 
