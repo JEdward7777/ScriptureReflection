@@ -581,7 +581,16 @@ def main():
                                 st.write( f"**Version {i+1}**: _(Grade {reflection_loop['average_grade']:.1f})_" )
                             else:
                                 st.write( f"Version {i+1}:" )
-                            st.write( reflection_loop['graded_verse'] )
+
+                            trans_col, comments_col = st.columns(2)
+                            with trans_col:
+                                st.write( reflection_loop['graded_verse'] )
+                            with comments_col:
+                                if 'correction_summarization' in reflection_loop and \
+                                        'summary' in reflection_loop['correction_summarization']:
+                                    st.write( reflection_loop['correction_summarization']['summary'] )
+
+                            st.divider()
                 else:
                     st.write("No history")
 
