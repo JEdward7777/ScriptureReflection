@@ -24,18 +24,20 @@ def verse_parts( refs ):
         if isinstance(ref, str):
             for part in ref.split("-"):
                 out_refs.append( int(part) )
+        elif hasattr(ref, "__iter__"):
+            out_refs.extend( verse_parts(ref) )
         else:
             out_refs.append( ref )
     return out_refs
 
 
-def get_max_verse( verse_a, verse_b ):
+def get_max_verse( *verses ):
     """Return the max verse between this.  Supports verse ranges"""
-    return max(verse_parts([verse_a,verse_b]))
+    return max( verse_parts(verses) )
 
-def get_min_verse( verse_a, verse_b ):
+def get_min_verse( *verses ):
     """Return the min verse between this.  Supports verse ranges"""
-    return min(verse_parts([verse_a,verse_b]))
+    return min( verse_parts(verses) )
 
 
 def split_ref( reference ):
@@ -533,13 +535,13 @@ def main():
                         st.session_state.verse -= 1
                     elif st.session_state.chapter > 1:
                         st.session_state.chapter -= 1
-                        st.session_state.verse = max(split_ref(item['vref'])[2] for item in
-                            filtered_translation_data if split_ref(item['vref'])[0] ==
-                            st.session_state.book and split_ref(item['vref'])[1] ==
-                            st.session_state.chapter)
+                        st.session_state.verse = get_max_verse(split_ref(item['vref'])[2] for
+                            item in filtered_translation_data if
+                            split_ref(item['vref'])[0] == st.session_state.book and
+                            split_ref(item['vref'])[1] == st.session_state.chapter)
             with col2:
                 if st.button("Next"):
-                    max_verse = max(split_ref(item['vref'])[2] for item in
+                    max_verse = get_max_verse(split_ref(item['vref'])[2] for item in
                         filtered_translation_data if
                         split_ref(item['vref'])[0] == st.session_state.book and split_ref(
                         item['vref'])[1] == st.session_state.chapter)
