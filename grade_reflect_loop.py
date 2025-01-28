@@ -820,6 +820,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                                 print( reflection_result['correction_summarization']['summary'] + \
                                      "\n" )
 
+                            print( f"source: {utils.look_up_key( selected_verse, config['source_key'] )}" )
                             print( f"old: {utils.look_up_key( selected_verse, translation_key )}" )
                             print( f"new: {reflection_result['updated_translation']}\n" )
 

@@ -185,6 +185,8 @@ def convert_to_usfm(file):
         if verse:
             #reference = verse["fresh_translation"]["reference"]
             reference = utils.look_up_key(verse, reference_key)
+            if reference is None:
+                continue
             if " " in reference:
                 book, _, _ = utils.split_ref(reference)
                 usfm_name = USFM_NAME[book]
@@ -312,8 +314,10 @@ def convert_to_markdown(file):
                         for verse in verses:
                             vref = utils.look_up_key(verse, reference_key)
                             chapter_out.write(
-                                f"|{vref}|{utils.look_up_key(verse, translation_key).replace('\n', '<br>')}|" +
-                                f"{utils.look_up_key(verse, translation_notes_key).replace('\n', '<br>')}|\n")
+                                f"|{vref}|{utils.look_up_key(verse, translation_key).
+                                    replace('\n', '<br>')}|" +
+                                f"{utils.look_up_key(verse, translation_notes_key).
+                                    replace('\n', '<br>')}|\n")
 
 
                         chapter_out.write( "\n\n")
