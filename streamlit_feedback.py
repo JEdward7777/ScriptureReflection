@@ -566,44 +566,58 @@ def main():
                 st.rerun()
 
 
+            verse_history_tab, verse_comments_tab = st.tabs(["Verse History",
+                "Verse Comments"])
 
+            with verse_history_tab:
+                st.header("Verse History")
 
-
-            st.subheader("Comments applying to this verse")
-            found_comment = False
-            for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data,
-                    st.session_state.book, st.session_state.chapter, st.session_state.verse )):
-                long_text = cached_to_range(comment['ids'],all_references)
-                truncation_length = 100
-                truncated_text = long_text[:truncation_length] + "..." if len(long_text) > \
-                    truncation_length else long_text
-                changed_text = st.text_area( truncated_text, value=comment['comment'],
-                    key=f"{i}-edit" )
-                save_col, delete_col = st.columns(2)
-                with save_col:
-                    if st.button("Save", key=f"{i}-save"):
-                        comment['comment'] = changed_text
-                        save_comments(selected_translation, st.session_state.comment_data)
-                        st.rerun()
-                with delete_col:
-                    if st.button("Delete", key=f"{i}-delete"):
-                        st.session_state.comment_data.remove(comment)
-                        save_comments(selected_translation, st.session_state.comment_data)
-                        st.rerun()
-                found_comment = True
-            if not found_comment:
-                st.write("No comments found")
-
-
-            add_comment_btn_text = "Add comment to this verse"
-            # Create a button to run the JavaScript code
-            if st.button(add_comment_btn_text):
-                if 'vrefs' in selected_verse:
-                    st.session_state.selected_verses = selected_verse['vrefs']
+                
+                if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
+                    #iterate the reflection loops in reverse.
+                    for reflection_loop in reversed(selected_verse['reflection_loops']):
+                        if 'graded_verse' in reflection_loop:
+                            st.write( reflection_loop['graded_verse'] )
                 else:
-                    st.session_state.selected_verses = [selected_verse['vref']]
-                #javascript then switches to the Add Comments tab
-            add_button_tab_switch(add_comment_btn_text, "Add Comments")
+                    st.write("No history")
+
+
+            with verse_comments_tab:
+                st.subheader("Comments applying to this verse")
+                found_comment = False
+                for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data,
+                        st.session_state.book, st.session_state.chapter, st.session_state.verse )):
+                    long_text = cached_to_range(comment['ids'],all_references)
+                    truncation_length = 100
+                    truncated_text = long_text[:truncation_length] + "..." if len(long_text) > \
+                        truncation_length else long_text
+                    changed_text = st.text_area( truncated_text, value=comment['comment'],
+                        key=f"{i}-edit" )
+                    save_col, delete_col = st.columns(2)
+                    with save_col:
+                        if st.button("Save", key=f"{i}-save"):
+                            comment['comment'] = changed_text
+                            save_comments(selected_translation, st.session_state.comment_data)
+                            st.rerun()
+                    with delete_col:
+                        if st.button("Delete", key=f"{i}-delete"):
+                            st.session_state.comment_data.remove(comment)
+                            save_comments(selected_translation, st.session_state.comment_data)
+                            st.rerun()
+                    found_comment = True
+                if not found_comment:
+                    st.write("No comments found")
+
+
+                add_comment_btn_text = "Add comment to this verse"
+                # Create a button to run the JavaScript code
+                if st.button(add_comment_btn_text):
+                    if 'vrefs' in selected_verse:
+                        st.session_state.selected_verses = selected_verse['vrefs']
+                    else:
+                        st.session_state.selected_verses = [selected_verse['vref']]
+                    #javascript then switches to the Add Comments tab
+                add_button_tab_switch(add_comment_btn_text, "Add Comments")
 
 
         # Add Comments Tab
