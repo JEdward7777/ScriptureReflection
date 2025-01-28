@@ -11,10 +11,12 @@ import io
 import random
 import json
 import yaml
+import math
 import streamlit as st
 from streamlit.components.v1 import html
 import utils
 import verse_parsing
+import grade_reflect_loop
 
 
 def verse_parts( refs ):
@@ -264,8 +266,8 @@ def main():
             filtered_translation_data,reference_key,override_key)
 
     # Tabs
-    browse_chapter_tab, browse_verse_tab, add_comments_tab = st.tabs(["Browse Chapter",
-        "Browse Verse", "Add Comments"])
+    browse_chapter_tab, browse_verse_tab, sorted_by_grade_tab, add_comments_tab = st.tabs(["Browse Chapter",
+        "Browse Verse", "Sorted by grade", "Add Comments"])
 
     # Initialize session state variables
     if "book" not in st.session_state:
@@ -511,12 +513,14 @@ def main():
 
             if 'reflection_is_finalized' in selected_verse and \
                 selected_verse['reflection_is_finalized']:
-                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** _(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
+                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
+                    f"_(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
             elif 'reflection_loops' in selected_verse and \
                     len(reflection_loops := selected_verse['reflection_loops']) > 0 and \
                     'average_grade' in (last_reflection_loop := reflection_loops[-1]) and \
                     'graded_verse' not in last_reflection_loop:
-                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** _(Grade {last_reflection_loop['average_grade']:.1f})_" )
+                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
+                    f"_(Grade {last_reflection_loop['average_grade']:.1f})_" )
             else:
                 st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
 
@@ -545,7 +549,8 @@ def main():
                 if 'reflection_is_finalized' in selected_verse and \
                         selected_verse['reflection_is_finalized']:
                     st.write( "**Suggested Corrections:**")
-                    st.write( "_No corrections.  Verse replaced with best graded verse from history._")
+                    st.write( "_No corrections.  Verse replaced with best graded verse from "
+                        "history._")
 
                 #if graded_verse is stashed in the last_reflection_loop
                 #Then the grade is not for the current translation.
@@ -559,7 +564,8 @@ def main():
                     elif 'grades' in last_reflection_loop:
                         st.write( "**Suggested Corrections:**" )
                         for i,grade in enumerate(last_reflection_loop['grades']):
-                            st.write( f"**Review {i+1}** _(Grade {grade['grade']})_: {grade['comment']}" )
+                            st.write( f"**Review {i+1}** "
+                                f"_(Grade {grade['grade']})_: {grade['comment']}" )
 
             # Next and Previous buttons
             col1, col2 = st.columns(2)
@@ -609,11 +615,13 @@ def main():
                 found_history = False
                 if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
                     #iterate the reflection loops in reverse.
-                    for i,reflection_loop in reversed(list(enumerate(selected_verse['reflection_loops']))):
+                    for i,reflection_loop in reversed(list(enumerate(
+                            selected_verse['reflection_loops']))):
                         if 'graded_verse' in reflection_loop:
                             found_history = True
                             if 'average_grade' in reflection_loop:
-                                st.write( f"**Version {i+1}**: _(Grade {reflection_loop['average_grade']:.1f})_" )
+                                st.write( f"**Version {i+1}**: "
+                                    f"_(Grade {reflection_loop['average_grade']:.1f})_" )
                             else:
                                 st.write( f"Version {i+1}:" )
 
@@ -623,7 +631,8 @@ def main():
                             with comments_col:
                                 if 'correction_summarization' in reflection_loop and \
                                         'summary' in reflection_loop['correction_summarization']:
-                                    st.write( reflection_loop['correction_summarization']['summary'] )
+                                    st.write( reflection_loop['correction_summarization']
+                                        ['summary'] )
 
                             st.divider()
 
@@ -634,8 +643,9 @@ def main():
             with verse_comments_tab:
                 st.subheader("Comments applying to this verse")
                 found_comment = False
-                for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data,
-                        st.session_state.book, st.session_state.chapter, st.session_state.verse )):
+                for i,comment in enumerate(get_comments_for_reference(
+                        st.session_state.comment_data, st.session_state.book,
+                        st.session_state.chapter, st.session_state.verse )):
                     long_text = cached_to_range(comment['ids'],all_references)
                     truncation_length = 100
                     truncated_text = long_text[:truncation_length] + "..." if len(long_text) > \
@@ -667,6 +677,53 @@ def main():
                         st.session_state.selected_verses = [selected_verse['vref']]
                     #javascript then switches to the Add Comments tab
                 add_button_tab_switch(add_comment_btn_text, "Add Comments")
+
+        with sorted_by_grade_tab:
+            st.header( "Sorted by Grade" )
+            st.subheader( "See verses sorted by grade" )
+
+            def get_grade( verse ):
+                return grade_reflect_loop.compute_verse_grade( verse, {
+                    'reference_key': reference_key,
+                    'grades_per_reflection_loop': float('inf'),
+                })
+
+            
+            
+            sorted_by_grade = sorted( (x for x in filtered_translation_data if 
+                get_grade(x) is not None), key=get_grade, reverse=False )
+
+
+            if not sorted_by_grade:
+                st.write( "No graded verses." )
+            else:
+
+                VERSES_PER_PAGE = 10
+                page = st.session_state.page if 'page' in st.session_state else 1
+                num_pages = math.ceil(len(sorted_by_grade) / VERSES_PER_PAGE)
+
+
+                # Create a slider to navigate through pages
+                page = st.slider("Go to page", 1, num_pages, key="page_slider")
+
+                # Display current page and total pages
+                st.write(f"Page {page} of {num_pages}")
+
+                start_index = (page - 1) * VERSES_PER_PAGE
+                end_index = start_index + VERSES_PER_PAGE
+
+                sorted_by_grade_page = sorted_by_grade[start_index:end_index]
+
+                for i,verse in enumerate(sorted_by_grade_page):
+                    reference = utils.look_up_key( verse, reference_key )
+                    translation = utils.look_up_key( verse, translation_key )
+                    grade = get_grade( verse )
+
+                    st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
+                    st.write( translation )
+
+                    st.divider()
+                
 
 
         # Add Comments Tab
