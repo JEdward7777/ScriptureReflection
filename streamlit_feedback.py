@@ -1,3 +1,7 @@
+"""
+This is a POC for a Streamlit app to allow users to provide feedback on the quality of a
+translation. But it is evolving into more, such as editing the translation as well.
+"""
 
 import cProfile
 #import profile as cProfile
@@ -5,14 +9,37 @@ import os
 import pstats
 import io
 import random
-import json, yaml
+import json
+import yaml
 import streamlit as st
-import easy_draft
+from streamlit.components.v1 import html
 import utils
 import verse_parsing
-from streamlit.components.v1 import html
+
+
+def verse_parts( refs ):
+    """This takes all the string or ints in refs and returns them all in a single array"""
+    out_refs = []
+    for ref in refs:
+        if type(ref) == str:
+            for part in ref.split("-"):
+                out_refs.append( int(part) )
+        else:
+            out_refs.append( ref )
+    return out_refs
+
+
+def get_max_verse( verse_a, verse_b ):
+    """Return the max verse between this.  Supports verse ranges"""
+    return max(verse_parts([verse_a,verse_b]))
+
+def get_min_verse( verse_a, verse_b ):
+    """Return the min verse between this.  Supports verse ranges"""
+    return min(verse_parts([verse_a,verse_b]))
+
 
 def split_ref( reference ):
+    """Splits the reference into book, chapter and verse"""
     if " " not in reference:
         return reference, None, None
     last_space_index = reference.rindex(" ")
@@ -21,16 +48,22 @@ def split_ref( reference ):
     if ":" not in chapter_verse_str:
         return book_split, int(chapter_verse_str), None
     chapter_num,verse_num = chapter_verse_str.split(":")
-    return book_split, int(chapter_num), int(verse_num)
+    if "-" not in verse_num:
+        return book_split, int(chapter_num), int(verse_num)
+    else:
+        return book_split, int(chapter_num), verse_num
 
 # Load available outputs
-loaded_outputs = [filename.rsplit('.', 1)[0] for filename in os.listdir('./output') if filename.endswith(".jsonl")]
+loaded_outputs = [filename.rsplit('.', 1)[0] for filename in os.listdir('./output') if
+    filename.endswith(".jsonl")]
 
 #https://py.cafe/maartenbreddels/streamlit-switch-tabs-programmatically
 def add_button_tab_switch(button_text, tab_text):
+    """Streamlit doesn't allow you to programatically switch tabs, so this
+    javascript injection adds that capability"""
     html(f"""<script>
     (() => {{
-        
+
         let button = [...window.parent.document.querySelectorAll("button")].filter(button => {{
             console.log(">>>", button.innerText)
             return button.innerText.includes("{button_text}")
@@ -58,6 +91,7 @@ def add_button_tab_switch(button_text, tab_text):
 # Cache the loading of reference data
 @st.cache_data
 def load_reference_data():
+    """Loads the vref data as referenced in the easy_draft.yaml file"""
     with open('easy_draft.yaml', encoding='utf-8') as f:
         easy_draft_yaml = yaml.load(f, Loader=yaml.FullLoader)
     ebible_dir = easy_draft_yaml['global_configs']['ebible_dir']
@@ -65,6 +99,7 @@ def load_reference_data():
 
 #@st.cache_data
 def cached_to_range(selected_verses, all_verses):
+    """Caches the verse parsing to_range function"""
     return verse_parsing.to_range(selected_verses, all_verses)
 
 @st.cache_data
@@ -74,12 +109,16 @@ def load_translation_data(selected_translation):
     filepath = f"./output/{selected_translation}.jsonl"
     with open(filepath, 'r', encoding='utf-8') as file:
         loaded_lines = [json.loads(line) for line in file]
-    loaded_lines = [{**loaded_line, 'vref': vrefs[i]} if loaded_line else None for i, loaded_line in enumerate(loaded_lines)]
+    #loaded_lines = [{**loaded_line, 'vref': vrefs[i]} if loaded_line else
+    #    None for i, loaded_line in enumerate(loaded_lines)]
+    loaded_lines = [None if not loaded_line else {**loaded_line, 'vref': vrefs[i]} if 'vref'
+        not in loaded_line else loaded_line for i, loaded_line in enumerate(loaded_lines)]
     loaded_lines = [line for line in loaded_lines if line]
     return loaded_lines
 
 
 def load_comment_data(selected_translation):
+    """Loads the comment data for a selected translation"""
     filepath = f"./output/comments/{selected_translation}.jsonl"
     try:
         with open(filepath, 'r', encoding='utf-8') as file:
@@ -89,6 +128,7 @@ def load_comment_data(selected_translation):
         return []
 
 def save_comments(selected_translation,comment_data):
+    """Saves the comment data for a selected translation"""
     filepath = f"./output/comments/{selected_translation}.jsonl"
     temp_filepath = f"./output/comments/{selected_translation}~.jsonl"
     if not os.path.exists("./output/comments"):
@@ -98,6 +138,19 @@ def save_comments(selected_translation,comment_data):
             file.write(json.dumps(this_comment) + "\n")
     os.replace(temp_filepath, filepath)
 
+def get_verse_for_reference( data, book, chapter, verse, overridden_references ):
+    """Fetches the verse object for a given reference"""
+    vref_to_get = f"{book} {chapter}:{verse}"
+    if vref_to_get in overridden_references:
+        vref_to_get = overridden_references[vref_to_get]
+
+    for item in data:
+        if item['vref'] == vref_to_get:
+            return item
+        if 'vrefs' in item and vref_to_get in item['vrefs']:
+            return item
+
+    return None
 
 def get_text_for_reference(data, book, chapter, verse):
     """Fetches the text for a given reference."""
@@ -108,6 +161,7 @@ def get_text_for_reference(data, book, chapter, verse):
     return "Text not found."
 
 def get_source_for_reference(data, book, chapter, verse):
+    """Gets the source for a specific reference"""
     for item in data:
         b, c, v = split_ref(item['vref'])
         if b == book and c == chapter and v == verse:
@@ -115,16 +169,18 @@ def get_source_for_reference(data, book, chapter, verse):
     return "Source not found."
 
 def get_comments_for_reference( comment_data, book, chapter, verse ):
-    id = f"{book} {chapter}:{verse}"
+    """Gets the comments for a specific reference"""
+    vref = f"{book} {chapter}:{verse}"
 
     result = []
     for comment in comment_data:
-        if id in comment['ids']:
+        if vref in comment['ids']:
             result.append(comment)
 
     return result
 
 def reference_to_index(data,book,chapter,verse):
+    """Fetches the index for a given reference."""
     for i, item in enumerate(data):
         b, c, v = split_ref(item['vref'])
         if b == book and c == chapter and v == verse:
@@ -140,18 +196,34 @@ def index_to_reference(data, index):
 
 
 def main():
+    """Main function for the Streamlit app."""
     st.title("Translation Comment Collector")
 
     # Translation Dropdown
     selected_translation = st.selectbox("Select Translation", loaded_outputs)
 
-    if 'selected_translation' not in st.session_state or selected_translation != st.session_state.selected_translation:
+    reference_key = ['vref']
+    override_key = ['forming_verse_range_with_previous_verse']
+    translation_key = ['fresh_translation','text']
+    source_key = ['source']
+
+
+    if selected_translation:
+        translation_data = load_translation_data(selected_translation)
+    else:
+        translation_data = []
+
+    if 'selected_translation' not in st.session_state or selected_translation != \
+            st.session_state.selected_translation:
         st.session_state.comment_data = load_comment_data(selected_translation)
         st.session_state.selected_verses = []
         st.session_state.selected_translation = selected_translation
+        st.session_state.overridden_references = utils.get_overridden_references(
+            translation_data,reference_key,override_key)
 
     # Tabs
-    browse_chapter_tab, browse_verse_tab, add_comments_tab = st.tabs(["Browse Chapter", "Browse Verse", "Add Comments"])
+    browse_chapter_tab, browse_verse_tab, add_comments_tab = st.tabs(["Browse Chapter",
+        "Browse Verse", "Add Comments"])
 
     # Initialize session state variables
     if "book" not in st.session_state:
@@ -162,19 +234,20 @@ def main():
         st.session_state.verse = 1
 
 
-    if selected_translation:
-        translation_data = load_translation_data(selected_translation)
-    else:
-        translation_data = []
 
 
     def collect_all_references():
         references = []
         for item in translation_data:
-            references.append(item['vref'])
-        return references
+            if 'vrefs' in item:
+                references += item['vrefs']
+            else:
+                references.append(item['vref'])
+        #unique_references = list(set(references))
+        unique_references = list(dict.fromkeys(references))
+        return unique_references
 
-    def collect_references_within_range( start_reference, end_reference ):
+    def collect_references_within_range( start_reference, end_reference, all_references ):
         saw_start_book = False
         saw_start_chapter = False
         saw_start_verse = False
@@ -186,8 +259,8 @@ def main():
 
         references = []
 
-        for item in translation_data:
-            b, c, v = split_ref(item['vref'])
+        for vref in all_references:
+            b, c, v = split_ref(vref)
 
             if b == eb and (ec is None or c == ec) and (ev is None or v == ev):
                 saw_range_end = True
@@ -201,7 +274,7 @@ def main():
                     if sv is None or v == sv:
                         saw_start_verse = True
             if saw_start_book and saw_start_chapter and saw_start_verse:
-                references.append(item['vref'])
+                references.append(vref)
 
         return references
 
@@ -238,7 +311,9 @@ def main():
             result = ""
 
             with columns[0]:
-                sel_book = st.selectbox("Select Book", unique_books, index=unique_books.index(init_book) if init_book in unique_books else 0, key=f"{key}-book")
+                sel_book = st.selectbox("Select Book", unique_books,
+                    index=unique_books.index(init_book) if init_book in unique_books else 0,
+                    key=f"{key}-book")
                 result = sel_book
             if num_columns >= 2:
                 with columns[1]:
@@ -252,9 +327,11 @@ def main():
 
                     if init_chapter is not None:
                         init_chapter = min( max( init_chapter, min_chapter ), max_chapter )
-                        sel_chapter = st.number_input("Select Chapter", min_value=min_chapter, max_value=max_chapter, value=init_chapter, key=f"{key}-chapter")
+                        sel_chapter = st.number_input("Select Chapter", min_value=min_chapter,
+                            max_value=max_chapter, value=init_chapter, key=f"{key}-chapter")
                     else:
-                        sel_chapter = st.number_input("Select Chapter", min_value=min_chapter, max_value=max_chapter, key=f"{key}-chapter")
+                        sel_chapter = st.number_input("Select Chapter", min_value=min_chapter,
+                            max_value=max_chapter, key=f"{key}-chapter")
                     result += f" {sel_chapter}"
             if num_columns == 3:
                 with columns[2]:
@@ -263,15 +340,18 @@ def main():
                     for item in translation_data:
                         b, c, v = split_ref(item['vref'])
                         if b == sel_book and c == sel_chapter:
-                            max_verse = max(max_verse, v)
-                            min_verse = min(min_verse, v)
+                            max_verse = get_max_verse(max_verse, v)
+                            min_verse = get_min_verse(min_verse, v)
 
-                    if( min_verse != float('inf') ):
+                    if min_verse != float('inf'):
                         if init_verse is not None:
-                            init_verse = min( max( init_verse, min_verse ), max_verse )
-                            sel_verse = st.number_input("Select Verse", min_value=min_verse, max_value=max_verse, value=init_verse, key=f"{key}-verse")
+                            init_verse = get_min_verse( get_max_verse( init_verse, min_verse ),
+                                max_verse )
+                            sel_verse = st.number_input("Select Verse", min_value=min_verse,
+                                max_value=max_verse, value=init_verse, key=f"{key}-verse")
                         else:
-                            sel_verse = st.number_input("Select Verse", min_value=min_verse, max_value=max_verse, key=f"{key}-verse")
+                            sel_verse = st.number_input("Select Verse", min_value=min_verse,
+                                max_value=max_verse, key=f"{key}-verse")
                         result += f":{sel_verse}"
                     else:
                         result += ":1"
@@ -296,7 +376,9 @@ def main():
             book_before_dropdown = st.session_state.book
             chapter_before_dropdown = st.session_state.chapter
 
-            st.session_state.book, st.session_state.chapter, _ = split_ref(select_reference( "chapter", "browse-chapter", init_book=st.session_state.book, init_chapter=st.session_state.chapter ))
+            st.session_state.book, st.session_state.chapter, _ = split_ref(select_reference(
+                "chapter", "browse-chapter", init_book=st.session_state.book,
+                init_chapter=st.session_state.chapter ))
 
 
 
@@ -304,14 +386,15 @@ def main():
             max_chapter = None
             min_chapter = None
             for item in translation_data:
+                vref = utils.look_up_key( item, reference_key )
+                if vref in st.session_state.overridden_references:
+                    continue
+
                 b, c, _ = split_ref(item['vref'])
                 if b == st.session_state.book and c == st.session_state.chapter:
-                    #st.write( f"**{item['vref']}**\n - {item['fresh_translation']['text']}\n- {item['source']}" )
-                    #st.write( f"**{item['vref']}**" )
                     button_text = f"{item['vref']}"
                     if st.button( button_text ):
                         _,_,st.session_state.verse = split_ref(item['vref'])
-                    #add_button_tab_switch( button_text, "Browse Verse" )
 
                     trans_col, source_col = st.columns(2)
                     with trans_col:
@@ -324,7 +407,7 @@ def main():
                         max_chapter = c
                     if min_chapter is None or c < min_chapter:
                         min_chapter = c
-                
+
 
 
             # Next and Previous buttons
@@ -348,7 +431,8 @@ def main():
                     button_text = f"{item['vref']}"
                     add_button_tab_switch( button_text, "Browse Verse" )
 
-            if st.session_state.book != book_before_dropdown or st.session_state.chapter != chapter_before_dropdown:
+            if st.session_state.book != book_before_dropdown or st.session_state.chapter != \
+                    chapter_before_dropdown:
                 st.rerun()
 
         # Browse verse Tab
@@ -362,17 +446,25 @@ def main():
             verse_before_dropdown = st.session_state.verse
 
 
-            st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(select_reference( "verse", "browse-verse", init_book=st.session_state.book, init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
+            st.session_state.book, st.session_state.chapter, st.session_state.verse = split_ref(
+                select_reference( "verse", "browse-verse", init_book=st.session_state.book,
+                init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
 
-            st.write(f"**{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}**")
+
+
+            selected_verse = get_verse_for_reference( translation_data, st.session_state.book,
+                st.session_state.chapter, st.session_state.verse,
+                st.session_state.overridden_references )
+
+            st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
 
             # Display current reference and text
-            reference_text = get_text_for_reference(translation_data, st.session_state.book, st.session_state.chapter, st.session_state.verse)
+            reference_text = utils.look_up_key( selected_verse, translation_key )
             st.write( reference_text )
 
 
             #display the source text.
-            source_text = get_source_for_reference(translation_data, st.session_state.book, st.session_state.chapter, st.session_state.verse)
+            source_text = utils.look_up_key( selected_verse, source_key )
             st.write( "**Source Text:**")
             st.write( source_text)
 
@@ -384,15 +476,21 @@ def main():
                         st.session_state.verse -= 1
                     elif st.session_state.chapter > 1:
                         st.session_state.chapter -= 1
-                        st.session_state.verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == st.session_state.book and split_ref(item['vref'])[1] == st.session_state.chapter)
+                        st.session_state.verse = max(split_ref(item['vref'])[2] for item in
+                            translation_data if split_ref(item['vref'])[0] ==
+                            st.session_state.book and split_ref(item['vref'])[1] ==
+                            st.session_state.chapter)
             with col2:
                 if st.button("Next"):
-                    max_verse = max(split_ref(item['vref'])[2] for item in translation_data if split_ref(item['vref'])[0] == st.session_state.book and split_ref(item['vref'])[1] == st.session_state.chapter)
+                    max_verse = max(split_ref(item['vref'])[2] for item in translation_data if
+                        split_ref(item['vref'])[0] == st.session_state.book and split_ref(
+                        item['vref'])[1] == st.session_state.chapter)
                     if st.session_state.verse < max_verse:
                         st.session_state.verse = st.session_state.verse +1
                     else:
                         next_chapter = st.session_state.chapter + 1
-                        if any(split_ref(item['vref'])[1] == next_chapter for item in translation_data):
+                        if any(split_ref(item['vref'])[1] == next_chapter for item in
+                                translation_data):
                             st.session_state.chapter = next_chapter
                             st.session_state.verse = 1
 
@@ -413,11 +511,14 @@ def main():
 
             st.subheader("Comments applying to this verse")
             found_comment = False
-            for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data, st.session_state.book, st.session_state.chapter, st.session_state.verse )):
+            for i,comment in enumerate(get_comments_for_reference( st.session_state.comment_data,
+                    st.session_state.book, st.session_state.chapter, st.session_state.verse )):
                 long_text = cached_to_range(comment['ids'],all_references)
                 truncation_length = 100
-                truncated_text = long_text[:truncation_length] + "..." if len(long_text) > truncation_length else long_text
-                changed_text = st.text_area( truncated_text, value=comment['comment'], key=f"{i}-edit" )
+                truncated_text = long_text[:truncation_length] + "..." if len(long_text) > \
+                    truncation_length else long_text
+                changed_text = st.text_area( truncated_text, value=comment['comment'],
+                    key=f"{i}-edit" )
                 save_col, delete_col = st.columns(2)
                 with save_col:
                     if st.button("Save", key=f"{i}-save"):
@@ -437,7 +538,10 @@ def main():
             add_comment_btn_text = "Add comment to this verse"
             # Create a button to run the JavaScript code
             if st.button(add_comment_btn_text):
-                st.session_state.selected_verses = [f"{st.session_state.book} {st.session_state.chapter}:{st.session_state.verse}"]
+                if 'vrefs' in selected_verse:
+                    st.session_state.selected_verses = selected_verse['vrefs']
+                else:
+                    st.session_state.selected_verses = [selected_verse['vref']]
                 #javascript then switches to the Add Comments tab
             add_button_tab_switch(add_comment_btn_text, "Add Comments")
 
@@ -450,7 +554,6 @@ def main():
             if not st.session_state.selected_verses:
                 long_text = "No selection for comment"
             else:
-                #st.write( f"Selected verses: {cached_to_range(st.session_state.selected_verses,all_references)}")
                 long_text = cached_to_range(st.session_state.selected_verses,all_references)
 
             # Use the scrollable container
@@ -460,25 +563,30 @@ def main():
                 </div>
                 """, unsafe_allow_html=True)
 
-            type_of_operation = st.radio( "What would you like to add or remove from the selection?", ["everything", "single", "range", "keyword search"], horizontal=True )
+            type_of_operation = st.radio( "What would you like to add or remove from the "
+                "selection?", ["everything", "single", "range", "keyword search"],
+                horizontal=True )
 
 
             scope = "book"
             if type_of_operation in ["single", "range"]:
-                scope = st.radio( "What scope of selection?", ["book", "chapter", "verse"], horizontal=True )
+                scope = st.radio( "What scope of selection?", ["book", "chapter", "verse"],
+                horizontal=True )
 
             selection = ""
             if type_of_operation == "everything":
                 selection = all_references
             elif type_of_operation == "single":
                 single_selection = select_reference(scope, "single")
-                selection = collect_references_within_range( single_selection, single_selection )
+                selection = collect_references_within_range( single_selection, single_selection,
+                    all_references )
             elif type_of_operation == "range":
                 st.write( "Range start:")
                 start_reference = select_reference(scope, "range-start")
                 st.write( "Range end:")
                 end_reference = select_reference(scope, "range-end")
-                selection = collect_references_within_range( start_reference, end_reference )
+                selection = collect_references_within_range( start_reference, end_reference,
+                    all_references )
             elif type_of_operation == "keyword search":
                 keyword = st.text_input( "Keyword" )
                 selection = collect_references_with_keyword( keyword )
@@ -502,14 +610,16 @@ def main():
                     st.rerun()
 
 
-            
+
 
             if st.session_state.selected_verses:
                 truncation_length = 20
-                truncated_text = long_text[:truncation_length] + "..." if len( long_text ) > truncation_length else long_text
+                truncated_text = long_text[:truncation_length] + "..." if len( long_text ) > \
+                    truncation_length else long_text
                 st.subheader( f"Type comment to add to {truncated_text}")
                 name = st.text_input( "Your Name" )
-                comment_added = st.text_area( "Comment", key=f"comment-{st.session_state.comment_count}", value="" )
+                comment_added = st.text_area( "Comment",
+                    key=f"comment-{st.session_state.comment_count}", value="" )
                 if st.button( "Add Comment to selected verses" ):
 
                     if name:
@@ -528,16 +638,19 @@ def main():
                     else:
                         st.error( "Please enter your name" )
 
-            
+
 
 
 def save_profiler_stats(profiler):
+    """
+    Save profiling results to a file.
+    """
     # Generate a random integer for the filename
     random_int = random.randint(1000, 9999)
     filename = f"profiler_output_{random_int}.txt"
-    
+
     # Write the profiling stats to a file
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         s = io.StringIO()
         ps = pstats.Stats(profiler, stream=s).sort_stats('cumulative')
         ps.print_stats()
@@ -552,9 +665,12 @@ def save_profiler_stats(profiler):
     #     mime="text/plain"
     # )
 
-PROFILEING = False    
+PROFILEING = False
 
 def profile_main():
+    """
+    Profile the main function.
+    """
     if PROFILEING:
         try:
             profiler = cProfile.Profile()

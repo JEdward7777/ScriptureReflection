@@ -94,7 +94,7 @@ def set_key( data, keys, value ):
 
 def get_overridden_references(translation, reference_key, override_key):
     """Find references that have been overridden"""
-    overridden_references = []
+    overridden_references = {}
     if override_key:
         last_reference = None
         for verse in translation:
@@ -102,9 +102,18 @@ def get_overridden_references(translation, reference_key, override_key):
             if last_reference:
                 is_override = look_up_key( verse, override_key )
                 if is_override:
-                    overridden_references.append( last_reference )
+                    overridden_references[last_reference] = reference
             last_reference = reference
-    return overridden_references
+
+    #If you have a verse range with more than two verses, update the pointers
+    #on the base verse to point to the end instead of being a linked list.
+    updated_references = {}
+    for k,v in overridden_references.items():
+        while v in overridden_references:
+            v = overridden_references[v]
+        updated_references[k] = v
+
+    return updated_references
 
 def load_file_to_list(file_path: str) -> list[str]:
     """
