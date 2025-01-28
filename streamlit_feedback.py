@@ -216,13 +216,15 @@ def main():
     else:
         translation_data = []
 
+    filtered_translation_data = [x for x in translation_data if x]
+
     if 'selected_translation' not in st.session_state or selected_translation != \
             st.session_state.selected_translation:
         st.session_state.comment_data = load_comment_data(selected_translation)
         st.session_state.selected_verses = []
         st.session_state.selected_translation = selected_translation
         st.session_state.overridden_references = utils.get_overridden_references(
-            translation_data,reference_key,override_key)
+            filtered_translation_data,reference_key,override_key)
 
     # Tabs
     browse_chapter_tab, browse_verse_tab, add_comments_tab = st.tabs(["Browse Chapter",
@@ -241,7 +243,7 @@ def main():
 
     def collect_all_references():
         references = []
-        for item in translation_data:
+        for item in filtered_translation_data:
             if 'vrefs' in item:
                 references += item['vrefs']
             elif 'vref' in item:
@@ -284,7 +286,7 @@ def main():
 
     def collect_references_with_keyword( keyword ):
         references = []
-        for item in translation_data:
+        for item in filtered_translation_data:
             if not item: continue
             if keyword.lower() in item['fresh_translation']['text'].lower():
                 references.append(item['vref'])
@@ -303,10 +305,10 @@ def main():
         </style>
         """, unsafe_allow_html=True)
 
-    if translation_data:
+    if filtered_translation_data:
 
         # Book, Chapter, Verse selectors
-        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data if 'vref' in item))
+        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in filtered_translation_data if 'vref' in item))
         def select_reference( scope, key, init_book=None, init_chapter=None, init_verse=None ):
             num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
@@ -323,7 +325,7 @@ def main():
                 with columns[1]:
                     max_chapter = 0
                     min_chapter = float('inf')
-                    for item in translation_data:
+                    for item in filtered_translation_data:
                         if not item: continue
                         b, c, _ = split_ref(item['vref'])
                         if b == sel_book:
@@ -342,7 +344,7 @@ def main():
                 with columns[2]:
                     max_verse = 0
                     min_verse = float('inf')
-                    for item in translation_data:
+                    for item in filtered_translation_data:
                         if not item: continue
                         b, c, v = split_ref(item['vref'])
                         if b == sel_book and c == sel_chapter:
@@ -391,7 +393,7 @@ def main():
 
             max_chapter = None
             min_chapter = None
-            for item in translation_data:
+            for item in filtered_translation_data:
                 if not item: continue
                 vref = utils.look_up_key( item, reference_key )
                 if vref in st.session_state.overridden_references:
@@ -432,7 +434,7 @@ def main():
 
 
             #put the button to tab connections at the bottom because they produce height.
-            for item in translation_data:
+            for item in filtered_translation_data:
                 if not item: continue
                 b, c, _ = split_ref(item['vref'])
                 if b == st.session_state.book and c == st.session_state.chapter:
@@ -460,7 +462,7 @@ def main():
 
 
 
-            selected_verse = get_verse_for_reference( translation_data, st.session_state.book,
+            selected_verse = get_verse_for_reference( filtered_translation_data, st.session_state.book,
                 st.session_state.chapter, st.session_state.verse,
                 st.session_state.overridden_references )
 
@@ -489,12 +491,12 @@ def main():
                     elif st.session_state.chapter > 1:
                         st.session_state.chapter -= 1
                         st.session_state.verse = max(split_ref(item['vref'])[2] for item in
-                            translation_data if split_ref(item['vref'])[0] ==
+                            filtered_translation_data if split_ref(item['vref'])[0] ==
                             st.session_state.book and split_ref(item['vref'])[1] ==
                             st.session_state.chapter)
             with col2:
                 if st.button("Next"):
-                    max_verse = max(split_ref(item['vref'])[2] for item in translation_data if
+                    max_verse = max(split_ref(item['vref'])[2] for item in filtered_translation_data if
                         split_ref(item['vref'])[0] == st.session_state.book and split_ref(
                         item['vref'])[1] == st.session_state.chapter)
                     if st.session_state.verse < max_verse:
@@ -502,7 +504,7 @@ def main():
                     else:
                         next_chapter = st.session_state.chapter + 1
                         if any(split_ref(item['vref'])[1] == next_chapter for item in
-                                translation_data):
+                                filtered_translation_data):
                             st.session_state.chapter = next_chapter
                             st.session_state.verse = 1
 
