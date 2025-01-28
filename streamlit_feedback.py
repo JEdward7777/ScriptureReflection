@@ -21,7 +21,7 @@ def verse_parts( refs ):
     """This takes all the string or ints in refs and returns them all in a single array"""
     out_refs = []
     for ref in refs:
-        if type(ref) == str:
+        if isinstance(ref, str):
             for part in ref.split("-"):
                 out_refs.append( int(part) )
         else:
@@ -102,7 +102,7 @@ def cached_to_range(selected_verses, all_verses):
     """Caches the verse parsing to_range function"""
     return verse_parsing.to_range(selected_verses, all_verses)
 
-@st.cache_data
+#@st.cache_data
 def load_translation_data(selected_translation):
     """Loads the data for the selected translation."""
     vrefs = load_reference_data()
@@ -111,11 +111,14 @@ def load_translation_data(selected_translation):
         loaded_lines = [json.loads(line) for line in file]
     #loaded_lines = [{**loaded_line, 'vref': vrefs[i]} if loaded_line else
     #    None for i, loaded_line in enumerate(loaded_lines)]
-    loaded_lines = [None if not loaded_line else {**loaded_line, 'vref': vrefs[i]} if 'vref'
+    loaded_lines = [loaded_line if not loaded_line else {**loaded_line, 'vref': vrefs[i]} if 'vref'
         not in loaded_line else loaded_line for i, loaded_line in enumerate(loaded_lines)]
-    loaded_lines = [line for line in loaded_lines if line]
     return loaded_lines
 
+def save_translation_data(selected_translation, translation_data):
+    """Saves the translation data back out, like when a verse is edited"""
+    filepath = f"./output/{selected_translation}.jsonl"
+    utils.save_jsonl(filepath, translation_data)
 
 def load_comment_data(selected_translation):
     """Loads the comment data for a selected translation"""
@@ -145,7 +148,7 @@ def get_verse_for_reference( data, book, chapter, verse, overridden_references )
         vref_to_get = overridden_references[vref_to_get]
 
     for item in data:
-        if item['vref'] == vref_to_get:
+        if 'vref' in item and item['vref'] == vref_to_get:
             return item
         if 'vrefs' in item and vref_to_get in item['vrefs']:
             return item
@@ -241,7 +244,7 @@ def main():
         for item in translation_data:
             if 'vrefs' in item:
                 references += item['vrefs']
-            else:
+            elif 'vref' in item:
                 references.append(item['vref'])
         #unique_references = list(set(references))
         unique_references = list(dict.fromkeys(references))
@@ -282,6 +285,7 @@ def main():
     def collect_references_with_keyword( keyword ):
         references = []
         for item in translation_data:
+            if not item: continue
             if keyword.lower() in item['fresh_translation']['text'].lower():
                 references.append(item['vref'])
         return references
@@ -302,7 +306,7 @@ def main():
     if translation_data:
 
         # Book, Chapter, Verse selectors
-        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data))
+        unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in translation_data if 'vref' in item))
         def select_reference( scope, key, init_book=None, init_chapter=None, init_verse=None ):
             num_columns = 3 if scope == "verse" else 2 if scope == "chapter" else 1
 
@@ -320,6 +324,7 @@ def main():
                     max_chapter = 0
                     min_chapter = float('inf')
                     for item in translation_data:
+                        if not item: continue
                         b, c, _ = split_ref(item['vref'])
                         if b == sel_book:
                             max_chapter = max(max_chapter, c)
@@ -338,6 +343,7 @@ def main():
                     max_verse = 0
                     min_verse = float('inf')
                     for item in translation_data:
+                        if not item: continue
                         b, c, v = split_ref(item['vref'])
                         if b == sel_book and c == sel_chapter:
                             max_verse = get_max_verse(max_verse, v)
@@ -386,6 +392,7 @@ def main():
             max_chapter = None
             min_chapter = None
             for item in translation_data:
+                if not item: continue
                 vref = utils.look_up_key( item, reference_key )
                 if vref in st.session_state.overridden_references:
                     continue
@@ -426,6 +433,7 @@ def main():
 
             #put the button to tab connections at the bottom because they produce height.
             for item in translation_data:
+                if not item: continue
                 b, c, _ = split_ref(item['vref'])
                 if b == st.session_state.book and c == st.session_state.chapter:
                     button_text = f"{item['vref']}"
@@ -460,8 +468,12 @@ def main():
 
             # Display current reference and text
             reference_text = utils.look_up_key( selected_verse, translation_key )
-            st.write( reference_text )
 
+            edited_verse = st.text_area( "**Translation:**", value=reference_text, key="verse-edit" )
+            if edited_verse != reference_text:
+                utils.set_key( selected_verse, translation_key, edited_verse )
+                save_translation_data( selected_translation, translation_data )
+                st.rerun()
 
             #display the source text.
             source_text = utils.look_up_key( selected_verse, source_key )
