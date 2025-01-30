@@ -18,6 +18,24 @@ from streamlit.components.v1 import html
 import utils
 import verse_parsing
 import grade_reflect_loop
+import time
+
+profiling_array = []
+
+def reset_profile():
+    profiling_array.clear()
+
+def checkpoint( description ):
+    now = time.time()
+    last_time = profiling_array[-1][-1] if len(profiling_array) > 0 else now
+    duration = now - last_time
+    profiling_array.append( (description, duration, now ) )
+
+def save_out_profiling( filename ):
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write("Description,Duration,Time\n")
+        for description, duration, time in profiling_array:
+            f.write(f"{description},{duration},{time}\n")
 
 
 def verse_parts( refs ):
@@ -238,6 +256,9 @@ def index_to_reference(data, index):
 
 
 def main():
+    reset_profile()
+    checkpoint( "start" )
+
     """Main function for the Streamlit app."""
     st.title("Translation Comment Collector")
 
@@ -251,12 +272,18 @@ def main():
     source_key = ['source']
 
 
+    checkpoint( "about to load translation" )
+
     if selected_translation:
         translation_data = load_translation_data(selected_translation)
     else:
         translation_data = []
 
+    checkpoint( "loaded translation" )
+
     filtered_translation_data = [x for x in translation_data if x]
+
+    checkpoint( "filtered translation" )
 
     if 'selected_translation' not in st.session_state or selected_translation != \
             st.session_state.selected_translation:
@@ -265,6 +292,8 @@ def main():
         st.session_state.selected_translation = selected_translation
         st.session_state.overridden_references = utils.get_overridden_references(
             filtered_translation_data,reference_key,override_key)
+
+    checkpoint( "managed session state" )
 
     # Tabs
     browse_chapter_tab, browse_verse_tab, sorted_by_grade_tab, add_comments_tab = st.tabs(["Browse Chapter",
@@ -348,6 +377,8 @@ def main():
 
     if filtered_translation_data:
 
+        checkpoint( "Finding unique_books")
+
         # Book, Chapter, Verse selectors
         unique_books = list(dict.fromkeys(split_ref(item['vref'])[0] for item in
             filtered_translation_data if 'vref' in item))
@@ -410,6 +441,8 @@ def main():
             return result
 
 
+        checkpoint( "Finding all references" )
+
         all_references = collect_all_references()
 
 
@@ -422,6 +455,9 @@ def main():
 
         # Browse chapter Tab
         with browse_chapter_tab:
+
+            checkpoint( "chapter tab: Starting browse tab" )
+
             st.header("Browse Translation by Chapter")
             st.write("Select a book and chapter to view the verses in that chapter.")
 
@@ -432,7 +468,7 @@ def main():
                 "chapter", "browse-chapter", init_book=st.session_state.book,
                 init_chapter=st.session_state.chapter ))
 
-
+            checkpoint( "chapter tab: got selected chapter" )
 
 
             max_chapter = None
@@ -462,7 +498,7 @@ def main():
                     if min_chapter is None or c < min_chapter:
                         min_chapter = c
 
-
+            checkpoint( "chapter tab: Found items in current chapter" )
 
             # Next and Previous buttons
             col1, col2, col3 = st.columns(3)
@@ -477,6 +513,8 @@ def main():
                     if st.session_state.chapter < max_chapter:
                         st.session_state.chapter += 1
 
+            checkpoint( "chapter tab: Made prev next buttons in chapter" )
+
 
             #put the button to tab connections at the bottom because they produce height.
             for item in filtered_translation_data:
@@ -487,12 +525,16 @@ def main():
                     button_text = f"{item['vref']}"
                     add_button_tab_switch( button_text, "Browse Verse" )
 
+            checkpoint( "chapter tab: Added the switch button macros" )
+
             if st.session_state.book != book_before_dropdown or st.session_state.chapter != \
                     chapter_before_dropdown:
                 st.rerun()
 
         # Browse verse Tab
         with browse_verse_tab:
+            checkpoint( "verse tab: Starting browse tab" )
+
             st.header("Browse Translation by Verse")
 
 
@@ -507,10 +549,14 @@ def main():
                 init_chapter=st.session_state.chapter, init_verse=st.session_state.verse ))
 
 
+            checkpoint( "verse tab: Ran verse selectors" )
 
             selected_verse = get_verse_for_reference( filtered_translation_data,
                 st.session_state.book, st.session_state.chapter, st.session_state.verse,
                 st.session_state.overridden_references )
+
+
+            checkpoint( "verse tab: Looked up active verse" )
 
             current_verse_grade = None
             if 'reflection_is_finalized' in selected_verse and \
@@ -528,6 +574,8 @@ def main():
             else:
                 st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
 
+            checkpoint( "verse tab: wrote verse header" )
+
             # Display current reference and text
             reference_text = utils.look_up_key( selected_verse, translation_key )
 
@@ -539,10 +587,15 @@ def main():
                 save_translation_data( selected_translation, translation_data )
                 st.rerun()
 
+            checkpoint( "verse tab: showed verse to be edited" )
+
             #display the source text.
             source_text = utils.look_up_key( selected_verse, source_key )
             st.write( "**Source Text:**")
             st.write( source_text)
+
+
+            checkpoint( "verse tab: about to show suggested corrections" )
 
             #see if we have a summarized comment to display:
             if 'reflection_loops' in selected_verse and \
@@ -571,6 +624,8 @@ def main():
                             st.write( f"**Review {i+1}** "
                                 f"_(Grade {grade['grade']})_: {grade['comment']}" )
 
+            checkpoint( "verse tab: showed suggested corrections" )
+
             # Next and Previous buttons
             col1, col2 = st.columns(2)
             with col1:
@@ -598,6 +653,8 @@ def main():
                             st.session_state.chapter = next_chapter
                             st.session_state.verse = 1
 
+            checkpoint( "verse tab: wrote next and previous buttons" )
+
             book_after_buttons = st.session_state.book
             chapter_after_buttons = st.session_state.chapter
             verse_after_buttons = st.session_state.verse
@@ -614,6 +671,7 @@ def main():
                 "Verse Comments"])
 
             with verse_history_tab:
+                checkpoint( "verse tab: history tab: started" )
                 st.header("Verse History")
 
                 found_history = False
@@ -643,14 +701,21 @@ def main():
                                         ['summary'] )
 
                             st.divider()
+
+                    checkpoint( "verse tab: history tab: showed history" )
+
                     if grade_over_history:
                         st.line_chart( itertools.chain(reversed(grade_over_history), [current_verse_grade]), x_label="Version", y_label="Grade" )
+
+                        checkpoint( "verse tab: history tab: showed chart" )
 
                 if not found_history:
                     st.write("No history")
 
 
             with verse_comments_tab:
+                checkpoint( "verse tab: comments tab: started" )
+
                 st.subheader("Comments applying to this verse")
                 found_comment = False
                 for i,comment in enumerate(get_comments_for_reference(
@@ -676,6 +741,8 @@ def main():
                     found_comment = True
                 if not found_comment:
                     st.write("No comments found")
+                
+                checkpoint( "verse tab: comments tab: showed comments" )
 
 
                 add_comment_btn_text = "Add comment to this verse"
@@ -688,7 +755,11 @@ def main():
                     #javascript then switches to the Add Comments tab
                 add_button_tab_switch(add_comment_btn_text, "Add Comments")
 
+                checkpoint( "verse tab: comments tab: wrote add comment button" )
+
         with sorted_by_grade_tab:
+            checkpoint( "verse tab: sorted by grade tab: started" )
+
             st.header( "Sorted by Grade" )
 
             def get_grade( verse ):
@@ -703,6 +774,8 @@ def main():
                 get_grade(x) is not None), key=get_grade, reverse=False )
 
 
+            checkpoint( "verse tab: sorted by grade tab: sorted by grade" )
+
             if not sorted_by_grade:
                 st.write( "No graded verses." )
             else:
@@ -714,9 +787,13 @@ def main():
                 grade_per_page = [get_grade(sorted_by_grade[i * VERSES_PER_PAGE]) for i in range(num_pages)]
                 st.line_chart(data=grade_per_page, x_label="page", y_label="grade")
 
+                checkpoint( "verse tab: sorted by grade tab: showed chart" )
+
 
                 # Create a slider to navigate through pages
                 page = st.slider("Go to page", 1, num_pages, key="page_slider")
+
+                checkpoint( "verse tab: sorted by grade tab: slider" )
 
                 # Display current page and total pages
                 st.write(f"Page {page} of {num_pages}")
@@ -744,15 +821,21 @@ def main():
 
                     st.divider()
 
+                checkpoint( "verse tab: sorted by grade tab: showed verses" )
+
                 # Now tag on the tab switching feature, but we do it in a secondary loop because it adds height.
                 for i,verse in enumerate(sorted_by_grade_page):
                     reference = utils.look_up_key( verse, reference_key )
                     add_button_tab_switch( f"Ref: {reference}", "Browse Verse" )
+
+                checkpoint( "verse tab: sorted by grade tab: add_button_tab_switch" )
                 
 
 
         # Add Comments Tab
         with add_comments_tab:
+            checkpoint( "add comments tab: started" )
+
             st.header("Add Comments")
             st.subheader( "Select verses for comment" )
 
@@ -760,6 +843,8 @@ def main():
                 long_text = "No selection for comment"
             else:
                 long_text = cached_to_range(st.session_state.selected_verses,all_references)
+
+            checkpoint( "add comments tab: wrote long text" )
 
             # Use the scrollable container
             st.markdown(f"""
@@ -777,6 +862,8 @@ def main():
             if type_of_operation in ["single", "range"]:
                 scope = st.radio( "What scope of selection?", ["book", "chapter", "verse"],
                 horizontal=True )
+
+            checkpoint( "add comments tab: selected scope" )
 
             selection = ""
             if type_of_operation == "everything":
@@ -815,7 +902,7 @@ def main():
                     st.rerun()
 
 
-
+            checkpoint( "add comments tab: wrote selection" )
 
             if st.session_state.selected_verses:
                 truncation_length = 20
@@ -842,6 +929,8 @@ def main():
                         st.rerun()
                     else:
                         st.error( "Please enter your name" )
+
+                checkpoint( "add comments tab: made add comment" )
 
 
 
@@ -871,6 +960,7 @@ def save_profiler_stats(profiler):
     # )
 
 PROFILEING = False
+PROFILEING2 = True
 
 def profile_main():
     """
@@ -888,6 +978,9 @@ def profile_main():
                 raise
     else:
         main()
+
+    if PROFILEING2:
+        save_out_profiling( "streamlit_feedback_profiling.csv" )
 
 # If this script is run directly, start the profiling
 if __name__ == "__main__":
