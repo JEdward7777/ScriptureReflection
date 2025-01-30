@@ -5,6 +5,7 @@ Moved them here so that the scripts don't import eachother so much.
 
 import json
 import os
+import yaml
 
 def split_ref( reference ):
     """
@@ -143,3 +144,24 @@ class Tee:
         """
         for f in self.files:
             f.flush()
+
+
+class GetStub:
+    """
+    A stub class that has a get method that returns a default value.
+    """
+    def get( self, _, default ):
+        """Returns the default value"""
+        return default
+
+
+def load_yaml_configuration( file ):
+    """
+    loads the specific yaml configuration
+    and returns a stub if it doesn't exist.
+    """
+    if not os.path.exists(file):
+        return GetStub()
+    with open( file, encoding='utf-8' ) as f:
+        return yaml.load(f, Loader=yaml.FullLoader)
+    return None

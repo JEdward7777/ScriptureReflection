@@ -135,7 +135,7 @@ def cached_to_range(selected_verses, all_verses):
     return verse_parsing.to_range(selected_verses, all_verses)
 
 #@st.cache_data
-def load_translation_data(selected_translation, override_key):
+def load_translation_data(selected_translation, reference_key, override_key):
     """Loads the data for the selected translation."""
     vrefs = load_reference_data()
     filepath = f"./output/{selected_translation}.jsonl"
@@ -145,36 +145,32 @@ def load_translation_data(selected_translation, override_key):
     with open(filepath, 'r', encoding='utf-8') as file:
         loaded_lines = [json.loads(line) for line in file]
 
-    #loaded_lines = [loaded_line if not loaded_line else {**loaded_line, 'vref': vrefs[i]} if 'vref'
-    #    not in loaded_line else loaded_line for i, loaded_line in enumerate(loaded_lines)]
-
     filtered_translation_data = []
     indexed_translation_data = {}
     all_references = []
+    all_references__dict = {}
     for i, loaded_line in enumerate(loaded_lines):
         if loaded_line:
 
-            if 'vref' not in loaded_line:
-                loaded_line = {**loaded_line, 'vref': vrefs[i]}
-                loaded_lines[i] = loaded_line
+            vref = utils.look_up_key(loaded_line, reference_key)
+            if utils.look_up_key(loaded_line, reference_key) is None:
+                vref = vrefs[i]
+                utils.set_key( loaded_line, reference_key, vref )
 
-
-
-            b,c,v = split_ref(loaded_line['vref'])
+            b,c,v = split_ref(vref)
             #if the verse is a range, v comes back as a string like "3-5"
             if isinstance(v, str):
                 start_verse, end_verse = v.split("-")
                 for verse in range(int(start_verse), int(end_verse)+1):
                     utils.set_key( indexed_translation_data, [b,c,verse], loaded_line )
+                    range_ref = f"{b} {c}:{verse}"
+                    if range_ref not in all_references__dict:
+                        all_references.append( f"{b} {c}:{verse}" )
+                        all_references__dict[range_ref] = True
             else:
                 utils.set_key( indexed_translation_data, [b,c,v], loaded_line )
-
-
-            if 'vrefs' in loaded_line:
-                all_references += loaded_line['vrefs']
-            elif 'vref' in loaded_line:
-                all_references.append(loaded_line['vref'])
-
+                all_references.append( vref )
+                all_references__dict[vref] = True
 
             if override_key and utils.look_up_key(loaded_line, override_key):
                 #if the last one was overridden, (i.e. verse range)
@@ -264,24 +260,10 @@ def get_verse_for_reference( indexed_data, book, chapter, verse ):
 
     return None
 
-def get_text_for_reference(data, book, chapter, verse):
-    """Fetches the text for a given reference."""
-    for item in data:
-        b, c, v = split_ref(item['vref'])
-        if b == book and c == chapter and v == verse:
-            return item['fresh_translation']['text']
-    return "Text not found."
-
-def get_source_for_reference(data, book, chapter, verse):
-    """Gets the source for a specific reference"""
-    for item in data:
-        b, c, v = split_ref(item['vref'])
-        if b == book and c == chapter and v == verse:
-            return item['source']
-    return "Source not found."
-
 def get_comments_for_reference( comment_data, book, chapter, verse ):
     """Gets the comments for a specific reference"""
+    #TODO: This needs to be refactored to be more efficient
+    #by indexing the comments when they are loaded.
     vref = f"{book} {chapter}:{verse}"
 
     result = []
@@ -291,48 +273,40 @@ def get_comments_for_reference( comment_data, book, chapter, verse ):
 
     return result
 
-def reference_to_index(data,book,chapter,verse):
-    """Fetches the index for a given reference."""
-    for i, item in enumerate(data):
-        b, c, v = split_ref(item['vref'])
-        if b == book and c == chapter and v == verse:
-            return i
-    return None
-
-def index_to_reference(data, index):
-    """Fetches the reference for a given index."""
-    try:
-        return split_ref(data[index]['vref'])
-    except IndexError:
-        return None
-
-
 def main():
     """Main function for the Streamlit app."""
     reset_profile()
     checkpoint( "start" )
+
 
     st.title("Scripture Reflector")
 
     # Translation Dropdown
     selected_translation = st.selectbox("Select Translation", loaded_outputs)
 
-    reference_key = ['vref']
-    override_key = ['forming_verse_range_with_previous_verse']
-    translation_key = ['fresh_translation','text']
-    translation_comment_key = ['translation_notes']
-    source_key = ['source']
+    streamlit_reflector_yaml = utils.load_yaml_configuration( 'streamlit_reflector.yaml' )
+    config = streamlit_reflector_yaml.get( 'configs', utils.GetStub() ). \
+        get( selected_translation, utils.GetStub() )
+
+    reference_key           = config.get( 'reference_key', ['vref'] )
+    translation_key         = config.get( 'translation_key', ['fresh_translation','text'] )
+    translation_comment_key = config.get( 'translation_comment_key', ['translation_notes'] )
+    source_key              = config.get( 'source_key', ['source'] )
+    override_key            = config.get( 'override_key', \
+        ['forming_verse_range_with_previous_verse'] )
 
 
     checkpoint( "about to load translation" )
 
     if selected_translation:
         translation_data_and_indexed_translation_data = load_translation_data(selected_translation,
-            override_key)
+            reference_key, override_key)
     else:
         translation_data_and_indexed_translation_data = {}
 
     checkpoint( "loaded translation" )
+
+
 
     if 'selected_translation' not in st.session_state or selected_translation != \
             st.session_state.selected_translation:
@@ -354,19 +328,6 @@ def main():
     if "verse" not in st.session_state:
         st.session_state.verse = 1
 
-
-
-
-    # def collect_all_references():
-    #     references = []
-    #     for item in filtered_translation_data:
-    #         if 'vrefs' in item:
-    #             references += item['vrefs']
-    #         elif 'vref' in item:
-    #             references.append(item['vref'])
-    #     #unique_references = list(set(references))
-    #     unique_references = list(dict.fromkeys(references))
-    #     return unique_references
 
     def collect_references_within_range( start_reference, end_reference, all_references ):
         saw_start_book = False
@@ -405,8 +366,9 @@ def main():
         for item in translation_data_and_indexed_translation_data['filtered']:
             if not item:
                 continue
-            if keyword.lower() in item['fresh_translation']['text'].lower():
-                references.append(item['vref'])
+            translation = utils.look_up_key( item, translation_key )
+            if keyword.lower() in translation.lower():
+                references.append(utils.look_up_key( item, reference_key ))
         return references
 
     # Add custom CSS for scrolling
@@ -538,9 +500,9 @@ def main():
 
                             trans_col, source_col = st.columns(2)
                             with trans_col:
-                                st.write( item['fresh_translation']['text'] )
+                                st.write( utils.look_up_key( item, translation_key ) )
                             with source_col:
-                                st.write( item['source'] )
+                                st.write( utils.look_up_key( item, source_key ) )
 
                         last_item = item
 
@@ -563,13 +525,6 @@ def main():
 
 
             #put the button to tab connections at the bottom because they produce height.
-            # for item in filtered_translation_data:
-            #     if not item:
-            #         continue
-            #     b, c, _ = split_ref(item['vref'])
-            #     if b == st.session_state.book and c == st.session_state.chapter:
-            #         button_text = f"{item['vref']}"
-            #         add_button_tab_switch( button_text, "Browse Verse" )
             if st.session_state.book in translation_data_and_indexed_translation_data['indexed']:
                 if st.session_state.chapter in translation_data_and_indexed_translation_data \
                         ['indexed'][st.session_state.book]:
@@ -578,7 +533,7 @@ def main():
                             [st.session_state.book][st.session_state.chapter].values():
                         if item is not last_item:
                             vref = utils.look_up_key( item, reference_key )
-                            button_text = f"{item['vref']}"
+                            button_text = f"{vref}"
                             add_button_tab_switch( button_text, "Browse Verse" )
                         last_item = item
 
@@ -697,27 +652,17 @@ def main():
                             translation_data_and_indexed_translation_data['indexed'] \
                             [st.session_state.book]:
                         st.session_state.chapter -= 1
-                        # st.session_state.verse = get_max_verse(split_ref(item['vref'])[2] for
-                        #     item in filtered_translation_data if
-                        #     split_ref(item['vref'])[0] == st.session_state.book and
-                        #     split_ref(item['vref'])[1] == st.session_state.chapter)
                         st.session_state.verse = get_max_verse(
                             translation_data_and_indexed_translation_data['indexed'] \
                                 [st.session_state.book][st.session_state.chapter].keys())
             with col2:
                 if st.button("Next"):
-                    # max_verse = get_max_verse(split_ref(item['vref'])[2] for item in
-                    #     filtered_translation_data if
-                    #     split_ref(item['vref'])[0] == st.session_state.book and split_ref(
-                    #     item['vref'])[1] == st.session_state.chapter)
                     max_verse = get_max_verse(translation_data_and_indexed_translation_data \
                         ['indexed'][st.session_state.book][st.session_state.chapter].keys())
                     if st.session_state.verse < max_verse:
                         st.session_state.verse = st.session_state.verse +1
                     else:
                         next_chapter = st.session_state.chapter + 1
-                        #if any(split_ref(item['vref'])[1] == next_chapter for item in
-                        #        filtered_translation_data):
                         if next_chapter in translation_data_and_indexed_translation_data \
                                 ['indexed'][st.session_state.book]:
                             st.session_state.chapter = next_chapter
@@ -823,7 +768,17 @@ def main():
                     if 'vrefs' in selected_verse:
                         st.session_state.selected_verses = selected_verse['vrefs']
                     else:
-                        st.session_state.selected_verses = [selected_verse['vref']]
+                        vref = utils.look_up_key( selected_verse, reference_key )
+                        b,c,v = split_ref(vref)
+                        #if the verse is a range, v comes back as a string like "3-5"
+                        if isinstance(v, str):
+                            start_verse,end_verse = v.split("-")
+                            st.session_state.selected_verses = [
+                                f"{b} {c}:{r_v}" for r_v in
+                                range(int(start_verse),int(end_verse)+1)]
+                        else:
+                            st.session_state.selected_verses = [vref]
+
                     #javascript then switches to the Add Comments tab
                 add_button_tab_switch(add_comment_btn_text, "Add Comments")
 
@@ -885,8 +840,14 @@ def main():
                     cols = st.columns(2)
                     with cols[0]:
                         if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
-                            st.session_state.book,st.session_state.chapter,st.session_state.verse \
-                                = split_ref(verse['vref'])
+                            vref = utils.look_up_key( verse, reference_key )
+                            st.session_state.book,st.session_state.chapter,v = \
+                                split_ref(vref)
+                            if isinstance(v, str):
+                                start_verse = v.split("-")[0]
+                                st.session_state.verse = int(start_verse)
+                            else:
+                                st.session_state.verse = v
                             st.rerun()
                     with cols[1]:
                         st.write( f"_Grade: {grade:.1f}_" )

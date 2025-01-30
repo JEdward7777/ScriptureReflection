@@ -150,20 +150,12 @@ USFM_NAME = {
 }
 
 
-class GetStub:
-    """
-    A stub class that has a get method that returns a default value.
-    """
-    def get( self, _, default ):
-        """Returns the default value"""
-        return default
-
 def convert_to_usfm(file):
     """Converts the output of easy_draft to USFM format"""
 
     this_config = get_config_for( file )
     if this_config is None:
-        this_config = GetStub()
+        this_config = utils.GetStub()
 
     #so for USFM we have to have a separate file per book.  So I need to play some games to do
     #this correctly. It would be nice if I could have the correct book number codes.  I think I

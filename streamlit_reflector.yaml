@@ -1,0 +1,5 @@
+configs:
+  Ryders_bible_spa_natural:
+    reference_key: [id]
+    source_key: [original]
+    translation_key: [translation]
