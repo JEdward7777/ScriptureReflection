@@ -475,8 +475,8 @@ def main():
                                 [sel_book]:
                             verses = translation_data_and_indexed_translation_data['indexed'] \
                                 [sel_book][sel_chapter].keys()
-                            max_verse = max(verses)
-                            min_verse = min(verses)
+                            max_verse = get_max_verse(verses)
+                            min_verse = get_min_verse(verses)
 
                     if min_verse != float('inf'):
                         if init_verse is not None:
@@ -643,20 +643,23 @@ def main():
             checkpoint( "verse tab: Looked up active verse" )
 
             current_verse_grade = None
-            if 'reflection_is_finalized' in selected_verse and \
-                selected_verse['reflection_is_finalized']:
-                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
-                    f"_(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
-                current_verse_grade = selected_verse['reflection_finalized_grade']
-            elif 'reflection_loops' in selected_verse and \
-                    len(reflection_loops := selected_verse['reflection_loops']) > 0 and \
-                    'average_grade' in (last_reflection_loop := reflection_loops[-1]) and \
-                    'graded_verse' not in last_reflection_loop:
-                st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
-                    f"_(Grade {last_reflection_loop['average_grade']:.1f})_" )
-                current_verse_grade = last_reflection_loop['average_grade']
+            if selected_verse is not None:
+                if 'reflection_is_finalized' in selected_verse and \
+                    selected_verse['reflection_is_finalized']:
+                    st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
+                        f"_(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
+                    current_verse_grade = selected_verse['reflection_finalized_grade']
+                elif 'reflection_loops' in selected_verse and \
+                        len(reflection_loops := selected_verse['reflection_loops']) > 0 and \
+                        'average_grade' in (last_reflection_loop := reflection_loops[-1]) and \
+                        'graded_verse' not in last_reflection_loop:
+                    st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
+                        f"_(Grade {last_reflection_loop['average_grade']:.1f})_" )
+                    current_verse_grade = last_reflection_loop['average_grade']
+                else:
+                    st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
             else:
-                st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
+                st.write( "No selected verse" )
 
             checkpoint( "verse tab: wrote verse header" )
 
@@ -683,7 +686,7 @@ def main():
             checkpoint( "verse tab: about to show suggested corrections" )
 
             #see if we have a summarized comment to display:
-            if 'reflection_loops' in selected_verse and \
+            if selected_verse and ('reflection_loops' in selected_verse) and \
                     len(reflection_loops := selected_verse['reflection_loops']) > 0:
                 last_reflection_loop = reflection_loops[-1]
                 #if the verse is finalized, then the grade in the last reflection loop
@@ -717,7 +720,9 @@ def main():
                 if st.button("Previous"):
                     if st.session_state.verse > 1:
                         st.session_state.verse -= 1
-                    elif st.session_state.chapter > 1:
+                    elif st.session_state.chapter > 1 and (st.session_state.chapter - 1) in \
+                            translation_data_and_indexed_translation_data['indexed'] \
+                            [st.session_state.book]:
                         st.session_state.chapter -= 1
                         # st.session_state.verse = get_max_verse(split_ref(item['vref'])[2] for
                         #     item in filtered_translation_data if
@@ -767,7 +772,8 @@ def main():
                 st.header("Verse History")
 
                 found_history = False
-                if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
+                if selected_verse and 'reflection_loops' in selected_verse and \
+                        selected_verse['reflection_loops']:
                     grade_over_history = []
 
                     #iterate the reflection loops in reverse.
@@ -1056,7 +1062,7 @@ def save_profiler_stats(profiler):
     # )
 
 PROFILEING = False
-PROFILEING2 = True
+PROFILEING2 = False
 
 def profile_main():
     """
