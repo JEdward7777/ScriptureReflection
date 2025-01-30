@@ -312,7 +312,7 @@ def main():
     reset_profile()
     checkpoint( "start" )
 
-    st.title("Translation Comment Collector")
+    st.title("Scripture Reflector")
 
     # Translation Dropdown
     selected_translation = st.selectbox("Select Translation", loaded_outputs)
@@ -1055,7 +1055,7 @@ def profile_main():
         main()
 
     if PROFILEING2:
-        save_out_profiling( "streamlit_feedback_profiling.csv" )
+        save_out_profiling( "streamlit_reflector_profiling.csv" )
 
 # If this script is run directly, start the profiling
 if __name__ == "__main__":
