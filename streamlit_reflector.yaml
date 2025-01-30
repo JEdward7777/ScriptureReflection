@@ -3,3 +3,7 @@ configs:
     reference_key: [id]
     source_key: [original]
     translation_key: [translation]
+  Ryders_bible_spa_natural__manual_edit:
+    reference_key: [id]
+    source_key: [original]
+    translation_key: [translation]
