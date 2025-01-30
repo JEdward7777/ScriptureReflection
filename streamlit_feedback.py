@@ -135,7 +135,7 @@ def cached_to_range(selected_verses, all_verses):
     return verse_parsing.to_range(selected_verses, all_verses)
 
 #@st.cache_data
-def load_translation_data(selected_translation):
+def load_translation_data(selected_translation, override_key):
     """Loads the data for the selected translation."""
     vrefs = load_reference_data()
     filepath = f"./output/{selected_translation}.jsonl"
@@ -153,28 +153,36 @@ def load_translation_data(selected_translation):
     all_references = []
     for i, loaded_line in enumerate(loaded_lines):
         if loaded_line:
-            filtered_translation_data.append(loaded_line)
 
             if 'vref' not in loaded_line:
                 loaded_line = {**loaded_line, 'vref': vrefs[i]}
                 loaded_lines[i] = loaded_line
 
+
+
             b,c,v = split_ref(loaded_line['vref'])
-
-            if b not in indexed_translation_data: indexed_translation_data[b] = {}
-            book_selection = indexed_translation_data[b]
-
-            if c not in book_selection: book_selection[c] = {}
-            chapter_selection = book_selection[c]
-
-            #add the current line
-            chapter_selection[v] = loaded_line
+            #if the verse is a range, v comes back as a string like "3-5"
+            if isinstance(v, str):
+                start_verse, end_verse = v.split("-")
+                for verse in range(int(start_verse), int(end_verse)+1):
+                    utils.set_key( indexed_translation_data, [b,c,verse], loaded_line )
+            else:
+                utils.set_key( indexed_translation_data, [b,c,v], loaded_line )
 
 
             if 'vrefs' in loaded_line:
                 all_references += loaded_line['vrefs']
             elif 'vref' in loaded_line:
                 all_references.append(loaded_line['vref'])
+
+
+            if override_key and utils.look_up_key(loaded_line, override_key):
+                #if the last one was overridden, (i.e. verse range)
+                #Then pop the last one out of the filtered list.
+                filtered_translation_data.pop()
+
+
+            filtered_translation_data.append(loaded_line)
 
 
     return { "full": loaded_lines,
@@ -243,25 +251,12 @@ def save_comments(selected_translation,comment_data):
             file.write(json.dumps(this_comment) + "\n")
     os.replace(temp_filepath, filepath)
 
-# def get_verse_for_reference( data, book, chapter, verse, overridden_references ):
-#     """Fetches the verse object for a given reference"""
-#     vref_to_get = f"{book} {chapter}:{verse}"
-#     if vref_to_get in overridden_references:
-#         vref_to_get = overridden_references[vref_to_get]
-
-#     for item in data:
-#         if 'vref' in item and item['vref'] == vref_to_get:
-#             return item
-#         if 'vrefs' in item and vref_to_get in item['vrefs']:
-#             return item
-
-#     return None
-
-def get_verse_for_reference( indexed_data, book, chapter, verse, overridden_references ):
+def get_verse_for_reference( indexed_data, book, chapter, verse ):
     """Fetches the verse object for a given reference"""
-    vref_to_get = f"{book} {chapter}:{verse}"
-    if vref_to_get in overridden_references:
-        vref_to_get = overridden_references[vref_to_get]
+
+    #if this is a range, just take the last one
+    if isinstance(verse, str):
+        verse = int(verse.split("-")[-1])
 
     if book in indexed_data and chapter in indexed_data[book] and verse in \
             indexed_data[book][chapter]:
@@ -332,7 +327,8 @@ def main():
     checkpoint( "about to load translation" )
 
     if selected_translation:
-        translation_data_and_indexed_translation_data = load_translation_data(selected_translation)
+        translation_data_and_indexed_translation_data = load_translation_data(selected_translation,
+            override_key)
     else:
         translation_data_and_indexed_translation_data = {}
 
@@ -343,8 +339,6 @@ def main():
         st.session_state.comment_data = load_comment_data(selected_translation)
         st.session_state.selected_verses = []
         st.session_state.selected_translation = selected_translation
-        st.session_state.overridden_references = utils.get_overridden_references(
-            translation_data_and_indexed_translation_data['filtered'],reference_key,override_key)
 
     checkpoint( "managed session state" )
 
@@ -525,30 +519,7 @@ def main():
 
             max_chapter = None
             min_chapter = None
-            # for item in filtered_translation_data:
-            #     if not item:
-            #         continue
-            #     vref = utils.look_up_key( item, reference_key )
-            #     if vref in st.session_state.overridden_references:
-            #         continue
 
-            #     b, c, _ = split_ref(item['vref'])
-            #     if b == st.session_state.book and c == st.session_state.chapter:
-            #         button_text = f"{item['vref']}"
-            #         if st.button( button_text ):
-            #             _,_,st.session_state.verse = split_ref(item['vref'])
-
-            #         trans_col, source_col = st.columns(2)
-            #         with trans_col:
-            #             st.write( item['fresh_translation']['text'] )
-            #         with source_col:
-            #             st.write( item['source'] )
-
-            #     if b == st.session_state.book:
-            #         if max_chapter is None or c > max_chapter:
-            #             max_chapter = c
-            #         if min_chapter is None or c < min_chapter:
-            #             min_chapter = c
             if st.session_state.book in translation_data_and_indexed_translation_data['indexed']:
                 chapters = translation_data_and_indexed_translation_data['indexed'] \
                     [st.session_state.book].keys()
@@ -556,20 +527,22 @@ def main():
                 min_chapter = min(chapters)
 
                 if st.session_state.chapter in chapters:
+                    last_item = None
                     for item in translation_data_and_indexed_translation_data['indexed'] \
                             [st.session_state.book][st.session_state.chapter].values():
-                        vref = utils.look_up_key( item, reference_key )
-                        if vref in st.session_state.overridden_references:
-                            continue
-                        button_text = f"{item['vref']}"
-                        if st.button( button_text ):
-                            _,_,st.session_state.verse = split_ref(item['vref'])
+                        if item is not last_item:
+                            vref = utils.look_up_key( item, reference_key )
+                            button_text = f"{vref}"
+                            if st.button( button_text ):
+                                _,_,st.session_state.verse = split_ref(vref)
 
-                        trans_col, source_col = st.columns(2)
-                        with trans_col:
-                            st.write( item['fresh_translation']['text'] )
-                        with source_col:
-                            st.write( item['source'] )
+                            trans_col, source_col = st.columns(2)
+                            with trans_col:
+                                st.write( item['fresh_translation']['text'] )
+                            with source_col:
+                                st.write( item['source'] )
+
+                        last_item = item
 
             checkpoint( "chapter tab: Found items in current chapter" )
 
@@ -600,13 +573,14 @@ def main():
             if st.session_state.book in translation_data_and_indexed_translation_data['indexed']:
                 if st.session_state.chapter in translation_data_and_indexed_translation_data \
                         ['indexed'][st.session_state.book]:
+                    last_item = None
                     for item in translation_data_and_indexed_translation_data['indexed'] \
                             [st.session_state.book][st.session_state.chapter].values():
-                        vref = utils.look_up_key( item, reference_key )
-                        if vref in st.session_state.overridden_references:
-                            continue
-                        button_text = f"{item['vref']}"
-                        add_button_tab_switch( button_text, "Browse Verse" )
+                        if item is not last_item:
+                            vref = utils.look_up_key( item, reference_key )
+                            button_text = f"{item['vref']}"
+                            add_button_tab_switch( button_text, "Browse Verse" )
+                        last_item = item
 
             checkpoint( "chapter tab: Added the switch button macros" )
 
@@ -636,8 +610,7 @@ def main():
 
             selected_verse = get_verse_for_reference(
                 translation_data_and_indexed_translation_data['indexed'],
-                st.session_state.book, st.session_state.chapter, st.session_state.verse,
-                st.session_state.overridden_references )
+                st.session_state.book, st.session_state.chapter, st.session_state.verse )
 
 
             checkpoint( "verse tab: Looked up active verse" )
@@ -737,8 +710,8 @@ def main():
                     #     filtered_translation_data if
                     #     split_ref(item['vref'])[0] == st.session_state.book and split_ref(
                     #     item['vref'])[1] == st.session_state.chapter)
-                    max_verse = get_max_verse(translation_data_and_indexed_translation_data['indexed'] \
-                        [st.session_state.book][st.session_state.chapter].keys())
+                    max_verse = get_max_verse(translation_data_and_indexed_translation_data \
+                        ['indexed'][st.session_state.book][st.session_state.chapter].keys())
                     if st.session_state.verse < max_verse:
                         st.session_state.verse = st.session_state.verse +1
                     else:
