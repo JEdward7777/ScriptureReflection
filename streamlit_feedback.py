@@ -9,9 +9,10 @@ import os
 import pstats
 import io
 import random
+import itertools
 import json
-import yaml
 import math
+import yaml
 import streamlit as st
 from streamlit.components.v1 import html
 import utils
@@ -511,16 +512,19 @@ def main():
                 st.session_state.book, st.session_state.chapter, st.session_state.verse,
                 st.session_state.overridden_references )
 
+            current_verse_grade = None
             if 'reflection_is_finalized' in selected_verse and \
                 selected_verse['reflection_is_finalized']:
                 st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
                     f"_(Grade {selected_verse['reflection_finalized_grade']:.1f})_" )
+                current_verse_grade = selected_verse['reflection_finalized_grade']
             elif 'reflection_loops' in selected_verse and \
                     len(reflection_loops := selected_verse['reflection_loops']) > 0 and \
                     'average_grade' in (last_reflection_loop := reflection_loops[-1]) and \
                     'graded_verse' not in last_reflection_loop:
                 st.write( f"**{utils.look_up_key( selected_verse, reference_key )}** "
                     f"_(Grade {last_reflection_loop['average_grade']:.1f})_" )
+                current_verse_grade = last_reflection_loop['average_grade']
             else:
                 st.write(f"**{utils.look_up_key( selected_verse, reference_key )}**")
 
@@ -614,6 +618,8 @@ def main():
 
                 found_history = False
                 if 'reflection_loops' in selected_verse and selected_verse['reflection_loops']:
+                    grade_over_history = []
+
                     #iterate the reflection loops in reverse.
                     for i,reflection_loop in reversed(list(enumerate(
                             selected_verse['reflection_loops']))):
@@ -622,6 +628,8 @@ def main():
                             if 'average_grade' in reflection_loop:
                                 st.write( f"**Version {i+1}**: "
                                     f"_(Grade {reflection_loop['average_grade']:.1f})_" )
+
+                                grade_over_history.append( reflection_loop['average_grade'] )
                             else:
                                 st.write( f"Version {i+1}:" )
 
@@ -635,6 +643,8 @@ def main():
                                         ['summary'] )
 
                             st.divider()
+                    if grade_over_history:
+                        st.line_chart( itertools.chain(reversed(grade_over_history), [current_verse_grade]), x_label="Version", y_label="Grade" )
 
                 if not found_history:
                     st.write("No history")
@@ -680,7 +690,6 @@ def main():
 
         with sorted_by_grade_tab:
             st.header( "Sorted by Grade" )
-            st.subheader( "See verses sorted by grade" )
 
             def get_grade( verse ):
                 return grade_reflect_loop.compute_verse_grade( verse, {
@@ -702,6 +711,9 @@ def main():
                 page = st.session_state.page if 'page' in st.session_state else 1
                 num_pages = math.ceil(len(sorted_by_grade) / VERSES_PER_PAGE)
 
+                grade_per_page = [get_grade(sorted_by_grade[i * VERSES_PER_PAGE]) for i in range(num_pages)]
+                st.line_chart(data=grade_per_page, x_label="page", y_label="grade")
+
 
                 # Create a slider to navigate through pages
                 page = st.slider("Go to page", 1, num_pages, key="page_slider")
@@ -719,10 +731,23 @@ def main():
                     translation = utils.look_up_key( verse, translation_key )
                     grade = get_grade( verse )
 
-                    st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
+                    #st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
+                    cols = st.columns(2)
+                    with cols[0]:
+                        if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
+                            st.session_state.book,st.session_state.chapter,st.session_state.verse = split_ref(verse['vref'])
+                            st.rerun()
+                    with cols[1]:
+                        st.write( f"_Grade: {grade:.1f}_" )
+
                     st.write( translation )
 
                     st.divider()
+
+                # Now tag on the tab switching feature, but we do it in a secondary loop because it adds height.
+                for i,verse in enumerate(sorted_by_grade_page):
+                    reference = utils.look_up_key( verse, reference_key )
+                    add_button_tab_switch( f"Ref: {reference}", "Browse Verse" )
                 
 
 
