@@ -165,7 +165,31 @@ def finalize_verse( verse, config ):
         verse['reflection_finalized_grade'] = best_grade
 
 
+def compute_grade_for_reflection_loop( reflection_loop, config ):
+    """
+    Compute the average grade of a reflection loop.
+    """
+    if 'average_grade' in reflection_loop:
+        return reflection_loop['average_grade']
 
+    #if there is at least one grade, go ahead and average it.
+    grade_count = 0
+    grade_sum = 0
+    for grade in reflection_loop['grades']:
+        grade_count += 1
+        grade_sum += grade['grade']
+
+    if grade_count > 0:
+        averaged_grade = grade_sum / grade_count
+
+        #if this is the correct count, we can stash it.
+        if grade_count >= config['grades_per_reflection_loop']:
+            reflection_loop['average_grade'] = averaged_grade
+
+        return averaged_grade
+
+    return None
+    
 def compute_verse_grade( verse, config ):
     """
     Compute the average grade of a verse.
@@ -191,24 +215,9 @@ def compute_verse_grade( verse, config ):
     #iterate backwords through the reflection_loops until we find
     #one that we can get a grade from.
     for reflection_loop in reversed(verse['reflection_loops']):
-        if 'average_grade' in reflection_loop:
-            return reflection_loop['average_grade']
-
-        #if there is at least one grade, go ahead and average it.
-        grade_count = 0
-        grade_sum = 0
-        for grade in reflection_loop['grades']:
-            grade_count += 1
-            grade_sum += grade['grade']
-
-        if grade_count > 0:
-            averaged_grade = grade_sum / grade_count
-
-            #if this is the correct count, we can stash it.
-            if grade_count >= config['grades_per_reflection_loop']:
-                reflection_loop['average_grade'] = averaged_grade
-
-            return averaged_grade
+        loop_grade = compute_grade_for_reflection_loop( reflection_loop, config )
+        if loop_grade is not None:
+            return loop_grade
 
     return None
 

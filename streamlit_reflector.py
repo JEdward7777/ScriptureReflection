@@ -317,8 +317,8 @@ def main():
     checkpoint( "managed session state" )
 
     # Tabs
-    browse_chapter_tab, browse_verse_tab, sorted_by_grade_tab, add_comments_tab = \
-        st.tabs(["Browse Chapter", "Browse Verse", "Sorted by grade", "Add Comments"])
+    browse_chapter_tab, browse_verse_tab, sorter_tab, add_comments_tab = \
+        st.tabs(["Browse Chapter", "Browse Verse", "Sorter", "Add Comments"])
 
     # Initialize session state variables
     if "book" not in st.session_state:
@@ -784,44 +784,70 @@ def main():
 
                 checkpoint( "verse tab: comments tab: wrote add comment button" )
 
-        with sorted_by_grade_tab:
-            checkpoint( "verse tab: sorted by grade tab: started" )
+        with sorter_tab:
+            checkpoint( "sorter tab: started" )
 
-            st.header( "Sorted by Grade" )
+            st.header( "Verse Sorter" )
+
+            BY_GRADE = "By Grade"
+            BY_IMPROVEMENT = "By Grade Improvement"
+
+            sort_mode = st.selectbox( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
+
+            fake_config_for_grade_reflect_loop = {
+                'reference_key': reference_key,
+                'grades_per_reflection_loop': float('inf'),
+            }
 
             def get_grade( verse ):
-                return grade_reflect_loop.compute_verse_grade( verse, {
-                    'reference_key': reference_key,
-                    'grades_per_reflection_loop': float('inf'),
-                })
+                return grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
+
+            def get_grade_improvement( verse ):
+                final_grade = get_grade( verse )
+                if final_grade is None:
+                    return None
+
+                #now see if we can find the earliest grade.
+                if 'reflection_loops' in verse:
+                    reflection_loops = verse['reflection_loops']
+                    if reflection_loops:
+                        first_reflection_loop = reflection_loops[0]
+                        first_grade = grade_reflect_loop.compute_grade_for_reflection_loop( first_reflection_loop, fake_config_for_grade_reflect_loop )
+
+                        if first_grade is not None:
+                            return final_grade-first_grade
+                return None
+
+
+            selected_sorter = get_grade if sort_mode == BY_GRADE else get_grade_improvement
 
 
 
-            sorted_by_grade = sorted( (x for x in translation_data_and_indexed_translation_data \
-                    ['filtered'] if get_grade(x) is not None), key=get_grade, reverse=False )
+            sorted_by_feature = sorted( (x for x in translation_data_and_indexed_translation_data \
+                    ['filtered'] if selected_sorter(x) is not None), key=selected_sorter, reverse=False if sort_mode == BY_GRADE else True  )
 
 
-            checkpoint( "verse tab: sorted by grade tab: sorted by grade" )
+            checkpoint( "sorter tab: sorted" )
 
-            if not sorted_by_grade:
+            if not sorted_by_feature:
                 st.write( "No graded verses." )
             else:
 
                 verses_per_page = 10
                 page = st.session_state.page if 'page' in st.session_state else 1
-                num_pages = math.ceil(len(sorted_by_grade) / verses_per_page)
+                num_pages = math.ceil(len(sorted_by_feature) / verses_per_page)
 
-                grade_per_page = [get_grade(sorted_by_grade[i * verses_per_page]) for i in \
+                metric_per_page = [selected_sorter(sorted_by_feature[i * verses_per_page]) for i in \
                     range(num_pages)]
-                st.line_chart(data=grade_per_page, x_label="page", y_label="grade")
+                st.line_chart(data=metric_per_page, x_label="page", y_label="grade" if sort_mode == BY_GRADE else "improvement" )
 
-                checkpoint( "verse tab: sorted by grade tab: showed chart" )
+                checkpoint( "sorter tab: showed chart" )
 
 
                 # Create a slider to navigate through pages
                 page = st.slider("Go to page", 1, num_pages, key="page_slider")
 
-                checkpoint( "verse tab: sorted by grade tab: slider" )
+                checkpoint( "sorter tab: slider" )
 
                 # Display current page and total pages
                 st.write(f"Page {page} of {num_pages}")
@@ -829,15 +855,16 @@ def main():
                 start_index = (page - 1) * verses_per_page
                 end_index = start_index + verses_per_page
 
-                sorted_by_grade_page = sorted_by_grade[start_index:end_index]
+                sorted_by_feature_page = sorted_by_feature[start_index:end_index]
 
-                for i,verse in enumerate(sorted_by_grade_page):
+                for i,verse in enumerate(sorted_by_feature_page):
                     reference = utils.look_up_key( verse, reference_key )
                     translation = utils.look_up_key( verse, translation_key )
                     grade = get_grade( verse )
+                    grade_improvement = get_grade_improvement( verse )
 
                     #st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
-                    cols = st.columns(2)
+                    cols = st.columns(3)
                     with cols[0]:
                         if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
                             vref = utils.look_up_key( verse, reference_key )
@@ -851,20 +878,22 @@ def main():
                             st.rerun()
                     with cols[1]:
                         st.write( f"_Grade: {grade:.1f}_" )
+                    with cols[2]:
+                        st.write( f"_Improvement: {grade_improvement:.1f}_")
 
                     st.write( translation )
 
                     st.divider()
 
-                checkpoint( "verse tab: sorted by grade tab: showed verses" )
+                checkpoint( "sorter tab: showed verses" )
 
                 # Now tag on the tab switching feature, but we do it in a secondary loop because
                 # it adds height.
-                for i,verse in enumerate(sorted_by_grade_page):
+                for i,verse in enumerate(sorted_by_feature_page):
                     reference = utils.look_up_key( verse, reference_key )
                     add_button_tab_switch( f"Ref: {reference}", "Browse Verse" )
 
-                checkpoint( "verse tab: sorted by grade tab: add_button_tab_switch" )
+                checkpoint( "sorter tab: add_button_tab_switch" )
 
 
 
