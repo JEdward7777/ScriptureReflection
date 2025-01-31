@@ -791,7 +791,8 @@ def main():
                     checkpoint( "verse tab: history tab: showed history" )
 
                     if grade_over_history:
-                        st.line_chart( itertools.chain(reversed(grade_over_history), \
+                        #The starting [None] makes the first used x index 1 like the versions.
+                        st.line_chart( itertools.chain([None],reversed(grade_over_history), \
                             [current_verse_grade]), x_label="Version", y_label="Grade" )
 
                         checkpoint( "verse tab: history tab: showed chart" )
