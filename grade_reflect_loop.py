@@ -189,7 +189,7 @@ def compute_grade_for_reflection_loop( reflection_loop, config ):
         return averaged_grade
 
     return None
-    
+
 def compute_verse_grade( verse, config ):
     """
     Compute the average grade of a verse.

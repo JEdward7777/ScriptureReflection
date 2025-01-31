@@ -273,6 +273,54 @@ def get_comments_for_reference( comment_data, book, chapter, verse ):
 
     return result
 
+
+def get_sorted_verses( translation_data, reference_key ):
+    """Returns the next verse as sorted by grades"""
+    fake_config_for_grade_reflect_loop = {
+        'reference_key': reference_key,
+        'grades_per_reflection_loop': float('inf'),
+    }
+
+    def get_grade( verse ):
+        grade = grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
+        if grade is not None:
+            return grade
+        return 0
+
+    sorted_verses = sorted( translation_data['filtered'], key=get_grade )
+
+    return sorted_verses
+
+
+
+def get_next_by_grade( translation_data, selected_verse, reference_key ):
+    """Returns the next verse as sorted by grades"""
+
+    verse_to_return = selected_verse
+
+    sorted_verses = get_sorted_verses( translation_data, reference_key )
+
+    if sorted_verses:
+        current_index = sorted_verses.index( selected_verse )
+        next_index = current_index + 1 if current_index < len(sorted_verses) - 1 else current_index
+        verse_to_return = sorted_verses[next_index]
+
+    return split_ref(utils.look_up_key( verse_to_return, reference_key ))
+
+def get_previous_by_grade( translation_data, selected_verse, reference_key ):
+    """Returns the previous verse to be graded"""
+
+    verse_to_return = selected_verse
+
+    sorted_verses = get_sorted_verses( translation_data, reference_key )
+
+    if sorted_verses:
+        current_index = sorted_verses.index( selected_verse )
+        previous_index = current_index - 1 if current_index > 0 else current_index
+        verse_to_return = sorted_verses[previous_index]
+
+    return split_ref(utils.look_up_key( verse_to_return, reference_key ))
+
 def main():
     """Main function for the Streamlit app."""
     reset_profile()
@@ -511,13 +559,13 @@ def main():
             # Next and Previous buttons
             col1, col2, col3 = st.columns(3)
             with col1:
-                if st.button("Previous", key="chapter-prev"):
+                if st.button("<- Previous", key="chapter-prev"):
                     if st.session_state.chapter > min_chapter:
                         st.session_state.chapter -= 1
             with col2:
                 pass
             with col3:
-                if st.button("Next", key="chapter-next"):
+                if st.button("Next ->", key="chapter-next"):
                     if st.session_state.chapter < max_chapter:
                         st.session_state.chapter += 1
 
@@ -652,9 +700,9 @@ def main():
             checkpoint( "verse tab: showed suggested corrections" )
 
             # Next and Previous buttons
-            col1, col2 = st.columns(2)
+            col1, col2, col3, col4 = st.columns(4)
             with col1:
-                if st.button("Previous"):
+                if st.button("<- Previous"):
                     if st.session_state.verse > 1:
                         st.session_state.verse -= 1
                     elif st.session_state.chapter > 1 and (st.session_state.chapter - 1) in \
@@ -665,7 +713,7 @@ def main():
                             translation_data_and_indexed_translation_data['indexed'] \
                                 [st.session_state.book][st.session_state.chapter].keys())
             with col2:
-                if st.button("Next"):
+                if st.button("Next ->"):
                     max_verse = get_max_verse(translation_data_and_indexed_translation_data \
                         ['indexed'][st.session_state.book][st.session_state.chapter].keys())
                     if st.session_state.verse < max_verse:
@@ -676,6 +724,18 @@ def main():
                                 ['indexed'][st.session_state.book]:
                             st.session_state.chapter = next_chapter
                             st.session_state.verse = 1
+
+            with col3:
+                if st.button( "<- Lower grade" ):
+                    st.session_state.book, st.session_state.chapter, st.session_state.verse = \
+                        get_previous_by_grade( translation_data_and_indexed_translation_data,
+                            selected_verse, reference_key )
+            with col4:
+                if st.button( "Higher grade ->" ):
+                    st.session_state.book, st.session_state.chapter, st.session_state.verse = \
+                        get_next_by_grade( translation_data_and_indexed_translation_data,
+                            selected_verse, reference_key )
+
 
             checkpoint( "verse tab: wrote next and previous buttons" )
 
@@ -798,12 +858,11 @@ def main():
 
             st.header( "Verse Sorter" )
 
+            #pylint: disable=C0103
             BY_GRADE = "By Grade"
             BY_IMPROVEMENT = "By Grade Improvement"
 
             #add sort mode and if human reviewed in one row.
-
-            #sort_mode = st.selectbox( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
             sort_mode = st.radio( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT], index=None )
             include_human_reviewed = st.checkbox( "Include Reviewed" )
             if sort_mode is None and "sort_mode" in st.session_state:
@@ -820,7 +879,8 @@ def main():
             }
 
             def get_grade( verse ):
-                return grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
+                return grade_reflect_loop.compute_verse_grade( verse,
+                    fake_config_for_grade_reflect_loop )
 
             def get_grade_improvement( verse ):
                 final_grade = get_grade( verse )
@@ -832,7 +892,8 @@ def main():
                     reflection_loops = verse['reflection_loops']
                     if reflection_loops:
                         first_reflection_loop = reflection_loops[0]
-                        first_grade = grade_reflect_loop.compute_grade_for_reflection_loop( first_reflection_loop, fake_config_for_grade_reflect_loop )
+                        first_grade = grade_reflect_loop.compute_grade_for_reflection_loop(
+                            first_reflection_loop, fake_config_for_grade_reflect_loop )
 
                         if first_grade is not None:
                             return final_grade-first_grade
@@ -849,9 +910,10 @@ def main():
                 if selected_sorter( verse ) is None:
                     return False
                 return True
-                
+
             sorted_by_feature = sorted( (x for x in translation_data_and_indexed_translation_data \
-                    ['filtered'] if should_include_verse(x)), key=selected_sorter, reverse=False if sort_mode == BY_GRADE else True  )
+                    ['filtered'] if should_include_verse(x)), key=selected_sorter, reverse=False \
+                    if sort_mode == BY_GRADE else True  )
 
 
             checkpoint( "sorter tab: sorted" )
@@ -864,9 +926,10 @@ def main():
                 page = st.session_state.page if 'page' in st.session_state else 1
                 num_pages = math.ceil(len(sorted_by_feature) / verses_per_page)
 
-                metric_per_page = [selected_sorter(sorted_by_feature[i * verses_per_page]) for i in \
-                    range(num_pages)]
-                st.line_chart(data=metric_per_page, x_label="page", y_label="grade" if sort_mode == BY_GRADE else "improvement" )
+                metric_per_page = [selected_sorter(sorted_by_feature[i * verses_per_page]) for i \
+                    in range(num_pages)]
+                st.line_chart(data=metric_per_page, x_label="page", y_label="grade" if \
+                    sort_mode == BY_GRADE else "improvement" )
 
                 checkpoint( "sorter tab: showed chart" )
 
