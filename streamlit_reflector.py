@@ -640,6 +640,15 @@ def main():
                             st.write( f"**Review {i+1}** "
                                 f"_(Grade {grade['grade']})_: {grade['comment']}" )
 
+                reviewed = utils.look_up_key( selected_verse, ['human_reviewed'], False )
+                changed_reviewed = st.checkbox( "Reviewed", value=reviewed, key='human_reviewed' )
+                if changed_reviewed != reviewed:
+                    selected_verse['human_reviewed'] = changed_reviewed
+                    save_translation_data( selected_translation,
+                        translation_data_and_indexed_translation_data['full'] )
+                    #st.toast( "Saved" )
+                    st.rerun()
+
             checkpoint( "verse tab: showed suggested corrections" )
 
             # Next and Previous buttons
@@ -792,7 +801,11 @@ def main():
             BY_GRADE = "By Grade"
             BY_IMPROVEMENT = "By Grade Improvement"
 
-            sort_mode = st.selectbox( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
+            #add sort mode and if human reviewed in one row.
+
+            #sort_mode = st.selectbox( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
+            sort_mode = st.radio( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
+            include_human_reviewed = st.checkbox( "Include Reviewed" )
 
             fake_config_for_grade_reflect_loop = {
                 'reference_key': reference_key,
@@ -821,10 +834,17 @@ def main():
 
             selected_sorter = get_grade if sort_mode == BY_GRADE else get_grade_improvement
 
-
-
+            def should_include_verse( verse ):
+                if not include_human_reviewed:
+                    human_reviewed = utils.look_up_key( verse, ['human_reviewed'], False )
+                    if human_reviewed:
+                        return False
+                if selected_sorter( verse ) is None:
+                    return False
+                return True
+                
             sorted_by_feature = sorted( (x for x in translation_data_and_indexed_translation_data \
-                    ['filtered'] if selected_sorter(x) is not None), key=selected_sorter, reverse=False if sort_mode == BY_GRADE else True  )
+                    ['filtered'] if should_include_verse(x)), key=selected_sorter, reverse=False if sort_mode == BY_GRADE else True  )
 
 
             checkpoint( "sorter tab: sorted" )
@@ -864,7 +884,7 @@ def main():
                     grade_improvement = get_grade_improvement( verse )
 
                     #st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
-                    cols = st.columns(3)
+                    cols = st.columns(4)
                     with cols[0]:
                         if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
                             vref = utils.look_up_key( verse, reference_key )
@@ -880,6 +900,10 @@ def main():
                         st.write( f"_Grade: {grade:.1f}_" )
                     with cols[2]:
                         st.write( f"_Improvement: {grade_improvement:.1f}_")
+                    with cols[3]:
+                        human_reviewed = utils.look_up_key( verse, ['human_reviewed'], False )
+                        if human_reviewed:
+                            st.write( "_Reviewed_" )
 
                     st.write( translation )
 

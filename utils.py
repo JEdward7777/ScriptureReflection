@@ -62,7 +62,7 @@ def save_json(filename, data, indent=4):
     os.replace(temp_filename, filename)
 
 
-def look_up_key( data, keys ):
+def look_up_key( data, keys, default=None ):
     """
     Look up a key in a nested dictionary. Which can have arrays in it.
     :param data: The dictionary to look up in.
@@ -72,12 +72,12 @@ def look_up_key( data, keys ):
     for key in keys:
         if isinstance(data, list):
             if key < 0 or key >= len(data):
-                return None
+                return default
             data = data[key]
         elif isinstance(data, dict) and key in data:
             data = data[key]
         else:
-            return None
+            return default
     return data
 
 def set_key( data, keys, value ):
