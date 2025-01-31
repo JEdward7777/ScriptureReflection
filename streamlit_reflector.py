@@ -641,7 +641,7 @@ def main():
             checkpoint( "verse tab: wrote verse header" )
 
             # Display current reference and text
-            reference_text = utils.look_up_key( selected_verse, translation_key )
+            reference_text = utils.look_up_key( selected_verse, translation_key, "" )
 
             edited_verse = st.text_area( "**Translation:**", value=reference_text,
                 key="verse-edit" )
