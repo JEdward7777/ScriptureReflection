@@ -804,8 +804,15 @@ def main():
             #add sort mode and if human reviewed in one row.
 
             #sort_mode = st.selectbox( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
-            sort_mode = st.radio( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT])
+            sort_mode = st.radio( "Sort Mode", [BY_GRADE, BY_IMPROVEMENT], index=None )
             include_human_reviewed = st.checkbox( "Include Reviewed" )
+            if sort_mode is None and "sort_mode" in st.session_state:
+                sort_mode = st.session_state.sort_mode
+                include_human_reviewed = st.session_state.include_human_reviewed
+            st.session_state.sort_mode = sort_mode
+            st.session_state.include_human_reviewed = include_human_reviewed
+
+            st.write( f"Sortmode {sort_mode} include human reviewed {include_human_reviewed}" )
 
             fake_config_for_grade_reflect_loop = {
                 'reference_key': reference_key,
