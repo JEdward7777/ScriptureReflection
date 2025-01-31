@@ -591,6 +591,7 @@ def main():
                     chapter_before_dropdown:
                 st.rerun()
 
+        selected_verse = None
         # Browse verse Tab
         with browse_verse_tab:
             checkpoint( "verse tab: Starting browse tab" )
@@ -954,28 +955,29 @@ def main():
                     grade_improvement = get_grade_improvement( verse )
 
                     #st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
-                    cols = st.columns(4)
-                    with cols[0]:
-                        if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
-                            vref = utils.look_up_key( verse, reference_key )
-                            st.session_state.book,st.session_state.chapter,v = \
-                                split_ref(vref)
-                            if isinstance(v, str):
-                                start_verse = v.split("-")[0]
-                                st.session_state.verse = int(start_verse)
-                            else:
-                                st.session_state.verse = v
-                            st.rerun()
-                    with cols[1]:
-                        st.write( f"_Grade: {grade:.1f}_" )
-                    with cols[2]:
-                        st.write( f"_Improvement: {grade_improvement:.1f}_")
-                    with cols[3]:
-                        human_reviewed = utils.look_up_key( verse, ['human_reviewed'], False )
-                        if human_reviewed:
-                            st.write( "_Reviewed_" )
+                    with st.container( border=(verse is selected_verse) ):
+                        cols = st.columns(4)
+                        with cols[0]:
+                            if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
+                                vref = utils.look_up_key( verse, reference_key )
+                                st.session_state.book,st.session_state.chapter,v = \
+                                    split_ref(vref)
+                                if isinstance(v, str):
+                                    start_verse = v.split("-")[0]
+                                    st.session_state.verse = int(start_verse)
+                                else:
+                                    st.session_state.verse = v
+                                st.rerun()
+                        with cols[1]:
+                            st.write( f"_Grade: {grade:.1f}_" )
+                        with cols[2]:
+                            st.write( f"_Improvement: {grade_improvement:.1f}_")
+                        with cols[3]:
+                            human_reviewed = utils.look_up_key( verse, ['human_reviewed'], False )
+                            if human_reviewed:
+                                st.write( "_Reviewed_" )
 
-                    st.write( translation )
+                        st.write( translation )
 
                     st.divider()
 
