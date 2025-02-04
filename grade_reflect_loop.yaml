@@ -250,7 +250,7 @@ configs:
     end_line: 24284 # MAT 28:20
 
 
-  Ryders_bible_spa_natural:
+  Swarm_bible_spa_natural:
     active: true
 
     #debug_force_vref: JHN 3:32
@@ -268,11 +268,11 @@ configs:
     temperature: 1.2
     top_p: 0.9
     translation_input: /home/lansford/work2/Mission_Mutual/gpt_drafting/RyderBibleGpt/swarm_translate/scenarios/translations/bible_spa_natural.jsonl
-    reflection_output: output/Ryders_bible_spa_natural.jsonl
+    reflection_output: output/Swarm_bible_spa_natural.jsonl
     grades_per_reflection_loop: 6
 
-    average_grade_csv_log: output/Ryders_bible_spa_natural.csv
-    tee_output_filename:   output/Ryders_bible_spa_natural_log.txt
+    average_grade_csv_log: output/Swarm_bible_spa_natural.csv
+    tee_output_filename:   output/Swarm_bible_spa_natural_log.txt
 
     translation_comment_key: [translation_notes]
 

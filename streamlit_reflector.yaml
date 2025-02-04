@@ -1,9 +1,9 @@
 configs:
-  Ryders_bible_spa_natural:
+  Swarm_bible_spa_natural:
     reference_key: [id]
     source_key: [original]
     translation_key: [translation]
-  Ryders_bible_spa_natural__manual_edit:
+  Swarm_bible_spa_natural__manual_edit:
     reference_key: [id]
     source_key: [original]
     translation_key: [translation]
