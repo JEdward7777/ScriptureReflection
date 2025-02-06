@@ -263,7 +263,7 @@ def construct_translation_objective( verse, config, indexed_comments ):
     Adds in the comments which have been left for this verse.
     """
     vref = utils.look_up_key( verse, config['reference_key'] )
-    comments = indexed_comments.get( vref, [] )
+    comments = [x['comment'] for x in indexed_comments.get( vref, [] )]
     result = "\n".join( [config.get( 'translation_objective', '' )] + comments )
     return result
 
@@ -782,7 +782,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             #here check if the completed loops is equal (or less which means
                             #something is odd)
                             if compute_completed_loops( verse ) <= verse.get(
-                                    'comment_mod_loop_count', 0 ):
+                                    'comment_mod_loop_count', -1 ):
                                 #just copy the verse up and then this loop is "closed" and new
                                 #grades based on the new comments will begin.
                                 if translation_comment_key:

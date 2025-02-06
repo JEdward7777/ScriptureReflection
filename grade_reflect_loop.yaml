@@ -210,7 +210,7 @@ configs:
 
 
   NT_French:
-    active: false
+    active: true
 
     #debug_force_vref: JHN 3:32
 
@@ -251,7 +251,7 @@ configs:
 
 
   Swarm_bible_spa_natural:
-    active: true
+    active: false
 
     #debug_force_vref: JHN 3:32
 
