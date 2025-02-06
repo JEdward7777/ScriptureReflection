@@ -7,11 +7,14 @@ it is running.  The intermediate output is saved in new entries in the output tr
 file.
 """
 
+# pylint: disable=C0302
+
 import os
 import time
 import copy
 import json
 import sys
+from collections import defaultdict
 
 from pydantic import BaseModel
 from openai import OpenAI
@@ -62,6 +65,18 @@ def compute_completed_loops( verse ):
 
     return num_loops - 1
 
+ITERATIONS_PASS_COMMENT_DEFAULT = 3
+def compute_reflection_loops_needed( verse, config ):
+    """
+    Compute the number of loops that are needed for a given verse.
+    """
+    #The default count is from reflection_loops_per_verse, but if the verse has had
+    #comments touch it, then that gets recorded in comment_mod_loop_count and we want to
+    #go past that amount by iterations_pass_comment
+    return max( verse.get( 'comment_mod_loop_count', -ITERATIONS_PASS_COMMENT_DEFAULT ) + \
+                    config.get( 'iterations_pass_comment', ITERATIONS_PASS_COMMENT_DEFAULT),
+                    config.get( 'reflection_loops_per_verse', 0 ) )
+
 def compute_number_unanswered_grades( verse, config ):
     """
     Determine the number of grades that have not been answered by a reflection.
@@ -74,8 +89,7 @@ def compute_number_unanswered_grades( verse, config ):
     #if the current reflection loop has had reflection
     #then we say we haven't graded yet unless it is the final loop.
     if 'graded_verse' in last_reflection_loop:
-        if 'reflection_loops_per_verse' not in config or \
-                config['reflection_loops_per_verse'] > len(verse['reflection_loops']):
+        if compute_reflection_loops_needed( verse, config ) > len(verse['reflection_loops']):
             return 0
 
     return len(last_reflection_loop['grades'])
@@ -85,13 +99,8 @@ def verse_needs_finialization( verse, config ):
     A verse needs finilized if there has been the correct number
     of loops and the last set of grades have been reflected on.
     """
-    if 'reflection_loops_per_verse' not in config:
-        return False
-
-    if 'reflection_loops' not in verse:
-        return False
-
-    if len(verse['reflection_loops']) < max(1,config['reflection_loops_per_verse']):
+    if len(verse.get('reflection_loops',[])) < max(1,compute_reflection_loops_needed( verse,
+            config )):
         return False
 
     #This isn't true.  We will just set graded_verse ourselves when we do the finalization.
@@ -136,9 +145,12 @@ def finalize_verse( verse, config ):
     #the average grades cached.
     compute_verse_grade( verse, config )
 
+    #TODO: verify this isn't off by one on the index.
+    first_index_considered = verse.get( 'comment_mod_loop_count', -1 ) + 1
+
     best_loop = None
     best_grade = None
-    for reflection_loop in verse['reflection_loops']:
+    for reflection_loop in verse['reflection_loops'][first_index_considered:]:
         if 'average_grade' in reflection_loop:
             if best_loop is None or best_grade < reflection_loop['average_grade']:
                 best_loop = reflection_loop
@@ -245,7 +257,18 @@ def compute_translation_grade( translation, config ):
 
     return verse_sum / verse_count
 
-def build_common_context( selected_verse, reflection_output, config, over_ridden_references ):
+def construct_translation_objective( verse, config, indexed_comments ):
+    """
+    This returns the translation objective from the config, but also
+    Adds in the comments which have been left for this verse.
+    """
+    vref = utils.look_up_key( verse, config['reference_key'] )
+    comments = indexed_comments.get( vref, [] )
+    result = "\n".join( [config.get( 'translation_objective', '' )] + comments )
+    return result
+
+def build_common_context( selected_verse, reflection_output, config, over_ridden_references,
+        indexed_comments ):
     """
     There are different LLM operations but they have common context.  This builds it.
     """
@@ -278,7 +301,8 @@ def build_common_context( selected_verse, reflection_output, config, over_ridden
 
     source_and_translation_json = json.dumps( source_and_translation, ensure_ascii=False, indent=2 )
     user_message_array = [
-        "Translation Objective: ", config['translation_objective'], "\n\n",
+        "Translation Objective: ",
+        construct_translation_objective( selected_verse, config, indexed_comments ), "\n\n",
         f"Source and target text of {selected_verse_vref} and its surrounding context:\n",
         source_and_translation_json, "\n" ]
 
@@ -485,6 +509,8 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
     translation_input = utils.load_jsonl( config['translation_input'] )
 
+    indexed_comments = load_and_index_comments( config )
+
     output_dirty = False
 
     #load the result if we didn't finish last time.
@@ -527,18 +553,23 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                         over_ridden_references:
                     num_completed_loops = compute_completed_loops( verse )
                     if fewest_loops is None or num_completed_loops < fewest_loops:
-                        verse_with_fewest_loops = verse
-                        fewest_loops = num_completed_loops
 
-            #check if the verse with the fewest loops has the numer requested by the configuration
-            #if it does, we are done.
-            if verse_with_fewest_loops is not None and fewest_loops < \
-                    config['reflection_loops_per_verse']:
+                        #only select this verse if it isn't completed.
+                        if num_completed_loops < compute_reflection_loops_needed( verse, config ):
+
+                            #also only select this verse if it isn't frozen from ai.
+                            if not verse.get( "ai_halted", False ):
+                                verse_with_fewest_loops = verse
+                                fewest_loops = num_completed_loops
+
+            #check if we found the verse with the fewest loops that has the numer requested by the
+            #configuration if it does, we are done.
+            if verse_with_fewest_loops is not None:
                 selected_verse = verse_with_fewest_loops
 
 
                 common_context = build_common_context( selected_verse, reflection_output, config,
-                    over_ridden_references )
+                    over_ridden_references, indexed_comments )
 
 
                 #add a new reflection loop if the current last one is None or is complete.
@@ -640,6 +671,21 @@ def run_config__n_loops( config, api_keys, save_timeout ):
         if output_dirty:
             utils.save_jsonl( reflection_output_filename, reflection_output )
 
+def load_and_index_comments( config ):
+    """Loads the comments left by the streamlit app and returns them indexed by
+    The verse they apply to"""
+    collected_comments_file = config.get( 'collected_comments_file', os.path.join(
+        'output','comments', os.path.basename(config['reflection_output'] )) )
+    if os.path.exists(collected_comments_file):
+        collected_comments = utils.load_jsonl(collected_comments_file)
+    else:
+        collected_comments = []
+
+    indexed_comments = defaultdict( lambda: [] )
+    for comment in collected_comments:
+        for vref in comment['ids']:
+            indexed_comments[vref].append( comment )
+    return indexed_comments
 
 def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     """
@@ -659,6 +705,9 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     best_grade_found = 0
     iterations_without_improvement = 0
     iterations_without_improvement_max = config['iterations_without_improvement_max']
+
+
+    indexed_comments = load_and_index_comments( config )
 
 
     if 'start_line' in config:
@@ -710,8 +759,48 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 if 'end_line' in config and verse_line_number > config['end_line']-1:
                     continue #not break because we have a for else which will get skiped.
 
+                #if a verse is marked that the ai is not supposed to touch it, then skip it.
+                if verse.get( 'ai_halted', False ):
+                    continue
+
                 vref = utils.look_up_key( verse, reference_key )
                 if vref is not None and not vref in over_ridden_references:
+                    #check to see if this verse actually needs a reflection skip.
+                    #This happens if a comment was applied to the verse, then the latest
+                    #grades are not valid anymore so we need a new grading round before
+                    #we do reflection.
+
+                    #if the verse doesn't have any reflection loops yet then we obviously
+                    #don't need to a reflection skip.
+                    if verse.get( 'reflection_loops', [] ):
+                        last_reflection_loop = verse['reflection_loops'][-1]
+
+                        #if the verse already has the grade marked in it, we already will be
+                        #grading this verse so we don't need a reflection skip.
+                        if 'graded_verse' not in last_reflection_loop:
+
+                            #here check if the completed loops is equal (or less which means
+                            #something is odd)
+                            if compute_completed_loops( verse ) <= verse.get(
+                                    'comment_mod_loop_count', 0 ):
+                                #just copy the verse up and then this loop is "closed" and new
+                                #grades based on the new comments will begin.
+                                if translation_comment_key:
+                                    last_reflection_loop['graded_verse_comment'] = utils.\
+                                        look_up_key( verse, translation_comment_key )
+                                last_reflection_loop['graded_verse'] = utils.look_up_key(
+                                    verse, translation_key )
+
+                                #Revert finilization
+                                if verse.get( 'reflection_is_finalized', False ):
+                                    verse['reflection_is_finalized'] = False
+
+                                output_dirty = True
+                                action_done = "Skipped reflection " \
+                                    f"on loop {len(verse['reflection_loops'])} " \
+                                    f"for verse {utils.look_up_key( verse, reference_key )}"
+
+
                     #now need to determine if this verse needs another grade.
                     #It needs another grade if the current number of grades is less then the
                     #requirement or if the graded verse reference is set which means the grade was
@@ -721,7 +810,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         selected_verse = verse
 
                         common_context = build_common_context( selected_verse, reflection_output,
-                            config, over_ridden_references )
+                            config, over_ridden_references, indexed_comments )
                         new_grade = grade_verse( selected_verse, common_context, client, config )
 
                         #add the new grade to the reflection loop
@@ -735,6 +824,11 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         if 'grades' not in last_reflection_loop:
                             last_reflection_loop['grades'] = []
                         last_reflection_loop['grades'].append(new_grade)
+                        #Revert finilization
+                        if verse.get( 'reflection_is_finalized', False ):
+                            verse['reflection_is_finalized'] = False
+                        if verse.get( 'human_reviewed', False ):
+                            verse['human_reviewed'] = False
                         output_dirty = True
                         action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
                             f"on loop {len(selected_verse['reflection_loops'])} " \
@@ -774,6 +868,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             if 'end_line' in config and verse_line_number > config['end_line']-1:
                                 break
 
+                            if verse.get( "ai_halted", False ):
+                                continue
 
                             vref = utils.look_up_key( verse, reference_key )
                             if vref is not None and not vref in over_ridden_references and \
@@ -817,7 +913,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             #otherwise we go ahead and run a reflection run on it.
 
                             common_context = build_common_context( selected_verse,
-                                reflection_output, config, over_ridden_references )
+                                reflection_output, config, over_ridden_references,
+                                indexed_comments )
                             reflection_result = perform_reflection( selected_verse, common_context,
                                 client, config )
 
@@ -853,6 +950,10 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             output_dirty = True
                             action_done = f"reflected on verse {utils.look_up_key( selected_verse,
                                 reference_key )}"
+
+
+                            if verse.get( 'human_reviewed', False ):
+                                verse['human_reviewed'] = False
 
                             #keep the correction_summarization if it was produced.
                             if 'correction_summarization' in reflection_result:

@@ -715,14 +715,27 @@ def main():
                             st.write( f"**Review {i+1}** "
                                 f"_(Grade {grade['grade']})_: {grade['comment']}" )
 
-                reviewed = utils.look_up_key( selected_verse, ['human_reviewed'], False )
-                changed_reviewed = st.checkbox( "Reviewed", value=reviewed, key='human_reviewed' )
-                if changed_reviewed != reviewed:
-                    selected_verse['human_reviewed'] = changed_reviewed
-                    save_translation_data( selected_translation,
-                        translation_data_and_indexed_translation_data['full'] )
-                    #st.toast( "Saved" )
-                    st.rerun()
+                col1, col2 = st.columns(2)
+                with col1:
+                    reviewed = utils.look_up_key( selected_verse, ['human_reviewed'], False )
+                    changed_reviewed = st.checkbox( "Reviewed", value=reviewed,
+                        key='human_reviewed' )
+                    if changed_reviewed != reviewed:
+                        selected_verse['human_reviewed'] = changed_reviewed
+                        save_translation_data( selected_translation,
+                            translation_data_and_indexed_translation_data['full'] )
+                        st.toast( "Saved" )
+                        st.rerun()
+
+                with col2:
+                    ai_halted = selected_verse.get("ai_halted", False )
+                    ai_haulted_input = st.checkbox( "Halt AI", value=ai_halted, key='ai_halted' )
+                    if ai_haulted_input != ai_halted:
+                        selected_verse['ai_halted'] = ai_haulted_input
+                        save_translation_data( selected_translation,
+                            translation_data_and_indexed_translation_data['full'] )
+                        st.toast( "Saved" )
+                        st.rerun()
 
             checkpoint( "verse tab: showed suggested corrections" )
 
