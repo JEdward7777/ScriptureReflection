@@ -236,7 +236,25 @@ def load_comment_data(selected_translation):
     except FileNotFoundError:
         return []
 
-def save_comments(selected_translation,comment_data):
+def touch_verse( verse_id, indexed_translation_data ):
+    """Modifies the translation file so that the background processes which change things will know
+    a new comment has been added etc."""
+
+    b,c,v = split_ref(verse_id)
+    if b in indexed_translation_data:
+        selected_book = indexed_translation_data[b]
+        if c in selected_book:
+            selected_chapter = selected_book[c]
+            if v in selected_chapter:
+                selected_verse = selected_chapter[v]
+                completed_loops = grade_reflect_loop.compute_completed_loops( selected_verse )
+                selected_verse['comment_mod_loop_count'] = completed_loops
+
+
+
+
+def save_comments(selected_translation,comment_data,comment_changed_or_removed,
+        translation_data_and_indexed_translation_data):
     """Saves the comment data for a selected translation"""
     filepath = f"./output/comments/{selected_translation}.jsonl"
     temp_filepath = f"./output/comments/{selected_translation}~.jsonl"
@@ -246,6 +264,14 @@ def save_comments(selected_translation,comment_data):
         for this_comment in comment_data:
             file.write(json.dumps(this_comment) + "\n")
     os.replace(temp_filepath, filepath)
+
+    #now touch all the verses in the translation which received a comment.
+    for verse_id in comment_changed_or_removed['ids']:
+        touch_verse( verse_id, translation_data_and_indexed_translation_data['indexed'] )
+
+    #save the translation back out because the touch marks are in that file.
+    save_translation_data( selected_translation,
+        translation_data_and_indexed_translation_data['full'] )
 
 def get_verse_for_reference( indexed_data, book, chapter, verse ):
     """Fetches the verse object for a given reference"""
@@ -262,7 +288,7 @@ def get_verse_for_reference( indexed_data, book, chapter, verse ):
 
 def get_comments_for_reference( comment_data, book, chapter, verse ):
     """Gets the comments for a specific reference"""
-    #TODO: This needs to be refactored to be more efficient
+    #TO DO: This needs to be refactored to be more efficient
     #by indexing the comments when they are loaded.
     vref = f"{book} {chapter}:{verse}"
 
@@ -819,12 +845,14 @@ def main():
                     with save_col:
                         if st.button("Save", key=f"{i}-save"):
                             comment['comment'] = changed_text
-                            save_comments(selected_translation, st.session_state.comment_data)
+                            save_comments(selected_translation, st.session_state.comment_data,
+                                comment,translation_data_and_indexed_translation_data)
                             st.rerun()
                     with delete_col:
                         if st.button("Delete", key=f"{i}-delete"):
                             st.session_state.comment_data.remove(comment)
-                            save_comments(selected_translation, st.session_state.comment_data)
+                            save_comments(selected_translation, st.session_state.comment_data,
+                                comment,translation_data_and_indexed_translation_data)
                             st.rerun()
                     found_comment = True
                 if not found_comment:
@@ -956,7 +984,7 @@ def main():
                     grade_improvement = get_grade_improvement( verse )
 
                     #st.write( f"**{reference}**: _(Grade {grade:.1f})_" )
-                    with st.container( border=(verse is selected_verse) ):
+                    with st.container( border=verse is selected_verse ):
                         cols = st.columns(4)
                         with cols[0]:
                             if st.button( f"Ref: {reference}", key=f"sort-verse-{i}" ):
@@ -1078,12 +1106,14 @@ def main():
 
                     if name:
 
-                        st.session_state.comment_data.append( {
+                        new_comment_object = {
                             "comment": comment_added,
                             "ids": st.session_state.selected_verses[:],
                             "name": name
-                        })
-                        save_comments(selected_translation,st.session_state.comment_data)
+                        }
+                        st.session_state.comment_data.append( new_comment_object )
+                        save_comments(selected_translation,st.session_state.comment_data,
+                            new_comment_object,translation_data_and_indexed_translation_data)
 
                         st.write( "Saved" )
                         st.session_state.comment_count += 1
