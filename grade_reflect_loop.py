@@ -775,31 +775,55 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                     if verse.get( 'reflection_loops', [] ):
                         last_reflection_loop = verse['reflection_loops'][-1]
 
-                        #if the verse already has the grade marked in it, we already will be
-                        #grading this verse so we don't need a reflection skip.
-                        if 'graded_verse' not in last_reflection_loop:
 
-                            #here check if the completed loops is equal (or less which means
-                            #something is odd)
-                            if compute_completed_loops( verse ) <= verse.get(
-                                    'comment_mod_loop_count', -1 ):
-                                #just copy the verse up and then this loop is "closed" and new
-                                #grades based on the new comments will begin.
-                                if translation_comment_key:
-                                    last_reflection_loop['graded_verse_comment'] = utils.\
-                                        look_up_key( verse, translation_comment_key )
-                                last_reflection_loop['graded_verse'] = utils.look_up_key(
-                                    verse, translation_key )
+                        #Figure out if we need a reflection skip based on the number
+                        #of completed loops.
+                        #here check if the completed loops is equal (or less which means
+                        #something is odd)
+                        if compute_completed_loops( verse ) <= verse.get(
+                                'comment_mod_loop_count', -1 ):
 
-                                #Revert finilization
-                                if verse.get( 'reflection_is_finalized', False ):
-                                    verse['reflection_is_finalized'] = False
+                            #If we don't have a graded_verse in the last loop
+                            #Then we can skip grading according to the old grades
+                            #by just copying the graded verse into the last_reflection_loop
+                            #if we don't have a graded_verse in the last loop
+                            #Then we are probably dealing with a finalized verse
+                            #and to keep the finalized verse which doesn't have a grading
+                            #for it (Well it does back in the history)
+                            #we will create a new last_reflection_loop and put as much
+                            #information in it that we can.  It will be missing grades
+                            #however.
+                            if 'graded_verse' in last_reflection_loop: #bookmark
+                                last_reflection_loop = {}
 
-                                output_dirty = True
-                                action_done = "Skipped reflection " \
-                                    f"on loop {len(verse['reflection_loops'])} " \
-                                    f"for verse {utils.look_up_key( verse, reference_key )}"
+                                #compute the verse grade before adding the new reflection loop
+                                #This will pick up the finalized grade or if it isn't there
+                                #find something else to use if possible.
+                                verse_grade = compute_verse_grade( verse, config )
+                                if verse_grade is not None:
+                                    last_reflection_loop['average_grade'] = verse_grade
 
+                                #now add the new reflection loop to the verse
+                                verse['reflection_loops'].append( last_reflection_loop )
+
+
+                            #just copy the verse up and then this loop is "closed" and new
+                            #grades based on the new comments will begin.
+                            if translation_comment_key:
+                                last_reflection_loop['graded_verse_comment'] = utils.\
+                                    look_up_key( verse, translation_comment_key )
+                            last_reflection_loop['graded_verse'] = utils.look_up_key(
+                                verse, translation_key )
+
+                            #Revert finilization
+                            if verse.get( 'reflection_is_finalized', False ):
+                                verse['reflection_is_finalized'] = False
+
+                            output_dirty = True
+                            action_done = "Skipped reflection " \
+                                f"on loop {len(verse['reflection_loops'])} " \
+                                f"for verse {utils.look_up_key( verse, reference_key )}"
+                            break #get to the save section.
 
                     #now need to determine if this verse needs another grade.
                     #It needs another grade if the current number of grades is less then the
