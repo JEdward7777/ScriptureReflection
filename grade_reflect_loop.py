@@ -145,14 +145,14 @@ def finalize_verse( verse, config ):
     #the average grades cached.
     compute_verse_grade( verse, config )
 
-    #TODO: verify this isn't off by one on the index.
-    first_index_considered = verse.get( 'comment_mod_loop_count', -1 ) + 1
+
+    first_index_considered = verse.get( 'comment_mod_loop_count', 0 )
 
     best_loop = None
     best_grade = None
     for reflection_loop in verse['reflection_loops'][first_index_considered:]:
         if 'average_grade' in reflection_loop:
-            if best_loop is None or best_grade < reflection_loop['average_grade']:
+            if best_loop is None or best_grade <= reflection_loop['average_grade']:
                 best_loop = reflection_loop
                 best_grade = reflection_loop['average_grade']
 
