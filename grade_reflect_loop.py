@@ -368,11 +368,11 @@ def summarize_corrections( selected_verse, client, config ):
 
     #put the translation history in
     had_history = False
-    if len( selected_verse.get('reflection_loops',[] ) )> 1:
+    relevant_loops = selected_verse.get('reflection_loops',[])[selected_verse.get('comment_mod_loop_count',0):-1]
+    if relevant_loops:
         user_message_array += ['##Edit History:\n']
         #relevant_loops exclude the current loop as well as ones before a comment was added.
-        relevant_loops = selected_verse['reflection_loops'][selected_verse.get('comment_mod_loop_count',0):-1]
-        for i,reflection_loop in relevant_loops:
+        for i,reflection_loop in enumerate(relevant_loops):
             had_history = True
             user_message_array += [ vref, " version ", (i+1), ":\n```\n",
                  reflection_loop['graded_verse'], "\n```\n" ]
