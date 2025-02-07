@@ -247,8 +247,8 @@ def touch_verse( verse_id, indexed_translation_data ):
             selected_chapter = selected_book[c]
             if v in selected_chapter:
                 selected_verse = selected_chapter[v]
-                completed_loops = grade_reflect_loop.compute_completed_loops( selected_verse )
-                selected_verse['comment_mod_loop_count'] = completed_loops
+                selected_verse['comment_mod_loop_count'] = len( selected_verse.get(
+                    'reflection_loops', [] ) )
 
 
 
