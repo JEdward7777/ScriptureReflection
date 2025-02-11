@@ -844,17 +844,19 @@ def main():
                     #iterate the reflection loops in reverse.
                     for i,reflection_loop in reversed(list(enumerate(reflection_loops))):
                         if 'graded_verse' in reflection_loop:
-                            found_history = True
-                            if 'average_grade' in reflection_loop:
-                                st.write( f"**Version {i+1}**: "
-                                    f"_(Grade {reflection_loop['average_grade']:.1f})_" )
-
-                                grade_over_history.append( reflection_loop['average_grade'] )
-                            else:
-                                st.write( f"Version {i+1}:" )
 
                             trans_col, comments_col = st.columns(2)
                             with trans_col:
+                                found_history = True
+                                if 'average_grade' in reflection_loop:
+                                    st.write( f"**Version {i+1}**: "
+                                        f"_(Grade {reflection_loop['average_grade']:.1f})_" )
+
+                                    grade_over_history.append( reflection_loop['average_grade'] )
+                                else:
+                                    st.write( f"Version {i+1}:" )
+
+
                                 st.write( reflection_loop['graded_verse'] )
 
                                 if show_diffs and i > 0:
@@ -864,10 +866,19 @@ def main():
                                         reflection_loop      .get('graded_verse','') )
                                     st.markdown( "**Diff:** " + diff_string, unsafe_allow_html=True )
                             with comments_col:
-                                if 'correction_summarization' in reflection_loop and \
-                                        'summary' in reflection_loop['correction_summarization']:
-                                    st.write( reflection_loop['correction_summarization']
-                                        ['summary'] )
+                                #add a summarization tab and a grade comments tab.
+                                summarization_tab, grade_comments_tab = st.tabs(["Summarization", "Grade Comments"])
+
+                                with summarization_tab:
+                                    if 'correction_summarization' in reflection_loop and \
+                                            'summary' in reflection_loop['correction_summarization']:
+                                        st.write( reflection_loop['correction_summarization']
+                                            ['summary'] )
+                                with grade_comments_tab:
+                                    for grade_i,grade in enumerate(reflection_loop.get("grades",[])):
+                                        st.write( f"**Review {grade_i+1}** "
+                                            f"_(Grade {grade['grade']})_: {grade['comment']}" )
+
 
                             st.divider()
 
