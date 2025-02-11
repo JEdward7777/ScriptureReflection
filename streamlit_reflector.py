@@ -745,7 +745,7 @@ def main():
 
                 with col2:
                     ai_halted = selected_verse.get("ai_halted", False )
-                    ai_haulted_input = st.checkbox( "Halt AI", value=ai_halted, key='ai_halted' )
+                    ai_haulted_input = st.checkbox( "Halt AI for this", value=ai_halted, key='ai_halted' )
                     if ai_haulted_input != ai_halted:
                         selected_verse['ai_halted'] = ai_haulted_input
                         save_translation_data( selected_translation,
