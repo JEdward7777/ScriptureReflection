@@ -811,7 +811,7 @@ def main():
                     #so that the colors show up.
                     #This is a security problem if someone wants to start putting
                     #in verses with javascript in them.
-                    st.markdown( diff_string, unsafe_allow_html=True )
+                    st.markdown( "**Diff:** " + diff_string, unsafe_allow_html=True )
 
 
 
@@ -837,51 +837,39 @@ def main():
                 st.header("Verse History")
 
                 found_history = False
-                if selected_verse and 'reflection_loops' in selected_verse and \
-                        selected_verse['reflection_loops']:
+                reflection_loops = selected_verse.get( 'reflection_loops', [] )
+                if selected_verse and reflection_loops:
                     grade_over_history = []
 
-                    #This function used to be inline, but I yanked it out so that
-                    #could get a reference to the previouse reflection loop
-                    #even though we are running in reverse order.
-                    def render_history( i, reflection_loop, prev_reflection_loop ):
-                        if 'average_grade' in reflection_loop:
-                            st.write( f"**Version {i+1}**: "
-                                f"_(Grade {reflection_loop['average_grade']:.1f})_" )
-
-                            grade_over_history.append( reflection_loop['average_grade'] )
-                        else:
-                            st.write( f"**Version {i+1}:**" )
-
-                        trans_col, comments_col = st.columns(2)
-                        with trans_col:
-                            if show_diffs and prev_reflection_loop:
-                                diff_string = run_diff( prev_reflection_loop.get('graded_verse',''),reflection_loop.get('graded_verse',''))
-                                st.markdown( diff_string, unsafe_allow_html=True )
-                            else:
-                                st.write( reflection_loop['graded_verse'] )
-                        with comments_col:
-                            if 'correction_summarization' in reflection_loop and \
-                                    'summary' in reflection_loop['correction_summarization']:
-                                st.write( reflection_loop['correction_summarization']
-                                    ['summary'] )
-
-                        st.divider()
-
                     #iterate the reflection loops in reverse.
-                    next_loop = None
-                    next_i = -1
-                    for i,reflection_loop in reversed(list(enumerate(
-                            selected_verse['reflection_loops']))):
+                    for i,reflection_loop in reversed(list(enumerate(reflection_loops))):
                         if 'graded_verse' in reflection_loop:
                             found_history = True
+                            if 'average_grade' in reflection_loop:
+                                st.write( f"**Version {i+1}**: "
+                                    f"_(Grade {reflection_loop['average_grade']:.1f})_" )
 
-                            if next_loop:
-                                render_history(next_i,next_loop,reflection_loop)
-                            next_loop = reflection_loop
-                            next_i = i
-                    if next_loop:
-                        render_history(next_i,next_loop,None)
+                                grade_over_history.append( reflection_loop['average_grade'] )
+                            else:
+                                st.write( f"Version {i+1}:" )
+
+                            trans_col, comments_col = st.columns(2)
+                            with trans_col:
+                                st.write( reflection_loop['graded_verse'] )
+
+                                if show_diffs and i > 0:
+                                    #see if we can find a previous verse.
+                                    diff_string = run_diff( 
+                                        reflection_loops[i-1].get('graded_verse',''), 
+                                        reflection_loop      .get('graded_verse','') )
+                                    st.markdown( "**Diff:** " + diff_string, unsafe_allow_html=True )
+                            with comments_col:
+                                if 'correction_summarization' in reflection_loop and \
+                                        'summary' in reflection_loop['correction_summarization']:
+                                    st.write( reflection_loop['correction_summarization']
+                                        ['summary'] )
+
+                            st.divider()
 
                     checkpoint( "verse tab: history tab: showed history" )
 
