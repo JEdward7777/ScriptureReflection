@@ -241,7 +241,7 @@ configs:
 
     mode: lowest_grade_priority
     #iterations_without_improvement_max: 30
-    iterations_without_improvement_max: 3
+    iterations_without_improvement_max: 10
 
     reflection_loops_per_verse: 10
 
