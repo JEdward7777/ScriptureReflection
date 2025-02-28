@@ -3,14 +3,14 @@ configs:
     ryder_format:
       outputs:
         source_lang: grc
-        source_label: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source_label: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         target_lang: eng
         target_label: English
     markdown_format:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -18,14 +18,14 @@ configs:
     ryder_format:
       outputs:
         source_lang: grc
-        source_label: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source_label: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         target_lang: eng
         target_label: English
     markdown_format:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
       start_line: 23214 # MAT 1:1
@@ -38,7 +38,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -48,7 +48,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -58,7 +58,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -68,7 +68,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -78,7 +78,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -87,7 +87,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -96,7 +96,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -105,7 +105,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -115,7 +115,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -128,7 +128,7 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
 
@@ -137,6 +137,24 @@ configs:
       outputs:
         source language: Greek
         source text name: grc-grcbyz
-        source text description: 1904 Patriarchal Greek New Testament with 20 correcctions from later editions
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: English
+
+  french_NT_reflected:
+    ryder_format:
+      outputs:
+        source_lang: grc
+        source_label: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
+        target_lang: eng
+        target_label: French
+    markdown_format:
+      outputs:
+        source language: Greek
+        source text name: grc-grcbyz
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
+        source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
+        target language: French
+      start_line: 23214 # MAT 1:1
+      end_line: 24284 # MAT 28:20
+      
