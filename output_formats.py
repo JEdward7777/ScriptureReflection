@@ -89,20 +89,20 @@ USFM_NAME = {
     "Joshua"        : "06-JOS.usfm",  "JOS" : "06-JOS.usfm",
     "Judges"        : "07-JDG.usfm",  "JDG" : "07-JDG.usfm",
     "Ruth"          : "08-RUT.usfm",  "RUT" : "08-RUT.usfm",
-    "1Samuel"       : "09-1SA.usfm",  "1SA" : "09-1SA.usfm",
-    "2Samuel"       : "10-2SA.usfm",  "2SA" : "10-2SA.usfm",
-    "1Kings"        : "11-1KI.usfm",  "1KI" : "11-1KI.usfm",
-    "2Kings"        : "12-2KI.usfm",  "2KI" : "12-2KI.usfm",
-    "1Chronicles"   : "13-1CH.usfm",  "1CH" : "13-1CH.usfm",
-    "2Chronicles"   : "14-2CH.usfm",  "2CH" : "14-2CH.usfm",
+    "1Samuel"       : "09-1SA.usfm",  "1SA" : "09-1SA.usfm", "1 Samuel"       : "09-1SA.usfm",
+    "2Samuel"       : "10-2SA.usfm",  "2SA" : "10-2SA.usfm", "2 Samuel"       : "09-1SA.usfm",
+    "1Kings"        : "11-1KI.usfm",  "1KI" : "11-1KI.usfm", "1 Kings"        : "11-1KI.usfm",
+    "2Kings"        : "12-2KI.usfm",  "2KI" : "12-2KI.usfm", "2 Kings"        : "12-2KI.usfm",
+    "1Chronicles"   : "13-1CH.usfm",  "1CH" : "13-1CH.usfm", "1 Chronicles"   : "13-1CH.usfm",
+    "2Chronicles"   : "14-2CH.usfm",  "2CH" : "14-2CH.usfm", "2 Chronicles"   : "14-2CH.usfm",
     "Ezra"          : "15-EZR.usfm",  "EZR" : "15-EZR.usfm",
     "Nehemiah"      : "16-NEH.usfm",  "NEH" : "16-NEH.usfm",
     "Esther"        : "17-EST.usfm",  "EST" : "17-EST.usfm",
     "Job"           : "18-JOB.usfm",  "JOB" : "18-JOB.usfm",
-    "Psalms"        : "19-PSA.usfm",  "PSA" : "19-PSA.usfm",
+    "Psalms"        : "19-PSA.usfm",  "PSA" : "19-PSA.usfm", "Psalm"        : "19-PSA.usfm",
     "Proverbs"      : "20-PRO.usfm",  "PRO" : "20-PRO.usfm",
     "Ecclesiastes"  : "21-ECC.usfm",  "ECC" : "21-ECC.usfm",
-    "SongofSolomon" : "22-SNG.usfm",  "SNG" : "22-SNG.usfm",
+    "SongofSolomon" : "22-SNG.usfm",  "SNG" : "22-SNG.usfm", "Song of Solomon" : "22-SNG.usfm",
     "Isaiah"        : "23-ISA.usfm",  "ISA" : "23-ISA.usfm",
     "Jeremiah"      : "24-JER.usfm",  "JER" : "24-JER.usfm",
     "Lamentations"  : "25-LAM.usfm",  "LAM" : "25-LAM.usfm",
@@ -126,25 +126,25 @@ USFM_NAME = {
     "John"          : "44-JHN.usfm",  "JHN" : "44-JHN.usfm",
     "Acts"          : "45-ACT.usfm",  "ACT" : "45-ACT.usfm",
     "Romans"        : "46-ROM.usfm",  "ROM" : "46-ROM.usfm",
-    "1Corinthians"  : "47-1CO.usfm",  "1CO" : "47-1CO.usfm",
-    "2Corinthians"  : "48-2CO.usfm",  "2CO" : "48-2CO.usfm",
+    "1Corinthians"  : "47-1CO.usfm",  "1CO" : "47-1CO.usfm", "1 Corinthians"  : "47-1CO.usfm",
+    "2Corinthians"  : "48-2CO.usfm",  "2CO" : "48-2CO.usfm", "2 Corinthians"  : "48-2CO.usfm",
     "Galatians"     : "49-GAL.usfm",  "GAL" : "49-GAL.usfm",
     "Ephesians"     : "50-EPH.usfm",  "EPH" : "50-EPH.usfm",
     "Philippians"   : "51-PHP.usfm",  "PHP" : "51-PHP.usfm",
     "Colossians"    : "52-COL.usfm",  "COL" : "52-COL.usfm",
-    "1Thessalonians": "53-1TH.usfm",  "1TH" : "53-1TH.usfm",
-    "2Thessalonians": "54-2TH.usfm",  "2TH" : "54-2TH.usfm",
-    "1Timothy"      : "55-1TI.usfm",  "1TI" : "55-1TI.usfm",
-    "2Timothy"      : "56-2TI.usfm",  "2TI" : "56-2TI.usfm",
+    "1Thessalonians": "53-1TH.usfm",  "1TH" : "53-1TH.usfm", "1 Thessalonians": "53-1TH.usfm",
+    "2Thessalonians": "54-2TH.usfm",  "2TH" : "54-2TH.usfm", "2 Thessalonians": "54-2TH.usfm",
+    "1Timothy"      : "55-1TI.usfm",  "1TI" : "55-1TI.usfm", "1 Timothy"      : "55-1TI.usfm",
+    "2Timothy"      : "56-2TI.usfm",  "2TI" : "56-2TI.usfm", "2 Timothy"      : "56-2TI.usfm",
     "Titus"         : "57-TIT.usfm",  "TIT" : "57-TIT.usfm",
     "Philemon"      : "58-PHM.usfm",  "PHM" : "58-PHM.usfm",
     "Hebrews"       : "59-HEB.usfm",  "HEB" : "59-HEB.usfm",
     "James"         : "60-JAS.usfm",  "JAS" : "60-JAS.usfm",
-    "1Peter"        : "61-1PE.usfm",  "1PE" : "61-1PE.usfm",
-    "2Peter"        : "62-2PE.usfm",  "2PE" : "62-2PE.usfm",
-    "1John"         : "63-1JN.usfm",  "1JN" : "63-1JN.usfm",
-    "2John"         : "64-2JN.usfm",  "2JN" : "64-2JN.usfm",
-    "3John"         : "65-3JN.usfm",  "3JN" : "65-3JN.usfm",
+    "1Peter"        : "61-1PE.usfm",  "1PE" : "61-1PE.usfm", "1 Peter"        : "61-1PE.usfm",
+    "2Peter"        : "62-2PE.usfm",  "2PE" : "62-2PE.usfm", "2 Peter"        : "62-2PE.usfm",
+    "1John"         : "63-1JN.usfm",  "1JN" : "63-1JN.usfm", "1 John"         : "63-1JN.usfm",
+    "2John"         : "64-2JN.usfm",  "2JN" : "64-2JN.usfm", "2 John"         : "64-2JN.usfm",
+    "3John"         : "65-3JN.usfm",  "3JN" : "65-3JN.usfm", "3 John"         : "65-3JN.usfm",
     "Jude"          : "66-JUD.usfm",  "JUD" : "66-JUD.usfm",
     "Revelation"    : "67-REV.usfm",  "REV" : "67-REV.usfm"
 }
@@ -173,7 +173,16 @@ def convert_to_usfm(file):
 
     #The first thing I need to do is run through the content and sort it out into books.
     book_to_verses = defaultdict( lambda: [] )
-    for verse in original_content:
+    for verse_index,verse in enumerate(original_content):
+
+        if this_config.get( 'start_line', None ) is not None:
+            if verse_index < this_config.get( 'start_line', None )-1:
+                continue
+
+        if this_config.get( 'end_line', None ) is not None:
+            if verse_index > this_config.get( 'end_line', None )-1:
+                break
+
         if verse:
             #reference = verse["fresh_translation"]["reference"]
             reference = utils.look_up_key(verse, reference_key)
@@ -361,5 +370,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    #convert_to_usfm( "Swarm_bible_spa_natural.jsonl" )
 
     print( "Done!" )

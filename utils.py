@@ -154,8 +154,10 @@ class GetStub:
     """
     A stub class that has a get method that returns a default value.
     """
-    def get( self, _, default ):
+    def get( self, _, default=None ):
         """Returns the default value"""
+        if default is None:
+            return self
         return default
 
 
