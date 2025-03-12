@@ -5,7 +5,7 @@ import os
 import json
 from collections import defaultdict, OrderedDict
 from datetime import datetime
-import yaml
+import yaml #pip install pyyaml
 
 import utils
 
@@ -219,7 +219,7 @@ def convert_to_markdown(file):
 
     if this_config:
         translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
-        translation_notes_key = this_config.get( 'translation_notes_key', ['translation_notes'] )
+        translation_comment_key = this_config.get( 'translation_comment_key', ['translation_notes'] )
         reference_key = this_config.get( 'reference_key', ['vref'] )
         override_key = this_config.get( 'override_key',
             ['forming_verse_range_with_previous_verse'] )
@@ -237,8 +237,16 @@ def convert_to_markdown(file):
                 if verse_index < this_config['markdown_format']['start_line']-1:
                     continue
 
+            if 'start_line' in this_config:
+                if verse_index < this_config['start_line']-1:
+                    continue
+
             if 'end_line' in this_config['markdown_format']:
                 if verse_index > this_config['markdown_format']['end_line']-1:
+                    break
+
+            if 'end_line' in this_config:
+                if verse_index > this_config['end_line']-1:
                     break
 
             if verse:
@@ -262,7 +270,7 @@ def convert_to_markdown(file):
             for key,value in this_config['markdown_format']['outputs'].items():
                 index.write( f"|{key}|{value}|\n")
 
-            index.write( f"|translation date|{modified_date.strftime("%Y.%m.%d")}|\n")
+            index.write( f"|translation date|{modified_date.strftime('%Y.%m.%d')}|\n")
             index.write( "\n")
 
             index.write( "# Books\n" )
@@ -305,11 +313,13 @@ def convert_to_markdown(file):
 
                         for verse in verses:
                             vref = utils.look_up_key(verse, reference_key)
+                            translation = utils.look_up_key(verse, translation_key).\
+                                    replace('\n', '<br>')
+                            comment = utils.look_up_key(verse, translation_comment_key,"",none_is_valid=False).\
+                                    replace('\n', '<br>')
                             chapter_out.write(
-                                f"|{vref}|{utils.look_up_key(verse, translation_key).
-                                    replace('\n', '<br>')}|" +
-                                f"{utils.look_up_key(verse, translation_notes_key).
-                                    replace('\n', '<br>')}|\n")
+                                f"|{vref}|{translation}|" +
+                                f"{comment}|\n")
 
 
                         chapter_out.write( "\n\n")
@@ -335,9 +345,19 @@ def main():
 
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
-            convert_to_ryder_jsonl_format(file)
-            convert_to_usfm(file)
-            convert_to_markdown(file)
+            try:
+                convert_to_ryder_jsonl_format(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
+            try:
+                convert_to_usfm(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_usfm for {file}: {ex}")
+
+            try:
+                convert_to_markdown(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_markdown for {file}: {ex}")
 
 if __name__ == "__main__":
     main()

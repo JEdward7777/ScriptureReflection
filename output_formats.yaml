@@ -122,7 +122,7 @@ configs:
   
   seven_year_old_paraphrase__summarizing_auto_loop:
     translation_key: [reflection_loops,8,graded_verse]
-    translation_notes_key: [reflection_loops,8,graded_verse_comment]
+    translation_comment_key: [reflection_loops,8,graded_verse_comment]
     output_file: seven_year_old_paraphrase__summarizing_auto_loop_iteration_8
     markdown_format:
       outputs:
@@ -158,3 +158,18 @@ configs:
       start_line: 23214 # MAT 1:1
       end_line: 24284 # MAT 28:20
       
+  Swarm_bible_spa_natural:
+    reference_key: [id]
+    source_key: [original]
+    translation_key: [translation]
+    translation_comment_key: [translation_notes]
+    markdown_format:
+      outputs:
+        source language: English
+        source text name: Berean Standard Bible
+        source text description: The Berean Study Bible (BSB) is one version of the Berean Standard Bible. It was published in 2016 by the Bible Hub. The translation team was comprised by scholars from the Bible Hub and the Discover Bible.
+        source text link: https://raw.githubusercontent.com/ryderwishart/swarm/refs/heads/master/swarm_translate/scenarios/data/bsb-utf8.jsonl
+        target language: Latin American Spanish
+
+    start_line: 23146 # MAT 1:1 Ryder's file
+    end_line: 24216 # MAT 28:20 Ryder's file
