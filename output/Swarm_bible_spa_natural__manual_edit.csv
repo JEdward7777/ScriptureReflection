@@ -1,0 +1,3 @@
+time,average_grade,action_done,best_grade_found,iterations_without_improvement
+2025-03-16 13:49:45,90.80547774665425,added grade number 6 on loop 2 of grade 90 to verse Matthew 23:14,0,0
+2025-03-16 13:49:45,90.80547774665425,done because grading is complete and configuration is in manual_edit_mode.,0,0
