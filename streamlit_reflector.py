@@ -731,7 +731,7 @@ def main():
                             st.write( f"**Review {i+1}** "
                                 f"_(Grade {grade['grade']})_: {grade['comment']}" )
 
-                col1, col2, col3 = st.columns(3)
+                col1, col2, col3, col4 = st.columns(4)
                 with col1:
                     reviewed = utils.look_up_key( selected_verse, ['human_reviewed'], False )
                     changed_reviewed = st.checkbox( "Reviewed", value=reviewed,
@@ -754,6 +754,16 @@ def main():
                         st.rerun()
 
                 with col3:
+                    grade_only = selected_verse.get("grade_only", False )
+                    grade_only_input = st.checkbox( "AI only grades", value=grade_only, key="grade_only" )
+                    if grade_only_input != grade_only:
+                        selected_verse['grade_only'] = grade_only_input
+                        save_translation_data( selected_translation,
+                            translation_data_and_indexed_translation_data['full'] )
+                        st.toast( "Saved" )
+                        st.rerun()
+
+                with col4:
                     show_diffs = st.checkbox( "Show Diffs", value=False, key='show_diffs' )
 
             checkpoint( "verse tab: showed suggested corrections" )

@@ -564,7 +564,7 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                                 verse_with_fewest_loops = verse
                                 fewest_loops = num_completed_loops
 
-            #check if we found the verse with the fewest loops that has the numer requested by the
+            #check if we found the verse with the fewest loops that has the number requested by the
             #configuration if it does, we are done.
             if verse_with_fewest_loops is not None:
                 selected_verse = verse_with_fewest_loops
@@ -841,20 +841,28 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         break
             else:
                 #if we got here then all the verses are fully graded.
-                #this is the moment to test if the grade is improving or not.
                 average_grade = compute_translation_grade( reflection_output, config )
-                iterations_without_improvement += 1
-                if average_grade > best_grade_found:
-                    print( f"New best grade: {average_grade} after "
-                        f"{iterations_without_improvement} iterations.  Improvement of "
-                        f"{average_grade - best_grade_found}" )
-                    best_grade_found = average_grade
-                    iterations_without_improvement = 0
 
 
-                if iterations_without_improvement > iterations_without_improvement_max:
+                #see if this config is set to manual mode, in which case we do not loop.
+                if config.get( 'manual_edit_mode', False ):
                     done = True
-                    action_done = "done because of iterations without improvement"
+                    action_done = "done because grading is complete and configuration is in manual_edit_mode."
+                else:
+
+                    #this is the moment to test if the grade is improving or not.
+                    iterations_without_improvement += 1
+                    if average_grade > best_grade_found:
+                        print( f"New best grade: {average_grade} after "
+                            f"{iterations_without_improvement} iterations.  Improvement of "
+                            f"{average_grade - best_grade_found}" )
+                        best_grade_found = average_grade
+                        iterations_without_improvement = 0
+
+
+                    if iterations_without_improvement > iterations_without_improvement_max:
+                        done = True
+                        action_done = "done because of iterations without improvement"
 
 
                 #If we are not done pick out what verse has the lowest average grade.
@@ -871,6 +879,11 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                                 break
 
                             if verse.get( "ai_halted", False ):
+                                continue
+
+                            #if a verse is marked for grading only, then it will get graded, 
+                            #but we don't want to select it for reflection
+                            if verse.get( 'grade_only', False ):
                                 continue
 
                             vref = utils.look_up_key( verse, reference_key )
@@ -1015,7 +1028,7 @@ def main():
 
     def run_mode(config_name, config):
         print( f"Running config {config_name}" )
-        if config.get( "mode", "" ) == "lowest_grade_priority":
+        if config.get( "mode", "lowest_grade_priority" ) == "lowest_grade_priority":
             run_config__lowest_grade_priority( config, api_keys, save_timeout )
         else:
             run_config__n_loops( config, api_keys, save_timeout )

@@ -1,5 +1,3 @@
-happy: true
-
 configs:
   seven_year_old_paraphrase__auto_loop:
     active: false
@@ -25,6 +23,8 @@ configs:
 
     translation_comment_key: [translation_notes]
 
+    mode: n_loops
+
   seven_year_old_paraphrase__auto_15_loops:
     active: false
     api_key: [mm_key,key]
@@ -48,6 +48,8 @@ configs:
     average_grade_csv_log: output/seven_year_old_paraphrase__auto_loop_grades.csv
 
     translation_comment_key: [translation_notes]
+
+    mode: n_loops
 
   seven_year_old_paraphrase__summarizing_auto_loop:
     active: false
@@ -74,6 +76,8 @@ configs:
     translation_comment_key: [translation_notes]
 
     summarize_corrections: true
+
+    mode: n_loops
 
   seven_year_old_paraphrase__summarizing_auto_loop_no_compress:
     active: false
@@ -103,7 +107,7 @@ configs:
     summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
     grading_prompt: "Grade {vref} for clarity, accuracy, perspective, and redundancy with the previous verse as well as other verses."
 
-
+    mode: n_loops
   john_3_nonparaphrase:
     active: false
     api_key: [mm_key,key]
@@ -130,6 +134,8 @@ configs:
 
     summarize_corrections: true
     summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
+
+    mode: n_loops
 
   john_3_nonparaphrase_lowest_grade_first:
     active: false
@@ -210,7 +216,7 @@ configs:
 
 
   NT_French:
-    active: true
+    active: false
 
     #debug_force_vref: JHN 3:32
 
@@ -275,6 +281,49 @@ configs:
 
     average_grade_csv_log: output/Swarm_bible_spa_natural.csv
     tee_output_filename:   output/Swarm_bible_spa_natural_log.txt
+
+    translation_comment_key: [translation_notes]
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in an actionable way."
+
+    mode: lowest_grade_priority
+    iterations_without_improvement_max: 30
+
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective."
+
+    start_line: 23146 # MAT 1:1 Ryder's file
+    end_line: 24216 # MAT 28:20 Ryder's file
+
+
+  Swarm_bible_spa_natural_manual:
+    active: true
+
+    #In this example, the reflection doesn't happen, the process only does grading.
+    manual_edit_mode: true
+
+    #debug_force_vref: JHN 3:32
+
+    api_key: [mm_key,key]
+    reference_key: [id]
+    source_key: [original]
+    translation_key: [translation]
+    translation_objective: "The translation should be in Latin American Spanish. Aim for a natural, idiomatic translation, avoiding overly formal language. Emphasize simplicity, clarity, and readability. Don't go with the conventional English wordings just because they are traditional. Use the most natural and idiomatic translation. Aim for a reading level of a fourth grader. Use words known even in secular contexts. Instead of 'the Word', use 'Reason' or 'the message'. Instead of 'sanctify', use 'make holy'. Use these sorts of circumlocutions for the sake of clarity and readability. Don't let it sound just like traditional Spanish bibles. Make it sound like natural, conversational Latin American Spanish that people use today."
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: /home/lansford/work2/Mission_Mutual/gpt_drafting/RyderBibleGpt/swarm_translate/scenarios/translations/bible_spa_natural.jsonl
+    reflection_output: output/Swarm_bible_spa_natural__manual_edit.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/Swarm_bible_spa_natural__manual_edit.csv
+    tee_output_filename:   output/Swarm_bible_spa_natural__manual_edit_log.txt
 
     translation_comment_key: [translation_notes]
 
