@@ -1,0 +1,13 @@
+configs:
+  #https://open.bible/bibles/Nueva_Biblia_Viva-Biblica-Bible-Text/
+  open_bible_nueva_Biblia:
+    input_target:
+      format: USX
+      folder: ../open_bible_nueva_Biblia_viva_usx/USX_1
+    input_source: 
+      format: vref
+      vref: ../../ebible/metadata/vref.txt
+      source: ../../ebible/corpus/grc-grcbyz.txt
+    merge:
+      missing_white_list: [GEN,EXO,LEV,NUM,DEU,JOS,JDG,RUT,1SA,2SA,1KI,2KI,1CH,2CH,EZR,NEH,EST,JOB,PSA,PRO,ECC,SNG,ISA,JER,LAM,EZK,DAN,HOS,JOL,AMO,OBA,JON,MIC,NAM,HAB,ZEP,HAG,ZEC,MAL,MRK 7:16,ACT 19:41,ROM 16:25-26]
+      missing_level: warning

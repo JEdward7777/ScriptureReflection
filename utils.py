@@ -23,6 +23,12 @@ def split_ref( reference ):
         return book_split, int(chapter_num), verse_num
     return book_split, int(chapter_num), int(verse_num)
 
+def split_ref2( reference ):
+    book, chapter, verse = split_ref( reference )
+    if isinstance( verse, str) and "-" in verse:
+        start_verse, end_verse = [int(x) for x in verse.split('-')]
+        return book, chapter, start_verse, end_verse
+    return book, chapter, verse, verse
 
 def load_jsonl(file):
     """
