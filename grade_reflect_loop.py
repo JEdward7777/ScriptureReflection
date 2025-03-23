@@ -625,8 +625,7 @@ def run_config__n_loops( config, api_keys, save_timeout ):
                         utils.set_key( selected_verse, translation_comment_key,
                             reflection_result['planning_thoughts'] )
                     output_dirty = True
-                    action_done = f"reflected on verse {utils.look_up_key( selected_verse,
-                        reference_key )}"
+                    action_done = f"reflected on verse {utils.look_up_key( selected_verse, reference_key )}"
 
                     #keep the correction_summarization if it was produced.
                     if 'correction_summarization' in reflection_result:
@@ -653,8 +652,7 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
             #spit out the current time and the average_grade and action_done
             print( f"{time.strftime('%Y-%m-%d %H:%M:%S')} - Average grade: {average_grade:05.2f} "
-                f"- {action_done} - completed loops: {compute_completed_loops(
-                verse_with_fewest_loops )}" )
+                f"- {action_done} - completed loops: {compute_completed_loops( verse_with_fewest_loops )}" )
 
             if "average_grade_csv_log" in config:
                 #create the dir if it doesn't exist
@@ -909,20 +907,14 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         #the active translation and then mark the verse as finalized.
                         if verse_needs_finialization( selected_verse, config ):
                             finalize_verse( selected_verse, config )
-                            action_done = f"finalized verse {utils.look_up_key( selected_verse,
-                                reference_key )}"
+                            action_done = f"finalized verse {utils.look_up_key( selected_verse, reference_key )}"
                             output_dirty = True
 
-                            print( f"Finilizing {utils.look_up_key( selected_verse,
-                                reference_key )}\n" )
-                            print( f"old: {selected_verse['reflection_loops'][-1] \
-                                ['graded_verse']}" )
-                            print( f"new: {utils.look_up_key( selected_verse, translation_key
-                                )}\n" )
-                            print( f"old grade: {selected_verse['reflection_loops'][-1] \
-                                ['average_grade']}" )
-                            print( f"new grade: {compute_verse_grade( selected_verse,
-                                config )}\n" )
+                            print( f"Finilizing {utils.look_up_key( selected_verse, reference_key )}\n" )
+                            print( f"old: {selected_verse['reflection_loops'][-1]['graded_verse']}" )
+                            print( f"new: {utils.look_up_key( selected_verse, translation_key )}\n" )
+                            print( f"old grade: {selected_verse['reflection_loops'][-1]['average_grade']}" )
+                            print( f"new grade: {compute_verse_grade( selected_verse, config )}\n" )
                         else:
 
                             #otherwise we go ahead and run a reflection run on it.
@@ -933,16 +925,13 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             reflection_result = perform_reflection( selected_verse, common_context,
                                 client, config )
 
-                            print( f"Working on verse {utils.look_up_key( selected_verse,
-                                reference_key )} which has grade {compute_verse_grade(
-                                selected_verse, config )}\n" )
+                            print( f"Working on verse {utils.look_up_key( selected_verse, reference_key )} which has grade {compute_verse_grade(selected_verse, config )}\n" )
 
                             if 'correction_summarization' in reflection_result:
                                 print( reflection_result['correction_summarization']['summary'] + \
                                      "\n" )
 
-                            print( f"source: {utils.look_up_key( selected_verse,
-                                config['source_key'] )}" )
+                            print( f"source: {utils.look_up_key( selected_verse, config['source_key'] )}" )
                             print( f"old: {utils.look_up_key( selected_verse, translation_key )}" )
                             print( f"new: {reflection_result['updated_translation']}\n" )
 
@@ -963,8 +952,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                                 utils.set_key( selected_verse, translation_comment_key,
                                     reflection_result['planning_thoughts'] )
                             output_dirty = True
-                            action_done = f"reflected on verse {utils.look_up_key( selected_verse,
-                                reference_key )}"
+                            action_done = f"reflected on verse {utils.look_up_key( selected_verse,reference_key )}"
 
 
                             if verse.get( 'human_reviewed', False ):

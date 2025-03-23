@@ -347,6 +347,9 @@ configs:
     manual_edit_mode: true
 
     #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
 
     api_key: [mm_key,key]
     translation_objective: "Purpose: To make the Bible more accessible and engaging for Spanish speakers, particularly in Latin America.\nStyle: Uses a familiar and modern style of Spanish, as compared to the more traditional Castilian form used in other translations."
@@ -372,7 +375,7 @@ configs:
 
     reflection_loops_per_verse: 10
 
-    grading_prompt: "Grade {vref} in accordance to the translation objective."
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade the obective is just the translation, not footnotes or commentary."
 
     start_line: 21223 # MAT 1:1 This file
     end_line: 22276 # MAT 28:20 This file
