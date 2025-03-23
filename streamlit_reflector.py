@@ -148,7 +148,8 @@ def cached_to_range(selected_verses, all_verses):
 #@st.cache_data
 def load_translation_data(selected_translation, reference_key, override_key):
     """Loads the data for the selected translation."""
-    vrefs = load_reference_data()
+    #vrefs = load_reference_data()
+    vrefs = None
     filepath = f"./output/{selected_translation}.jsonl"
 
 
@@ -165,6 +166,7 @@ def load_translation_data(selected_translation, reference_key, override_key):
 
             vref = utils.look_up_key(loaded_line, reference_key)
             if utils.look_up_key(loaded_line, reference_key) is None:
+                if vrefs is None: vrefs = load_reference_data()
                 vref = vrefs[i]
                 utils.set_key( loaded_line, reference_key, vref )
 
