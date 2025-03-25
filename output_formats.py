@@ -507,7 +507,7 @@ def convert_to_sorted_report(file):
                     is_first_raw = False
                 else:
                     mode = "a"
-                with open( f"output/reports/{output_file}_raw.md", mode, encoding='utf-8' ) as f_raw:
+                with open( f"output/reports/{output_file}.md", mode, encoding='utf-8' ) as f_raw:
                     f_raw.write( "---\n" )
                     f_raw.write( raw_report.strip() + "\n\n" )
 
@@ -518,7 +518,7 @@ def convert_to_sorted_report(file):
                     is_first_summarized = False
                 else:
                     mode = "a"
-                with open( f"output/reports/{output_file}.md", mode, encoding='utf-8' ) as f_summarized:
+                with open( f"output/reports/{output_file}_summarized.md", mode, encoding='utf-8' ) as f_summarized:
                     f_summarized.write( "---\n" )
                     f_summarized.write( summarized_report.strip() + "\n\n" )
 
