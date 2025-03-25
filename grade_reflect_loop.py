@@ -682,7 +682,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
     best_grade_found = 0
     iterations_without_improvement = 0
-    iterations_without_improvement_max = config['iterations_without_improvement_max']
+    iterations_without_improvement_max = config.get('iterations_without_improvement_max', float('inf') )
 
 
     indexed_comments = load_and_index_comments( config )
@@ -875,8 +875,13 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                             if vref == config['debug_force_vref']:
                                 lowest_graded_verse = verse
 
+                    #have a check to make sure the lowest grade found is below the finish limit.
+                    if lowest_grade_found is not None and \
+                            lowest_grade_found > config.get('highest_grade_to_reflect', float('inf')):
+                        action_done = f"lowest grade {lowest_grade_found} is above highest grade to reflect {config['highest_grade_to_reflect']}"
+                        done = True
 
-                    if lowest_graded_verse is not None:
+                    elif lowest_graded_verse is not None:
                         selected_verse = lowest_graded_verse
 
 
