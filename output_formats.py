@@ -8,6 +8,7 @@ from datetime import datetime
 import yaml #pip install pyyaml
 
 import utils
+import grade_reflect_loop
 
 def get_config_for( file ):
     """
@@ -155,7 +156,7 @@ def convert_to_usfm(file):
 
     this_config = get_config_for( file )
     if this_config is None:
-        this_config = utils.GetStub()
+        this_config = {}
 
     #so for USFM we have to have a separate file per book.  So I need to play some games to do
     #this correctly. It would be nice if I could have the correct book number codes.  I think I
@@ -344,6 +345,88 @@ def convert_to_markdown(file):
                             chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
 
 
+def get_sorted_verses( translation_data, reference_key ):
+    """Returns the next verse as sorted by grades"""
+    fake_config_for_grade_reflect_loop = {
+        'reference_key': reference_key,
+        'grades_per_reflection_loop': float('inf'),
+    }
+
+    def get_grade( verse ):
+        grade = grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
+        if grade is not None:
+            return grade
+        return float('inf')
+
+    sorted_verses = sorted( translation_data, key=get_grade )
+
+    return sorted_verses, get_grade
+
+
+def convert_to_sorted_report(file):
+    """Converts the output of easy_draft to a sorted report"""
+
+    print( f"converting {file} to sorted report" )
+
+    this_config = get_config_for( file )
+    if this_config is None:
+        this_config = {}
+
+    output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
+    if not os.path.exists("output/reports/"):
+        os.makedirs("output/reports/")
+
+    translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
+    reference_key = this_config.get( 'reference_key', ['vref'] )
+    source_key = this_config.get( 'source_key', ['source'] )
+
+    original_content = utils.load_jsonl(f"output/{file}")
+
+    #now sort it by the grade.
+    sorted_content, get_grade = get_sorted_verses( original_content, reference_key )
+
+    sorted_content = [x for x in sorted_content if get_grade(x) != float('inf')]
+
+    if sorted_content:
+        with open( f"output/reports/{output_file}.md", "w", encoding='utf-8' ) as f:
+            #first output a header for the report
+            for verse in sorted_content:
+                f.write( "---\n" )
+
+                vref = utils.look_up_key(verse, reference_key)
+                translation = utils.look_up_key(verse, translation_key)
+                source = utils.look_up_key(verse, source_key)
+                grade = get_grade(verse)
+
+                f.write( f"**{vref}**: _(Grade {grade:.1f})_\n\n" )
+                f.write( "**Source**:\n" )
+                f.write( "\n".join( f"> {line}" for line in source.split('\n') ) )
+                f.write( "\n\n" )
+                f.write( "**Translation**:\n" )
+                f.write( "\n".join( f"> {line}" for line in translation.split('\n') ) )
+                f.write( "\n\n" )
+
+                reflection_loops = verse.get( 'reflection_loops', [] )
+                if reflection_loops:
+                    reflection_loop = None
+                    if verse.get( 'reflection_is_finalized', False ):
+                        #if the verse is finalized, the comments need to be found from the verse which got nominated.
+                        for loop in reflection_loops:
+                            if loop.get( 'graded_verse', '' ) == translation:
+                                reflection_loop = loop
+                                break
+                    else:
+                        last_reflection_loop = reflection_loops[-1]
+                        graded_verse = last_reflection_loop.get( 'graded_verse', '' )
+                        if graded_verse == '' or graded_verse == translation:
+                            reflection_loop = reflection_loops[-1]
+
+                    #if we were able to find a loop that is the official loop.
+                    if reflection_loop:
+                        for grade_i,grade in enumerate(reflection_loop.get("grades",[])):
+                            f.write( f"**Review {grade_i+1}** "
+                                f"_(Grade {grade['grade']})_: {grade['comment']}\n\n" )
+
 
 def main():
     """
@@ -354,23 +437,29 @@ def main():
 
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
-            try:
-                convert_to_ryder_jsonl_format(file)
-            except Exception as ex:
-                print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
-            try:
-                convert_to_usfm(file)
-            except Exception as ex:
-                print( f"Problem running convert_to_usfm for {file}: {ex}")
 
-            try:
+            #try:
+                convert_to_sorted_report(file)
+            #except Exception as ex:
+            #    print( f"Problem running convert_to_sorted_report for {file}: {ex}")
+
+            #try:
+                convert_to_ryder_jsonl_format(file)
+            #except Exception as ex:
+            #    print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
+            #try:
+                convert_to_usfm(file)
+            #except Exception as ex:
+            #    print( f"Problem running convert_to_usfm for {file}: {ex}")
+
+            #try:
                 convert_to_markdown(file)
-            except Exception as ex:
-                print( f"Problem running convert_to_markdown for {file}: {ex}")
+            #except Exception as ex:
+            #    print( f"Problem running convert_to_markdown for {file}: {ex}")
 
 if __name__ == "__main__":
     main()
 
-    #convert_to_usfm( "Swarm_bible_spa_natural.jsonl" )
+    #convert_to_sorted_report( "open_bible_nueva_Biblia.jsonl" )
 
     print( "Done!" )

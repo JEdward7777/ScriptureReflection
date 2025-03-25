@@ -30,4 +30,5 @@ configs:
     temperature: 1.2
     top_p: 0.9
 global_configs:
-  ebible_dir: /home/lansford/bible_token_models/samual_liedes_experiment_data/ebible
+  #ebible_dir: /home/lansford/bible_token_models/samual_liedes_experiment_data/ebible
+  ebible_dir: ../../ebible
