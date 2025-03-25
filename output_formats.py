@@ -2,10 +2,13 @@
 Converts the generated bible into different consumable formats.
 """
 import os
+import time
 import json
 from collections import defaultdict, OrderedDict
 from datetime import datetime
 import yaml #pip install pyyaml
+from pydantic import BaseModel
+from openai import OpenAI
 
 import utils
 import grade_reflect_loop
@@ -363,6 +366,43 @@ def get_sorted_verses( translation_data, reference_key ):
     return sorted_verses, get_grade
 
 
+def summarize_verse_report( client, raw_report, config ):
+    system_message = "You are translation consultant, who is compiling correction for review from " + \
+        "a Conservative Christian perspective."
+
+    target_language = config.get("language", "English")
+
+    user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
+      "Please modify the report so that it is easier to review by the translators.\n",
+      "Provide a reference translation in ", target_language, 
+      " for every string which is in another language.  Add it in parrenthesis after the content being translated.\n",
+      "Combine the multiple reviewed into a single review in ", target_language, " combining the essence of the individual reviews.\n"
+      "Don't add any new content to the report, except for translations and summerizations.  Output in Markdown.",]
+
+    user_message_array += [
+        "\n\n**raw report**:\n"
+        "```\n", raw_report, "\n```\n"
+    ]
+
+    class SummaryResponse(BaseModel):
+        updated_report: str
+
+    completion = utils.use_model( client,
+        model=config.get('model', "gpt-4o-mini" ),
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": "".join(str(s) for s in user_message_array)}
+        ],
+        temperature=config.get('temperature', 1.2),
+        top_p=config.get('top_p', 0.9),
+        response_format=SummaryResponse
+    )
+
+    model_dump = completion.choices[0].message.parsed.model_dump()
+    result = model_dump['updated_report']
+
+    return result
+
 def convert_to_sorted_report(file):
     """Converts the output of easy_draft to a sorted report"""
 
@@ -382,84 +422,151 @@ def convert_to_sorted_report(file):
 
     original_content = utils.load_jsonl(f"output/{file}")
 
+
+    summary_cache = utils.load_json(f"output/summary_cache/{output_file}.json",{})
+    cache_modified = False
+    cache_save_time = time.time()
+
     #now sort it by the grade.
     sorted_content, get_grade = get_sorted_verses( original_content, reference_key )
 
     sorted_content = [x for x in sorted_content if get_grade(x) != float('inf')]
 
+    client = None
+    if 'api_key' in this_config:
+        with open( 'key.yaml', encoding='utf-8' ) as keys_f:
+            api_keys = yaml.load(keys_f, Loader=yaml.FullLoader)
+            client = OpenAI(api_key=utils.look_up_key( api_keys, this_config['api_key'] ))
+        
+
     if sorted_content:
-        with open( f"output/reports/{output_file}.md", "w", encoding='utf-8' ) as f:
-            #first output a header for the report
-            for verse in sorted_content:
-                f.write( "---\n" )
 
-                vref = utils.look_up_key(verse, reference_key)
-                translation = utils.look_up_key(verse, translation_key)
-                source = utils.look_up_key(verse, source_key)
-                grade = get_grade(verse)
+        is_first_raw = True
+        is_first_summarized = True
 
-                f.write( f"**{vref}**: _(Grade {grade:.1f})_\n\n" )
-                f.write( "**Source**:\n" )
-                f.write( "\n".join( f"> {line}" for line in source.split('\n') ) )
-                f.write( "\n\n" )
-                f.write( "**Translation**:\n" )
-                f.write( "\n".join( f"> {line}" for line in translation.split('\n') ) )
-                f.write( "\n\n" )
+        #first output a header for the report
+        for verse in sorted_content:
+            
+            vref = utils.look_up_key(verse, reference_key)
+            translation = utils.look_up_key(verse, translation_key)
+            source = utils.look_up_key(verse, source_key)
+            grade = get_grade(verse)
 
-                reflection_loops = verse.get( 'reflection_loops', [] )
-                if reflection_loops:
-                    reflection_loop = None
-                    if verse.get( 'reflection_is_finalized', False ):
-                        #if the verse is finalized, the comments need to be found from the verse which got nominated.
-                        for loop in reflection_loops:
-                            if loop.get( 'graded_verse', '' ) == translation:
-                                reflection_loop = loop
-                                break
-                    else:
-                        last_reflection_loop = reflection_loops[-1]
-                        graded_verse = last_reflection_loop.get( 'graded_verse', '' )
-                        if graded_verse == '' or graded_verse == translation:
-                            reflection_loop = reflection_loops[-1]
+            raw_report_array = [
+                f"**{vref}**: _(Grade {grade:.1f})_\n\n",
+                "**Source**:\n",
+                "\n".join( f"> {line}" for line in source.split('\n') ),
+                "\n\n",
+                "**Translation**:\n",
+                "\n".join( f"> {line}" for line in translation.split('\n') ),
+                "\n\n", ]
 
-                    #if we were able to find a loop that is the official loop.
-                    if reflection_loop:
-                        for grade_i,grade in enumerate(reflection_loop.get("grades",[])):
-                            f.write( f"**Review {grade_i+1}** "
-                                f"_(Grade {grade['grade']})_: {grade['comment']}\n\n" )
+            reflection_loops = verse.get( 'reflection_loops', [] )
+            if reflection_loops:
+                reflection_loop = None
+                if verse.get( 'reflection_is_finalized', False ):
+                    #if the verse is finalized, the comments need to be found from the verse which got nominated.
+                    for loop in reflection_loops:
+                        if loop.get( 'graded_verse', '' ) == translation:
+                            reflection_loop = loop
+                            break
+                else:
+                    last_reflection_loop = reflection_loops[-1]
+                    graded_verse = last_reflection_loop.get( 'graded_verse', '' )
+                    if graded_verse == '' or graded_verse == translation:
+                        reflection_loop = reflection_loops[-1]
+
+                #if we were able to find a loop that is the official loop.
+                if reflection_loop:
+                    for grade_i,grade in enumerate(reflection_loop.get("grades",[])):
+                        raw_report_array.append( f"**Review {grade_i+1}** "
+                            f"_(Grade {grade['grade']})_: {grade['comment']}\n\n" )
+
+
+            raw_report = "".join( raw_report_array )
+
+            if client is not None:
+                if raw_report not in summary_cache:
+                    summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ) )
+                    summary_cache[raw_report] = summarized_report
+                    cache_modified = True
+                else:
+                    summarized_report = summary_cache[raw_report]
+            else:
+                summarized_report = None
+
+
+            if cache_modified and time.time() - cache_save_time > 60:
+                utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )
+                cache_modified = False
+                cache_save_time = time.time()
+            
+            if raw_report:
+                if is_first_raw:
+                    mode = "w"
+                    is_first_raw = False
+                else:
+                    mode = "a"
+                with open( f"output/reports/{output_file}_raw.md", mode, encoding='utf-8' ) as f_raw:
+                    f_raw.write( "---\n" )
+                    f_raw.write( raw_report.strip() + "\n\n" )
+
+
+            if summarized_report:
+                if is_first_summarized:
+                    mode = "w"
+                    is_first_summarized = False
+                else:
+                    mode = "a"
+                with open( f"output/reports/{output_file}.md", mode, encoding='utf-8' ) as f_summarized:
+                    f_summarized.write( "---\n" )
+                    f_summarized.write( summarized_report.strip() + "\n\n" )
+
+
+    if cache_modified:
+        utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )               
 
 
 def main():
     """
     Main function.
     """
+    #Disable warning about Exception being too broad.
+    # pylint: disable=W0718
+
     #run through all the different jsonl files in the output folder and convert them to different
     #formats
 
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
 
-            #try:
+            try:
                 convert_to_sorted_report(file)
-            #except Exception as ex:
-            #    print( f"Problem running convert_to_sorted_report for {file}: {ex}")
+            except Exception as ex:
+                print( f"Problem running convert_to_sorted_report for {file}: {ex}")
+                time.sleep( 5 )
 
-            #try:
+            try:
                 convert_to_ryder_jsonl_format(file)
-            #except Exception as ex:
-            #    print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
-            #try:
-                convert_to_usfm(file)
-            #except Exception as ex:
-            #    print( f"Problem running convert_to_usfm for {file}: {ex}")
+            except Exception as ex:
+                print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
+                time.sleep( 5 )
 
-            #try:
+            try:
+                convert_to_usfm(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_usfm for {file}: {ex}")
+                time.sleep( 5 )
+
+            try:
                 convert_to_markdown(file)
-            #except Exception as ex:
-            #    print( f"Problem running convert_to_markdown for {file}: {ex}")
+            except Exception as ex:
+                print( f"Problem running convert_to_markdown for {file}: {ex}")
+                time.sleep( 5 )
 
 if __name__ == "__main__":
-    main()
+    #main()
 
-    #convert_to_sorted_report( "open_bible_nueva_Biblia.jsonl" )
+    convert_to_sorted_report( "open_bible_nueva_Biblia.jsonl" )
 
     print( "Done!" )

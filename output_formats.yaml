@@ -173,3 +173,6 @@ configs:
 
     start_line: 23146 # MAT 1:1 Ryder's file
     end_line: 24216 # MAT 28:20 Ryder's file
+
+  open_bible_nueva_Biblia:
+    api_key: [mm_key,key]

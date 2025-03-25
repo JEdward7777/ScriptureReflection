@@ -874,7 +874,7 @@ def main():
                                 if show_diffs and i > 0:
                                     #see if we can find a previous verse.
                                     diff_string = run_diff( 
-                                        reflection_loops[i-1].get('graded_verse',''), 
+                                        reflection_loops[i-1].get('graded_verse',''),
                                         reflection_loop      .get('graded_verse','') )
                                     st.markdown( "**Diff:** " + diff_string, unsafe_allow_html=True )
                             with comments_col:

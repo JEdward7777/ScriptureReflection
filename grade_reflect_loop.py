@@ -22,28 +22,6 @@ import yaml
 import utils
 
 
-def use_model( client, model, messages, temperature, top_p, response_format ):
-    """This calls ChatGPT but wraps it in a try/catch to auto rehandle exceptions."""
-
-    finished = False
-    while not finished:
-        try:
-            completion = client.beta.chat.completions.parse(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                top_p=top_p,
-                response_format=response_format
-            )
-
-            finished = True
-        except Exception as e: # pylint: disable=broad-except
-            print(f"Error calling the model in use_model: {e}")
-            print("Retrying...")
-            time.sleep(5)
-
-    return completion
-
 
 def compute_completed_loops( verse ):
     """
@@ -339,7 +317,7 @@ def grade_verse( selected_verse, common_context, client, config ):
         comment: str
         grade: int
 
-    completion = use_model( client,
+    completion = utils.use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
@@ -419,7 +397,7 @@ def summarize_corrections( selected_verse, client, config ):
         planning_thoughts: str
         summary: str
 
-    completion = use_model( client,
+    completion = utils.use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},
@@ -481,7 +459,7 @@ def perform_reflection( selected_verse, common_context, client, config ):
         reference: str
         updated_translation: str
 
-    completion = use_model( client,
+    completion = utils.use_model( client,
         model=config['model'],
         messages=[
             {"role": "system", "content": system_message},

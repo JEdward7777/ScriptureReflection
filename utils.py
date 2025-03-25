@@ -5,6 +5,7 @@ Moved them here so that the scripts don't import eachother so much.
 
 import json
 import os
+import time
 import yaml
 
 def split_ref( reference ):
@@ -49,12 +50,18 @@ def save_jsonl(filename, data):
             f.write(json.dumps(line, ensure_ascii=False) + '\n')
     os.replace(temp_filename, filename)
 
-def load_json(file):
+def load_json(file, default=None):
     """
     Load a file with one JSON object at the root.
+    If the file does not exist, return the default instead.
     """
-    with open(file, encoding='utf-8') as f:
-        return json.load(f)
+    try:
+        with open(file, encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        if default is None:
+            raise
+        return default
 
 def save_json(filename, data, indent=4):
     """
@@ -84,10 +91,10 @@ def look_up_key( data, keys, default=None, none_is_valid=True ):
             data = data[key]
         else:
             return default
-        
+
     if data is None and not none_is_valid:
         return default
-    
+
     return data
 
 def set_key( data, keys, value ):
@@ -177,3 +184,26 @@ def load_yaml_configuration( file ):
     with open( file, encoding='utf-8' ) as f:
         return yaml.load(f, Loader=yaml.FullLoader)
     return None
+
+
+def use_model( client, model, messages, temperature, top_p, response_format ):
+    """This calls ChatGPT but wraps it in a try/catch to auto rehandle exceptions."""
+
+    finished = False
+    while not finished:
+        try:
+            completion = client.beta.chat.completions.parse(
+                model=model,
+                messages=messages,
+                temperature=temperature,
+                top_p=top_p,
+                response_format=response_format
+            )
+
+            finished = True
+        except Exception as e: # pylint: disable=broad-except
+            print(f"Error calling the model in use_model: {e}")
+            print("Retrying...")
+            time.sleep(5)
+
+    return completion
