@@ -403,6 +403,56 @@ def summarize_verse_report( client, raw_report, config ):
 
     return result
 
+
+
+def translate_verse_report( client, raw_report, config ):
+
+    saw_increase_in_parenthesis = True
+
+    while saw_increase_in_parenthesis:
+        print( ".", end='' )
+        
+        system_message = "You are a translator adding translations to reviews in a Conservative Christian context."
+
+        target_language = config.get("language", "English")
+
+        user_message_array = [ "Please review the following content and everywhere there is text ",
+            f"in a language other than {target_language}, add in a translation after it in prenthesis in ",
+            f"{target_language} if it is missing." ]
+
+        user_message_array += [
+            "\n\n**content**:\n"
+            "```\n", raw_report, "\n```\n"
+        ]
+
+        class TranslationResponse(BaseModel):
+            updated_content: str
+
+        completion = utils.use_model( client,
+            model=config.get('model', "gpt-4o-mini" ),
+            messages=[
+                {"role": "system", "content": system_message},
+                {"role": "user", "content": "".join(str(s) for s in user_message_array)}
+            ],
+            temperature=config.get('temperature', 1.2),
+            top_p=config.get('top_p', 0.9),
+            response_format=TranslationResponse
+        )
+
+        model_dump = completion.choices[0].message.parsed.model_dump()
+        result = model_dump['updated_content']
+
+        old_num_parentheses = raw_report.count('(')
+        new_num_parentheses = result.count('(')
+
+        if new_num_parentheses > old_num_parentheses:
+            raw_report = result
+            saw_increase_in_parenthesis = True
+        else:
+            saw_increase_in_parenthesis = False
+
+    return result
+
 def convert_to_sorted_report(file):
     """Converts the output of easy_draft to a sorted report"""
 
@@ -424,8 +474,12 @@ def convert_to_sorted_report(file):
 
 
     summary_cache = utils.load_json(f"output/summary_cache/{output_file}.json",{})
-    cache_modified = False
-    cache_save_time = time.time()
+    summary_cache_modified = False
+    summary_cache_save_time = time.time()
+
+    translation_cache = utils.load_json(f"output/translation_cache/{output_file}.json",{})
+    translation_cache_modified = False
+    translation_cache_save_time = time.time()
 
     #now sort it by the grade.
     sorted_content, get_grade = get_sorted_verses( original_content, reference_key )
@@ -444,8 +498,15 @@ def convert_to_sorted_report(file):
         is_first_raw = True
         is_first_summarized = True
 
+        start_time = time.time()
+
         #first output a header for the report
-        for verse in sorted_content:
+        for verse_i, verse in enumerate(sorted_content):
+
+            current_time = time.time()
+            elapsed_time = current_time - start_time
+            estimated_end_time = len(sorted_content)/(verse_i+1) * elapsed_time + current_time
+            print( f"Processing verse {verse_i+1} of {len(sorted_content)} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
             
             vref = utils.look_up_key(verse, reference_key)
             translation = utils.look_up_key(verse, translation_key)
@@ -487,19 +548,34 @@ def convert_to_sorted_report(file):
 
             if client is not None:
                 if raw_report not in summary_cache:
+                    print( "Summarizing..." )
                     summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ) )
                     summary_cache[raw_report] = summarized_report
-                    cache_modified = True
+                    summary_cache_modified = True
                 else:
                     summarized_report = summary_cache[raw_report]
+
+                if summarized_report not in translation_cache:
+                    print( "Translating..." )
+                    translated_report = translate_verse_report( client, summarized_report, this_config.get( "reports", {} ) )
+                    translation_cache[summarized_report] = translated_report
+                    translation_cache_modified = True
+                else:
+                    translated_report = translation_cache[summarized_report]
+                
             else:
-                summarized_report = None
+                translated_report = None
 
 
-            if cache_modified and time.time() - cache_save_time > 60:
+            if summary_cache_modified and time.time() - summary_cache_save_time > 60:
                 utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )
-                cache_modified = False
-                cache_save_time = time.time()
+                summary_cache_modified = False
+                summary_cache_save_time = time.time()
+
+            if translation_cache_modified and time.time() - translation_cache_save_time > 60:
+                utils.save_json( f"output/translation_cache/{output_file}.json", translation_cache )
+                translation_cache_modified = False
+                translation_cache_save_time = time.time()
             
             if raw_report:
                 if is_first_raw:
@@ -512,7 +588,7 @@ def convert_to_sorted_report(file):
                     f_raw.write( raw_report.strip() + "\n\n" )
 
 
-            if summarized_report:
+            if translated_report:
                 if is_first_summarized:
                     mode = "w"
                     is_first_summarized = False
@@ -520,10 +596,10 @@ def convert_to_sorted_report(file):
                     mode = "a"
                 with open( f"output/reports/{output_file}_summarized.md", mode, encoding='utf-8' ) as f_summarized:
                     f_summarized.write( "---\n" )
-                    f_summarized.write( summarized_report.strip() + "\n\n" )
+                    f_summarized.write( translated_report.strip() + "\n\n" )
 
 
-    if cache_modified:
+    if summary_cache_modified:
         utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )               
 
 
