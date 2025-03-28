@@ -176,3 +176,5 @@ configs:
 
   open_bible_nueva_Biblia:
     api_key: [mm_key,key]
+    reports:
+      suggested_translation: open_bible_nueva_Biblia__reflected

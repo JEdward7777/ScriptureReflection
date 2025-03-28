@@ -466,7 +466,7 @@ def translate_verse_report( client, raw_report, config ):
     print()
     return result
 
-def run_report_checks( report, source, translation ):
+def run_report_checks( report, source, translation, suggested_translation ):
     #So the report has to have the source and the translation still in it.
     #It also needs to have a review in it.
 
@@ -475,6 +475,8 @@ def run_report_checks( report, source, translation ):
     for char in chars_to_ignore:
         source = source.replace(char, '')
         translation = translation.replace(char, '')
+        if suggested_translation:
+            suggested_translation = suggested_translation.replace(char, '')
         report = report.replace(char, '')
     
     if source not in report:
@@ -492,6 +494,13 @@ def run_report_checks( report, source, translation ):
             if word not in report:
                 print( f"Missed translation word: {word}" )
                 return False
+
+    if suggested_translation:
+        if suggested_translation not in report:
+            for word in suggested_translation.split():
+                if word not in report:
+                    print( f"Missed suggested translation word: {word}" )
+                    return False
 
     if 'review' not in report.lower():
         print( "Missed review" )
@@ -575,6 +584,15 @@ def convert_to_sorted_report(file):
 
     original_content = utils.load_jsonl(f"output/{file}")
 
+    if "suggested_translation" in this_config.get( "reports", {} ):
+        suggested_translation_filename = this_config["reports"]["suggested_translation"]
+        if not suggested_translation_filename.endswith( ".jsonl" ):
+            suggested_translation_filename += ".jsonl"
+        suggested_translation = utils.load_jsonl( os.path.join( "output", suggested_translation_filename ) )
+        hashed_suggested_translation = { utils.look_up_key( x, reference_key ): x for x in suggested_translation }
+    else:
+        hashed_suggested_translation = None
+
 
     summary_cache = utils.load_json(f"output/summary_cache/{output_file}.json",{})
     summary_cache_modified = False
@@ -624,6 +642,18 @@ def convert_to_sorted_report(file):
                 "**Translation**:\n",
                 "\n".join( f"> {line}" for line in translation.split('\n') ),
                 "\n\n", ]
+
+            if hashed_suggested_translation:
+                suggested_verse = hashed_suggested_translation.get( vref, None )
+                suggested_translation = utils.look_up_key( suggested_verse, translation_key )
+                if suggested_translation and suggested_translation != translation:
+                    raw_report_array.append( "**Suggested Translation**:\n" )
+                    raw_report_array.append( "\n".join( f"> {line}" for line in suggested_translation.split('\n') ) )
+                    raw_report_array.append( "\n\n" )
+                else:
+                    suggested_translation = None
+            else:
+                suggested_translation = None
 
             reflection_loops = verse.get( 'reflection_loops', [] )
             if reflection_loops:
@@ -675,7 +705,7 @@ def convert_to_sorted_report(file):
                     else:
                         summarized_report = summary_cache[raw_report]
 
-                    if not run_report_checks( summarized_report, source, translation ):
+                    if not run_report_checks( summarized_report, source, translation, suggested_translation ):
                         del summary_cache[raw_report]
                         print( f"Failed checks 1 fail count {failed_count+1}" )
                         passed_checks = False
@@ -699,7 +729,7 @@ def convert_to_sorted_report(file):
                     else:
                         translated_report = translation_cache[summarized_report]
 
-                    if not run_report_checks( summarized_report, source, translation ):
+                    if not run_report_checks( summarized_report, source, translation, suggested_translation ):
                         del translation_cache[summarized_report]
                         print( f"Failed checks 2 fail count {failed_count+1}" )
                         passed_checks = False
