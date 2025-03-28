@@ -2,6 +2,7 @@
 Converts the generated bible into different consumable formats.
 """
 import os
+import re
 import time
 import json
 from collections import defaultdict, OrderedDict
@@ -366,18 +367,24 @@ def get_sorted_verses( translation_data, reference_key ):
     return sorted_verses, get_grade
 
 
-def summarize_verse_report( client, raw_report, config ):
+def summarize_verse_report( client, raw_report, config, just_summarize=False ):
     system_message = "You are translation consultant, who is compiling correction for review from " + \
         "a Conservative Christian perspective."
 
     target_language = config.get("language", "English")
 
-    user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
-      "Please modify the report so that it is easier to review by the translators.\n",
-      "Provide a reference translation in ", target_language, 
-      " for every string which is in another language.  Add it in parrenthesis after the content being translated.\n",
-      "Combine the multiple reviewed into a single review in ", target_language, " combining the essence of the individual reviews.\n"
-      "Don't add any new content to the report, except for translations and summerizations.  Output in Markdown.",]
+    if not just_summarize:
+        user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
+        "Please modify the report so that it is easier to review by the translators.\n",
+        "Provide a reference translation in ", target_language, 
+        " for every string which is in another language.  Add it in parrenthesis after the content being translated.\n",
+        "Combine the multiple reviewed into a single review in ", target_language, " combining the essence of the individual reviews.\n"
+        "Don't add any new content to the report, except for translations and summerizations.  Make sure not to any of the **Source** or **Translation** text. Output in Markdown.",]
+    else:
+        user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
+        "Copy through the Source and Translation sections without modification.\n",
+        "Combine the multiple reviewed into a single review in ", target_language, " combining the essence of the individual reviews.\n"
+        "Don't add any new content to the report, except for translations and summerizations. Output in Markdown.",]
 
     user_message_array += [
         "\n\n**raw report**:\n"
@@ -408,10 +415,11 @@ def summarize_verse_report( client, raw_report, config ):
 def translate_verse_report( client, raw_report, config ):
 
     saw_increase_in_parenthesis = True
+    loop_count = 0
 
     while saw_increase_in_parenthesis:
         print( ".", end='' )
-        
+
         system_message = "You are a translator adding translations to reviews in a Conservative Christian context."
 
         target_language = config.get("language", "English")
@@ -448,10 +456,75 @@ def translate_verse_report( client, raw_report, config ):
         if new_num_parentheses > old_num_parentheses:
             raw_report = result
             saw_increase_in_parenthesis = True
+            loop_count += 1
         else:
             saw_increase_in_parenthesis = False
 
+        if loop_count > 7:
+            print( f"Stopping adding translations after {loop_count} loops." )
+            break
+    print()
     return result
+
+def run_report_checks( report, source, translation ):
+    #So the report has to have the source and the translation still in it.
+    #It also needs to have a review in it.
+
+    chars_to_ignore = ['.',',','―','¿', '»', '«', '“', '¡', '!', ')', '(', '”', '·', '—', '1','2','3','4','5','6','7','8','9','0']
+
+    for char in chars_to_ignore:
+        source = source.replace(char, '')
+        translation = translation.replace(char, '')
+        report = report.replace(char, '')
+    
+    if source not in report:
+        #see if each word of the source is in the report because ChatGPT might have
+        #put the translations inline.
+        for word in source.split():
+            if word not in report:
+                print( f"Missed source word: {word}" )
+                return False
+
+    if translation not in report:
+        #see if each word of the translation is in the report because ChatGPT might have
+        #put the translations inline.
+        for word in translation.split():
+            if word not in report:
+                print( f"Missed translation word: {word}" )
+                return False
+
+    if 'review' not in report.lower():
+        print( "Missed review" )
+        return False
+
+    return True
+
+def normalize_review_header( report ):
+    #we want to go with "**Combined Review**:\n" and all other versions should be replaced with it.
+
+    if "**Combined Review**:" in report.split('\n'):
+        return report
+
+    #here we only have things to fix.
+    swaps = [
+        "**Review Summary**:", 
+        "**Combined Review Summary**:",
+        "**Overall Review Summary**:",
+        "**Overall Review**:",
+        "### Combined Review",
+    ]
+    reg_swaps = ["\\*\\*Combined Review\\*\\*:?(?!\n)", "\\*\\*Combined Review\\*\\*:?[ \n:]*(_\\((Overall|Average)? ?Grade [^)]*\\)_[ \n:]*)?"]
+
+    for swap in swaps:
+        report = report.replace(swap, "**Combined Review**:\n")
+        
+    for reg_swap in reg_swaps:
+        report = re.sub(reg_swap, "**Combined Review**:\n", report)
+
+    if "**Combined Review**:" in report.split('\n'):
+        return report
+
+    return report
 
 def convert_to_sorted_report(file):
     """Converts the output of easy_draft to a sorted report"""
@@ -547,21 +620,58 @@ def convert_to_sorted_report(file):
             raw_report = "".join( raw_report_array )
 
             if client is not None:
-                if raw_report not in summary_cache:
-                    print( "Summarizing..." )
-                    summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ) )
-                    summary_cache[raw_report] = summarized_report
-                    summary_cache_modified = True
-                else:
-                    summarized_report = summary_cache[raw_report]
+                failed_count = 0
+                passed_checks = False
+                while not passed_checks:
+                    passed_checks = True
+                    if raw_report not in summary_cache:
+                        print( "Summarizing..." )
+                        if failed_count < 5:
+                            summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ) )
+                        else:
+                            summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ), just_summarize=True )
+                        summary_cache[raw_report] = summarized_report
+                        summary_cache_modified = True
+                    else:
+                        summarized_report = summary_cache[raw_report]
 
-                if summarized_report not in translation_cache:
-                    print( "Translating..." )
-                    translated_report = translate_verse_report( client, summarized_report, this_config.get( "reports", {} ) )
-                    translation_cache[summarized_report] = translated_report
-                    translation_cache_modified = True
-                else:
-                    translated_report = translation_cache[summarized_report]
+                    if not run_report_checks( summarized_report, source, translation ):
+                        del summary_cache[raw_report]
+                        print( f"Failed checks 1 fail count {failed_count}" )
+                        passed_checks = False
+                        time.sleep( 5 )
+                        failed_count += 1
+
+                    if failed_count > 10:
+                        print( "Skipping summarization" )
+                        summarized_report = raw_report
+                        passed_checks = True
+                        
+                failed_count = 0
+                passed_checks = False
+                while not passed_checks:
+                    passed_checks = True
+                    if summarized_report not in translation_cache:
+                        print( "Translating..." )
+                        translated_report = translate_verse_report( client, summarized_report, this_config.get( "reports", {} ) )
+                        translation_cache[summarized_report] = translated_report
+                        translation_cache_modified = True
+                    else:
+                        translated_report = translation_cache[summarized_report]
+
+                    if not run_report_checks( summarized_report, source, translation ):
+                        del translation_cache[summarized_report]
+                        print( f"Failed checks 2 fail count {failed_count}" )
+                        passed_checks = False
+                        time.sleep( 5 )
+                        failed_count += 1
+
+                    if failed_count > 10:
+                        print( "Skipping translation" )
+                        translated_report = summarized_report
+                        passed_checks = True
+
+                translated_report = normalize_review_header( translated_report )
                 
             else:
                 translated_report = None
@@ -571,11 +681,13 @@ def convert_to_sorted_report(file):
                 utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )
                 summary_cache_modified = False
                 summary_cache_save_time = time.time()
+                print( "Saved summary cache" )
 
             if translation_cache_modified and time.time() - translation_cache_save_time > 60:
                 utils.save_json( f"output/translation_cache/{output_file}.json", translation_cache )
                 translation_cache_modified = False
                 translation_cache_save_time = time.time()
+                print( "Saved translation cache" )
             
             if raw_report:
                 if is_first_raw:
@@ -600,7 +712,10 @@ def convert_to_sorted_report(file):
 
 
     if summary_cache_modified:
-        utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )               
+        utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )
+
+    if translation_cache_modified:
+        utils.save_json( f"output/translation_cache/{output_file}.json", translation_cache )           
 
 
 def main():
