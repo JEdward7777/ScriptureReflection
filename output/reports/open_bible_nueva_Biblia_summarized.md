@@ -1,77 +1,101 @@
 ---
 **MAT 23:2**: _(Grade 75.8)_
 
-**Source**:
-> λέγων· ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι. (saying: "The scribes and the Pharisees sit on Moses' seat.")
-
-**Translation**:
-> «¡Cualquiera que ve a estos escribas y fariseos creando leyes se creerá que son “Moisés en persona”! (Anyone who sees these scribes and Pharisees creating laws will think they are 'Moses in person'!)
-
-**Combined Review**:
-The translation of MAT 23:2 shows a commendable effort to make the biblical text accessible for modern Spanish speakers. However, several reviewers expressed concerns that the phrase "creando leyes" (creating laws) may misrepresent the original Greek intent. The original text emphasizes the authority of the scribes and Pharisees sitting in Moses' seat rather than suggesting they are literally creating laws. A more precise translation could be more aligned with a conservative approach, maintaining the respect for scriptural authority and accurately reflecting Jesus' criticism of their hypocrisy. Suggestions include using a phrase such as "los escribas y fariseos han tomado asiento en la cátedra de Moisés" (the scribes and Pharisees have taken their seat in the chair of Moses), which would better capture the original message without introducing subjective interpretations. Overall, while the translation is engaging for a Latin American audience, it requires adjustments for clarity, accuracy, and theological precision.
-
----
-**MAT 22:3**: _(Grade 78.3)_  
-
 **Source**:  
-> καὶ ἀπέστειλε τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.  
-(And he sent his servants to call those who were invited to the wedding, but they were not willing to come.)  
+> λέγων· ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι.  
+(Translation: Saying, "The scribes and the Pharisees sit on Moses' seat.")
 
 **Translation**:  
-> Envió muchísimas invitaciones, y cuando el banquete estuvo listo, mandó un mensajero a notificar a los convidados que ya podían ir. ¡Pero nadie fue!  
-(Sent many invitations, and when the banquet was ready, he sent a messenger to notify the guests that they could go. But no one went!)  
+> «¡Cualquiera que ve a estos escribas y fariseos creando leyes se creerá que son “Moisés en persona”!  
+(Translation: "Anyone who sees these scribes and Pharisees creating laws will believe that they are 'Moses in person'!")
+
+**Suggested Translation**:  
+> «Los escribas y fariseos se han sentado en la silla de Moisés.»  
+(Translation: "The scribes and Pharisees have sat on the seat of Moses.")
 
 **Combined Review**:
-The translation of MAT 22:3 attempts to make the text accessible for Spanish speakers in Latin America, but it faces several issues regarding fidelity to the original text. Phrases like "Envió muchísimas invitaciones" (Sent many invitations) imply a large number of invitations, which diverges from the singular invitation emphasized in the Greek text. Moreover, the use of "¡Pero nadie fue!" (But no one went!) simplifies the original message of indifference and could benefit from a more serious tone, such as "no quisieron venir" (they did not want to come). Overall, while the translation is clear and modern, it lacks precision in conveying the original intent of the scripture. Further adjustments are recommended to improve both accuracy and respect for the context of the parable.
+The translation of MAT 23:2 generally seeks to make the biblical text accessible for modern Spanish speakers. However, multiple reviewers expressed concerns regarding the accuracy of the phrase "Cualquiera que ve a estos escribas y fariseos creando leyes se creerá que son 'Moisés en persona'" ("Anyone who sees these scribes and Pharisees creating laws will believe that they are 'Moses in person'"), which introduces an informal interpretation that detracts from the original Greek text's focus on the authority of the scribes and Pharisees sitting in Moses' seat, implying they create laws rather than simply holding a position of authority to teach the Law. A more conservative and literal translation, such as "los escribas y fariseos han tomado asiento en la cátedra de Moisés" ("the scribes and Pharisees have taken their seat in the chair of Moses"), would better reflect the serious nature of Jesus' teaching and the intended reverence of the original scripture. Overall, while the translation attempts to engage a Latin American audience, it requires adjustments to maintain theological integrity and accurately convey the essence of the biblical message.
+
+---
+**MAT 22:3**: _(Grade 78.3)_
+
+**Source**:  
+> καὶ ἀπέστειλε τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν. (And he sent his servants to call those who were invited to the wedding, but they did not want to come.)  
+
+**Translation**:  
+> Envió muchísimas invitaciones, y cuando el banquete estuvo listo, mandó un mensajero a notificar a los convidados que ya podían ir. ¡Pero nadie fue! (He sent many invitations, and when the banquet was ready, he sent a messenger to notify the guests that they could go. But nobody went!)  
+
+**Suggested Translation**:  
+> «Envió a sus siervos a invitar a los que estaban invitados a la boda, pero no quisieron venir.» (He sent his servants to invite those who were invited to the wedding, but they did not want to come.)  
+
+**Combined Review**:
+The translation of MAT 22:3 demonstrates a commendable effort to make the biblical text accessible for contemporary Spanish-speaking audiences, particularly in Latin America. However, several reviewers noted that the phrase "Envió muchísimas invitaciones" (He sent many invitations) strays from the original Greek text, which emphasizes the singular invitation extended by the king rather than a multitude. Additionally, the expression "¡Pero nadie fue!" (But nobody went!) may oversimplify the serious implications of the invited guests' rejection, which could be better captured with a more literal rendering like "no quisieron venir" (they did not want to come). The reviews collectively highlight the need for a balance between modern language accessibility and fidelity to the original scripture's meaning and weight. While the intent to engage the audience is evident, striving for precision and maintaining the gravity of the message is crucial. The translation is effective overall but has room for improvement in accurately reflecting the original text's nuances.
 
 ---
 **MAT 10:34**: _(Grade 79.2)_
 
 **Source**:
-> Μὴ νομίσητε ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν γῆν· οὐκ ἦλθον βαλεῖν εἰρήνην, ἀλλὰ μάχαιραν. (Do not think that I have come to bring peace to the earth; I have not come to bring peace, but a sword.)
+> Μὴ νομίσητε ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν γῆν· οὐκ ἦλθον βαλεῖν εἰρήνην, ἀλλὰ μάχαιραν.  
+(Matthew 10:34: "Do not think that I have come to bring peace to the earth; I have not come to bring peace, but a sword.")
 
 **Translation**:
-> No crean que vine a traer paz a la tierra. ¡Vine a traer guerras!; (Do not think that I have come to bring peace to the earth. I have come to bring wars!);
+> No crean que vine a traer paz a la tierra. ¡Vine a traer guerras!;  
+(Don't think that I came to bring peace to the earth. I came to bring wars!)
+
+**Suggested Translation**:
+> No piensen que he venido a traer paz a la tierra; no he venido a traer paz, sino división.  
+(Don't think that I have come to bring peace to the earth; I have not come to bring peace, but division.)
 
 **Combined Review**:
-The translation of MAT 10:34 captures the essence of the original text but contains some inaccuracies. While it reflects the provocative nature of Jesus' statement, the choice of the word 'guerras' (wars) could mislead readers into thinking of physical conflict rather than the metaphorical sense of division implied by the Greek term 'μάχαιραν' (sword). Multiple reviewers noted that terms like 'división' (division) or 'confrontación' (confrontation) would better align with the original intent. Additionally, the use of an exclamation point may exaggerate the tone of the original statement. Although the translation aims to be modern and accessible, greater fidelity to the theological meaning is crucial. The overall consensus is that while the translation is engaging, it requires adjustments for clarity and accuracy to truly reflect the message of Jesus.
+The translation of MAT 10:34 generally reflects the original Greek text, but it faces criticism primarily for the use of the term 'guerras' (wars). Multiple reviewers note that this word does not accurately convey the metaphorical implications of the original Greek word 'μάχαιραν' (sword), which signifies division and conflict rather than literal warfare. The suggestion to use 'división' (division) or 'espada' (sword) aligns better with the intention of Jesus' message about the cost of discipleship and the potential for division among families due to loyalty to Him. While the translation is modern and accessible, careful consideration of word choice is essential to preserve theological meaning and clarity. Overall, the translation captures the provocative nature of Christ's statement but could be improved for precision and fidelity to the biblical context.
 
 ---
-**MAT 23:14**: _(Grade 79.2)_  
+**MAT 23:14**: _(Grade 79.2)_
 
-**Source**:  
-> Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν. (Woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in men's faces; for you neither go in yourselves, nor do you allow those who are entering to go in.)  
-  
-**Translation**:  
-> ¡Ay de ustedes, escribas y fariseos hipócritas, que por un lado hacen oraciones larguísimas en las calles y por el otro les roban las casas a las viudas! ¡Hipócritas! (Woe to you, scribes and Pharisees, hypocrites! For you make long prayers in the streets but, on the other hand, you rob widows' houses! Hypocrites!)  
-  
-**Combined Review**:
-The translation of MAT 23:14 has been noted for its strengths and weaknesses. While it effectively captures the essence and condemnation of hypocrisy in Jesus's message, it introduces inaccuracies by including phrases not present in the original Greek. The expressions 'hacen oraciones larguísimas' (make very long prayers) and 'les roban las casas a las viudas' (they rob the houses of the widows) deviate from the original focus on closing the kingdom of heaven. This could mislead readers and detracts from the textual integrity that is important from a conservative Christian perspective. To improve accuracy, the translation should emphasize their role in hindering access to the kingdom rather than adding unrelated commentary. Overall, while the translation is modern and relatable, greater fidelity to the original scripture is necessary for clarity and authenticity.
+**Source**:
+> Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν. (Woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven against men; for you neither enter yourselves, nor allow those who would enter to go in.)
 
----
-**MAT 24:34**: _(Grade 79.2)_  
+**Translation**:
+> ¡Ay de ustedes, escribas y fariseos hipócritas, que por un lado hacen oraciones larguísimas en las calles y por el otro les roban las casas a las viudas! ¡Hipócritas! (Woe to you, scribes and Pharisees, hypocrites! For you make long prayers at length while robbing widows' houses!)
 
-**Source**:  
-> ἀμὴν λέγω ὑμῖν, οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται. (Amen, I say to you, this generation will not pass away until all these things take place.)  
-
-**Translation**:  
-> Sólo entonces terminará esta era de maldad. (Only then will this era of wickedness end.)  
+**Suggested Translation**:
+> ¡Ay de ustedes, escribas y fariseos hipócritas, que cierran la puerta del reino de los cielos delante de los hombres! Porque ustedes no entran, ni dejan entrar a los que quieren. (Woe to you, scribes and Pharisees, hypocrites! For you shut the door of the kingdom of heaven in people's faces; you neither enter yourselves nor allow those who would enter to go in.)
 
 **Combined Review**:
-The translation of MAT 24:34 as "Sólo entonces terminará esta era de maldad" (Only then will this era of wickedness end.) captures the urgency and finality of Christ's statement, yet it diverges from the original Greek text, which emphasizes that 'this generation' will not pass away until all these events occur. Multiple reviews express that while the translation is clear and modern, it risks misrepresenting the intended meaning by interpreting 'era of wickedness' instead of 'generation'. To enhance accuracy, a recommended revision would be: "Esta generación no pasará hasta que todas estas cosas sucedan." (This generation will not pass away until all these things happen.) Overall, the translation is effective for a contemporary audience, but minor adjustments are necessary to ensure fidelity to the original scriptural intent.
+The translation of MAT 23:14 effectively conveys the essence and condemnation of hypocrisy among the religious leaders. However, the phrase about making long prayers and the reference to robbing widows introduces implications not present in the original Greek text. Multiple reviewers highlighted that this deviates from the core message, which focuses on closing the kingdom of heaven to others. The recommendations include rephrasing to better align with the original meaning, emphasizing the shutting of the kingdom rather than adding accusations not stated in the source. Overall, while the style is modern and accessible, there is a significant need for greater fidelity to the original scripture's intent, affecting clarity and accuracy.
 
 ---
-**MAT 10:9**: _(Grade 80.8)_  
+**MAT 24:34**: _(Grade 79.2)_
+
+**Source**:
+> ἀμὴν λέγω ὑμῖν, οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται. (Amen, I say to you, this generation will not pass away until all these things take place.)
+
+**Translation**:
+> Sólo entonces terminará esta era de maldad. (Only then will this era of wickedness end.)
+
+**Suggested Translation**:
+> Esta generación no pasará hasta que todas estas cosas sucedan. (This generation will not pass away until all these things happen.)
+
+**Combined Review**:
+The translation of MAT 24:34, "Sólo entonces terminará esta era de maldad" (Only then will this era of wickedness end), presents a clear and accessible message for Spanish speakers, yet it does not accurately reflect the original Greek meaning, which emphasizes that 'this generation' will not pass away until all these events occur. The phrase 'era de maldad' (era of wickedness) suggests a broader interpretation that diverges from the specific context of Jesus' audience, potentially leading to misunderstandings regarding His intent and the eschatological context. A more faithful translation would be: "Esta generación no pasará hasta que todas estas cosas sucedan" (This generation will not pass away until all these things happen), which aligns with conservative interpretations and preserves the urgency and finality of Christ's words. Overall, while the translation achieves a modern tone, minor adjustments are necessary to ensure fidelity to the original text.
+
+---
+**MAT 10:9**: _(Grade 80.8)_
 
 **Source**:  
 > μὴ κτήσησθε χρυσὸν μηδὲ ἄργυρον μηδὲ χαλκὸν εἰς τὰς ζώνας ὑμῶν,  
-*(Do not acquire gold, silver, or bronze for your belts)*  
+(Do not acquire gold, silver, or bronze for your belts.)
 
 **Translation**:  
-> No lleven dinero *(Do not carry money)*  
+> No lleven dinero  
+(No carry money)
+
+**Suggested Translation**:  
+> «No adquieran oro, plata ni bronce para llevar en sus cinturones.»  
+("Do not acquire gold, silver, or bronze to carry in your belts.")
 
 **Combined Review**:
-The translation of Matthew 10:9 as "No lleven dinero" is clear and straightforward, effectively communicating the essential message of the original Greek. However, it lacks completeness by not capturing the full directive present in the Greek text, which specifically mentions not acquiring gold, silver, or bronze. This omission could lead to a less precise understanding of Jesus' instruction. Reviews suggest that a more comprehensive translation could enhance clarity and reflect the seriousness of the command, aligning closely with the intent of the original text. Suggestions for improvement include adding context regarding the types of currency and potentially adopting a tone that conveys the urgency and authority of the message. While the translation serves modern Spanish speakers well, enriching it with these details could provide a deeper understanding of the scripture.
+The translation "No lleven dinero" (No carry money) is a direct and clear representation of the original Greek text, but it lacks completeness by not specifying the types of currency Jesus instructs not to carry: gold, silver, or bronze. Although it effectively communicates the basic message in a modern and accessible way, it would benefit from including a more comprehensive translation that captures the full directive. Several reviews suggest enhancing the translation by using terms that reflect ownership and preparation rather than merely physical carrying. Additionally, maintaining a tone that emphasizes the seriousness and authority of Jesus' command could enrich the reader's understanding and experience. Overall, while the current translation is clear and aligns with the goal of making the Bible accessible to Spanish speakers, it would be improved by incorporating greater detail and specificity.
 
 ---
 **MAT 18:32**: _(Grade 81.7)_
@@ -82,179 +106,222 @@ The translation of Matthew 10:9 as "No lleven dinero" is clear and straightforwa
 
 **Translation**:
 > El rey, sin pérdida de tiempo, mandó llamar al hombre al que había perdonado. “¡Malvado! ¡Perverso!”, le dijo. “¡Así que yo te perdoné aquella inmensa deuda porque me lo pediste,  
-(The king, without wasting time, summoned the man he had forgiven. 'Wicked! Perverse!' he said. 'So I forgave you that immense debt because you asked me.')
+(The king, without wasting time, called the man whom he had forgiven. "Wicked! Perverse!" he said to him. "So I forgave you that immense debt because you begged me,)
+
+**Suggested Translation**:
+> "El rey, al llamarlo, le dijo: 'Siervo negligente, te perdoné toda esa enorme deuda porque me lo pediste sinceramente. ¿No debías tú también tener compasión de tu compañero?"  
+("The king, upon calling him, said: 'Negligent servant, I forgave you all that enormous debt because you sincerely asked me. Shouldn't you also have compassion on your fellow?"
 
 **Combined Review**:
-The translation of Matthew 18:32 generally captures the core message of the original text, effectively communicating the seriousness of the king's reprimand. However, the phrases "¡Malvado! ¡Perverso!" ("Wicked! Perverse!") might be perceived as overly dramatic or informal, which could undermine the reverence intended in this significant biblical lesson about mercy and forgiveness. A suggestion is to consider alternative phrasing such as "¡Malvado! ¡Desgraciado!" ("Wicked! Unfortunate!") to convey a stronger impact while maintaining the seriousness of the context. Additionally, the latter part of the translation could be improved by ensuring a more formal tone, specifically in the phrase "porque me lo pediste" ("because you asked me"), which may be too informal. Adjusting this could help maintain the gravity of the original scripture while still being accessible to a modern audience. Overall, the translation is clear and engaging, but minor adjustments in tone and word choice would enhance its suitability for a conservative interpretation of the text.
+The translation of Matthew 18:32 captures the core message effectively for a modern Spanish-speaking audience. However, the phrases "¡Malvado! ¡Perverso!" ("Wicked! Perverse!") may be perceived as overly harsh and informal, potentially detracting from the seriousness of the biblical lesson on mercy and forgiveness. A more faithful rendering could involve using stronger terms like "¡Malvado! ¡Desgraciado!" ("Wicked! Wretched!") to reflect the gravity of the king's condemnation. The phrase "porque me lo pediste" ("because you begged me") could also be adjusted for formality and fluency, as it might dilute the original context of supplication. Overall, while the translation is accessible and clear, minor refinements in tone and word choice would enhance its alignment with conservative Christian interpretations and better convey the message of forgiveness.
 
 ---
 **MAT 23:5**: _(Grade 81.7)_
 
 **Source**:
-> πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσι πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις. πλατύνουσι γὰρ τὰ φυλακτήρια αὐτῶν καὶ μεγαλύνουσι τὰ κράσπεδα τῶν ἱματίων αὐτῶν,
-
-(But all their works they do for to be seen of men. They make broad their phylacteries, and enlarge the borders of their garments.)
+> πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσι πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις. πλατύνουσι γὰρ τὰ φυλακτήρια αὐτῶν καὶ μεγαλύνουσι τὰ κράσπεδα τῶν ἱματίων αὐτῶν,  
+> ("But all their works they do to be seen by men. They make their phylacteries broad and enlarge the borders of their garments.")
 
 **Translation**:
-> »¡Y luego se dedican a hacer obras de caridad para que los demás los vean! Para aparentar santidad, se ponen en la frente y en los brazos porciones de las Escrituras escritas en las tiras de pergamino o piel más anchas que puedan encontrar, y procuran que los flecos de sus mantos sean más largos que los de los demás. (And then they dedicate themselves to doing charitable works so that others can see them! To appear holy, they wear portions of the Scriptures written on strips of parchment or leather that are as wide as they can find on their foreheads and arms, and they make sure the fringes of their garments are longer than those of others.)
+> »¡Y luego se dedican a hacer obras de caridad para que los demás los vean! Para aparentar santidad, se ponen en la frente y en los brazos porciones de las Escrituras escritas en las tiras de pergamino o piel más anchas que puedan encontrar, y procuran que los flecos de sus mantos sean más largos que los de los demás.  
+> ("And then they dedicate themselves to doing charitable works so that others may see them! To appear holy, they wear on their foreheads and arms portions of the Scriptures written on the widest strips of parchment or leather they can find, and they try to make the fringes of their garments longer than those of others.")
 
----
+**Suggested Translation**:
+> »Todo lo que hacen, lo hacen para ser vistos por los demás. Ampliarán las cajas de las Escrituras que llevan en la frente y en los brazos, y alargarán los flecos de sus mantos, buscando la aprobación de la gente.  
+> ("Everything they do, they do to be seen by others. They will enlarge the boxes of Scriptures they wear on their foreheads and arms, and they will lengthen the fringes of their garments, seeking the approval of people.")
 
 **Combined Review**:
-The translation of MAT 23:5 has received various critiques that highlight both its strengths and weaknesses. While the modern and accessible language resonates well with contemporary Spanish speakers, there are concerns about the tone and precision of certain phrases. The expression "obras de caridad" (charitable works) may not fully capture the intent of the original Greek term "ἔργα" (works), which encompasses a broader scope beyond charity. Additionally, the phrase "aparentar santidad" (to appear holy) may dilute the serious nature of the hypocrisy being condemned. Critics suggest that more accurate alternatives, such as "buenas obras" (good works) or "actos de justicia" (acts of justice), would align better with the text's theological intent. The description of wearing scriptural portions could also be clarified to enhance understanding, specifically referring to "escrituras en tiras de pergamino" (scriptures on strips of parchment). Overall, the translation needs to strike a better balance between accessibility and fidelity to the original scripture to adequately reflect the gravity of Jesus' message.
+Summary:
+The translation of MAT 23:5 has received mixed feedback from reviewers. While it captures the essence of Jesus' rebuke toward the Pharisees and presents the content in a clear and engaging manner, several reviewers expressed concerns regarding its accuracy and theological fidelity. The phrase "obras de caridad" (charitable works) does not fully encapsulate the broader meaning of "έργα" (works) in the original Greek, which includes all deeds rather than being limited to charity. Additionally, phrases like "aparentar santidad" (to appear holy) may undermine the seriousness of the original text. It is recommended to use terminology such as "buenas obras" (good works) or "actos de justicia" (acts of justice) to better reflect the original intent. Reviewers also noted that terms like "porciones de las Escrituras" (portions of the Scriptures) could be clarified to specify "escrituras en tiras de pergamino" (scriptures on strips of parchment) for better accuracy. While the modern tone is appreciated for accessibility, achieving a balance between contemporary language and the reverence due to scripture remains crucial. Refining certain phrases and ensuring clarity could significantly enhance the translation's effectiveness.
 
 ---
 **MAT 27:30**: _(Grade 81.7)_
 
 **Source**:
-> καὶ ἐμπτύσαντες εἰς αὐτὸν ἔλαβον τὸν κάλαμον καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ.  
-(*And they spat on him, and took the staff, and struck him on the head.*)
+> καὶ ἐμπτύσαντες εἰς αὐτὸν ἔλαβον τὸν κάλαμον καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ. (And they spat on him, and took the staff, and struck him on the head.)
 
 **Translation**:
-> A veces lo escupían o le quitaban la vara y lo golpeaban con ella en la cabeza.  
-(*Sometimes they spat on him or took the staff and struck him on the head.*)
+> A veces lo escupían o le quitaban la vara y lo golpeaban con ella en la cabeza. (Sometimes they spat on him or took the staff and hit him on the head.)
+
+**Suggested Translation**:
+> Le escupieron, tomaron el cetro y lo golpeaban en la cabeza. (They spat on him, took the staff, and struck him on the head.)
 
 **Combined Review**:
-The translation of MAT 27:30 effectively conveys the essence of the original Greek text, successfully capturing the actions of the soldiers in their mockery and abuse of Jesus. However, the phrase 'A veces lo escupían' (*sometimes they spat on him*) could be perceived as downplaying the severity of the repeated actions. A more impactful translation might be 'Le escupieron' (*they spat on him*), which aligns more closely with the continuous brutality depicted in the scene. While the translation maintains clarity and accessibility for contemporary Spanish speakers, it could benefit from minor adjustments for greater emotional weight and fidelity to the original scripture. Overall, it is a commendable translation that meets the accessibility objective but requires refinement to fully resonate with the conservative Christian perspective.
+The translation of MAT 27:30 effectively conveys the original Greek text's essence, maintaining clarity and accessibility for contemporary Spanish-speaking audiences. However, the phrase "A veces lo escupían" (sometimes they spat on him) could imply a casualness that undermines the brutality of the scene. Reviews suggest that a more direct approach, such as "Le escupieron" (they spat on him), would enhance the translation's impact and better reflect the severity of the actions described. Overall, while the translation meets the objectives of accessibility, it requires slight adjustments to improve fidelity to the original text and emotional tone, making it more resonant for readers with a conservative Christian perspective.
 
 ---
-**MAT 1:25**: _(Grade 83.3)_  
+**MAT 1:25**: _(Grade 83.3)_
 
-**Source**:  
-> καὶ οὐκ ἐγίνωσκεν αὐτὴν ἕως οὗ ἔτεκε τὸν υἱὸν αὐτῆς τὸν πρωτότοκον, καὶ ἐκάλεσε τὸ ὄνομα αὐτοῦ Ἰησοῦν.  
-(And he knew her not until she had brought forth her firstborn son: and he called his name Jesus.)  
-  
-**Translation**:  
-> aunque no tuvo relaciones sexuales con ella hasta que nació su hijo. Cuando el niño nació, José lo llamó Jesús.  
-(though he had no relations with her until she gave birth to her son. When the child was born, Joseph called him Jesus.)  
-  
+**Source**:
+> καὶ οὐκ ἐγίνωσκεν αὐτὴν ἕως οὗ ἔτεκε τὸν υἱὸν αὐτῆς τὸν πρωτότοκον, καὶ ἐκάλεσε τὸ ὄνομα αὐτοῦ Ἰησοῦν. (And he did not know her until she had given birth to her firstborn son; and he named him Jesus.)
+
+**Translation**:
+> aunque no tuvo relaciones sexuales con ella hasta que nació su hijo. Cuando el niño nació, José lo llamó Jesús. (although he did not have sexual relations with her until she gave birth to her son. When the boy was born, Joseph named him Jesus.)
+
+**Suggested Translation**:
+> y no la conoció hasta que nació su hijo, y cuando nació su hijo, José le puso por nombre Jesús. (and he did not know her until she had given birth to her son, and when her son was born, Joseph named him Jesus.)
+
 **Combined Review**:
-The translation of MAT 1:25 successfully conveys the essential meaning of the original text, with clarity and accessibility for modern audiences. However, several reviews indicate that the phrase "no tuvo relaciones sexuales con ella" (had no relations with her) might be perceived as overly explicit in a conservative Christian context. A more respectful and euphemistic phrase such as "no la conoció" (did not know her) is suggested to maintain the reverence typically associated with biblical texts. Additionally, while the structure of the translation is clear, some reviewers recommend softening the language further, particularly in the second sentence, to better align with traditional interpretations. Overall, the translation is effective but could benefit from slight adjustments to enhance its sensitivity and appropriateness for a conservative audience.
+The translation of MAT 1:25 successfully conveys the essential meaning of the original text, presenting it clearly for modern readers. However, the phrase "no tuvo relaciones sexuales con ella" (he did not have sexual relations with her) may be considered overly explicit for a conservative Christian audience, detracting from the reverence expected in biblical translations. A preferred wording could be "no la conoció" (he did not know her), which serves as a more respectful euphemism for intimate relations. Additionally, while the overall structure of the translation is effective and clear, the tone could benefit from being softened in certain areas to align better with conservative sensitivities. Overall, the translation is good but could use minor adjustments to enhance its appropriateness for a conservative Christian context.
 
 ---
 **MAT 13:51**: _(Grade 83.3)_
 
 **Source**:
-> Λέγει αὐτοῖς ὁ Ἰησοῦς· συνήκατε ταῦτα πάντα; λέγουσιν αὐτῷ, ναί, Κύριε.
-> (Jesus said to them, "Do you understand all these things?" They said to him, "Yes, Lord.")
+> Λέγει αὐτοῖς ὁ Ἰησοῦς· συνήκατε ταῦτα πάντα; λέγουσιν αὐτῷ, ναί, Κύριε. (Jesus said to them, "Do you understand all these things?" They said to him, "Yes, Lord.")
 
 **Translation**:
-> ¿Entienden ahora?». (Do you understand now?)
-> ―Sí —contestaron—. Gracias. (Yes, they answered—. Thank you.)
+> ¿Entienden ahora? —Sí —contestaron—. Gracias. (Do you understand now? —Yes —they answered—. Thank you.)
+
+**Suggested Translation**:
+> ¿Entienden ahora? —Sí, Señor —respondieron. (Do you understand now? —Yes, Lord —they answered.)
 
 **Combined Review**:
-The translation of MAT 13:51 successfully captures the essence of the original Greek text while using a modern, accessible style appropriate for Latin American Spanish speakers. However, the response 'Gracias' (Thank you) is seen as overly casual for a biblical context, detracting from the solemnity of the exchange. Several reviewers suggested a more formal acknowledgment, such as 'Sí, Señor' (Yes, Lord), to better align with the gravity of the dialogue between Jesus and his disciples. Overall, while the translation is effective in engaging the target audience, adjustments are needed for a more faithful representation of the original intent and reverence expected in biblical texts.
+The translation of MAT 13:51 largely conveys the essence of the original Greek text and employs a modern and accessible style suitable for Latin American Spanish speakers. The rhetorical question, '¿Entienden ahora?' (Do you understand now?) effectively reflects Jesus' intent, while the initial response '―Sí —contestaron—.' (Yes —they answered—.) is appropriate. However, the inclusion of 'Gracias' (Thank you) at the end detracts from the solemnity and authority expected in a biblical context. A more fitting conclusion would emphasize acknowledgment and reverence, such as 'Sí, Señor.' (Yes, Lord.) Overall, while the translation captures the core meaning and is engaging, adjustments are recommended to ensure it aligns more closely with the traditional biblical tone.
 
 ---
-**MAT 15:15**: _(Grade 83.3)_  
+**MAT 15:15**: _(Grade 83.3)_
 
-**Source**:  
-> ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ· φράσον ἡμῖν τὴν παραβολὴν ταύτην. (And Peter answered and said to Him, "Explain this parable to us.")  
+**Source**:
+> ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ· φράσον ἡμῖν τὴν παραβολὴν ταύτην. (And Peter answered him, "Explain this parable to us.")
 
-**Translation**:  
-> Pedro le pidió que les explicara aquello de que comer los alimentos que la ley judía prohíbe no es lo que contamina al hombre. (Peter asked Him to explain what eating the foods that the Jewish law prohibits has to do with what contaminates a person.)  
+**Translation**:
+> Pedro le pidió que les explicara aquello de que comer los alimentos que la ley judía prohíbe no es lo que contamina al hombre. (Peter asked him to explain to them that eating foods that the Jewish law prohibits is not what defiles a person.)
+
+**Suggested Translation**:
+> Pedro le dijo: «Señor, ¿puedes explicarnos esta parábola sobre lo que realmente contamina al ser humano?» (Peter said to him: "Lord, can you explain this parable about what truly defiles a human being?")
 
 **Combined Review**:
-Summary  
-The translation of MAT 15:15 effectively communicates the essence of Peter's inquiry to Jesus, presenting it in a clear and modern style suitable for Latin American audiences. However, several reviews noted that the phrasing around contamination could potentially distract from the deeper spiritual message that Jesus conveyed regarding internal purity versus external observance of dietary laws.  
+The translation of MAT 15:15 has garnered mixed feedback, highlighting both its strengths and areas for improvement. Many reviewers commend the translation for its clarity and accessibility to modern Spanish speakers, noting that it effectively captures the essence of Peter's inquiry. However, there is a consensus that the translation might be overly focused on dietary laws, which detracts from the deeper spiritual implications of Jesus' message regarding inner purity versus external traditions.
 
-Reviewers suggested that the translation could be refined for greater accuracy, particularly to reflect that Peter's question is seeking clarification rather than emphasizing contamination due to dietary restrictions. Some recommended that the phrase about contamination be clarified to better connect with the surrounding verses, focusing more on the heart's intentions.  
+Several reviewers point out that the phrase "no es lo que contamina al hombre" (is not what defiles a person) could lead to misunderstanding, as it suggests a focus on dietary restrictions rather than reflecting Peter's request for clarification about a parable. A more faithful rendering of the source text is recommended to better align with the original inquiry.
 
-Overall, while the translation is modern and engaging, it could benefit from a slight adjustment to enhance clarity and ensure fidelity to the original text's meaning.
+In conclusion, while the translation serves its purpose of being relatable and modern, refining certain phrases could enhance its theological accuracy and ensure that it reflects the true intent of the passage.
 
 ---
 **MAT 22:5**: _(Grade 83.3)_
 
 **Source**:
-> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·  
-> ("But the rest paid no attention and went away, one to his own farm, another to his business;")
+> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ; (But they paid no attention and went away, one to his own farm, another to his business.)
 
 **Translation**:
-> Algunos de los invitados se rieron de los mensajeros y se fueron a sus labranzas o negocios;  
-> ("Some of the invited laughed at the messengers and went to their farming or businesses;")
+> Algunos de los invitados se rieron de los mensajeros y se fueron a sus labranzas o negocios; (Some of the guests laughed at the messengers and went to their fields or businesses.)
+
+**Suggested Translation**:
+> Algunos de los invitados despreciaron la invitación y se fueron a trabajar en sus campos o a sus negocios; (Some of the guests despised the invitation and went to work in their fields or to their businesses.)
 
 **Combined Review**:
-Summary
-The translation of MAT 22:5 is generally accurate and captures the essence of the original text. However, there are suggestions for improving clarity and the depth of meaning. The phrase "se rieron de los mensajeros" ("laughed at the messengers") could be interpreted as too informal or lacking the gravity of the guests' dismissal. A more fitting translation could be "despreciaron a los mensajeros" ("despised the messengers") to convey a stronger sense of disregard. The wording "se fueron a sus labranzas o negocios" ("went to their farming or businesses") could be improved to "se fueron a trabajar en sus campos o a sus negocios" ("went to work in their fields or to their businesses") for better clarity and accessibility. Additionally, the term "labranza" ("farming") may not resonate with all audiences, and using a term like "trabajo en el campo" ("work in the field") could enhance understanding. Overall, while the translation is effective and engaging for Spanish speakers, slight adjustments in language and structure are recommended to better reflect the urgency and seriousness of the message in a conservative context.
+The translation of MAT 22:5 generally conveys the original text's essence but requires refinement in clarity and style. The phrase "se rieron de los mensajeros" (they laughed at the messengers) does not fully capture the dismissive attitude present in the Greek, as it implies mockery rather than disregard; terms like "despreciaron" (despised) would communicate a stronger sense of disdain. Furthermore, while "se fueron a sus labranzas o negocios" (they went to their fields or businesses) is clear, a phrasing such as "se fueron a trabajar en sus campos o a sus negocios" (they went to work in their fields or to their businesses) might enhance understanding. Adjustments for clarity and tone are essential, especially considering the message's gravity regarding the invitation to the Kingdom of God. The use of "labranza" (farming) may also be confusing; more accessible terms like "trabajos" (jobs) or "actividades" (activities) might resonate better with the audience. Overall, this translation is a good effort but can be improved to better reflect the seriousness and nuances of the biblical message.
 
 ---
 **MAT 22:11**: _(Grade 83.3)_
 
 **Source**:
 > εἰσελθὼν δὲ ὁ βασιλεὺς θεάσασθαι τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ ἐνδεδυμένον ἔνδυμα γάμου,  
-(When the king entered to see the guests, he saw there a man who was not dressed in wedding attire)
+(But when the king came in to see the guests, he saw there a man which had not on a wedding garment.)
 
 **Translation**:
 > Pero cuando el rey fue a ver a los convidados, vio que uno no traía puesto el vestido de boda que había comprado para los invitados.  
-(But when the king went to see the guests, he saw that one did not wear the wedding garment that he had bought for the guests.)
+(But when the king went to see the guests, he saw that one did not have on the wedding garment that he had bought for the guests.)
+
+**Suggested Translation**:
+> Pero cuando el rey entró para ver a los convidados, vio a un hombre que no llevaba el vestido de boda adecuado.  
+(But when the king entered to see the guests, he saw a man who did not wear the appropriate wedding garment.)
 
 **Combined Review**:
-The translation of MAT 22:11 is generally clear and maintains the essence of the original text while using modern Spanish. However, the phrase 'que había comprado para los invitados' (that he had bought for the guests) introduces an implication not found in the original Greek, suggesting that the man purchased the garment. This alteration could mislead readers regarding the significance of the wedding garment, which is typically understood as a requirement provided for the guests. A more faithful translation that directly reflects the nature of the garment and its theological importance would enhance accuracy and clarity. Overall, while the translation is accessible, it could be improved to align more closely with traditional interpretations, focusing on the necessity of wearing the proper attire rather than the implication of purchasing it.
+The translation of MAT 22:11 accurately captures the essence of the original text and presents it in a clear and modern Spanish style. However, there are concerns regarding the phrase 'que había comprado para los invitados,' (that he had bought for the guests) as it suggests that the garment was purchased, which is not explicitly stated in the original Greek. This misinterpretation could lead to confusion regarding the theological significance of the wedding garment, which should represent preparedness for acceptance into the feast. A more literal translation focusing on the necessity of wearing the appropriate attire, such as 'que no llevaba el vestido de boda adecuado,' (that he did not wear the appropriate wedding garment) would better reflect the original intent and significance of the passage. Overall, while the translation is commendable for its clarity and accessibility, adjustments are needed to ensure fidelity to the original text and its theological implications.
 
 ---
 **MAT 23:11**: _(Grade 83.3)_
 
 **Source**:
-> ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος. (But the greatest among you shall be your servant.)
+> ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος. (The greatest among you will be your servant.)
 
 **Translation**:
-> Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás. (The more humbly we serve others, the greater we will be. To be great, one must serve others.)
+> Mientras más humildemente sirvamos a los demás, más grandes seremos. (The more humbly we serve others, the greater we will be.) Para ser grande hay que servir a los demás. (To be great, one must serve others.)
+
+**Suggested Translation**:
+> El mayor entre ustedes será su servidor. (The greatest among you will be your servant.)
 
 **Combined Review**:
-The translation of MAT 23:11 effectively captures the essence of the original Greek text, emphasizing humility and service in modern Spanish. However, the phrase 'Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás' (The more humbly we serve others, the greater we will be. To be great, one must serve others), while conveying the intended message, could be refined for clarity and formality. Suggestions for improvement include adopting a more direct representation of the original wording, such as 'El mayor entre ustedes será su servidor' (The greatest among you shall be your servant), which retains the authoritative tone of the original scripture. While the translation is accessible and suitable for contemporary readers, it should aim for greater precision to preserve the original meaning and tone. Overall, it demonstrates a solid understanding of the source material, but adjustments could enhance its fidelity to the biblical text.
+The translation of MAT 23:11 generally succeeds in capturing the essence of the original Greek text, which emphasizes humility and service. However, multiple reviewers have suggested that the phrase "Mientras más humildemente sirvamos a los demás, más grandes seremos" (The more humbly we serve others, the greater we will be) could be simplified and made more direct to align closely with the original wording. A more accurate rendering would be "El mayor entre ustedes será su servidor," (The greatest among you will be your servant) which reflects the authoritative tone of Jesus’ message. Several reviews pointed out that the current translation introduces a complexity that may obscure the direct teaching of the scripture. While the modern language used is accessible to a contemporary audience, it is essential that the translation maintains fidelity to the original intent and formal tone of the biblical text. Adjustments for conciseness and clarity could enhance its effectiveness for the audience. Overall, the translation shows a commendable effort but requires refinement to better represent the scripture's message and gravity.
 
 ---
 **MAT 24:43**: _(Grade 83.3)_
 
 **Source**:
-> Ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασε διορυγῆναι τὴν οἰκίαν αὐτοῦ. ("But know this: if the master of the house had known what hour the thief would come, he would have watched and not allowed his house to be broken into.")
+> Ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασε διορυγῆναι τὴν οἰκίαν αὐτοῦ. (But know this: that if the master of the house had known at what hour the thief would come, he would have watched and not allowed his house to be broken into.)
 
 **Translation**:
-> De la misma manera que el padre de familia se mantiene vigilante para que los ladrones no se introduzcan en la casa, ("In the same way, the householder stays alert so that thieves do not enter the house,")
+> De la misma manera que el padre de familia se mantiene vigilante para que los ladrones no se introduzcan en la casa, (Just as the householder stays vigilant to prevent thieves from breaking into the house,)
+
+**Suggested Translation**:
+> Así como el dueño de casa se mantiene alerta para que el ladrón no se meta en su casa, de la misma manera ustedes deben estar preparados. (Just as the master of the house stays alert to prevent the thief from entering his house, in the same way, you must be prepared.)
 
 **Combined Review**:
-The translation of MAT 24:43 has received varied feedback highlighting both strengths and areas for improvement. Generally, the translation captures the essence of the original Greek text, making it accessible for a modern Spanish-speaking audience. However, several reviews pointed out that the phrase 'de la misma manera que el padre de familia se mantiene vigilante' could be improved to emphasize vigilance more directly, possibly as 'así como el dueño de casa se mantiene alerta'. Additionally, it has been noted that the translation is incomplete, lacking crucial elements from the original scripture that convey the urgency of the warning. To enhance accuracy and clarity, it is important to retain the original imagery and message regarding preparedness for Christ's return. Overall, while the translation is modern and engaging, it would benefit from adjustments to improve faithfulness to the text and enhance the tone of alertness inherent in the scripture.  
+The translation of MAT 24:43 effectively communicates the core message of the original Greek text, capturing its urgency and importance. Most reviews commend the clarity and modern language used, making it accessible to Spanish speakers in Latin America. However, there are several suggestions for improvement.
 
-**Final Grade**: 85
+1. The phrase 'de la misma manera que el padre de familia se mantiene vigilante' should be adjusted to 'así como el dueño de casa se mantiene alerta,' emphasizing vigilance more directly.  
+2. Some reviews note that the translation is incomplete, missing essential elements of the verse which could affect comprehension. It’s crucial that each translation remains faithful to the original text and doesn’t omit key information.  
+3. Additionally, the warning's urgency could be conveyed more effectively by enhancing certain phrases to reflect watchfulness against danger more clearly.  
+
+Overall, while the translation succeeds in its accessibility and engagement, it requires some revisions to improve accuracy, completeness, and the tone of alertness that the scripture embodies.  
+
+Grade: 85
 
 ---
-**MAT 26:48**: _(Grade 83.3)_  
+**MAT 26:48**: _(Grade 83.3)_
 
-**Source**:  
-> ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον λέγων· ὃν ἂν φιλήσω, αὐτός ἐστι· κρατήσατε αὐτόν.  
-(Translation: "And he who was betraying him gave them a sign, saying, 'Whomever I kiss, he is the one; seize him.")  
+**Source**:
+> ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον λέγων· ὃν ἂν φιλήσω, αὐτός ἐστι· κρατήσατε αὐτόν.  (And the betrayer gave them a sign, saying, 'Whomever I kiss, he is the one; seize him.')
 
-**Translation**:  
-> esperaban solamente que Judas identificara con un beso al Maestro.  
-(Translation: "they were only waiting for Judas to identify the Master with a kiss.")  
+**Translation**:
+> esperaban solamente que Judas identificara con un beso al Maestro. (they were only waiting for Judas to identify the Master with a kiss.)
+
+**Suggested Translation**:
+> «Judas les dio una señal: al que yo bese, ese es. ¡Agárrenlo!» (Judas gave them a sign: 'The one I kiss is he; seize him!')
 
 **Combined Review**:
-The translation of MAT 26:48 effectively captures the essence of the original Greek text while maintaining accessibility for Spanish speakers. The phrase "esperaban solamente que Judas identificara con un beso al Maestro" ("they were only waiting for Judas to identify the Master with a kiss.") conveys the urgency behind Judas's actions, but there is room for improvement in emphasizing the betrayal aspect of the verse. Suggested revisions include using a more direct phrase like "aquel a quien besara" ("the one whom I will kiss") or rephrasing it to clarify Judas's role as the betrayer, such as "El traidor les dio una señal: al que yo bese, ese es; agárrenlo" ("The traitor gave them a sign: 'the one I kiss, he is; seize him.'"). These adjustments would enhance both clarity and the emotional impact of the moment, making the translation more resonant for the audience. Overall, the translation meets the objective of being relatable and modern, but minor tweaks could further enrich its clarity and seriousness regarding Judas's betrayal.
+The translation of MAT 26:48 adequately conveys the essence of the original Greek text. However, it has been noted that the phrase "esperaban solamente que Judas identificara con un beso al Maestro" (they were only waiting for Judas to identify the Master with a kiss) lacks clarity in expressing the gravity of Judas's betrayal. Suggestions include making the language more direct and emotionally resonant, possibly by using phrases like "El traidor les dio una señal diciendo: 'A quien yo bese, ese es; asegúrense de arrestarlo.'" (The betrayer gave them a sign, saying: 'Whomever I kiss, he is the one; make sure to arrest him.') This approach would enhance clarity and impact while remaining accessible and relatable to Spanish speakers. Overall, while the translation is commendable for its modern style, slight adjustments could sharpen the focus on the betrayal and improve engagement.
+
+Overall, I would grade this translation as 85/100.
 
 ---
 **MAT 3:8**: _(Grade 83.8)_
 
 **Source**:
-> ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας (Therefore, produce fruit worthy of repentance)
+> ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας, (Therefore produce fruit worthy of repentance)
 
 **Translation**:
-> Demuestren, antes de bautizarse, que están arrepentidos. (Demonstrate, before being baptized, that you are repentant.)
+> Demuestren, antes de bautizarse, que están arrepentidos. (Show that you are repentant before being baptized)
+
+**Suggested Translation**:
+> "Produzcan, pues, frutos dignos de arrepentimiento." (Therefore, produce fruits worthy of repentance)
 
 **Combined Review**:
-The translation of Matthew 3:8, "Demuestren, antes de bautizarse, que están arrepentidos," (Demonstrate, before being baptized, that you are repentant) generally captures the essence of the original Greek text. It effectively communicates the imperative nature of repentance. However, several reviewers noted that the phrase "antes de bautizarse" (before being baptized) may inadvertently suggest that repentance is merely a prerequisite to baptism, rather than emphasizing the necessity of producing evidence of true repentance as stated in the Greek. A more direct rendering like "Produzcan, pues, frutos dignos de arrepentimiento" (Produce, therefore, fruits worthy of repentance) would enhance accuracy and theological clarity. Additionally, the translation could better reflect the depth and urgency of the original message. While it is engaging for contemporary Spanish-speaking audiences, the feedback highlights opportunities for improving fidelity to the source text. Overall, the translation is solid, but revisions are recommended for greater precision and alignment with the original intent.
+The translation of Matthew 3:8, "Demuestren, antes de bautizarse, que están arrepentidos," (Show that you are repentant before being baptized) effectively communicates the core message of repentance. However, several reviews point out that the phrase "antes de bautizarse" (before being baptized) adds unnecessary context that is not explicitly stated in the original Greek, which emphasizes producing fruit as evidence of repentance. A more direct translation, such as "Produzcan, pues, frutos dignos de arrepentimiento," (Therefore, produce fruits worthy of repentance) captures the essence and urgency of John's call for repentance more accurately.
+
+Additionally, while the current translation is engaging for modern Spanish speakers, it could be improved for clarity in terms of theological implications and fidelity to the original text. The overall sentiment across reviews suggests maintaining the imperative call to action while ensuring that the translation reflects the original message's depth and intent.
 
 ---
 **MAT 19:3**: _(Grade 83.8)_
 
 **Source**:
-> Καὶ προσῆλθον αὐτῷ οἱ Φαρισαῖοι πειράζοντες αὐτὸν καὶ λέγοντες αὐτῷ· εἰ ἔξεστιν ἀνθρώπῳ ἀπολῦσαι τὴν γυναῖκα αὐτοῦ κατὰ πᾶσαν αἰτίαν; (And the Pharisees came to Him, testing Him, and saying to Him, "Is it lawful for a man to divorce his wife for any reason?")
+> Καὶ προσῆλθον αὐτῷ οἱ Φαρισαῖοι πειράζοντες αὐτὸν καὶ λέγοντες αὐτῷ· εἰ ἔξεστιν ἀνθρώπῳ ἀπολῦσαι τὴν γυναῖκα αὐτοῦ κατὰ πᾶσαν αἰτίαν;  
+(And the Pharisees came to Him, testing Him, and saying to Him, "Is it lawful for a man to divorce his wife for any reason?")
 
 **Translation**:
-> Varios fariseos, en una entrevista, trataron de hacerlo caer en la trampa de decir algo que luego ellos pudieran utilizar contra él. (Several Pharisees, in an interview, tried to trap Him into saying something they could later use against Him.)  
-> —¿Apruebas el divorcio? —le preguntaron. ("Do you approve of divorce?" they asked.)
+> Varios fariseos, en una entrevista, trataron de hacerlo caer en la trampa de decir algo que luego ellos pudieran utilizar contra él.  
+(Various Pharisees, in an interview, tried to trap Him into saying something they could later use against Him.)  
+> ―¿Apruebas el divorcio? —le preguntaron.  
+("Do you approve of divorce?" they asked.)
+
+**Suggested Translation**:
+> Se acercaron a él algunos fariseos, tratando de ponerlo a prueba, y le preguntaron: "¿Está permitido que un hombre se divorcie de su esposa por cualquier motivo?"  
+(Some Pharisees approached Him, trying to test Him, and asked Him, "Is it permitted for a man to divorce his wife for any reason?")
 
 **Combined Review**:
-The translation of MAT 19:3 is generally engaging and modern, effectively conveying the interaction between Jesus and the Pharisees. However, it presents some issues concerning the gravity and context of the original text. Phrases like "en una entrevista" (in an interview) do not adequately capture the confrontational nature of the encounter, which was a testing rather than a casual discussion. Additionally, "trataron de hacerlo caer en la trampa" (tried to trap Him) and the simplification to "¿Apruebas el divorcio?" (Do you approve of divorce?) may undermine the seriousness of the topic of divorce, which is critical for a conservative Christian audience. A more direct approach that maintains the solemnity and authority of the dialogue would enhance accuracy without sacrificing readability. Overall, while the translation is accessible, it would benefit from adjustments to ensure it reflects the seriousness of the inquiry posed to Jesus.
+The translation of MAT 19:3 generally captures the essence of the original text, successfully presenting the interaction between Jesus and the Pharisees. However, the use of phrases like 'en una entrevista' (in an interview) and 'trataron de hacerlo caer en la trampa' (tried to trap Him) might convey a more casual tone than desired in a biblical context. It is important to maintain the solemnity and authority of the dialogue, reflecting the serious inquiry about divorce. Suggestions for improvement include refining these phrases for greater fidelity to the original context and intent. A more traditional and straightforward translation could enhance clarity and maintain the seriousness of the topic discussed.
 
 ---
 **MAT 13:37**: _(Grade 84.2)_
@@ -263,24 +330,31 @@ The translation of MAT 19:3 is generally engaging and modern, effectively convey
 > ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς· ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου· (And he answered and said to them: The one sowing the good seed is the Son of Man)
 
 **Translation**:
-> —Muy bien—comenzó—: Yo soy el labrador que siembra el grano selecto. (Very well—he began—: I am the farmer who sows the select grain.)
+> —Muy bien—comenzó—: Yo soy el labrador que siembra el grano selecto. (Very well, he began: I am the farmer who sows the select grain.)
+
+**Suggested Translation**:
+> «El sembrador de la buena semilla es el Hijo del Hombre». (The sower of the good seed is the Son of Man.)
 
 **Combined Review**:
-The translation of MAT 13:37 is generally well executed, capturing the essence of the original Greek text while striving to be modern and accessible for Spanish-speaking audiences. However, the phrase "Yo soy el labrador que siembra el grano selecto" (I am the farmer who sows the select grain) may lead to ambiguity, as 'labrador' (farmer) is less precise than the original Greek 'ο σπείρων' (the sower). A more accurate term such as "el Hijo del Hombre" (the Son of Man) would better reflect Jesus' identity, which is essential for conservative interpretations. Additionally, the informal tone could detract from the reverence typically associated with biblical text. Overall, the translation is commendable, yet slight adjustments in terminology and tone could enhance its fidelity and respect towards the original scripture.
+The translation of MAT 13:37 effectively conveys the essential meaning of the original text while making it accessible to modern Spanish speakers. However, the phrase 'Yo soy el labrador que siembra el grano selecto' (I am the farmer who sows the select grain) introduces ambiguity, as 'labrador' (farmer) may not accurately represent the term 'sower.' A more suitable term, such as 'sembrador' (sower), is recommended to better align with traditional biblical language and reflect the original text more accurately. Moreover, the identification of Jesus as 'el Hijo del Hombre' (the Son of Man) is crucial for theological accuracy and should be emphasized. The translation maintains clarity but could benefit from adjustments to enhance its reverence and fidelity to scripture, particularly within a conservative Christian context.
 
 ---
 **MAT 10:10**: _(Grade 84.3)_
 
 **Source**:
 > μὴ πήραν εἰς ὁδὸν μηδὲ δύο χιτῶνας μηδὲ ὑποδήματα μηδὲ ῥάβδον· ἄξιος γάρ ἐστιν ὁ ἐργάτης τῆς τροφῆς αὐτοῦ.  
->(Do not take a bag for the journey, or extra tunics, or sandals, or a staff; for the worker is worthy of his food.)
+(Translation: "Do not carry a bag; nor two tunics, nor sandals, nor a staff; for the worker is worthy of his food.")
 
 **Translation**:
 > ni bolsa con comida; no lleven más túnicas ni más calzado que los que traen puestos, ni lleven bordón, porque las personas a las que ustedes ayuden tienen el deber de alimentarlos y cuidarlos.  
->(do not take a bag for the journey; do not carry extra tunics or sandals, or a staff, because those whom you help have the duty to care for them.)
+(Translation: "Do not carry a bag with food; do not bring more tunics or more shoes than those you have on, nor carry a staff, because the people you help have the duty to feed and care for them.")
+
+**Suggested Translation**:
+> «No lleven bolsa de comida, ni dos túnicas, ni sandalias, ni un bordón, porque el trabajador es digno de su sustento.»  
+(Translation: "Do not carry a bag of food, nor two tunics, nor sandals, nor a staff, for the worker is worthy of his sustenance.")
 
 **Combined Review**:
-The translation of Matthew 10:10 effectively conveys the original meaning while maintaining a modern and accessible style for Spanish speakers. It preserves essential elements and communicates directives clearly. However, the phrase "porque las personas a las que ustedes ayuden tienen el deber de alimentarlos y cuidarlos" (because those whom you help have the duty to care for them) introduces a potential interpretative bias that shifts focus from the directive of relying on the hospitality of others to an implied obligation from recipients. This can create ambiguity and detracts from the simplicity of the original message, which emphasizes the worthiness of the worker without suggesting a duty from those being ministered to. It is recommended to revise this phrase for greater fidelity to the original text. Overall, the translation is strong, capturing the essential message, but minor improvements in clarity and adherence to the original intention could enhance its effectiveness.
+The translation of Matthew 10:10 generally succeeds in conveying the essential meaning and intent of the original Greek text while adopting a modern and accessible style suitable for Spanish speakers. Several reviewers noted that while the overall message is clear and relatable, the phrase "las personas a las que ustedes ayuden tienen el deber de alimentarlos y cuidarlos" (Translation: "the people you help have the duty to feed and care for them") introduces an interpretative bias that shifts the focus from the original directive emphasizing the worthiness of the worker to an implied obligation of the recipients. This could lead to ambiguity and potentially misinterpret the original intent. A more literal translation would better preserve the simplicity and clarity of Jesus' instruction. While the translation is commendable and effectively meets the objective of engagement for the target audience, slight adjustments in wording and focus are recommended to enhance fidelity to the original text.
 
 ---
 **MAT 15:21**: _(Grade 84.5)_
@@ -289,293 +363,355 @@ The translation of Matthew 10:10 effectively conveys the original meaning while 
 > Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου καὶ Σιδῶνος. (And going out from there, Jesus withdrew to the regions of Tyre and Sidon.)
 
 **Translation**:
-> Jesús salió de allí y caminó los ochenta kilómetros que lo separaban de la región de Tiro y Sidón. (Jesus left there and walked the eighty kilometers that separated him from the region of Tyre and Sidon.)
+> Jesús salió de allí y caminó los ochenta kilómetros que lo separaban de la región de Tiro y Sidón. (Jesus went out from there and walked the eighty kilometers that separated him from the region of Tyre and Sidon.)
+
+**Suggested Translation**:
+> Jesús salió de allí y fue a la región de Tiro y Sidón. (Jesus went out from there and went to the region of Tyre and Sidon.)
 
 **Combined Review**:
-Summary
-The translation of MAT 15:21 effectively communicates the essence of the original text while being accessible for modern Spanish speakers. However, several reviews noted that the phrase "caminó los ochenta kilómetros que lo separaban" (walked the eighty kilometers that separated him) adds unnecessary detail not present in the Greek source, which simply indicates Jesus' movement to the regions of Tyre and Sidon without specifying a distance. While this detail may enhance engagement for some readers, it could detract from the text's fidelity and clarity. A more straightforward translation, such as "Jesús salió de allí y fue a la región de Tiro y Sidón" (Jesus left there and went to the region of Tyre and Sidon), may better align with the intention of maintaining textual integrity while remaining accessible. Overall, the translation is well-received but has room for improvement in its adherence to the original text.
+The translation "Jesús salió de allí y caminó los ochenta kilómetros que lo separaban de la región de Tiro y Sidón" (Jesus went out from there and walked the eighty kilometers that separated him from the region of Tyre and Sidon) effectively conveys the movement of Jesus to the regions of Tyre and Sidon. However, the addition of "ochenta kilómetros" (eighty kilometers) introduces unnecessary detail not present in the Greek source, which simply mentions that Jesus left for those regions. This specific mention may detract from the text's fidelity and the intended focus on the narrative. For a conservative Christian audience, it is important to maintain the integrity of the biblical text while ensuring it is accessible. A simpler rendering, such as "Jesús salió de allí y fue a la región de Tiro y Sidón" (Jesus went out from there and went to the region of Tyre and Sidon), aligns better with the original text and serves the purpose of clarity without over-explaining. Overall, the translation is engaging and relatable, but slight adjustments could enhance its alignment with textual fidelity and the core message.
 
 ---
 **MAT 10:12**: _(Grade 84.7)_
 
-**Source**:  
-> εἰσερχόμενοι δὲ εἰς τὴν οἰκίαν ἀσπάσασθε αὐτὴν λέγοντες· εἰρήνη τῷ οἴκῳ τούτῳ. (And as you enter the house, greet it, saying, 'Peace be to this house.')  
+**Source**:
+> εἰσερχόμενοι δὲ εἰς τὴν οἰκίαν ἀσπάσασθε αὐτὴν λέγοντες· εἰρήνη τῷ οἴκῳ τούτῳ. (As you enter the house, greet it, saying: Peace be to this house.)
 
-**Translation**:  
-> Y al entrar a la casa, den su bendición a los que allí viven. (And upon entering the house, bless those who live there.)
+**Translation**:
+> Y al entrar a la casa, den su bendición a los que allí viven. (And when you enter the house, bless those who live there.)
+
+**Suggested Translation**:
+> Al entrar en la casa, saluden diciendo: '¡Que la paz esté en este hogar!' (When you enter the house, greet it, saying: 'Peace be to this house!')
 
 **Combined Review**:
-Summary:  
-The translation of MAT 10:12 effectively captures the essential message of the original Greek text, though there are several areas for refinement. The phrase "den su bendición a los que allí viven" (give your blessing to those who live there) could benefit from more direct translations like "saluden" (greet) or "digan paz" (say peace) to better reflect the intention of greeting with peace, as emphasized in the original verse (εἰρήνη, peace). While the modern and accessible style is suitable for Spanish speakers, the choice of "bendición" (blessing) may dilute the specific meaning of "peace" that carries significant spiritual weight in conservative Christian interpretation. The translation is generally clear and aligns with the objective of accessibility, but slight adjustments to incorporate the concept of peace more directly would enhance its fidelity to the original text.
+The translation of MAT 10:12 is generally well-received, capturing the essential message of the original Greek text. While the phrase 'den su bendición a los que allí viven' (bless those who live there) effectively communicates the directive to bless the household, it lacks specificity regarding the critical concept of 'peace' (εἰρήνη - peace), which is fundamental to the biblical greeting. Several reviewers suggest refining the translation to incorporate 'paz' (peace) more explicitly, possibly by using phrases like 'ofrezcan la paz' (offer peace) or 'saluden' (greet), which align more closely with the original intent of extending peace rather than just offering a blessing. The overall style remains modern and accessible for Spanish speakers, making it suitable for the target audience in Latin America, but improvements for accuracy and fidelity to the original text are encouraged.
 
 ---
 **MAT 15:11**: _(Grade 84.7)_
 
 **Source**:
-> οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον, ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος τοῦτο κοινοῖ τὸν ἄνθρωπον.  
-(Translation: "Not what goes into the mouth defiles a man, but what comes out of the mouth, this defiles a man.")
+> οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον, ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος τοῦτο κοινοῖ τὸν ἄνθρωπον. (It is not what goes into the mouth that defiles a person, but what comes out of the mouth; this is what defiles a person.)
 
 **Translation**:
-> Lo que daña el alma no es lo que entra por la boca, sino los pensamientos malos y las palabras con que estos se expresan.  
-(Translation: "What harms the soul is not what enters through the mouth, but the bad thoughts and the words by which they are expressed.")
+> Lo que daña el alma no es lo que entra por la boca, sino los pensamientos malos y las palabras con que estos se expresan. (What harms the soul is not what enters through the mouth, but the bad thoughts and the words with which they are expressed.)
+
+**Suggested Translation**:
+> "No es lo que entra por la boca lo que contamina al hombre, sino lo que sale de la boca; esto es lo que contamina al hombre." (It is not what goes into the mouth that defiles a person, but what comes out of the mouth; this is what defiles a person.)
 
 **Combined Review**:
-The translation of Matthew 15:11 effectively conveys the essential message of the verse, emphasizing that it is not what enters the mouth that defiles a person but rather what comes out of it. However, the phrase "daña el alma" (harms the soul) may be seen as an over-interpretation; a more literal translation such as "contamina al hombre" (defiles a man) would align more closely with the original Greek text. It's important that the focus remains on the actions and words that reflect the heart's condition rather than an interpretation of soul damage. Adjustments to the phrase regarding speech versus thoughts would enhance clarity and fidelity to the text. The modern, accessible language is commendable, particularly for a Latin American audience, but maintaining a stricter adherence to the original wording could improve theological accuracy.
+The translation of MAT 15:11 is largely effective in conveying the essential message of the verse, emphasizing that it is not what enters the mouth that defiles a person, but rather what comes out of it. The modern language makes it accessible to Spanish speakers, particularly in Latin America. However, the phrase 'lo que daña el alma' (what harms the soul) slightly deviates from the original meaning, which focuses on defilement rather than the soul. A more direct translation could improve clarity and fidelity to the original text. Emphasizing the actions and words that reflect the condition of the heart is crucial for maintaining theological accuracy. Overall, while the translation is thoughtful and engages a modern audience, adjustments in word choice and focus could enhance its alignment with traditional interpretations.
 
 ---
 **MAT 18:28**: _(Grade 84.7)_
 
 **Source**:
-> ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγε λέγων· ἀπόδος μοι εἴ τι ὀφείλεις. ("But when that same servant went out, he found one of his fellow servants who owed him a hundred denarii, and he seized him and began to choke him, saying, 'Pay what you owe.'")
+> ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγε λέγων· ἀπόδος μοι εἴ τι ὀφείλεις.  (When that same servant went out, he found one of his fellow servants who owed him a hundred denarii, and he seized him and began to choke him, saying, 'Pay what you owe!')
 
 **Translation**:
-> »Pero cuando aquel mismo hombre salió de allí, fue adonde estaba alguien que le debía veinte mil pesos ("twenty thousand pesos") y, agarrándolo por el cuello ("seizing him by the neck"), exigió pago inmediato ("demanded immediate payment").
+> »Pero cuando aquel mismo hombre salió de allí, fue adonde estaba alguien que le debía veinte mil pesos y, agarrándolo por el cuello, exigió pago inmediato. (But when that same man went out, he found one of his fellow servants who owed him twenty thousand pesos, and seizing him by the throat, he demanded immediate payment.)
+
+**Suggested Translation**:
+> »Pero cuando aquel mismo hombre salió de allí, fue a donde estaba alguien que le debía cien denarios, y tomándolo con fuerza, le exigió el pago inmediato. (But when that same man went out, he went to where there was someone who owed him a hundred denarii, and seizing him, he demanded immediate payment.)
 
 **Combined Review**:
-The translation of MAT 18:28 is generally clear and accessible, successfully conveying the essence of the original text for a modern Spanish-speaking audience. However, there are significant concerns regarding the translation of the debt amount. The original Greek refers to 'a hundred denarii', which is not accurately reflected by the phrase 'veinte mil pesos' ("twenty thousand pesos"), as this could mislead readers about the gravity of the situation depicted in the parable. While the use of contemporary language helps engage the audience, it is crucial to ensure that key elements like the debt amount align with the biblical context to maintain theological accuracy. Additionally, expressions such as 'agarrándolo por el cuello' ("seizing him by the neck") may be too colloquial and should be reconsidered for a more formal tone without losing accessibility. Overall, the translation meets the objective of accessibility but requires adjustments for precision and fidelity to the original text.
+The translation of MAT 18:28 effectively communicates the original message in a modern, accessible manner, scoring an average grade of 85.5. However, the use of 'veinte mil pesos' (twenty thousand pesos) is a point of contention as it significantly diverges from the original Greek, which indicates a debt of 'cien denarios' (one hundred denarii). This discrepancy can create confusion about the passage's intention, which is to emphasize the difference between the forgiven debts. While the phrase 'exigió pago inmediato' (demanded immediate payment) effectively conveys urgency, the informal expression 'agarrándolo por el cuello' (seizing him by the throat) might detract from the gravity of the biblical context. Overall, while the translation is modern and relatable, refinements are necessary to enhance accuracy and maintain the theological weight inherent in the original text.
 
 ---
 **MAT 19:12**: _(Grade 84.7)_
 
 **Source**:
 > εἰσὶ γὰρ εὐνοῦχοι οἵτινες ἐκ κοιλίας μητρὸς ἐγεννήθησαν οὕτω. καὶ εἰσὶν εὐνοῦχοι οἵτινες εὐνουχίσθησαν ὑπὸ τῶν ἀνθρώπων, καὶ εἰσιν εὐνοῦχοι οἵτινες εὐνούχισαν ἑαυτοὺς διὰ τὴν βασιλείαν τῶν οὐρανῶν. ὁ δυνάμενος χωρεῖν χωρείτω.  
-(For there are eunuchs who were born that way from their mother’s womb, and there are eunuchs who were made eunuchs by men, and there are eunuchs who made themselves eunuchs for the kingdom of heaven. The one who is able to accept this, let him accept it.)
+(For there are eunuchs who were born that way from their mother's womb; and there are eunuchs who were made eunuchs by men; and there are eunuchs who have made themselves eunuchs for the kingdom of heaven. He who is able to receive this, let him receive it.)
 
 **Translation**:
 > Hay personas que no se casan porque nacieron incapacitados para el matrimonio; otros no lo hacen porque los hombres los incapacitaron; y aun otros, porque no desean hacerlo por amor al reino de los cielos. El que pueda aceptar esto último, que lo acepte.  
-(There are people who do not marry because they were born unable to marry; others do not because men made them unable; and still others, because they do not wish to do so for love of the kingdom of heaven. Let the one who can accept this last, accept it.)
+(There are persons who do not marry because they were born unable to marry; others do so because men have made them unable; and others do so because they do not wish to for the love of the kingdom of heaven. He who can accept this, let him accept it.)
+
+**Suggested Translation**:
+> "Porque hay eunuco que nació así desde el vientre de su madre; otros son eunuco por la acción de los hombres; y hay eunuco que se ha hecho a sí mismo tal por amor al reino de los cielos. El que pueda aceptar esto, que lo haga con entendimiento."  
+(For there are eunuchs who were born that way from their mother's womb; others are eunuchs by the action of men; and there are eunuchs who have made themselves eunuchs for the sake of the kingdom of heaven. He who is able to accept this, let him accept it.)
 
 **Combined Review**:
-The translation of MAT 19:12 is commendable for its clarity and accessibility to modern Spanish-speaking audiences, particularly in Latin America. It successfully conveys the core message regarding eunuchs and their reasons for celibacy, aligning with conservative Christian values related to the Kingdom of Heaven. However, several reviews highlight the use of the phrase "incapacitados para el matrimonio," which may diminish the theological understanding of eunuchs, potentially causing ambiguity. Some reviewers suggest that a more direct reference to "eunuchs" would enhance the translation's accuracy and respect for the original text. Additionally, the ending phrase "que lo acepte" may come across as informal for a biblical context, indicating a need for more reverent wording. Overall, while the translation is engaging and relevant, careful consideration of language choices could elevate its fidelity to the scriptural message.
+The translation of MAT 19:12 is generally well-executed, providing clarity and accessibility for modern Spanish-speaking audiences, particularly in Latin America. While it effectively communicates the original meaning and retains important theological concepts, several reviews suggest improvements for greater precision. The phrase "nacieron incapacitados para el matrimonio" (were born unable to marry) could be more accurately rendered to reflect the concept of eunuchs without diminishing its theological implications. Additionally, there is a recommendation for a more formal tone in phrases like "que lo acepte" (let him accept it) to align better with traditional biblical language. Overall, the translation successfully engages a contemporary audience but can benefit from slight adjustments to enhance both accuracy and reverence.
 
 ---
 **MAT 6:3**: _(Grade 85.0)_
 
-**Source**:  
+**Source**:
 > σοῦ δὲ ποιοῦντος ἐλεημοσύνην μὴ γνώτω ἡ ἀριστερά σου τί ποιεῖ ἡ δεξιά σου, (But when you give to the needy, let not your left hand know what your right hand is doing)
 
-**Translation**:  
-> Pero cuando hagan algún bien, háganlo discretamente. (But when you do good, do it discreetly)
+**Translation**:
+> Pero cuando hagan algún bien, háganlo discretamente. (But when you do good, do it discreetly.)
+
+**Suggested Translation**:
+> Pero cuando hagas limosna, que tu mano izquierda no sepa lo que hace tu mano derecha, (But when you give alms, let your left hand not know what your right hand is doing)
 
 **Combined Review**:
-The translation of MAT 6:3 is generally well-executed and captures the essence of the original Greek text while maintaining a modern and accessible style for Spanish speakers. However, the phrase "háganlo discretamente" (do it discreetly) may be seen as less impactful than the original phrase "μὴ γνώτω ἡ ἀριστερά σου τί ποιεῖ ἡ δεξιά σου" (let not your left hand know what your right hand is doing) which emphasizes a deeper instruction regarding secrecy in charitable actions. A more accurate and direct translation such as "que no sepa tu mano izquierda lo que hace tu mano derecha" (that your left hand not know what your right hand is doing) would preserve the metaphorical nuance of humility and anonymity in giving. While the translation succeeds in being clear and relatable to the target audience, refining the expression to align more closely with the original text would enhance its fidelity and depth. Overall, the translation is commendable but could benefit from adjustments to improve precision and convey the full weight of the instruction.
+The translation of MAT 6:3 generally captures the essence of the original Greek text while using a modern and accessible Spanish style suitable for the target audience. However, the phrase "háganlo discretamente" (do it discreetly) lacks the depth and precision found in the original wording, which emphasizes the importance of keeping one's charitable actions private. A more direct rendering, such as "que tu mano izquierda no sepa lo que hace tu mano derecha" (let your left hand not know what your right hand is doing), would more accurately convey the instruction's intent and metaphorical nuance. While the current translation is commendable for its clarity, it is important to enhance fidelity to the original text in order to preserve the weight of the teaching on anonymity in giving alms. Overall, this is a solid translation with room for improvement in precision.
 
 ---
 **MAT 6:16**: _(Grade 85.0)_
 
 **Source**:
 > Ὅταν δὲ νηστεύητε, μὴ γίνεσθε ὥσπερ οἱ ὑποκριταὶ σκυθρωποί· ἀφανίζουσι γὰρ τὰ πρόσωπα αὐτῶν ὅπως φανῶσι τοῖς ἀνθρώποις νηστεύοντες· ἀμὴν λέγω ὑμῖν ὅτι ἀπέχουσι τὸν μισθὸν αὐτῶν.  
-(Translation: "When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full.")
+(When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full.)
 
 **Translation**:
 > »Cuando ustedes ayunen, no lo hagan en público como los hipócritas, que tratan de aparentar que están pálidos y desaliñados para que la gente se dé cuenta de que ayunaron. Les aseguro que, aparte de esto, no tendrán más recompensa.  
-(Translation: "When you fast, do not do it publicly like the hypocrites, who try to appear pale and unkempt so that people will notice that they are fasting. I assure you that aside from this, they will have no further reward.")
+(When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full.)
+
+**Suggested Translation**:
+> »Cuando ustedes ayunen, no se pongan tristes como los hipócritas, que hacen ver que están tristes. Les aseguro que no recibirán recompensa alguna.  
+(When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full.)
 
 **Combined Review**:
-The translation of MAT 6:16 is clear and accessible, effectively conveying the message intended in the original text. While it is relatable for modern Spanish-speaking audiences, certain phrases need refinement. The expression 'aparte de esto, no tendrán más recompensa' ("aside from this, they will have no further reward") does not fully reflect the gravity of the original Greek, which emphasizes the complete absence of reward for hypocrisy. Additionally, the phrase 'tratan de aparentar que están pálidos y desaliñados' ("they try to appear pale and unkempt") may be misleading, as it focuses on outward appearances rather than the core issue of hypocrisy. Suggestions for improvement include simplifying or altering language to capture the nuances of the original scripture while preserving clarity and faithfulness to the conservative Christian perspective. Overall, while the translation meets accessibility standards, slight adjustments could enhance accuracy and maintain reverence.
+The translation of MAT 6:16 is generally clear and accessible, effectively conveying the original message intended in the Greek text while using modern and familiar language for Spanish-speaking audiences. However, several reviews note that the phrase 'aparte de esto, no tendrán más recompensa' (aside from this, they will have no further reward) could be misleading and fail to fully capture the seriousness of losing one's reward for insincerity in fasting. Additionally, while the description of hypocrites as 'que tratan de aparentar que están pálidos y desaliñados' (who try to appear pale and disheveled) is relatable, it may emphasize outward appearance rather than the essence of hypocrisy itself. Suggestions for improvement include using simpler terms like 'aparentar' (to pretend) and ensuring consistency in terminology to align with traditional meanings within a conservative Christian context. Overall, the translation is effective but can be enhanced for clarity and fidelity to the source text.
 
 ---
 **MAT 17:15**: _(Grade 85.0)_
 
-**Source**:
-> Κύριε, ἐλέησόν μου τὸν υἱόν, ὅτι σεληνιάζεται καὶ κακῶς πάσχει· πολλάκις γὰρ πίπτει εἰς τὸ πῦρ καὶ πολλάκις εἰς τὸ ὕδωρ. (Lord, have mercy on my son, for he is epileptic and suffers terribly; he often falls into the fire and often into the water.)
+**Source**:  
+> Κύριε, ἐλέησόν μου τὸν υἱόν, ὅτι σεληνιάζεται καὶ κακῶς πάσχει· πολλάκις γὰρ πίπτει εἰς τὸ πῦρ καὶ πολλάκις εἰς τὸ ὕδωρ. (Lord, have mercy on my son, for he is a lunatic and suffers greatly; for often he falls into the fire and often into the water.)
 
-**Translation**:
-> ―Señor —dijo—, ten misericordia de mi hijo, que está enfermo de la mente y padece muchísimo. Muchas veces se cae en el fuego o en el agua, con peligro de su vida. ("Lord," he said, "have mercy on my son, who is sick in the mind and suffers greatly. Many times he falls into the fire or into the water, at the risk of his life.")
+**Translation**:  
+> ―Señor —dijo—, ten misericordia de mi hijo, que está enfermo de la mente y padece muchísimo. Muchas veces se cae en el fuego o en el agua, con peligro de su vida. (Lord, he said, have mercy on my son, for he is sick in the mind and suffers greatly. Many times he falls into the fire or into the water, endangering his life.)
+
+**Suggested Translation**:  
+> ―Señor —dijo—, ten misericordia de mi hijo, que es lunático y sufre mucho; porque muchas veces cae en el fuego y muchas en el agua. (Lord, he said, have mercy on my son, for he is a lunatic and suffers greatly; for often he falls into the fire and often into the water.)
 
 **Combined Review**:
-The translation of MAT 17:15 is commendable and successfully conveys the essential meaning of the original Greek text while utilizing modern and accessible language appropriate for Latin American Spanish speakers. However, there are concerns regarding the translation of 'σεληνιάζεται' (epileptic or moon-struck) as 'está enfermo de la mente' (is sick in the mind). This rendering may imply a more psychological condition rather than the traditional interpretation related to demonic possession, which is a significant aspect of the original text. While the urgency of the father's plea is effectively maintained, a more precise term that reflects the original's gravity—such as 'poseído' (possessed) or 'lunático' (moonstruck)—could enhance both clarity and theological accuracy. Overall, while the translation meets accessibility goals, slight adjustments are suggested for a more traditional and faithful representation of the source material.
+The translation of MAT 17:15 is clear and effectively communicates the urgency and plea of the father for his son. While the use of modern language is commendable for accessibility among Spanish speakers in Latin America, there are concerns about the phrase "está enfermo de la mente" (he is sick in the mind) as it may lack the specificity regarding the boy's condition as intended in the original Greek text, which implies demonic possession (σεληνιάζεται - he is a lunatic). It is suggested to consider terms like "lunático" (lunatic) or a more traditional phrase to maintain theological accuracy. Despite these points, the translation overall retains the essence and compassion of the original scripture and is viewed as a solid effort, albeit with room for refinement in language to better align with conservative Christian values.
 
 ---
 **MAT 18:34**: _(Grade 85.0)_
 
-**Source**:
+**Source**: 
 > καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ. (And being angry, his lord delivered him to the torturers until he should pay all that was due unto him.)
 
-**Translation**:
-> Tan enojado estaba el rey que lo envió a las cámaras de tortura hasta que pagara el último centavo. (The king was so angry that he sent him to the torture chambers until he paid the last penny.)
+**Translation**: 
+> Tan enojado estaba el rey que lo envió a las cámaras de tortura hasta que pagara el último centavo. (So angry was the king that he sent him to the chambers of torture until he paid the last cent.)
+
+**Suggested Translation**: 
+> Tan enojado estaba el rey que lo envió a un lugar de castigo hasta que se saldara toda su deuda. (So angry was the king that he sent him to a place of punishment until his entire debt was settled.)
 
 **Combined Review**:
-The translation of MAT 18:34 effectively captures the essence of the original Greek text, clearly communicating the king's anger and the severe consequence faced by the servant. The phrase 'cámaras de tortura' (torture chambers) successfully conveys the seriousness of the punishment, although it may be perceived as overly graphic for a conservative Christian audience. A more nuanced term such as 'lugar de tormento' (place of torment) or 'lugar de castigo' (place of punishment) might better suit the sensibilities of that demographic while maintaining the gravity of the message. The translation effectively conveys the emotional weight of the passage and its themes of forgiveness and judgment, making it accessible to Spanish speakers, but could benefit from slight adjustments for improved audience sensitivity. Overall, it is a strong translation that aligns well with conservative Christian values, meriting a score of 85.
+The translation of MAT 18:34 effectively captures the essence of the original text, conveying the emotional intensity and consequences of the king's anger towards the servant. However, the phrase 'cámaras de tortura' (chambers of torture) may be considered overly graphic for a conservative Christian audience. A suggested alternative, such as 'lugar de castigo' (place of punishment), would maintain the seriousness of the consequence while being more palatable. Additionally, the phrase 'hasta que pagara el último centavo' (until he paid the last cent) somewhat diminishes the spiritual implications of forgiveness and judgment inherent in the original text. Therefore, while the translation is modern and clear, adjustments in language could enhance its sensitivity to a conservative perspective, maintaining its overall effectiveness.
 
 ---
 **MAT 20:25**: _(Grade 85.0)_
 
-**Source**:
+**Source**:  
 > ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν· οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.  
-(But Jesus called them to him and said, "You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them.")
+(But Jesus called them and said to them: "You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them.")
 
-**Translation**:
+**Translation**:  
 > pero Jesús los llamó y les dijo:  
 > ―En las naciones paganas, los reyes, los tiranos o cualquier funcionario está por encima de sus súbditos.  
 (But Jesus called them and said: "In the pagan nations, the kings, the tyrants, or any official are above their subjects.")
 
+**Suggested Translation**:  
+> Pero Jesús los llamó y les dijo:  
+> ―En las naciones paganas, los reyes, los gobernantes o cualquier funcionario están por encima de sus seguidores.  
+(But Jesus called them and said: "In the pagan nations, the kings, the rulers, or any official are above their followers.")
+
 **Combined Review**:
-The translation of MAT 20:25 successfully captures the essence of the original text, presenting it in a modern and accessible manner suitable for Spanish-speaking audiences in Latin America. However, the phrase "los reyes, los tiranos o cualquier funcionario está por encima de sus súbditos" introduces a potentially negative connotation that is not present in the original Greek text, which conveys authority in a more neutral context. Several reviewers suggest replacing "tirano" with a more neutral term like "gobernantes de las naciones" or simply "los grandes" to maintain fidelity to the scripture’s intent and avoid any emotional bias. Additionally, the term "súbditos" may not resonate with all readers; alternatives like "ciudadanos" or "seguidores" could improve relatability. Overall, while the translation is clear and understandable, adjustments to word choice and phrasing are recommended to enhance theological precision and reflect the original structure more accurately.
+The translation of MAT 20:25 is generally well-done, presenting a clear and accessible interpretation of the original Greek text. However, the phrase "los reyes, los tiranos o cualquier funcionario" (the kings, the tyrants, or any official) introduces a potentially negative connotation that diverges from the original's neutral portrayal of authority. It is suggested that using terms such as "los gobernantes" (the rulers) or "los grandes" (the great ones) would better align with traditional conservative interpretations, reflecting the authority without implying tyranny. Additionally, the term "súbditos" (subjects) is less common in modern usage, and alternatives like "seguidores" (followers) or "ciudadanos" (citizens) may resonate better with contemporary readers. Overall, while the translation effectively communicates the message, attention to word choice could enhance theological precision and clarity.
 
 ---
 **MAT 21:30**: _(Grade 85.0)_
 
 **Source**:
-> καὶ προσελθὼν τῷ δευτέρῳ εἶπεν ὡσαύτως. ὁ δὲ ἀποκριθεὶς εἶπεν· ἐγώ, κύριε· καὶ οὐκ ἀπῆλθε. (And coming to the second, he said likewise. And he answered and said, 'I go, sir,' but he did not go.)
+> καὶ προσελθὼν τῷ δευτέρῳ εἶπεν ὡσαύτως. ὁ δὲ ἀποκριθεὶς εἶπεν· ἐγώ, κύριε· καὶ οὐκ ἀπῆλθε. (And coming to the second, he said likewise. And he answered, ‘I go, sir’; but did not go.)
 
 **Translation**:
-> Cuando el padre le pidió al menor que fuera, este le respondió: “¡Con mucho gusto! ¡Ahora mismo voy!”. (When the father asked the younger one to go, he responded, "With pleasure! Right now!") Pero no fue. (But he did not go.) Díganme: (Tell me:)  
+> Cuando el padre le pidió al menor que fuera, este le respondió: “¡Con mucho gusto! ¡Ahora mismo voy!”. Pero no fue. (When the father asked the younger son to go, he responded: “With much pleasure! Right now I will go!”. But he did not go.)
 
-**Combined Review**:
-The translation of MAT 21:30 is generally clear and accessible, effectively conveying the essence of the original Greek text. However, the phrase '¡Con mucho gusto! ¡Ahora mismo voy!' (With pleasure! Right now!) may come across as overly casual or even sarcastic, which does not fully respect the seriousness of the original context. Suggested alternatives like 'Sí, padre; ahora mismo voy' (Yes, father; I am going right now) or 'Sí, voy' (Yes, I am going) would maintain a more appropriate tone of respect and urgency. Additionally, the phrase 'Díganme:' (Tell me:) at the end could be confusing as it seems out of place. Overall, while the translation is strong and captures the message well, minor adjustments are recommended for improved clarity and fidelity to the original text.
+**Suggested Translation**:
+> Cuando el padre le pidió al menor que fuera, este le respondió: “Sí, padre; ahora mismo voy”. Pero no fue. (When the father asked the younger son to go, he responded: “Yes, father; right now I will go”. But he did not go.)
+
+**Review**: The translation of MAT 21:30 effectively conveys the essence of the original Greek text while utilizing a modern and accessible Spanish style. The phrase '¡Con mucho gusto! ¡Ahora mismo voy!' (With much pleasure! Right now I will go!) could be interpreted as overly casual or even sarcastic in certain contexts, which may not align with the seriousness of the original request. A more straightforward approach, such as 'Sí, padre; ahora mismo voy' (Yes, father; right now I will go), would better capture the respect and urgency of the son's response without suggesting a flippant attitude. Overall, the translation is clear and retains the original meaning but could be slightly improved for tone and accuracy. Additionally, the phrase 'Díganme:' (Tell me:) at the end of the translation feels out of place and may confuse readers. This comprehensive review suggests minor adjustments to enhance fidelity to the source while maintaining an engaging tone for a Latin American audience.
 
 ---
-**MAT 22:4**: _(Grade 85.0)_  
+**MAT 22:4**: _(Grade 85.0)_
 
-**Source**:  
-> πάλιν ἀπέστειλεν ἄλλους δούλους λέγων· εἴπατε τοῖς κεκλημένοις· ἰδοὺ τὸ ἄριστόν μου ἡτοίμασα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους. (Again he sent other servants saying, "Tell those who are invited: Look, my feast is ready, my oxen and fattened calves have been slaughtered, and everything is ready; come to the wedding.")  
+**Source**:
+> πάλιν ἀπέστειλεν ἄλλους δούλους λέγων· εἴπατε τοῖς κεκλημένοις· ἰδοὺ τὸ ἄριστόν μου ἡτοίμασα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους.  
+(Again he sent other servants, saying, 'Tell those who are invited, Behold, I have prepared my dinner; my oxen and fatlings are killed, and all things are ready; come to the wedding.')
 
-**Translation**:  
-> Envió a otros siervos a decirles que fueran pronto, que no se demoraran, que ya los asados estaban listos. (He sent other servants to tell them to come quickly, that the roasted meat was ready.)  
+**Translation**:
+> Envió a otros siervos a decirles que fueran pronto, que no se demoraran, que ya los asados estaban listos.  
+(He sent other servants to say to them, 'Tell those who are invited, come quickly, that they should not delay, for the roasted meats are ready.')
+
+**Suggested Translation**:
+> Envió a otros siervos a decirles que vengan pronto, que he preparado el banquete, los toros y la comida están listos; ¡vengan a la boda!  
+(He sent other servants to say to them, 'Tell those who are invited to come quickly, that I have prepared the banquet, the bulls and the food are ready; come to the wedding!')
 
 **Combined Review**:
-The translation of MAT 22:4 successfully captures the essence of the original text while employing modern and accessible language for Spanish speakers. However, there are several important considerations. While the phrase "que no se demoraran" (that they should not delay) conveys a sense of urgency, it may come off as too casual and could be strengthened with a more direct expression like "vengan pronto" (come quickly) to reflect the immediate nature of the invitation. Additionally, the use of the term "asados" (roasted meat) might be perceived as informal and may detract from the reverence typically associated with biblical texts. A suggestion would be to use terms like "banquete" (banquet) or "comida" (food) which would better reflect the solemnity of the occasion. Overall, the translation is effective, engaging, and maintains theological integrity, but minor adjustments in phrasing and word choice could enhance its fidelity and respectfulness in alignment with conservative Christian values.
+The translation of MAT 22:4 effectively captures the essence of the original text while aiming to be accessible to a modern Spanish-speaking audience. Although the translation communicates the urgency and significance of the invitation, certain phrases, such as "que no se demoraran" (that they should not delay) and "asados" (roasted meats), come off as too casual and may not adequately reflect the gravity of the parable's context. It is suggested to opt for a more direct expression like "vengan pronto" (come quickly) to convey urgency and use terms such as "banquete" (banquet) or "comida" (food) to maintain a more respectful and solemn tone appropriate for a biblical translation. Overall, while the translation is engaging, slight adjustments in word choice could enhance fidelity to the original text's weight and theological implications.
 
 ---
 **MAT 22:34**: _(Grade 85.0)_
 
-**Source**:  
-> Οἱ δὲ Φαρισαῖοι ἀκούσαντες ὅτι ἐφίμωσε τοὺς Σαδδουκαίους, συνήχθησαν ἐπὶ τὸ αὐτό,  
-(Translation: But the Pharisees, hearing that he had silenced the Sadducees, gathered together.)
+**Source**:
+> Οἱ δὲ Φαρισαῖοι ἀκούσαντες ὅτι ἐφίμωσε τοὺς Σαδδουκαίους, συνήχθησαν ἐπὶ τὸ αὐτό, (But the Pharisees, hearing that He had silenced the Sadducees, gathered together)
 
-**Translation**:  
-> Los fariseos no se dejaron amedrentar por la derrota de los saduceos  
-(Translation: The Pharisees were not intimidated by the defeat of the Sadducees)
+**Translation**:
+> Los fariseos no se dejaron amedrentar por la derrota de los saduceos (The Pharisees were not intimidated by the defeat of the Sadducees)
+
+**Suggested Translation**:
+> Los fariseos, al oír que Jesús había silenciado a los saduceos, se reunieron entre sí. (The Pharisees, hearing that Jesus had silenced the Sadducees, gathered together)
 
 **Combined Review**:
-The translation of MAT 22:34 is considered clear and accessible for a modern Spanish-speaking audience, especially in Latin America. However, there is a consensus that the phrase "no se dejaron amedrentar por la derrota de los saduceos" (did not let themselves be intimidated by the defeat of the Sadducees) does not accurately convey the original intent of the Greek text. The emphasis should be on the Pharisees gathering in response to Jesus silencing the Sadducees, rather than suggesting they were not intimidated by a defeat. Suggestions for improvement include using a more neutral phrasing such as "los fariseos, al oír que Jesús había silenciado a los saduceos, se reunieron entre sí" (the Pharisees, upon hearing that Jesus had silenced the Sadducees, gathered together), which would better reflect the solemnity and seriousness of the context. Overall, while the translation's style is modern and suitable for the audience, enhancing accuracy and maintaining a reverent tone would be beneficial in preserving the integrity of the biblical text.
+The translation of MAT 22:34 presents the original Greek text in a clear and accessible modern Spanish style. However, the phrase "no se dejaron amedrentar por la derrota de los saduceos" (they were not intimidated by the defeat of the Sadducees) may not accurately reflect the original text's intent. The reviews collectively suggest that the focus should be more on the Pharisees gathering in response to Jesus' silencing of the Sadducees, rather than implying a reaction of intimidation. A more neutral wording, such as "Los fariseos, al oír que Jesús había silenciado a los saduceos, se reunieron entre sí," (The Pharisees, hearing that Jesus had silenced the Sadducees, gathered together) is recommended to better convey the sense of the passage. Additionally, a slightly more formal and reverent tone would align better with biblical translation standards, considering the seriousness of the context.
 
 ---
 **MAT 23:32**: _(Grade 85.0)_
 
-**Source**:  
-> καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.  
-(And you have filled the measure of your fathers.)
+**Source**:
+> καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν. (And you are filling the measure of your fathers.)
 
-**Translation**:  
-> ¡Acaben de imitarlos! ¡Pónganse a la altura de ellos!  
-(End up imitating them! Measure up to them!)
+**Translation**:
+> ¡Acaben de imitarlos! ¡Pónganse a la altura de ellos! (Finish imitating them! Live up to them!)
+
+**Suggested Translation**:
+> Y ustedes también están llenando la medida de sus padres. (And you are also filling the measure of your fathers.)
 
 **Combined Review**:
-The translation of MAT 23:32 as "¡Acaben de imitarlos! ¡Pónganse a la altura de ellos!" captures the essence of the original Greek text but has received mixed feedback. While many reviews appreciate the contemporary and engaging style for a modern Spanish-speaking audience, concerns have been raised about the phrase "¡Acaben de imitarlos!" This expression may imply a neutral or positive action rather than conveying the condemnation intended in the original message. A more accurate rendering could clarify that the listeners are filling the measure of their fathers' sins, aligning more closely with the Greek text's meaning. Suggestions such as using "¡Completen la medida de sus padres!" have been proposed to enhance clarity and fidelity to the original intent. Overall, while the translation is engaging and resonates with the audience, it requires adjustments to improve its accuracy and alignment with conservative Christian perspectives.
+The translation of MAT 23:32, "¡Acaben de imitarlos! ¡Pónganse a la altura de ellos!" (Finish imitating them! Live up to them!) successfully captures the essence of the original Greek text while maintaining accessibility for modern Spanish-speaking audiences. However, the phrase "¡Acaben de imitarlos!" (Finish imitating them!) could be interpreted as a call to simply mimic the actions of the fathers rather than conveying the original intent of judgment against their sins. Some reviewers suggested that alternatives like "¡Completen la medida de sus padres!" (Complete the measure of your fathers!) might better express the condemnation intended in the original. Despite some critiques regarding clarity and fidelity to the source material, the translation generally reflects the tone and urgency of Jesus' message effectively. Overall, while engaging for a contemporary audience, minor adjustments could enhance the accuracy and convey the intended gravity of the rebuke.
 
 ---
 **MAT 24:8**: _(Grade 85.0)_
 
-**Source**:
-> πάντα δὲ ταῦτα ἀρχὴ ὠδίνων. (But all these things are the beginning of birth pains.)
+**Source**:  
+> πάντα δὲ ταῦτα ἀρχὴ ὠδίνων. (But all these things are the beginning of birth pains.)  
 
-**Translation**:
-> Pero esto será sólo el principio de los horrores que vendrán. (But this will be only the beginning of the horrors that will come.)
+**Translation**:  
+> Pero esto será sólo el principio de los horrores que vendrán. (But this will be only the beginning of the horrors that will come.)  
+
+**Suggested Translation**:  
+> Pero todo esto será apenas el principio de los dolores. (But all this will be only the beginning of the pains.)  
 
 **Combined Review**:
-The translation "Pero esto será sólo el principio de los horrores que vendrán" generally conveys the urgency and seriousness of the original Greek text. However, the term "horrores" may not fully encapsulate the theological significance of "birth pains" as it pertains to the suffering preceding the end times. While the translation is accessible for a Latin American audience and effectively communicates the gravity of the message, some reviewers suggested that terms like "dolores" (pains) or "tribulaciones" (tribulations) could enhance clarity and align more closely with traditional interpretations. Adjustments to soften the language might help to maintain the prophetic nature of the text without inducing unnecessary fear, thus enhancing fidelity to the original meaning. Overall, the translation is strong but could benefit from minor refinements.
+The translation of MAT 24:8, rendered as "Pero esto será sólo el principio de los horrores que vendrán" (But this will be only the beginning of the horrors that will come), captures the urgency of the original message, though the term "horrores" (horrors) might not fully align with the original Greek's implication of suffering or "birth pains" (ὠδίνων). A consensus suggests that using terms like "dolores" (pains) or "tribulaciones" (tribulations) would provide a more precise theological understanding, consistent with traditional interpretations. This would enhance the clarity and accuracy for conservative readers who seek a direct connection to the scriptural language. While the current translation is generally effective and engaging for a Latin American audience, slight adjustments could further improve fidelity to the source material and deepen the theological significance. Overall, the translation is rated positively but acknowledges that minor refinements could enhance its precision.
 
 ---
 **MAT 24:10**: _(Grade 85.0)_
 
 **Source**:
-> καὶ τότε σκανδαλισθήσονται πολλοὶ καὶ ἀλλήλους παραδώσουσι καὶ μισήσουσιν ἀλλήλους. (And then many will be offended and will betray one another, and will hate one another.)
+> καὶ τότε σκανδαλισθήσονται πολλοὶ καὶ ἀλλήλους παραδώσουσι καὶ μισήσουσιν ἀλλήλους. (And then many will be offended and will betray one another and will hate one another.)
 
 **Translation**:
-> y muchos de ustedes volverán a caer en pecado y traicionarán y aborrecerán a los demás. (and many of you will fall into sin again and will betray and will hate one another.)
+> y muchos de ustedes volverán a caer en pecado y traicionarán y aborrecerán a los demás. (and many of you will fall back into sin and betray and hate one another.)
+
+**Suggested Translation**:
+> y muchos se escandalizarán, y se traicionarán y se odiarán unos a otros. (and many will be offended, and will betray one another and will hate one another.)
 
 **Combined Review**:
-The translation of MAT 24:10 is generally accurate and captures the original meaning; however, the phrase 'volverán a caer en pecado' (will fall into sin again) may be misleading as it does not fully convey the original Greek term 'σκανδαλισθήσονται' (will be offended), which implies a more serious stumbling or offense related to faith. A more precise translation could be 'y muchos de ustedes se escandalizarán' (and many of you will be offended), which reflects the essence of the original text. Additionally, while 'aborrecerán a los demás' (they will hate one another) indicates hatred, it could be more accurately expressed as 'se odiarán mutuamente' (they will hate each other) to emphasize mutual betrayal. Overall, the translation meets accessibility objectives but would benefit from slight adjustments for improved clarity and theological accuracy.
+The translation of MAT 24:10 is generally considered effective and conveys the original meaning well. However, there are notable concerns regarding the phrase 'volverán a caer en pecado' (will fall back into sin), which may lead to misunderstandings. This phrase could be interpreted as less direct than the original Greek term 'σκανδαλισθήσονται' (will be offended or scandalized), which emphasizes a moral failing or stumbling rather than simply sinning again. Additionally, the expression 'aborrecerán a los demás' (will hate one another) could be softened to 'se odiarán mutuamente' (will hate each other), aligning more closely with the intent of mutual betrayal as found in the original text. Overall, while the translation serves the goal of accessibility, it requires slight refinements for clarity and precision in order to reflect the serious warnings presented in Jesus' message.
 
 ---
 **MAT 25:24-25**: _(Grade 85.0)_
 
 **Source**:
-> προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπε· κύριε· ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ διεσκόρπισας·  
+> προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπε· κύριε· ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ διεσκόρπισας·
 > καὶ φοβηθεὶς ἀπελθὼν ἔκρυψα τὸ τάλαντόν σου ἐν τῇ γῇ· ἴδε ἔχεις τὸ σόν.  
-> (And when the one who had received the one talent came, he said: 'Master, I knew you to be a hard man, reaping where you did not sow and gathering where you scattered no seed; and I was afraid, and went away and hid your talent in the ground; behold, you have what is yours.')  
+(When he had received the one talent, he came and said, 'Lord, I knew you to be a hard man, reaping where you did not sow, and gathering where you scattered no seed; and I was afraid, and went and hid your talent in the ground. Here you have what is yours.)
 
 **Translation**:
-> "When the one who had received the one talent came, he said: 'Master, I knew you to be a hard man, reaping where you did not sow and gathering where you scattered no seed; and I was afraid, and went away and hid your talent in the ground; behold, you have what is yours.'"  
+> »Cuando el que había recibido los diez mil pesos se presentó ante el jefe, le dijo: “Señor, como sabía que eres tan duro que te quedarías con cualquier utilidad que yo obtuviera, escondí el dinero. Aquí tienes hasta el último centavo que me diste”.  
+(When the one who had received the ten thousand pesos came to his master, he said: 'Lord, since I knew you were so hard that you would keep any profit I could make, I hid the money. Here is every last cent you gave me.')
 
-> "Cuando el que había recibido los diez mil pesos se presentó ante el jefe, le dijo: “Señor, como sabía que eres tan duro que te quedarías con cualquier utilidad que yo obtuviera, escondí el dinero. Aquí tienes hasta el último centavo que me diste”.  
-> (When the one who had received the ten thousand pesos came before the master, he said: “Lord, knowing that you are so hard that you would keep any profit I might gain, I hid the money. Here is even the last cent you gave me.”)
+**Suggested Translation**:
+> »Cuando el que había recibido los diez mil pesos se presentó ante el jefe, le dijo: “Señor, sabía que eres un hombre exigente, que cosechas donde no has sembrado y recoges donde no has esparcido. Por eso, atemorizado, fui y escondí tu dinero en la tierra. Aquí está lo que te pertenece.”  
+(When the one who had received the ten thousand pesos came to his master, he said: 'Lord, I knew you to be a demanding man, reaping where you have not sown and gathering where you have not scattered. Therefore, afraid, I went and hid your money in the ground. Here is what belongs to you.')
 
 **Combined Review**:
-The translation of MAT 25:24-25 effectively conveys the original message and intent while maintaining a modern and accessible style for Spanish-speaking audiences, particularly in Latin America. However, the phrase "duro que te quedarías con cualquier utilidad que yo obtuviera" (hard that you would keep any profit I might gain) may introduce an informal tone that detracts from the seriousness and reverence appropriate for scripture, as it implies a more casual interpretation of the master's character. The expression "hasta el último centavo" (even the last cent) might be perceived as trivializing the weight of the servant's fear and justification for his actions. Overall, the translation captures the essence of the parable but would benefit from a more literal rendering that aligns closely with conservative theological values, enhancing fidelity to the original tone and message.
+The translation of MAT 25:24-25 effectively conveys the original message and intent of the scripture, maintaining a clear and accessible modern Spanish style suitable for Latin American audiences. However, the use of the phrase "tan duro" (so hard) could potentially misrepresent the master's character as more informal and less reverent than intended, while also softening the stronger implications of 'harsh' from the Greek text. The colloquial expression "hasta el último centavo" (every last cent) could detract from the seriousness of the servant's actions, suggesting a trivialization of the context. Overall, the translation is solid, preserving the essence of the parable, yet there are areas for improvement, particularly in using language that reflects the gravity and theological depth expected in a conservative biblical context.
 
 ---
-**MAT 25:26**: _(Grade 85.0)_  
+**MAT 25:26**: _(Grade 85.0)_
+
+**Source**:
+> ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ· πονηρὲ δοῦλε καὶ ὀκνηρέ! ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ διεσκόρπισα!  
+> (And answering, his lord said to him, 'You wicked and slothful servant! You knew that I reap where I did not sow, and gather where I scattered no seed!')
+
+**Translation**:
+> “¡Malvado! ¡Haragán! Si sabías que quería obtener utilidades,  
+> ("Wicked! Lazy! If you knew that I wanted to make a profit,")
+
+**Suggested Translation**:
+> “¡Siervo malo y perezoso! Si sabías que cosecho donde no he sembrado y recojo donde no esparcí,  
+> ("You evil and lazy servant! If you knew that I reap where I have not sown and gather where I have not scattered,")
+
+**Combined Review**:
+The translation of MAT 25:26 receives a grade of 85 and is generally accurate, capturing the original intent and conveying the Master's condemnation of the servant. While modern terminology makes it accessible to a contemporary audience, the terms "Malvado" and "Haragán" may not sufficiently reflect the weight of the master's reproach. A more traditional rendering, such as "siervo malo y perezoso," would align better with conservative Christian values and enhance the moral clarity of the message. Additionally, the phrase "si sabías que quería obtener utilidades" could benefit from a more direct translation to retain the stronger accusatory tone present in the Greek text. Overall, while the translation is commendable for its clarity and accessibility, attention to linguistic nuances would improve fidelity to the original scripture.
+
+---
+**MAT 10:36**: _(Grade 85.2)_
 
 **Source**:  
-> ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ· πονηρὲ δοῦλε καὶ ὀκνηρέ! ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ διεσκόρπισα! (And the lord answered him: Wicked servant and lazy! You knew that I reap where I did not sow and gather where I scattered no seed!)  
+> καὶ ἐχθροὶ τοῦ ἀνθρώπου οἱ οἰκιακοὶ αὐτοῦ. (And the enemies of a man will be those of his own household.)
 
 **Translation**:  
-> "¡Malvado! ¡Haragán! Si sabías que quería obtener utilidades,  
+> ¡Cada quien tendrá a sus peores enemigos en su propia casa! (Everyone will have their worst enemies in their own home!)
+
+**Suggested Translation**:  
+> Los mayores enemigos de un hombre serán los de su propia casa. (The greatest enemies of a man will be those of his own household.)
 
 **Combined Review**:
-The translation of MAT 25:26 effectively conveys the essence of the original Greek text, maintaining accessibility for modern Spanish speakers while capturing the master's reproach towards the servant. However, the terms "malvado" (wicked) and "haragán" (lazy) might not fully reflect the gravity of the condemnation inherent in traditional interpretations. The phrase "si sabías que quería obtener utilidades" (if you knew that I wanted to make a profit) could benefit from a more direct expression of the original Greek's accusatory tone. Consider using alternatives such as "siervo malo y perezoso" (bad and lazy servant) for greater fidelity to the text. Overall, the translation is clear and accessible but would benefit from slight adjustments in wording to enhance the theological depth and seriousness of the original scripture.
+The translation "¡Cada quien tendrá a sus peores enemigos en su propia casa!" (Everyone will have their worst enemies in their own home!) effectively conveys the original message of MAT 10:36, highlighting the essence of familial conflict that Jesus addresses. While it uses modern and accessible language suitable for Latin American audiences, the phrase 'peores enemigos' (worst enemies) may come across as colloquial and less reverent. A more traditional option, such as 'los mayores enemigos' (the greatest enemies), could enhance the solemnity of the message. Additionally, the expression '¡Cada quien!' (Everyone!) introduces a level of informality that might be too casual for scripture. Overall, while the translation achieves the objectives of accessibility and engagement, minor refinements for fidelity and reverence could better suit a conservative Christian perspective.
 
 ---
-**MAT 10:36**: _(Grade 85.2)_  
-
-**Source**:  
-> καὶ ἐχθροὶ τοῦ ἀνθρώπου οἱ οἰκιακοὶ αὐτοῦ. (And a man's enemies will be those of his own household.)  
-
-**Translation**:  
-> ¡Cada quien tendrá a sus peores enemigos en su propia casa! (Everyone will have their worst enemies in their own house!)  
-
-**Combined Review**:
-The translation of MAT 10:36 as "¡Cada quien tendrá a sus peores enemigos en su propia casa!" (Everyone will have their worst enemies in their own house!) effectively conveys the essence of the original Greek text, addressing the conflict within familial relationships that Jesus describes. It uses modern and accessible Spanish suitable for Latin American audiences, promoting engagement and relatability. However, the colloquial nature of phrases like "peores enemigos" (worst enemies) and "¡Cada quien!" (Everyone!) might come across as too informal or casual for a conservative Christian audience. While the translation achieves its goal of accessibility, it would benefit from minor adjustments in language and tone to better reflect the reverence and seriousness of the original scripture. Suggested revisions include considering a more literal phrasing, such as "los mayores enemigos" (the greatest enemies), and maintaining the depth and emotional impact of the message. Overall, it is a solid translation with room for refinement.
-
----
-**MAT 17:25**: _(Grade 85.3)_  
+**MAT 17:25**: _(Grade 85.3)_
 
 **Source**:  
 > λέγει, ναί. καὶ ὅτε εἰσῆλθεν εἰς τὴν οἰκίαν, προέφθασεν αὐτὸν ὁ Ἰησοῦς λέγων· τί σοι δοκεῖ, Σίμων; οἱ βασιλεῖς τῆς γῆς ἀπὸ τίνων λαμβάνουσι τέλη ἢ κῆνσον; ἀπὸ τῶν υἱῶν αὐτῶν ἢ ἀπὸ τῶν ἀλλοτρίων;  
-  
-(Translation: "He said, 'Yes.' And when he entered the house, Jesus anticipated him, saying, 'What do you think, Simon? From whom do the kings of the earth take customs or taxes, from their sons or from strangers?")  
+(He says, "Yes." And when he entered the house, Jesus anticipated him, saying, "What do you think, Simon? From whom do the kings of the earth take customs or taxes? From their own sons or from strangers?")  
 
 **Translation**:  
 > —¡Claro que los paga! —les respondió Pedro—, e inmediatamente entró a la casa a hablarle a Jesús sobre el asunto.  
-(No translation needed)  
+(No doubt they pay —Peter replied—, and he immediately entered the house to speak to Jesus about the matter.)  
 > No había pronunciado todavía la primera palabra, cuando Jesús le preguntó: —  
+(He had not yet spoken the first word, when Jesus asked him:)  
 > ¿A quién crees tú, Pedro, que cobran tributos los reyes de la tierra? ¿A sus súbditos o a los extranjeros?  
-(No translation needed)  
+(To whom do you think, Peter, that the kings of the earth collect tribute? From their subjects or from strangers?)  
+
+**Suggested Translation**:  
+> —Sí, sí paga —respondió Pedro—. Y cuando entró en la casa, Jesús le habló primero, diciendo: —¿Qué piensas, Simón? ¿De quiénes cobran impuestos los reyes de la tierra? ¿De sus hijos o de los extranjeros?  
+(—Yes, they pay —Peter replied—. And when he entered the house, Jesus spoke first to him, saying: —What do you think, Simon? From whom do the kings of the earth collect taxes? From their children or from foreigners?)  
 
 **Combined Review**:
-The translation of MAT 17:25 generally achieves clarity and modern accessibility while maintaining the essence of the original text. While the dialogue feels engaging and natural, there are concerns about the formality of certain phrases, particularly "¡Claro que los paga!", which may be overly colloquial for a sacred text. The intention to connect with Spanish speakers in Latin America is commendable; however, maintaining a respectful and reverent tone throughout is crucial. Adjustments could be made to ensure a closer alignment with the original text, especially regarding the nuances and rhetorical nature of Jesus' question. Overall, the translation is effective but would benefit from a more formal and faithful representation of the original dialogue.  
-
-**Final Rating**:  
-The overall rating remains at an average of 85.3, reflecting a solid effort with room for improvement.
+The translation of Matthew 17:25 is generally well-received, achieving clarity and modernity in language while maintaining the essence of the original text. Most reviewers highlight the accessibility for Spanish speakers, particularly in Latin America, and commend the conversational tone captured in the phrase "¡Claro que los paga!" ("No doubt they pay!") However, some reviewers note that this informal expression may be too casual for a sacred text. They suggest finding a balance between approachability and reverence. While the interaction between Peter and Jesus is effectively rendered, slight adjustments are recommended for a more formal tone, ensuring that the theological weight of the passage is preserved. A more direct representation of the original dialogue without extra embellishments is encouraged to enhance fidelity to the source. Overall, the translation demonstrates a solid effort towards making the scripture engaging and understandable, although attention to formal language could improve its appropriateness for a biblical context.
 
 ---
 **MAT 2:21**: _(Grade 85.5)_
 
 **Source**:
-> ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.  (But he arose, took the young child and his mother, and came into the land of Israel.)
+> ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ. (But he arose and took the young child and his mother, and came into the land of Israel.)
 
 **Translation**:
-> Así fue como José regresó a la tierra de Israel con el niño y su madre. Pero en el camino se enteró de que Arquelao, hijo de Herodes, reinaba en Judea, y tuvo miedo de ir allí.  (This is how Joseph returned to the land of Israel with the child and his mother. But along the way, he learned that Archelaus, son of Herod, was reigning in Judea, and he was afraid to go there.)
+> Así fue como José regresó a la tierra de Israel con el niño y su madre. Pero en el camino se enteró de que Arquelao, hijo de Herodes, reinaba en Judea, y tuvo miedo de ir allí. (This is how Joseph returned to the land of Israel with the child and his mother. But on the way, he learned that Archelaus, son of Herod, was reigning in Judea, and he was afraid to go there.)
+
+**Suggested Translation**:
+> José se levantó y regresó a la tierra de Israel con el niño y su madre. (Joseph arose and returned to the land of Israel with the child and his mother.)
 
 **Combined Review**:
-The translation of MAT 2:21 is generally accurate and maintains the essence of the original Greek text. It effectively communicates the action of Joseph returning to Israel with the child and his mother while using modern and accessible Spanish. Most reviewers noted that while the phrasing is fluid and appropriate for a Latin American audience, the additional context regarding Archelaus may detract from the direct translation goal, as this detail is not present in the Greek text. Minor adjustments could enhance clarity without compromising fidelity to the source material. Overall, this translation successfully balances accessibility with a contemporary style.
+The translation of MAT 2:21 is generally accurate, clearly conveying the essence of the original Greek text while utilizing modern and accessible Spanish. Most reviews commend the translation's clarity and engagement for Spanish-speaking audiences, particularly in Latin America. However, multiple reviewers noted that the additional context regarding Archelaus, while informative, deviates from the directness of the original text. This could distract from the main action of Joseph's return to Israel. While the translation successfully balances fidelity to the source material and contemporary style, it is suggested that minor adjustments could enhance clarity and simplicity, possibly by omitting the context about Archelaus or streamlining its inclusion. Overall, it is recognized as a solid translation that may benefit from slight refinements to maintain focus on the primary narrative.
 
 ---
-**MAT 4:6**: _(Grade 85.5)_  
+**MAT 4:6**: _(Grade 85.5)_
 
-**Source**:  
-> καὶ λέγει αὐτῷ· εἰ υἱὸς εἶ τοῦ Θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ, καὶ ἐπὶ χειρῶν ἀροῦσί σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σου.  
-(Translation: "And he said to him, 'If you are the Son of God, throw yourself down; for it is written, 'He will command his angels concerning you,' and 'On their hands they will bear you up, lest you strike your foot against a stone.'")  
+**Source**:
+> καὶ λέγει αὐτῷ· εἰ υἱὸς εἶ τοῦ Θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ, καὶ ἐπὶ χειρῶν ἀροῦσί σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σου. (And he said to him, "If you are the Son of God, throw yourself down; for it is written, 'He will command his angels concerning you,' and 'On their hands they will bear you up, lest you strike your foot against a stone.'")
 
-**Translation**:  
-> —Si eres el Hijo de Dios —le dijo—, tírate desde aquí. Las Escrituras dicen que Dios enviará a sus ángeles a cuidarte, y ni siquiera te tropezarás con las rocas.  
-(Translation: "—If you are the Son of God —he said—, throw yourself down from here. The Scriptures say that God will send his angels to take care of you, and you will not even strike your foot against the rocks.")  
+**Translation**:
+> —Si eres el Hijo de Dios —le dijo—, tírate desde aquí. Las Escrituras dicen que Dios enviará a sus ángeles a cuidarte, y ni siquiera te tropezarás con las rocas. ("If you are the Son of God," he said, "throw yourself down from here. For it is written, 'He will command his angels to guard you, and they will lift you up in their hands, so that you will not strike your foot against a stone.'")
+
+**Suggested Translation**:
+> —Si eres el Hijo de Dios —le dijo—, lánzate desde aquí, porque las Escrituras dicen que Dios enviará a sus ángeles a cuidarte, y ellos te sostendrán en sus manos para que no tropieces con piedra alguna. ("If you are the Son of God," he said, "throw yourself down, for it is written: 'He will command his angels concerning you, and they will lift you up in their hands, so that you will not strike your foot against a stone.'")
 
 **Combined Review**:
-The translation of MAT 4:6 effectively conveys the original text's message while utilizing accessible modern Spanish. The phrase 'tírate desde aquí' maintains the imperative nature of the original; however, it may benefit from using 'lánzate' to sound more dynamic. The explanation regarding the Scriptures emphasizes their authority, which is important for a conservative Christian audience. The translation's phrase 'y ni siquiera te tropezarás con las rocas' ("and you will not even strike your foot against the rocks") is seen as somewhat colloquial and could detract from the seriousness of Jesus' response to temptation. A more traditional rendering might preserve the reverence expected in Scripture. Overall, while the translation meets the objective of clarity and engagement, it could be enhanced by incorporating a more formal tone and explicitly quoting Scripture for theological alignment.
+The translation of MAT 4:6 effectively captures the essence of the original text while being accessible to modern Spanish speakers. There is consensus that the phrase 'tírate desde aquí' should be replaced with 'lánzate desde aquí' for a more dynamic and engaging tone. Several reviewers noted that the translation should retain a level of reverence and authority appropriate for a conservative Christian audience, particularly concerning scriptural references. While the core message and theological implications are generally well-preserved, adjustments are recommended to maintain a formal tone and enhance clarity. The phrase 'y ni siquiera te tropezarás con las rocas' has been flagged as colloquial; a more traditional rendering could be beneficial. Overall, the translation reflects a good effort toward clarity and fidelity to the original scripture, with some room for improvement in tone and precision.
 
 ---
 **MAT 8:6**: _(Grade 85.5)_
@@ -584,243 +720,286 @@ The translation of MAT 4:6 effectively conveys the original text's message while
 > Κύριε, ὁ παῖς μου βέβληται ἐν τῇ οἰκίᾳ παραλυτικός, δεινῶς βασανιζόμενος. (Lord, my servant is lying at home paralyzed, dreadfully tormented.)
 
 **Translation**:
-> que sanara a un sirviente que estaba en cama paralítico y que sufría mucho. (that he may heal a servant who is bedridden, paralyzed, and suffering greatly.)
+> que sanara a un sirviente que estaba en cama paralítico y que sufría mucho. (to heal a servant who was in bed paralyzed and suffering a lot.)
+
+**Suggested Translation**:
+> Señor, mi siervo está en la casa paralítico, sufriendo terriblemente. (Lord, my servant is at home paralyzed, suffering terribly.)
 
 **Combined Review**:
-The translation of Matthew 8:6 generally captures the essential meaning of the original Greek text, reflecting the urgency of the centurion's plea. Phrases like 'que sanara a un sirviente que estaba en cama paralítico y que sufría mucho' (that he may heal a servant who is bedridden, paralyzed, and suffering greatly) convey the situation clearly and are accessible for modern Spanish audiences. However, there are several areas for improvement:  
-1. The term 'sirviente' (servant) might not fully encompass the original Greek term 'παῖς' (pais), which carries connotations of a closer or more intimate relationship, possibly suggesting a son or loved one. Using 'mi niño' (my child) or 'mi siervo' (my servant) could add emotional depth.  
-2. The phrase 'que sanara' (that he may heal) may imply past action rather than the immediacy of a request. A direct phrasing like 'que cure a mi siervo...' (that he may cure my servant...) could enhance the urgent tone.  
-3. While the structure is generally clear, it can be made more fluid, avoiding phrases like 'y que sufría mucho' (and suffering much) to create a more natural flow.  
-
-Overall, while the translation is clear and effective, slight adjustments in terminology and structure would enhance both clarity and the emotional weight of the plea, aligning it more closely with the original intent.
+The translation of Matthew 8:6 effectively communicates the urgency and desperation of the centurion's plea for his servant. While the phrase 'que sanara a un sirviente que estaba en cama paralítico y que sufría mucho' (to heal a servant who was in bed paralyzed and suffering a lot) conveys the basic meaning, it is noted that the term 'sirviente' (servant) could be improved to 'siervo' (servant) to better reflect the original text's intent regarding the relationship. Some reviews suggest rephrasing for clarity, emphasizing the immediacy of the request, and simplifying the structure to enhance readability in modern Spanish. Overall, while the translation is generally strong, incorporating these adjustments could improve its clarity, depth, and engagement for contemporary audiences.
 
 ---
 **MAT 10:11**: _(Grade 85.5)_
 
 **Source**:
-> εἰς ἣν δ᾽ ἂν πόλιν ἢ κώμην εἰσέλθητε, ἐξετάσατε τίς ἐν αὐτῇ ἄξιός ἐστι, κἀκεῖ μείνατε ἕως ἂν ἐξέλθητε. (Into whatever city or village you enter, inquire who is worthy in it, and stay there until you go out.)
+> εἰς ἣν δ᾽ ἂν πόλιν ἢ κώμην εἰσέλθητε, ἐξετάσατε τίς ἐν αὐτῇ ἄξιός ἐστι, κἀκεῖ μείνατε ἕως ἂν ἐξέλθητε.  
+(Translation: "And into whatever city or village you enter, inquire who in it is worthy, and stay there until you go out.")
 
 **Translation**:
-> Cuando lleguen a cualquier ciudad o pueblo, busquen a una persona de confianza (trustworthy person) y quédense en su casa (stay in his house) hasta que se vayan a otro pueblo (until you go out to another village).
+> Cuando lleguen a cualquier ciudad o pueblo, busquen a una persona de confianza y quédense en su casa hasta que se vayan a otro pueblo.  
+(Translation: "When you enter any city or village, look for a trustworthy person and stay in their house until you leave for another village.")
+
+**Suggested Translation**:
+> Cuando lleguen a cualquier ciudad o pueblo, busquen a una persona digna y permanezcan en su casa hasta que salgan.  
+(Translation: "When you arrive at any city or town, look for a worthy person and stay in their house until you leave.")
 
 **Combined Review**:
-The translation of MAT 10:11 is commendable, effectively communicating the original intent of the scripture while maintaining clarity and modern accessibility for Spanish speakers. However, there is a consensus that the phrase 'busquen a una persona de confianza' (look for a trustworthy person) does not fully capture the original meaning of 'quién es digno' (who is worthy) implied in the Greek text. A suggested adjustment is to use 'una persona digna' (a worthy person) to align more closely with the biblical context. Additionally, simplifying 'hasta que se vayan a otro pueblo' (until you go to another village) to 'hasta que salgan' (until you leave) could enhance clarity. While the translation effectively relays the directive of staying in the home of those who welcome them, refining these phrases would better convey the intended nuances of the original text. Overall, this translation deserves a solid score, reflecting its effectiveness while acknowledging the potential for minor improvements in accuracy.
+The translation of MAT 10:11 is generally well-executed, achieving clarity and accessibility for modern Spanish speakers. While the phrase "busquen a una persona de confianza" ("look for a trustworthy person") effectively conveys trustworthiness, it does not fully capture the nuance of "quién es digno" ("who is worthy") from the original text, which implies finding someone who is worthy. A preferred phrase could be "busquen a una persona digna" ("look for a worthy person") to maintain theological fidelity. Furthermore, simplifying "hasta que se vayan a otro pueblo" ("until they go to another village") to "hasta que salgan" ("until you leave") enhances conciseness. The instruction about staying in one house until leaving is clear and aligns with the original intent of the scripture. Overall, this is a commendable translation that deserves a solid score while recognizing minor adjustments could improve accuracy and better reflect the original meaning.
 
 ---
 **MAT 10:26**: _(Grade 85.5)_
 
 **Source**:
-> μὴ οὖν φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστι κεκαλυμμένον ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται. (Do not therefore be afraid of them; for there is nothing covered that shall not be revealed, and hid that shall not be known.)
+> μὴ οὖν φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστι κεκαλυμμένον ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται. (So do not be afraid of them; for nothing is covered that will not be revealed, or hidden that will not be known.)
 
 **Translation**:
-> Pero no tengan miedo, porque pronto llegará la hora de la verdad y no habrá secreto que no se descubra. (But do not be afraid, for the hour of truth will soon come and there will be no secret that will not be uncovered.)
+> Pero no tengan miedo, porque pronto llegará la hora de la verdad y no habrá secreto que no se descubra. (But do not be afraid, for soon the hour of truth will come, and there will be no secret that will not be discovered.)
+
+**Suggested Translation**:
+> »Así que no tengan miedo, porque no habrá nada oculto que no será revelado, y ningún secreto que no se conozca. (Therefore, do not be afraid, for there is nothing hidden that will not be revealed, and no secret that will not be known.)
 
 **Combined Review**:
-The translation of Matthew 10:26 effectively captures the essence of the original Greek text, reassuring readers not to fear because truth will ultimately be revealed. While the phrase "pero no tengan miedo" accurately conveys the intended reassurance, the interpretation of "pronto llegará la hora de la verdad" introduces a slight interpretive bias and diverges from the more direct rendering found in the source. Suggestions include a more literal translation such as "no habrá nada oculto que no será revelado" to preserve theological integrity and remain faithful to conservative Christian perspectives. Overall, the translation is accessible and suitable for a modern Spanish-speaking audience, but slight adjustments could enhance its accuracy and fidelity to the original message.
-
-**Overall Grade**: 85/100
+The translation of Matthew 10:26 effectively captures the essence of the original text, conveying reassurance and the certainty of revelation. The phrase "pero no tengan miedo" (but do not be afraid) resonates well, but "llegará la hora de la verdad" (the hour of truth will come) is seen as somewhat colloquial and diverges from a more traditional rendering. A more direct translation would emphasize the inevitability of revelation, thus maintaining theological integrity and a stronger connection to the original text. While the translation is accessible and engaging for Spanish speakers, slight adjustments could improve its accuracy, particularly in the expression of time and truth. Overall, the translation demonstrates clarity and aligns mostly with conservative interpretations of scripture, yet improvements are suggested for fidelity to the original nuances.
 
 ---
 **MAT 13:46**: _(Grade 85.5)_
 
 **Source**:
-> ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην ἀπελθὼν πέπρακε πάντα ὅσα εἶχε καὶ ἠγόρασεν αὐτόν.  
-(Who, upon finding one pearl of great value, went and sold all that he had and bought it.)
+> ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην ἀπελθὼν πέπρακε πάντα ὅσα εἶχε καὶ ἠγόρασεν αὐτόν. ("Who, when he had found one pearl of great price, went and sold all that he had and bought it.")
 
 **Translation**:
-> Por fin descubre una verdadera oportunidad cuando le ofrecen a buen precio una perla de gran valor. Entonces corre, vende todo lo que tiene y la compra.  
-(Finally, he discovers a true opportunity when they offer him a pearl of great value at a good price. Then he runs, sells all that he has, and buys it.)
+> Por fin descubre una verdadera oportunidad cuando le ofrecen a buen precio una perla de gran valor. Entonces corre, vende todo lo que tiene y la compra. ("Finally discovers a true opportunity when offered a pearl of great value at a good price. Then he runs, sells all he has, and buys it.")
+
+**Suggested Translation**:
+> «Cuando encuentra una perla de gran valor, se llena de alegría, vende todo lo que tiene y la compra.» ("When he finds a pearl of great value, he is filled with joy, sells all that he has, and buys it.")
 
 **Combined Review**:
-The translation of MAT 13:46 effectively captures the essence of the original text while maintaining an engaging and modern tone suitable for Spanish-speaking audiences, particularly in Latin America. Phrases like 'verdadera oportunidad' (true opportunity) convey a sense of excitement, but some reviews noted that this may distract from the original message of sacrifice for the Kingdom of Heaven. Suggestions were made to replace 'ofrecen a buen precio' (offer at a good price) with a phrase that better reflects the intrinsic value of the pearl, such as 'gran valor' (great value) or simply 'una perla de gran valor' (a pearl of great value), to maintain fidelity to the text's meaning. Overall, while the translation is commendable in clarity and accessibility, slight adjustments to phrasing would enhance its faithfulness to the biblical text.
+The translation of MAT 13:46 effectively conveys the essence of the verse while maintaining an accessible and modern style suitable for Latin American audiences. Phrases such as 'verdadera oportunidad' ("true opportunity") successfully capture the value of the pearl; however, the translation somewhat departs from the literal meaning of the original text, particularly with the phrase 'ofrecen a buen precio' ("offered at a good price"), which introduces an interpretive layer that may detract from the biblical emphasis on the pearl's intrinsic value. Simplifying certain phrases for clarity and maintaining the original text's rhythm could enhance its literary quality. Overall, the translation demonstrates a strong understanding of the task, achieving a balance between engagement and faithfulness to the scripture, while minor adjustments could improve clarity and alignment with biblical language norms.
 
 ---
-**MAT 14:4**: _(Grade 85.5)_  
+**MAT 14:4**: _(Grade 85.5)_
 
-**Source**:  
-> ἔλεγε γὰρ αὐτῷ ὁ Ἰωάννης· οὐκ ἔξεστί σοι ἔχειν αὐτήν. (For John said to him, 'It is not lawful for you to have her.')  
+**Source**:
+> ἔλεγε γὰρ αὐτῷ ὁ Ἰωάννης· οὐκ ἔξεστί σοι ἔχειν αὐτήν. (For John said to him: It is not lawful for you to have her.)
 
-**Translation**:  
-> Herodías odiaba a Juan, porque este se había atrevido a decirle al rey que era incorrecto que se casara con ella. (Herodias hated John, because he had dared to tell the king that it was wrong for him to marry her.)  
+**Translation**:
+> Herodías odiaba a Juan, porque este se había atrevido a decirle al rey que era incorrecto que se casara con ella. (Herodias hated John, because he had dared to tell the king that it was wrong for him to marry her.)
+
+**Suggested Translation**:
+> Porque Juan le decía: «No te es lícito tener a esta mujer». (For John said to him: "It is not lawful for you to have this woman.")
 
 **Combined Review**:
-The translation of MAT 14:4 generally conveys the original Greek text's essence while maintaining clarity for modern Spanish speakers. While the phrase 'se había atrevido a decirle al rey que era incorrecto' (he had dared to tell the king that it was wrong) captures some meaning, it could be more precise by directly translating the prohibition mentioned in the original text, which is critical for understanding John the Baptist's condemnation of Herod's marriage to Herodias. Additionally, while the phrase 'odiaba a Juan' (hated John) is accurate, the focus should ideally reflect John's authoritative rebuke rather than merely Herodias's feelings towards him. Overall, the translation is clear and accessible, but minor adjustments would enhance fidelity to the original intent and maintain a respectful tone appropriate for conservative interpretation.
+The translation of MAT 14:4 effectively conveys the main message of the original Greek text, capturing the moral rebuke from John the Baptist to Herod regarding his marriage to Herodias. While it maintains clarity and is accessible to a modern Spanish-speaking audience, it could improve in precision and fidelity to the original language. Specific phrases like 'se había atrevido a decirle al rey' (he had dared to tell the king) and 'era incorrecto' (it was wrong) may imply interpretive nuances that detract from John's authoritative stance, which is critical in this context. Additionally, the focus on Herodias's hatred should be balanced with the condemnation of the marriage to better reflect the weight of John's admonition. Overall, the translation is strong but could benefit from minor revisions to enhance its adherence to the original intent and context.
 
 ---
 **MAT 16:3**: _(Grade 85.5)_
 
 **Source**:
-> καὶ πρωΐ· σήμερον χειμών· πυρράζει γὰρ στυγνάζων ὁ οὐρανός. [ὑποκριταί,] τὸ μὲν πρόσωπον τοῦ οὐρανοῦ γινώσκετε διακρίνειν, τὰ δὲ σημεῖα τῶν καιρῶν οὐ δύνασθε [γνῶναι]; (And in the morning: today is winter; for the sky is red and threatening. [Hypocrites,] you know how to discern the face of the sky, but you cannot discern the signs of the times?)  
+> καὶ πρωΐ· σήμερον χειμών· πυρράζει γὰρ στυγνάζων ὁ οὐρανός. [ὑποκριταί,] τὸ μὲν πρόσωπον τοῦ οὐρανοῦ γινώσκετε διακρίνειν, τὰ δὲ σημεῖα τῶν καιρῶν οὐ δύνασθε [γνῶναι]; (And in the morning: Today, there is a storm; for the sky is red and threatening. Hypocrites, you know how to discern the face of the sky, but you cannot discern the signs of the times?)  
 
 **Translation**:
-> y si por la mañana se pone rojo, saben que habrá tempestad. ¡Y sin embargo, no pueden leer las notorias señales de los tiempos! (And if in the morning it is red, you know there will be a storm. Yet, you cannot read the signs of the times!)  
+> y si por la mañana se pone rojo, saben que habrá tempestad. ¡Y sin embargo, no pueden leer las notorias señales de los tiempos! (and if in the morning it is red, you know there will be a storm. And yet, you cannot read the clear signs of the times!)
+
+**Suggested Translation**:
+> y si por la mañana se ve rojo, saben que habrá tempestad. ¡Hipócritas! (And if in the morning it looks red, you know there will be a storm. Hypocrites!) Sin embargo, no pueden discernir las claras señales de los tiempos. (However, they cannot discern the clear signs of the times.)
 
 **Combined Review**:
-The translation of MAT 16:3 is generally effective in conveying the meaning of the original text, but there are areas that require refinement for improved clarity and impact. While the phrase "si por la mañana se pone rojo, saben que habrá tempestad" captures the metaphorical essence, it may benefit from a more direct expression such as "si por la mañana se ve rojo, saben que habrá tormenta." The use of the term "notorias" in "¡Y sin embargo, no pueden leer las notorias señales de los tiempos!" (And yet, you cannot read the notable signs of the times!) could be replaced with a more common synonym to enhance accessibility. Moreover, the omission of the term "¡Hipócritas!" (Hypocrites!) in the translation lessens the emphasis on Jesus' critique of the Pharisees, potentially diluting the message's impact. Overall, the translation is relatable and modern but would gain from adjustments that uphold the seriousness of Jesus' message and enhance adherence to the original context.
+The translation of MAT 16:3 generally conveys the original message well and is accessible for Spanish speakers. The phrase 'si por la mañana se pone rojo, saben que habrá tempestad' (if in the morning it is red, you know there will be a storm) effectively reflects Jesus' metaphor. However, there are suggestions for improving clarity and emphasis. The omission of '¡Hipócritas!' (Hypocrites!) reduces the gravity of Jesus' critique of the Pharisees, and the phrase 'las notorias señales de los tiempos' (the notorious signs of the times) might not capture the original's intent as strongly. Adjustments such as using 'se ve rojo' (looks red) instead of 'se pone rojo' (is red) could enhance clarity and directness. Overall, the translation is a solid effort but could benefit from refining the language for greater impact and faithfulness to the original text.
 
 ---
 **MAT 26:45**: _(Grade 85.5)_
 
-**Source**:  
-> τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ καὶ λέγει αὐτοῖς· καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε! ἰδοὺ ἤγγικεν ἡ ὥρα καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.  
-(Translation: "Then he comes to his disciples and says to them: 'Sleep and rest now! Behold, the hour has come, and the Son of Man is being delivered into the hands of sinners.")  
+**Source**:
+> τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ καὶ λέγει αὐτοῖς· καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε! ἰδοὺ ἤγγικεν ἡ ὥρα καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν. (Then he came to his disciples and said to them, 'Sleep, rest! Behold, the hour has come, and the Son of Man is delivered into the hands of sinners.')  
 
-**Translation**:  
+**Translation**:
 > Cuando volvió a los discípulos les dijo:  
-> «Duerman, descansen…, pero no, ha llegado la hora. Me van a entregar en manos de los pecadores.  
-(Translation: "When he returned to the disciples, he said: 'Sleep, rest... but no, the hour has come. They are going to hand me over to the hands of sinners.'")  
+> «Duerman, descansen…, pero no, ha llegado la hora. Me van a entregar en manos de los pecadores. (When he returned to his disciples, he said to them, 'Sleep, rest… but no, the hour has come. They will hand me over to sinners.')  
+
+**Suggested Translation**:
+> «Ahora pueden descansar, pero ha llegado la hora. Me entregan en manos de los impíos.» ("Now you can rest, but the hour has come. They are handing me over to the wicked.")  
 
 **Combined Review**:
-Summary  
-The translation of MAT 26:45 is generally clear and maintains the essence of the original text, effectively conveying Jesus' message. While the use of the phrase "Duerman, descansen..." ("Sleep, rest...") is accessible and familiar for Spanish speakers, it may not fully reflect the gravity of the moment Jesus is facing. The urgency in the statement "..., pero no, ha llegado la hora" ("..., but no, the hour has come") could be made more emphatic to better represent the original Greek tone. Some reviews noted that alternatives like using "los impíos" ("the wicked") instead of "pecadores" ("sinners") might better capture the seriousness of the situation. Overall, the translation succeeds in its aim of accessibility and engagement for modern audiences, with minor adjustments recommended to enhance its emotional and spiritual depth.
+The translation of MAT 26:45 is generally clear and accessible for Spanish speakers. It successfully maintains the essence of the original text, particularly in conveying Jesus' message. However, the phrase "Duerman, descansen..." ("Sleep, rest...") may come off as too casual, potentially lacking the gravity of the situation Jesus was facing. Most reviewers agree that while the translation effectively communicates the intended meaning, adjustments could enhance the emotional depth and urgency of Jesus' statement. Specifically, rephrasing the ending to better capture the seriousness of the moment, possibly using terms like "los impíos" ("the wicked") instead of "pecadores" ("sinners"), would add to the impact. Overall, the translation is a commendable effort but could benefit from minor refinements.
 
 ---
 **MAT 26:47**: _(Grade 85.5)_
 
-**Source**:
+**Source**:  
 > Καὶ ἔτι αὐτοῦ λαλοῦντος ἰδοὺ Ἰούδας εἷς τῶν δώδεκα ἦλθε, καὶ μετ᾽ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.  
 (And while He was still speaking, behold, Judas, one of the twelve, came, and with him a great multitude with swords and clubs, from the chief priests and elders of the people.)
 
-**Translation**:
+**Translation**:  
 > No había terminado de pronunciar estas palabras cuando Judas, uno de los doce, se acercó al frente de una turba armada con espadas y palos. Iban en nombre de los líderes judíos y  
-(He had not yet finished speaking when Judas, one of the twelve, came up to him, and with him a great crowd armed with swords and clubs. They came from the Jewish leaders and)  
+(No had finished speaking these words when Judas, one of the twelve, approached the front of a crowd armed with swords and clubs. They came in the name of the Jewish leaders and)
+
+**Suggested Translation**:  
+> No había terminado de hablar cuando Judas, uno de los doce, se acercó al frente de una multitud armada con espadas y palos, enviados por los líderes judíos y el pueblo.  
+(No had finished speaking when Judas, one of the twelve, approached the front of a multitude armed with swords and clubs, sent by the Jewish leaders and the people.)
 
 **Combined Review**:
-The translation of MAT 26:47 effectively conveys the essential meaning of the original Greek text, accurately capturing the context of Judas approaching Jesus with an armed crowd for His arrest. The use of modern, accessible Spanish is commendable, making the text engaging for Latin American readers. However, the translation could benefit from enhancements in clarity and flow. Specifically, the phrase at the end of the translation feels incomplete and could be refined for coherence, perhaps by ensuring each sentence stands alone clearly. Additionally, rephrasing certain expressions like "turba armada con espadas y palos" and including elements such as 'pueblo' after 'líderes judíos' could enhance readability and contextual understanding. Overall, this is a strong translation with minor adjustments needed to improve fluidity and emotional impact.
+The translation of MAT 26:47 effectively conveys the core meaning of the original Greek text and captures the context of Judas approaching Jesus with an armed crowd. The use of modern Spanish enhances accessibility for Latin American readers. However, several reviews highlighted issues with sentence flow and completeness. Specifically, there is a need for clarity regarding the crowd's purpose and the completion of sentences to ensure coherence. Suggested improvements include rephrasing certain phrases for better fluidity, such as changing "iba en nombre de los líderes judíos" (went in the name of the Jewish leaders) to clarify the collective authority behind the action, and addressing minor grammatical inconsistencies. Overall, the translation is strong but requires refinement in style and punctuation to enhance readability and emotional impact.
 
 ---
-**MAT 27:60**: _(Grade 85.5)_  
+**MAT 27:60**: _(Grade 85.5)_
 
-**Source**:  
-> καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ, καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου ἀπῆλθεν.  
-(Translation: "And he laid it in his own new tomb, which he had hewn out in the rock: and he rolled a great stone to the door of the sepulchre, and departed.")  
+**Source**:
+> καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ, καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου ἀπῆλθεν.  (And he laid it in his own new tomb, which he had hewn out in the rock; and he rolled a great stone to the door of the tomb and went away.)
 
-**Translation**:  
-> y lo colocó en un sepulcro nuevo labrado en la peña. Hacía poco que había hecho ese sepulcro y ordenó que rodaran una piedra grande para cerrar la entrada. José se alejó,  
-(Translation: "And he placed it in a new tomb hewn in the rock. He had recently made that tomb and ordered that a large stone be rolled to close the entrance. Joseph departed,")  
+**Translation**:
+> y lo colocó en un sepulcro nuevo labrado en la peña. Hacía poco que había hecho ese sepulcro y ordenó que rodaran una piedra grande para cerrar la entrada. José se alejó,  (and he placed it in a new tomb hewn in the rock. It had recently been made, and he ordered a large stone to roll away to close the entrance. Joseph went away,)
+
+**Suggested Translation**:
+> y lo colocó en un sepulcro nuevo, recién labrado en la roca, y puso una gran piedra para cerrar la entrada del sepulcro.  (and he placed it in a new tomb, recently hewn in the rock, and put a great stone to close the entrance of the tomb.)
 
 **Combined Review**:
-The translation of MAT 27:60 successfully captures the essence of the original Greek text while making it accessible to contemporary Spanish readers. However, the phrase 'Hacía poco que había hecho ese sepulcro' can be seen as awkward and might imply a sense of hastiness that is not intended in the original text. A more direct and natural phrasing, such as 'Era un sepulcro nuevo, recién labrado en la roca,' would improve both clarity and engagement. Additionally, the phrase 'y ordenó que rodaran una piedra grande para cerrar la entrada' may benefit from simplification for better fluidity in modern Spanish. Overall, while the translation is clear and generally effective, slight adjustments are recommended to enhance naturalness and readability for the target audience.
+The translation of MAT 27:60 is generally well-executed, maintaining the core meaning of the original Greek text while employing modern language to enhance accessibility for contemporary Spanish readers. While the phrase 'Hacía poco que había hecho ese sepulcro' (It had recently been made) has been recognized by multiple reviewers as somewhat awkward and potentially misleading, it has been suggested that a more direct phrasing like 'recientemente había hecho' (had recently made) or 'Era un sepulcro nuevo, recién labrado en la roca' (It was a new tomb, recently hewn in the rock) may provide better clarity and flow. Furthermore, the use of 'ordenó que rodaran' (he ordered to roll) is considered overly formal for modern usage, and simplifying this could improve readability. Overall, the translation is effective but would benefit from minor revisions to ensure naturalness and engagement for the target audience.
 
 ---
 **MAT 1:13**: _(Grade 85.8)_
 
 **Source**:
-> Ζοροβάβελ δὲ ἐγέννησε τὸν Ἀβιούδ, Ἀβιοὺδ δὲ ἐγέννησε τὸν Ἐλιακείμ, Ἐλιακεὶμ δὲ ἐγέννησε τὸν Ἀζώρ,
+> Ζοροβάβελ δὲ ἐγέννησε τὸν Ἀβιούδ, Ἀβιοὺδ δὲ ἐγέννησε τὸν Ἐλιακείμ, Ἐλιακεὶμ δὲ ἐγέννησε τὸν Ἀζώρ,  
+(**Translation**: Zorobabel begot Abiud, Abiud begot Eliakim, Eliakim begot Azor.)
 
 **Translation**:
 > Zorobabel de Abiud, Abiud de Eliaquín y Eliaquín de Azor.  
-(Translation: Zorobabel begat Abiud, Abiud begat Eliakim, and Eliakim begat Azor.)
+(**Translation**: Zorobabel of Abiud, Abiud of Eliakim, and Eliakim of Azor.)
+
+**Suggested Translation**:
+> Zorobabel fue el padre de Abiud, y Abiud fue el padre de Eliaquín, y Eliaquín fue el padre de Azor.  
+(**Translation**: Zorobabel was the father of Abiud, and Abiud was the father of Eliakim, and Eliakim was the father of Azor.)
 
 **Combined Review**:
-The translation of MAT 1:13 effectively conveys the lineage presented in the original Greek text. However, to enhance clarity and accessibility for modern Spanish readers, it is recommended to incorporate more explicit relational language. Suggestions include replacing 'de' with 'fue el padre de' (was the father of) for each name, which would clarify the relationships being described. Additionally, using 'y' (and) before each name may improve readability. While the translation is accurate and maintains the essence of the original, minor adjustments in phrasing and structure could enhance the overall engagement and understanding for readers. Therefore, the translation deserves a score of 85.
+The translation of MAT 1:13 is generally accurate, capturing the lineage presented in the original Greek text. However, several reviewers noted that the phrase "de" (of) lacks clarity about the relationships and suggested including phrases like "fue el padre de" (was the father of) for clarity. This would provide a more familiar and engaging reading experience, especially for those unfamiliar with genealogical terms. Reviewers emphasized that while the current translation is succinct, enhancements could be made by using conjunctions or modern equivalents that reflect common Spanish usage in biblical contexts. These minor adjustments would improve both clarity and fluidity, making the text more accessible and relatable for modern Spanish speakers, particularly in a Latin American context.
 
 ---
 **MAT 6:11**: _(Grade 85.8)_
 
 **Source**:
-> τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον· (Give us this day our daily bread)
+> τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον· (Give us today our daily bread)
 
 **Translation**:
-> Danos hoy los alimentos que necesitamos (Give us today the food we need)
+> Danos hoy los alimentos que necesitamos, (Give us today the food we need)
+
+**Suggested Translation**:
+> Danos hoy nuestro pan de cada día, (Give us today our daily bread)
 
 **Combined Review**:
-The translation of MAT 6:11 as "Danos hoy los alimentos que necesitamos" (Give us today the food we need) is clear and accessible for modern Spanish speakers, successfully conveying the request for daily provision. However, several reviews note that while this phrasing captures the essence of the original Greek text, it could benefit from incorporating the word 'pan' (bread) instead of 'alimentos' (food) to more accurately reflect the specific nuance and spiritual significance of 'daily bread' as intended in the biblical context. Overall, the translation is effective in its modern approach, yet minor adjustments could enhance its alignment with the original text's depth and theological meaning.
+Summary
+The translation of MAT 6:11 as "Danos hoy los alimentos que necesitamos" (Give us today the food we need) is clear and accessible for Spanish speakers, particularly in a Latin American context. The translation successfully communicates the essence of the original Greek text, reflecting the request for daily sustenance. However, several reviews point out that the phrase 'los alimentos que necesitamos' (the food we need) is broader than 'pan' (bread), which may dilute the metaphorical significance of 'daily bread' in the biblical context. Most reviewers suggest that using the term 'pan' (bread) would align the translation more closely with the original text and its intended spiritual meaning. Overall, while the translation effectively meets the goal of accessibility, incorporating a term like 'pan' (bread) could enhance its fidelity to the source text and its theological depth. Therefore, the translation receives an average grade of 85, with room for improvement to capture the original's nuance.
 
 ---
 **MAT 10:35**: _(Grade 85.8)_
 
 **Source**:
-> ἦλθον γὰρ διχάσαι ἄνθρωπον κατὰ τοῦ πατρὸς αὐτοῦ καὶ θυγατέρα κατὰ τῆς μητρὸς αὐτῆς καὶ νύμφην κατὰ τῆς πενθερᾶς αὐτῆς·  (For I have come to set a man against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law.)
+> ἦλθον γὰρ διχάσαι ἄνθρωπον κατὰ τοῦ πατρὸς αὐτοῦ καὶ θυγατέρα κατὰ τῆς μητρὸς αὐτῆς καὶ νύμφην κατὰ τῆς πενθερᾶς αὐτῆς· (For I have come to set a man against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law.)
 
 **Translation**:
-> a poner al hijo contra su padre, a la hija contra su madre, a la nuera contra su suegra.  (to set a son against his father, a daughter against her mother, a daughter-in-law against her mother-in-law.)
+> a poner al hijo contra su padre, a la hija contra su madre, a la nuera contra su suegra. (to set the son against his father, the daughter against her mother, the daughter-in-law against her mother-in-law.)
+
+**Suggested Translation**:
+> He venido a dividir al hombre contra su padre, a la hija contra su madre y a la nuera contra su suegra. (I have come to divide the man against his father, the daughter against her mother, and the daughter-in-law against her mother-in-law.)
 
 **Combined Review**:
-The translation of MAT 10:35, "a poner al hijo contra su padre, a la hija contra su madre, a la nuera contra su suegra," (to set a son against his father, a daughter against her mother, a daughter-in-law against her mother-in-law) generally captures the essence of the original Greek text while maintaining an accessible style for Spanish speakers. However, the phrase may lack the direct impact of the original and could lead to misunderstandings regarding the concept of division Jesus describes. Suggestions for improvement include adopting a more literal phrase such as "he venido a dividir" (I have come to divide) instead of "a poner" (to set) to enhance fidelity to the original text and better convey the seriousness of the message. Overall, the translation effectively communicates the intended meaning but could benefit from slight adjustments to enhance clarity and reverence.
+The translation of MAT 10:35 generally communicates the message of Jesus regarding familial conflict effectively and is accessible for modern Spanish speakers. However, there are several suggestions for improvement. Critics highlight that the phrase "a poner al hijo contra su padre" (to set the son against his father) could be seen as informal and suggest using "he venido a dividir" (I have come to divide) to better reflect the gravity of Jesus' message about division. Additionally, while the translation captures the essence of the original Greek, a more literal approach may enhance fidelity and clarity. There is a consensus that slight adjustments to maintain the serious tone and directness of the original text would strengthen the translation while still making it relatable for the intended audience. Overall, the translation is strong but would benefit from these enhancements.
 
 ---
 **MAT 11:12**: _(Grade 85.8)_
 
 **Source**:
-> ἀπὸ δὲ τῶν ἡμερῶν Ἰωάννου τοῦ βαπτιστοῦ ἕως ἄρτι ἡ βασιλεία τῶν οὐρανῶν βιάζεται, καὶ βιασταὶ ἁρπάζουσιν αὐτήν.  (From the days of John the Baptist until now, the kingdom of heaven suffers violence, and the violent take it by force.)
+> ἀπὸ δὲ τῶν ἡμερῶν Ἰωάννου τοῦ βαπτιστοῦ ἕως ἄρτι ἡ βασιλεία τῶν οὐρανῶν βιάζεται, καὶ βιασταὶ ἁρπάζουσιν αὐτήν. (From the days of John the Baptist until now the kingdom of heaven suffers violence, and the violent take it by force.)
 
 **Translation**:
-> Desde que Juan el Bautista comenzó a predicar hasta ahora, se ha combatido mucho contra el reino de los cielos, y los que son violentos luchan para acabar con él. (Since John the Baptist began to preach until now, there has been much struggle against the kingdom of heaven, and the violent are fighting to end it.)
+> Desde que Juan el Bautista comenzó a predicar hasta ahora, se ha combatido mucho contra el reino de los cielos, y los que son violentos luchan para acabar con él. (Since John the Baptist began to preach until now, much has been fought against the kingdom of heaven, and the violent are fighting to end it.)
+
+**Suggested Translation**:
+> Desde los días de Juan el Bautista hasta ahora, el reino de los cielos se ha estado abriendo paso con fervor, y aquellos que se esfuerzan con determinación lo están alcanzando. (From the days of John the Baptist until now, the kingdom of heaven has been advancing fervently, and those who strive determinedly are seizing it.)
 
 **Combined Review**:
-The translation of MAT 11:12 effectively communicates the original Greek text's essence in a modern Spanish that resonates well with a Latin American audience. The phrase "se ha combatido mucho contra el reino de los cielos" captures the notion of struggle and resistance towards the kingdom of heaven. However, the phrase "los que son violentos luchan para acabar con él" may introduce a misunderstanding as it could imply opposition rather than the intended meaning of a fervent pursuit of the kingdom. A more nuanced choice of wording that reflects an active engagement rather than hostility would enhance clarity and theological accuracy. Overall, while the translation maintains accessibility and modernity, it could benefit from refinements to better align with conservative interpretations and the original intent. Therefore, the translation is graded at 85.
+The translation of MAT 11:12 is generally clear and captures the essence of the original Greek text. The phrase "se ha combatido mucho contra el reino de los cielos" (has been fought against the kingdom of heaven) effectively conveys the idea of struggle and resistance towards the kingdom of heaven, which aligns with the original meaning. However, the translation "los que son violentos luchan para acabar con él" (the violent are fighting to end it) may introduce a misunderstanding, implying opposition rather than an active pursuit of the kingdom. A more nuanced rendering would enhance clarity and align better with traditional interpretations that emphasize striving and earnestness. Overall, while the translation is accessible and modern for a Latin American audience, it could benefit from slight refinements for greater theological accuracy and adherence to a conservative Christian perspective.
 
 ---
 **MAT 13:10**: _(Grade 85.8)_
 
 **Source**:
-> Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ· διατί ἐν παραβολαῖς λαλεῖς αὐτοῖς;  
-(And the disciples came and said to him, "Why do you speak to them in parables?")
+> Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ· διατί ἐν παραβολαῖς λαλεῖς αὐτοῖς; (And the disciples came to Him and said, "Why do You speak to them in parables?")
 
 **Translation**:
-> Sus discípulos se le acercaron y le dijeron:  
-> ―¿Por qué usas esos simbolismos tan difíciles de entender?  
-("His disciples approached him and said, 'Why do you use those symbols that are so difficult to understand?')
+> Sus discípulos se le acercaron y le dijeron: (His disciples came to Him and said to Him:)
+> ―¿Por qué usas esos simbolismos tan difíciles de entender? ("Why do You use those difficult symbols to understand?")
+
+**Suggested Translation**:
+> Sus discípulos se le acercaron y le dijeron: (His disciples came to Him and said:)
+> ―¿Por qué usas esas parábolas? ("Why do You use those parables?")
 
 **Combined Review**:
-Summary
-The translation of MAT 13:10 is generally well-received, capturing the essence of the original Greek text while maintaining accessibility for modern Spanish speakers. Multiple reviews highlight that the phrase "simbolismos tan difíciles de entender" (symbols that are so difficult to understand) is not the most precise terminology. It has been suggested that using "parábolas" (parables) instead would better reflect the biblical context and the storytelling aspect of Jesus’ teaching. The concerns regarding informality in language indicate a preference for terminology that honors the depth and gravity of Jesus’ teachings. Overall, while the translation succeeds in clarity and relatability, refining specific terms could enhance fidelity to the original text and respect for the message.
+The translation of MAT 13:10 effectively conveys the original Greek text and is generally clear and accessible for a Latin American audience. However, there is a consensus among reviewers that the phrase "simbolismos tan difíciles de entender" ("difficult symbols to understand") may undermine the gravity of Jesus’ message. A recommendation to use the term "parábolas" ("parables") instead of "simbolismos" ("symbols") would better reflect the storytelling nature of the original text. While the current translation achieves modern readability, minor adjustments in terminology could enhance its faithfulness and respect toward the spiritual significance of Jesus' teachings. Overall, a grade of 85 is warranted due to its strengths and the potential for refinement.
 
 ---
-**MAT 14:20**: _(Grade 85.8)_  
+**MAT 14:20**: _(Grade 85.8)_
 
-**Source**:  
-> καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν, καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων δώδεκα κοφίνους πλήρεις.  
-(Translation: And they all ate and were satisfied, and they took up twelve baskets full of the fragments.)  
+**Source**:
+> καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν, καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων δώδεκα κοφίνους πλήρεις.  (And they all ate and were satisfied, and they took up the leftover pieces, twelve baskets full.)
 
-**Translation**:  
-> Nadie se quedó sin comer. ¡Y hasta sobraron doce cestas de comida,  
-(Translation: No one was left without eating. And even twelve baskets of food remained.)  
+**Translation**:
+> Nadie se quedó sin comer. ¡Y hasta sobraron doce cestas de comida! (No one went without eating. And there were even twelve baskets of food left over!)
+
+**Suggested Translation**:
+> Todos comieron hasta saciarse, y recogieron doce cestas llenas de sobras. (Everyone ate until satisfied, and they collected twelve baskets full of leftovers.)
 
 **Combined Review**:
-_(Overall Grade: 85)_:  
-The translation of MAT 14:20 effectively communicates the miracle of Jesus feeding the multitude in a modern and accessible style suitable for Spanish-speaking audiences, particularly in Latin America. However, several reviews pointed out that the phrase "Nadie se quedó sin comer" (No one was left without eating) does not fully capture the emphasis on the miraculous provision that is conveyed in the original text. A suggested improvement would be to use a phrasing like "Todos comieron hasta saciarse" (Everyone ate until they were satisfied) to better reflect the miracle's abundance and significance. Additionally, the expression "¡Y hasta sobraron doce cestas de comida!" (And even twelve baskets of food remained!) might be perceived as informal, and adjusting it to something like "y recogieron doce cestas llenas de sobras" (and they took up twelve baskets full of leftovers) could enhance clarity and reverence. Overall, the translation is well done but could benefit from minor adjustments to ensure the fullness of the message is conveyed, aligning more closely with conservative interpretations of the passage.
+The translation of MAT 14:20 effectively conveys the miracle of Jesus feeding the multitude in a modern and accessible style suitable for Latin American audiences. However, several reviews suggest improvements for clarity and theological significance. Phrases like "Nadie se quedó sin comer" (No one went without eating) could be refined to "Todos comieron hasta saciarse" (Everyone ate until satisfied) to better reflect the fullness of the miracle. The expression regarding leftovers may also be enhanced to maintain the sense of abundance and divine provision inherent in the original text. While the overall style is engaging and suitable for modern readers, minor adjustments would ensure both clarity and fidelity to the scriptural message.
 
 ---
-**MAT 15:18**: _(Grade 85.8)_  
+**MAT 15:18**: _(Grade 85.8)_
 
 **Source**:  
 > τὰ δὲ ἐκπορευόμενα ἐκ τοῦ στόματος ἐκ τῆς καρδίας ἐξέρχεται, κἀκεῖνα κοινοῖ τὸν ἄνθρωπον.  
-(But those things which proceed out of the mouth come forth from the heart; and they defile the man.)  
+(But what comes out of the mouth proceeds from the heart, and this defiles a person.)
 
 **Translation**:  
 > pero el mal hablar brota de la suciedad del corazón y corrompe a la persona que así habla.  
-(but evil speech comes from the impurity of the heart and corrupts the person who speaks this way.)  
+(but evil speech springs from the filth of the heart and corrupts the person who speaks thus.)
+
+**Suggested Translation**:  
+> "Pero lo que sale de la boca proviene del corazón, y eso es lo que contamina al hombre."  
+("But what comes out of the mouth proceeds from the heart, and this defiles a person.")
 
 **Combined Review**:
-The translation of MAT 15:18 effectively conveys the core message regarding the connection between the heart and speech. While it is clear and accessible for Spanish speakers, certain phrases could benefit from more precise word choices to reflect the gravity of the original text better. Specifically, the term 'suciedad del corazón' (impurity of the heart) may lack the seriousness intended in traditional translations. Alternatives like 'maldad del corazón' (wickedness of the heart) or 'malicia' (malice) could enhance the theological depth. The expression 'mal hablar' (evil speech) might also be refined to something like 'los malos pensamientos' (evil thoughts) to align more closely with the biblical concept of inner purity over mere outward expression. Overall, the translation maintains its clarity and relevance, though minor adjustments could deepen its theological impact, achieving a strong engagement with the audience.
+The translation of MAT 15:18 generally conveys the core message effectively while being accessible for modern Spanish speakers. The phrase "pero el mal hablar brota de la suciedad del corazón y corrompe a la persona que así habla" (but evil speech springs from the filth of the heart and corrupts the person who speaks thus) communicates the essential idea, but the terms used may not fully reflect the spiritual and moral gravity present in the original Greek text. Suggested alternatives include using "maldad" (evil) or "malicia" (malice) instead of "suciedad" (filth) to better align with traditional translations that emphasize the seriousness of sin. Additionally, refining "mal hablar" (evil speech) to something like "los malos pensamientos" (the evil thoughts) could more accurately convey the nature of what corrupts a person. Overall, the translation is clear and relatable but could benefit from these adjustments to enhance both theological depth and reverence.
+
+Overall Grade: 85.
 
 ---
 **MAT 21:38**: _(Grade 85.8)_
 
 **Source**:
-> οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς· οὗτός ἐστιν ὁ κληρονόμος· δεῦτε ἀποκτείνωμεν αὐτὸν καὶ κατάσχωμεν τὴν κληρονομίαν αὐτοῦ. (The farmers, seeing the son, said to themselves, 'This is the heir; come, let us kill him and take his inheritance.')
+> οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς· οὗτός ἐστιν ὁ κληρονόμος· δεῦτε ἀποκτείνωμεν αὐτὸν καὶ κατάσχωμεν τὴν κληρονομίαν αὐτοῦ. (The farmers, seeing the son, said to themselves: "This is the heir; come, let us kill him and seize his inheritance.")
 
 **Translation**:
-> Pero cuando los labradores vieron que se acercaba, se dijeron: “Este no es nada menos que el heredero. Matémoslo y así nos quedaremos con la herencia”. (But when the farmers saw him coming, they said to themselves, "This is nothing less than the heir. Let us kill him and thus keep the inheritance for ourselves.")
+> Pero cuando los labradores vieron que se acercaba, se dijeron: “Este no es nada menos que el heredero. Matémoslo y así nos quedaremos con la herencia.” (But when the farmers saw that he was approaching, they said: "This is nothing less than the heir. Let us kill him and so we will keep the inheritance.")
+
+**Suggested Translation**:
+> Pero cuando los labradores vieron que se acercaba, pensaron entre ellos: “Este es el heredero; matémoslo y así nos quedaremos con la herencia.” (But when the farmers saw that he was approaching, they thought among themselves: "This is the heir; let us kill him and so we will keep the inheritance.")
 
 **Combined Review**:
-The translation of MAT 21:38 effectively captures the original meaning and is generally clear and modern, making it accessible to a Spanish-speaking audience, particularly in Latin America. While the use of contemporary expressions enhances engagement, certain phrases could be refined for greater theological clarity and alignment with a conservative Christian perspective. 
-
-Specifically, changing 'este no es nada menos que el heredero' to a more respectful tone such as 'Este es el heredero' would better reflect the gravity of the context. Additionally, simplifying the phrase 'matémoslo y así nos quedaremos con la herencia' could maintain its original seriousness without losing its intent. The expression 'se dijeron' might be replaced with 'pensaron' or 'se dijeron entre ellos' for a more natural conversational tone. Overall, the translation is commendable but would benefit from minor adjustments to enhance both clarity and reverence for the text.
+The translation of MAT 21:38 effectively communicates the original message, with language that is accessible and engaging for Spanish speakers in Latin America. Reviews highlight the clarity and modernity of the translation, emphasizing its effectiveness in conveying the intended meaning. However, there are suggestions for improvement to enhance reverence and maintain theological depth. Specifically, phrases like "este no es nada menos que el heredero" (this is nothing less than the heir) may sound informal and could be revised to "Este es el heredero" (This is the heir) to better align with the seriousness of the context. Additionally, the phrasing of actions taken by the farmers may benefit from a slight adjustment to underscore the moral implications. Overall, while the translation meets the goal of being relatable and engaging, minor refinements would elevate its formal tone and fidelity to the original text.
 
 ---
-**MAT 22:2**: _(Grade 85.8)_  
+**MAT 22:2**: _(Grade 85.8)_
 
-**Source**:  
-> ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησε γάμους τῷ υἱῷ αὐτοῦ. (The kingdom of heaven is like a king who prepared a wedding feast for his son.)  
+**Source**:
+> ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησε γάμους τῷ υἱῷ αὐτοῦ. (The kingdom of heaven is likened to a king who made weddings for his son.)
 
-**Translation**:  
-> «El reino de los cielos puede ilustrarse con el cuento de un rey que preparó un gran banquete en celebración de la boda de su hijo. (The kingdom of heaven can be illustrated by the story of a king who prepared a great banquet in celebration of his son's wedding.)  
+**Translation**:
+> «El reino de los cielos puede ilustrarse con el cuento de un rey que preparó un gran banquete en celebración de la boda de su hijo. (The kingdom of heaven can be illustrated with the story of a king who prepared a great banquet for his son's wedding.)
+
+**Suggested Translation**:
+> «El reino de los cielos se asemeja a un rey que preparó un gran banquete por la boda de su hijo. (The kingdom of heaven is like a king who prepared a great banquet for his son's wedding.)
 
 **Combined Review**:
-The translation of MAT 22:2 captures the essence of the original Greek text while aiming for modern accessibility for Spanish speakers. However, there are concerns regarding the use of the term "cuento" (story), which may imply a fictional narrative rather than the significant teaching of a parable. Suggestions include replacing "cuento" with terms like "parábola" (parable) or "historia" (history) to better convey the reverence associated with biblical texts. Additionally, while the translation effectively communicates the message, the phrase "puede ilustrarse con" (can be illustrated by) might be reconsidered to maintain a more formal tone. Overall, the translation is engaging and aligns with the objective of accessibility, but a few adjustments could enhance its appropriateness from a conservative Christian perspective.
+The translation of MAT 22:2 effectively captures the essence of the original Greek text while utilizing modern and accessible language for Spanish speakers. However, there are concerns regarding the use of the term "cuento" (story), which may undermine the reverence typically associated with biblical texts. Suggested alternatives such as "parábola" (parable) or "ejemplo" (example) would convey a more respectful tone and better reflect the gravity of the parable's message. The phrase "puede ilustrarse con" (can be illustrated with) is also considered less formal than what is suitable for biblical translation, and adjustments towards more solemn language could enhance the overall impact. While the translation maintains clarity and relatability, minor adjustments in terminology would provide a more faithful representation of the biblical text. Overall, the translation achieves its objective of accessibility but requires some revisions to align with conservative Christian perspectives.
 
 ---
 **MAT 22:6**: _(Grade 85.8)_
@@ -831,184 +1010,210 @@ The translation of MAT 22:2 captures the essence of the original Greek text whil
 **Translation**:
 > y los otros tomaron a los mensajeros y, tras golpearlos y afrentarlos, los mataron. (and the others took the messengers and, after beating and insulting them, killed them.)
 
+**Suggested Translation**:
+> y los demás tomaron a los siervos, los humillaron y los mataron. (and the others took the servants, humiliated them, and killed them.)
+
 **Combined Review**:
-Summary:
-The translation of MAT 22:6 effectively conveys the core message of the original Greek text, reflecting the serious nature of the rejection faced by the messengers. The modern Spanish phrasing is accessible for contemporary readers, especially in Latin America. However, there are several areas for potential improvement:
-
-1. The term 'afrentarlos' (to insult them) may not fully capture the gravity of 'ὕβρισαν' (insulted), which suggests a stronger connotation of insult or blasphemy. A more impactful alternative like 'humillarlos' (to humiliate them) could enhance clarity and accessibility.
-
-2. The phrase 'tomaron a los mensajeros' (they took the messengers) could be revised to 'tomaron a los siervos' (they took the servants) to align better with traditional biblical language and emphasize the servitude aspect, which holds significant weight in the context of this parable.
-
-3. Overall, while the translation succeeds in being engaging and relatable, it should strive for a balance between modern accessibility and the formal tone typically associated with biblical texts. Emphasizing the serious consequences of the actions described can help convey the intended gravity of the scripture more effectively. Overall, this translation is commendable, with suggestions aimed at enhancing fidelity to the original message.
+The translation of MAT 22:6 effectively conveys the original text's essence, portraying the gravity of the situation where the messengers are violently treated. While the modern style makes it accessible for Spanish speakers, terms like 'afrentarlos' (to insult them) may not fully capture the stronger connotation of 'ὕβρισαν' (they insulted), which implies insult or blasphemy. The phrase 'los otros tomaron a los mensajeros' (the others took the messengers) could be improved for clarity by using 'los demás' (the others). The phrase 'tras golpearlos y afrentarlos' (after beating and insulting them) communicates violence and disrespect; however, the formality of terms in a biblical context, like 'siervos' (servants) instead of 'mensajeros' (messengers), would align better with traditional biblical language. Overall, the translation is strong but could enhance clarity and gravity in its word choices to more faithfully reflect the original text's intent. It meets objectives of accessibility while warranting some adjustments for traditional language usage.
 
 ---
 **MAT 22:16**: _(Grade 85.8)_
 
 **Source**:
-> καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν λέγοντες· διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ καὶ τὴν ὁδὸν τοῦ Θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός· οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων·  
-
-(And they send to him their disciples with the Herodians, saying: Teacher, we know that you are true and teach the way of God in truth, and you do not care about anyone; for you do not regard the person of men.)
+> καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν λέγοντες· διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ καὶ τὴν ὁδὸν τοῦ Θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός· οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων· (And they sent to him their disciples, along with the Herodians, saying, "Teacher, we know that you are true and teach the way of God in truth, and you do not care about anyone's opinion, for you are not swayed by appearances.")
 
 **Translation**:
-> Decidieron enviar a algunos de sus hombres, juntamente con algunos herodianos,  
-> (They decided to send some of their men along with the Herodians)  
-> 22.16  
-> Los herodianos eran un partido político judío.  
-> (The Herodians were a Jewish political party.)  
-> a formularle algunas preguntas.  
-> (to ask him some questions.)  
-> ―Señor —le dijeron—, sabemos que amas la verdad y que la enseñas sin miedo a las consecuencias.  
-> ("Teacher," they said, "we know that you love the truth and teach it without fear of the consequences.")  
+> Decidieron enviar a algunos de sus hombres, juntamente con algunos herodianos, a formularle algunas preguntas. (They decided to send some of their men along with some Herodians to ask him some questions.) —Señor —le dijeron—, sabemos que amas la verdad y que la enseñas sin miedo a las consecuencias. ("Teacher," they said, "we know that you are true and that you teach the way of God in truth; you do not care about anyone's opinion, for you are not swayed by appearances.")
+
+**Suggested Translation**:
+> Decidieron enviar a algunos de sus hombres, junto con algunos herodianos, a formularle algunas preguntas. (They decided to send some of their men along with some Herodians to ask him some questions.) —Señor —le dijeron—, sabemos que eres verdadero y que enseñas el camino de Dios con verdad; no te importa lo que piensen los demás, porque no juzgas por apariencias. ("Teacher," they said, "we know that you are true and that you teach the way of God in truth; you do not care about anyone's opinion, for you are not swayed by appearances.")
 
 **Combined Review**:
-The translation of MAT 22:16 is effective in capturing the meaning of the original Greek text, clearly conveying the intentions of the Pharisees and their insincere flattery toward Jesus. It maintains a respectful and clear tone, using modern Spanish that is accessible to Latin American readers. However, there are areas for improvement. Suggestions include simplifying certain phrases for clarity, refining sentence structure for better flow, and adjusting expressions to reflect a more formal tone appropriate for biblical translations. The inclusion of background information about the Herodians, while informative, may distract from the main narrative. Overall, the translation effectively conveys the essence of the passage but could benefit from minor refinements to enhance clarity and maintain a neutral tone.
+The translation of MAT 22:16 effectively captures the essence and meaning of the original Greek text while maintaining a clear and respectful tone. The use of modern and accessible Spanish makes it engaging for contemporary Latin American audiences. However, there are minor adjustments recommended to improve clarity, conciseness, and formality, particularly regarding phrases that may introduce interpretative bias or may not align with traditional biblical terminology. Additionally, while the informative note about the Herodians is helpful, it could be streamlined to maintain the flow of the text. Overall, the translation is solid and meets the objectives but could benefit from refinements to enhance clarity and reverence for the biblical message.
 
 ---
-## MAT 22:35 (Grade 85.8)
+**MAT 22:35**: _(Grade 85.8)_
 
-**Source**:  
-> καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν, νομικός, πειράζων αὐτὸν καὶ λέγων·  
-(And one of them, a lawyer, asked him, testing him, and saying:)
+**Source**:
+> καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν, νομικός, πειράζων αὐτὸν καὶ λέγων· (And one of them, a lawyer, asked him, testing him, and saying:)
 
-**Translation**:  
-> y se les ocurrió una nueva idea. Uno de ellos, abogado, preguntó a Jesús:  
-(and they thought of a new idea. One of them, a lawyer, asked Jesus:)
+**Translation**:
+> y se les ocurrió una nueva idea. Uno de ellos, abogado, preguntó a Jesús: (and they came up with a new idea. One of them, a lawyer, asked Jesus:)
+
+**Suggested Translation**:
+> y uno de ellos, un abogado, le preguntó a Jesús: (and one of them, a lawyer, asked Jesus:)
 
 **Combined Review**:
-The translation of MAT 22:35 successfully conveys the essence of the original text while ensuring accessibility for modern Spanish-speaking audiences. However, the phrase "y se les ocurrió una nueva idea" (and they thought of a new idea) is perceived as informal and does not fully capture the intent behind the lawyer's question, which is to challenge Jesus. A more accurate and reverent translation would be "y uno de ellos, un abogado, le preguntó a Jesús" (and one of them, a lawyer, asked Jesus). This adjustment would enhance the professionalism and gravity of the text, aligning better with the solemnity of the biblical context. Overall, while the translation is clear and modern, it could benefit from slight revisions to increase fidelity to the original phrasing and to more appropriately reflect the serious nature of the conversation.
+The translation of MAT 22:35 is generally effective, conveying the essence of the original text and ensuring accessibility for a modern Spanish-speaking audience. However, the phrase "se les ocurrió una nueva idea" (they came up with a new idea) might be too informal and could undermine the seriousness of the context, where the lawyer is intentionally testing Jesus. A more precise phrasing, such as "y uno de ellos, un abogado, le preguntó a Jesús," (and one of them, a lawyer, asked Jesus) would not only maintain clarity but also better reflect the gravity of the interaction. While the translation is clear and engaging, a slight shift towards a more formal tone would respect the sacred nature of the scripture, aligning it closer to the original intent and context.
 
 ---
-**MAT 25:7**: _(Grade 85.8)_  
+**MAT 25:7**: _(Grade 85.8)_
 
 **Source**:  
-> τότε ἠγέρθησαν πᾶσαι αἱ παρθένοι ἐκεῖναι καὶ ἐκόσμησαν τὰς λαμπάδας αὐτῶν. (Then all those virgins arose and trimmed their lamps.)  
+> τότε ἠγέρθησαν πᾶσαι αἱ παρθένοι ἐκεῖναι καὶ ἐκόσμησαν τὰς λαμπάδας αὐτῶν.  
+(Then all those virgins arose and trimmed their lamps.)
 
 **Translation**:  
-> Las muchachas saltaron a arreglar las lámparas, (The girls jumped to fix the lamps.)  
+> Las muchachas saltaron a arreglar las lámparas,  
+(The girls jumped to fix the lamps,)
+
+**Suggested Translation**:  
+> Entonces las doncellas se levantaron a preparar sus lámparas.  
+(Then the maidens arose to prepare their lamps.)
 
 **Combined Review**:
-The translation of MAT 25:7 as "Las muchachas saltaron a arreglar las lámparas" (The girls jumped to fix the lamps) effectively conveys the essence of the original Greek text, capturing the urgency and action described. However, the choice of the word "muchachas" (girls) may not fully reflect the dignity or formality appropriate for the characters in this biblical context. A term like "doncellas" (maidens) or "vírgenes" (virgins) would align better with traditional expectations, especially given the parable's wedding context. Additionally, while the phrase "saltaron a arreglar" (jumped to fix) conveys immediacy, it may carry an informal tone that could be refined to enhance its gravity and nuance. Overall, the translation is modern and accessible, resonating well with Latin American audiences but could benefit from a more formal tone to reflect the original context and message more faithfully.
+The translation of MAT 25:7 as "Las muchachas saltaron a arreglar las lámparas" (The girls jumped to fix the lamps) effectively communicates the essence of the original Greek text in a modern and accessible manner. However, the term "muchachas" (girls) may lack the dignity and formality suitable for the characters in this parable, as "doncellas" (maidens) would resonate more with a conservative audience. The phrase "saltaron a arreglar" (jumped to fix) might imply joy or excitement that isn't present in the original context, potentially undermining the gravity and urgency intended in the parable. A more neutral or formal verb could enhance clarity while still engaging contemporary Spanish speakers. Overall, while the translation is commendable and effectively aligns with the goal of making the scripture accessible, slight adjustments in word choice could better reflect the traditional context of the text.
 
 ---
 **MAT 26:7**: _(Grade 85.8)_
 
-**Source**:  
+**Source**:
 > προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.  
-(Translation: A woman approached him with an alabaster jar of very expensive perfume, and she poured it on his head while he was reclining.)
+(Translated: A woman approached Him with an alabaster jar of very expensive perfume, and she poured it on His head as He reclined.)
 
-**Translation**:  
+**Translation**:
 > Durante la cena, una mujer se le acercó con un frasco de un perfume costosísimo y se lo echó en la cabeza.  
-(Translation: During dinner, a woman approached him with a jar of very expensive perfume and poured it on his head.)
+(Translated: During dinner, a woman approached Him with a jar of very expensive perfume and poured it on His head.)
+
+**Suggested Translation**:
+> Durante la cena, una mujer se acercó a Él con un frasco de un perfume muy caro y se lo vertió sobre la cabeza.  
+(Translated: During dinner, a woman approached Him with a jar of a very expensive perfume and poured it on His head.)
 
 **Combined Review**:
-The translation of MAT 26:7 is generally clear and captures the essence of the original Greek text well. It effectively employs modern and familiar Spanish, making it accessible to a broad audience, particularly Spanish speakers in Latin America. The phrase "con un frasco de un perfume costosísimo" successfully conveys the high value of the perfume. However, some minor adjustments are recommended for clarity and fluidity. The expression 'se le acercó' could be made more direct as 'una mujer se acercó a Él'. Additionally, 'costosísimo' may feel informal; alternatives like 'muy caro' could reflect the seriousness of the situation better. The phrase 'se lo echó en la cabeza' might lack the formality expected in biblical texts; a more fitting option like 'se lo vertió sobre la cabeza' could enhance the reverence and weight of the action described. Overall, this translation is strong but could benefit from these refinements.
+The translation of MAT 26:7 is clear and modern, making it accessible for Spanish speakers in Latin America. While the original phrase "se lo echó en la cabeza" ("she poured it on His head") is understandable, a more formal expression such as "se lo vertió sobre la cabeza" ("she poured it over His head") could better reflect the biblical tone. Additionally, while "costosísimo" ("very expensive") conveys the high value of the perfume, the phrase "muy caro" ("very expensive") might resonate more colloquially. It's important to maintain the gravity of the original Greek text while ensuring clarity for contemporary readers. Overall, the translation effectively captures the essence of the original while allowing for minor adjustments to enhance formal tone and fluidity.
 
 ---
 **MAT 26:17**: _(Grade 85.8)_
 
 **Source**:
-> Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ λέγοντες αὐτῷ· ποῦ θέλεις ἑτοιμάσωμέν σοι φαγεῖν τὸ πάσχα; (On the first day of the Feast of Unleavened Bread, the disciples came to Jesus, saying to Him, "Where do You want us to prepare for You to eat the Passover?")
+> Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ λέγοντες αὐτῷ· ποῦ θέλεις ἑτοιμάσωμέν σοι φαγεῖν τὸ πάσχα; (On the first day of the Feast of Unleavened Bread, the disciples came to Jesus, saying to Him, "Where do you want us to prepare for you to eat the Passover?")
 
 **Translation**:
-> El primer día de las ceremonias pascuales en que los judíos se abstenían de comer pan con levadura, los discípulos le preguntaron a Jesús: (On the first day of the Passover ceremonies when the Jews abstained from eating bread with leaven, the disciples asked Jesus:)  
-> ―¿Dónde quieres que preparemos la cena de Pascua? ("Where do You want us to prepare for You to eat the Passover?")
+> El primer día de las ceremonias pascuales en que los judíos se abstenían de comer pan con levadura, los discípulos le preguntaron a Jesús:
+> ―¿Dónde quieres que preparemos la cena de Pascua? (The first day of the Passover ceremonies when the Jews refrained from eating leavened bread, the disciples asked Jesus: "Where do you want us to prepare the Passover dinner?")
+
+**Suggested Translation**:
+> El primer día de la Fiesta de los Panes Sin Levadura, los discípulos se acercaron a Jesús y le preguntaron:
+> ―¿Dónde quieres que preparemos la Pascua? (The first day of the Feast of Unleavened Bread, the disciples approached Jesus and asked Him: "Where do you want us to prepare the Passover?")
 
 **Combined Review**:
-The translation of MAT 26:17 is accurate and maintains the essential meaning of the original Greek text. While it effectively conveys the significance of the Passover preparations, there are several suggestions for improvement. The phrase "el primer día de las ceremonias pascuales en que los judíos se abstenían de comer pan con levadura" is considered cumbersome and could be simplified to enhance accessibility, such as rephrasing it to "cuando los judíos celebraban la Pascua." The term "cena de Pascua" could also be adjusted to simply "Pascua" for greater reverence and alignment with traditional Christian terminology. Overall, while the translation is modern and relatable for Spanish speakers in Latin America, incorporating these minor adjustments could enhance clarity, fluidity, and engagement with the text.
+The translation of MAT 26:17 effectively communicates the essence of the original Greek text, with clear and modern Spanish that resonates well with the Latin American audience. While it successfully captures the significance of the Passover preparations, there are several suggestions for improvement:  
+- Simplify the phrase "en que los judíos se abstenían de comer pan con levadura" (when the Jews refrained from eating leavened bread) to enhance clarity, as it may confuse some readers unfamiliar with unleavened bread. Suggestions include using "cuando los judíos celebraban la Pascua" (when the Jews celebrated Passover) or simply stating the event during the Feast of Unleavened Bread.  
+- Consider rephrasing "cena de Pascua" (Passover dinner) to "celebración de la Pascua" (celebration of Passover) or just "Pascua" (Passover) to better align with contemporary Christian terminology and maintain a reverent tone suitable for biblical text.  
+Overall, the translation meets the goal of making the Bible more accessible, but minor adjustments in phrasing would enhance engagement and clarity for the target audience.
 
 ---
 **MAT 26:55**: _(Grade 85.8)_
 
-**Source**:  
+**Source**:
 > Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις· ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με· καθ᾽ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.  
-(At that time, Jesus said to the crowds: "Have you come out against me as a robber, with swords and clubs to capture me? Every day I sat in the temple teaching, and you did not seize me.")
+(At that hour, Jesus said to the crowds: "Have you come out against me as a robber, with swords and clubs to seize me? I sat daily with you teaching in the temple, and you did not seize me.")
 
-**Translation**:  
+**Translation**:
 > Luego dijo a la turba:  
-> ―¿Soy acaso un asesino tan peligroso que tienen que venir con espadas y palos a arrestarme? (Then he said to the crowd: "Am I a dangerous murderer that you have to come with swords and clubs to arrest me?") Todos estos días he estado enseñando en el templo y no me detuvieron. (All these days I have been teaching in the temple and you did not stop me.)
+> ―¿Soy acaso un asesino tan peligroso que tienen que venir con espadas y palos a arrestarme? Todos estos días he estado enseñando en el templo y no me detuvieron.  
+(Then he said to the crowd: "Am I really such a dangerous criminal that you come to arrest me with swords and clubs? All these days I have been teaching in the temple, and you did not stop me.")
+
+**Suggested Translation**:
+> Luego Jesús se dirigió a la multitud:  
+> —¿Acaso soy un criminal tan peligroso que vienen a arrestarme con espadas y palos? Todos estos días he estado enseñando en el templo y no me detuvieron.  
+(Then Jesus turned to the crowd: "Am I really such a dangerous criminal that you come to arrest me with swords and clubs? All these days I have been teaching in the temple, and you did not stop me.")
 
 **Combined Review**:
-The translation of MAT 26:55 has been recognized as clear and engaging, successfully conveying the essence of the original text while being accessible to modern Spanish-speaking audiences. The phrase "¿Soy acaso un asesino tan peligroso que tienen que venir con espadas y palos a arrestarme?" effectively communicates Jesus' rhetorical question, highlighting His innocence amidst the violence of the arrest. However, the use of the term "asesino" may misrepresent the tone of the original scripture, as it implies a more casual questioning of authority rather than the solemnity of the situation. It has been suggested that a more direct translation, such as replacing "asesino" with "criminal" or utilizing the term "ladrón," might better preserve the gravity of the context and emphasize the disproportionate nature of the crowd's reaction. Overall, while the translation is effective in accessibility and relatability, some adjustments to the wording and tone could enhance its fidelity to the original intent of the Scripture.
+The translation of MAT 26:55 has been generally well-received for its clarity and modern accessibility, particularly for Latin American audiences. While it successfully conveys the intended message, concerns have been raised regarding the phrase "¿Soy acaso un asesino tan peligroso..." ("Am I really such a dangerous criminal...") which shifts the tone, implying a casual or sarcastic questioning rather than maintaining the gravity of Jesus' situation. Several reviews suggest that using a more direct term like "ladrón" ("thief") would better reflect the original text's emphasis on the contrast between the violent reaction of the crowd and Jesus' peaceful teachings. Overall, while the translation captures the essence of the original text, improvements in precision and tone could enhance its faithfulness to the Scripture and its reverence in a biblical context.
 
 ---
-**MAT 28:17**: _(Grade 85.8)_  
+**MAT 28:17**: _(Grade 85.8)_
 
-**Source**:  
-> καὶ ἰδόντες αὐτὸν προσεκύνησαν αὐτῷ, οἱ δὲ ἐδίστασαν.  
-(And when they saw him, they worshipped him; but some doubted.)  
+**Source**:
+> καὶ ἰδόντες αὐτὸν προσεκύνησαν αὐτῷ, οἱ δὲ ἐδίστασαν. (And when they saw him, they worshiped him, but some doubted.)
 
-**Translation**:  
-> Cuando lo vieron, lo adoraron, aunque algunos no estaban completamente convencidos de que en realidad era Jesús.  
-(When they saw him, they worshipped him; but some doubted.)  
+**Translation**:
+> Cuando lo vieron, lo adoraron, aunque algunos no estaban completamente convencidos de que en realidad era Jesús. (When they saw him, they worshiped him, although some were not completely convinced that he was actually Jesus.)
+
+**Suggested Translation**:
+> Cuando lo vieron, lo adoraron; algunos dudaron. (When they saw him, they worshiped; some doubted.)
 
 **Combined Review**:
-The translation of Matthew 28:17 effectively captures the essence of the original Greek text, portraying the reverence and worship the disciples exhibited upon seeing the risen Jesus. The use of 'lo adoraron' (they worshipped him) accurately reflects their act of worship. However, the additional phrase 'aunque algunos no estaban completamente convencidos de que en realidad era Jesús' (although some were not completely convinced that he was really Jesus) introduces ambiguity regarding the disciples' faith. This deviates from the original meaning of 'οἱ δὲ ἐδίστασαν' (but some doubted), which suggests hesitation rather than a lack of complete conviction. A more faithful translation, such as 'algunos dudaron' (some doubted) or 'algunos titubearon' (some hesitated), would maintain the reverence of the moment and avoid interpretive layers that could undermine the clear acknowledgment of Jesus' identity and authority from a conservative Christian perspective. Overall, while the translation is clear and accessible for modern Spanish speakers, slight adjustments are needed to enhance its fidelity to the original text and align with traditional interpretations of the scripture.
+The translation of Matthew 28:17 generally captures the essence of the original Greek text, portraying the act of worship the disciples expressed upon seeing the risen Jesus. However, the phrase "aunque algunos no estaban completamente convencidos de que en realidad era Jesús" (although some were not completely convinced that he was actually Jesus) introduces an element of doubt that is not present in the original text. This could lead to ambiguity regarding the disciples' faith, which a conservative Christian perspective might find troubling as it could undermine the acknowledgment of Jesus' identity and authority. A more straightforward rendering, such as "algunos dudaron" (some doubted), would maintain fidelity to the original meaning without adding unnecessary interpretative layers. While the translation is accessible and resonates well with modern Spanish speakers, it would benefit from stronger alignment with the definitive nature of worship and recognition of Jesus’ divinity as portrayed in the biblical context. Overall, the translation is well-executed but requires some adjustments to enhance its accuracy and faithfulness to the source text's intent.
 
 ---
 **MAT 8:11**: _(Grade 86.0)_
 
 **Source**:
-> λέγω δὲ ὑμῖν ὅτι πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσι καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν,  
-> ("And I say to you that many will come from the east and the west and will recline at table with Abraham, Isaac, and Jacob in the kingdom of heaven.")
+> λέγω δὲ ὑμῖν ὅτι πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσι καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν, ("And I say to you that many will come from the east and the west and will recline at table with Abraham, Isaac, and Jacob in the kingdom of heaven.")
 
 **Translation**:
-> Óiganme lo que les digo: Muchos gentiles, al igual que este soldado romano, irán de todas partes del mundo a sentarse en el reino de los cielos con Abraham, Isaac y Jacob.  
-> ("Listen to me: Many Gentiles, just like this Roman soldier, will come from all parts of the world to sit in the kingdom of heaven with Abraham, Isaac, and Jacob.")
+> Óiganme lo que les digo: Muchos gentiles, al igual que este soldado romano, irán de todas partes del mundo a sentarse en el reino de los cielos con Abraham, Isaac y Jacob. ("Listen to me: Many Gentiles, just like this Roman soldier, will come from all over the world to sit in the kingdom of heaven with Abraham, Isaac, and Jacob.")
+
+**Suggested Translation**:
+> Les digo que muchos vendrán de diferentes lugares y se sentarán junto a Abraham, Isaac y Jacob en el reino de los cielos. ("I tell you that many will come from different places and sit with Abraham, Isaac, and Jacob in the kingdom of heaven.")
 
 **Combined Review**:
-The translation of MAT 8:11 is generally effective and captures the essence of the original Greek text while conveying the message of inclusion for Gentiles in the Kingdom of Heaven. However, several points for improvement were noted across the reviews. The phrase "Óiganme lo que les digo" ("Listen to me") might be too informal and not reflect the solemnity of the original message; a more straightforward phrasing like "les digo" ("I tell you") may be more appropriate. The use of "gentiles" ("Gentiles") is correct but could be clarified for accessibility; using "los gentiles" ("the Gentiles") may enhance formality. The phrase "al igual que este soldado romano" ("just like this Roman soldier") could suggest an inappropriate comparison and should be rephrased to better communicate the intended distinction. Overall, while the translation is modern and accessible, it can be refined for greater clarity and fidelity to the original text.
+The translation of MAT 8:11 is generally well done, effectively communicating the core message of Jesus regarding the inclusion of Gentiles in the Kingdom of Heaven. However, some phrases could be refined for greater precision and reverence. The opening phrase 'Óiganme lo que les digo' ("Listen to me: What I say to you") is perceived as informal and could be simplified. The use of 'gentiles' ("Gentiles") while appropriate, could be adjusted for better clarity and accessibility for contemporary readers. Additionally, the comparison of the centurion to the Gentiles may need to be approached more cautiously to maintain the original intent. Overall, the translation is engaging for Latin American audiences but can benefit from slight modifications for accuracy and fluidity.
 
 ---
 **MAT 13:15**: _(Grade 86.0)_
 
 **Source**:
-> ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶ βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν, μήποτε ἴδωσι τοῖς ὀφθαλμοῖς καὶ τοῖς ὠσὶν ἀκούσωσι καὶ τῇ καρδίᾳ συνῶσι καὶ ἐπιστρέψωσι, καὶ ἰάσομαι αὐτούς.
+> ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶ βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν, μήποτε ἴδωσι τοῖς ὀφθαλμοῖς καὶ τοῖς ὠσὶν ἀκούσωσι καὶ τῇ καρδίᾳ συνῶσι καὶ ἐπιστρέψωσι, καὶ ἰάσομαι αὐτούς. (For this people's heart has grown dull, and their ears are hard of hearing, and their eyes they have closed, lest they should see with their eyes and hear with their ears, lest they should understand with their hearts and turn, so that I should heal them.)
 
 **Translation**:
-> porque tienen el corazón endurecido (for their heart has become dull), no oyen bien (they do not hear well) y tienen los ojos cerrados (and their eyes are closed). Por lo tanto (Therefore), no verán (they will not see) ni oirán (nor hear) ni entenderán (nor understand) ni se convertirán (nor turn) ni dejarán que yo los sane (nor will they let me heal them).
+> porque tienen el corazón endurecido (for they have hardened their hearts), no oyen bien (do not hear well) y tienen los ojos cerrados (and have their eyes closed). Por lo tanto, no verán ni oirán ni entenderán ni se convertirán ni dejarán que yo los sane (therefore, they will neither see nor hear nor understand nor convert, nor will they allow me to heal them).
 
----
+**Suggested Translation**:
+> porque el corazón de este pueblo se ha vuelto insensible (because the heart of this people has become insensitive); han oído, pero no oyen correctamente (they have heard, but do not hear correctly), han cerrado sus ojos para no ver (they have closed their eyes so as not to see); así no perciben ni entienden, ni se convierten, ni les permito recibir la sanidad (thus they do not perceive nor understand, nor do I allow them to receive healing).
 
 **Combined Review**:
-The translation of MAT 13:15 captures the essence of the original Greek text, effectively conveying the seriousness of the spiritual condition described. The phrase 'porque tienen el corazón endurecido' (for their heart has become dull) is well-translated and reflects the intended meaning of spiritual insensitivity. However, some reviewers suggest improvements in certain phrases for enhanced clarity and formality. The expression 'no oyen bien' (they do not hear well) may benefit from a more formal alternative, such as 'no oyen correctamente' (they do not hear correctly), to align with the reverent tone appropriate for the text. Additionally, the latter part of the translation, specifically 'y dejarán que yo los sane' (and they will let me heal them), could imply a passive approach to healing, which may not fully encapsulate the original's emphasis on the people's refusal of healing. Overall, the translation is strong in accessibility and engagement for Spanish speakers, particularly within a Latin American context, but minor adjustments in wording could enhance theological accuracy and reverence.
+The translation of MAT 13:15 effectively captures the essence of the original Greek text, reflecting the spiritual state of the people Jesus is addressing. The phrase 'corazón endurecido' (hardened heart) accurately conveys the intended meaning, highlighting the seriousness of spiritual insensitivity. However, there are suggestions to improve clarity and reverence in the tone, particularly with phrases like 'no oyen bien' (do not hear well), which could be rephrased to 'no oyen correctamente' (do not hear correctly) for a more formal approach. Additionally, the ending phrase 'y dejan que yo los sane' (and they allow me to heal them) might imply passivity regarding healing, which should be re-evaluated to maintain the original Greek's emphasis on refusal. Overall, while the translation is accessible and appropriate for contemporary Spanish speakers, minor adjustments in phrasing and emphasis could enhance both clarity and theological integrity.
 
 ---
 **MAT 21:7**: _(Grade 86.0)_
 
 **Source**:
-> ἤγαγον τὴν ὄνον καὶ τὸν πῶλον, καὶ ἐπέθηκαν ἐπάνω αὐτῶν τὰ ἱμάτια αὐτῶν, καὶ ἐπεκάθισεν ἐπάνω αὐτῶν. (They brought the donkey and the colt, and they laid their cloaks on them, and he sat on them.)
+> ἤγαγον τὴν ὄνον καὶ τὸν πῶλον, καὶ ἐπέθηκαν ἐπάνω αὐτῶν τὰ ἱμάτια αὐτῶν, καὶ ἐπεκάθισεν ἐπάνω αὐτῶν.  
+(Translation: "They brought the donkey and the colt, and laid their clothes on them, and He sat on them.")
 
 **Translation**:
-> y poco después regresaron con los animales. Pusieron luego sus mantos encima del burrito para que Jesús se montara. (and a little later they returned with the animals. They put their cloaks on the donkey so that Jesus could ride.)
+> y poco después regresaron con los animales. Pusieron luego sus mantos encima del burrito para que Jesús se montara.  
+(Translation: "and shortly thereafter they returned with the animals. They then placed their cloaks on the donkey for Jesus to ride.")
+
+**Suggested Translation**:
+> Los discípulos llevaron la burra y el potro, y pusieron sobre ellos sus mantos; y Jesús se montó en ellos.  
+(Translation: "The disciples brought the donkey and the colt, and they laid their cloaks on them; and Jesus sat on them.")
 
 **Combined Review**:
-The translation of Matthew 21:7 effectively captures the essence of the original Greek text while maintaining clarity and accessibility for modern Spanish speakers. However, several reviewers noted that the phrase "poco después regresaron con los animales" (and a little later they returned with the animals) could imply a delay that is not present in the original text. It would be more precise to use "los discípulos llevaron la burra y el burrito" (the disciples brought the donkey and the colt) to convey immediacy and adherence to the source material. Additionally, while the term "burrito" (little donkey) is relatable, it may be deemed informal in a conservative context; alternatives like "asno" (donkey) or "potro" (colt) might be more appropriate. Lastly, although "mantos" (cloaks) works for visual context, using a more biblically resonant term could enhance the cultural significance. Overall, the translation is commendable and achieves its goal of engagement, yet minor adjustments for precision and formality would improve its fidelity to the original scripture.
+The translation of Matthew 21:7 generally captures the essence of the original Greek text effectively while using modern, accessible Spanish. While the overall structure is clear and relatable, several reviewers noted that the phrase "poco después regresaron con los animales" (shortly thereafter they returned with the animals) introduces a sense of delay that is not present in the original text. Instead, terms like "trajeron" or "llevaron" (brought or carried) would be more direct and maintain the immediacy of the action. The term 'burrito' (little donkey) is seen as somewhat informal, and in a conservative context, alternatives such as 'potro' (colt) or 'asno' (donkey) may be preferable to reflect the reverence due to Jesus. Despite these concerns, the translation remains engaging and successfully meets the goal of accessibility for Spanish-speaking audiences. Minor adjustments are recommended for improved clarity and adherence to the source text.
 
 ---
 **MAT 21:34**: _(Grade 86.0)_
 
 **Source**:
-> ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλε τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργοὺς λαβεῖν τοὺς καρποὺς αὐτοῦ.  
- (When the time of the fruits approached, he sent his servants to the farmers to receive his fruits.)
+> ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλε τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργοὺς λαβεῖν τοὺς καρποὺς αὐτοῦ.  (When the time of the fruits drew near, he sent his servants to the farmers to collect his fruits.)
 
 **Translation**:
-> Cuando se acercó el tiempo de la cosecha, envió a empleados suyos a recoger lo que le correspondía.  
- (When the time of the harvest approached, he sent his employees to collect what belonged to him.)
+> Cuando se acercó el tiempo de la cosecha, envió a empleados suyos a recoger lo que le correspondía.  (When the time of the harvest drew near, he sent his employees to collect what was due to him.)
+
+**Suggested Translation**:
+> Cuando se acercó el tiempo de la cosecha, envió a sus siervos a recoger los frutos de su viña.  (When the time of the harvest drew near, he sent his servants to collect the fruits of his vineyard.)
 
 **Combined Review**:
-The translation of Matthew 21:34 is generally clear and effective in conveying the original meaning. The phrase "Cuando se acercó el tiempo de la cosecha, envió a empleados suyos a recoger lo que le correspondía" captures the essence of the parable, making it accessible for Spanish speakers. However, the use of the term "empleados" (employees) is viewed as less personal and more secular compared to terms like "siervos" (servants) that would better reflect the biblical context of servanthood. This adjustment would preserve the cultural and theological implications of the original text. While the overall translation meets its objectives, refining the language choice to align with traditional biblical terminology would enhance its fidelity and reverence.
+The translation of MAT 21:34 is generally clear and effectively communicates the original meaning. While the phrase "Cuando se acercó el tiempo de la cosecha, envió a empleados suyos a recoger lo que le correspondía" (When the time of the harvest drew near, he sent his employees to collect what was due to him) captures the essence of the parable well, several reviewers suggested that the term "empleados" (employees) be replaced with "siervos" (servants) or "dólares" (a misinterpretation in the original, as it means 'dollars' in Spanish, which is not applicable here) to better align with biblical terminology and convey the original connotation of servanthood. Additionally, using the phrase "a recoger los frutos de su viña" (to collect the fruits of his vineyard) was recommended for clarity and fidelity to the source material. Overall, the translation meets accessibility objectives while maintaining theological integrity, but could benefit from slight refinements to enhance clarity and respect for the original text.
 
 ---
 **MAT 23:18**: _(Grade 86.0)_
 
 **Source**:
-> καί· ὃς ἂν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς δ᾽ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει. (And whoever swears by the altar, it is nothing, but whoever swears by the gift that is on it, is obligated.)
+> καί· ὃς ἂν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς δ᾽ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.  (And whoever swears by the altar, it is nothing, but whoever swears by the gift that is on it, is obligated.)
 
 **Translation**:
-> Y dicen que se puede jurar en vano por el altar, pero si se jura en vano por lo que está sobre el altar, lo condenan. (And they say that one can swear in vain by the altar, but if one swears in vain by what is on the altar, they are condemned.)
+> Y dicen que se puede jurar en vano por el altar, pero si se jura en vano por lo que está sobre el altar, lo condenan. (And they say that one can swear in vain by the altar, but if one swears in vain by what is on the altar, it condemns.)
+
+**Suggested Translation**:
+> Y dicen que jurar en vano por el altar no cuenta, pero si alguien jura por lo que está sobre el altar, eso sí es condenable. (And they say that swearing in vain by the altar doesn't count, but if someone swears by what is on the altar, that is indeed condemnable.)
 
 **Combined Review**:
-The translation of MAT 23:18 effectively captures the essence of the original Greek text, providing clarity and accessibility in modern Spanish for a Latin American audience. However, there are several areas for improvement. The phrase "se puede jurar en vano" (one can swear in vain) has been noted as potentially too colloquial and may obscure the seriousness of making oaths. Suggested alternatives like "no cuenta" (it does not count) or "pueden jurar sin valor" (they can swear without value) might convey the gravity of the vows more effectively. The translation aligns well with the intended message about the importance of integrity in oaths related to religious practices, but there is a need for more explicit language that reflects conservative theological perspectives on the seriousness of vows before God. Overall, while the translation is commendable and meets its objectives, refinements in word choice and phrasing could enhance its theological precision and urgency.
+The translation of MAT 23:18 effectively captures the essence of the original Greek text, conveying the seriousness of the message regarding the integrity of oaths in religious practices. While the phrasing is accessible and modern for a Latin American audience, several reviewers noted that the phrase "se puede jurar en vano" may oversimplify the gravity of the original message. A more direct expression, such as "pueden jurar sin valor," could better reflect the severity intended by Jesus' critique of hypocrisy. Overall, while the translation is clear and understandable, a few adjustments in word choice and phrasing could enhance theological precision and convey the seriousness of oaths more effectively.
 
 ---
 **MAT 2:22**: _(Grade 86.3)_
