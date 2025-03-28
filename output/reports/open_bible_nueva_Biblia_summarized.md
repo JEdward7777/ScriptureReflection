@@ -166,7 +166,7 @@ Overall, while the translation is modern and engaging, it could benefit from a s
 **MAT 22:5**: _(Grade 83.3)_
 
 **Source**:
-> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·  
+> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ;  
 > ("But the rest paid no attention and went away, one to his own farm, another to his business;")
 
 **Translation**:
@@ -4369,22 +4369,16 @@ The translation of MAT 27:24 is generally clear and accessible, employing modern
 **MAT 27:32**: _(Grade 89.0)_
 
 **Source**:
-> Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ.  (And as they went out, they found a man of Cyrene named Simon; him they compelled to bear his cross.)
+> Ἐξερχόμενοι δὲ εὗρον ἄνθρωπον Κυρηναῖον ὀνόματι Σίμωνα· τοῦτον ἠγγάρευσαν ἵνα ἄρῃ τὸν σταυρὸν αὐτοῦ. (And going out, they found a man of Cyrene named Simon; they compelled this man to bear His cross.)
 
 **Translation**:
-> En el camino hallaron a un hombre de Cirene (On the way, they found a man of Cyrene) llamado Simón, y lo obligaron a llevar la cruz que Jesús cargaba (to carry the cross that Jesus was carrying).
+> En el camino hallaron a un hombre de Cirene (On the way, they found a man from Cyrene)  
+> 27.32  
+> África. (Africa.)  
+> llamado Simón, (named Simon,) y lo obligaron a llevar la cruz que Jesús cargaba. (and they compelled him to carry the cross that Jesus was carrying.)
 
-**Review 1** _(Grade 85)_: The translation of MAT 27:32 is accurate and captures the essential elements of the original Greek text. The phraseology is modern and accessible, which aligns well with the objective of making the Bible more engaging for Spanish speakers. However, there is a slight inaccuracy in the part where it states 'y lo obligaron a llevar la cruz que Jesús cargaba.' The wording could suggest that Simon was merely an assistant rather than someone chosen by the Roman soldiers. A more faithful rendering might emphasize the imposition of the task more clearly. Nevertheless, the translation effectively communicates the gravity of the moment and fits the intended audience well. Overall, it meets the expectations for a contemporary translation while respecting the original message.
-
-**Review 2** _(Grade 92)_: The translation of MAT 27:32 accurately conveys the meaning of the original text and is accessible to Spanish speakers. The phrasing is modern and relatable, which is important for engaging readers in Latin America. The use of "obligaron" (they forced) effectively captures the coercive aspect of Simon of Cyrene being compelled to carry the cross, maintaining the context of Jesus's burden. The overall clarity and straightforwardness of the translation aligns well with the goal of making the Bible more approachable without losing the essence of the scriptural narrative. A slight adjustment could be made for grammatical flow, but overall, it is a strong and faithful translation.
-
-**Review 3** _(Grade 90)_: The translation of MAT 27:32 reads: "En el camino hallaron a un hombre de Cirene llamado Simón, y lo obligaron a llevar la cruz que Jesús cargaba." (On the way, they found a man of Cyrene named Simon, and they forced him to carry the cross that Jesus was carrying.) This translation accurately captures the meaning of the original Greek text while maintaining a modern and accessible style. The use of 'en el camino' effectively conveys the context of the scene, and the phrase 'lo obligaron a llevar la cruz' is clear and straightforward. Additionally, it adheres to a conservative Christian viewpoint by accurately portraying the event of Simon of Cyrene being compelled to carry the cross. Overall, this is a solid translation that meets the objectives outlined. However, a slight adjustment could be made by clarifying that Simón carried Jesus' cross specifically, for better contextual accuracy.
-
-**Review 4** _(Grade 90)_: The translation of MAT 27:32 is clear and accessible, aligning well with the objective of making the Bible engaging for Spanish speakers, particularly in Latin America. The use of modern, familiar language helps convey the message effectively. However, a minor suggestion for improvement would be to maintain the original flow more closely. For example, "obligaron" (they forced) could be more emphatically translated as "forzaron" (they compelled) to capture the sense of compulsion in the original text. Overall, the translation successfully communicates the intended meaning while being understandable for the target audience.
-
-**Review 5** _(Grade 92)_: The translation of MAT 27:32 reads clearly and modernly, making it accessible to Spanish speakers. The phrase structure is engaging, and it correctly conveys the essence of the original Greek text. However, a minor critique is the phrasing "lo obligaron a llevar la cruz que Jesús cargaba"; using "que Jesús llevaba" (that Jesus was carrying) could better capture the nuance of the burden he bore. Overall, the translation aligns well with the objective of clarity and accessibility, maintaining fidelity to the source text.
-
-**Review 6** _(Grade 85)_: The translation of MAT 27:32 is clear and accessible, maintaining the essence of the original text. The phrase structure is contemporary, which is appropriate for a modern audience, while still honoring the gravity of the passage. However, it could benefit from slight adjustments in clarity and adherence to traditional phrasing for greater alignment with conservative interpretations. Overall, it effectively communicates the narrative without compromising theological accuracy.
+**Combined Review**:
+The translation of MAT 27:32 is generally accurate, effectively conveying the essence of the original Greek text while being modern and accessible to Spanish speakers. The use of the phrase "lo obligaron a llevar la cruz que Jesús cargaba" (they compelled him to carry the cross that Jesus was carrying) captures the coercive nature of Simon of Cyrene's involvement. However, reviewers noted that this phrasing could suggest a less significant role for Simon, recommending adjustments for clarity. Suggestions include replacing "obligaron" (compelled) with "forzaron" (forced) to emphasize compulsion, and using "que Jesús llevaba" (that Jesus was carrying) instead of "que Jesús cargaba" (that Jesus was carrying) to better convey the burden aspect. Overall, the translation meets the goals of clarity and accessibility, aligning well with a conservative Christian perspective while communicating the gravity of the moment.
 
 ---
 **MAT 3:5**: _(Grade 89.2)_
@@ -13876,5 +13870,5 @@ The translation of MAT 20:33 is well executed, accurately capturing the original
 > »Y los justos me preguntarán: “Señor, ¿cuándo te vimos con hambre y te alimentamos, o sediento y te dimos de beber? (And the righteous will ask me, 'Lord, when did we see you hungry and feed you, or thirsty and give you drink?')
 
 **Combined Review**:
-The translation of Matthew 25:37 has been positively received, with a consistent Grade of 95 across multiple reviews. It is noted for its clarity, accuracy, and faithfulness to the original text. The phrasing "Señor, ¿cuándo te vimos con hambre y te alimentamos, o sediento y te dimos de beber?" effectively conveys the questioning nature of the righteous and maintains the theological depth of the scripture. The modern Spanish used in the translation is appropriate and engaging for Latin American readers, making the text accessible without compromising its biblical context. Overall, this translation successfully aligns with the goal of engaging the target audience while preserving the intended message of the original verse.
+The translation of Matthew 25:37 has been positively received, with a consistent Grade of 95 across multiple reviews. It is noted for its clarity, accuracy, and faithfulness to the original text. The phrasing "Señor, ¿cuándo te vimos con hambre y te alimentamos, o sediento y te dimos de beber?" (Lord, when did we see you hungry and feed you, or thirsty and give you drink?) effectively conveys the questioning nature of the righteous and maintains the theological depth of the scripture. The modern Spanish used in the translation is appropriate and engaging for Latin American readers, making the text accessible without compromising its biblical context. Overall, this translation successfully aligns with the goal of engaging the target audience while preserving the intended message of the original verse.
 

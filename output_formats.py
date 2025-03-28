@@ -470,7 +470,7 @@ def run_report_checks( report, source, translation ):
     #So the report has to have the source and the translation still in it.
     #It also needs to have a review in it.
 
-    chars_to_ignore = ['.',',','―','¿', '»', '«', '“', '¡', '!', ')', '(', '”', '·', '—', '1','2','3','4','5','6','7','8','9','0']
+    chars_to_ignore = [ ';', '.', ',', '―','¿', '?', '»', '«', '“', '¡', '!', ')', '(', '”', '·', '—', '1','2','3','4','5','6','7','8','9','0']
 
     for char in chars_to_ignore:
         source = source.replace(char, '')
@@ -525,6 +525,36 @@ def normalize_review_header( report ):
         return report
 
     return report
+
+def copy_over_summary( raw_report, summarized_report ):
+    """
+    We are having trouble having the source and translation getting modified by ChatGPT,
+    so here we try to just snip off the summarized oprtion of the report and use
+    it on the raw report.
+    """
+    summarized_report = normalize_review_header( summarized_report )
+
+    spliced_report = []
+
+    for line in raw_report.split('\n'):
+        if not line.startswith( "**Review 1**"):
+            spliced_report.append( line )
+        else:
+            break
+
+    found_review_line = False
+    for line in summarized_report.split('\n'):
+        if line.startswith( "**Combined Review**" ):
+            found_review_line = True
+
+        if found_review_line:
+            spliced_report.append( line )
+
+    if not found_review_line:
+        print( "Couldn't find review line in summarized report" )
+
+    return '\n'.join(spliced_report)
+
 
 def convert_to_sorted_report(file):
     """Converts the output of easy_draft to a sorted report"""
@@ -620,16 +650,26 @@ def convert_to_sorted_report(file):
             raw_report = "".join( raw_report_array )
 
             if client is not None:
+
+                JUST_SUMMARIZE_THRESHOLD = 3
+                COPY_OVER_SUMMARY_THRESHOLD = 5
+                GIVE_UP_SUMMARIZATION_THRESHOLD = 10
+
                 failed_count = 0
                 passed_checks = False
                 while not passed_checks:
                     passed_checks = True
                     if raw_report not in summary_cache:
                         print( "Summarizing..." )
-                        if failed_count < 5:
+                        if failed_count < JUST_SUMMARIZE_THRESHOLD:
                             summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ) )
                         else:
                             summarized_report = summarize_verse_report( client, raw_report, this_config.get( "reports", {} ), just_summarize=True )
+
+                        if failed_count >= COPY_OVER_SUMMARY_THRESHOLD:
+                            print( "Copying over summary" )
+                            summarized_report = copy_over_summary( raw_report, summarized_report )
+
                         summary_cache[raw_report] = summarized_report
                         summary_cache_modified = True
                     else:
@@ -637,12 +677,12 @@ def convert_to_sorted_report(file):
 
                     if not run_report_checks( summarized_report, source, translation ):
                         del summary_cache[raw_report]
-                        print( f"Failed checks 1 fail count {failed_count}" )
+                        print( f"Failed checks 1 fail count {failed_count+1}" )
                         passed_checks = False
                         time.sleep( 5 )
                         failed_count += 1
 
-                    if failed_count > 10:
+                    if failed_count >= GIVE_UP_SUMMARIZATION_THRESHOLD:
                         print( "Skipping summarization" )
                         summarized_report = raw_report
                         passed_checks = True
@@ -661,7 +701,7 @@ def convert_to_sorted_report(file):
 
                     if not run_report_checks( summarized_report, source, translation ):
                         del translation_cache[summarized_report]
-                        print( f"Failed checks 2 fail count {failed_count}" )
+                        print( f"Failed checks 2 fail count {failed_count+1}" )
                         passed_checks = False
                         time.sleep( 5 )
                         failed_count += 1
