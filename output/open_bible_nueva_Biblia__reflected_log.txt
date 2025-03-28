@@ -1,0 +1,1399 @@
+Running config open_bible_nueva_Biblia__reflected
+Focusing on and after start_line 21223
+Focusing on and before end_line 22276
+New best grade: 90.00126502213777 after 1 iterations.  Improvement of 90.00126502213777
+Working on verse MAT 23:2 which has grade 75.83333333333333
+
+1. **Authority and Position**: Emphasize that the scribes and Pharisees are sitting in Moses' seat, indicating their role as authorities in teaching the Law, rather than implying they create new laws. 
+
+2. **Avoid Casual Language**: Reconsider the phrase 'Moisés en persona' and 'creando leyes' as they could trivialize the seriousness of Jesus' message and misrepresent the role of the Pharisees and scribes. 
+
+3. **Respect for Scripture**: The translation should maintain a tone that reflects the weight and respect of the original text. Consider more conservative and literal phrasing to enhance clarity and convey the intended message faithfully. 
+
+4. **Theological Precision**: Aim for a translation that captures the essence and authority of the original text while still being accessible to modern readers, particularly in the context of conservative Christian viewpoints.
+
+source: λέγων· ἐπὶ τῆς Μωσέως καθέδρας ἐκάθισαν οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι.
+old: «¡Cualquiera que ve a estos escribas y fariseos creando leyes se creerá que son “Moisés en persona”!
+new: «Los escribas y fariseos se han sentado en la silla de Moisés.»
+
+2025-03-25 17:05:52 - Average grade: 90.00 - reflected on verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:05:55 - Average grade: 90.01 - added grade number 1 on loop 2 of grade 90 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:05:58 - Average grade: 90.01 - added grade number 2 on loop 2 of grade 90 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:06:01 - Average grade: 90.02 - added grade number 3 on loop 2 of grade 95 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:06:04 - Average grade: 90.02 - added grade number 4 on loop 2 of grade 95 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:06:07 - Average grade: 90.02 - added grade number 5 on loop 2 of grade 85 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+2025-03-25 17:06:09 - Average grade: 90.02 - added grade number 6 on loop 2 of grade 90 to verse MAT 23:2 - Best grade: 90.00 - Iterations without improvement: 0
+New best grade: 90.01549652118901 after 1 iterations.  Improvement of 0.014231499051234664
+Working on verse MAT 22:3 which has grade 78.33333333333333
+
+1. **Use of 'notificar'**: Change 'notificar' to a more direct term related to 'inviting' to capture the essence of the invitation more accurately.  
+2. **Excessive Invitations**: Instead of 'Envió muchísimas invitaciones', clarify that it refers to a singular invitation extended by the king.  
+3. **Weight of Refusal**: Replace '¡Pero nadie fue!' with 'no quisieron venir' to better reflect the guests' indifference and seriousness of the rejection.  
+4. **Formal Tone**: Ensure that the translation maintains a solemnity appropriate for the context of the parable, avoiding overly casual phrases.
+
+source: καὶ ἀπέστειλε τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.
+old: Envió muchísimas invitaciones, y cuando el banquete estuvo listo, mandó un mensajero a notificar a los convidados que ya podían ir. ¡Pero nadie fue!
+new: «Envió a sus siervos a invitar a los que estaban invitados a la boda, pero no quisieron venir.»
+
+2025-03-25 17:07:21 - Average grade: 90.02 - reflected on verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:25 - Average grade: 90.03 - added grade number 1 on loop 2 of grade 90 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:27 - Average grade: 90.03 - added grade number 2 on loop 2 of grade 90 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:29 - Average grade: 90.03 - added grade number 3 on loop 2 of grade 95 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:32 - Average grade: 90.03 - added grade number 4 on loop 2 of grade 85 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:37 - Average grade: 90.03 - added grade number 5 on loop 2 of grade 85 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+2025-03-25 17:07:42 - Average grade: 90.03 - added grade number 6 on loop 2 of grade 95 to verse MAT 22:3 - Best grade: 90.02 - Iterations without improvement: 0
+New best grade: 90.02656546489551 after 1 iterations.  Improvement of 0.011068943706504797
+Working on verse MAT 10:34 which has grade 79.16666666666667
+
+The translation of MAT 10:34 needs to address the following key corrections: 1. Replace 'guerras' with 'espada' or 'división' to better reflect the original Greek meaning of 'μάχαιραν', which implies metaphorical conflict rather than literal warfare. 2. Remove the exclamation point for a tone that aligns more closely with the original text's seriousness. 3. Ensure the translation conveys the essence of Jesus' message regarding the spiritual costs of discipleship, maintaining theological accuracy and avoiding misunderstandings among readers. Overall, while the translation is modern and accessible, these adjustments are necessary to enhance precision and fidelity to the original message.
+
+source: Μὴ νομίσητε ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν γῆν· οὐκ ἦλθον βαλεῖν εἰρήνην, ἀλλὰ μάχαιραν.
+old: No crean que vine a traer paz a la tierra. ¡Vine a traer guerras!;
+new: No piensen que he venido a traer paz a la tierra; no he venido a traer paz, sino división.
+
+2025-03-25 17:08:33 - Average grade: 90.03 - reflected on verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:37 - Average grade: 90.04 - added grade number 1 on loop 2 of grade 95 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:39 - Average grade: 90.04 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:42 - Average grade: 90.04 - added grade number 3 on loop 2 of grade 92 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:44 - Average grade: 90.04 - added grade number 4 on loop 2 of grade 88 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:47 - Average grade: 90.04 - added grade number 5 on loop 2 of grade 90 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+2025-03-25 17:08:49 - Average grade: 90.04 - added grade number 6 on loop 2 of grade 95 to verse MAT 10:34 - Best grade: 90.03 - Iterations without improvement: 0
+New best grade: 90.03842504743821 after 1 iterations.  Improvement of 0.011859582542697922
+Working on verse MAT 23:14 which has grade 79.16666666666667
+
+The peer review of MAT 23:14 highlights several key corrections for the current translation. Most comments point out that the addition of phrases like 'hacen oraciones larguísimas en las calles' and 'les roban las casas a las viudas' deviates from the original Greek text, which primarily focuses on the Pharisees' hypocrisy in closing the Kingdom of Heaven to others. Suggestions include revising the translation to maintain fidelity to the original meaning by emphasizing the closing of the kingdom rather than introducing unrelated actions. Overall, while the translation is praised for its modern accessibility, it requires a closer alignment with the original text to enhance clarity and accuracy.
+
+source: Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι κλείετε τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν ἀνθρώπων· ὑμεῖς γὰρ οὐκ εἰσέρχεσθε, οὐδὲ τοὺς εἰσερχομένους ἀφίετε εἰσελθεῖν.
+old: ¡Ay de ustedes, escribas y fariseos hipócritas, que por un lado hacen oraciones larguísimas en las calles y por el otro les roban las casas a las viudas! ¡Hipócritas!
+new: ¡Ay de ustedes, escribas y fariseos hipócritas, que cierran la puerta del reino de los cielos delante de los hombres! Porque ustedes no entran, ni dejan entrar a los que quieren.
+
+2025-03-25 17:08:56 - Average grade: 90.04 - reflected on verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:08:58 - Average grade: 90.05 - added grade number 1 on loop 2 of grade 95 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:09:02 - Average grade: 90.05 - added grade number 2 on loop 2 of grade 95 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:09:10 - Average grade: 90.05 - added grade number 3 on loop 2 of grade 95 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:09:12 - Average grade: 90.05 - added grade number 4 on loop 2 of grade 85 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:09:15 - Average grade: 90.05 - added grade number 5 on loop 2 of grade 88 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+2025-03-25 17:09:19 - Average grade: 90.05 - added grade number 6 on loop 2 of grade 90 to verse MAT 23:14 - Best grade: 90.04 - Iterations without improvement: 0
+New best grade: 90.04996837444642 after 1 iterations.  Improvement of 0.011543327008212145
+Working on verse MAT 24:34 which has grade 79.16666666666667
+
+The translation of MAT 24:34, currently rendered as 'Sólo entonces terminará esta era de maldad,' has received multiple critiques for diverging from the original Greek meaning. Key actionable points include: 1. Replace 'era de maldad' with 'esta generación' to accurately reflect the reference to the contemporaneous generation that would witness the events described by Jesus. 2. Ensure the translation preserves the urgency and intent of the original text, which emphasizes that this generation will not pass away until all the prophesied events occur. 3. Consider rephrasing to a more direct translation, such as 'Esta generación no pasará hasta que todas estas cosas sucedan,' which aligns better with traditional interpretations and avoids subjective implications of the current translation. Overall, while the current version is modern and accessible, a closer adherence to the original intent is essential for faithfulness to scripture.
+
+source: ἀμὴν λέγω ὑμῖν, οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται.
+old: Sólo entonces terminará esta era de maldad.
+new: Esta generación no pasará hasta que todas estas cosas sucedan.
+
+2025-03-25 17:09:28 - Average grade: 90.05 - reflected on verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:35 - Average grade: 90.06 - added grade number 1 on loop 2 of grade 95 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:38 - Average grade: 90.06 - added grade number 2 on loop 2 of grade 95 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:41 - Average grade: 90.06 - added grade number 3 on loop 2 of grade 95 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:42 - Average grade: 90.06 - added grade number 4 on loop 2 of grade 95 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:44 - Average grade: 90.06 - added grade number 5 on loop 2 of grade 88 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+2025-03-25 17:09:46 - Average grade: 90.06 - added grade number 6 on loop 2 of grade 95 to verse MAT 24:34 - Best grade: 90.05 - Iterations without improvement: 0
+New best grade: 90.06388361796317 after 1 iterations.  Improvement of 0.013915243516748887
+Working on verse MAT 10:9 which has grade 80.83333333333333
+
+The peer review of MAT 10:9 highlights several key corrections regarding the translation "No lleven dinero." Reviewers noted that while the current translation is clear and accessible for modern Spanish speakers, it lacks completeness by not capturing the full directive present in the original Greek text, which specifically prohibits the carrying of gold, silver, or bronze. Suggestions for improvement include: 1) Expanding the translation to include the specific types of currency mentioned in the Greek text. 2) Using more descriptive terms like "acquire" instead of just "carry" to reflect the original instruction more accurately. 3) Enhancing the emotional and spiritual context of the command to emphasize its seriousness. Overall, while the translation meets the goal of accessibility, adding detail and specificity would enrich the understanding of the scripture.
+
+source: μὴ κτήσησθε χρυσὸν μηδὲ ἄργυρον μηδὲ χαλκὸν εἰς τὰς ζώνας ὑμῶν,
+old: No lleven dinero
+new: «No adquieran oro, plata ni bronce para llevar en sus cinturones.»
+
+2025-03-25 17:09:54 - Average grade: 90.06 - reflected on verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:09:55 - Average grade: 90.08 - added grade number 1 on loop 2 of grade 95 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:09:57 - Average grade: 90.08 - added grade number 2 on loop 2 of grade 95 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:09:59 - Average grade: 90.08 - added grade number 3 on loop 2 of grade 90 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:10:02 - Average grade: 90.07 - added grade number 4 on loop 2 of grade 90 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:10:05 - Average grade: 90.07 - added grade number 5 on loop 2 of grade 90 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+2025-03-25 17:10:07 - Average grade: 90.07 - added grade number 6 on loop 2 of grade 88 to verse MAT 10:9 - Best grade: 90.06 - Iterations without improvement: 0
+New best grade: 90.07384566729904 after 1 iterations.  Improvement of 0.009962049335868528
+Working on verse MAT 18:32 which has grade 81.66666666666667
+
+1. **Tone Adjustment**: The phrases '¡Malvado! ¡Perverso!' are seen as overly harsh and informal. Suggestions include using alternatives like '¡Malvado! ¡Desgraciado!' or softer expressions that convey seriousness without sounding aggressive.
+
+2. **Clarity and Flow**: The latter part of the translation, particularly 'porque me lo pediste,' should be revised for greater formality and fluency. Aim for a more structured and dignified rendering that maintains the gravity of the king's forgiveness.
+
+3. **Emphasis on Forgiveness**: Ensure that the essence of forgiveness is highlighted clearly, reflecting the biblical message without losing engagement with the modern audience.
+
+4. **Minor Refinements**: Overall, while the translation is accessible, minor adjustments in word choice and sentence structure are needed to enhance its alignment with conservative Christian interpretations and to uphold the original text's solemnity.
+
+source: τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ· δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με.
+old: El rey, sin pérdida de tiempo, mandó llamar al hombre al que había perdonado. “¡Malvado! ¡Perverso!”, le dijo. “¡Así que yo te perdoné aquella inmensa deuda porque me lo pediste,
+new: El rey, sin pérdida de tiempo, mandó llamar al hombre al que había perdonado. “¡Malvado! ¡Desgraciado!”, le dijo. “¡Así que yo te perdoné aquella inmensa deuda, porque me lo pediste con humildad!
+
+2025-03-25 17:10:19 - Average grade: 90.07 - reflected on verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:26 - Average grade: 90.08 - added grade number 1 on loop 2 of grade 85 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:29 - Average grade: 90.08 - added grade number 2 on loop 2 of grade 85 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:31 - Average grade: 90.08 - added grade number 3 on loop 2 of grade 85 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:34 - Average grade: 90.08 - added grade number 4 on loop 2 of grade 90 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:37 - Average grade: 90.08 - added grade number 5 on loop 2 of grade 85 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+2025-03-25 17:10:39 - Average grade: 90.08 - added grade number 6 on loop 2 of grade 85 to verse MAT 18:32 - Best grade: 90.07 - Iterations without improvement: 0
+New best grade: 90.07779886147995 after 1 iterations.  Improvement of 0.003953194180908781
+Working on verse MAT 23:5 which has grade 81.66666666666667
+
+The peer review comments highlight several key areas for improvement in the translation of MAT 23:5:
+
+1. **Translation Accuracy**: The phrase "obras de caridad" should be reconsidered, as it does not fully capture the broader meaning of the original Greek term "έργα" (works). Suggestions include using terms like "buenas obras" or "actos de justicia" to better reflect the intended message.
+
+2. **Tone and Seriousness**: Several comments note that the translation leans towards a casual tone that may undermine the reverence expected in biblical texts. Phrases like "para aparentar santidad" should be revised to convey the serious critique of hypocrisy found in the original text.
+
+3. **Clarity of Cultural Practices**: The term "porciones de las Escrituras" may need clearer definition to avoid confusion about Jewish customs, specifically the wearing of tefillin. It would be beneficial to specify "escrituras en tiras de pergamino" to enhance understanding.
+
+4. **Expression of Hypocrisy**: The current phrasing does not adequately convey the essence of performing acts "πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις" (to be seen by others), which emphasizes the Pharisees' intent for human approval rather than genuine faith. Rephrasing is needed to better capture this nuance.
+
+5. **Overall Balance**: While the translation is engaging and accessible for contemporary Spanish speakers, a better balance between modern language and theological precision is essential. Adjustments in phrasing could enhance both clarity and fidelity to the original message.
+
+source: πάντα δὲ τὰ ἔργα αὐτῶν ποιοῦσι πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις. πλατύνουσι γὰρ τὰ φυλακτήρια αὐτῶν καὶ μεγαλύνουσι τὰ κράσπεδα τῶν ἱματίων αὐτῶν,
+old: »¡Y luego se dedican a hacer obras de caridad para que los demás los vean! Para aparentar santidad, se ponen en la frente y en los brazos porciones de las Escrituras escritas en las tiras de pergamino o piel más anchas que puedan encontrar, y procuran que los flecos de sus mantos sean más largos que los de los demás.
+new: »Todo lo que hacen, lo hacen para ser vistos por los demás. Ampliarán las cajas de las Escrituras que llevan en la frente y en los brazos, y alargarán los flecos de sus mantos, buscando la aprobación de la gente.
+
+2025-03-25 17:10:51 - Average grade: 90.08 - reflected on verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:10:53 - Average grade: 90.09 - added grade number 1 on loop 2 of grade 92 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:10:55 - Average grade: 90.09 - added grade number 2 on loop 2 of grade 95 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:10:57 - Average grade: 90.09 - added grade number 3 on loop 2 of grade 95 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:10:59 - Average grade: 90.09 - added grade number 4 on loop 2 of grade 95 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:11:02 - Average grade: 90.09 - added grade number 5 on loop 2 of grade 90 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+2025-03-25 17:11:05 - Average grade: 90.09 - added grade number 6 on loop 2 of grade 90 to verse MAT 23:5 - Best grade: 90.08 - Iterations without improvement: 0
+New best grade: 90.08839342188475 after 1 iterations.  Improvement of 0.010594560404797448
+Working on verse MAT 27:30 which has grade 81.66666666666667
+
+The peer review of MAT 27:30 highlights several key areas for improvement in the translation. The primary concern is that the phrase 'A veces lo escupían' may imply a casual frequency rather than emphasizing the brutality and severity of the act, suggesting that it should be rephrased to reflect a more direct and impactful language such as 'Le escupieron.' Additionally, while the overall translation is praised for its clarity and accessibility to Spanish speakers, there is a consensus that slight adjustments could enhance the emotional tone and fidelity to the original Greek structure. Suggested improvements include using more direct language to convey the gravity of the events and ensuring that the translation remains engaging and modern.
+
+source: καὶ ἐμπτύσαντες εἰς αὐτὸν ἔλαβον τὸν κάλαμον καὶ ἔτυπτον εἰς τὴν κεφαλὴν αὐτοῦ.
+old: A veces lo escupían o le quitaban la vara y lo golpeaban con ella en la cabeza.
+new: Le escupieron, tomaron el cetro y lo golpeaban en la cabeza.
+
+2025-03-25 17:11:12 - Average grade: 90.09 - reflected on verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:14 - Average grade: 90.10 - added grade number 1 on loop 2 of grade 90 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:16 - Average grade: 90.09 - added grade number 2 on loop 2 of grade 85 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:19 - Average grade: 90.10 - added grade number 3 on loop 2 of grade 95 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:21 - Average grade: 90.10 - added grade number 4 on loop 2 of grade 90 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:24 - Average grade: 90.10 - added grade number 5 on loop 2 of grade 95 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+2025-03-25 17:11:26 - Average grade: 90.10 - added grade number 6 on loop 2 of grade 95 to verse MAT 27:30 - Best grade: 90.09 - Iterations without improvement: 0
+New best grade: 90.0978810879189 after 1 iterations.  Improvement of 0.00948766603416118
+Working on verse MAT 1:25 which has grade 83.33333333333333
+
+The peer review comments for MAT 1:25 suggest several improvements for the translation. Primarily, the phrase 'no tuvo relaciones sexuales con ella' is considered too explicit for a conservative Christian context. Recommendations include using more euphemistic language, such as 'no la conoció' or 'no tuvo intimidad con ella', to maintain a tone of respect and reverence. Additionally, the overall structure of the sentences could be softened, for example, using 'y cuando nació su hijo, José le puso por nombre Jesús' instead of a more direct translation. While the translation is clear and accessible, these changes would better align it with conservative values, enhancing its appropriateness for the target audience.
+
+source: καὶ οὐκ ἐγίνωσκεν αὐτὴν ἕως οὗ ἔτεκε τὸν υἱὸν αὐτῆς τὸν πρωτότοκον, καὶ ἐκάλεσε τὸ ὄνομα αὐτοῦ Ἰησοῦν.
+old: aunque no tuvo relaciones sexuales con ella hasta que nació su hijo. Cuando el niño nació, José lo llamó Jesús.
+new: y no la conoció hasta que nació su hijo, y cuando nació su hijo, José le puso por nombre Jesús.
+
+2025-03-25 17:11:33 - Average grade: 90.10 - reflected on verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:36 - Average grade: 90.11 - added grade number 1 on loop 2 of grade 95 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:38 - Average grade: 90.10 - added grade number 2 on loop 2 of grade 85 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:41 - Average grade: 90.10 - added grade number 3 on loop 2 of grade 88 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:44 - Average grade: 90.10 - added grade number 4 on loop 2 of grade 92 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:47 - Average grade: 90.10 - added grade number 5 on loop 2 of grade 85 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:11:49 - Average grade: 90.10 - added grade number 6 on loop 2 of grade 85 to verse MAT 1:25 - Best grade: 90.10 - Iterations without improvement: 0
+New best grade: 90.10262492093598 after 1 iterations.  Improvement of 0.004743833017073484
+Working on verse MAT 13:51 which has grade 83.33333333333333
+
+The peer review of MAT 13:51 highlights the following key corrections: 1. The addition of 'Gracias' at the end of the response is seen as inappropriate for the biblical context and should be replaced with a more solemn acknowledgment like 'Sí, Señor.' 2. The translation captures the essence of the original text but lacks strict fidelity and reverence due to casual language. 3. A more direct and formal structure is recommended for both the question and the response to align with traditional biblical dialogue. 4. While the translation is modern and accessible for Latin American audiences, slight adjustments are necessary for fluency, clarity, and to maintain the gravity of the conversation.
+
+source: Λέγει αὐτοῖς ὁ Ἰησοῦς· συνήκατε ταῦτα πάντα; λέγουσιν αὐτῷ, ναί, Κύριε.
+old: ¿Entienden ahora?».
+―Sí —contestaron—. Gracias.
+new: ¿Entienden ahora? —Sí, Señor —respondieron.
+
+2025-03-25 17:11:59 - Average grade: 90.10 - reflected on verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:01 - Average grade: 90.11 - added grade number 1 on loop 2 of grade 90 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:03 - Average grade: 90.11 - added grade number 2 on loop 2 of grade 92 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:06 - Average grade: 90.11 - added grade number 3 on loop 2 of grade 90 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:08 - Average grade: 90.11 - added grade number 4 on loop 2 of grade 85 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:13 - Average grade: 90.11 - added grade number 5 on loop 2 of grade 95 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+2025-03-25 17:12:15 - Average grade: 90.11 - added grade number 6 on loop 2 of grade 95 to verse MAT 13:51 - Best grade: 90.10 - Iterations without improvement: 0
+New best grade: 90.11005692599605 after 1 iterations.  Improvement of 0.007432005060067581
+Working on verse MAT 15:15 which has grade 83.33333333333333
+
+1. **Emphasis on Spiritual Meaning**: Refine the translation to highlight the deeper moral and spiritual implications of Jesus' teachings beyond dietary laws. 
+2. **Fidelity to Source Text**: Ensure the translation reflects Peter's inquiry accurately, avoiding any implications or commentary not present in the original text. 
+3. **Clarity and Context**: Adjust phrasing to clarify that the verse addresses the condition of the heart rather than dietary restrictions, potentially aligning with traditional theological interpretations. 
+4. **Engagement for Audience**: Maintain accessibility and modern language while ensuring the translation is relatable and understandable for Latin American readers. 
+5. **Fluidity of Wording**: Consider rephrasing for better fluidity, potentially adopting concise wording that conveys the original message more directly.
+
+source: ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ· φράσον ἡμῖν τὴν παραβολὴν ταύτην.
+old: Pedro le pidió que les explicara aquello de que comer los alimentos que la ley judía prohíbe no es lo que contamina al hombre.
+new: Pedro le dijo: «Señor, ¿puedes explicarnos esta parábola sobre lo que realmente contamina al ser humano?»
+
+2025-03-25 17:12:26 - Average grade: 90.11 - reflected on verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:28 - Average grade: 90.11 - added grade number 1 on loop 2 of grade 85 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:31 - Average grade: 90.12 - added grade number 2 on loop 2 of grade 95 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:33 - Average grade: 90.12 - added grade number 3 on loop 2 of grade 88 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:36 - Average grade: 90.12 - added grade number 4 on loop 2 of grade 95 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:41 - Average grade: 90.12 - added grade number 5 on loop 2 of grade 95 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+2025-03-25 17:12:44 - Average grade: 90.12 - added grade number 6 on loop 2 of grade 90 to verse MAT 15:15 - Best grade: 90.11 - Iterations without improvement: 0
+New best grade: 90.11764705882338 after 1 iterations.  Improvement of 0.007590132827331786
+Working on verse MAT 22:5 which has grade 83.33333333333333
+
+1. **Word Choice**: Consider using 'despreciaron' instead of 'se rieron de los mensajeros' to convey a stronger sense of disregard and dismissiveness from the guests. This reflects the original Greek text more accurately.  
+2. **Clarity and Nuance**: Enhance clarity by specifying that the guests 'se fueron a trabajar en sus campos o a sus negocios', which would better capture their actions and the seriousness of the situation.  
+3. **Modern Language**: Replace 'labranza' with a more accessible term like 'trabajo en el campo' to resonate better with contemporary Spanish speakers.  
+4. **Engagement**: Maintain a tone that reflects the gravity of the message while remaining engaging for the audience, emphasizing the importance of the invitation that was rejected.
+
+source: οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·
+old: Algunos de los invitados se rieron de los mensajeros y se fueron a sus labranzas o negocios;
+new: Algunos de los invitados despreciaron la invitación y se fueron a trabajar en sus campos o a sus negocios;
+
+2025-03-25 17:12:51 - Average grade: 90.12 - reflected on verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:12:55 - Average grade: 90.12 - added grade number 1 on loop 2 of grade 85 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:12:58 - Average grade: 90.12 - added grade number 2 on loop 2 of grade 90 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:00 - Average grade: 90.12 - added grade number 3 on loop 2 of grade 95 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:03 - Average grade: 90.12 - added grade number 4 on loop 2 of grade 85 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:05 - Average grade: 90.12 - added grade number 5 on loop 2 of grade 88 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:08 - Average grade: 90.12 - added grade number 6 on loop 2 of grade 85 to verse MAT 22:5 - Best grade: 90.12 - Iterations without improvement: 0
+New best grade: 90.12207463630598 after 1 iterations.  Improvement of 0.004427577482601919
+Working on verse MAT 22:11 which has grade 83.33333333333333
+
+1. **Avoid Implying Purchase:** Eliminate the phrase 'que había comprado para los invitados' as it inaccurately suggests the wedding garment was purchased. The original text does not imply this. 
+2. **Focus on Required Attire:** Use phrases that indicate the necessity of appropriate attire for the occasion, such as 'el vestido de boda adecuado'. This aligns better with the original Greek context. 
+3. **Enhance Theological Clarity:** Ensure that the translation retains the theological significance of the wedding garment as a requisite for acceptance into the feast. 
+4. **Maintain Clarity and Accessibility:** While maintaining modern and accessible language, ensure that the translation does not compromise fidelity to the original text's meaning.
+
+source: εἰσελθὼν δὲ ὁ βασιλεὺς θεάσασθαι τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ ἐνδεδυμένον ἔνδυμα γάμου,
+old: Pero cuando el rey fue a ver a los convidados, vio que uno no traía puesto el vestido de boda que había comprado para los invitados.
+new: Pero cuando el rey entró para ver a los convidados, vio a un hombre que no llevaba el vestido de boda adecuado.
+
+2025-03-25 17:13:17 - Average grade: 90.12 - reflected on verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:19 - Average grade: 90.13 - added grade number 1 on loop 2 of grade 90 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:21 - Average grade: 90.13 - added grade number 2 on loop 2 of grade 85 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:23 - Average grade: 90.13 - added grade number 3 on loop 2 of grade 85 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:25 - Average grade: 90.13 - added grade number 4 on loop 2 of grade 95 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:28 - Average grade: 90.13 - added grade number 5 on loop 2 of grade 90 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+2025-03-25 17:13:31 - Average grade: 90.13 - added grade number 6 on loop 2 of grade 95 to verse MAT 22:11 - Best grade: 90.12 - Iterations without improvement: 0
+New best grade: 90.12839974699543 after 1 iterations.  Improvement of 0.006325110689445523
+Working on verse MAT 23:11 which has grade 83.33333333333333
+
+1. **Tone and Formality**: Several reviewers emphasized the need for a more formal and direct translation to better reflect the authority of the original text. Suggested phrases like 'El mayor entre ustedes será su servidor' convey a tone that is more in line with biblical scripture.
+
+2. **Conciseness**: Many comments pointed out that the current phrasing is somewhat verbose. Simplifying the translation by removing unnecessary complexity (e.g., 'Mientras más humildemente sirvamos a los demás') can enhance clarity without losing meaning.
+
+3. **Direct Representation of Key Concepts**: The reviewers noted that the current translation can obscure the core message of the passage. Adjustments should focus on making the connection between greatness and serving more explicit, aligning closely with the original Greek text that speaks directly about a servant's role.
+
+4. **Preserving Biblical Language**: It was suggested to incorporate more traditional biblical terminology that reflects the text's reverence and seriousness, improving the overall faithfulness of the translation to scriptural intent.
+
+5. **Engagement with Contemporary Readers**: While the translation is praised for being accessible, ensuring it does not sacrifice accuracy for relatability is crucial.
+
+source: ὁ δὲ μείζων ὑμῶν ἔσται ὑμῶν διάκονος.
+old: Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás,
+new: El mayor entre ustedes será su servidor.
+
+2025-03-25 17:13:40 - Average grade: 90.13 - reflected on verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:45 - Average grade: 90.13 - added grade number 1 on loop 2 of grade 85 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:47 - Average grade: 90.13 - added grade number 2 on loop 2 of grade 90 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:48 - Average grade: 90.13 - added grade number 3 on loop 2 of grade 95 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:50 - Average grade: 90.13 - added grade number 4 on loop 2 of grade 90 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:53 - Average grade: 90.14 - added grade number 5 on loop 2 of grade 95 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+2025-03-25 17:13:56 - Average grade: 90.14 - added grade number 6 on loop 2 of grade 95 to verse MAT 23:11 - Best grade: 90.13 - Iterations without improvement: 0
+New best grade: 90.13630613535723 after 1 iterations.  Improvement of 0.007906388361803351
+Working on verse MAT 24:43 which has grade 83.33333333333333
+
+1. Enhance the phrase regarding vigilance for clarity; consider using 'así como el dueño de casa se mantiene alerta.' 2. Ensure completeness of the translation to capture the full message of the verse. 3. Rephrase the second half to be more concise and faithful to the original, emphasizing that the master prevents the thief from breaking in. 4. Address any interpretations that deviate from a direct translation to preserve the original imagery and urgency.
+
+source: Ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασε διορυγῆναι τὴν οἰκίαν αὐτοῦ.
+old: De la misma manera que el padre de familia se mantiene vigilante para que los ladrones no se introduzcan en la casa,
+new: Así como el dueño de casa se mantiene alerta para que el ladrón no se meta en su casa, de la misma manera ustedes deben estar preparados.
+
+2025-03-25 17:14:01 - Average grade: 90.14 - reflected on verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:05 - Average grade: 90.14 - added grade number 1 on loop 2 of grade 90 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:10 - Average grade: 90.14 - added grade number 2 on loop 2 of grade 85 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:14 - Average grade: 90.14 - added grade number 3 on loop 2 of grade 85 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:19 - Average grade: 90.14 - added grade number 4 on loop 2 of grade 90 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:23 - Average grade: 90.14 - added grade number 5 on loop 2 of grade 88 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:26 - Average grade: 90.14 - added grade number 6 on loop 2 of grade 85 to verse MAT 24:43 - Best grade: 90.14 - Iterations without improvement: 0
+New best grade: 90.13994307400367 after 1 iterations.  Improvement of 0.0036369386464372155
+Working on verse MAT 26:48 which has grade 83.33333333333333
+
+The peer reviews highlight that the translation of MAT 26:48 is generally accurate but could benefit from improved clarity and emphasis on Judas's betrayal. Recommended adjustments include using more direct language to convey the seriousness of the moment and the action of betrayal, such as replacing 'identificara con un beso' with alternatives like 'aquel a quien besara' or 'Judas les dio una señal: al que yo bese, ese es.' These changes aim to enhance the fluidity, engagement, and emotional resonance of the translation, while still being accessible to Spanish-speaking audiences.
+
+source: ὁ δὲ παραδιδοὺς αὐτὸν ἔδωκεν αὐτοῖς σημεῖον λέγων· ὃν ἂν φιλήσω, αὐτός ἐστι· κρατήσατε αὐτόν.
+old: esperaban solamente que Judas identificara con un beso al Maestro.
+new: «Judas les dio una señal: al que yo bese, ese es. ¡Agárrenlo!»
+
+2025-03-25 17:14:33 - Average grade: 90.14 - reflected on verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:36 - Average grade: 90.15 - added grade number 1 on loop 2 of grade 90 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:39 - Average grade: 90.15 - added grade number 2 on loop 2 of grade 90 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:41 - Average grade: 90.15 - added grade number 3 on loop 2 of grade 95 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:43 - Average grade: 90.15 - added grade number 4 on loop 2 of grade 95 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:45 - Average grade: 90.15 - added grade number 5 on loop 2 of grade 92 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+2025-03-25 17:14:48 - Average grade: 90.15 - added grade number 6 on loop 2 of grade 95 to verse MAT 26:48 - Best grade: 90.14 - Iterations without improvement: 0
+New best grade: 90.14895635673612 after 1 iterations.  Improvement of 0.009013282732453831
+Working on verse MAT 3:8 which has grade 83.83333333333333
+
+The translation of Matthew 3:8 ('Demuestren, antes de bautizarse, que están arrepentidos') has been noted to accurately convey the essence of the original text but may benefit from several improvements. Key suggestions include: 
+1. Remove the phrase 'antes de bautizarse' to prevent implying a prerequisite of repentance for baptism, as it diverges from the original emphasis on demonstrating the fruits of repentance. 
+2. Consider using 'Produzcan, pues, frutos dignos de arrepentimiento' or 'Hagan, por tanto, frutos dignos de arrepentimiento' to align more closely with the Greek text, highlighting the performative nature of true repentance. 
+3. Emphasize the theological depth of the concept of 'fruit' to ensure the spiritual weight of John's message is conveyed effectively. Overall, while the translation is accessible, adjustments for accuracy and clarity are recommended.
+
+source: ποιήσατε οὖν καρπὸν ἄξιον τῆς μετανοίας,
+old: Demuestren, antes de bautizarse, que están arrepentidos.
+new: "Produzcan, pues, frutos dignos de arrepentimiento."
+
+2025-03-25 17:14:56 - Average grade: 90.15 - reflected on verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:14:58 - Average grade: 90.16 - added grade number 1 on loop 2 of grade 95 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:15:01 - Average grade: 90.16 - added grade number 2 on loop 2 of grade 90 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:15:04 - Average grade: 90.15 - added grade number 3 on loop 2 of grade 85 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:15:06 - Average grade: 90.16 - added grade number 4 on loop 2 of grade 95 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:15:10 - Average grade: 90.16 - added grade number 5 on loop 2 of grade 95 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+2025-03-25 17:15:12 - Average grade: 90.16 - added grade number 6 on loop 2 of grade 95 to verse MAT 3:8 - Best grade: 90.15 - Iterations without improvement: 0
+New best grade: 90.15717900063241 after 1 iterations.  Improvement of 0.008222643896289128
+Working on verse MAT 19:3 which has grade 83.83333333333333
+
+1. **Tone and Formality**: Reviewers noted that phrases like 'en una entrevista' and 'trataron de hacerlo caer en la trampa' convey a casual tone that may not suit the seriousness of a biblical context. A more formal and direct phrasing should be considered. 
+
+2. **Context Accuracy**: The phrase 'en una entrevista' oversimplifies the nature of the Pharisees' approach. The translation should emphasize the confrontational aspect of their inquiry rather than framing it as an interview.
+
+3. **Clarity and Succinctness**: Several reviewers suggested that the translation is somewhat verbose. Simplifying the language while preserving the original message's gravity would enhance clarity. Avoid overly casual expressions that may dilute the seriousness of the discussion on divorce.
+
+4. **Faithfulness to Original Text**: It's crucial to maintain fidelity to the original Greek text. Ensure the translation reflects the intent of the Pharisees’ question about the legality of divorce, rather than framing it in a way that might suggest they were simply seeking approval. 
+
+5. **Overall Quality**: While the translation is generally engaging and accessible, minor adjustments are needed to improve precision and adherence to the conservative Christian viewpoint on the topic of divorce.
+
+source: Καὶ προσῆλθον αὐτῷ οἱ Φαρισαῖοι πειράζοντες αὐτὸν καὶ λέγοντες αὐτῷ· εἰ ἔξεστιν ἀνθρώπῳ ἀπολῦσαι τὴν γυναῖκα αὐτοῦ κατὰ πᾶσαν αἰτίαν;
+old: Varios fariseos, en una entrevista, trataron de hacerlo caer en la trampa de decir algo que luego ellos pudieran utilizar contra él.
+―¿Apruebas el divorcio? —le preguntaron.
+new: Se acercaron a él algunos fariseos, tratando de ponerlo a prueba, y le preguntaron: "¿Está permitido que un hombre se divorcie de su esposa por cualquier motivo?"
+
+2025-03-25 17:15:25 - Average grade: 90.16 - reflected on verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:28 - Average grade: 90.16 - added grade number 1 on loop 2 of grade 90 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:31 - Average grade: 90.16 - added grade number 2 on loop 2 of grade 90 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:34 - Average grade: 90.16 - added grade number 3 on loop 2 of grade 85 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:37 - Average grade: 90.16 - added grade number 4 on loop 2 of grade 90 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:40 - Average grade: 90.16 - added grade number 5 on loop 2 of grade 88 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:43 - Average grade: 90.16 - added grade number 6 on loop 2 of grade 92 to verse MAT 19:3 - Best grade: 90.16 - Iterations without improvement: 0
+New best grade: 90.16223908918394 after 1 iterations.  Improvement of 0.005060088551530839
+Working on verse MAT 13:37 which has grade 84.16666666666667
+
+1. Replace 'labrador' with 'sembrador' to more accurately reflect the role of the sower in the agricultural context of the scripture.  
+2. Modify 'grano selecto' to 'buena semilla' for better fidelity to the original meaning of 'τὸ καλὸν σπέρμα'.  
+3. Emphasize the title 'el Hijo del Hombre' instead of simply 'labrador' to preserve the identity of Jesus in the translation.  
+4. Maintain a more formal tone to reflect the reverence appropriate for biblical texts, especially in a conservative Christian context.  
+5. Overall, ensure the translation aligns with traditional biblical language while remaining accessible for contemporary readers.
+
+source: ὁ δὲ ἀποκριθεὶς εἶπεν αὐτοῖς· ὁ σπείρων τὸ καλὸν σπέρμα ἐστὶν ὁ υἱὸς τοῦ ἀνθρώπου·
+old: ―Muy bien
+—comenzó—:
+Yo soy el labrador que siembra el grano selecto.
+new: «El sembrador de la buena semilla es el Hijo del Hombre».
+
+2025-03-25 17:15:50 - Average grade: 90.16 - reflected on verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:57 - Average grade: 90.17 - added grade number 1 on loop 2 of grade 95 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:15:59 - Average grade: 90.17 - added grade number 2 on loop 2 of grade 95 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:16:01 - Average grade: 90.17 - added grade number 3 on loop 2 of grade 95 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:16:04 - Average grade: 90.17 - added grade number 4 on loop 2 of grade 90 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:16:06 - Average grade: 90.17 - added grade number 5 on loop 2 of grade 90 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+2025-03-25 17:16:08 - Average grade: 90.17 - added grade number 6 on loop 2 of grade 95 to verse MAT 13:37 - Best grade: 90.16 - Iterations without improvement: 0
+New best grade: 90.17093611638192 after 1 iterations.  Improvement of 0.008697027197982266
+Working on verse MAT 10:10 which has grade 84.33333333333333
+
+The peer review comments for the translation of Matthew 10:10 highlight several key areas for improvement: 1. **Word Choice**: Replace the phrase 'las personas a las que ustedes ayuden' with 'los que ustedes ayuden' for a more natural flow. 2. **Conciseness**: Simplify the ending phrase to avoid ambiguity and focus on the core message of the worker deserving sustenance. Consider stating the worker's worthiness more directly without implying a duty on the recipients. 3. **Fidelity to Original Text**: Emphasize the authority and dignity of the worker, reflecting the essence of the original Greek without interpretative bias. Overall, while the translation is modern and accessible, addressing these suggestions will enhance clarity and adherence to the scripture's intent.
+
+source: μὴ πήραν εἰς ὁδὸν μηδὲ δύο χιτῶνας μηδὲ ὑποδήματα μηδὲ ῥάβδον· ἄξιος γάρ ἐστιν ὁ ἐργάτης τῆς τροφῆς αὐτοῦ.
+old: ni bolsa con comida; no lleven más túnicas ni más calzado que los que traen puestos, ni lleven bordón, porque las personas a las que ustedes ayuden tienen el deber de alimentarlos y cuidarlos.
+new: «No lleven bolsa de comida, ni dos túnicas, ni sandalias, ni un bordón, porque el trabajador es digno de su sustento.»
+
+2025-03-25 17:16:14 - Average grade: 90.17 - reflected on verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:17 - Average grade: 90.18 - added grade number 1 on loop 2 of grade 90 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:19 - Average grade: 90.18 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:22 - Average grade: 90.17 - added grade number 3 on loop 2 of grade 85 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:25 - Average grade: 90.18 - added grade number 4 on loop 2 of grade 95 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:28 - Average grade: 90.18 - added grade number 5 on loop 2 of grade 88 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+2025-03-25 17:16:29 - Average grade: 90.18 - added grade number 6 on loop 2 of grade 95 to verse MAT 10:10 - Best grade: 90.17 - Iterations without improvement: 0
+New best grade: 90.17678684376965 after 1 iterations.  Improvement of 0.005850727387723964
+Working on verse MAT 15:21 which has grade 84.5
+
+The peer review of MAT 15:21 highlights several points of concern regarding the translation. Key suggestions include: 1) Omit the specific detail 'ochenta kilómetros' to align closer with the original Greek text, which does not specify distance. 2) Consider simplifying the translation to 'Jesús salió de allí y fue a la región de Tiro y Sidón' for clarity and brevity. 3) Ensure the translation maintains fidelity to the biblical text while remaining accessible to modern readers. Overall, reviewers appreciate the readability of the translation but recommend adjustments for accuracy.
+
+source: Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς ἀνεχώρησεν εἰς τὰ μέρη Τύρου καὶ Σιδῶνος.
+old: Jesús salió de allí y caminó los ochenta kilómetros que lo separaban de la región de Tiro y Sidón.
+new: Jesús salió de allí y fue a la región de Tiro y Sidón.
+
+2025-03-25 17:16:36 - Average grade: 90.18 - reflected on verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:38 - Average grade: 90.18 - added grade number 1 on loop 2 of grade 90 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:40 - Average grade: 90.18 - added grade number 2 on loop 2 of grade 95 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:42 - Average grade: 90.18 - added grade number 3 on loop 2 of grade 90 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:44 - Average grade: 90.18 - added grade number 4 on loop 2 of grade 95 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:47 - Average grade: 90.18 - added grade number 5 on loop 2 of grade 90 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:49 - Average grade: 90.18 - added grade number 6 on loop 2 of grade 90 to verse MAT 15:21 - Best grade: 90.18 - Iterations without improvement: 0
+New best grade: 90.18358633776079 after 1 iterations.  Improvement of 0.006799493991138661
+Working on verse MAT 10:12 which has grade 84.66666666666667
+
+The peer review of MAT 10:12 recommends refining the current translation 'den su bendición a los que allí viven' to better reflect the original Greek text. Key suggestions include using phrases such as 'den la paz a esta casa', 'saluden', or 'ofrezcan la paz' to emphasize the biblical notion of peace integral to the greeting. While the translation is generally clear and accessible for Spanish speakers, improving the accuracy by directly addressing the concept of peace would enhance fidelity to the original scripture.
+
+source: εἰσερχόμενοι δὲ εἰς τὴν οἰκίαν ἀσπάσασθε αὐτὴν λέγοντες· εἰρήνη τῷ οἴκῳ τούτῳ.
+old: Y al entrar a la casa, den su bendición a los que allí viven.
+new: Al entrar en la casa, saluden diciendo: '¡Que la paz esté en este hogar!'
+
+2025-03-25 17:16:54 - Average grade: 90.18 - reflected on verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:57 - Average grade: 90.18 - added grade number 1 on loop 2 of grade 85 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:16:59 - Average grade: 90.19 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:17:02 - Average grade: 90.19 - added grade number 3 on loop 2 of grade 95 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:17:04 - Average grade: 90.19 - added grade number 4 on loop 2 of grade 95 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:17:06 - Average grade: 90.19 - added grade number 5 on loop 2 of grade 95 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+2025-03-25 17:17:07 - Average grade: 90.19 - added grade number 6 on loop 2 of grade 88 to verse MAT 10:12 - Best grade: 90.18 - Iterations without improvement: 0
+New best grade: 90.18991144845023 after 1 iterations.  Improvement of 0.006325110689445523
+Working on verse MAT 15:11 which has grade 84.66666666666667
+
+1. Replace 'daña el alma' with 'contamina al hombre' to align more closely with the original text's meaning and avoid over-interpretation. 2. Emphasize that the defilement comes from what comes out of the mouth (i.e., speech) rather than referencing 'pensamientos' (thoughts) directly. 3. Ensure consistency in tone and clarity while keeping the translation accessible for modern Spanish speakers.
+
+source: οὐ τὸ εἰσερχόμενον εἰς τὸ στόμα κοινοῖ τὸν ἄνθρωπον, ἀλλὰ τὸ ἐκπορευόμενον ἐκ τοῦ στόματος τοῦτο κοινοῖ τὸν ἄνθρωπον.
+old: Lo que daña el alma no es lo que entra por la boca, sino los pensamientos malos y las palabras con que estos se expresan.
+new: "No es lo que entra por la boca lo que contamina al hombre, sino lo que sale de la boca; esto es lo que contamina al hombre."
+
+2025-03-25 17:17:13 - Average grade: 90.19 - reflected on verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:15 - Average grade: 90.20 - added grade number 1 on loop 2 of grade 95 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:18 - Average grade: 90.20 - added grade number 2 on loop 2 of grade 90 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:20 - Average grade: 90.20 - added grade number 3 on loop 2 of grade 90 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:22 - Average grade: 90.20 - added grade number 4 on loop 2 of grade 95 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:24 - Average grade: 90.20 - added grade number 5 on loop 2 of grade 90 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+2025-03-25 17:17:26 - Average grade: 90.20 - added grade number 6 on loop 2 of grade 90 to verse MAT 15:11 - Best grade: 90.19 - Iterations without improvement: 0
+New best grade: 90.19655281467413 after 1 iterations.  Improvement of 0.006641366223902878
+Working on verse MAT 18:28 which has grade 84.66666666666667
+
+1. **Debt Amount Accuracy**: The translation should replace 'veinte mil pesos' with a term that better reflects the original Greek 'ἑκατὸν δηνάρια' (a hundred denarii), as the current amount can create confusion about the parable's message regarding the contrast of debts forgiven. Suggestions include using a modern equivalent that signifies a lower but significant amount.  
+2. **Emotional and Theological Resonance**: Incorporate emotional cues or references that highlight the themes of mercy and judgment, aligning with conservative Christian values and enhancing the understanding of the parable's message.  
+3. **Language and Tone**: Consider revising phrases like 'agarrándolo por el cuello' to balance accessibility with the seriousness of the biblical narrative, potentially using more formal or neutral expressions.  
+4. **Overall Clarity and Accessibility**: Ensure the translation remains clear and engaging for Spanish-speaking audiences, while addressing the specific critiques related to accuracy and cultural context.
+
+source: ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος εὗρεν ἕνα τῶν συνδούλων αὐτοῦ, ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν ἔπνιγε λέγων· ἀπόδος μοι εἴ τι ὀφείλεις.
+old: »Pero cuando aquel mismo hombre salió de allí, fue adonde estaba alguien que le debía veinte mil pesos y, agarrándolo por el cuello, exigió pago inmediato.
+new: »Pero cuando aquel mismo hombre salió de allí, fue a donde estaba alguien que le debía cien denarios, y tomándolo con fuerza, le exigió el pago inmediato.
+
+2025-03-25 17:17:34 - Average grade: 90.20 - reflected on verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:36 - Average grade: 90.20 - added grade number 1 on loop 2 of grade 85 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:38 - Average grade: 90.20 - added grade number 2 on loop 2 of grade 90 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:41 - Average grade: 90.20 - added grade number 3 on loop 2 of grade 90 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:44 - Average grade: 90.20 - added grade number 4 on loop 2 of grade 90 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:46 - Average grade: 90.20 - added grade number 5 on loop 2 of grade 95 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:48 - Average grade: 90.20 - added grade number 6 on loop 2 of grade 90 to verse MAT 18:28 - Best grade: 90.20 - Iterations without improvement: 0
+New best grade: 90.20161290322568 after 1 iterations.  Improvement of 0.00506008855154505
+Working on verse MAT 19:12 which has grade 84.66666666666667
+
+1. Consider using the term 'eunuco' instead of 'incapacitados para el matrimonio' to better reflect the biblical understanding of eunuchs and avoid diminishing theological implications. 2. Aim for a translation that maintains reverence and a traditional tone while remaining accessible to modern audiences. 3. Explore alternative phrases for 'que lo acepte' to enhance formality in the biblical context. 4. Strive for more precision in conveying the nuances of celibacy and commitment to the Kingdom of Heaven.
+
+source: εἰσὶ γὰρ εὐνοῦχοι οἵτινες ἐκ κοιλίας μητρὸς ἐγεννήθησαν οὕτω. καὶ εἰσὶν εὐνοῦχοι οἵτινες εὐνουχίσθησαν ὑπὸ τῶν ἀνθρώπων, καὶ εἰσὶν εὐνοῦχοι οἵτινες εὐνούχισαν ἑαυτοὺς διὰ τὴν βασιλείαν τῶν οὐρανῶν. ὁ δυνάμενος χωρεῖν χωρείτω.
+old: Hay personas que no se casan porque nacieron incapacitados para el matrimonio; otros no lo hacen porque los hombres los incapacitaron; y aun otros, porque no desean hacerlo por amor al reino de los cielos. El que pueda aceptar esto último, que lo acepte.
+new: "Porque hay eunuco que nació así desde el vientre de su madre; otros son eunuco por la acción de los hombres; y hay eunuco que se ha hecho a sí mismo tal por amor al reino de los cielos. El que pueda aceptar esto, que lo haga con entendimiento."
+
+2025-03-25 17:17:54 - Average grade: 90.20 - reflected on verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:57 - Average grade: 90.20 - added grade number 1 on loop 2 of grade 88 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:17:59 - Average grade: 90.20 - added grade number 2 on loop 2 of grade 85 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:18:01 - Average grade: 90.20 - added grade number 3 on loop 2 of grade 88 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:18:05 - Average grade: 90.20 - added grade number 4 on loop 2 of grade 90 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:18:08 - Average grade: 90.20 - added grade number 5 on loop 2 of grade 88 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+2025-03-25 17:18:10 - Average grade: 90.21 - added grade number 6 on loop 2 of grade 92 to verse MAT 19:12 - Best grade: 90.20 - Iterations without improvement: 0
+New best grade: 90.20524984187212 after 1 iterations.  Improvement of 0.0036369386464372155
+Working on verse MAT 6:3 which has grade 85.0
+
+The peer reviews highlight several key corrections for the translation of MAT 6:3. Firstly, the phrase 'háganlo discretamente' is deemed insufficient in conveying the depth of the original text, which emphasizes secrecy in charitable acts. A consensus suggests that a more direct translation, such as 'que tu mano izquierda no sepa lo que hace tu mano derecha,' would better capture the essence of the Greek text. Additionally, while the translation is modern and accessible, it is recommended to prioritize fidelity to the original wording to preserve the meaning of humility and discretion. Overall, the reviews indicate a solid understanding of the message but emphasize the need for refinement in precision.
+
+source: σοῦ δὲ ποιοῦντος ἐλεημοσύνην μὴ γνώτω ἡ ἀριστερά σου τί ποιεῖ ἡ δεξιά σου,
+old: Pero cuando hagan algún bien, háganlo discretamente.
+new: Pero cuando hagas limosna, que tu mano izquierda no sepa lo que hace tu mano derecha,
+
+2025-03-25 17:18:15 - Average grade: 90.21 - reflected on verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:20 - Average grade: 90.21 - added grade number 1 on loop 2 of grade 90 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:23 - Average grade: 90.21 - added grade number 2 on loop 2 of grade 95 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:25 - Average grade: 90.21 - added grade number 3 on loop 2 of grade 90 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:27 - Average grade: 90.21 - added grade number 4 on loop 2 of grade 95 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:29 - Average grade: 90.21 - added grade number 5 on loop 2 of grade 90 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:31 - Average grade: 90.21 - added grade number 6 on loop 2 of grade 95 to verse MAT 6:3 - Best grade: 90.21 - Iterations without improvement: 0
+New best grade: 90.21236559139773 after 1 iterations.  Improvement of 0.0071157495256102266
+Working on verse MAT 6:16 which has grade 85.0
+
+1. Clarify the phrase at the end of the translation to better reflect the severity of losing one's reward, potentially rephrasing it to emphasize that no reward will be received at all.  
+2. Consider simplifying the phrase 'que tratan de aparentar que están pálidos y desaliñados' to a more direct expression that captures the hypocrisy more clearly, such as 'hacen ver que están tristes'.  
+3. Adjust the terminology to ensure consistency with traditional meanings, especially regarding the concept of hypocrisy and the seriousness of fasting.  
+4. Review the use of 'aparte de esto' to avoid confusion; a more precise translation would align better with the original Greek intent.  
+5. Overall, ensure that the translation remains accessible to modern Spanish speakers while being reverent and faithful to the original scripture.
+
+source: Ὅταν δὲ νηστεύητε, μὴ γίνεσθε ὥσπερ οἱ ὑποκριταὶ σκυθρωποί· ἀφανίζουσι γὰρ τὰ πρόσωπα αὐτῶν ὅπως φανῶσι τοῖς ἀνθρώποις νηστεύοντες· ἀμὴν λέγω ὑμῖν ὅτι ἀπέχουσι τὸν μισθὸν αὐτῶν.
+old: »Cuando ustedes ayunen, no lo hagan en público como los hipócritas, que tratan de aparentar que están pálidos y desaliñados para que la gente se dé cuenta de que ayunaron. Les aseguro que, aparte de esto, no tendrán más recompensa.
+new: »Cuando ustedes ayunen, no se pongan tristes como los hipócritas, que hacen ver que están tristes. Les aseguro que no recibirán recompensa alguna.
+
+2025-03-25 17:18:38 - Average grade: 90.21 - reflected on verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:41 - Average grade: 90.22 - added grade number 1 on loop 2 of grade 95 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:44 - Average grade: 90.22 - added grade number 2 on loop 2 of grade 90 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:47 - Average grade: 90.22 - added grade number 3 on loop 2 of grade 95 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:49 - Average grade: 90.22 - added grade number 4 on loop 2 of grade 95 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:51 - Average grade: 90.22 - added grade number 5 on loop 2 of grade 95 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+2025-03-25 17:18:53 - Average grade: 90.22 - added grade number 6 on loop 2 of grade 85 to verse MAT 6:16 - Best grade: 90.21 - Iterations without improvement: 0
+New best grade: 90.21948134092335 after 1 iterations.  Improvement of 0.007115749525624437
+Working on verse MAT 17:15 which has grade 85.0
+
+1. Precision in Description: Adjust the phrase 'está enfermo de la mente' to more accurately reflect the original Greek meaning of 'seληνιάζεται' (moon-struck, suggesting possession) by considering alternatives like 'se encuentra poseído' or 'sufre de demonios'.  
+2. Traditional Language: Incorporate more traditional terms for ailments that resonate with conservative Christian interpretations, such as 'lunático', which aligns with the cultural and theological context.  
+3. Maintain Clarity: Ensure that the translation is clear and accessible while preserving the urgency and seriousness of the father's plea.  
+4. Tone and Reverence: Keep the tone reverent and appropriate for the context of a biblical translation, ensuring the emotional weight of the plea is not lost.
+
+source: Κύριε, ἐλέησόν μου τὸν υἱόν, ὅτι σεληνιάζεται καὶ κακῶς πάσχει· πολλάκις γὰρ πίπτει εἰς τὸ πῦρ καὶ πολλάκις εἰς τὸ ὕδωρ.
+old: ―Señor —dijo—, ten misericordia de mi hijo, que está enfermo de la mente y padece muchísimo. Muchas veces se cae en el fuego o en el agua, con peligro de su vida.
+new: ―Señor —dijo—, ten misericordia de mi hijo, que es lunático y sufre mucho; porque muchas veces cae en el fuego y muchas en el agua.
+
+2025-03-25 17:19:00 - Average grade: 90.22 - reflected on verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:03 - Average grade: 90.22 - added grade number 1 on loop 2 of grade 85 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:05 - Average grade: 90.22 - added grade number 2 on loop 2 of grade 90 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:12 - Average grade: 90.22 - added grade number 3 on loop 2 of grade 88 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:15 - Average grade: 90.22 - added grade number 4 on loop 2 of grade 95 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:17 - Average grade: 90.22 - added grade number 5 on loop 2 of grade 88 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:20 - Average grade: 90.22 - added grade number 6 on loop 2 of grade 90 to verse MAT 17:15 - Best grade: 90.22 - Iterations without improvement: 0
+New best grade: 90.22359266287148 after 1 iterations.  Improvement of 0.004111321948130353
+Working on verse MAT 18:34 which has grade 85.0
+
+1. Reconsider the phrase 'cámaras de tortura' due to its harshness; alternatives such as 'lugar de castigo' or 'lugar de tormento' may be more suitable for conservative readers. 
+2. Maintain the essence of the translation that emphasizes judgment and consequences, but ensure the language aligns with conservative Christian values to avoid being overly graphic. 
+3. Evaluate the phrase 'hasta que pagara el último centavo'; it may diminish the gravity of spiritual judgment and could benefit from a more solemn tone. 
+4. Overall, aim for a translation that balances clarity and emotional weight while remaining sensitive to the audience's sensibilities.
+
+source: καὶ ὀργισθεὶς ὁ κύριος αὐτοῦ παρέδωκεν αὐτὸν τοῖς βασανισταῖς ἕως οὗ ἀποδῷ πᾶν τὸ ὀφειλόμενον αὐτῷ.
+old: Tan enojado estaba el rey que lo envió a las cámaras de tortura hasta que pagara el último centavo.
+new: Tan enojado estaba el rey que lo envió a un lugar de castigo hasta que se saldara toda su deuda.
+
+2025-03-25 17:19:26 - Average grade: 90.22 - reflected on verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:29 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 88 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:32 - Average grade: 90.23 - added grade number 2 on loop 2 of grade 92 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:35 - Average grade: 90.23 - added grade number 3 on loop 2 of grade 95 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:37 - Average grade: 90.23 - added grade number 4 on loop 2 of grade 90 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:40 - Average grade: 90.23 - added grade number 5 on loop 2 of grade 85 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+2025-03-25 17:19:44 - Average grade: 90.23 - added grade number 6 on loop 2 of grade 95 to verse MAT 18:34 - Best grade: 90.22 - Iterations without improvement: 0
+New best grade: 90.22912713472475 after 1 iterations.  Improvement of 0.005534471853266609
+Working on verse MAT 20:25 which has grade 85.0
+
+The translation of MAT 20:25 is generally clear and accessible, but it requires adjustments for precision and neutrality. Suggestions include: 1. Replace "tirano" with more neutral terms like "príncipes" or "gobernantes" to avoid negative connotations. 2. Consider substituting "súbditos" with "seguidores" or "ciudadanos" for relatability. 3. Maintain a balance between modern language and fidelity to the original Greek, ensuring the hierarchical structure is reflected accurately. Overall, while the translation serves its purpose, focusing on these areas can enhance its theological precision and reception.
+
+source: ὁ δὲ Ἰησοῦς προσκαλεσάμενος αὐτοὺς εἶπεν· οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν.
+old: pero Jesús los llamó y les dijo:
+―En las naciones paganas, los reyes, los tiranos o cualquier funcionario está por encima de sus súbditos.
+new: Pero Jesús los llamó y les dijo:
+―En las naciones paganas, los reyes, los gobernantes o cualquier funcionario están por encima de sus seguidores.
+
+2025-03-25 17:19:50 - Average grade: 90.23 - reflected on verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:19:52 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 85 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:19:56 - Average grade: 90.23 - added grade number 2 on loop 2 of grade 90 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:19:57 - Average grade: 90.23 - added grade number 3 on loop 2 of grade 85 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:01 - Average grade: 90.23 - added grade number 4 on loop 2 of grade 85 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:04 - Average grade: 90.23 - added grade number 5 on loop 2 of grade 88 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:09 - Average grade: 90.23 - added grade number 6 on loop 2 of grade 85 to verse MAT 20:25 - Best grade: 90.23 - Iterations without improvement: 0
+New best grade: 90.23039215686264 after 1 iterations.  Improvement of 0.0012650221378862625
+Working on verse MAT 21:30 which has grade 85.0
+
+1. Adjust the phrase '¡Con mucho gusto! ¡Ahora mismo voy!' to a more neutral and respectful response, such as 'Sí, padre; ahora mismo voy', to better reflect the son's initial attitude without suggesting sarcasm or flippancy. 2. Remove the phrase 'Díganme:' at the end, as it seems out of place and may confuse readers. 3. Ensure the translation retains the directness of the original text to capture the son's change of heart more accurately.
+
+source: καὶ προσελθὼν τῷ δευτέρῳ εἶπεν ὡσαύτως. ὁ δὲ ἀποκριθεὶς εἶπεν· ἐγώ, κύριε· καὶ οὐκ ἀπῆλθε.
+old: Cuando el padre le pidió al menor que fuera, este le respondió: “¡Con mucho gusto! ¡Ahora mismo voy!”. Pero no fue. Díganme:
+new: Cuando el padre le pidió al menor que fuera, este le respondió: “Sí, padre; ahora mismo voy”. Pero no fue.
+
+2025-03-25 17:20:15 - Average grade: 90.23 - reflected on verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:17 - Average grade: 90.24 - added grade number 1 on loop 2 of grade 90 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:21 - Average grade: 90.23 - added grade number 2 on loop 2 of grade 88 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:23 - Average grade: 90.23 - added grade number 3 on loop 2 of grade 90 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:27 - Average grade: 90.23 - added grade number 4 on loop 2 of grade 88 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:29 - Average grade: 90.23 - added grade number 5 on loop 2 of grade 85 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:31 - Average grade: 90.23 - added grade number 6 on loop 2 of grade 90 to verse MAT 21:30 - Best grade: 90.23 - Iterations without improvement: 0
+New best grade: 90.23371283997459 after 1 iterations.  Improvement of 0.003320683111951439
+Working on verse MAT 22:4 which has grade 85.0
+
+1. Maintain a formal tone: Replace casual phrases like 'que no se demoraran' with 'vengan pronto' or 'que no tardaran' to convey urgency and seriousness. 
+2. Choose words carefully: Substitute 'asados' with terms like 'banquete' or 'comida' to retain theological richness and avoid informality. 
+3. Keep the focus on the invitation: Ensure the translation highlights the call to 'come to the wedding' to enhance the theological implications of the invitation.
+
+source: πάλιν ἀπέστειλεν ἄλλους δούλους λέγων· εἴπατε τοῖς κεκλημένοις· ἰδοὺ τὸ ἄριστόν μου ἡτοίμασα, οἱ ταῦροί μου καὶ τὰ σιτιστὰ τεθυμένα, καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς γάμους.
+old: Envió a otros siervos a decirles que fueran pronto, que no se demoraran, que ya los asados estaban listos.
+new: Envió a otros siervos a decirles que vengan pronto, que he preparado el banquete, los toros y la comida están listos; ¡vengan a la boda!
+
+2025-03-25 17:20:38 - Average grade: 90.23 - reflected on verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:40 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 85 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:42 - Average grade: 90.24 - added grade number 2 on loop 2 of grade 88 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:45 - Average grade: 90.24 - added grade number 3 on loop 2 of grade 87 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:48 - Average grade: 90.24 - added grade number 4 on loop 2 of grade 95 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:50 - Average grade: 90.24 - added grade number 5 on loop 2 of grade 88 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+2025-03-25 17:20:52 - Average grade: 90.24 - added grade number 6 on loop 2 of grade 95 to verse MAT 22:4 - Best grade: 90.23 - Iterations without improvement: 0
+New best grade: 90.23814041745719 after 1 iterations.  Improvement of 0.004427577482601919
+Working on verse MAT 22:34 which has grade 85.0
+
+The peer review highlights several key areas for improvement in the translation of MAT 22:34. First, the phrase "no se dejaron amedrentar por la derrota de los saduceos" does not accurately reflect the intent of the original Greek, which focuses on the Pharisees gathering after hearing Jesus. A more neutral wording, such as "los fariseos, al oír que Jesús había silenciado a los saduceos, se reunieron entre sí," is recommended to capture the original nuance. Additionally, the tone of the translation should be more formal and reverent, aligning with conservative Christian perspectives. Overall, while the translation is modern and accessible, a balance between clarity and fidelity to the text is necessary.
+
+source: Οἱ δὲ Φαρισαῖοι ἀκούσαντες ὅτι ἐφίμωσε τοὺς Σαδδουκαίους, συνήχθησαν ἐπὶ τὸ αὐτό,
+old: Los fariseos no se dejaron amedrentar por la derrota de los saduceos
+new: Los fariseos, al oír que Jesús había silenciado a los saduceos, se reunieron entre sí.
+
+2025-03-25 17:21:04 - Average grade: 90.24 - reflected on verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:07 - Average grade: 90.25 - added grade number 1 on loop 2 of grade 95 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:09 - Average grade: 90.25 - added grade number 2 on loop 2 of grade 95 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:11 - Average grade: 90.25 - added grade number 3 on loop 2 of grade 95 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:13 - Average grade: 90.25 - added grade number 4 on loop 2 of grade 95 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:15 - Average grade: 90.25 - added grade number 5 on loop 2 of grade 95 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+2025-03-25 17:21:18 - Average grade: 90.25 - added grade number 6 on loop 2 of grade 88 to verse MAT 22:34 - Best grade: 90.24 - Iterations without improvement: 0
+New best grade: 90.2465211891207 after 1 iterations.  Improvement of 0.0083807716635107
+Working on verse MAT 23:32 which has grade 85.0
+
+The peer review of the translation of MAT 23:32 highlighted several important points for improvement: 
+1. **Clarification of Intent**: The phrase "¡Acaben de imitarlos!" is seen as misleading, suggesting mere imitation rather than fulfilling or completing the sinful actions of the fathers. A closer translation, like "Y ustedes también llenan el límite de sus padres," is recommended to better reflect the original's judgment tone. 
+2. **Maintaining Urgency and Imperative Tone**: While the translation captures the urgency and imperative nature of Jesus' message, some reviewers noted that using words like "imitarlos" may dilute the seriousness of the admonition. Suggestions for phrases that clearly indicate the fulfillment of sin could enhance clarity. 
+3. **Balancing Accessibility with Fidelity**: The translation is praised for being accessible to modern Spanish-speaking audiences, yet it should balance this with fidelity to the original text's nuances. The aim should be to keep the text engaging while accurately conveying its message. 
+4. **General Effectiveness**: Overall, the translation is regarded as effective and relatable, but minor adjustments in language could enhance its fidelity to the original text and its intended meaning.
+
+source: καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.
+old: ¡Acaben de imitarlos! ¡Pónganse a la altura de ellos!
+new: Y ustedes también están llenando la medida de sus padres.
+
+2025-03-25 17:21:30 - Average grade: 90.25 - reflected on verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:33 - Average grade: 90.26 - added grade number 1 on loop 2 of grade 95 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:36 - Average grade: 90.26 - added grade number 2 on loop 2 of grade 95 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:38 - Average grade: 90.26 - added grade number 3 on loop 2 of grade 95 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:41 - Average grade: 90.26 - added grade number 4 on loop 2 of grade 92 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:46 - Average grade: 90.25 - added grade number 5 on loop 2 of grade 90 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:48 - Average grade: 90.25 - added grade number 6 on loop 2 of grade 95 to verse MAT 23:32 - Best grade: 90.25 - Iterations without improvement: 0
+New best grade: 90.25474383301697 after 1 iterations.  Improvement of 0.008222643896274917
+Working on verse MAT 24:8 which has grade 85.0
+
+The translation of MAT 24:8 as "Pero esto será sólo el principio de los horrores que vendrán" has received mixed feedback from the peer review. The primary concern is the use of the word "horrores", which may not fully capture the original Greek meaning of "birth pains" or "suffering". Suggested alternatives include "dolores" or "tribulaciones" to better align with traditional interpretations and convey a more theological understanding of the passage. While many reviewers appreciated the accessibility and modern tone for a Latin American audience, they emphasized the importance of retaining theological clarity and fidelity to the source material. Overall, minor adjustments to word choice are recommended to enhance the translation's accuracy and depth.
+
+source: πάντα δὲ ταῦτα ἀρχὴ ὠδίνων.
+old: Pero esto será sólo el principio de los horrores que vendrán.
+new: Pero todo esto será apenas el principio de los dolores.
+
+2025-03-25 17:21:55 - Average grade: 90.25 - reflected on verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:21:58 - Average grade: 90.26 - added grade number 1 on loop 2 of grade 95 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:22:00 - Average grade: 90.26 - added grade number 2 on loop 2 of grade 90 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:22:03 - Average grade: 90.26 - added grade number 3 on loop 2 of grade 95 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:22:06 - Average grade: 90.26 - added grade number 4 on loop 2 of grade 90 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:22:09 - Average grade: 90.26 - added grade number 5 on loop 2 of grade 95 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+2025-03-25 17:22:11 - Average grade: 90.26 - added grade number 6 on loop 2 of grade 95 to verse MAT 24:8 - Best grade: 90.25 - Iterations without improvement: 0
+New best grade: 90.26265022137876 after 1 iterations.  Improvement of 0.00790638836178914
+Working on verse MAT 24:10 which has grade 85.0
+
+The peer review of MAT 24:10 reveals several areas for improvement in the current translation. Common recommendations include:
+
+1. **Phrase Adjustment**: Replace 'volverán a caer en pecado' with 'se escandalizarán' to more accurately reflect the Greek term 'σκανδαλισθήσονται', emphasizing the idea of stumbling or falling away from faith rather than a simplistic notion of sin.
+
+2. **Clarification of Betrayal**: Modify 'aborrecerán a los demás' to 'se odiarán mutuamente' or 'se traicionarán y se odiarán unos a otros' for clearer communication of mutual betrayal and to align more closely with the original intent.
+
+3. **Theological Precision**: Ensure the translation reflects a conservative Christian perspective by maintaining a serious tone regarding warnings about faith and betrayal.
+
+Overall, the translation is recognized for its accessibility, but these adjustments are essential for enhanced accuracy and alignment with the original text.
+
+source: καὶ τότε σκανδαλισθήσονται πολλοὶ καὶ ἀλλήλους παραδώσουσι καὶ μισήσουσιν ἀλλήλους.
+old: y muchos de ustedes volverán a caer en pecado y traicionarán y aborrecerán a los demás.
+new: y muchos se escandalizarán, y se traicionarán y se odiarán unos a otros.
+
+2025-03-25 17:22:20 - Average grade: 90.26 - reflected on verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:23 - Average grade: 90.27 - added grade number 1 on loop 2 of grade 90 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:27 - Average grade: 90.27 - added grade number 2 on loop 2 of grade 95 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:29 - Average grade: 90.27 - added grade number 3 on loop 2 of grade 90 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:33 - Average grade: 90.27 - added grade number 4 on loop 2 of grade 90 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:37 - Average grade: 90.27 - added grade number 5 on loop 2 of grade 88 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+2025-03-25 17:22:42 - Average grade: 90.27 - added grade number 6 on loop 2 of grade 92 to verse MAT 24:10 - Best grade: 90.26 - Iterations without improvement: 0
+New best grade: 90.26818469323202 after 1 iterations.  Improvement of 0.005534471853252398
+Working on verse MAT 25:24-25 which has grade 85.0
+
+1. Consider using a more literal translation for the master's character to avoid implications of harshness that could misrepresent God’s nature. 
+2. Reassess phrases such as "es tan duro" and "hasta el último centavo" for tone and reverence, opting for language that maintains the original's seriousness. 
+3. Emphasize the servant's fear and misunderstanding to align with the parable's intent, ensuring the translation reflects theological depth appropriate for a conservative Christian perspective.
+
+source: προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπε· κύριε· ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ διεσκόρπισας·
+καὶ φοβηθεὶς ἀπελθὼν ἔκρυψα τὸ τάλαντόν σου ἐν τῇ γῇ· ἴδε ἔχεις τὸ σόν.
+old: »Cuando el que había recibido los diez mil pesos se presentó ante el jefe, le dijo: “Señor, como sabía que eres tan duro que te quedarías con cualquier utilidad que yo obtuviera, escondí el dinero. Aquí tienes hasta el último centavo que me diste”.
+new: »Cuando el que había recibido los diez mil pesos se presentó ante el jefe, le dijo: “Señor, sabía que eres un hombre exigente, que cosechas donde no has sembrado y recoges donde no has esparcido. Por eso, atemorizado, fui y escondí tu dinero en la tierra. Aquí está lo que te pertenece.”
+
+2025-03-25 17:22:49 - Average grade: 90.27 - reflected on verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:22:52 - Average grade: 90.27 - added grade number 1 on loop 2 of grade 85 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:22:55 - Average grade: 90.27 - added grade number 2 on loop 2 of grade 90 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:22:59 - Average grade: 90.27 - added grade number 3 on loop 2 of grade 88 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:01 - Average grade: 90.27 - added grade number 4 on loop 2 of grade 88 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:03 - Average grade: 90.27 - added grade number 5 on loop 2 of grade 85 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:06 - Average grade: 90.27 - added grade number 6 on loop 2 of grade 88 to verse MAT 25:24-25 - Best grade: 90.27 - Iterations without improvement: 0
+New best grade: 90.27039848197332 after 1 iterations.  Improvement of 0.0022137887413009594
+Working on verse MAT 25:26 which has grade 85.0
+
+1. Consider using 'siervo malo y perezoso' instead of 'malvado' and 'haragán' to capture the original condemnation of laziness and betrayal more accurately. 2. Improve the phrase 'si sabías que quería obtener utilidades' to maintain the strength of the original Greek accusation. 3. Explore alternative terms to 'haragán' for more formal language that resonates with all readers. 4. Ensure that the gravity and urgency of the master's message are fully represented in the translation.
+
+source: ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ· πονηρὲ δοῦλε καὶ ὀκνηρέ! ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ διεσκόρπισα!
+old: “¡Malvado! ¡Haragán! Si sabías que quería obtener utilidades,
+new: “¡Siervo malo y perezoso! Si sabías que cosecho donde no he sembrado y recojo donde no esparcí,
+
+2025-03-25 17:23:12 - Average grade: 90.27 - reflected on verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:15 - Average grade: 90.28 - added grade number 1 on loop 2 of grade 90 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:20 - Average grade: 90.27 - added grade number 2 on loop 2 of grade 85 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:22 - Average grade: 90.27 - added grade number 3 on loop 2 of grade 85 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:25 - Average grade: 90.27 - added grade number 4 on loop 2 of grade 85 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:28 - Average grade: 90.27 - added grade number 5 on loop 2 of grade 85 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:32 - Average grade: 90.27 - added grade number 6 on loop 2 of grade 92 to verse MAT 25:26 - Best grade: 90.27 - Iterations without improvement: 0
+New best grade: 90.27229601518015 after 1 iterations.  Improvement of 0.0018975332068293937
+Working on verse MAT 10:36 which has grade 85.16666666666667
+
+The peer review comments for MAT 10:36 highlight several areas for improvement in the translation "¡Cada quien tendrá a sus peores enemigos en su propia casa!" 1. **Tone and Formality**: Several reviewers noted that the phrase "peores enemigos" and the use of "¡Cada quien!" may come off as too colloquial for a conservative Christian audience. A suggestion was made to consider alternatives like "los mayores enemigos" to convey a more serious tone. 2. **Reverence for Scripture**: Emphasis was placed on maintaining a respectful and reverent tone that aligns with the original message of the Scripture. 3. **Fidelity to Original Text**: A few reviewers recommended exploring a more literal translation to resonate with traditional readers who value accuracy. The original Greek text emphasizes the intensity of familial conflict, and some adjustments in language could better capture this weight. 4. **Audience Engagement**: While accessibility and relatability were praised, a balance needs to be struck between engagement and the gravity of the biblical message. Overall, while the translation is effective, refining the language for greater reverence and fidelity to the original text is recommended.
+
+source: καὶ ἐχθροὶ τοῦ ἀνθρώπου οἱ οἰκιακοὶ αὐτοῦ.
+old: ¡Cada quien tendrá a sus peores enemigos en su propia casa!
+new: Los mayores enemigos de un hombre serán los de su propia casa.
+
+2025-03-25 17:23:40 - Average grade: 90.27 - reflected on verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:42 - Average grade: 90.28 - added grade number 1 on loop 2 of grade 95 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:45 - Average grade: 90.28 - added grade number 2 on loop 2 of grade 85 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:47 - Average grade: 90.28 - added grade number 3 on loop 2 of grade 95 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:51 - Average grade: 90.28 - added grade number 4 on loop 2 of grade 90 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:53 - Average grade: 90.28 - added grade number 5 on loop 2 of grade 95 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+2025-03-25 17:23:55 - Average grade: 90.28 - added grade number 6 on loop 2 of grade 90 to verse MAT 10:36 - Best grade: 90.27 - Iterations without improvement: 0
+New best grade: 90.27846299810234 after 1 iterations.  Improvement of 0.00616698292219553
+Working on verse MAT 17:25 which has grade 85.33333333333333
+
+1. Maintain Clarity and Accessibility: The translation effectively communicates the essence of the scripture in modern and familiar language suitable for Spanish speakers, which is an essential goal.  
+2. Enhance Formality: Several comments suggest a need for more formal language, especially in responses to Jesus' question. Strive for a balance between accessibility and the reverence expected in a biblical text.  
+3. Avoid Excessive Informality: Phrases like '¡Claro que los paga!' are considered too informal and could detract from the text's sacredness. Consider using alternatives that retain engagement while upholding a respectful tone.  
+4. Preserve Original Structure: Some feedback indicates that the translation could improve by staying closer to the original structure and wording of the Greek text, avoiding unnecessary embellishments or interpretative additions.  
+5. Clarify Nuances: Pay attention to the nuances of Jesus' rhetorical tone and ensure they are reflected in the translation to maintain the depth of meaning.  
+6. Review Specific Phrasing: Evaluate specific phrases like 'e inmediatamente' to determine if they add unnecessary emphasis or clarity to the original intent.
+
+source: λέγει, ναί. καὶ ὅτε εἰσῆλθεν εἰς τὴν οἰκίαν, προέφθασεν αὐτὸν ὁ Ἰησοῦς λέγων· τί σοι δοκεῖ, Σίμων; οἱ βασιλεῖς τῆς γῆς ἀπὸ τίνων λαμβάνουσι τέλη ἢ κῆνσον; ἀπὸ τῶν υἱῶν αὐτῶν ἢ ἀπὸ τῶν ἀλλοτρίων;
+old: ―¡Claro que los paga! —les respondió Pedro—, e inmediatamente entró a la casa a hablarle a Jesús sobre el asunto.
+No había pronunciado todavía la primera palabra, cuando Jesús le preguntó: —
+¿A quién crees tú, Pedro, que cobran tributos los reyes de la tierra? ¿A sus súbditos o a los extranjeros?
+new: —Sí, sí paga —respondió Pedro—. Y cuando entró en la casa, Jesús le habló primero, diciendo: —¿Qué piensas, Simón? ¿De quiénes cobran impuestos los reyes de la tierra? ¿De sus hijos o de los extranjeros?
+
+2025-03-25 17:24:04 - Average grade: 90.28 - reflected on verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:07 - Average grade: 90.28 - added grade number 1 on loop 2 of grade 88 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:10 - Average grade: 90.28 - added grade number 2 on loop 2 of grade 88 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:13 - Average grade: 90.28 - added grade number 3 on loop 2 of grade 95 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:16 - Average grade: 90.28 - added grade number 4 on loop 2 of grade 90 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:18 - Average grade: 90.28 - added grade number 5 on loop 2 of grade 85 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:20 - Average grade: 90.28 - added grade number 6 on loop 2 of grade 90 to verse MAT 17:25 - Best grade: 90.28 - Iterations without improvement: 0
+New best grade: 90.282258064516 after 1 iterations.  Improvement of 0.0037950664136587875
+Working on verse MAT 2:21 which has grade 85.5
+
+The peer review of MAT 2:21 highlights several key points for improvement: 1) While the translation is generally accurate and accessible, the latter part could be made more fluid and direct for clarity. 2) The addition of contextual details about Archelaus, although informative, is seen as unnecessary by some reviewers, potentially detracting from the focus on the primary action of Joseph's return to Israel. 3) Suggestions include either streamlining or omitting the additional context to enhance fidelity to the original Greek text. Overall, the translation is considered solid, with minor adjustments recommended for improved clarity and adherence to the source material.
+
+source: ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.
+old: Así fue como José regresó a la tierra de Israel con el niño y su madre. Pero en el camino se enteró de que Arquelao, hijo de Herodes, reinaba en Judea, y tuvo miedo de ir allí.
+new: José se levantó y regresó a la tierra de Israel con el niño y su madre.
+
+2025-03-25 17:24:27 - Average grade: 90.28 - reflected on verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:28 - Average grade: 90.29 - added grade number 1 on loop 2 of grade 95 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:31 - Average grade: 90.29 - added grade number 2 on loop 2 of grade 90 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:33 - Average grade: 90.29 - added grade number 3 on loop 2 of grade 95 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:35 - Average grade: 90.29 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:37 - Average grade: 90.29 - added grade number 5 on loop 2 of grade 90 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+2025-03-25 17:24:39 - Average grade: 90.29 - added grade number 6 on loop 2 of grade 95 to verse MAT 2:21 - Best grade: 90.28 - Iterations without improvement: 0
+New best grade: 90.28810879190374 after 1 iterations.  Improvement of 0.005850727387738175
+Working on verse MAT 4:6 which has grade 85.5
+
+1. Consider using 'lánzate' instead of 'tírate' for a more dynamic tone. 2. Reinforce the traditional tone and scriptural authority in phrasing. 3. Ensure clarity by potentially quoting scripture directly or emphasizing God's promise of protection. 4. Avoid colloquial phrases like 'ni siquiera te tropezarás con las rocas' to maintain the gravity of the context. 5. Balance accessibility with faithfulness to the original text for a conservative audience.
+
+source: καὶ λέγει αὐτῷ· εἰ υἱὸς εἶ τοῦ Θεοῦ, βάλε σεαυτὸν κάτω· γέγραπται γὰρ ὅτι τοῖς ἀγγέλοις αὐτοῦ ἐντελεῖται περὶ σοῦ, καὶ ἐπὶ χειρῶν ἀροῦσί σε, μήποτε προσκόψῃς πρὸς λίθον τὸν πόδα σου.
+old: ―Si eres el Hijo de Dios —le dijo—, tírate desde aquí. Las Escrituras dicen que Dios enviará a sus ángeles a cuidarte, y ni siquiera te tropezarás con las rocas.
+new: —Si eres el Hijo de Dios —le dijo—, lánzate desde aquí, porque las Escrituras dicen que Dios enviará a sus ángeles a cuidarte, y ellos te sostendrán en sus manos para que no tropieces con piedra alguna.
+
+2025-03-25 17:24:50 - Average grade: 90.29 - reflected on verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:24:52 - Average grade: 90.29 - added grade number 1 on loop 2 of grade 90 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:24:54 - Average grade: 90.29 - added grade number 2 on loop 2 of grade 92 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:24:56 - Average grade: 90.29 - added grade number 3 on loop 2 of grade 85 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:24:58 - Average grade: 90.29 - added grade number 4 on loop 2 of grade 90 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:03 - Average grade: 90.29 - added grade number 5 on loop 2 of grade 95 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:04 - Average grade: 90.29 - added grade number 6 on loop 2 of grade 90 to verse MAT 4:6 - Best grade: 90.29 - Iterations without improvement: 0
+New best grade: 90.29269449715358 after 1 iterations.  Improvement of 0.0045857052498377016
+Working on verse MAT 8:6 which has grade 85.5
+
+1. Replace 'sirviente' with 'siervo' to better reflect the original text's nuance and relationship; 'sirviente' feels less formal. 
+2. Consider alternative phrases that capture the emotional weight of 'παῖς', such as 'mi niño' or 'mi siervo'. 
+3. Simplify the structure for better fluidity, e.g., integrate the phrase 'y que sufría mucho' into the main clause. 
+4. Adjust 'que sanara' to something that emphasizes the immediacy of the request, such as 'que cure a mi sirviente'. 
+5. Maintain respect in addressing Jesus with 'Señor' and ensure clarity in the description of the servant's condition. 
+Overall, the translation is effective but can be enhanced with these minor adjustments for clarity, accuracy, and emotional depth.
+
+source: Κύριε, ὁ παῖς μου βέβληται ἐν τῇ οἰκίᾳ παραλυτικός, δεινῶς βασανιζόμενος.
+old: que sanara a un sirviente que estaba en cama paralítico y que sufría mucho.
+new: Señor, mi siervo está en la casa paralítico, sufriendo terriblemente.
+
+2025-03-25 17:25:14 - Average grade: 90.29 - reflected on verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:16 - Average grade: 90.30 - added grade number 1 on loop 2 of grade 90 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:18 - Average grade: 90.30 - added grade number 2 on loop 2 of grade 95 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:20 - Average grade: 90.30 - added grade number 3 on loop 2 of grade 95 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:23 - Average grade: 90.30 - added grade number 4 on loop 2 of grade 90 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:25 - Average grade: 90.30 - added grade number 5 on loop 2 of grade 95 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+2025-03-25 17:25:28 - Average grade: 90.30 - added grade number 6 on loop 2 of grade 88 to verse MAT 8:6 - Best grade: 90.29 - Iterations without improvement: 0
+New best grade: 90.29901960784302 after 1 iterations.  Improvement of 0.006325110689445523
+Working on verse MAT 10:11 which has grade 85.5
+
+1. **Adjust Phrase for Worthiness**: Replace 'busquen a una persona de confianza' with 'busquen a una persona digna' to more accurately reflect the original Greek term 'άξιος,' which conveys a sense of worthiness. 
+2. **Simplify Instruction on Staying**: Consider simplifying 'hasta que se vayan a otro pueblo' to 'hasta que salgan' for greater clarity. 
+3. **Use More Idiomatic Language**: Change 'quédense en su casa' to 'permanezcan en su casa' for better alignment with contemporary Spanish usage. 
+4. **Maintain Theological Fidelity**: Ensure that the translation retains the formal tone and theological implications of the original text, avoiding language that may be interpreted as too subjective. 
+Overall, aim for minor adjustments to enhance fidelity and clarity while preserving modern accessibility.
+
+source: εἰς ἣν δ᾽ ἂν πόλιν ἢ κώμην εἰσέλθητε, ἐξετάσατε τίς ἐν αὐτῇ ἄξιός ἐστι, κἀκεῖ μείνατε ἕως ἂν ἐξέλθητε.
+old: Cuando lleguen a cualquier ciudad o pueblo, busquen a una persona de confianza y quédense en su casa hasta que se vayan a otro pueblo.
+new: Cuando lleguen a cualquier ciudad o pueblo, busquen a una persona digna y permanezcan en su casa hasta que salgan.
+
+2025-03-25 17:25:37 - Average grade: 90.30 - reflected on verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:39 - Average grade: 90.30 - added grade number 1 on loop 2 of grade 90 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:42 - Average grade: 90.30 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:44 - Average grade: 90.30 - added grade number 3 on loop 2 of grade 85 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:47 - Average grade: 90.30 - added grade number 4 on loop 2 of grade 90 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:50 - Average grade: 90.30 - added grade number 5 on loop 2 of grade 95 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:25:52 - Average grade: 90.30 - added grade number 6 on loop 2 of grade 95 to verse MAT 10:11 - Best grade: 90.30 - Iterations without improvement: 0
+New best grade: 90.30407969639457 after 1 iterations.  Improvement of 0.00506008855154505
+Working on verse MAT 10:26 which has grade 85.5
+
+The translation of Matthew 10:26 should consider the following corrections: 1) Replace 'pronto llegará la hora de la verdad' with a more literal phrase such as 'no habrá nada oculto que no será revelado' to enhance fidelity to the original text. 2) Ensure that the translation maintains a balance between modern accessibility and conservative Christian values, preserving the nuances of the source material. 3) Overall, aim for clarity while aligning closely with traditional interpretations to resonate with conservative readers.
+
+source: μὴ οὖν φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστι κεκαλυμμένον ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται.
+old: Pero no tengan miedo, porque pronto llegará la hora de la verdad y no habrá secreto que no se descubra.
+new: »Así que no tengan miedo, porque no habrá nada oculto que no será revelado, y ningún secreto que no se conozca.
+
+2025-03-25 17:25:58 - Average grade: 90.30 - reflected on verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:00 - Average grade: 90.31 - added grade number 1 on loop 2 of grade 95 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:03 - Average grade: 90.31 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:05 - Average grade: 90.31 - added grade number 3 on loop 2 of grade 95 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:07 - Average grade: 90.31 - added grade number 4 on loop 2 of grade 95 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:09 - Average grade: 90.31 - added grade number 5 on loop 2 of grade 95 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+2025-03-25 17:26:12 - Average grade: 90.31 - added grade number 6 on loop 2 of grade 90 to verse MAT 10:26 - Best grade: 90.30 - Iterations without improvement: 0
+New best grade: 90.31151170145466 after 1 iterations.  Improvement of 0.007432005060096003
+Working on verse MAT 13:46 which has grade 85.5
+
+1. **Clarify Language**: Replace phrases like 'verdadera oportunidad' and 'ofrecen a buen precio' with more direct language that conveys the value of the pearl itself rather than focusing on opportunity or price. Consider using 'una perla de gran valor' for clarity.
+
+2. **Maintain Urgency and Excitement**: Adjust phrasing to better reflect the urgency and excitement present in the original parable. Simplifying complex phrases may enhance the reader's engagement.
+
+3. **Enhance Structure and Rhythm**: Work on the structure to preserve more of the original text's rhythm, enhancing its literary quality while keeping it accessible.
+
+4. **Focus on Intrinsic Value**: Emphasize the intrinsic value of the pearl in the translation to align with the spiritual significance intended in the parable. Avoid introducing ambiguity around the value being related to price.
+
+5. **Overall Accessibility**: While ensuring clarity and fidelity to the text, maintain the modern tone that makes it relatable for Latin American audiences.
+
+source: ὃς εὑρὼν ἕνα πολύτιμον μαργαρίτην ἀπελθὼν πέπρακε πάντα ὅσα εἶχε καὶ ἠγόρασεν αὐτόν.
+old: Por fin descubre una verdadera oportunidad cuando le ofrecen a buen precio una perla de gran valor. Entonces corre, vende todo lo que tiene y la compra.
+new: «Cuando encuentra una perla de gran valor, se llena de alegría, vende todo lo que tiene y la compra.»
+
+2025-03-25 17:26:19 - Average grade: 90.31 - reflected on verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:22 - Average grade: 90.32 - added grade number 1 on loop 2 of grade 95 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:25 - Average grade: 90.32 - added grade number 2 on loop 2 of grade 90 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:28 - Average grade: 90.32 - added grade number 3 on loop 2 of grade 90 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:31 - Average grade: 90.32 - added grade number 4 on loop 2 of grade 92 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:34 - Average grade: 90.32 - added grade number 5 on loop 2 of grade 90 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+2025-03-25 17:26:37 - Average grade: 90.32 - added grade number 6 on loop 2 of grade 95 to verse MAT 13:46 - Best grade: 90.31 - Iterations without improvement: 0
+New best grade: 90.31767868437686 after 1 iterations.  Improvement of 0.00616698292219553
+Working on verse MAT 14:4 which has grade 85.5
+
+1. Replace 'se había atrevido a decirle al rey que era incorrecto' with a more direct translation that emphasizes the prohibition, such as 'no te es lícito tenerla.' 2. Shift the focus from Herodias's feelings ('odiaba a Juan') to the condemnation of the marriage itself to better convey John's moral stance. 3. Clarify John's authority and the illegitimacy of the marriage to reflect the seriousness of the rebuke. 4. Use neutral phrasing to avoid implying disrespect towards John the Baptist, thus aligning with conservative interpretations.
+
+source: ἔλεγε γὰρ αὐτῷ ὁ Ἰωάννης· οὐκ ἔξεστί σοι ἔχειν αὐτήν.
+old: Herodías odiaba a Juan, porque este se había atrevido a decirle al rey que era incorrecto que se casara con ella.
+new: Porque Juan le decía: «No te es lícito tener a esta mujer».
+
+2025-03-25 17:26:43 - Average grade: 90.32 - reflected on verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:26:46 - Average grade: 90.33 - added grade number 1 on loop 2 of grade 95 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:26:48 - Average grade: 90.32 - added grade number 2 on loop 2 of grade 90 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:26:51 - Average grade: 90.32 - added grade number 3 on loop 2 of grade 90 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:26:53 - Average grade: 90.32 - added grade number 4 on loop 2 of grade 90 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:26:57 - Average grade: 90.32 - added grade number 5 on loop 2 of grade 95 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:01 - Average grade: 90.32 - added grade number 6 on loop 2 of grade 95 to verse MAT 14:4 - Best grade: 90.32 - Iterations without improvement: 0
+New best grade: 90.32432005060078 after 1 iterations.  Improvement of 0.006641366223917089
+Working on verse MAT 16:3 which has grade 85.5
+
+1. **Clarity and Fluency:** Many reviewers suggested improving the fluency and naturalness of the translation. Phrases such as 'se pone rojo' could be simplified to 'se ve rojo' for better accessibility. Additionally, the structure of the translation should be revised to enhance clarity, avoiding phrases that may sound redundant or colloquial.
+
+2. **Word Choice:** The term 'notorias' was frequently pointed out as potentially too interpretive. A more common synonym should be considered to ensure the text resonates with contemporary readers while still conveying the intended seriousness of Jesus' message.
+
+3. **Emphasis on Critique:** Reviewers noted that omitting certain key words, like '¡Hipócritas!', can dilute the impact of Jesus' criticism. It's essential to retain significant phrases from the original to underscore the gravity of the rebuke given to the Pharisees and Sadducees.
+
+4. **Modernization:** While the overall tone of the translation is modern and accessible, further adjustments could make the language even clearer and more direct, ensuring it aligns closely with current linguistic standards among Spanish speakers.
+
+source: καὶ πρωΐ· σήμερον χειμών· πυρράζει γὰρ στυγνάζων ὁ οὐρανός. [ὑποκριταί,] τὸ μὲν πρόσωπον τοῦ οὐρανοῦ γινώσκετε διακρίνειν, τὰ δὲ σημεῖα τῶν καιρῶν οὐ δύνασθε [γνῶναι];
+old: y si por la mañana se pone rojo, saben que habrá tempestad. ¡Y sin embargo, no pueden leer las notorias señales de los tiempos!
+new: y si por la mañana se ve rojo, saben que habrá tempestad. ¡Hipócritas! Sin embargo, no pueden discernir las claras señales de los tiempos.
+
+2025-03-25 17:27:12 - Average grade: 90.32 - reflected on verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:15 - Average grade: 90.33 - added grade number 1 on loop 2 of grade 88 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:17 - Average grade: 90.33 - added grade number 2 on loop 2 of grade 90 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:20 - Average grade: 90.33 - added grade number 3 on loop 2 of grade 90 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:22 - Average grade: 90.33 - added grade number 4 on loop 2 of grade 95 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:24 - Average grade: 90.33 - added grade number 5 on loop 2 of grade 95 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+2025-03-25 17:27:26 - Average grade: 90.33 - added grade number 6 on loop 2 of grade 90 to verse MAT 16:3 - Best grade: 90.32 - Iterations without improvement: 0
+New best grade: 90.32985452245403 after 1 iterations.  Improvement of 0.005534471853252398
+Working on verse MAT 26:45 which has grade 85.5
+
+The peer review of MAT 26:45 highlights several key areas for improvement in the translation. Common suggestions include: 1) Adjusting the phrase 'Duerman, descansen...' to better reflect the gravity and emotional weight of Jesus' message, as it currently feels somewhat casual. 2) Enhancing the emphasis in the phrase '..., pero no, ha llegado la hora' to convey the urgency and seriousness of the situation more effectively. 3) Considering a different word choice for 'pecadores,' such as 'los impíos,' to reflect a more serious tone in the context of the scripture. Overall, while the translation is appreciated for its accessibility and clarity, addressing these points could enhance its depth and impact.
+
+source: τότε ἔρχεται πρὸς τοὺς μαθητὰς αὐτοῦ καὶ λέγει αὐτοῖς· καθεύδετε τὸ λοιπὸν καὶ ἀναπαύεσθε! ἰδοὺ ἤγγικεν ἡ ὥρα καὶ ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἁμαρτωλῶν.
+old: Cuando volvió a los discípulos les dijo:
+«Duerman, descansen…, pero no, ha llegado la hora. Me van a entregar en manos de los pecadores.
+new: «Ahora pueden descansar, pero ha llegado la hora. Me entregan en manos de los impíos.»
+
+2025-03-25 17:27:38 - Average grade: 90.33 - reflected on verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:42 - Average grade: 90.33 - added grade number 1 on loop 2 of grade 88 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:45 - Average grade: 90.33 - added grade number 2 on loop 2 of grade 90 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:47 - Average grade: 90.34 - added grade number 3 on loop 2 of grade 95 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:49 - Average grade: 90.33 - added grade number 4 on loop 2 of grade 90 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:51 - Average grade: 90.34 - added grade number 5 on loop 2 of grade 92 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:27:54 - Average grade: 90.33 - added grade number 6 on loop 2 of grade 85 to verse MAT 26:45 - Best grade: 90.33 - Iterations without improvement: 0
+New best grade: 90.3341239721694 after 1 iterations.  Improvement of 0.004269449715366136
+Working on verse MAT 26:47 which has grade 85.5
+
+1. **Clarity & Completeness**: Ensure all sentences are complete and clear. Revise the ending to avoid abruptness and incomplete phrases. For example, consider changing "...y" to a full thought. 
+2. **Fluidity**: Rephrase certain phrases for better flow. Suggested changes include rephrasing 'iba en nombre de los líderes judíos' for smoother readability. 
+3. **Contextual Emphasis**: Emphasize the purpose of the armed crowd and Judas's betrayal more clearly, possibly by adding context such as 'pueblo' after 'líderes judíos'. 
+4. **Conciseness**: Shorten phrases like 'turba armada con espadas y palos' for a more modern translation. 
+5. **Stylistic Enhancements**: Make minor adjustments to enhance emotional engagement and accessibility for the audience.
+
+source: Καὶ ἔτι αὐτοῦ λαλοῦντος ἰδοὺ Ἰούδας εἷς τῶν δώδεκα ἦλθε, καὶ μετ᾽ αὐτοῦ ὄχλος πολὺς μετὰ μαχαιρῶν καὶ ξύλων ἀπὸ τῶν ἀρχιερέων καὶ πρεσβυτέρων τοῦ λαοῦ.
+old: No había terminado de pronunciar estas palabras cuando Judas, uno de los doce, se acercó al frente de una turba armada con espadas y palos. Iban en nombre de los líderes judíos y
+new: No había terminado de hablar cuando Judas, uno de los doce, se acercó al frente de una multitud armada con espadas y palos, enviados por los líderes judíos y el pueblo.
+
+2025-03-25 17:28:01 - Average grade: 90.33 - reflected on verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:04 - Average grade: 90.34 - added grade number 1 on loop 2 of grade 90 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:06 - Average grade: 90.34 - added grade number 2 on loop 2 of grade 88 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:09 - Average grade: 90.34 - added grade number 3 on loop 2 of grade 90 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:12 - Average grade: 90.34 - added grade number 4 on loop 2 of grade 90 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:14 - Average grade: 90.34 - added grade number 5 on loop 2 of grade 90 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+2025-03-25 17:28:16 - Average grade: 90.34 - added grade number 6 on loop 2 of grade 95 to verse MAT 26:47 - Best grade: 90.33 - Iterations without improvement: 0
+New best grade: 90.33886780518647 after 1 iterations.  Improvement of 0.004743833017073484
+Working on verse MAT 27:60 which has grade 85.5
+
+1. The phrase 'Hacía poco que había hecho ese sepulcro' should be revised for clarity and naturalness; suggestions include using 'Era un sepulcro nuevo, recién labrado en la roca' or 'recientemente había hecho.'  
+2. The translation generally captures the original meaning well, but adjustments for smoother readability are needed, particularly in the phrase 'ordenó que rodaran una piedra grande para cerrar la entrada.' A more straightforward expression could enhance engagement.  
+3. Overall, while the translation is effective, it could benefit from a slight polishing to improve fluidity and accessibility in contemporary Spanish.
+
+source: καὶ ἔθηκεν αὐτὸ ἐν τῷ καινῷ αὐτοῦ μνημείῳ ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ, καὶ προσκυλίσας λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου ἀπῆλθεν.
+old: y lo colocó en un sepulcro nuevo labrado en la peña. Hacía poco que había hecho ese sepulcro y ordenó que rodaran una piedra grande para cerrar la entrada. José se alejó,
+new: y lo colocó en un sepulcro nuevo, recién labrado en la roca, y puso una gran piedra para cerrar la entrada del sepulcro.
+
+2025-03-25 17:28:23 - Average grade: 90.34 - reflected on verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:26 - Average grade: 90.35 - added grade number 1 on loop 2 of grade 92 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:28 - Average grade: 90.34 - added grade number 2 on loop 2 of grade 90 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:30 - Average grade: 90.34 - added grade number 3 on loop 2 of grade 88 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:33 - Average grade: 90.34 - added grade number 4 on loop 2 of grade 90 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:36 - Average grade: 90.34 - added grade number 5 on loop 2 of grade 90 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:38 - Average grade: 90.34 - added grade number 6 on loop 2 of grade 95 to verse MAT 27:60 - Best grade: 90.34 - Iterations without improvement: 0
+New best grade: 90.34392789373801 after 1 iterations.  Improvement of 0.00506008855154505
+Working on verse MAT 1:13 which has grade 85.83333333333333
+
+1. Clarity: Add relational phrases such as 'fue el padre de' or 'tuvo a' to clarify the paternal relationships between names in the lineage.
+2. Flow: Incorporate conjunctions like 'y' before each name for better readability and to align with conversational Spanish.
+3. Engagement: Consider slight stylistic enhancements to modernize the translation and make it more relatable for contemporary Spanish speakers.
+4. Consistency: Ensure the translation aligns with common biblical usage in Spanish-speaking contexts, particularly for Latin American audiences.
+
+source: Ζοροβάβελ δὲ ἐγέννησε τὸν Ἀβιούδ, Ἀβιοὺδ δὲ ἐγέννησε τὸν Ἐλιακείμ, Ἐλιακεὶμ δὲ ἐγέννησε τὸν Ἀζώρ,
+old: Zorobabel de Abiud, Abiud de Eliaquín y Eliaquín de Azor.
+new: Zorobabel fue el padre de Abiud, y Abiud fue el padre de Eliaquín, y Eliaquín fue el padre de Azor.
+
+2025-03-25 17:28:44 - Average grade: 90.34 - reflected on verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:46 - Average grade: 90.35 - added grade number 1 on loop 2 of grade 90 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:48 - Average grade: 90.35 - added grade number 2 on loop 2 of grade 90 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:49 - Average grade: 90.35 - added grade number 3 on loop 2 of grade 90 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:51 - Average grade: 90.35 - added grade number 4 on loop 2 of grade 95 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:54 - Average grade: 90.35 - added grade number 5 on loop 2 of grade 95 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+2025-03-25 17:28:56 - Average grade: 90.35 - added grade number 6 on loop 2 of grade 95 to verse MAT 1:13 - Best grade: 90.34 - Iterations without improvement: 0
+New best grade: 90.35025300442746 after 1 iterations.  Improvement of 0.006325110689445523
+Working on verse MAT 6:11 which has grade 85.83333333333333
+
+The peer review of MAT 6:11 highlights that while the current translation 'Danos hoy los alimentos que necesitamos' is clear and accessible, it could be improved by replacing 'alimentos' with 'pan' to better reflect the specific metaphorical significance of daily bread in the original text. Enhancing this specificity would align the translation more closely with the source material and its theological depth.
+
+source: τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον·
+old: Danos hoy los alimentos que necesitamos,
+new: Danos hoy nuestro pan de cada día,
+
+2025-03-25 17:29:01 - Average grade: 90.35 - reflected on verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:05 - Average grade: 90.35 - added grade number 1 on loop 2 of grade 90 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:08 - Average grade: 90.36 - added grade number 2 on loop 2 of grade 95 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:10 - Average grade: 90.36 - added grade number 3 on loop 2 of grade 88 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:13 - Average grade: 90.36 - added grade number 4 on loop 2 of grade 95 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:15 - Average grade: 90.36 - added grade number 5 on loop 2 of grade 90 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+2025-03-25 17:29:18 - Average grade: 90.36 - added grade number 6 on loop 2 of grade 90 to verse MAT 6:11 - Best grade: 90.35 - Iterations without improvement: 0
+New best grade: 90.35547122074624 after 1 iterations.  Improvement of 0.005218216318780833
+Working on verse MAT 10:35 which has grade 85.83333333333333
+
+The peer review of MAT 10:35 suggests several improvements for the translation: 1. Use a more direct phrase such as 'he venido a dividir' instead of 'a poner' to better reflect the original text's intention of division. 2. Maintain the seriousness of the message by ensuring that the translation captures the weight and impact of Jesus' words. 3. Consider slight modifications for clarity and reverence, enhancing the translation's engagement while being faithful to the original meaning. Overall, the translation is accessible but could benefit from a few adjustments.
+
+source: ἦλθον γὰρ διχάσαι ἄνθρωπον κατὰ τοῦ πατρὸς αὐτοῦ καὶ θυγατέρα κατὰ τῆς μητρὸς αὐτῆς καὶ νύμφην κατὰ τῆς πενθερᾶς αὐτῆς·
+old: a poner al hijo contra su padre, a la hija contra su madre, a la nuera contra su suegra.
+new: He venido a dividir al hombre contra su padre, a la hija contra su madre y a la nuera contra su suegra.
+
+2025-03-25 17:29:23 - Average grade: 90.36 - reflected on verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:26 - Average grade: 90.36 - added grade number 1 on loop 2 of grade 90 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:29 - Average grade: 90.36 - added grade number 2 on loop 2 of grade 90 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:31 - Average grade: 90.36 - added grade number 3 on loop 2 of grade 90 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:32 - Average grade: 90.36 - added grade number 4 on loop 2 of grade 95 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:34 - Average grade: 90.36 - added grade number 5 on loop 2 of grade 90 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:36 - Average grade: 90.36 - added grade number 6 on loop 2 of grade 95 to verse MAT 10:35 - Best grade: 90.36 - Iterations without improvement: 0
+New best grade: 90.3610056925995 after 1 iterations.  Improvement of 0.005534471853266609
+Working on verse MAT 11:12 which has grade 85.83333333333333
+
+The peer review highlights the need to refine the translation of MAT 11:12 by addressing the connotation of the terms used. Specifically, the phrase 'los que son violentos luchan para acabar con él' should be reconsidered to emphasize an eager pursuit of the kingdom rather than implying violent opposition. Suggestions include using terms that reflect striving or earnestness, capturing the original intent of the Greek text more accurately. The translations also benefit from a more traditional biblical phrasing that resonates with conservative Christian interpretations. Overall, clarity, fidelity to the original meaning, and theological nuance should be prioritized in the revision.
+
+source: ἀπὸ δὲ τῶν ἡμερῶν Ἰωάννου τοῦ βαπτιστοῦ ἕως ἄρτι ἡ βασιλεία τῶν οὐρανῶν βιάζεται, καὶ βιασταὶ ἁρπάζουσιν αὐτήν.
+old: Desde que Juan el Bautista comenzó a predicar hasta ahora, se ha combatido mucho contra el reino de los cielos, y los que son violentos luchan para acabar con él.
+new: Desde los días de Juan el Bautista hasta ahora, el reino de los cielos se ha estado abriendo paso con fervor, y aquellos que se esfuerzan con determinación lo están alcanzando.
+
+2025-03-25 17:29:45 - Average grade: 90.36 - reflected on verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:47 - Average grade: 90.37 - added grade number 1 on loop 2 of grade 95 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:51 - Average grade: 90.37 - added grade number 2 on loop 2 of grade 92 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:53 - Average grade: 90.37 - added grade number 3 on loop 2 of grade 92 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:29:57 - Average grade: 90.37 - added grade number 4 on loop 2 of grade 95 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:30:01 - Average grade: 90.37 - added grade number 5 on loop 2 of grade 95 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+2025-03-25 17:30:05 - Average grade: 90.37 - added grade number 6 on loop 2 of grade 85 to verse MAT 11:12 - Best grade: 90.36 - Iterations without improvement: 0
+New best grade: 90.36717267552172 after 1 iterations.  Improvement of 0.0061669829222097405
+Working on verse MAT 13:10 which has grade 85.83333333333333
+
+The peer review of Matthew 13:10 highlights several key corrections for the translation. The primary concern is the use of 'simbolismos tan difíciles de entender,' which many reviewers feel does not adequately capture the concept of 'parables' and the storytelling nature of Jesus' teachings. Suggested improvements include replacing 'simbolismos' with 'parábolas' to align more closely with biblical terminology and enhance the respectfulness of the message. Additionally, avoiding the term 'difíciles' may help maintain the gravity of the disciples' inquiry. Overall, while the translation is accessible and relatable, slight refinements in terminology would better reflect the original text's intent and depth.
+
+source: Καὶ προσελθόντες οἱ μαθηταὶ εἶπον αὐτῷ· διατί ἐν παραβολαῖς λαλεῖς αὐτοῖς;
+old: Sus discípulos se le acercaron y le dijeron:
+―¿Por qué usas esos simbolismos tan difíciles de entender?
+new: Sus discípulos se le acercaron y le dijeron:
+―¿Por qué usas esas parábolas?
+
+2025-03-25 17:30:13 - Average grade: 90.37 - reflected on verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:16 - Average grade: 90.37 - added grade number 1 on loop 2 of grade 88 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:18 - Average grade: 90.37 - added grade number 2 on loop 2 of grade 85 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:21 - Average grade: 90.37 - added grade number 3 on loop 2 of grade 90 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:23 - Average grade: 90.37 - added grade number 4 on loop 2 of grade 85 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:25 - Average grade: 90.37 - added grade number 5 on loop 2 of grade 90 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:27 - Average grade: 90.37 - added grade number 6 on loop 2 of grade 90 to verse MAT 13:10 - Best grade: 90.37 - Iterations without improvement: 0
+New best grade: 90.36922833649577 after 1 iterations.  Improvement of 0.0020556609740509657
+Working on verse MAT 14:20 which has grade 85.83333333333333
+
+The peer review comments on the translation of MAT 14:20 suggest several actionable improvements:
+1. **Clarity and Formality**: Adjust the phrase "Nadie se quedó sin comer" to a more formal version, such as "Todos comieron hasta saciarse," to better reflect the emphasis on the miraculous nature and satisfaction from the event.
+2. **Accuracy**: Enhance the final part of the verse by rephrasing "¡Y hasta sobraron doce cestas de comida!" to emphasize the abundance and completeness of the miracle, potentially using "y recogieron doce cestas llenas de sobras".
+3. **Contextual Emphasis**: Ensure that the translation captures the theme of God's provision and the miracle's significance, which is particularly important for a conservative Christian audience.
+4. **Fluidity and Engagement**: Maintain the accessible and modern style that resonates with Spanish-speaking audiences in Latin America while integrating these clarifications for theological accuracy.
+
+source: καὶ ἔφαγον πάντες καὶ ἐχορτάσθησαν, καὶ ἦραν τὸ περισσεῦον τῶν κλασμάτων δώδεκα κοφίνους πλήρεις.
+old: Nadie se quedó sin comer. ¡Y hasta sobraron doce cestas de comida,
+new: Todos comieron hasta saciarse, y recogieron doce cestas llenas de sobras.
+
+2025-03-25 17:30:35 - Average grade: 90.37 - reflected on verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:43 - Average grade: 90.37 - added grade number 1 on loop 2 of grade 85 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:46 - Average grade: 90.37 - added grade number 2 on loop 2 of grade 95 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:48 - Average grade: 90.37 - added grade number 3 on loop 2 of grade 88 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:50 - Average grade: 90.37 - added grade number 4 on loop 2 of grade 92 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:54 - Average grade: 90.37 - added grade number 5 on loop 2 of grade 95 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:30:58 - Average grade: 90.37 - added grade number 6 on loop 2 of grade 90 to verse MAT 14:20 - Best grade: 90.37 - Iterations without improvement: 0
+New best grade: 90.37397216951285 after 1 iterations.  Improvement of 0.004743833017087695
+Working on verse MAT 15:18 which has grade 85.83333333333333
+
+1. **Word Choice Improvements**: Multiple reviewers suggested that the phrase 'suciedad del corazón' be replaced with more serious terms like 'malicia,' 'maldad,' or 'impureza' to convey the gravity of the heart's condition. Additionally, 'mal hablar' may be too casual; using 'los malos pensamientos' or similar phrases could better capture the essence of what corrupts a person. 
+
+2. **Theological Depth**: There is a consensus that while the translation is clear and accessible, it could benefit from enhancements that deepen its theological significance, emphasizing the seriousness of moral impurity over mere bad speech. 
+
+3. **Maintaining Clarity and Engagement**: The translation is generally praised for its accessibility and relatability to modern Spanish speakers, and efforts should continue to ensure it remains engaging while incorporating more formal and serious language as suggested. 
+
+4. **Overall Rating and Suggestions**: Most reviewers assigned grades around 85-90, indicating strong performance but highlighting the need for minor adjustments in language to better align with conservative Christian values and theological accuracy.
+
+source: τὰ δὲ ἐκπορευόμενα ἐκ τοῦ στόματος ἐκ τῆς καρδίας ἐξέρχεται, κἀκεῖνα κοινοῖ τὸν ἄνθρωπον.
+old: pero el mal hablar brota de la suciedad del corazón y corrompe a la persona que así habla.
+new: "Pero lo que sale de la boca proviene del corazón, y eso es lo que contamina al hombre."
+
+2025-03-25 17:31:10 - Average grade: 90.37 - reflected on verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:14 - Average grade: 90.38 - added grade number 1 on loop 2 of grade 95 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:17 - Average grade: 90.38 - added grade number 2 on loop 2 of grade 95 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:20 - Average grade: 90.38 - added grade number 3 on loop 2 of grade 95 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:22 - Average grade: 90.38 - added grade number 4 on loop 2 of grade 90 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:25 - Average grade: 90.38 - added grade number 5 on loop 2 of grade 90 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+2025-03-25 17:31:27 - Average grade: 90.38 - added grade number 6 on loop 2 of grade 92 to verse MAT 15:18 - Best grade: 90.37 - Iterations without improvement: 0
+New best grade: 90.38061353573676 after 1 iterations.  Improvement of 0.006641366223902878
+Working on verse MAT 18:32 which has grade 85.83333333333333
+
+1. **Tone Adjustment**: Replace the terms '¡Malvado! ¡Desgraciado!' with more reserved options that reflect the king's disappointment without sounding harsh. Suggestions include alternatives that convey seriousness and gravity without informal connotations.
+
+2. **Clarity and Formality**: Rephrase 'porque me lo pediste con humildad' to something more formal like 'me lo pediste sinceramente' to better capture the original text's emphasis on genuine contrition and maintain the dignity of the message.
+
+3. **Emphasis on Forgiveness**: Highlight the essence of forgiveness in the translation more clearly, ensuring it resonates with a conservative Christian viewpoint while remaining engaging for a modern audience.
+
+4. **Balance in Language**: Ensure that contemporary language used does not detract from the scriptural reverence. Avoid overly colloquial phrases that may diminish the seriousness of the biblical admonition.
+
+source: τότε προσκαλεσάμενος αὐτὸν ὁ κύριος αὐτοῦ λέγει αὐτῷ· δοῦλε πονηρέ, πᾶσαν τὴν ὀφειλὴν ἐκείνην ἀφῆκά σοι, ἐπεὶ παρεκάλεσάς με.
+old: El rey, sin pérdida de tiempo, mandó llamar al hombre al que había perdonado. “¡Malvado! ¡Desgraciado!”, le dijo. “¡Así que yo te perdoné aquella inmensa deuda, porque me lo pediste con humildad!
+new: "El rey, al llamarlo, le dijo: 'Siervo negligente, te perdoné toda esa enorme deuda porque me lo pediste sinceramente. ¿No debías tú también tener compasión de tu compañero?"
+
+2025-03-25 17:31:40 - Average grade: 90.38 - reflected on verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:43 - Average grade: 90.38 - added grade number 1 on loop 3 of grade 90 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:46 - Average grade: 90.38 - added grade number 2 on loop 3 of grade 88 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:49 - Average grade: 90.38 - added grade number 3 on loop 3 of grade 90 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:53 - Average grade: 90.38 - added grade number 4 on loop 3 of grade 88 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:56 - Average grade: 90.38 - added grade number 5 on loop 3 of grade 85 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:31:58 - Average grade: 90.38 - added grade number 6 on loop 3 of grade 95 to verse MAT 18:32 - Best grade: 90.38 - Iterations without improvement: 0
+New best grade: 90.38393421884871 after 1 iterations.  Improvement of 0.003320683111951439
+Working on verse MAT 21:38 which has grade 85.83333333333333
+
+The peer reviews of MAT 21:38 suggest several actionable improvements for the translation to align better with a conservative Christian perspective and enhance clarity. Common suggestions include: 1. **Tone Adjustment**: Change 'este no es nada menos que el heredero' to a more respectful and formal phrase like 'Este es el heredero' to reflect the gravity of the context. 2. **Phrase Simplification**: Replace 'se dijeron' with 'pensaron' or 'se dijeron entre ellos' for a more natural tone. 3. **Contextual Clarity**: Ensure that the phrase 'matémoslo y así nos quedaremos con la herencia' maintains a serious tone, emphasizing the moral implications of the actions described. 4. **Theological Precision**: Review language for deeper theological context, especially regarding the concept of inheritance. Overall, the translation is accessible, but these adjustments could improve its alignment with both the text's gravity and the conservative Christian viewpoint.
+
+source: οἱ δὲ γεωργοὶ ἰδόντες τὸν υἱὸν εἶπον ἐν ἑαυτοῖς· οὗτός ἐστιν ὁ κληρονόμος· δεῦτε ἀποκτείνωμεν αὐτὸν καὶ κατάσχωμεν τὴν κληρονομίαν αὐτοῦ.
+old: Pero cuando los labradores vieron que se acercaba, se dijeron: “Este no es nada menos que el heredero. Matémoslo y así nos quedaremos con la herencia”.
+new: Pero cuando los labradores vieron que se acercaba, pensaron entre ellos: “Este es el heredero; matémoslo y así nos quedaremos con la herencia.”
+
+2025-03-25 17:32:16 - Average grade: 90.38 - reflected on verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:19 - Average grade: 90.39 - added grade number 1 on loop 2 of grade 95 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:23 - Average grade: 90.39 - added grade number 2 on loop 2 of grade 90 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:28 - Average grade: 90.39 - added grade number 3 on loop 2 of grade 95 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:32 - Average grade: 90.39 - added grade number 4 on loop 2 of grade 95 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:35 - Average grade: 90.39 - added grade number 5 on loop 2 of grade 90 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+2025-03-25 17:32:37 - Average grade: 90.39 - added grade number 6 on loop 2 of grade 95 to verse MAT 21:38 - Best grade: 90.38 - Iterations without improvement: 0
+New best grade: 90.39104996837433 after 1 iterations.  Improvement of 0.007115749525624437
+Working on verse MAT 22:2 which has grade 85.83333333333333
+
+1. **Word Choice**: The term 'cuento' should be reconsidered as it implies a fictional story. Suggested alternatives include 'parábola', 'relato', or 'ejemplo', which better convey the significance of the parable and respect for the biblical text.  
+2. **Phrase Construction**: The phrase 'puede ilustrarse' could be replaced with a more formal expression like 'se asemeja a' to enhance the solemnity of the translation.  
+3. **Clarity and Brevity**: The translation could be streamlined for clarity, especially the phrase 'gran banquete en celebración de la boda de su hijo', which is perceived as wordy.  
+4. **Maintain Sacred Tone**: Overall, while modern and accessible language is essential, it should still reflect the sacred nature of the scripture, emphasizing the importance of the message being conveyed.
+
+source: ὡμοιώθη ἡ βασιλεία τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ, ὅστις ἐποίησε γάμους τῷ υἱῷ αὐτοῦ.
+old: «El reino de los cielos puede ilustrarse con el cuento de un rey que preparó un gran banquete en celebración de la boda de su hijo.
+new: «El reino de los cielos se asemeja a un rey que preparó un gran banquete por la boda de su hijo.»
+
+2025-03-25 17:32:48 - Average grade: 90.39 - reflected on verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:32:51 - Average grade: 90.40 - added grade number 1 on loop 2 of grade 90 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:33:01 - Average grade: 90.40 - added grade number 2 on loop 2 of grade 90 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:33:08 - Average grade: 90.40 - added grade number 3 on loop 2 of grade 90 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:33:11 - Average grade: 90.40 - added grade number 4 on loop 2 of grade 95 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:33:13 - Average grade: 90.40 - added grade number 5 on loop 2 of grade 85 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+2025-03-25 17:33:17 - Average grade: 90.40 - added grade number 6 on loop 2 of grade 95 to verse MAT 22:2 - Best grade: 90.39 - Iterations without improvement: 0
+New best grade: 90.3957938013914 after 1 iterations.  Improvement of 0.004743833017073484
+Working on verse MAT 22:6 which has grade 85.83333333333333
+
+1. **Word Choice Adjustments**: Consider changing 'afrentarlos' to a term like 'humillarlos' or using a more commonly understood term to enhance clarity for contemporary readers. Also, replace 'los mensajeros' with 'los siervos' to maintain a more formal and traditional biblical context. 
+
+2. **Emphasis on Severity**: Enhance the language surrounding the violence and seriousness of the actions taken against the messengers, particularly emphasizing the killing aspect to align with the original Greek text's gravity. 
+
+3. **Fluidity and Accessibility**: Use 'los demás' instead of 'los otros' for improved fluidity in the phrase structure. Additionally, simplify phrases where necessary to retain accessibility without losing the original message's intensity. 
+
+4. **Formal Tone**: Aim for a more formal tone in the overall translation to resonate with conservative audiences and reflect the seriousness of the biblical context.
+
+source: οἱ δὲ λοιποὶ κρατήσαντες τοὺς δούλους αὐτοῦ ὕβρισαν καὶ ἀπέκτειναν.
+old: y los otros tomaron a los mensajeros y, tras golpearlos y afrentarlos, los mataron.
+new: y los demás tomaron a los siervos, los humillaron y los mataron.
+
+2025-03-25 17:33:26 - Average grade: 90.40 - reflected on verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:29 - Average grade: 90.40 - added grade number 1 on loop 2 of grade 88 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:32 - Average grade: 90.40 - added grade number 2 on loop 2 of grade 88 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:35 - Average grade: 90.40 - added grade number 3 on loop 2 of grade 88 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:39 - Average grade: 90.40 - added grade number 4 on loop 2 of grade 85 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:42 - Average grade: 90.40 - added grade number 5 on loop 2 of grade 85 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:33:45 - Average grade: 90.40 - added grade number 6 on loop 2 of grade 85 to verse MAT 22:6 - Best grade: 90.40 - Iterations without improvement: 0
+New best grade: 90.39642631246035 after 1 iterations.  Improvement of 0.0006325110689431312
+Working on verse MAT 22:16 which has grade 85.83333333333333
+
+1. **Clarity and Conciseness**: Simplify phrases such as 'amigo mío' to 'amigo' for a more straightforward tone. Streamline sentence structures for better flow.  
+2. **Neutral Tone**: Revise interpretive elements like 'sin miedo a las consecuencias' to avoid suggesting bias regarding Jesus's character. Consider using more formal language that aligns with traditional biblical phrasing.  
+3. **Footnote Content**: Reassess the inclusion of the footnote on the Herodians to ensure it does not distract from the main translation and consider whether it fits within the translation's narrative flow.  
+4. **Grammatical Refinement**: Address minor grammatical errors and adhere to standard Spanish conventions to enhance readability and formality.
+
+source: καὶ ἀποστέλλουσιν αὐτῷ τοὺς μαθητὰς αὐτῶν μετὰ τῶν Ἡρῳδιανῶν λέγοντες· διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ καὶ τὴν ὁδὸν τοῦ Θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός· οὐ γὰρ βλέπεις εἰς πρόσωπον ἀνθρώπων·
+old: Decidieron enviar a algunos de sus hombres, juntamente con algunos herodianos,
+22.16
+Los herodianos eran un partido político judío.
+a formularle algunas preguntas.
+―Señor —le dijeron—, sabemos que amas la verdad y que la enseñas sin miedo a las consecuencias.
+new: Decidieron enviar a algunos de sus hombres, junto con algunos herodianos, a formularle algunas preguntas. —Señor —le dijeron—, sabemos que eres verdadero y que enseñas el camino de Dios con verdad; no te importa lo que piensen los demás, porque no juzgas por apariencias.
+
+2025-03-25 17:33:56 - Average grade: 90.40 - reflected on verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:00 - Average grade: 90.40 - added grade number 1 on loop 2 of grade 92 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:03 - Average grade: 90.40 - added grade number 2 on loop 2 of grade 95 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:07 - Average grade: 90.40 - added grade number 3 on loop 2 of grade 85 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:10 - Average grade: 90.40 - added grade number 4 on loop 2 of grade 92 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:12 - Average grade: 90.40 - added grade number 5 on loop 2 of grade 95 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:14 - Average grade: 90.40 - added grade number 6 on loop 2 of grade 95 to verse MAT 22:16 - Best grade: 90.40 - Iterations without improvement: 0
+New best grade: 90.40259329538256 after 1 iterations.  Improvement of 0.0061669829222097405
+Working on verse MAT 22:35 which has grade 85.83333333333333
+
+The peer review comments on MAT 22:35 indicate that while the translation is generally clear and accessible, it may benefit from a more formal tone to reflect the reverence of the biblical text. Specifically, the phrase "se les ocurrió una nueva idea" is seen as too informal and could imply creativity from the questioner, which detracts from the intended challenge posed to Jesus. Suggested improvements include more direct translations like "y uno de ellos, un abogado, le preguntó a Jesús" or "y uno de ellos, un experto en la ley, le preguntó", which align better with the original Greek. Overall, while the translation maintains clarity for modern audiences, slight adjustments could enhance both its accuracy and its reflection of the solemnity of the scripture.
+
+source: καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν, νομικός, πειράζων αὐτὸν καὶ λέγων·
+old: y se les ocurrió una nueva idea. Uno de ellos, abogado, preguntó a Jesús:
+new: y uno de ellos, un abogado, le preguntó a Jesús:
+
+2025-03-25 17:34:23 - Average grade: 90.40 - reflected on verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:26 - Average grade: 90.41 - added grade number 1 on loop 2 of grade 90 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:29 - Average grade: 90.41 - added grade number 2 on loop 2 of grade 90 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:36 - Average grade: 90.40 - added grade number 3 on loop 2 of grade 85 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:38 - Average grade: 90.41 - added grade number 4 on loop 2 of grade 90 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:40 - Average grade: 90.41 - added grade number 5 on loop 2 of grade 95 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+2025-03-25 17:34:42 - Average grade: 90.41 - added grade number 6 on loop 2 of grade 90 to verse MAT 22:35 - Best grade: 90.40 - Iterations without improvement: 0
+New best grade: 90.40654648956345 after 1 iterations.  Improvement of 0.00395319418089457
+Working on verse MAT 25:7 which has grade 85.83333333333333
+
+1. Consider replacing 'muchachas' with 'doncellas' or 'vírgenes' to better reflect the dignity and cultural context of the characters in the parable. 
+2. Revise the phrase 'saltaron a arreglar' to include a more neutral verb that conveys urgency without implying undue joy or excitement. This change can enhance clarity and maintain the intended gravity of the original Greek text. 
+3. Strive for a balance between modern language accessibility and a formal tone that aligns with traditional biblical interpretations, particularly for conservative audiences.
+
+source: τότε ἠγέρθησαν πᾶσαι αἱ παρθένοι ἐκεῖναι καὶ ἐκόσμησαν τὰς λαμπάδας αὐτῶν.
+old: Las muchachas saltaron a arreglar las lámparas,
+new: Entonces las doncellas se levantaron a preparar sus lámparas.
+
+2025-03-25 17:34:51 - Average grade: 90.41 - reflected on verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:34:55 - Average grade: 90.41 - added grade number 1 on loop 2 of grade 85 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:34:57 - Average grade: 90.41 - added grade number 2 on loop 2 of grade 90 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:00 - Average grade: 90.41 - added grade number 3 on loop 2 of grade 92 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:03 - Average grade: 90.41 - added grade number 4 on loop 2 of grade 90 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:06 - Average grade: 90.41 - added grade number 5 on loop 2 of grade 95 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:08 - Average grade: 90.41 - added grade number 6 on loop 2 of grade 85 to verse MAT 25:7 - Best grade: 90.41 - Iterations without improvement: 0
+New best grade: 90.41002530044265 after 1 iterations.  Improvement of 0.0034788108792014327
+Working on verse MAT 26:7 which has grade 85.83333333333333
+
+1. **Phrasing Adjustments**: Change 'se lo echó en la cabeza' to 'se lo vertió sobre la cabeza' for a more formal and elegant expression of the act of pouring. 
+2. **Directness of Expression**: Instead of 'se le acercó', consider 'una mujer se acercó a Él' to emphasize the relationship more clearly. 
+3. **Word Choice**: Consider replacing 'costosísimo' with 'muy caro' to resonate better with colloquial usage while maintaining seriousness. 
+4. **Contextual Awareness**: Ensure that terms like 'frascos' for 'alabastro' maintain a level of formality appropriate for biblical texts. 
+5. **Clarity and Reverence**: Overall, maintain a balance between accessibility and the reverence of the text to ensure it engages contemporary readers while preserving its sacred tone.
+
+source: προσῆλθεν αὐτῷ γυνὴ ἀλάβαστρον μύρου ἔχουσα βαρυτίμου, καὶ κατέχεεν ἐπὶ τὴν κεφαλὴν αὐτοῦ ἀνακειμένου.
+old: Durante la cena, una mujer se le acercó con un frasco de un perfume costosísimo y se lo echó en la cabeza.
+new: Durante la cena, una mujer se acercó a Él con un frasco de un perfume muy caro y se lo vertió sobre la cabeza.
+
+2025-03-25 17:35:18 - Average grade: 90.41 - reflected on verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:22 - Average grade: 90.41 - added grade number 1 on loop 2 of grade 90 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:24 - Average grade: 90.41 - added grade number 2 on loop 2 of grade 88 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:28 - Average grade: 90.41 - added grade number 3 on loop 2 of grade 90 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:32 - Average grade: 90.41 - added grade number 4 on loop 2 of grade 95 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:36 - Average grade: 90.42 - added grade number 5 on loop 2 of grade 95 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+2025-03-25 17:35:38 - Average grade: 90.42 - added grade number 6 on loop 2 of grade 95 to verse MAT 26:7 - Best grade: 90.41 - Iterations without improvement: 0
+New best grade: 90.41603415559763 after 1 iterations.  Improvement of 0.006008855154973958
+Working on verse MAT 26:17 which has grade 85.83333333333333
+
+1. Simplify the phrase 'en que los judíos se abstenían de comer pan con levadura' to improve clarity. Suggested alternatives include 'cuando los judíos celebraban la Pascua' or direct reference to the 'Fiesta de los Panes Sin Levadura.' 2. Reconsider the term 'cena de Pascua'; a more contemporary phrasing like 'celebración de la Pascua' or simply 'Pascua' may resonate better with modern audiences while retaining reverence. 3. Explicitly mention the event's occurrence during the Feast of Unleavened Bread for better context. 4. Overall, maintain modern, accessible Spanish while ensuring that the translation reflects traditional Christian terminology appropriately.
+
+source: Τῇ δὲ πρώτῃ τῶν ἀζύμων προσῆλθον οἱ μαθηταὶ τῷ Ἰησοῦ λέγοντες αὐτῷ· ποῦ θέλεις ἑτοιμάσωμέν σοι φαγεῖν τὸ πάσχα;
+old: El primer día de las ceremonias pascuales en que los judíos se abstenían de comer pan con levadura, los discípulos le preguntaron a Jesús:
+―¿Dónde quieres que preparemos la cena de Pascua?
+new: El primer día de la Fiesta de los Panes Sin Levadura, los discípulos se acercaron a Jesús y le preguntaron:
+―¿Dónde quieres que preparemos la Pascua?
+
+2025-03-25 17:35:47 - Average grade: 90.42 - reflected on verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:48 - Average grade: 90.42 - added grade number 1 on loop 2 of grade 90 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:50 - Average grade: 90.42 - added grade number 2 on loop 2 of grade 95 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:52 - Average grade: 90.42 - added grade number 3 on loop 2 of grade 90 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:54 - Average grade: 90.42 - added grade number 4 on loop 2 of grade 95 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:56 - Average grade: 90.42 - added grade number 5 on loop 2 of grade 92 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:35:58 - Average grade: 90.42 - added grade number 6 on loop 2 of grade 95 to verse MAT 26:17 - Best grade: 90.42 - Iterations without improvement: 0
+New best grade: 90.42267552182153 after 1 iterations.  Improvement of 0.006641366223902878
+Working on verse MAT 26:55 which has grade 85.83333333333333
+
+1. **Clarity of Terms**: Consider using 'criminal' instead of 'asesino' to avoid misrepresenting Jesus' rhetorical question and to better capture the original text's emphasis on the crowd's disproportionate reaction.  
+2. **Preserving Original Tone**: Adjust the phrasing to better reflect the solemnity and gravity of the situation. For example, a more formal construction could enhance reverence in the biblical context.  
+3. **Maintain Nuance**: Ensure the translation does not lose the contrast between the violence of the arrest and Jesus' peaceful demeanor, as expressed in the original Greek.  
+4. **Formal Language**: Aim for a tone that aligns with the seriousness expected in scripture, avoiding overly casual language that might detract from the gravity of Jesus' words.  
+5. **Engaging Language**: While making the text accessible to modern audiences, ensure that it still resonates with the original meaning and significance of the scripture.
+
+source: Ἐν ἐκείνῃ τῇ ὥρᾳ εἶπεν ὁ Ἰησοῦς τοῖς ὄχλοις· ὡς ἐπὶ λῃστὴν ἐξήλθετε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με· καθ᾽ ἡμέραν πρὸς ὑμᾶς ἐκαθεζόμην διδάσκων ἐν τῷ ἱερῷ, καὶ οὐκ ἐκρατήσατέ με.
+old: Luego dijo a la turba:
+―¿Soy acaso un asesino tan peligroso que tienen que venir con espadas y palos a arrestarme? Todos estos días he estado enseñando en el templo y no me detuvieron.
+new: Luego Jesús se dirigió a la multitud:
+—¿Acaso soy un criminal tan peligroso que vienen a arrestarme con espadas y palos? Todos estos días he estado enseñando en el templo y no me detuvieron.
+
+2025-03-25 17:36:10 - Average grade: 90.42 - reflected on verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:13 - Average grade: 90.42 - added grade number 1 on loop 2 of grade 85 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:15 - Average grade: 90.42 - added grade number 2 on loop 2 of grade 90 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:18 - Average grade: 90.42 - added grade number 3 on loop 2 of grade 85 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:22 - Average grade: 90.42 - added grade number 4 on loop 2 of grade 88 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:25 - Average grade: 90.42 - added grade number 5 on loop 2 of grade 90 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:27 - Average grade: 90.42 - added grade number 6 on loop 2 of grade 88 to verse MAT 26:55 - Best grade: 90.42 - Iterations without improvement: 0
+New best grade: 90.42441492726114 after 1 iterations.  Improvement of 0.0017394054396078218
+Working on verse MAT 28:17 which has grade 85.83333333333333
+
+The translation of Matthew 28:17 is generally well-received for its accessibility and clear communication of worship. However, the phrase 'aunque algunos no estaban completamente convencidos de que en realidad era Jesús' introduces unnecessary ambiguity about the disciples' faith. It is recommended to replace this with simpler phrases such as 'algunos dudaron' or 'algunos titubearon' to better reflect the original Greek meaning of hesitation without implying a lack of belief. Adjusting this aspect would enhance the translation's fidelity to conservative Christian interpretations, while still engaging modern readers.
+
+source: καὶ ἰδόντες αὐτὸν προσεκύνησαν αὐτῷ, οἱ δὲ ἐδίστασαν.
+old: Cuando lo vieron, lo adoraron, aunque algunos no estaban completamente convencidos de que en realidad era Jesús.
+new: Cuando lo vieron, lo adoraron; algunos dudaron.
+
+2025-03-25 17:36:33 - Average grade: 90.42 - reflected on verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:36 - Average grade: 90.43 - added grade number 1 on loop 2 of grade 90 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:39 - Average grade: 90.43 - added grade number 2 on loop 2 of grade 90 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:46 - Average grade: 90.43 - added grade number 3 on loop 2 of grade 90 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:48 - Average grade: 90.43 - added grade number 4 on loop 2 of grade 90 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:51 - Average grade: 90.43 - added grade number 5 on loop 2 of grade 85 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+2025-03-25 17:36:53 - Average grade: 90.43 - added grade number 6 on loop 2 of grade 85 to verse MAT 28:17 - Best grade: 90.42 - Iterations without improvement: 0
+New best grade: 90.42678684376968 after 1 iterations.  Improvement of 0.002371916508536742
+Working on verse MAT 8:11 which has grade 86.0
+
+1. Formality and Tone: Adjust the phrase 'Óiganme lo que les digo' to reflect a more formal tone that matches the solemnity of the original text. Consider using 'Les digo' instead. 
+2. Clarity in Comparisons: Reassess the phrase 'al igual que este soldado romano' to avoid any misinterpretation that could equate the faith of the centurion with the Jews. A more precise wording could improve theological clarity. 
+3. Word Choice: While 'gentiles' is acceptable, consider contextualizing or clarifying it further (e.g., 'los gentiles') to maintain a formal structure. 
+4. Contextualization: The phrase 'de todas partes del mundo' is effective, but simplification or alternative expressions could enhance reader engagement. 
+5. Fidelity to the Original: Strive to preserve the richness of the original text, especially in regards to the nuances of 'many from the east and west,' which captures a broader perspective than 'gentiles.' 
+6. Overall Accessibility: Continue using modern and familiar Spanish to keep the translation accessible while also ensuring theological accuracy and reverence.
+
+source: λέγω δὲ ὑμῖν ὅτι πολλοὶ ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσι καὶ ἀνακλιθήσονται μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ ἐν τῇ βασιλείᾳ τῶν οὐρανῶν,
+old: Óiganme lo que les digo: Muchos gentiles, al igual que este soldado romano, irán de todas partes del mundo a sentarse en el reino de los cielos con Abraham, Isaac y Jacob.
+new: Les digo que muchos vendrán de diferentes lugares y se sentarán junto a Abraham, Isaac y Jacob en el reino de los cielos.
+
+2025-03-25 17:37:04 - Average grade: 90.43 - reflected on verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:07 - Average grade: 90.43 - added grade number 1 on loop 2 of grade 92 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:09 - Average grade: 90.43 - added grade number 2 on loop 2 of grade 88 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:12 - Average grade: 90.43 - added grade number 3 on loop 2 of grade 92 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:15 - Average grade: 90.43 - added grade number 4 on loop 2 of grade 85 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:17 - Average grade: 90.43 - added grade number 5 on loop 2 of grade 90 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:18 - Average grade: 90.43 - added grade number 6 on loop 2 of grade 90 to verse MAT 8:11 - Best grade: 90.43 - Iterations without improvement: 0
+New best grade: 90.43010752688163 after 1 iterations.  Improvement of 0.003320683111951439
+Working on verse MAT 13:15 which has grade 86.0
+
+1. Emphasize the seriousness and implications of spiritual blindness and the consequences of rejecting understanding, as highlighted by multiple reviewers. 
+2. Consider streamlining the translation to enhance clarity and conciseness, particularly in the final phrases, ensuring they reflect the original Greek intent without losing depth. 
+3. Adjust the tone of the language to be slightly more formal, particularly phrases like 'no oyen bien', which could be changed to 'no oyen correctamente' for greater reverence. 
+4. Be cautious of interpretations that might stray from the original text; aim for a balance between accessibility and faithfulness to the original meaning. 
+5. Review the final phrases to ensure they correctly represent the people's refusal to accept healing, avoiding passive interpretations.
+
+source: ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου, καὶ τοῖς ὠσὶ βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν ἐκάμμυσαν, μήποτε ἴδωσι τοῖς ὀφθαλμοῖς καὶ τοῖς ὠσὶν ἀκούσωσι καὶ τῇ καρδίᾳ συνῶσι καὶ ἐπιστρέψωσι, καὶ ἰάσομαι αὐτούς.
+old: porque tienen el corazón endurecido, no oyen bien y tienen los ojos cerrados. Por lo tanto, no verán ni oirán ni entenderán ni se convertirán ni dejarán que yo los sane”.
+new: porque el corazón de este pueblo se ha vuelto insensible; han oído, pero no oyen correctamente, han cerrado sus ojos para no ver; así no perciben ni entienden, ni se convierten, ni les permito recibir la sanidad.”
+
+2025-03-25 17:37:30 - Average grade: 90.43 - reflected on verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:32 - Average grade: 90.43 - added grade number 1 on loop 2 of grade 88 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:36 - Average grade: 90.43 - added grade number 2 on loop 2 of grade 85 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:39 - Average grade: 90.43 - added grade number 3 on loop 2 of grade 92 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:42 - Average grade: 90.43 - added grade number 4 on loop 2 of grade 85 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:45 - Average grade: 90.43 - added grade number 5 on loop 2 of grade 85 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:47 - Average grade: 90.43 - added grade number 6 on loop 2 of grade 85 to verse MAT 13:15 - Best grade: 90.43 - Iterations without improvement: 0
+New best grade: 90.43074003795059 after 1 iterations.  Improvement of 0.0006325110689573421
+Working on verse MAT 21:7 which has grade 86.0
+
+1. Improve clarity and immediacy by changing 'poco después regresaron con los animales' to a more direct statement such as 'los discípulos llevaron la burra y el burrito.'
+2. Consider using a more formal term than 'burrito' to maintain a respectful tone, possibly 'asno' or 'potro.'
+3. Assess the use of 'mantos' versus 'rojales' or 'ropas' to ensure it conveys cultural significance.
+4. Overall, aim to enhance fidelity to the original text while keeping the translation accessible and engaging for a conservative audience.
+
+source: ἤγαγον τὴν ὄνον καὶ τὸν πῶλον, καὶ ἐπέθηκαν ἐπάνω αὐτῶν τὰ ἱμάτια αὐτῶν, καὶ ἐπεκάθισεν ἐπάνω αὐτῶν.
+old: y poco después regresaron con los animales. Pusieron luego sus mantos encima del burrito para que Jesús se montara.
+new: Los discípulos llevaron la burra y el potro, y pusieron sobre ellos sus mantos; y Jesús se montó en ellos.
+
+2025-03-25 17:37:54 - Average grade: 90.43 - reflected on verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:56 - Average grade: 90.43 - added grade number 1 on loop 2 of grade 85 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:37:59 - Average grade: 90.43 - added grade number 2 on loop 2 of grade 88 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:38:03 - Average grade: 90.43 - added grade number 3 on loop 2 of grade 90 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:38:05 - Average grade: 90.43 - added grade number 4 on loop 2 of grade 95 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:38:08 - Average grade: 90.43 - added grade number 5 on loop 2 of grade 90 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+2025-03-25 17:38:10 - Average grade: 90.44 - added grade number 6 on loop 2 of grade 95 to verse MAT 21:7 - Best grade: 90.43 - Iterations without improvement: 0
+New best grade: 90.43500948766595 after 1 iterations.  Improvement of 0.004269449715366136
+Working on verse MAT 21:34 which has grade 86.0
+
+1. Replace 'empleados' with 'siervos' or 'dólares' to better reflect the original Greek term and the connotation of servanthood in a Biblical context. 2. Consider rephrasing 'a recoger lo que le correspondía' to 'a recoger los frutos de su viña' for greater clarity and specificity regarding the produce of the vineyard. 3. Aim for a slightly more formal tone in language to align with the reverence of the scripture, making the translation more suitable for its religious context.
+
+source: ὅτε δὲ ἤγγισεν ὁ καιρὸς τῶν καρπῶν, ἀπέστειλε τοὺς δούλους αὐτοῦ πρὸς τοὺς γεωργοὺς λαβεῖν τοὺς καρποὺς αὐτοῦ.
+old: Cuando se acercó el tiempo de la cosecha, envió a empleados suyos a recoger lo que le correspondía.
+new: Cuando se acercó el tiempo de la cosecha, envió a sus siervos a recoger los frutos de su viña.
+
+2025-03-25 17:38:17 - Average grade: 90.44 - reflected on verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:20 - Average grade: 90.43 - added grade number 1 on loop 2 of grade 85 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:22 - Average grade: 90.44 - added grade number 2 on loop 2 of grade 92 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:25 - Average grade: 90.44 - added grade number 3 on loop 2 of grade 92 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:28 - Average grade: 90.44 - added grade number 4 on loop 2 of grade 90 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:30 - Average grade: 90.44 - added grade number 5 on loop 2 of grade 95 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:32 - Average grade: 90.44 - added grade number 6 on loop 2 of grade 90 to verse MAT 21:34 - Best grade: 90.44 - Iterations without improvement: 0
+New best grade: 90.43943706514855 after 1 iterations.  Improvement of 0.004427577482601919
+Working on verse MAT 23:18 which has grade 86.0
+
+1. Enhance the seriousness of the phrase 'se puede jurar en vano' by considering alternatives like 'no cuenta' or 'pueden jurar sin valor'. 2. Ensure the translation reflects the urgency and severity of Jesus' critique on hypocrisy. 3. Maintain consistency with conservative theological interpretations regarding the importance of oaths. 4. Refine language for better clarity and flow while ensuring accessibility for contemporary Spanish speakers.
+
+source: καί· ὃς ἂν ὀμόσῃ ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς δ᾽ ἂν ὀμόσῃ ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ, ὀφείλει.
+old: Y dicen que se puede jurar en vano por el altar, pero si se jura en vano por lo que está sobre el altar, lo condenan.
+new: Y dicen que jurar en vano por el altar no cuenta, pero si alguien jura por lo que está sobre el altar, eso sí es condenable.
+
+2025-03-25 17:38:36 - Average grade: 90.44 - reflected on verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:40 - Average grade: 90.44 - added grade number 1 on loop 2 of grade 90 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:43 - Average grade: 90.44 - added grade number 2 on loop 2 of grade 85 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:44 - Average grade: 90.44 - added grade number 3 on loop 2 of grade 90 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:46 - Average grade: 90.44 - added grade number 4 on loop 2 of grade 88 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:48 - Average grade: 90.44 - added grade number 5 on loop 2 of grade 88 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+2025-03-25 17:38:51 - Average grade: 90.44 - added grade number 6 on loop 2 of grade 90 to verse MAT 23:18 - Best grade: 90.44 - Iterations without improvement: 0
+New best grade: 90.44180898165709 after 1 iterations.  Improvement of 0.002371916508536742
+2025-03-25 17:38:51 - Average grade: 90.44 - lowest grade 86.33333333333333 is above highest grade to reflect 86 - Best grade: 90.44 - Iterations without improvement: 0
