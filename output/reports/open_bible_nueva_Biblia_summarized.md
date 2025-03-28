@@ -166,7 +166,7 @@ Overall, while the translation is modern and engaging, it could benefit from a s
 **MAT 22:5**: _(Grade 83.3)_
 
 **Source**:
-> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ;  
+> οἱ δὲ ἀμελήσαντες ἀπῆλθον, ὁ μὲν εἰς τὸν ἴδιον ἀγρόν, ὁ δὲ εἰς τὴν ἐμπορίαν αὐτοῦ·  
 > ("But the rest paid no attention and went away, one to his own farm, another to his business;")
 
 **Translation**:
@@ -175,7 +175,7 @@ Overall, while the translation is modern and engaging, it could benefit from a s
 
 **Combined Review**:
 Summary
-The translation of MAT 22:5 is generally accurate and captures the essence of the original text. However, there are suggestions for improving clarity and the depth of meaning. The phrase "se rieron de los mensajeros" could be interpreted as too informal or lacking the gravity of the guests' dismissal. A more fitting translation could be "despreciaron a los mensajeros" to convey a stronger sense of disregard. The wording "se fueron a sus labranzas o negocios" could be improved to "se fueron a trabajar en sus campos o a sus negocios" for better clarity and accessibility. Additionally, the term "labranza" may not resonate with all audiences, and using a term like "trabajo en el campo" could enhance understanding. Overall, while the translation is effective and engaging for Spanish speakers, slight adjustments in language and structure are recommended to better reflect the urgency and seriousness of the message in a conservative context.
+The translation of MAT 22:5 is generally accurate and captures the essence of the original text. However, there are suggestions for improving clarity and the depth of meaning. The phrase "se rieron de los mensajeros" ("laughed at the messengers") could be interpreted as too informal or lacking the gravity of the guests' dismissal. A more fitting translation could be "despreciaron a los mensajeros" ("despised the messengers") to convey a stronger sense of disregard. The wording "se fueron a sus labranzas o negocios" ("went to their farming or businesses") could be improved to "se fueron a trabajar en sus campos o a sus negocios" ("went to work in their fields or to their businesses") for better clarity and accessibility. Additionally, the term "labranza" ("farming") may not resonate with all audiences, and using a term like "trabajo en el campo" ("work in the field") could enhance understanding. Overall, while the translation is effective and engaging for Spanish speakers, slight adjustments in language and structure are recommended to better reflect the urgency and seriousness of the message in a conservative context.
 
 ---
 **MAT 22:11**: _(Grade 83.3)_
@@ -201,7 +201,7 @@ The translation of MAT 22:11 is generally clear and maintains the essence of the
 > Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás. (The more humbly we serve others, the greater we will be. To be great, one must serve others.)
 
 **Combined Review**:
-The translation of MAT 23:11 effectively captures the essence of the original Greek text, emphasizing humility and service in modern Spanish. However, the phrase 'Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás,' while conveying the intended message, could be refined for clarity and formality. Suggestions for improvement include adopting a more direct representation of the original wording, such as 'El mayor entre ustedes será su servidor' (The greatest among you shall be your servant), which retains the authoritative tone of the original scripture. While the translation is accessible and suitable for contemporary readers, it should aim for greater precision to preserve the original meaning and tone. Overall, it demonstrates a solid understanding of the source material, but adjustments could enhance its fidelity to the biblical text.
+The translation of MAT 23:11 effectively captures the essence of the original Greek text, emphasizing humility and service in modern Spanish. However, the phrase 'Mientras más humildemente sirvamos a los demás, más grandes seremos. Para ser grande hay que servir a los demás' (The more humbly we serve others, the greater we will be. To be great, one must serve others), while conveying the intended message, could be refined for clarity and formality. Suggestions for improvement include adopting a more direct representation of the original wording, such as 'El mayor entre ustedes será su servidor' (The greatest among you shall be your servant), which retains the authoritative tone of the original scripture. While the translation is accessible and suitable for contemporary readers, it should aim for greater precision to preserve the original meaning and tone. Overall, it demonstrates a solid understanding of the source material, but adjustments could enhance its fidelity to the biblical text.
 
 ---
 **MAT 24:43**: _(Grade 83.3)_

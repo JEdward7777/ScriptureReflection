@@ -425,8 +425,8 @@ def translate_verse_report( client, raw_report, config ):
         target_language = config.get("language", "English")
 
         user_message_array = [ "Please review the following content and everywhere there is text ",
-            f"in a language other than {target_language}, add in a translation after it in prenthesis in ",
-            f"{target_language} if it is missing." ]
+            f"in a language other than {target_language}, add in a translation after it in parenthesis in ",
+            f"{target_language} if it is missing. Make sure the short quotes in the summary are translated in parenthesis as well." ]
 
         user_message_array += [
             "\n\n**content**:\n"
