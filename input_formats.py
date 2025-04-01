@@ -1,7 +1,8 @@
 import utils
 import os
-import xml.etree.ElementTree as ET
+from lxml import etree
 from collections import OrderedDict, defaultdict
+from usfm_grammar import USFMParser
 
 import output_formats
 
@@ -30,20 +31,8 @@ def sort_verses( verses, reference_key ):
 def load_format( settings, reference_key, translation_key ):
     if settings['format'] == 'USX':
 
-        collected_verse_text = OrderedDict()
-        def add_text( verse_id, verse_text ):
-            text = collected_verse_text.get( verse_id, "" )
-            if text: text += "\n"
-            text += verse_text
-            collected_verse_text[ verse_id ] = text
 
-        def get_full_text(element):
-            """ Recursively get text from an element, including all child elements. """
-            text = element.text or ""
-            for child in element:
-                text += get_full_text(child) + (child.tail or "")
-            text += element.tail
-            return text.strip()
+        result = []
 
         xml_folder = settings['folder']
         #iterate through the xml files that have usx extensions:
@@ -53,41 +42,24 @@ def load_format( settings, reference_key, translation_key ):
                 usx_file = os.path.join(xml_folder, xml_file)
                 
                 # Load the XML file
-                tree = ET.parse(usx_file)
-                root = tree.getroot()
+                #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
+                with open( usx_file, 'r', encoding='utf-8' ) as f:
+                    usx_str = f.read()
+                    usx_obj = etree.fromstring(usx_str)
 
-                current_reference = [""]
+                    my_parser = USFMParser(from_usx=usx_obj)
 
-                # Recursively iterate through all tags
-                def process_element(element):
-                    if element.tag == 'verse':
-                        sid = element.get('sid')
-                        eid = element.get('eid')
-                        if sid is not None:
-                            current_reference[0] = sid
-                        if eid is not None:
-                            assert current_reference[0] == eid, "eid should be the sid that was in effect"
-                            current_reference[0] = ""
-                    if current_reference[0] and element.text and element.text.strip():
-                        add_text( current_reference[0], element.text.strip() )
-                        
-                    for child in element:
-                        process_element(child)
+                    dict_output = my_parser.to_biblenlp_format( ignore_errors=settings.get('ignore_errors', True) )
 
-                    if current_reference[0] and element.tail and element.tail.strip():
-                        add_text( current_reference[0], element.tail.strip() )
-                
-                process_element(root)
+                    for vref,text in zip( dict_output['vref'], dict_output['text'] ):
+                        new_verse = {}
+                        utils.set_key(new_verse, reference_key, vref)
+                        utils.set_key(new_verse, translation_key, text)
+                        result.append(new_verse)
 
-        result = []
-        for vref, verse_text in collected_verse_text.items():
-            new_verse = {}
-            utils.set_key( new_verse, reference_key, vref )
-            utils.set_key( new_verse, translation_key, verse_text )
-            result.append(new_verse)
         result = sort_verses( result, reference_key )
         return result
-    elif settings['format'] == 'vref':
+    elif settings['format'] == 'biblenlp':
         vref_file = settings['vref']
         source_file = settings['source']
         vrefs = utils.load_file_to_list( vref_file )
