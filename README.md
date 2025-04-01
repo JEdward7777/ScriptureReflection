@@ -48,7 +48,14 @@ The repository consists of several modules and YAML configuration files that con
     - Useful for paraphrased translations but still requires refinement due to nonsensical merges.
 - **YAML Config**: `rangeable_easy_draft.yaml`.
 
-### **3. Output Formatting**
+### **3. Input Formats**
+- **`input_formats.py`**:
+    - Facilitates the import of translations in various formats, including `USFM`, `USX`, and `biblenlp`.
+    - Allows specification of both source and target languages, each with their corresponding formats.
+    - Requires that the source and target languages adhere to the same versification, preventing incorrect pairings.
+- **YAML Config**: `input_formats.yaml`.
+
+### **4. Output Formatting**
 - **`output_formats.py`**:
     - Converts the intermediate JSONL outputs into:
       - USFM format
@@ -57,7 +64,7 @@ The repository consists of several modules and YAML configuration files that con
     - USFM export may not yet fully support range merging.
 - **YAML Config**: `output_formats.yaml`.
 
-### **4. Grading and Reflection**
+### **5. Grading and Reflection**
 The reflection process has two main phases:
 
 - **Grading**:
@@ -74,7 +81,7 @@ The reflection process has two main phases:
 
 - **Inefficiencies**: Early approaches required manual updates to configurations and resulted in numerous redundant files. To address this, iterative loop-based tools were created.
 
-### **5. Iterative Looping**
+### **6. Iterative Looping**
 - **`grade_reflect_loop.py`**:
     - Automates grading and reflection loops.
     - Enables iterative improvement with dynamic context (adjacent verses).
