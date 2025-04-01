@@ -30,16 +30,13 @@ def sort_verses( verses, reference_key ):
 
 def load_format( settings, reference_key, translation_key ):
     if settings['format'] == 'USX':
-
-
         result = []
-
-        xml_folder = settings['folder']
+        import_folder = settings['folder']
         #iterate through the xml files that have usx extensions:
-        for xml_file in os.listdir(xml_folder):
-            if xml_file.lower().endswith('.usx'):
-                print(f"Loading {xml_file}")
-                usx_file = os.path.join(xml_folder, xml_file)
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.usx'):
+                print(f"Loading {filename}")
+                usx_file = os.path.join(import_folder, filename)
                 
                 # Load the XML file
                 #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
@@ -48,6 +45,32 @@ def load_format( settings, reference_key, translation_key ):
                     usx_obj = etree.fromstring(usx_str)
 
                     my_parser = USFMParser(from_usx=usx_obj)
+
+                    dict_output = my_parser.to_biblenlp_format( ignore_errors=settings.get('ignore_errors', True) )
+
+                    for vref,text in zip( dict_output['vref'], dict_output['text'] ):
+                        new_verse = {}
+                        utils.set_key(new_verse, reference_key, vref)
+                        utils.set_key(new_verse, translation_key, text)
+                        result.append(new_verse)
+
+        result = sort_verses( result, reference_key )
+        return result
+    elif settings['format'] == 'usfm':
+        result = []
+        import_folder = settings['folder']
+        #iterate through the usfm files:
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.usfm') or filename.lower().endswith('.sfm'):
+                print(f"Loading {filename}")
+                full_filename = os.path.join(import_folder, filename)
+                
+                # Load the usfm file
+                #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
+                with open( full_filename, 'r', encoding='utf-8' ) as f:
+                    usfm_string = f.read()
+
+                    my_parser = USFMParser(usfm_string)
 
                     dict_output = my_parser.to_biblenlp_format( ignore_errors=settings.get('ignore_errors', True) )
 
@@ -169,6 +192,9 @@ def main():
     configs = utils.load_yaml_configuration( 'input_formats.yaml' )['configs']
 
     for name,config in configs.items():
+        if not config.get('active', True):
+            continue
+
         reference_key = config.get('reference_key'  , ['vref'])
         translation_key = config.get('translation_key', ['fresh_translation','text'] )
         source_key = config.get('source_key'   , ['source'])
