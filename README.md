@@ -61,6 +61,9 @@ The repository consists of several modules and YAML configuration files that con
       - USFM format
       - JSONL for external tools like [SWARM](https://github.com/ryderwishart/swarm)
       - Markdown for direct viewing on GitHub.
+      - A single file report sorted by grade worse to best. If an OpenAi API key is provided it also
+        - summarizes the grade comments into a single improvement request and
+        - translates everything in the report inline in prenthesis.
     - USFM export may not yet fully support range merging.
 - **YAML Config**: `output_formats.yaml`.
 
