@@ -82,7 +82,7 @@ The reflection process has two main phases:
     - Outputs a new translation version.
   - **YAML Config**: `do_reflection.yaml`.
 
-- **Inefficiencies**: Early approaches required manual updates to configurations and resulted in numerous redundant files. To address this, iterative loop-based tools were created.
+- **Inefficiencies**: This approaches requires manual updates to configurations and resulted in numerous redundant files. To address this, iterative loop-based tools were created.
 
 ### **6. Iterative Looping**
 - **`grade_reflect_loop.py`**:
@@ -90,12 +90,24 @@ The reflection process has two main phases:
     - Enables iterative improvement with dynamic context (adjacent verses).
     - Introduces a mode that focuses on the verse with the lowest grade at each step, propagating improvements while mitigating bad suggestions.
     - The grading-reflection loop is somewhat format-agnostic, allowing use with any JSONL-based verse translation input.
+    - Grading only mode allows tool to be used for quality assesment without verses being changed.
 
 - **Enhancements**:
     - Finalization of challenging verses after several attempts by picking the best version graded so far.
     - Finalization helps resolve alternations on valid but competing outputs (e.g., "deceiver" vs. "false prophet")
 
 - **YAML Config**: `grade_reflect_loop.yaml`.
+
+### **7. Streamlit POC GUI:**
+- **`streamlit_reflector.py`**:
+   - A graphical tool enabling Human-in-the-Loop iterative functionality.
+   - Works in combination with the `grade_reflect_loop.py` script.
+   - View verses sorted by grade.
+   - Allows direct editing of verses.
+   - Allows adding comments to verses to guide grading.
+   - Shows verse history and grade over time.
+   - Allows pinning specific verses for a hybrid manual/reflection mode.
+   - Intended to alternate with `grade_reflect_loop.py`, not run simultaneously.
 
 ---
 
@@ -118,19 +130,6 @@ The reflection process has two main phases:
 
 ---
 
-## Future Development
-
-1. **Human-in-the-Loop Integration**:
-   - Create tools for human reviewers to provide feedback on translations.
-   - Prototype Streamlit app for collecting verse-specific feedback.
-
-2. **Decoupled Grading and Reflection**:
-   - Explore a system where grading serves purely as quality assessment.
-   - Enable translators to manually address flagged concerns and re-submit content for additional feedback.
-
-
----
-
 ## Usage
 
 Each module is configured and executed independently based on YAML files. Below is a general workflow:
@@ -141,25 +140,29 @@ Each module is configured and executed independently based on YAML files. Below 
    python easy_draft.py
    ```
 
-2. Grade the translations:
+2. Instead of generating a draft, import an existing translation:
    ```bash
-   vim grade_output.yaml
-   python grade_output.py
+   vim import_formats.yaml
+   python import_formats.py
    ```
 
-3. Reflect and iterate:
-   ```bash
-   vim do_reflection.yaml
-   python do_reflection.py
-   ```
-
-4. Automate looping:
+3. Run grading and reflection:
    ```bash
    vim grade_reflect_loop.yaml
    python grade_reflect_loop.py
    ```
 
-5. Output Formats:
+4. Run the Streamlit POC GUI:
+    ```bash
+    # You only need to edit the YAML file if your JSONL keys
+    # are custom.
+    vim streamlit_reflector.yaml
+    streamlit run streamlit_reflector.py
+    ```
+
+5. Return to step #2 after editing verses or adding comments using the Streamlit app. The Streamlit app modifies the JSONL file so that `grade_reflect_loop.py` knows where to continue.
+
+6. Output Formats:
     ```bash
     vim output_formats.yaml
     python output_formats.py
