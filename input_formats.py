@@ -122,7 +122,7 @@ def merge_source_and_target( settings, source, target, reference_key, source_key
             self.parent_ptr = self.parent_ptr.get_parent()
             return self.parent_ptr
 
-    verse_to_cluster = defaultdict( lambda: VerseCluster() )
+    verse_to_cluster = defaultdict( VerseCluster )
 
     for v in source + target:
         vref = utils.look_up_key( v, reference_key )

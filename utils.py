@@ -207,3 +207,152 @@ def use_model( client, model, messages, temperature, top_p, response_format ):
             time.sleep(5)
 
     return completion
+
+def get_changes( value_old, value_new ):
+    changes = []
+
+    if type(value_old) == dict and type(value_new) == dict:
+        for key, old_value in value_old.items():
+            if key not in value_new:
+                changes.append( ['delete', [key]] )
+            else:
+                new_value = value_new[key]
+                if type(new_value) in [dict, list]:
+                    for sub_change in get_changes( old_value, new_value ):
+                        sub_change[1] = [key] + sub_change[1]
+                        changes.append( sub_change )
+                else:
+                    if new_value != old_value:
+                        changes.append( ['update', [key], new_value] )
+
+        for key, new_value in value_new.items():
+            if key not in value_old:
+                if type(new_value) == dict:
+                    for sub_change in get_changes( {}, new_value ):
+                        sub_change[1] = [key] + sub_change[1]
+                        changes.append( sub_change )
+                elif type(new_value) == list:
+                    for sub_change in get_changes( [], new_value ):
+                        sub_change[1] = [key] + sub_change[1]
+                        changes.append( sub_change )
+                else:
+                    changes.append( ['add', [key], new_value] )
+
+    elif type(value_old) == list and type(value_new) == list:
+        for i in range( min( len(value_old), len(value_new) ) ):
+            for sub_change in get_changes( value_old[i], value_new[i] ):
+                sub_change[1] = [i] + sub_change[1]
+                changes.append( sub_change )
+        if len(value_old) > len(value_new):
+            for i in range( len(value_old)-1, len(value_new)-1, -1 ):
+                changes.append( ['delete', [i]] )
+        if len(value_old) < len(value_new):
+            for i in range( len(value_old), len(value_new), 1 ):
+                #Before adding the first index we have to identify
+                #This as an array so we will touch it.
+                if i == 0:
+                    changes.append( ['touch_array', []] )
+                if type( value_new[i] ) == dict:
+                    for sub_change in get_changes( {}, value_new[i] ):
+                        sub_change[1] = [i] + sub_change[1]
+                        changes.append( sub_change )
+                elif type( value_new[i] ) == list:
+                    for sub_change in get_changes( [], value_new[i] ):
+                        sub_change[1] = [i] + sub_change[1]
+                        changes.append( sub_change )
+                else:
+                    changes.append( ['add', [i], value_new[i]] )
+
+    else:
+        if value_new != value_old:
+            changes.append( ['update', [], value_new] )
+
+
+    return changes
+
+
+def apply_changes( dict_old, changes ):
+    for change in changes:
+        command = change[0]
+        keys = change[1]
+
+        if len( keys ) > 1:
+            sub_change = change.copy()
+            if type( dict_old ) == list:
+                while len( dict_old ) <= keys[0]:
+                    dict_old.append( {} )
+            else:
+                if command == 'add' and keys[0] not in dict_old:
+                    dict_old[keys[0]] = {}
+            sub_change[1] = keys[1:]
+            apply_changes( dict_old[keys[0]], [sub_change] )
+        else:
+            if command == 'delete':
+                del dict_old[keys[0]]
+            elif command == 'touch_array':
+                if type( dict_old ) == list:
+                    while keys[0] >= len( dict_old ):
+                        dict_old.append( [] )
+                else:
+                    if keys[0] not in dict_old:
+                        dict_old[keys[0]] = []
+            elif command in ['update', 'add']:
+                new_value = change[2]
+                if type(dict_old) == list:
+                    while keys[0] >= len(dict_old):
+                        dict_old.append( {} )
+                dict_old[keys[0]] = new_value
+
+    #don't need to use the returned value
+    #because the input value wasn't cloned.
+    return dict_old
+
+def hash_array_by_key( data, key ):
+    """
+    Creates a dictionary out of an array of objects by using the value from
+    each object at the specified key as the key in the dictionary.
+
+    :param data: The data to be hashed.
+    :param key: The key to use for hashing.
+    :return: A dictionary where the keys are the values from the input data
+             using the specified key, and the values are the objects from the
+             input data.
+    """
+    return { look_up_key( x, key ): x for x in data }
+
+def save_jsonl_updates(filename, data, unmodifed_data, reference_key ):
+    """
+    Saves out the updated data to the file, while leaving any of the verses that weren't modified
+    in their original state. This means that if other people have modified the file since we last saw it,
+    their changes will be preserved.
+
+    :param filename: The name of the jsonl file to save.
+    :param data: The updated data.
+    :param unmodifed_data: The original data.
+    :param reference_key: The key to use to find the particular verse in the data.
+    :return: The updated data that was saved.
+    """
+    data_hashed = hash_array_by_key( data, reference_key )
+    unmodified_hashed = hash_array_by_key( unmodifed_data, reference_key )
+
+
+    changes_hashed = {}
+    for vref, modified in data_hashed.items():
+        if vref and vref in unmodified_hashed:
+            changes = get_changes( unmodified_hashed[vref], modified )
+            if len(changes) > 0:
+                changes_hashed[vref] = changes
+
+    fresh_loaded = load_jsonl(filename)
+    fresh_hashed = hash_array_by_key( fresh_loaded, reference_key )
+
+    
+    #now apply the changes.
+    for vref, changes in changes_hashed.items():
+        if vref in fresh_hashed:
+            apply_changes( fresh_hashed[vref], changes )
+
+    #Then save it back out.
+    save_jsonl(filename, fresh_loaded)
+
+    return fresh_loaded

@@ -259,7 +259,7 @@ configs:
 
 
   Swarm_bible_spa_natural:
-    active: false
+    active: true
 
     #debug_force_vref: JHN 3:32
 
@@ -381,7 +381,7 @@ configs:
     end_line: 22276 # MAT 28:20 This file
 
   open_bible_nueva_Biblia__reflected:
-    active: true
+    active: false
 
     manual_edit_mode: false
 

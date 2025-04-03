@@ -90,7 +90,7 @@ The reflection process has two main phases:
     - Enables iterative improvement with dynamic context (adjacent verses).
     - Introduces a mode that focuses on the verse with the lowest grade at each step, propagating improvements while mitigating bad suggestions.
     - The grading-reflection loop is somewhat format-agnostic, allowing use with any JSONL-based verse translation input.
-    - Grading only mode allows tool to be used for quality assesment without verses being changed.
+    - Grading only mode allows tool to be used for quality assessment without verses being changed.
 
 - **Enhancements**:
     - Finalization of challenging verses after several attempts by picking the best version graded so far.

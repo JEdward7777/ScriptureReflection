@@ -499,6 +499,7 @@ def run_config__n_loops( config, api_keys, save_timeout ):
     else:
         #otherwise load the existing translation and blank out all the translation keys.
         reflection_output = copy.deepcopy( translation_input )
+    reflection_output_unmodified = copy.deepcopy( reflection_output )
 
     try:
 
@@ -613,7 +614,10 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
                 #now save if we haven't saved in a while
                 if output_dirty and time.time() - last_save > save_timeout:
-                    utils.save_jsonl( reflection_output_filename, reflection_output )
+                    #utils.save_jsonl( reflection_output_filename, reflection_output )
+                    reflection_output = utils.save_jsonl_updates( reflection_output_filename, reflection_output,
+                        reflection_output_unmodified, reference_key )
+                    reflection_output_unmodified = copy.deepcopy( reflection_output )
                     last_save = time.time()
                     output_dirty = False
 
@@ -647,7 +651,10 @@ def run_config__n_loops( config, api_keys, save_timeout ):
     finally:
         #save the reflection output
         if output_dirty:
-            utils.save_jsonl( reflection_output_filename, reflection_output )
+            #utils.save_jsonl( reflection_output_filename, reflection_output )
+            reflection_output = utils.save_jsonl_updates( reflection_output_filename, reflection_output,
+                reflection_output_unmodified, reference_key )
+            reflection_output_unmodified = copy.deepcopy( reflection_output )
 
 def load_and_index_comments( config ):
     """Loads the comments left by the streamlit app and returns them indexed by
@@ -700,6 +707,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     else:
         #otherwise load the existing translation and blank out all the translation keys.
         reflection_output = copy.deepcopy( translation_input )
+    reflection_output_unmodified = copy.deepcopy( reflection_output )
 
     try:
 
@@ -953,7 +961,10 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
             #now save if we haven't saved in a while
             if output_dirty and time.time() - last_save > save_timeout:
-                utils.save_jsonl( reflection_output_filename, reflection_output )
+                #utils.save_jsonl( reflection_output_filename, reflection_output )
+                reflection_output = utils.save_jsonl_updates( reflection_output_filename, reflection_output,
+                    reflection_output_unmodified, reference_key )
+                reflection_output_unmodified = copy.deepcopy( reflection_output )
                 last_save = time.time()
                 output_dirty = False
 
@@ -989,7 +1000,10 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     finally:
         #save the reflection output
         if output_dirty:
-            utils.save_jsonl( reflection_output_filename, reflection_output )
+            #utils.save_jsonl( reflection_output_filename, reflection_output )
+            reflection_output = utils.save_jsonl_updates( reflection_output_filename, reflection_output,
+                reflection_output_unmodified, reference_key )
+            reflection_output_unmodified = copy.deepcopy( reflection_output )
 
 
 def main():
