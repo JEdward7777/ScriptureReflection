@@ -259,7 +259,7 @@ configs:
 
 
   Swarm_bible_spa_natural:
-    active: true
+    active: false
 
     #debug_force_vref: JHN 3:32
 
@@ -421,4 +421,43 @@ configs:
     end_line: 22276 # MAT 28:20 This file
 
 
-    
+
+  chinese_gan:
+    active: true
+
+    manual_edit_mode: true
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    translation_objective: "Purpose: To adapt the Bible from Mandarin Chinese to Gan Chinese.\nStyle: Use a contemporary and modern style but hold to conservative Christain interpretations."
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    model: gpt-4o-mini
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/open_bible_chinese_mandarin_simplified.jsonl
+    reflection_output: output/chinese_gan.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/chinese_gan.csv
+    tee_output_filename:   output/chinese_gan_log.txt
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    highest_grade_to_reflect: 86
+
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
+
+    start_line: 23033 # MAT 1:1 This file
+    end_line: 24103 # MAT 28:20 This file
