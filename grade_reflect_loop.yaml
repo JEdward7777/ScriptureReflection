@@ -425,7 +425,7 @@ configs:
   chinese_gan:
     active: true
 
-    manual_edit_mode: true
+    manual_edit_mode: false
 
     #debug_force_vref: JHN 3:32
     reference_key: [vref]
@@ -459,5 +459,7 @@ configs:
 
     grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nGive specific instructions when possible of how to convert the translation to more Gan Chinese and less Mandarin Chinese."
 
-    start_line: 23033 # MAT 1:1 This file
-    end_line: 24103 # MAT 28:20 This file
+    #start_line: 23033 # MAT 1:1 This file
+    #end_line: 24103 # MAT 28:20 This file
+    start_line: 23058 # MAT 2:1
+    end_line: 23080 # MAT 2:23
