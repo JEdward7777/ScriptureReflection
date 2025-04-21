@@ -433,7 +433,7 @@ configs:
     translation_key: [fresh_translation,text]
 
     api_key: [ryders_key,key]
-    translation_objective: "Purpose: To adapt the Bible from Mandarin Chinese to Gan Chinese.\nStyle: Use a contemporary and modern style but hold to conservative Christain interpretations."
+    translation_objective: "Purpose: To adapt the Bible from Mandarin Chinese to Gan Chinese.\nStyle: Use a contemporary and modern style but hold to conservative Christain interpretations.\n"
 
     num_context_verses_before: 10
     num_context_verses_after: 10
@@ -457,7 +457,7 @@ configs:
 
     reflection_loops_per_verse: 10
 
-    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nGive specific instructions when possible of how to convert the translation to more Gan Chinese and less Mandarin Chinese."
 
     start_line: 23033 # MAT 1:1 This file
     end_line: 24103 # MAT 28:20 This file
