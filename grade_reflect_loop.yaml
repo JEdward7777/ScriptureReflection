@@ -440,6 +440,8 @@ configs:
 
     #model: gpt-4o-mini
     model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    reflection-model: gpt-4.5-preview
     temperature: 1.2
     top_p: 0.9
     translation_input: output/open_bible_chinese_mandarin_simplified.jsonl

@@ -460,7 +460,7 @@ def perform_reflection( selected_verse, common_context, client, config ):
         updated_translation: str
 
     completion = utils.use_model( client,
-        model=config['model'],
+        model=config.get( 'reflection-model', config['model'] ),
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": user_message}
@@ -700,6 +700,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
     if 'end_line' in config:
         print( "Focusing on and before end_line", config['end_line'] )
+
+    print( f"Using the model {config['model']}" )
 
     #load the result if we didn't finish last time.
     if os.path.exists(reflection_output_filename):
