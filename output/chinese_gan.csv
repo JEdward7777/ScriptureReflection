@@ -7758,3 +7758,83 @@ time,average_grade,action_done,best_grade_found,iterations_without_improvement
 2025-04-21 13:26:46,87.35072463768118,added grade number 5 on loop 5 of grade 88 to verse MAT 2:22,87.28985507246378,0
 2025-04-21 13:26:49,87.33333333333334,added grade number 6 on loop 5 of grade 85 to verse MAT 2:22,87.28985507246378,0
 2025-04-21 13:26:49,87.33333333333334,lowest grade 86.33333333333333 is above highest grade to reflect 86,87.33333333333334,0
+2025-04-22 08:29:17,87.66666666666669,added grade number 1 on loop 1 of grade 95 to verse MAT 2:16,0,0
+2025-04-22 08:29:20,87.60144927536234,added grade number 2 on loop 1 of grade 92 to verse MAT 2:16,0,0
+2025-04-22 08:30:31,87.53623188405798,added grade number 1 on loop 1 of grade 92 to verse MAT 2:16,0,0
+2025-04-22 08:30:33,87.53623188405798,added grade number 2 on loop 1 of grade 92 to verse MAT 2:16,0,0
+2025-04-22 08:30:37,87.43478260869567,added grade number 3 on loop 1 of grade 85 to verse MAT 2:16,0,0
+2025-04-22 08:30:40,87.27536231884059,added grade number 4 on loop 1 of grade 75 to verse MAT 2:16,0,0
+2025-04-22 08:30:44,87.29275362318843,added grade number 5 on loop 1 of grade 88 to verse MAT 2:16,0,0
+2025-04-22 08:30:46,87.33333333333334,added grade number 6 on loop 1 of grade 92 to verse MAT 2:16,0,0
+2025-04-22 08:30:46,87.33333333333334,lowest grade 86.33333333333333 is above highest grade to reflect 86,87.33333333333334,0
+2025-04-22 08:33:55,86.36231884057973,added grade number 1 on loop 1 of grade 65 to verse MAT 2:16,0,0
+2025-04-22 08:33:58,86.47101449275364,added grade number 2 on loop 1 of grade 70 to verse MAT 2:16,0,0
+2025-04-22 08:34:01,86.43478260869567,added grade number 3 on loop 1 of grade 65 to verse MAT 2:16,0,0
+2025-04-22 08:34:06,86.52536231884059,added grade number 4 on loop 1 of grade 75 to verse MAT 2:16,0,0
+2025-04-22 08:34:10,86.49275362318842,added grade number 5 on loop 1 of grade 65 to verse MAT 2:16,0,0
+2025-04-22 08:34:14,86.47101449275364,added grade number 6 on loop 1 of grade 65 to verse MAT 2:16,0,0
+2025-04-22 08:34:27,86.47101449275364,reflected on verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:32,86.79710144927537,added grade number 1 on loop 2 of grade 75 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:36,87.0144927536232,added grade number 2 on loop 2 of grade 85 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:39,86.94202898550726,added grade number 3 on loop 2 of grade 75 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:43,87.09057971014495,added grade number 4 on loop 2 of grade 92 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:46,87.03188405797104,added grade number 5 on loop 2 of grade 75 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:34:49,86.99275362318842,added grade number 6 on loop 2 of grade 75 to verse MAT 2:16,86.47101449275364,0
+2025-04-22 08:35:06,86.99275362318842,reflected on verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:09,87.66666666666669,added grade number 1 on loop 3 of grade 95 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:16,87.12318840579712,added grade number 2 on loop 3 of grade 70 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:20,87.0144927536232,added grade number 3 on loop 3 of grade 75 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:24,86.96014492753625,added grade number 4 on loop 3 of grade 75 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:28,87.0753623188406,added grade number 5 on loop 3 of grade 92 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:30,87.02898550724639,added grade number 6 on loop 3 of grade 75 to verse MAT 2:16,86.99275362318842,0
+2025-04-22 08:35:41,87.02898550724639,reflected on verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:44,86.79710144927537,added grade number 1 on loop 4 of grade 75 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:47,87.0144927536232,added grade number 2 on loop 4 of grade 85 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:49,86.94202898550726,added grade number 3 on loop 4 of grade 75 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:52,86.85144927536234,added grade number 4 on loop 4 of grade 70 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:55,86.97101449275364,added grade number 5 on loop 4 of grade 90 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:35:57,86.9057971014493,added grade number 6 on loop 4 of grade 70 to verse MAT 2:16,87.02898550724639,0
+2025-04-22 08:36:12,86.9057971014493,reflected on verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:15,86.79710144927537,added grade number 1 on loop 5 of grade 75 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:18,86.68840579710147,added grade number 2 on loop 5 of grade 70 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:25,86.6521739130435,added grade number 3 on loop 5 of grade 70 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:29,86.57971014492755,added grade number 4 on loop 5 of grade 65 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:33,86.79710144927537,added grade number 5 on loop 5 of grade 95 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:37,86.79710144927537,added grade number 6 on loop 5 of grade 75 to verse MAT 2:16,87.02898550724639,1
+2025-04-22 08:36:52,86.79710144927537,reflected on verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:36:59,86.36231884057973,added grade number 1 on loop 6 of grade 65 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:04,86.57971014492755,added grade number 2 on loop 6 of grade 75 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:06,86.57971014492755,added grade number 3 on loop 6 of grade 70 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:10,86.63405797101451,added grade number 4 on loop 6 of grade 75 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:13,86.66666666666669,added grade number 5 on loop 6 of grade 75 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:17,86.61594202898551,added grade number 6 on loop 6 of grade 65 to verse MAT 2:16,87.02898550724639,2
+2025-04-22 08:37:33,86.61594202898551,reflected on verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:37,86.79710144927537,added grade number 1 on loop 7 of grade 75 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:40,87.23188405797103,added grade number 2 on loop 7 of grade 95 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:44,87.08695652173915,added grade number 3 on loop 7 of grade 75 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:47,87.0144927536232,added grade number 4 on loop 7 of grade 75 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:52,87.11884057971017,added grade number 5 on loop 7 of grade 92 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:37:55,87.06521739130437,added grade number 6 on loop 7 of grade 75 to verse MAT 2:16,87.02898550724639,3
+2025-04-22 08:38:12,87.06521739130437,reflected on verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:18,86.1449275362319,added grade number 1 on loop 8 of grade 60 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:21,86.36231884057973,added grade number 2 on loop 8 of grade 70 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:24,86.75362318840581,added grade number 3 on loop 8 of grade 92 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:27,86.7644927536232,added grade number 4 on loop 8 of grade 75 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:30,86.72753623188407,added grade number 5 on loop 8 of grade 70 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:33,86.81159420289856,added grade number 6 on loop 8 of grade 85 to verse MAT 2:16,87.06521739130437,0
+2025-04-22 08:38:47,86.81159420289856,reflected on verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:38:50,87.57971014492755,added grade number 1 on loop 9 of grade 93 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:38:53,87.62318840579712,added grade number 2 on loop 9 of grade 95 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:38:56,87.27536231884059,added grade number 3 on loop 9 of grade 70 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:39:00,87.37318840579712,added grade number 4 on loop 9 of grade 95 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:39:06,87.2144927536232,added grade number 5 on loop 9 of grade 70 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:39:08,87.1449275362319,added grade number 6 on loop 9 of grade 75 to verse MAT 2:16,87.06521739130437,1
+2025-04-22 08:39:21,87.1449275362319,reflected on verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:23,86.79710144927537,added grade number 1 on loop 10 of grade 75 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:25,86.57971014492755,added grade number 2 on loop 10 of grade 65 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:29,86.6521739130435,added grade number 3 on loop 10 of grade 75 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:31,86.57971014492755,added grade number 4 on loop 10 of grade 65 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:34,86.53623188405798,added grade number 5 on loop 10 of grade 65 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:37,86.50724637681161,added grade number 6 on loop 10 of grade 65 to verse MAT 2:16,87.1449275362319,0
+2025-04-22 08:39:37,87.1449275362319,finalized verse MAT 2:16,87.1449275362319,1
+2025-04-22 08:39:37,87.1449275362319,lowest grade 86.33333333333333 is above highest grade to reflect 86,87.1449275362319,2

@@ -9135,3 +9135,178 @@ new: 约瑟听讲亚基劳做他老豆希律代个犹太王，心肝惊惊，弗
 2025-04-21 13:26:49 - Average grade: 87.33 - added grade number 6 on loop 5 of grade 85 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
 New best grade: 87.33333333333334 after 1 iterations.  Improvement of 0.043478260869562746
 2025-04-21 13:26:49 - Average grade: 87.33 - lowest grade 86.33333333333333 is above highest grade to reflect 86 - Best grade: 87.33 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 23058
+Focusing on and before end_line 23080
+2025-04-22 08:29:17 - Average grade: 87.67 - added grade number 1 on loop 1 of grade 95 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:29:20 - Average grade: 87.60 - added grade number 2 on loop 1 of grade 92 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 23058
+Focusing on and before end_line 23080
+2025-04-22 08:30:31 - Average grade: 87.54 - added grade number 1 on loop 1 of grade 92 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:30:33 - Average grade: 87.54 - added grade number 2 on loop 1 of grade 92 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:30:37 - Average grade: 87.43 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:30:40 - Average grade: 87.28 - added grade number 4 on loop 1 of grade 75 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:30:44 - Average grade: 87.29 - added grade number 5 on loop 1 of grade 88 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:30:46 - Average grade: 87.33 - added grade number 6 on loop 1 of grade 92 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 87.33333333333334 after 1 iterations.  Improvement of 87.33333333333334
+2025-04-22 08:30:46 - Average grade: 87.33 - lowest grade 86.33333333333333 is above highest grade to reflect 86 - Best grade: 87.33 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 23058
+Focusing on and before end_line 23080
+2025-04-22 08:33:55 - Average grade: 86.36 - added grade number 1 on loop 1 of grade 65 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:33:58 - Average grade: 86.47 - added grade number 2 on loop 1 of grade 70 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:34:01 - Average grade: 86.43 - added grade number 3 on loop 1 of grade 65 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:34:06 - Average grade: 86.53 - added grade number 4 on loop 1 of grade 75 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:34:10 - Average grade: 86.49 - added grade number 5 on loop 1 of grade 65 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 08:34:14 - Average grade: 86.47 - added grade number 6 on loop 1 of grade 65 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 86.47101449275364 after 1 iterations.  Improvement of 86.47101449275364
+Working on verse MAT 2:16 which has grade 67.5
+
+The translation faithfully preserves the conservative Christian theological meaning of Matthew 2:16, accurately depicting Herod's anger and his order to kill all boys two years old and under in Bethlehem and surrounding regions. However, the translation predominantly employs Mandarin Chinese vocabulary and grammatical structures rather than authentic Gan Chinese forms, which is inconsistent with the objective of adapting the Bible into Gan Chinese. To meet the assignment's goals, the translation should be revised to incorporate genuine Gan lexical items, phonology, and syntactic patterns, reflecting the contemporary Gan dialect. Maintaining theological accuracy while ensuring linguistic authenticity to the Gan dialect is essential for a proper and culturally relevant translation.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律 见自己被智者愚弄，大为恼怒，便照着智者所说的时间推算，下令把 伯利恒 及附近两岁以下的男孩杀光。
+new: 希律见着自己被那帮智者骗咯，心肝火腾腾咯，就照那帮智者讲个时间算起，派人去杀伯利恒厝头厝尾连同四周界限内两岁仔仔以及以下个男娃仔。
+
+2025-04-22 08:34:27 - Average grade: 86.47 - reflected on verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:32 - Average grade: 86.80 - added grade number 1 on loop 2 of grade 75 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:36 - Average grade: 87.01 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:39 - Average grade: 86.94 - added grade number 3 on loop 2 of grade 75 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:43 - Average grade: 87.09 - added grade number 4 on loop 2 of grade 92 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:46 - Average grade: 87.03 - added grade number 5 on loop 2 of grade 75 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+2025-04-22 08:34:49 - Average grade: 86.99 - added grade number 6 on loop 2 of grade 75 to verse MAT 2:16 - Best grade: 86.47 - Iterations without improvement: 0
+New best grade: 86.99275362318842 after 1 iterations.  Improvement of 0.5217391304347814
+Working on verse MAT 2:16 which has grade 79.5
+
+The main corrections focus on improving the translation's linguistic authenticity to the Gan Chinese dialect without compromising theological accuracy. Specifically, the translation should replace Mandarin-influenced vocabulary such as "男娃仔" and Mandarin-like phrases with genuine Gan Chinese words and expressions. Sentence structures need adjustment to better reflect Gan grammar, including appropriate use of particles and typical Gan sentence patterns, avoiding Mandarin syntactical influence. Vocabulary choices like "仔仔" should be reviewed for dialect suitability, considering possible Cantonese influence. The goal is to produce a translation that is both doctrinally sound and linguistically natural and recognizable to Gan Chinese speakers. Care should be taken not to reintroduce content or stylistic elements intentionally removed in earlier edits. Overall, the translation requires refining of lexical and grammatical elements to authentically embody Gan dialect features.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律见着自己被那帮智者骗咯，心肝火腾腾咯，就照那帮智者讲个时间算起，派人去杀伯利恒厝头厝尾连同四周界限内两岁仔仔以及以下个男娃仔。
+new: 希律睇着自己俾嗰啲智者玩弄咗，心肝火滾滾噶，照住智者话嗰段时间，派人杀咗伯利恒及四周围界限入面两岁及以下噶男囝。
+
+2025-04-22 08:35:06 - Average grade: 86.99 - reflected on verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:09 - Average grade: 87.67 - added grade number 1 on loop 3 of grade 95 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:16 - Average grade: 87.12 - added grade number 2 on loop 3 of grade 70 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:20 - Average grade: 87.01 - added grade number 3 on loop 3 of grade 75 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:24 - Average grade: 86.96 - added grade number 4 on loop 3 of grade 75 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:28 - Average grade: 87.08 - added grade number 5 on loop 3 of grade 92 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+2025-04-22 08:35:30 - Average grade: 87.03 - added grade number 6 on loop 3 of grade 75 to verse MAT 2:16 - Best grade: 86.99 - Iterations without improvement: 0
+New best grade: 87.02898550724639 after 1 iterations.  Improvement of 0.036231884057968955
+Working on verse MAT 2:16 which has grade 80.33333333333333
+
+The translation of Matthew 2:16 successfully preserves the conservative Christian theological meaning and accurately depicts Herod's wrath and the tragic killing of male children two years old and under in Bethlehem and its surroundings. However, reviewers note that the translation currently incorporates significant Mandarin vocabulary and grammatical structures rather than authentic Gan Chinese dialect forms. To improve, the translation should replace Mandarin-influenced words and phrases with genuine Gan lexical items, and adjust sentence structures to reflect Gan syntactic patterns and grammar accurately. These linguistic refinements will ensure the translation sounds natural and culturally relevant to Gan Chinese speakers without compromising the theological message. Additionally, care should be taken to avoid reintroducing any content or stylistic features intentionally removed in prior edits. Overall, the focus is on enhancing the linguistic authenticity of the Gan dialect in vocabulary and grammar while maintaining doctrinal fidelity.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律睇着自己俾嗰啲智者玩弄咗，心肝火滾滾噶，照住智者话嗰段时间，派人杀咗伯利恒及四周围界限入面两岁及以下噶男囝。
+new: 希律一见自己被嗰些智者耍咗，气得火冒三丈，照嗰些智者话畀嘅时间，派人杀咗伯利恒同周边地方两岁以下嘅男娃娃。
+
+2025-04-22 08:35:41 - Average grade: 87.03 - reflected on verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:44 - Average grade: 86.80 - added grade number 1 on loop 4 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:47 - Average grade: 87.01 - added grade number 2 on loop 4 of grade 85 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:49 - Average grade: 86.94 - added grade number 3 on loop 4 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:52 - Average grade: 86.85 - added grade number 4 on loop 4 of grade 70 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:55 - Average grade: 86.97 - added grade number 5 on loop 4 of grade 90 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+2025-04-22 08:35:57 - Average grade: 86.91 - added grade number 6 on loop 4 of grade 70 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 0
+Working on verse MAT 2:16 which has grade 77.5
+
+The translation of Matthew 2:16 accurately conveys the conservative Christian theological message, depicting Herod's wrath and the tragic massacre of boys under two in Bethlehem. However, multiple peer reviews point out that the current translation leans heavily on Mandarin vocabulary, idioms, and syntax, with some Cantonese influence, rather than authentic Gan Chinese linguistic features. To improve, the translation should replace Mandarin- and Cantonese-influenced words and phrases (e.g., “气得火冒三丈”, “派人杀咗”, "男娃娃") with genuine Gan vocabulary and idiomatic expressions. Sentence structures should be adjusted to reflect Gan Chinese grammar, including appropriate use of particles and syntax patterns typical of Gan dialect. Care must be taken not to reintroduce any previously removed content or stylistic elements. By enhancing linguistic authenticity while maintaining theological accuracy and clarity, the translation will better meet the objective of producing a culturally relevant and doctrinally faithful Gan Chinese Bible text.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律一见自己被嗰些智者耍咗，气得火冒三丈，照嗰些智者话畀嘅时间，派人杀咗伯利恒同周边地方两岁以下嘅男娃娃。
+new: 希律一看着被嗰些智者戏弄咯，恨忒咯，叫人害死咧伯利恒跟附近地方头两年内个男囝仔。
+
+2025-04-22 08:36:12 - Average grade: 86.91 - reflected on verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:15 - Average grade: 86.80 - added grade number 1 on loop 5 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:18 - Average grade: 86.69 - added grade number 2 on loop 5 of grade 70 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:25 - Average grade: 86.65 - added grade number 3 on loop 5 of grade 70 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:29 - Average grade: 86.58 - added grade number 4 on loop 5 of grade 65 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:33 - Average grade: 86.80 - added grade number 5 on loop 5 of grade 95 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+2025-04-22 08:36:37 - Average grade: 86.80 - added grade number 6 on loop 5 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 1
+Working on verse MAT 2:16 which has grade 75.0
+
+The peer reviews consistently affirm that the translation of Matthew 2:16 faithfully and accurately conveys the conservative Christian theological meaning, including Herod's wrath and his order to kill all male children two years old and under in Bethlehem and its vicinity. However, the primary correction needed is to replace the Mandarin-influenced vocabulary (e.g., "害死", "跟附近地方头两年内个男囝仔") and Mandarin or Cantonese syntactical patterns with authentic Gan Chinese lexical items, idioms, and grammatical structures. The translation should employ genuine Gan dialect phonology, vocabulary, and sentence patterns, avoiding Mandarin and Cantonese borrowings or influences to ensure cultural and linguistic authenticity. Additionally, the translator must avoid reintroducing content or stylistic features that were previously removed or deemed inappropriate. The overall objective is a doctrinally faithful, clear, and culturally relevant translation that accurately reflects Gan Chinese linguistic identity while preserving the conservative Christian message.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律一看着被嗰些智者戏弄咯，恨忒咯，叫人害死咧伯利恒跟附近地方头两年内个男囝仔。
+new: 希律见着嗰些博士骗倒了他，怒气冲冲，就派人把伯利恒同四边地区两岁以下个男孩全都杀光。
+
+2025-04-22 08:36:52 - Average grade: 86.80 - reflected on verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:36:59 - Average grade: 86.36 - added grade number 1 on loop 6 of grade 65 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:37:04 - Average grade: 86.58 - added grade number 2 on loop 6 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:37:06 - Average grade: 86.58 - added grade number 3 on loop 6 of grade 70 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:37:10 - Average grade: 86.63 - added grade number 4 on loop 6 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:37:13 - Average grade: 86.67 - added grade number 5 on loop 6 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+2025-04-22 08:37:17 - Average grade: 86.62 - added grade number 6 on loop 6 of grade 65 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 2
+Working on verse MAT 2:16 which has grade 70.83333333333333
+
+The peer reviews consistently affirm that the translation of Matthew 2:16 accurately conveys the conservative Christian theological message, including Herod's wrath and the infanticide of boys two years old and under in Bethlehem and surrounding areas. However, the main corrective focus is on linguistic authenticity: the current translations heavily rely on Mandarin Chinese vocabulary, idioms, and grammatical structures rather than authentic Gan Chinese forms. Key Mandarin terms (e.g., "杀光", "博士", "两岁以下") and expressions (e.g., "怒气冲冲") should be replaced with genuine Gan lexical items and idiomatic expressions. Sentence structures and syntax need adjustment to reflect Gan Chinese grammar and typical Gan syntactic patterns, avoiding Mandarin influence. It is essential to maintain theological accuracy and clarity while ensuring the translation sounds natural and culturally relevant to Gan speakers. Additionally, care must be taken not to reintroduce any previously removed content or stylistic elements. Overall, the translator should refine the text by employing authentic Gan vocabulary, idioms, phonology, and sentence constructions to produce a doctrinally faithful and linguistically authentic Gan Chinese Bible translation.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律见着嗰些博士骗倒了他，怒气冲冲，就派人把伯利恒同四边地区两岁以下个男孩全都杀光。
+new: 希律晓得嗰些学识人弄哩摆骗了他，心头火燥得紧，随即吩咐人，把伯利恒及周围地方所有两岁未满的男孩，全都杀掉，正合当时学识人算计个辰光。
+
+2025-04-22 08:37:33 - Average grade: 86.62 - reflected on verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:37 - Average grade: 86.80 - added grade number 1 on loop 7 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:40 - Average grade: 87.23 - added grade number 2 on loop 7 of grade 95 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:44 - Average grade: 87.09 - added grade number 3 on loop 7 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:47 - Average grade: 87.01 - added grade number 4 on loop 7 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:52 - Average grade: 87.12 - added grade number 5 on loop 7 of grade 92 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+2025-04-22 08:37:55 - Average grade: 87.07 - added grade number 6 on loop 7 of grade 75 to verse MAT 2:16 - Best grade: 87.03 - Iterations without improvement: 3
+New best grade: 87.06521739130437 after 4 iterations.  Improvement of 0.036231884057983166
+Working on verse MAT 2:16 which has grade 81.16666666666667
+
+The peer reviews consistently affirm that the translation of Matthew 2:16 faithfully and accurately conveys the conservative Christian theological message, including Herod's wrath and the massacre of male children two years old and under in Bethlehem and its vicinity. The main correction needed is to enhance linguistic authenticity by replacing Mandarin and Cantonese-influenced vocabulary, idioms, and grammatical structures with genuine Gan Chinese lexical items, particles, and sentence patterns. Phrases such as “杀掉”, “心头火燥得紧”, and “吩咐人” should be substituted with authentic Gan expressions. Sentence structures must be adjusted to reflect typical Gan syntax and phonology, avoiding Mandarin grammatical norms. The translation should maintain clarity and theological fidelity without reintroducing any content or stylistic elements previously removed. Overall, the translator is advised to focus on refining vocabulary, idiomatic expressions, and grammar to produce a culturally relevant and doctrinally faithful Gan Chinese Bible text.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律晓得嗰些学识人弄哩摆骗了他，心头火燥得紧，随即吩咐人，把伯利恒及周围地方所有两岁未满的男孩，全都杀掉，正合当时学识人算计个辰光。
+new: 希律一见着嗰些博士戏弄了他，心头火气腾腾，立刻差人去，杀光伯利恒及四周地方所有两岁以下男孩，按博士所指个年月做的。
+
+2025-04-22 08:38:12 - Average grade: 87.07 - reflected on verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:18 - Average grade: 86.14 - added grade number 1 on loop 8 of grade 60 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:21 - Average grade: 86.36 - added grade number 2 on loop 8 of grade 70 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:24 - Average grade: 86.75 - added grade number 3 on loop 8 of grade 92 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:27 - Average grade: 86.76 - added grade number 4 on loop 8 of grade 75 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:30 - Average grade: 86.73 - added grade number 5 on loop 8 of grade 70 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+2025-04-22 08:38:33 - Average grade: 86.81 - added grade number 6 on loop 8 of grade 85 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 0
+Working on verse MAT 2:16 which has grade 75.33333333333333
+
+Peer reviews of MAT 2:16 unanimously agree that the translation accurately preserves the conservative Christian theological content, faithfully depicting Herod's wrath and the massacre of male children two years old and under in Bethlehem and its vicinity as per the original Greek text. However, all reviewers highlight that the current translation predominantly uses Mandarin Chinese vocabulary, idioms, and grammatical structures rather than authentic Gan Chinese lexical items, phonology, idiomatic expressions, and syntax. Some influence from Cantonese is also noted and should be avoided. To improve, the translation must be revised to replace Mandarin- and Cantonese-influenced words and phrases with genuine Gan Chinese vocabulary and sentence patterns, including correct use of particles and Gan grammatical norms. Sentence structures should be adjusted to reflect typical Gan dialect syntax, ensuring linguistic authenticity and cultural relevance to Gan speakers. Care must be taken not to reintroduce previously removed content or stylistic elements. The translation should remain clear, doctrinally faithful, and stylistically appropriate while embodying Gan Chinese linguistic identity. Overall, the key correction is a thorough linguistic adaptation toward genuine Gan Chinese forms without compromising the theological message.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律一见着嗰些博士戏弄了他，心头火气腾腾，立刻差人去，杀光伯利恒及四周地方所有两岁以下男孩，按博士所指个年月做的。
+new: 希律一看那几个博士戏弄了伊，心里气得烧起，立即打发人去杀伯利恒并四围地界，所有两岁仔个仔子都杀光了，按博士告诉伊个时辰去算。
+
+2025-04-22 08:38:47 - Average grade: 86.81 - reflected on verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:38:50 - Average grade: 87.58 - added grade number 1 on loop 9 of grade 93 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:38:53 - Average grade: 87.62 - added grade number 2 on loop 9 of grade 95 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:38:56 - Average grade: 87.28 - added grade number 3 on loop 9 of grade 70 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:39:00 - Average grade: 87.37 - added grade number 4 on loop 9 of grade 95 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:39:06 - Average grade: 87.21 - added grade number 5 on loop 9 of grade 70 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+2025-04-22 08:39:08 - Average grade: 87.14 - added grade number 6 on loop 9 of grade 75 to verse MAT 2:16 - Best grade: 87.07 - Iterations without improvement: 1
+New best grade: 87.1449275362319 after 2 iterations.  Improvement of 0.0797101449275317
+Working on verse MAT 2:16 which has grade 83.0
+
+The peer reviews affirm that the translation of Matthew 2:16 accurately conveys the conservative Christian theological meaning, including Herod's anger and the massacre of boys two years old and under in Bethlehem and surrounding areas. However, the primary correction needed is to enhance linguistic authenticity by replacing Mandarin and Cantonese vocabulary, idioms, and grammatical structures with genuine Gan Chinese equivalents. This includes revising vocabulary, idiomatic expressions, phonology, and syntax to reflect true Gan dialect usage, avoiding Mandarin-influenced phrasing and grammar. The sentence structure should follow Gan Chinese norms, including correct use of particles and typical sentence patterns. Care must be taken not to reintroduce any previously removed content or stylistic features. The translation should remain clear, doctrinally faithful, culturally relevant, and natural sounding to Gan Chinese speakers. Overall, focus on linguistic refinement to produce a culturally and theologically faithful Gan Chinese Bible translation without compromising the conservative Christian message.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律一看那几个博士戏弄了伊，心里气得烧起，立即打发人去杀伯利恒并四围地界，所有两岁仔个仔子都杀光了，按博士告诉伊个时辰去算。
+new: 希律一见那几个博士耍弄了他，气得慌，马上派人去伯利恒和四围地方，凡是两岁以下的男孩都杀掉，照博士给他准的时间计算。
+
+2025-04-22 08:39:21 - Average grade: 87.14 - reflected on verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:23 - Average grade: 86.80 - added grade number 1 on loop 10 of grade 75 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:25 - Average grade: 86.58 - added grade number 2 on loop 10 of grade 65 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:29 - Average grade: 86.65 - added grade number 3 on loop 10 of grade 75 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:31 - Average grade: 86.58 - added grade number 4 on loop 10 of grade 65 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:34 - Average grade: 86.54 - added grade number 5 on loop 10 of grade 65 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+2025-04-22 08:39:37 - Average grade: 86.51 - added grade number 6 on loop 10 of grade 65 to verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 0
+Finilizing MAT 2:16
+
+old: 希律一见那几个博士耍弄了他，气得慌，马上派人去伯利恒和四围地方，凡是两岁以下的男孩都杀掉，照博士给他准的时间计算。
+new: 希律一看那几个博士戏弄了伊，心里气得烧起，立即打发人去杀伯利恒并四围地界，所有两岁仔个仔子都杀光了，按博士告诉伊个时辰去算。
+
+old grade: 68.33333333333333
+new grade: 83.0
+
+2025-04-22 08:39:37 - Average grade: 87.14 - finalized verse MAT 2:16 - Best grade: 87.14 - Iterations without improvement: 1
+2025-04-22 08:39:37 - Average grade: 87.14 - lowest grade 86.33333333333333 is above highest grade to reflect 86 - Best grade: 87.14 - Iterations without improvement: 2

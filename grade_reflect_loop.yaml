@@ -458,7 +458,7 @@ configs:
 
     reflection_loops_per_verse: 10
 
-    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nGive specific instructions when possible of how to convert the translation to more Gan Chinese and less Mandarin Chinese."
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nStrongly enforce that the student uses Gan Chinese vocabulary instead of Mandarin.\nStrongly verify that the student also uses Gan Chinese grammatical structures."
 
     #start_line: 23033 # MAT 1:1 This file
     #end_line: 24103 # MAT 28:20 This file
