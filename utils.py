@@ -332,27 +332,33 @@ def save_jsonl_updates(filename, data, unmodifed_data, reference_key ):
     :param reference_key: The key to use to find the particular verse in the data.
     :return: The updated data that was saved.
     """
-    data_hashed = hash_array_by_key( data, reference_key )
-    unmodified_hashed = hash_array_by_key( unmodifed_data, reference_key )
+
+    if os.path.exists(filename):
+        data_hashed = hash_array_by_key( data, reference_key )
+        unmodified_hashed = hash_array_by_key( unmodifed_data, reference_key )
 
 
-    changes_hashed = {}
-    for vref, modified in data_hashed.items():
-        if vref and vref in unmodified_hashed:
-            changes = get_changes( unmodified_hashed[vref], modified )
-            if len(changes) > 0:
-                changes_hashed[vref] = changes
+        changes_hashed = {}
+        for vref, modified in data_hashed.items():
+            if vref and vref in unmodified_hashed:
+                changes = get_changes( unmodified_hashed[vref], modified )
+                if len(changes) > 0:
+                    changes_hashed[vref] = changes
 
-    fresh_loaded = load_jsonl(filename)
-    fresh_hashed = hash_array_by_key( fresh_loaded, reference_key )
+        fresh_loaded = load_jsonl(filename)
+        fresh_hashed = hash_array_by_key( fresh_loaded, reference_key )
 
-    
-    #now apply the changes.
-    for vref, changes in changes_hashed.items():
-        if vref in fresh_hashed:
-            apply_changes( fresh_hashed[vref], changes )
+        
+        #now apply the changes.
+        for vref, changes in changes_hashed.items():
+            if vref in fresh_hashed:
+                apply_changes( fresh_hashed[vref], changes )
 
-    #Then save it back out.
-    save_jsonl(filename, fresh_loaded)
+        #Then save it back out.
+        save_jsonl(filename, fresh_loaded)
+    else:
+        #If the file doesn't exist, just save the new data.
+        save_jsonl(filename, data)
+        fresh_loaded = data
 
     return fresh_loaded

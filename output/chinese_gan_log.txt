@@ -8213,3 +8213,925 @@ old: 于是，希律悄悄叫来几位贤人，仔细询问他们那颗星星出
 new: 于是，希律偷偷请来几位贤士，仔细问他们星星出现的时间。
 
 2025-04-21 12:39:24 - Average grade: 85.06 - reflected on verse MAT 2:7 - Best grade: 85.06 - Iterations without improvement: 28
+Running config chinese_gan
+Focusing on and after start_line 23058
+Focusing on and before end_line 23080
+2025-04-21 12:48:24 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:48:27 - Average grade: 85.00 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:48:31 - Average grade: 85.00 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:48:34 - Average grade: 83.75 - added grade number 4 on loop 1 of grade 80 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:48:36 - Average grade: 84.00 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:48:39 - Average grade: 84.17 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 23058
+Focusing on and before end_line 23080
+2025-04-21 12:50:44 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:50:47 - Average grade: 85.00 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:50:52 - Average grade: 85.00 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:50:55 - Average grade: 83.25 - added grade number 4 on loop 1 of grade 78 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:50:58 - Average grade: 83.60 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:02 - Average grade: 83.83 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:05 - Average grade: 84.42 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:08 - Average grade: 84.42 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:11 - Average grade: 84.42 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:14 - Average grade: 84.04 - added grade number 4 on loop 1 of grade 82 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:20 - Average grade: 83.12 - added grade number 5 on loop 1 of grade 75 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:24 - Average grade: 83.33 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:33 - Average grade: 82.22 - added grade number 1 on loop 1 of grade 80 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:39 - Average grade: 82.56 - added grade number 2 on loop 1 of grade 82 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:44 - Average grade: 83.00 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:47 - Average grade: 83.22 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:50 - Average grade: 83.36 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:54 - Average grade: 83.44 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:51:58 - Average grade: 83.83 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:00 - Average grade: 83.83 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:03 - Average grade: 83.83 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:08 - Average grade: 83.83 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:12 - Average grade: 83.98 - added grade number 5 on loop 1 of grade 88 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:15 - Average grade: 83.96 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:18 - Average grade: 84.17 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:20 - Average grade: 84.17 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:24 - Average grade: 84.17 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:28 - Average grade: 83.67 - added grade number 4 on loop 1 of grade 75 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:31 - Average grade: 83.77 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:35 - Average grade: 83.83 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:40 - Average grade: 84.03 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:44 - Average grade: 84.03 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:47 - Average grade: 84.03 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:49 - Average grade: 84.03 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:52 - Average grade: 84.03 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:55 - Average grade: 84.03 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:53:59 - Average grade: 84.17 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:02 - Average grade: 84.38 - added grade number 2 on loop 1 of grade 88 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:05 - Average grade: 84.31 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:09 - Average grade: 84.27 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:12 - Average grade: 84.25 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:15 - Average grade: 84.31 - added grade number 6 on loop 1 of grade 88 to verse MAT 2:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:18 - Average grade: 84.77 - added grade number 1 on loop 1 of grade 88 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:21 - Average grade: 84.58 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:23 - Average grade: 84.52 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:25 - Average grade: 84.49 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:28 - Average grade: 84.47 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:31 - Average grade: 84.46 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:34 - Average grade: 84.19 - added grade number 1 on loop 1 of grade 82 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:36 - Average grade: 84.35 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:39 - Average grade: 84.41 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:42 - Average grade: 84.44 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:45 - Average grade: 84.45 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:48 - Average grade: 84.46 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:52 - Average grade: 84.52 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:56 - Average grade: 84.52 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:54:59 - Average grade: 84.52 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:02 - Average grade: 84.52 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:05 - Average grade: 84.52 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:09 - Average grade: 84.52 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:13 - Average grade: 84.56 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:15 - Average grade: 84.56 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:19 - Average grade: 84.56 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:21 - Average grade: 84.56 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:26 - Average grade: 84.56 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:30 - Average grade: 84.56 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:35 - Average grade: 84.60 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:37 - Average grade: 84.60 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:43 - Average grade: 84.60 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:45 - Average grade: 84.60 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:49 - Average grade: 84.60 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:53 - Average grade: 84.50 - added grade number 6 on loop 1 of grade 78 to verse MAT 2:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:55:56 - Average grade: 84.54 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:00 - Average grade: 84.54 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:05 - Average grade: 84.54 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:08 - Average grade: 84.54 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:09 - Average grade: 84.54 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:12 - Average grade: 84.54 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:15 - Average grade: 84.79 - added grade number 1 on loop 1 of grade 88 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:18 - Average grade: 84.68 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:20 - Average grade: 84.64 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:24 - Average grade: 84.62 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:27 - Average grade: 84.57 - added grade number 5 on loop 1 of grade 82 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:32 - Average grade: 84.57 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:36 - Average grade: 84.80 - added grade number 1 on loop 1 of grade 88 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:40 - Average grade: 84.70 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:43 - Average grade: 84.67 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:46 - Average grade: 84.65 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:48 - Average grade: 84.64 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:51 - Average grade: 84.63 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:54 - Average grade: 84.66 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:56:56 - Average grade: 84.66 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:00 - Average grade: 84.66 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:03 - Average grade: 84.66 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:06 - Average grade: 84.66 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:09 - Average grade: 84.62 - added grade number 6 on loop 1 of grade 82 to verse MAT 2:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:13 - Average grade: 84.65 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:19 - Average grade: 84.65 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:23 - Average grade: 84.65 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:25 - Average grade: 84.65 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:28 - Average grade: 84.65 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:31 - Average grade: 84.65 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:34 - Average grade: 84.67 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:38 - Average grade: 84.67 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:41 - Average grade: 84.67 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:45 - Average grade: 84.67 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:47 - Average grade: 84.67 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:49 - Average grade: 84.67 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:51 - Average grade: 84.16 - added grade number 1 on loop 1 of grade 75 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:54 - Average grade: 84.42 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:56 - Average grade: 84.51 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:57:59 - Average grade: 84.55 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:00 - Average grade: 84.47 - added grade number 5 on loop 1 of grade 75 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:03 - Average grade: 84.51 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:05 - Average grade: 84.53 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:10 - Average grade: 84.53 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:12 - Average grade: 84.53 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:17 - Average grade: 84.53 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:19 - Average grade: 84.53 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:21 - Average grade: 84.53 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:27 - Average grade: 84.56 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:30 - Average grade: 84.56 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:33 - Average grade: 84.32 - added grade number 3 on loop 1 of grade 70 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:36 - Average grade: 84.38 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:40 - Average grade: 84.41 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:42 - Average grade: 84.44 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:45 - Average grade: 84.46 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:48 - Average grade: 84.23 - added grade number 2 on loop 1 of grade 75 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:53 - Average grade: 84.36 - added grade number 3 on loop 1 of grade 88 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:56 - Average grade: 84.38 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:58:59 - Average grade: 84.40 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:04 - Average grade: 84.41 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:10 - Average grade: 84.43 - added grade number 1 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:13 - Average grade: 84.43 - added grade number 2 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:16 - Average grade: 84.43 - added grade number 3 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:19 - Average grade: 84.43 - added grade number 4 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:22 - Average grade: 84.43 - added grade number 5 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-21 12:59:25 - Average grade: 84.43 - added grade number 6 on loop 1 of grade 85 to verse MAT 2:23 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 84.43478260869566 after 1 iterations.  Improvement of 84.43478260869566
+Working on verse MAT 2:19 which has grade 81.66666666666667
+
+The translation accurately conveys the conservative Christian meaning of Matthew 2:19 and maintains theological integrity. However, it uses standard Mandarin vocabulary and syntax, lacking the distinct linguistic and stylistic features of Gan Chinese. To improve, incorporate Gan Chinese-specific vocabulary and expressions, such as local terms for 'the Lord's angel' and more colloquial phrases for 'appears in a dream.' Adjust sentence structures and function words to reflect Gan grammar and oral rhythm. These changes will enhance the translation's authenticity and accessibility for Gan-speaking readers while preserving its reverent tone and doctrinal accuracy.
+
+source: Τελευτήσαντος δὲ τοῦ Ἡρῴδου ἰδοὺ ἄγγελος Κυρίου κατ᾽ ὄναρ φαίνεται τῷ Ἰωσὴφ ἐν Αἰγύπτῳ
+old: 希律 死后，主的天使在梦中向在 埃及 的 约瑟 显现，说：
+new: 希律死了后，主公的使者在梦里同正在埃及的约瑟显现讲：
+
+2025-04-21 12:59:35 - Average grade: 84.43 - reflected on verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:38 - Average grade: 84.58 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:44 - Average grade: 84.58 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:46 - Average grade: 84.58 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:50 - Average grade: 84.58 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:52 - Average grade: 84.58 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+2025-04-21 12:59:56 - Average grade: 84.60 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:19 - Best grade: 84.43 - Iterations without improvement: 0
+New best grade: 84.60144927536231 after 1 iterations.  Improvement of 0.1666666666666572
+Working on verse MAT 2:21 which has grade 82.5
+
+The translation of Matthew 2:21 is accurate and maintains a conservative Christian perspective, correctly conveying Joseph's actions and reverent references to the child and his mother. However, it predominantly uses standard Mandarin Chinese vocabulary and formal structures, lacking the distinct linguistic features of Gan Chinese. To improve, the translation should incorporate Gan dialect elements such as local vocabulary (e.g., using '妈咪' instead of '母亲'), idiomatic expressions, colloquial particles, and syntactic patterns characteristic of Gan speech. Examples include replacing '就起来' with Gan expressions like '咯起来' or '起身咯,' substituting '返回' with '回去' or '转去,' and adapting phrases like '带着孩子和祂母亲' to Gan colloquialisms such as '拎起小孩同伊娘' or '揹着孩儿搭祂娘.' These adjustments will provide a more authentic, contemporary Gan Chinese style while preserving the original meaning and theological reverence.
+
+source: ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.
+old: 约瑟 就起来，带着孩子和祂母亲返回 以色列 。
+new: 约瑟 咯起来，拎起小孩同伊娘，回去以色列。
+
+2025-04-21 13:00:09 - Average grade: 84.60 - reflected on verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:20 - Average grade: 84.71 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:30 - Average grade: 84.49 - added grade number 2 on loop 2 of grade 75 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:35 - Average grade: 84.49 - added grade number 3 on loop 2 of grade 80 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:40 - Average grade: 84.44 - added grade number 4 on loop 2 of grade 75 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:44 - Average grade: 84.41 - added grade number 5 on loop 2 of grade 75 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+2025-04-21 13:00:50 - Average grade: 84.38 - added grade number 6 on loop 2 of grade 75 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 0
+Working on verse MAT 2:21 which has grade 77.5
+
+The peer reviews of the MAT 2:21 translation identify that, although the conservative Christian meaning is preserved, the language is overly colloquial and lacks the solemnity appropriate for biblical text. The placement of the particle '咯' should be corrected, preferably positioned after the verb '起来' or omitted for smoother flow. Expressions such as '咯起来' and '拎起' are considered too informal and should be replaced with more respectful Gan dialect equivalents. The phrase '同伊娘' can be improved for naturalness and reverence, perhaps by using alternate Gan pronouns or respectful terms for 'his mother.' The phrase '回去以色列' is clear but could better align with biblical style by adding '地' to form '回到以色列地.' Overall, the translation should maintain theological fidelity and reverence, incorporate more authentic Gan dialect features—such as appropriate vocabulary, particles, and syntax—and avoid overly casual expressions to enhance readability and preserve the sacred tone of scripture.
+
+source: ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.
+old: 约瑟 咯起来，拎起小孩同伊娘，回去以色列。
+new: 约瑟起来，接过小孩子和他的母亲，回到以色列地。
+
+2025-04-21 13:01:02 - Average grade: 84.38 - reflected on verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:08 - Average grade: 84.28 - added grade number 1 on loop 3 of grade 75 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:12 - Average grade: 84.56 - added grade number 2 on loop 3 of grade 88 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:15 - Average grade: 84.61 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:18 - Average grade: 84.63 - added grade number 4 on loop 3 of grade 85 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:22 - Average grade: 84.65 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+2025-04-21 13:01:25 - Average grade: 84.66 - added grade number 6 on loop 3 of grade 85 to verse MAT 2:21 - Best grade: 84.60 - Iterations without improvement: 1
+New best grade: 84.65942028985506 after 2 iterations.  Improvement of 0.05797101449275033
+Working on verse MAT 2:2 which has grade 82.83333333333333
+
+The translation of Matthew 2:2 accurately conveys the conservative Christian meaning and maintains reverence consistent with the original Greek text. However, all peer reviews agree that the language style is predominantly standard Mandarin Chinese and lacks distinctive Gan Chinese features. To improve, the translation should incorporate Gan-specific vocabulary, sentence particles, pronouns, and syntactic structures characteristic of Gan dialects. This includes replacing standard Mandarin words like '哪里' with Gan equivalents, adjusting word order to match Gan patterns, and employing colloquial expressions and particles common in Gan speech. These adaptations will enhance the naturalness, authenticity, and readability for Gan-speaking audiences without compromising the conservative Christian message and theological accuracy.
+
+source: λέγοντες· ποῦ ἐστιν ὁ τεχθεὶς βασιλεὺς τῶν Ἰουδαίων; εἴδομεν γὰρ αὐτοῦ τὸν ἀστέρα ἐν τῇ ἀνατολῇ καὶ ἤλθομεν προσκυνῆσαι αὐτῷ.
+old: 问道：“那生来做 犹太 人之王的在哪里呢？我们在东方看见祂的星，特来朝拜祂。”
+new: 问话哩：“生下来作犹太人王个，安个地方啊？俺们在东方看见祂个星，特地来拜祂啊。”
+
+2025-04-21 13:01:33 - Average grade: 84.66 - reflected on verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:37 - Average grade: 84.97 - added grade number 1 on loop 2 of grade 90 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:39 - Average grade: 84.93 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:44 - Average grade: 84.87 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:47 - Average grade: 84.81 - added grade number 4 on loop 2 of grade 82 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:50 - Average grade: 84.80 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+2025-04-21 13:01:52 - Average grade: 84.81 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:2 - Best grade: 84.66 - Iterations without improvement: 0
+New best grade: 84.81159420289855 after 1 iterations.  Improvement of 0.15217391304348382
+Working on verse MAT 2:5 which has grade 83.33333333333333
+
+The translation of Matthew 2:5 is theologically accurate and maintains a conservative Christian interpretation well, correctly identifying Bethlehem in Judea as the Messiah's birthplace and referencing prophecy. However, all peer reviewers note that the language is standard Mandarin Chinese rather than Gan Chinese. To improve, the translation should incorporate Gan dialect features: replace Mandarin vocabulary such as '因为' and '的' with Gan equivalents; adjust sentence structures, pronouns, and particles to match Gan syntax; and use colloquial or idiomatic expressions typical of Gan. These adaptations will make the translation more authentic and natural for Gan-speaking readers without compromising the theological meaning.
+
+source: οἱ δὲ εἶπον αὐτῷ· ἐν Βηθλεὲμ τῆς Ἰουδαίας· οὕτω γὰρ γέγραπται διὰ τοῦ προφήτου·
+old: 他们回答说：“在 犹太 的 伯利恒 ，因为先知这样记载，
+new: 佢哋回答希律王话：“就系犹太个伯利恒，个所在就系有先知讲起过个。”
+
+2025-04-21 13:02:01 - Average grade: 84.81 - reflected on verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:04 - Average grade: 84.58 - added grade number 1 on loop 2 of grade 78 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:06 - Average grade: 84.58 - added grade number 2 on loop 2 of grade 78 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:08 - Average grade: 84.68 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:10 - Average grade: 84.73 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:13 - Average grade: 84.68 - added grade number 5 on loop 2 of grade 75 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+2025-04-21 13:02:16 - Average grade: 84.71 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 0
+Working on verse MAT 2:5 which has grade 81.0
+
+The peer reviewers unanimously affirm that the translation of Matthew 2:5 accurately conveys the conservative Christian theological message consistent with the original Greek text. The primary correction needed is linguistic and stylistic: the current translation relies heavily on Mandarin Chinese vocabulary, sentence structures, and particles rather than authentic Gan Chinese dialect features. To improve, the translation should replace Mandarin pronouns, particles (such as '个'), and common Mandarin phrases ('因为', '的', '佢哋回答希律王话') with Gan-specific vocabulary, idioms, particles, and syntactic patterns. Adjusting sentence flow and word order to align with Gan linguistic norms will enhance naturalness and readability for Gan speakers. Additionally, reviewers note that some expressions inadvertently carry Cantonese influences and should be replaced with Gan equivalents. There is also a suggestion to explore more vernacular terms for theological concepts where appropriate to increase local authenticity. Crucially, all changes must preserve the doctrinal meaning and conservative Christian perspective without altering content. This focused linguistic localization will improve the translation's faithfulness to Gan Chinese language and culture while maintaining theological integrity.
+
+source: οἱ δὲ εἶπον αὐτῷ· ἐν Βηθλεὲμ τῆς Ἰουδαίας· οὕτω γὰρ γέγραπται διὰ τοῦ προφήτου·
+old: 佢哋回答希律王话：“就系犹太个伯利恒，个所在就系有先知讲起过个。”
+new: 渠哋答希律王话：“就在犹太伯利恒，因先知讲过该所在。”
+
+2025-04-21 13:02:30 - Average grade: 84.71 - reflected on verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:33 - Average grade: 85.01 - added grade number 1 on loop 3 of grade 88 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:38 - Average grade: 84.95 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:40 - Average grade: 84.93 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:43 - Average grade: 84.84 - added grade number 4 on loop 3 of grade 78 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:46 - Average grade: 84.85 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+2025-04-21 13:02:49 - Average grade: 84.80 - added grade number 6 on loop 3 of grade 78 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 1
+Working on verse MAT 2:5 which has grade 83.16666666666667
+
+The peer reviewers unanimously confirm that the translation of Matthew 2:5 faithfully preserves the conservative Christian theological message, correctly locating Bethlehem of Judea and referencing prophecy. The key correction is enhancing the linguistic and stylistic authenticity to Gan Chinese. This involves replacing Mandarin-influenced vocabulary, pronouns, and particles (e.g., '因', '的', '该所在', '渠哋答希律王话') with Gan dialect equivalents, including Gan-specific pronouns, idioms, particles, and sentence structures. It is recommended to avoid Mandarin formal phrases and Cantonese influences, instead adopting more natural, colloquial Gan expressions such as more Gan-style speech markers or restructured phrases for "the place mentioned by the prophet." These changes will make the translation sound more native and accessible to Gan speakers, preserving the clear conservative Christian doctrinal meaning and avoiding any alteration of content or theological perspective. Overall, the focus is on linguistic localization to align better with Gan Chinese speech patterns while maintaining doctrinal accuracy.
+
+source: οἱ δὲ εἶπον αὐτῷ· ἐν Βηθλεὲμ τῆς Ἰουδαίας· οὕτω γὰρ γέγραπται διὰ τοῦ προφήτου·
+old: 渠哋答希律王话：“就在犹太伯利恒，因先知讲过该所在。”
+new: 渠们答希律王讲：“就在犹太伯利恒个所在，先知早就写过这个所在。”
+
+2025-04-21 13:02:59 - Average grade: 84.80 - reflected on verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:02 - Average grade: 85.01 - added grade number 1 on loop 4 of grade 88 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:04 - Average grade: 84.95 - added grade number 2 on loop 4 of grade 85 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:07 - Average grade: 84.88 - added grade number 3 on loop 4 of grade 82 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:10 - Average grade: 84.81 - added grade number 4 on loop 4 of grade 78 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:14 - Average grade: 84.85 - added grade number 5 on loop 4 of grade 88 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+2025-04-21 13:03:18 - Average grade: 84.88 - added grade number 6 on loop 4 of grade 88 to verse MAT 2:5 - Best grade: 84.81 - Iterations without improvement: 2
+New best grade: 84.87681159420289 after 3 iterations.  Improvement of 0.06521739130434412
+Working on verse MAT 2:3 which has grade 83.66666666666667
+
+1. Replace standard Mandarin phrases such as "心里不安" with more colloquial Gan Chinese expressions like "心里慌张," "心头烦乱," or "心里惊慌" to better express Herod's disturbance.
+2. Substitute "全城的人都感到不安" with Gan dialect equivalents like "整个城里的人都乱了阵脚," "城里的人心慌意乱," or "整个耶路撒冷都乱了起来" to reflect natural Gan speech.
+3. Use less formal terms for the city's inhabitants, for example, changing "全城的人" to "城里的人" or "城里头的人".
+4. Incorporate Gan-specific vocabulary, sentence structures, and possibly particles to create a more authentic and contemporary Gan Chinese style.
+5. Ensure all changes preserve the conservative Christian interpretation and theological soundness present in the original translation.
+
+source: Ἀκούσας δὲ Ἡρῴδης ὁ βασιλεὺς ἐταράχθη καὶ πᾶσα Ἱεροσόλυμα μετ᾽ αὐτοῦ,
+old: 希律 王听后，心里不安，全城的人都感到不安。
+new: 希律王听到后，心头烦乱，整个耶路撒冷都乱了起来。
+
+2025-04-21 13:03:29 - Average grade: 84.88 - reflected on verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:35 - Average grade: 84.93 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:38 - Average grade: 84.93 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:41 - Average grade: 84.86 - added grade number 3 on loop 2 of grade 80 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:47 - Average grade: 84.88 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:51 - Average grade: 84.89 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+2025-04-21 13:03:55 - Average grade: 84.90 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:3 - Best grade: 84.88 - Iterations without improvement: 0
+New best grade: 84.89855072463767 after 1 iterations.  Improvement of 0.021739130434781373
+Working on verse MAT 2:1 which has grade 83.83333333333333
+
+The peer reviews commend the translation's faithful and theologically sound rendering of MAT 2:1 from the original Greek, accurately reflecting Jesus' birth during King Herod's reign and the arrival of wise men from the East. However, all reviewers note that the current translation uses standard Mandarin vocabulary and syntax, which lacks Gan Chinese linguistic features. To improve, the translation should incorporate Gan dialect characteristics by using more colloquial and locally familiar terms—for example, replacing '希律 王执政期间' with a more Gan expression like '希律王在位个辰光,' omitting the particle '的' in '犹太的伯利恒城' to become '犹太伯利恒城,' and substituting '几位智者' with a term more common in Gan speech such as '几个人' or other local equivalents. Additionally, verbs like '来到' could be replaced with Gan-style expressions such as '到来' or '到达.' Sentence structures and particles should be adjusted to reflect Gan syntax and speech rhythm, potentially using local pronouns or simpler constructions to sound more natural and authentic while maintaining reverence and theological clarity. Overall, the main actionable correction is to adapt the translation linguistically to Gan Chinese dialect without compromising the conservative Christian message.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 希律 王执政期间，耶稣降生在 犹太 的 伯利恒 城。   当时有几位智者 从东方来到 耶路撒冷 ，
+new: 希律王在位个辰光，耶稣生在犹太伯利恒城。那辰光，有几个人从东方到耶路撒冷来。
+
+2025-04-21 13:04:07 - Average grade: 84.90 - reflected on verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:10 - Average grade: 84.73 - added grade number 1 on loop 2 of grade 80 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:14 - Average grade: 84.84 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:17 - Average grade: 84.88 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:20 - Average grade: 84.89 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:24 - Average grade: 84.91 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+2025-04-21 13:04:27 - Average grade: 84.91 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:1 - Best grade: 84.90 - Iterations without improvement: 0
+New best grade: 84.91304347826087 after 1 iterations.  Improvement of 0.014492753623201793
+Working on verse MAT 2:12 which has grade 83.83333333333333
+
+The translation of Matthew 2:12 accurately conveys the original Greek text's meaning and maintains a conservative Christian perspective. However, all reviewers note that it currently reads like standard Mandarin Chinese rather than Gan Chinese. To improve, the translation should adopt more localized Gan vocabulary and syntactic structures, such as using Gan-specific pronouns (e.g., '佢哋'), colloquial expressions for 'received instruction in a dream' (e.g., '梦里指引咯'), and Gan-style negations (e.g., '唔好返' instead of '不可回'). Additionally, phrases like '便改道返回了家乡' should be rephrased into natural Gan expressions (e.g., '就转路返老家'). These changes will enhance the translation's regional authenticity while preserving its clear, reverent tone and theological accuracy.
+
+source: καὶ χρηματισθέντες κατ᾽ ὄναρ μὴ ἀνακάμψαι πρὸς Ἡρῴδην, δι᾽ ἄλλης ὁδοῦ ἀνεχώρησαν εἰς τὴν χώραν αὐτῶν.
+old: 他们在梦中得到指示，不可回 希律 那里，便改道返回了家乡。
+new: 佢哋梦里指引咯，话唔好返去希律嗰度，就转路返老家去啦。
+
+2025-04-21 13:04:37 - Average grade: 84.91 - reflected on verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:04:40 - Average grade: 85.18 - added grade number 1 on loop 2 of grade 90 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:04:43 - Average grade: 85.07 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:04:47 - Average grade: 85.08 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:04:51 - Average grade: 85.05 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:04:56 - Average grade: 85.03 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+2025-04-21 13:05:00 - Average grade: 85.02 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:12 - Best grade: 84.91 - Iterations without improvement: 0
+New best grade: 85.02173913043478 after 1 iterations.  Improvement of 0.10869565217390686
+Working on verse MAT 2:21 which has grade 83.83333333333333
+
+The peer reviews consistently affirm that the translation of Matthew 2:21 accurately conveys the conservative Christian meaning with appropriate reverence for Jesus as 'the child' and for his mother. The main corrections focus on adapting the language into authentic Gan Chinese rather than standard Mandarin. To improve, the translation should: (1) replace Mandarin expressions like '起来', '接过', '他的母亲', and '回到以色列地' with Gan dialect equivalents that maintain reverence but sound natural and respectful; for example, using colloquial Gan verbs and pronouns such as '起身' or '起厝' instead of '起来', '揽着' instead of '接过', and '佢阿妈' or '其母' instead of '他的母亲'; (2) adjust sentence structure and particles to fit Gan speech patterns without becoming overly colloquial or informal; avoid excessively casual words like '咯起来' or '拎起'; (3) render place names with respectful and natural Gan forms, such as '返去以色列地' or '归返以色列厝' instead of '回到以色列地'; (4) maintain theological fidelity and reverence by choosing words and expressions that clearly honor the sacred text; (5) improve fluidity and readability by adopting Gan dialect syntax and idiomatic expressions without compromising solemnity. These steps will produce a faithful, reverent, and regionally authentic Gan Chinese translation of Matthew 2:21.
+
+source: ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.
+old: 约瑟起来，接过小孩子和他的母亲，回到以色列地。
+new: 约瑟起身，揽着小孩子同其母，归返以色列厝。
+
+2025-04-21 13:05:09 - Average grade: 85.02 - reflected on verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:12 - Average grade: 85.07 - added grade number 1 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:16 - Average grade: 85.07 - added grade number 2 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:19 - Average grade: 85.07 - added grade number 3 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:23 - Average grade: 85.07 - added grade number 4 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:25 - Average grade: 85.07 - added grade number 5 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+2025-04-21 13:05:30 - Average grade: 85.07 - added grade number 6 on loop 4 of grade 85 to verse MAT 2:21 - Best grade: 85.02 - Iterations without improvement: 0
+New best grade: 85.07246376811595 after 1 iterations.  Improvement of 0.05072463768117075
+Working on verse MAT 2:22 which has grade 83.83333333333333
+
+The translation accurately reflects the original Greek text and conservative Christian theology, clearly conveying Joseph's fear of returning to Judea due to Archelaus' rule and the divine instruction received in a dream to go to Galilee. However, the language style is currently standard Mandarin, lacking the distinct vocabulary, sentence structures, colloquialisms, and particles characteristic of Gan Chinese. To improve, revise the translation by incorporating region-specific Gan vocabulary (e.g., replacing '听说' with '闻讲' or '晓得'), adjust sentence rhythm and syntax to reflect Gan speech patterns, use conversational and idiomatic expressions typical of Gan, and include sentence-ending particles common in Gan dialect. These changes will make the translation more natural and contemporary for Gan speakers while preserving theological accuracy and clarity.
+
+source: ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει ἐπὶ τῆς Ἰουδαίας ἀντὶ Ἡρῴδου τοῦ πατρὸς αὐτοῦ, ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ᾽ ὄναρ ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας,
+old: 但 约瑟 听说 亚基劳 继承他父亲 希律 的王位统治 犹太 ，就不敢回那里。这时，他在梦中得到主的指示，便前往 加利利 地区，
+new: 约瑟闻讲，亚基劳接替他爸希律作犹太王，心里怕怕，唔敢回去嗰边嘞。后来，主使者梦里指点佢，佢就走去加利利个地方咯。
+
+2025-04-21 13:05:38 - Average grade: 85.07 - reflected on verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:42 - Average grade: 84.91 - added grade number 1 on loop 2 of grade 80 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:45 - Average grade: 85.01 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:48 - Average grade: 85.01 - added grade number 3 on loop 2 of grade 82 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:53 - Average grade: 85.07 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:56 - Average grade: 85.08 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+2025-04-21 13:05:59 - Average grade: 85.11 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:22 - Best grade: 85.07 - Iterations without improvement: 0
+New best grade: 85.10869565217392 after 1 iterations.  Improvement of 0.036231884057968955
+Working on verse MAT 2:1 which has grade 84.16666666666667
+
+The translation of Matthew 2:1 is accurate and doctrinally sound from a conservative Christian viewpoint, correctly portraying Jesus' birth in Bethlehem during King Herod's reign and the arrival of wise men from the East. However, the translation style currently leans toward standard Mandarin Chinese, lacking distinctive Gan Chinese linguistic features. To improve, the translation should incorporate more authentic Gan dialect characteristics, including localized vocabulary, idiomatic expressions, particles, and sentence structures. For example, temporal phrases like "个辰光" should be replaced with more typical Gan expressions; phrases such as "几个人" could be rendered with Gan dialect terms or structures (e.g., "几个人仔" or "几咯人"); place names like "犹太伯利恒城" may be simplified or adapted to Gan usage; and sentence connectors and rhythm should reflect Gan syntax to sound more natural and colloquial. These stylistic adjustments should preserve the theological accuracy and reverence appropriate to a conservative Christian translation. No content additions or doctrinal changes are needed. The focus is solely on adapting the language to better reflect the Gan dialect while maintaining clarity and conservative Christian integrity.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 希律王在位个辰光，耶稣生在犹太伯利恒城。那辰光，有几个人从东方到耶路撒冷来。
+new: 希律王在朝个辰光，耶稣生在犹太伯利恒。嗰辰光，有几咯人仔从东方来咯耶路撒冷。
+
+2025-04-21 13:06:13 - Average grade: 85.11 - reflected on verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:16 - Average grade: 85.14 - added grade number 1 on loop 3 of grade 85 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:19 - Average grade: 85.14 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:22 - Average grade: 85.19 - added grade number 3 on loop 3 of grade 88 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:27 - Average grade: 85.18 - added grade number 4 on loop 3 of grade 85 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:32 - Average grade: 85.20 - added grade number 5 on loop 3 of grade 88 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+2025-04-21 13:06:36 - Average grade: 85.14 - added grade number 6 on loop 3 of grade 78 to verse MAT 2:1 - Best grade: 85.11 - Iterations without improvement: 0
+New best grade: 85.1376811594203 after 1 iterations.  Improvement of 0.028985507246375164
+Working on verse MAT 2:3 which has grade 84.16666666666667
+
+The translation of Matthew 2:3 accurately conveys King Herod's disturbance and Jerusalem's turmoil from a conservative Christian perspective. However, the style is more standard Mandarin than Gan Chinese. To better fulfill the adaptation goal, replace Mandarin expressions like '心头烦乱' with colloquial Gan phrases such as '心肝慌乱' or '心头急噼噼.' Similarly, rephrase '整个耶路撒冷都乱了起来' using Gan idiomatic expressions like '全耶路撒冷都起哄了' or '整个耶路撒冷都乱做一团了.' Incorporate Gan-specific vocabulary, sentence structures, and particles where appropriate to achieve a more authentic Gan Chinese style without altering the conservative Christian meaning. Avoid repeating past changes intentionally removed and ensure all modifications preserve theological accuracy and clarity.
+
+source: Ἀκούσας δὲ Ἡρῴδης ὁ βασιλεὺς ἐταράχθη καὶ πᾶσα Ἱεροσόλυμα μετ᾽ αὐτοῦ,
+old: 希律王听到后，心头烦乱，整个耶路撒冷都乱了起来。
+new: 希律王听着后，心肝慌乱，整个耶路撒冷都乱做一团了。
+
+2025-04-21 13:06:44 - Average grade: 85.14 - reflected on verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:06:48 - Average grade: 85.04 - added grade number 1 on loop 3 of grade 82 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:06:52 - Average grade: 85.11 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:06:56 - Average grade: 85.13 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:07:01 - Average grade: 85.14 - added grade number 4 on loop 3 of grade 85 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:07:03 - Average grade: 85.15 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+2025-04-21 13:07:06 - Average grade: 85.15 - added grade number 6 on loop 3 of grade 85 to verse MAT 2:3 - Best grade: 85.14 - Iterations without improvement: 0
+New best grade: 85.15217391304348 after 1 iterations.  Improvement of 0.014492753623187582
+Working on verse MAT 2:3 which has grade 84.5
+
+The current translation of Matthew 2:3 accurately conveys King Herod's disturbance and Jerusalem's unrest from a conservative Christian perspective but leans too much on Mandarin colloquial expressions. To better align with Gan Chinese style, replace phrases like "心肝慌乱" with more regionally authentic Gan expressions such as "心惊胆战," "心头乱跳," or "心肝七上八落." Similarly, revise "整个耶路撒冷都乱做一团了" to use Gan idiomatic phrases and grammar, for example, "整个耶路撒冷跟着佢哩动乱起来咯," "整个耶路撒冷都乱咯," or "全城个耶路撒冷都乱成一锅粥了." Also, consider Gan-specific vocabulary for "整个" and incorporate dialect particles to enhance authenticity. Importantly, avoid reintroducing previously removed expressions and ensure all changes maintain theological accuracy, clarity, and reverence consistent with a conservative Christian viewpoint. Minor syntactic and lexical adjustments will increase naturalness and fluency for Gan-speaking readers while preserving the original scriptural meaning.
+
+source: Ἀκούσας δὲ Ἡρῴδης ὁ βασιλεὺς ἐταράχθη καὶ πᾶσα Ἱεροσόλυμα μετ᾽ αὐτοῦ,
+old: 希律王听着后，心肝慌乱，整个耶路撒冷都乱做一团了。
+new: 希律王听了后，心肝七上八落，整个耶路撒冷跟着佢哩动乱起来咯。
+
+2025-04-21 13:07:16 - Average grade: 85.15 - reflected on verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:19 - Average grade: 85.30 - added grade number 1 on loop 4 of grade 88 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:23 - Average grade: 85.17 - added grade number 2 on loop 4 of grade 82 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:26 - Average grade: 85.17 - added grade number 3 on loop 4 of grade 85 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:30 - Average grade: 85.21 - added grade number 4 on loop 4 of grade 88 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:33 - Average grade: 85.20 - added grade number 5 on loop 4 of grade 85 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+2025-04-21 13:07:37 - Average grade: 85.20 - added grade number 6 on loop 4 of grade 85 to verse MAT 2:3 - Best grade: 85.15 - Iterations without improvement: 0
+New best grade: 85.19565217391305 after 1 iterations.  Improvement of 0.043478260869562746
+Working on verse MAT 2:9 which has grade 84.5
+
+The peer review suggests that while the translation accurately conveys the meaning of Matthew 2:9 and preserves the conservative Christian interpretation, it currently reads in standard Mandarin Chinese rather than Gan Chinese. To improve, the translator should incorporate Gan-specific vocabulary, idiomatic expressions, and sentence structures that reflect the distinctive phonological and syntactic features of Gan. This includes replacing Mandarin terms like "忽然" with more regionally authentic Gan expressions, adjusting sentence rhythms and grammatical patterns to match Gan speech, and simplifying formal Mandarin constructions where Gan is more direct or colloquial. These adjustments will enhance the authenticity and naturalness of the translation for Gan-speaking audiences without compromising theological fidelity.
+
+source: οἱ δὲ ἀκούσαντες τοῦ βασιλέως ἐπορεύθησαν· καὶ ἰδοὺ ὁ ἀστὴρ ὃν εἶδον ἐν τῇ ἀνατολῇ προῆγεν αὐτούς, ἕως ἐλθὼν ἔστη ἐπάνω οὗ ἦν τὸ παιδίον·
+old: 他们听了王的吩咐，就去了。忽然，那颗曾在东方出现的星在前引领他们，一直来到小孩所在的地方，然后停在上空。
+new: 佢哋听咯王话，就去咯。星辰就是佢哋在东方看见个，领住佢哋，一直行到小孩所在个地方，就停在头顶。
+
+2025-04-21 13:07:46 - Average grade: 85.20 - reflected on verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:07:52 - Average grade: 85.22 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:07:55 - Average grade: 85.33 - added grade number 2 on loop 2 of grade 90 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:08:01 - Average grade: 85.33 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:08:04 - Average grade: 85.34 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:08:11 - Average grade: 85.31 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+2025-04-21 13:08:15 - Average grade: 85.33 - added grade number 6 on loop 2 of grade 90 to verse MAT 2:9 - Best grade: 85.20 - Iterations without improvement: 0
+New best grade: 85.33333333333334 after 1 iterations.  Improvement of 0.13768115942029624
+Working on verse MAT 2:16 which has grade 84.5
+
+The translation of Matthew 2:16 accurately reflects the original Greek text and maintains a conservative Christian interpretation, clearly expressing King Herod's wrath and his decree to kill all male children in Bethlehem aged two and under. However, the language style is predominantly standard Mandarin Chinese and lacks the distinctive features of Gan Chinese. To improve the translation's authenticity and localization, the student should incorporate Gan-specific vocabulary, idiomatic expressions, sentence structures, and particles. For example, replacing Mandarin phrases such as '大为恼怒' with colloquial Gan expressions like '忒生气' or '忒恼火', substituting '杀光' with a more regionally natural phrase, and adjusting the sentence flow to reflect Gan syntax will enhance the regional flavor. Maintaining clarity and reverence is crucial, so these linguistic changes should preserve the solemn tone and theological accuracy. Overall, the translation is theologically sound but requires stylistic modifications to better reflect Gan Chinese linguistic characteristics.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律 见自己被智者愚弄，大为恼怒，便照着智者所说的时间推算，下令把 伯利恒 及附近两岁以下的男孩杀光。
+new: 希律见着自己被那几个智者捉弄，忒生气，就照着他们所告诉的时间，吩咐把伯利恒跟附近地方所有两岁以下的男孩全部剿灭。
+
+2025-04-21 13:08:26 - Average grade: 85.33 - reflected on verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:30 - Average grade: 85.36 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:33 - Average grade: 85.36 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:36 - Average grade: 85.36 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:39 - Average grade: 85.36 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:42 - Average grade: 85.36 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+2025-04-21 13:08:44 - Average grade: 85.36 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:16 - Best grade: 85.33 - Iterations without improvement: 0
+New best grade: 85.35507246376812 after 1 iterations.  Improvement of 0.021739130434781373
+Working on verse MAT 2:22 which has grade 84.66666666666667
+
+The translation of Matthew 2:22 faithfully captures the original meaning and conservative Christian theology. However, the language currently leans too much toward standard Mandarin or other southern dialects, lacking full incorporation of Gan Chinese linguistic features. To improve, revise key phrases to use Gan-specific vocabulary, idioms, sentence structures, and particles. For example, replace "心里怕怕" with more authentic Gan expressions for fear, adjust negations like "唔敢" to Gan equivalents, and render "主使者梦里指点佢" with a more locally idiomatic phrase referencing the angel's guidance. Also, phrases describing movement, such as "佢就走去加利利个地方咯", should be adapted to reflect Gan speech patterns, possibly using localized terms for "go" and "place." These changes will better fulfill the goal of adapting the translation from Mandarin into natural, contemporary Gan Chinese, while preserving the theological meaning and clarity.
+
+source: ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει ἐπὶ τῆς Ἰουδαίας ἀντὶ Ἡρῴδου τοῦ πατρὸς αὐτοῦ, ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ᾽ ὄναρ ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας,
+old: 约瑟闻讲，亚基劳接替他爸希律作犹太王，心里怕怕，唔敢回去嗰边嘞。后来，主使者梦里指点佢，佢就走去加利利个地方咯。
+new: 约瑟听讲亚基劳顶替他老豆希律当犹太王，心肝发怵，唔敢返嗰边去。后来，主公使者梦里来教佢，佢就转去加利利厝边个地方咯。
+
+2025-04-21 13:08:55 - Average grade: 85.36 - reflected on verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:08:58 - Average grade: 85.24 - added grade number 1 on loop 3 of grade 82 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:09:01 - Average grade: 85.15 - added grade number 2 on loop 3 of grade 78 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:09:04 - Average grade: 85.22 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:09:08 - Average grade: 85.18 - added grade number 4 on loop 3 of grade 78 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:09:11 - Average grade: 85.22 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+2025-04-21 13:09:15 - Average grade: 85.20 - added grade number 6 on loop 3 of grade 78 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 0
+Working on verse MAT 2:22 which has grade 81.0
+
+The peer reviews indicate that the current translation of Matthew 2:22 is theologically accurate and clear but contains Mandarin and some Cantonese vocabulary and expressions that do not authentically represent Gan Chinese. To improve, the translation should replace phrases like '心肝发怵' (fearful) and '唔敢返嗰边去' (not dare to return there) with more regionally specific Gan dialect expressions conveying the same meaning. The phrase '主公使者梦里来教佢' should be localized or simplified to better fit Gan speech patterns while maintaining reverence for the divine guidance. Adjust sentence particles, pronouns, and syntax to align with Gan Chinese characteristics. These changes will enhance the naturalness and contemporary feel of the translation for Gan speakers without compromising the conservative Christian theological message. Avoid reintroducing any previously removed content and ensure clarity and doctrinal fidelity throughout.
+
+source: ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει ἐπὶ τῆς Ἰουδαίας ἀντὶ Ἡρῴδου τοῦ πατρὸς αὐτοῦ, ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ᾽ ὄναρ ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας,
+old: 约瑟听讲亚基劳顶替他老豆希律当犹太王，心肝发怵，唔敢返嗰边去。后来，主公使者梦里来教佢，佢就转去加利利厝边个地方咯。
+new: 约瑟听讲亚基劳接替他老豆希律做犹太王，心肝怕怕，勿敢回到彼个所在去。后来，主的天使梦中晓佢，佢就转到加利利厝边去啦。
+
+2025-04-21 13:09:28 - Average grade: 85.20 - reflected on verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:38 - Average grade: 85.50 - added grade number 1 on loop 4 of grade 88 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:41 - Average grade: 85.43 - added grade number 2 on loop 4 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:45 - Average grade: 85.41 - added grade number 3 on loop 4 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:49 - Average grade: 85.40 - added grade number 4 on loop 4 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:53 - Average grade: 85.42 - added grade number 5 on loop 4 of grade 88 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+2025-04-21 13:09:56 - Average grade: 85.41 - added grade number 6 on loop 4 of grade 85 to verse MAT 2:22 - Best grade: 85.36 - Iterations without improvement: 1
+New best grade: 85.41304347826087 after 2 iterations.  Improvement of 0.05797101449275033
+Working on verse MAT 2:1 which has grade 84.83333333333333
+
+The peer review corrections commend the theological accuracy and clear conservative Christian content of the MAT 2:1 translation. However, they consistently recommend enhancing the authenticity and naturalness of the Gan Chinese dialect usage. Key actionable corrections include: 1) Replacing Mandarin-influenced temporal phrases such as "个辰光" and "在朝个辰光" with more typical Gan dialect expressions like "个辰光", "辰光当时", or "嗰辰光" to better reflect Gan syntax and style. 2) Adjusting particles and grammar to avoid mixing Mandarin structures (e.g., omitting or substituting "在") and adopting Gan-specific particles and sentence rhythm for fluency. 3) Using more genuine Gan vocabulary for terms like "King Herod" (e.g., a Gan dialectal rendering instead of standard "希律王"), and for the Magi—preferring traditional or formal terms consistent with Gan dialect (e.g., "几位智者" or "几位博士") rather than colloquialisms influenced by Cantonese or Mandarin such as "几咯人仔." 4) Adapting place names like "耶路撒冷" to reflect possible Gan phonetic or local forms if available, or at least smoothing their usage in Gan speech. 5) Avoiding mixing Mandarin grammar with Gan vocabulary to achieve a natural Gan dialect style throughout the verse. Overall, the corrections emphasize maintaining conservative Christian doctrinal integrity and scriptural clarity while improving regional linguistic consistency and idiomatic expression in the Gan Chinese translation of MAT 2:1.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 希律王在朝个辰光，耶稣生在犹太伯利恒。嗰辰光，有几咯人仔从东方来咯耶路撒冷。
+new: 希律王辰光当时，耶稣生在犹太伯利恒。嗰辰光，几位智者从东方来到耶路撒冷。
+
+2025-04-21 13:10:11 - Average grade: 85.41 - reflected on verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:15 - Average grade: 85.42 - added grade number 1 on loop 4 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:19 - Average grade: 85.42 - added grade number 2 on loop 4 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:22 - Average grade: 85.42 - added grade number 3 on loop 4 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:26 - Average grade: 85.42 - added grade number 4 on loop 4 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:30 - Average grade: 85.42 - added grade number 5 on loop 4 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+2025-04-21 13:10:35 - Average grade: 85.40 - added grade number 6 on loop 4 of grade 82 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 0
+Working on verse MAT 2:1 which has grade 84.5
+
+The peer reviews unanimously affirm that the current translation of Matthew 2:1 accurately and faithfully conveys the conservative Christian doctrinal meaning of the original Greek text. However, the main area for improvement is enhancing the authenticity and naturalness of the Gan Chinese dialect used. Actionable corrections include: 1) Replace Mandarin-influenced temporal phrases such as "希律王辰光当时" and "嗰辰光" with more idiomatic Gan expressions like "希律王个辰光," "希律王嗰辰光," "阿辰光," or "当辰光." 2) Substitute formal Mandarin terms like "几位智者" with more locally appropriate Gan expressions such as "几个人才," "几个人的贤士," "几位博士," or "几个学识高的人," to reflect common Gan speech patterns. 3) Modify verbs and connectors to Gan-style forms, for instance, replacing "来到" with "来咯," "来咧," or "到咯" to align with Gan sentence rhythm and particles. 4) Adjust sentence structures and particles to avoid Mandarin grammar influence, ensuring natural Gan syntax and fluency throughout the verse, for example, adding particles like "有" to begin phrases as per Gan speech. 5) Maintain theological clarity and conservative Christian integrity without adding or altering doctrinal content, focusing solely on linguistic and stylistic localization. These changes will result in a translation that preserves the doctrinal accuracy and reverence of the original while sounding authentically Gan Chinese to native speakers.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 希律王辰光当时，耶稣生在犹太伯利恒。嗰辰光，几位智者从东方来到耶路撒冷。
+new: 有希律王个辰光，耶稣生在犹太伯利恒。阿辰光，几个人的贤士从东方来咯耶路撒冷。
+
+2025-04-21 13:10:50 - Average grade: 85.40 - reflected on verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:10:58 - Average grade: 84.99 - added grade number 1 on loop 5 of grade 75 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:11:02 - Average grade: 84.99 - added grade number 2 on loop 5 of grade 75 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:11:07 - Average grade: 85.06 - added grade number 3 on loop 5 of grade 80 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:11:14 - Average grade: 85.15 - added grade number 4 on loop 5 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:11:19 - Average grade: 85.14 - added grade number 5 on loop 5 of grade 78 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+2025-04-21 13:11:25 - Average grade: 85.19 - added grade number 6 on loop 5 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 1
+Working on verse MAT 2:1 which has grade 79.66666666666667
+
+The peer review comments confirm that the translation of Matthew 2:1 faithfully conveys the conservative Christian message and doctrinal content regarding Jesus' birth during King Herod's reign and the arrival of wise men from the East. However, the translation currently contains a mix of Mandarin and colloquial expressions that detract from the authentic Gan Chinese dialect style. To improve, the translation should: 1) Replace Mandarin-influenced temporal phrases such as '个辰光' and '阿辰光' with more idiomatic Gan expressions; 2) Use Gan dialect-appropriate terms for the 'wise men' or 'magi' instead of awkward Mandarin-based phrases like '几个人的贤士'; 3) Adapt verbs and sentence particles (e.g., substituting '来到' with Gan-style particles like '来咯', '到咧') to align with Gan grammatical structures and speech rhythm; 4) Adjust sentence structure to avoid Mandarin grammar influence and ensure fluency and naturalness in Gan Chinese; 5) Maintain respectful and clear references to biblical names and places, localized to Gan phonetics where possible, without doctrinal alteration; 6) Avoid mixing Mandarin and Gan elements for a consistent and natural Gan dialect style. These linguistic and stylistic corrections will preserve theological clarity and conservative Christian integrity while producing an authentic Gan Chinese translation consistent with the translation objectives. No content additions or doctrinal changes are required.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 有希律王个辰光，耶稣生在犹太伯利恒。阿辰光，几个人的贤士从东方来咯耶路撒冷。
+new: 耶稣生在犹太伯利恒个辰头，正是希律王统治个辰头。有几位来自东方个智者走到耶路撒冷来咯。
+
+2025-04-21 13:11:40 - Average grade: 85.19 - reflected on verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:11:44 - Average grade: 85.42 - added grade number 1 on loop 6 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:11:52 - Average grade: 85.42 - added grade number 2 on loop 6 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:11:55 - Average grade: 85.42 - added grade number 3 on loop 6 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:11:58 - Average grade: 85.45 - added grade number 4 on loop 6 of grade 88 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:12:03 - Average grade: 85.45 - added grade number 5 on loop 6 of grade 85 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+2025-04-21 13:12:07 - Average grade: 85.46 - added grade number 6 on loop 6 of grade 88 to verse MAT 2:1 - Best grade: 85.41 - Iterations without improvement: 2
+New best grade: 85.46376811594202 after 3 iterations.  Improvement of 0.050724637681142326
+Working on verse MAT 2:5 which has grade 84.83333333333333
+
+The translation of Matthew 2:5 accurately conveys the conservative Christian theological message and doctrinal meaning consistent with the original Greek text. Peer reviewers consistently recommend enhancing the linguistic and stylistic authenticity by increasing the use of Gan Chinese dialect features. Key actionable corrections include: replacing Mandarin vocabulary and sentence structures with Gan equivalents, especially pronouns (consider alternatives to "渠们" like "厾等" or "厾侪"), colloquial expressions for "said" such as "讲哩" or "讲哩讲", and more idiomatic phrases for "the place" like "该个地方" or "此地" instead of Mandarin "这个所在"; substituting "早就写过" with Gan colloquial alternatives like "讲过" or "记过"; adjusting sentence flow and particles to align with Gan grammar; and eliminating Mandarin or Northern Chinese influences that reduce Gan authenticity. Reviewers also advise avoiding Cantonese influences and suggest modestly increasing formal biblical tone where appropriate, without sacrificing local flavor. Importantly, all changes must preserve the original theological content and conservative Christian perspective without additions or removals of doctrinal information. Implementing these focused linguistic and stylistic adaptations will improve naturalness, readability, and cultural appropriateness for Gan-speaking audiences while maintaining doctrinal fidelity.
+
+source: οἱ δὲ εἶπον αὐτῷ· ἐν Βηθλεὲμ τῆς Ἰουδαίας· οὕτω γὰρ γέγραπται διὰ τοῦ προφήτου·
+old: 渠们答希律王讲：“就在犹太伯利恒个所在，先知早就写过这个所在。”
+new: 厾侪答希律王讲哩：“就在犹太伯利恒该个地方，先知早就记过了。”
+
+2025-04-21 13:12:19 - Average grade: 85.46 - reflected on verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:25 - Average grade: 85.47 - added grade number 1 on loop 5 of grade 85 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:29 - Average grade: 85.62 - added grade number 2 on loop 5 of grade 92 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:32 - Average grade: 85.62 - added grade number 3 on loop 5 of grade 88 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:36 - Average grade: 85.61 - added grade number 4 on loop 5 of grade 88 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:39 - Average grade: 85.58 - added grade number 5 on loop 5 of grade 85 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+2025-04-21 13:12:43 - Average grade: 85.57 - added grade number 6 on loop 5 of grade 85 to verse MAT 2:5 - Best grade: 85.46 - Iterations without improvement: 0
+New best grade: 85.56521739130434 after 1 iterations.  Improvement of 0.10144927536232728
+Working on verse MAT 2:6 which has grade 85.0
+
+The translation accurately reflects the conservative Christian theological content of Matthew 2:6 and maintains reverence and clarity. However, the style and vocabulary are more formal and typical of Mandarin Chinese, lacking the natural, colloquial features of Gan Chinese. To improve, the translation should incorporate Gan-specific vocabulary, sentence structures, and particles to make it more authentic and accessible to Gan speakers. Simplifying complex expressions, using more colloquial connectors, and avoiding non-standard formatting such as unnecessary spaces between Chinese characters are recommended. Overall, these adjustments will enhance the dialectal naturalness and fluency of the translation while preserving its theological accuracy.
+
+source: καὶ σὺ Βηθλεέμ, γῆ Ἰούδα, οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα· ἐκ σοῦ γὰρ ἐξελεύσεται ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ.
+old: “‘ 犹大 地区的 伯利恒 啊！   你在 犹大 各城中并不是最小的，   因为有一位君王要从你那里出来，   牧养我的 以色列 子民。’ ”
+new: “伯利恒啊，犹大地方里你可不是最小的村落，因为有一位领袖要从你那儿出来，牧养我以色列的子民。”
+
+2025-04-21 13:12:51 - Average grade: 85.57 - reflected on verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:12:54 - Average grade: 85.57 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:12:59 - Average grade: 85.63 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:13:02 - Average grade: 85.61 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:13:05 - Average grade: 85.60 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:13:09 - Average grade: 85.62 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+2025-04-21 13:13:11 - Average grade: 85.61 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:6 - Best grade: 85.57 - Iterations without improvement: 0
+New best grade: 85.6086956521739 after 1 iterations.  Improvement of 0.043478260869562746
+Working on verse MAT 2:10 which has grade 85.0
+
+The current translation '他们看见那颗星，喜出望外。' accurately conveys the original meaning and the conservative Christian perspective. However, to better adapt it to Gan Chinese, replace the Mandarin idiom '喜出望外' with more direct, reverent, and regionally natural expressions such as '欢喜非常', '大喜过望', '心里欢喜极了', or '欢喜得很'. Consider using Gan dialect-specific pronouns or structures, for example substituting '他们' with a Gan equivalent and '看见' with '见着' if appropriate. These adjustments will improve the translation's authenticity and naturalness for Gan speakers while preserving the scriptural reverence and clarity.
+
+source: ἰδόντες δὲ τὸν ἀστέρα ἐχάρησαν χαρὰν μεγάλην σφόδρα,
+old: 他们看见那颗星，喜出望外。
+new: 佢哋见着那颗星，欢喜得很。
+
+2025-04-21 13:13:19 - Average grade: 85.61 - reflected on verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:23 - Average grade: 85.61 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:28 - Average grade: 85.72 - added grade number 2 on loop 2 of grade 90 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:30 - Average grade: 85.78 - added grade number 3 on loop 2 of grade 92 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:33 - Average grade: 85.82 - added grade number 4 on loop 2 of grade 92 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:34 - Average grade: 85.82 - added grade number 5 on loop 2 of grade 90 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+2025-04-21 13:13:36 - Average grade: 85.80 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:10 - Best grade: 85.61 - Iterations without improvement: 0
+New best grade: 85.80434782608695 after 1 iterations.  Improvement of 0.19565217391304657
+Working on verse MAT 2:11 which has grade 85.0
+
+The translation of Matthew 2:11 accurately reflects conservative Christian theology and is clear and reverent. However, to better fulfill the objective of producing a Gan Chinese version, it should incorporate more Gan dialect vocabulary, idioms, and sentence structures. This includes replacing standard Mandarin terms such as '孩子' (child), '盛宝物的盒子' (treasure box), '他们' (they), and '礼物' (gifts) with Gan equivalents, as well as adapting sentence flow and colloquial expressions to align with Gan speech patterns. These adjustments will enhance the translation's authenticity and cultural resonance with Gan-speaking readers while maintaining theological faithfulness and respectful tone.
+
+source: καὶ ἐλθόντες εἰς τὴν οἰκίαν εἶδον τὸ παιδίον μετὰ Μαρίας τῆς μητρὸς αὐτοῦ, καὶ πεσόντες προσεκύνησαν αὐτῷ, καὶ ἀνοίξαντες τοὺς θησαυροὺς αὐτῶν προσήνεγκαν αὐτῷ δῶρα, χρυσὸν καὶ λίβανον καὶ σμύρναν·
+old: 他们进了屋子，看见孩子和祂母亲 玛丽亚 ，就俯伏在地上拜祂，并打开盛宝物的盒子献上黄金、乳香和没药作礼物。
+new: 佢哋走进屋里，见着囝仔同佢阿娘马利亚，就跪倒喺地下拜祂，拎开装宝贝个匣仔，献上金子、乳香同没药作礼品。
+
+2025-04-21 13:13:47 - Average grade: 85.80 - reflected on verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:13:50 - Average grade: 85.93 - added grade number 1 on loop 2 of grade 88 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:13:53 - Average grade: 86.02 - added grade number 2 on loop 2 of grade 92 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:13:58 - Average grade: 86.02 - added grade number 3 on loop 2 of grade 90 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:14:01 - Average grade: 86.00 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:14:04 - Average grade: 85.99 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+2025-04-21 13:14:08 - Average grade: 85.99 - added grade number 6 on loop 2 of grade 90 to verse MAT 2:11 - Best grade: 85.80 - Iterations without improvement: 0
+New best grade: 85.9927536231884 after 1 iterations.  Improvement of 0.18840579710145278
+Working on verse MAT 2:13 which has grade 85.0
+
+The translation of Matthew 2:13 is theologically accurate and maintains a conservative Christian perspective, correctly conveying the divine warning to Joseph and Herod's threat. However, all reviewers note that the language leans heavily toward standard Mandarin Chinese rather than Gan Chinese. To improve, the translation should incorporate regionally specific Gan vocabulary, pronouns, particles, and colloquial expressions. Sentence structures and word order should be adjusted to match Gan syntax and rhythm, using local phrases especially for key verbs like 'rise' and 'escape.' Adopting Gan conversational patterns and idiomatic phrasing will make the translation feel more natural and authentic to Gan speakers while preserving doctrinal accuracy and clarity.
+
+source: Ἀναχωρησάντων δὲ αὐτῶν ἰδοὺ ἄγγελος Κυρίου φαίνεται κατ᾽ ὄναρ τῷ Ἰωσὴφ λέγων· ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ φεῦγε εἰς Αἴγυπτον, καὶ ἴσθι ἐκεῖ ἕως ἂν εἴπω σοι· μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον τοῦ ἀπολέσαι αὐτό.
+old: 他们离开之后，主的天使在梦中向 约瑟 显现，说：“起来，带着小孩子和祂母亲逃往 埃及 ，住在那里等候我的通知，因为 希律 要寻找这孩子，杀害祂。”
+new: 厾哩离开咯后，主公个使者梦里向约瑟显现，话：“你起身，揽着囝仔同祂娘亲，赶紧走去埃及底界住，等我再跟你讲，因为希律老早想找该囝仔，想剿杀祂。”
+
+2025-04-21 13:14:15 - Average grade: 85.99 - reflected on verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:19 - Average grade: 85.99 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:23 - Average grade: 85.99 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:26 - Average grade: 86.04 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:32 - Average grade: 86.03 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:35 - Average grade: 86.02 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+2025-04-21 13:14:38 - Average grade: 86.04 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:13 - Best grade: 85.99 - Iterations without improvement: 0
+New best grade: 86.03623188405797 after 1 iterations.  Improvement of 0.043478260869562746
+Working on verse MAT 2:14 which has grade 85.0
+
+The translation of Matthew 2:14 is faithful to the original Greek text and conservatively accurate in theological content, effectively conveying Joseph's obedience to take Jesus and Mary to Egypt by night. However, the language currently reflects standard Mandarin rather than the Gan Chinese dialect. To improve, the translation should incorporate Gan-specific vocabulary, idiomatic expressions, and sentence structures to better represent contemporary Gan usage. For example, replacing '连夜逃往' with local Gan phrases like '半夜带着', '当夜赶到', or '夜里赶到', and substituting '起来带着' with more colloquial Gan terms such as '起身拎着' or '起身带着' would make the translation more authentic to Gan speakers. Additionally, modifying sentence particles and grammar to align with Gan Chinese will further enhance regional naturalness. These adjustments will maintain doctrinal accuracy and clarity while making the translation more accessible and resonant for Gan-speaking audiences.
+
+source: Ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ νυκτὸς καὶ ἀνεχώρησεν εἰς Αἴγυπτον,
+old: 于是， 约瑟 起来带着孩子和祂母亲连夜逃往 埃及 ，
+new: 于是，约瑟夜里起身拎着囝仔同祂娘亲，夜里赶到埃及去。
+
+2025-04-21 13:14:47 - Average grade: 86.04 - reflected on verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:14:50 - Average grade: 86.04 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:14:53 - Average grade: 86.10 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:14:57 - Average grade: 86.08 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:15:00 - Average grade: 86.10 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:15:02 - Average grade: 86.11 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+2025-04-21 13:15:06 - Average grade: 86.12 - added grade number 6 on loop 2 of grade 88 to verse MAT 2:14 - Best grade: 86.04 - Iterations without improvement: 0
+New best grade: 86.1231884057971 after 1 iterations.  Improvement of 0.08695652173912549
+Working on verse MAT 2:16 which has grade 85.0
+
+The translation of Matthew 2:16 accurately reflects the original Greek text and conservative Christian interpretation, clearly conveying Herod's wrath and decree to kill all male children two years old and under in Bethlehem and its vicinity. However, the current style leans more toward standard Mandarin Chinese rather than contemporary Gan Chinese. To improve authenticity and localization, the translation should incorporate more colloquial Gan vocabulary, idiomatic expressions, sentence structures, and particles. Specifically, Mandarin phrases such as '忒生气' (very angry) and '剿灭' (kill/eliminate) should be replaced with more natural Gan equivalents. Additionally, phrases like '照着他们所告诉的时间' should be rephrased to reflect Gan vernacular, for example, using expressions like '就照佢哋讲个时候.' Sentence flow and structure should also be adjusted to match Gan syntax and spoken rhythms, including simplification of complex clauses and use of Gan particles where appropriate. These changes should preserve the solemn tone and theological accuracy of the passage while enhancing the translation's regional flavor and naturalness in Gan Chinese. No content additions or theological changes are recommended.
+
+source: Τότε Ἡρῴδης ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων, ἐθυμώθη λίαν, καὶ ἀποστείλας ἀνεῖλε πάντας τοὺς παῖδας τοὺς ἐν Βηθλεὲμ καὶ ἐν πᾶσι τοῖς ὁρίοις αὐτῆς ἀπὸ διετοῦς καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν ἠκρίβωσε παρὰ τῶν μάγων.
+old: 希律见着自己被那几个智者捉弄，忒生气，就照着他们所告诉的时间，吩咐把伯利恒跟附近地方所有两岁以下的男孩全部剿灭。
+new: 希律见着自家被那几个智者耍得团团转，肚子火忒大，就照佢哋讲个时候，吩咐把伯利恒同附近地方所有两岁以下个男囝仔通通剿杀掉。
+
+2025-04-21 13:15:22 - Average grade: 86.12 - reflected on verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:25 - Average grade: 86.25 - added grade number 1 on loop 3 of grade 88 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:28 - Average grade: 86.19 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:33 - Average grade: 86.21 - added grade number 3 on loop 3 of grade 88 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:36 - Average grade: 86.24 - added grade number 4 on loop 3 of grade 90 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:39 - Average grade: 86.22 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+2025-04-21 13:15:42 - Average grade: 86.22 - added grade number 6 on loop 3 of grade 88 to verse MAT 2:16 - Best grade: 86.12 - Iterations without improvement: 0
+New best grade: 86.22463768115941 after 1 iterations.  Improvement of 0.10144927536231307
+Working on verse MAT 2:17 which has grade 85.0
+
+The translation '这正应验了 耶利米 先知的话：' accurately reflects the Greek source text and maintains the conservative Christian interpretation. To improve localization into Gan Chinese, the translation should incorporate Gan dialect-specific vocabulary and sentence structures, such as replacing '这正应验了' with more colloquial or regionally typical expressions like '这正好符合了先知耶利米所讲的话：', '正正兑现咧', or '这就应验了'. Additionally, removing the unnecessary space between '耶利米' and '先知' to form '耶利米先知的话' would create a smoother, more natural flow. Incorporating Gan-specific sentence-final particles and adjusting word order as per Gan usage are also recommended. These adjustments will maintain theological accuracy and reverence while enhancing the regional and linguistic authenticity to better fulfill the objective of adapting the Bible into Gan Chinese.
+
+source: τότε ἐπληρώθη τὸ ῥηθὲν ὑπὸ Ἱερεμίου τοῦ προφήτου λέγοντος·
+old: 这正应验了 耶利米 先知的话：
+new: 这就应验了耶利米先知的话：
+
+2025-04-21 13:15:57 - Average grade: 86.22 - reflected on verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:00 - Average grade: 86.22 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:03 - Average grade: 86.29 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:06 - Average grade: 86.27 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:08 - Average grade: 86.15 - added grade number 4 on loop 2 of grade 75 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:11 - Average grade: 86.16 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+2025-04-21 13:16:13 - Average grade: 86.10 - added grade number 6 on loop 2 of grade 75 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 0
+Working on verse MAT 2:17 which has grade 82.16666666666667
+
+The current translation of MAT 2:17, "这就应验了耶利米先知的话：", accurately conveys the original Greek meaning and upholds a conservative Christian interpretation by referencing the prophecy fulfillment by Jeremiah. However, it uses standard Mandarin Chinese expressions and lacks the distinctive features of contemporary Gan Chinese. To better align with the translation objective, it is recommended to incorporate Gan Chinese vernacular and syntactic patterns. This includes replacing "这就应验了" with Gan dialect equivalents such as "厾个应验咯", "就着实现咯", "该应验了", or "正应验了", and employing Gan-style sentence endings like "咯" or "哩" to convey a more colloquial tone. Additionally, the phrase "耶利米先知的话" can be localized by using constructions like "耶利米先知个话" or "先知讲的" to sound more natural in Gan. Minor corrections such as removing spaces between "耶利米" and "先知" should also be applied. These adjustments will maintain theological accuracy and reverence while enhancing the translation's regional authenticity and contemporary Gan Chinese style.
+
+source: τότε ἐπληρώθη τὸ ῥηθὲν ὑπὸ Ἱερεμίου τοῦ προφήτου λέγοντος·
+old: 这就应验了耶利米先知的话：
+new: 厾个应验咯耶利米先知个话：
+
+2025-04-21 13:16:26 - Average grade: 86.10 - reflected on verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:29 - Average grade: 86.44 - added grade number 1 on loop 3 of grade 90 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:32 - Average grade: 86.33 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:35 - Average grade: 86.30 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:39 - Average grade: 86.31 - added grade number 4 on loop 3 of grade 88 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:44 - Average grade: 86.34 - added grade number 5 on loop 3 of grade 90 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+2025-04-21 13:16:48 - Average grade: 86.36 - added grade number 6 on loop 3 of grade 90 to verse MAT 2:17 - Best grade: 86.22 - Iterations without improvement: 1
+New best grade: 86.35507246376811 after 2 iterations.  Improvement of 0.13043478260870245
+Working on verse MAT 2:18 which has grade 85.0
+
+The peer review confirms that the translation accurately conveys the original Greek meaning and maintains a conservative Christian perspective, especially regarding Rachel's mourning. However, the translation currently uses standard Mandarin Chinese rather than the target Gan dialect. To improve, it should incorporate more Gan-specific vocabulary, idiomatic expressions, sentence particles, and sentence structures typical of Gan speech. Key phrases like "痛哭哀号的声音" and "不肯接受安慰" should be adapted to Gan equivalents. Additionally, localizing terms such as "拉玛" if possible, and adjusting sentence flow will enhance naturalness and resonate better with Gan-speaking readers. These changes will maintain the translation's faithfulness while achieving a more authentic Gan Chinese style.
+
+source: φωνὴ ἐν Ῥαμᾷ ἠκούσθη, θρῆνος καὶ κλαυθμὸς καὶ ὀδυρμὸς πολύς· Ῥαχὴλ κλαίουσα τὰ τέκνα αὐτῆς, καὶ οὐκ ἤθελε παρακληθῆναι, ὅτι οὐκ εἰσίν.
+old: “在 拉玛 有痛哭哀号的声音，   是 拉结 在为儿女哀痛，   不肯接受安慰，   因为他们都死了！”
+new: “听着，拉玛里传来哭声哀嚎声，怨声载道，系拉结在哭她的孩子，哭得死死咧，怎么都劝慰唔得，因为孩子都不在咧！”
+
+2025-04-21 13:16:56 - Average grade: 86.36 - reflected on verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:16:59 - Average grade: 86.49 - added grade number 1 on loop 2 of grade 88 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:17:01 - Average grade: 86.49 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:17:05 - Average grade: 86.49 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:17:10 - Average grade: 86.49 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:17:15 - Average grade: 86.52 - added grade number 5 on loop 2 of grade 92 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+2025-04-21 13:17:18 - Average grade: 86.49 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:18 - Best grade: 86.36 - Iterations without improvement: 0
+New best grade: 86.4927536231884 after 1 iterations.  Improvement of 0.13768115942029624
+Working on verse MAT 2:20 which has grade 85.0
+
+The peer review confirms that the current translation of Matthew 2:20 is theologically sound, clear, and faithful to the original Greek text from a conservative Christian perspective. However, the translation is written in standard Mandarin Chinese and should be localized into Gan Chinese dialect to better resonate with Gan speakers. This includes adopting Gan-specific vocabulary, sentence structures, verb forms, particles, and colloquial expressions. Examples include replacing Mandarin terms like '起来' with Gan equivalents, adjusting word order, and using local pronouns and particles. The translation should maintain a respectful and reverent tone appropriate for sacred scripture while enhancing naturalness and accessibility for Gan Chinese readers. Implementing these changes will improve regional authenticity and make the translation more idiomatic without sacrificing theological accuracy or clarity.
+
+source: λέγων· ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ πορεύου εἰς γῆν Ἰσραήλ· τεθνήκασι γὰρ οἱ ζητοῦντες τὴν ψυχὴν τοῦ παιδίου.
+old: “起来，带着孩子和祂母亲回 以色列 去吧！因为要杀害孩子的人已经死了。”
+new: “起身，揽着囝仔同祂娘亲，赶紧回到以色列厝去啦！因着想杀该囝仔个人已死咧。”
+
+2025-04-21 13:17:28 - Average grade: 86.49 - reflected on verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:33 - Average grade: 86.71 - added grade number 1 on loop 2 of grade 90 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:35 - Average grade: 86.60 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:38 - Average grade: 86.57 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:40 - Average grade: 86.55 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:44 - Average grade: 86.56 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+2025-04-21 13:17:46 - Average grade: 86.59 - added grade number 6 on loop 2 of grade 90 to verse MAT 2:20 - Best grade: 86.49 - Iterations without improvement: 0
+New best grade: 86.58695652173913 after 1 iterations.  Improvement of 0.09420289855071928
+Working on verse MAT 2:21 which has grade 85.0
+
+The translation of Matthew 2:21 effectively conveys the conservative Christian meaning but requires refinement to authentically reflect Gan Chinese language features. Actionable corrections include: 1) Replace Mandarin terms with Gan dialect vocabulary, e.g., substitute '起身' or '起来' with Gan equivalents such as '起行' or other respectful local forms; 2) Modify pronouns and familial references from formal Mandarin (e.g., '其母', '同其母') to more natural and reverent Gan expressions like '佢阿妈', '同佢娘亲', or '囝仔同伊母亲'; 3) Replace '小孩子' with common Gan terms such as '细路仔' or '囡仔'; 4) Avoid use of '厝' since it is typical of Minnan/Hokkien dialects and less common in Gan; instead, use Gan terms for 'land' or 'home' like '家', '屋', '地', or '塝' depending on regional acceptability; 5) Substitute '归返' with more colloquial Gan expressions like '返去', '归来', or '回转' that fit Gan speech patterns without losing solemnity; 6) Consider a local Gan pronunciation for '约瑟' if customary, but using the Mandarin form is acceptable for proper names; 7) Ensure the overall sentence structure and particles conform to Gan syntax, maintaining a reverent and clear tone appropriate for scripture; 8) Avoid overly casual expressions or misplaced particles that undermine the solemnity of the biblical text. These recommendations should be applied while preserving theological fidelity, clarity, and readability for Gan-speaking conservative Christian audiences.
+
+source: ὁ δὲ ἐγερθεὶς παρέλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ ἦλθεν εἰς γῆν Ἰσραήλ.
+old: 约瑟起身，揽着小孩子同其母，归返以色列厝。
+new: 约瑟起行，揽着囡仔同佢娘亲，返去以色列地。
+
+2025-04-21 13:18:00 - Average grade: 86.59 - reflected on verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:04 - Average grade: 87.02 - added grade number 1 on loop 5 of grade 95 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:06 - Average grade: 86.91 - added grade number 2 on loop 5 of grade 90 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:09 - Average grade: 86.80 - added grade number 3 on loop 5 of grade 85 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:13 - Average grade: 86.83 - added grade number 4 on loop 5 of grade 92 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:18 - Average grade: 86.78 - added grade number 5 on loop 5 of grade 85 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+2025-04-21 13:18:22 - Average grade: 86.77 - added grade number 6 on loop 5 of grade 88 to verse MAT 2:21 - Best grade: 86.59 - Iterations without improvement: 0
+New best grade: 86.76811594202898 after 1 iterations.  Improvement of 0.18115942028985899
+Working on verse MAT 2:23 which has grade 85.0
+
+The student's translation of MAT 2:23 accurately reflects the original Greek text and conservative Christian theology. However, all reviewers recommend adapting the translation from standard Mandarin into Gan Chinese dialect. Specifically, replace Mandarin terms like '镇' (town) and '定居' (settle) with regional Gan dialect equivalents such as '埠' or '厝' for 'town' and more colloquial verbs for 'settle' or 'live.' Additionally, modify phrases related to prophecy fulfillment to reflect Gan idiomatic expressions and sentence structures—for example, altering '这应验了先知的话' to more natural Gan variants like '这正好应了先知所讲的话' or similar. Incorporate sentence particles, connectors, and rhythm common in Gan Chinese to enhance readability and cultural resonance. These changes will maintain doctrinal accuracy and clarity while making the translation stylistically authentic and regionally appropriate for Gan Chinese speakers.
+
+source: καὶ ἐλθὼν κατῴκησεν εἰς πόλιν λεγομένην Ναζαρέτ, ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τῶν προφητῶν ὅτι Ναζωραῖος κληθήσεται.
+old: 定居在 拿撒勒 镇。这应验了先知的话：“祂将被称为 拿撒勒 人。”
+new: 佢落脚在一个叫拿撒勒埠个所在。咯正好应了先知讲个话，说：“祂将被称作拿撒勒人。”
+
+2025-04-21 13:18:34 - Average grade: 86.77 - reflected on verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:37 - Average grade: 86.77 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:40 - Average grade: 86.77 - added grade number 2 on loop 2 of grade 85 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:42 - Average grade: 86.81 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:47 - Average grade: 86.80 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:51 - Average grade: 86.84 - added grade number 5 on loop 2 of grade 90 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+2025-04-21 13:18:55 - Average grade: 86.83 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:23 - Best grade: 86.77 - Iterations without improvement: 0
+New best grade: 86.82608695652173 after 1 iterations.  Improvement of 0.05797101449275033
+Working on verse MAT 2:3 which has grade 85.5
+
+The current translation of Matthew 2:3 faithfully conveys King Herod's disturbance and Jerusalem's unrest from a conservative Christian perspective. However, to better align with authentic Gan Chinese dialect, it is recommended to replace Mandarin idioms such as '心肝七上八落' with Gan-specific expressions conveying anxiety or distress (e.g., '心里搅乱,' '心头烦乱,' or other regionally typical phrases). For describing the city's turmoil, revise phrases like '整个耶路撒冷跟着佢哩动乱起来咯' by substituting '整个' with Gan equivalents like '通体' or '成埠,' and adjusting sentence structure or particles (e.g., reconsidering '跟着佢哩') to reflect Gan syntax and idiomatic usage. Such refinements should maintain the conservative Christian theological meaning, clarity, and reverence while enhancing the naturalness, fluency, and regional character of the translation for Gan-speaking readers. Avoid reintroducing any previously removed expressions and ensure all modifications preserve theological soundness and scriptural accuracy.
+
+source: Ἀκούσας δὲ Ἡρῴδης ὁ βασιλεὺς ἐταράχθη καὶ πᾶσα Ἱεροσόλυμα μετ᾽ αὐτοῦ,
+old: 希律王听了后，心肝七上八落，整个耶路撒冷跟着佢哩动乱起来咯。
+new: 希律王听了后，心头烦乱，成埠耶路撒冷都跟佢一起乱哩。
+
+2025-04-21 13:19:11 - Average grade: 86.83 - reflected on verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:15 - Average grade: 86.80 - added grade number 1 on loop 5 of grade 85 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:20 - Average grade: 86.80 - added grade number 2 on loop 5 of grade 85 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:23 - Average grade: 86.85 - added grade number 3 on loop 5 of grade 88 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:26 - Average grade: 86.89 - added grade number 4 on loop 5 of grade 90 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:32 - Average grade: 86.87 - added grade number 5 on loop 5 of grade 85 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+2025-04-21 13:19:35 - Average grade: 86.86 - added grade number 6 on loop 5 of grade 85 to verse MAT 2:3 - Best grade: 86.83 - Iterations without improvement: 0
+New best grade: 86.8623188405797 after 1 iterations.  Improvement of 0.036231884057968955
+Working on verse MAT 2:4 which has grade 85.5
+
+The translation of MAT 2:4 accurately conveys the original Greek meaning and preserves conservative Christian theological integrity by using the term '基督' (Christ). However, the style leans towards standard Mandarin rather than Gan Chinese dialect. To improve, adapt the translation by incorporating more Gan-specific vocabulary for terms like '祭司长' (chief priests) and '律法教师' (teachers of the law), use more conversational or colloquial verbs such as replacing '就召来' with '便召集', '叫来', or '请来', and include Gan sentence particles or phrasing (e.g., adding particles like '哩' in questions). Adjust sentence structure and word order to better reflect Gan dialect syntax. These changes will enhance dialectal authenticity and local flavor while maintaining clarity, reverence, and doctrinal fidelity appropriate for conservative Christian scripture translation.
+
+source: καὶ συναγαγὼν πάντας τοὺς ἀρχιερεῖς καὶ γραμματεῖς τοῦ λαοῦ ἐπυνθάνετο παρ᾽ αὐτῶν ποῦ ὁ Χριστὸς γεννᾶται.
+old: 希律 王就召来祭司长和律法教师，问他们：“基督降生在哪里呢？”
+new: 希律王便召集所有祭司头同律法学者，问佢哋：“基督降生安个地方哩？”
+
+2025-04-21 13:19:49 - Average grade: 86.86 - reflected on verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:19:51 - Average grade: 86.84 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:19:57 - Average grade: 86.95 - added grade number 2 on loop 2 of grade 90 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:20:01 - Average grade: 87.01 - added grade number 3 on loop 2 of grade 92 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:20:05 - Average grade: 87.03 - added grade number 4 on loop 2 of grade 90 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:20:07 - Average grade: 86.99 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+2025-04-21 13:20:13 - Average grade: 86.98 - added grade number 6 on loop 2 of grade 87 to verse MAT 2:4 - Best grade: 86.86 - Iterations without improvement: 0
+New best grade: 86.97826086956522 after 1 iterations.  Improvement of 0.11594202898551487
+Working on verse MAT 2:8 which has grade 85.5
+
+The translation of Matthew 2:8 accurately conveys the original Greek text's meaning and maintains a clear, conservative Christian tone appropriate for Scripture. However, it predominantly uses standard Mandarin Chinese vocabulary and sentence structures rather than reflecting the distinct linguistic features of Gan Chinese. To improve, the translator should incorporate Gan-specific vocabulary, idiomatic expressions, and grammatical constructions—for example, replacing terms like "仔细寻访" with more colloquial Gan equivalents such as "认真找" or "仔细找寻." Additionally, phrases like "回来报信" should be adapted to Gan dialect expressions such as "回来告诉我" or "回来回报." The sentence structure and flow should be adjusted to reflect the simpler, more oral style typical of Gan speech, including using local pronouns, verb forms, particles, and connectors. These changes will enhance the regional authenticity and naturalness of the translation while preserving its reverent and conservative Christian meaning.
+
+source: καὶ πέμψας αὐτοὺς εἰς Βηθλεὲμ εἶπε· πορευθέντες ἀκριβῶς ἐξετάσατε περὶ τοῦ παιδίου, ἐπὰν δὲ εὕρητε, ἀπαγγείλατέ μοι, ὅπως κἀγὼ ἐλθὼν προσκυνήσω αὐτῷ.
+old: 然后派他们去 伯利恒 ，并吩咐道：“你们去仔细寻访那个小孩，找到了，就回来报信，我也好去朝拜祂。”
+new: 然后派他们去 伯利恒 ，说：“你们去认真找那个小孩，找着了，就赶紧回来告诉我，好让我也去拜祂。”
+
+2025-04-21 13:20:24 - Average grade: 86.98 - reflected on verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:28 - Average grade: 86.96 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:32 - Average grade: 87.02 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:38 - Average grade: 87.00 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:40 - Average grade: 87.02 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:43 - Average grade: 87.03 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+2025-04-21 13:20:47 - Average grade: 87.02 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:8 - Best grade: 86.98 - Iterations without improvement: 0
+New best grade: 87.02173913043478 after 1 iterations.  Improvement of 0.043478260869562746
+Working on verse MAT 2:15 which has grade 85.5
+
+The translation of Matthew 2:15 is theologically accurate and effectively conveys the conservative Christian interpretation of prophecy fulfillment. However, the translation currently reflects standard Mandarin Chinese style and vocabulary rather than contemporary Gan Chinese. To improve regional authenticity and resonance, the translation should be adapted to include Gan-specific linguistic features such as localized vocabulary, idiomatic expressions, particles, sentence structures, and phonological characteristics. This includes replacing formal Mandarin conjunctions and phrases (e.g., “并在那里一直住到”, “这就应验了”, “先知所说的话”) with their Gan equivalents or colloquial forms. Adjusting the syntax to reflect Gan patterns, such as verb-final clauses or use of local aspect markers, will also enhance naturalness. Maintaining clear theological meaning and a reverent tone is essential throughout the adaptation. Overall, the focus is on stylistic and linguistic localization to better serve Gan-speaking believers while preserving doctrinal fidelity.
+
+source: καὶ ἦν ἐκεῖ ἕως τῆς τελευτῆς Ἡρῴδου, ἵνα πληρωθῇ τὸ ῥηθὲν ὑπὸ τοῦ Κυρίου διὰ τοῦ προφήτου λέγοντος· ἐξ Αἰγύπτου ἐκάλεσα τὸν υἱόν μου.
+old: 并在那里一直住到 希律 死了。这就应验了主借着先知所说的话：“我把儿子从 埃及 召出来。”
+new: 厾哩一直住过着直到希律死咯。咯正好应了主借着先知讲个话：“我把儿子从埃及召出来。”
+
+2025-04-21 13:20:59 - Average grade: 87.02 - reflected on verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:04 - Average grade: 87.13 - added grade number 1 on loop 2 of grade 88 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:08 - Average grade: 87.13 - added grade number 2 on loop 2 of grade 88 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:12 - Average grade: 87.09 - added grade number 3 on loop 2 of grade 85 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:14 - Average grade: 87.10 - added grade number 4 on loop 2 of grade 88 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:19 - Average grade: 87.10 - added grade number 5 on loop 2 of grade 88 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+2025-04-21 13:21:22 - Average grade: 87.09 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:15 - Best grade: 87.02 - Iterations without improvement: 0
+New best grade: 87.08695652173913 after 1 iterations.  Improvement of 0.06521739130434412
+Working on verse MAT 2:19 which has grade 85.5
+
+The translation of Matthew 2:19 is faithful to the original text and preserves a conservative Christian perspective, accurately conveying the angel of the Lord appearing to Joseph in a dream after Herod's death. However, the current version relies heavily on standard Mandarin vocabulary and formal phrasing, such as "主公的使者" and "显现讲," which are less characteristic of Gan Chinese. To improve, replace formal Mandarin terms with more colloquial and localized Gan expressions—using simpler terms like "主的天使" and more natural Gan phrasing like "梦里向约瑟显现说" or "现身告诉." Additionally, adjust sentence structures to reflect Gan Chinese syntax and oral rhythms, for example, rephrasing "同正在埃及的约瑟显现讲" to "梦中向正在埃及的约瑟显现说." These changes will enhance the translation's authenticity, readability, and cultural resonance among Gan-speaking audiences, while maintaining theological integrity and a reverent tone.
+
+source: Τελευτήσαντος δὲ τοῦ Ἡρῴδου ἰδοὺ ἄγγελος Κυρίου κατ᾽ ὄναρ φαίνεται τῷ Ἰωσὴφ ἐν Αἰγύπτῳ
+old: 希律死了后，主公的使者在梦里同正在埃及的约瑟显现讲：
+new: 希律死了后，主的天使梦里向正在埃及的约瑟显现说：
+
+2025-04-21 13:21:35 - Average grade: 87.09 - reflected on verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:21:39 - Average grade: 87.28 - added grade number 1 on loop 3 of grade 90 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:21:45 - Average grade: 87.17 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:21:48 - Average grade: 87.14 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:21:51 - Average grade: 87.17 - added grade number 4 on loop 3 of grade 90 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:21:54 - Average grade: 87.18 - added grade number 5 on loop 3 of grade 88 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+2025-04-21 13:22:00 - Average grade: 87.18 - added grade number 6 on loop 3 of grade 88 to verse MAT 2:19 - Best grade: 87.09 - Iterations without improvement: 0
+New best grade: 87.18115942028986 after 1 iterations.  Improvement of 0.0942028985507335
+Working on verse MAT 2:1 which has grade 86.0
+
+The peer reviews affirm that the translation of Matthew 2:1 is theologically accurate and doctrinally faithful from a conservative Christian viewpoint, correctly depicting Jesus' birth during King Herod's reign and the arrival of wise men from the East. The main corrections focus on enhancing the Gan Chinese dialect authenticity by replacing Mandarin-influenced vocabulary, temporal expressions (e.g., '个辰头'), quantifiers ('有几位'), verbs ('走到'), and sentence particles with more natural Gan dialect equivalents. Suggested improvements include using idiomatic Gan time phrases such as '辰光' or '时辰,' substituting formal Mandarin terms like '智者' with more locally resonant expressions for 'wise men,' and adapting particles and sentence structure to reflect Gan syntax and rhythm without mixing Mandarin grammar. Consistency in dialectal style and increased use of Gan particles like '咯' and '哩' are encouraged to enhance naturalness and fluency. Importantly, these linguistic and stylistic adjustments must preserve conservative Christian theological clarity and should avoid adding new content or altering doctrinal meaning. Implementing these corrections will yield a translation that is both faithful in message and authentically Gan Chinese in style and expression.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 耶稣生在犹太伯利恒个辰头，正是希律王统治个辰头。有几位来自东方个智者走到耶路撒冷来咯。
+new: 耶稣生喺犹太伯利恒个辰光，正值希律王当朝。有几位东边来个明白人，走咯耶路撒冷哩。
+
+2025-04-21 13:22:13 - Average grade: 87.18 - reflected on verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:16 - Average grade: 87.14 - added grade number 1 on loop 7 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:19 - Average grade: 87.14 - added grade number 2 on loop 7 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:25 - Average grade: 87.21 - added grade number 3 on loop 7 of grade 90 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:30 - Average grade: 87.19 - added grade number 4 on loop 7 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:33 - Average grade: 87.18 - added grade number 5 on loop 7 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+2025-04-21 13:22:37 - Average grade: 87.15 - added grade number 6 on loop 7 of grade 82 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 0
+Working on verse MAT 2:1 which has grade 85.33333333333333
+
+The translation of Matthew 2:1 faithfully conveys the conservative Christian doctrinal meaning, accurately reflecting Jesus' birth during King Herod's reign and the arrival of the wise men from the East. However, peer reviews consistently identify the need to enhance the authenticity and naturalness of the Gan Chinese dialect used. To improve, the translation should reduce Mandarin influence by replacing Mandarin temporal phrases such as '个辰光' with idiomatic Gan expressions (e.g., '辰光', '辰时', or '嗰辰光'). The term '明白人' for 'wise men' should be substituted with more suitable Gan dialect equivalents like '贤士', '贤人', or '智者', ensuring these terms align with Gan colloquial or literary usage without introducing Mandarin or other dialect influences. Verbs and particles such as '走咯' and '哩' are appropriate but should be consistently Gan in form and placement to maintain fluency and natural rhythm. Place names and references to King Herod should use locally resonant forms or particles (e.g., '希律王当朝哩辰光') to reinforce Gan phonology and syntax. Overall, sentence structures and particles must avoid Mandarin grammar interference, ensuring smooth, idiomatic Gan Chinese style throughout the verse. Importantly, these linguistic and stylistic refinements should maintain theological clarity and conservative Christian integrity without altering doctrinal content. Implementing these corrections will yield a translation that is both theologically faithful and authentically expressive in Gan Chinese dialect.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 耶稣生喺犹太伯利恒个辰光，正值希律王当朝。有几位东边来个明白人，走咯耶路撒冷哩。
+new: 耶稣生喺犹太伯利恒嗰辰光，正值希律王当朝哩辰光。有几位东边来个贤士，走咯耶路撒冷哩。
+
+2025-04-21 13:22:50 - Average grade: 87.15 - reflected on verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:22:53 - Average grade: 86.83 - added grade number 1 on loop 8 of grade 78 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:22:57 - Average grade: 86.92 - added grade number 2 on loop 8 of grade 82 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:23:00 - Average grade: 86.99 - added grade number 3 on loop 8 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:23:02 - Average grade: 87.03 - added grade number 4 on loop 8 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:23:06 - Average grade: 87.05 - added grade number 5 on loop 8 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+2025-04-21 13:23:09 - Average grade: 87.07 - added grade number 6 on loop 8 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 1
+Working on verse MAT 2:1 which has grade 83.33333333333333
+
+The peer reviews commend the translation for accurately conveying the conservative Christian theological message of Matthew 2:1, including Jesus' birth during King Herod's reign and the arrival of wise men from the East. However, all reviewers highlight that the translation exhibits heavy Mandarin influence in vocabulary, phrasing, particles, and syntax, detracting from the authenticity of the Gan Chinese dialect. To improve, the translation should adopt more idiomatic and locally resonant Gan expressions for temporal phrases (e.g., replacing Mandarin-style '个辰光', '嗰辰光', or '当朝哩辰光' with Gan equivalents), verbs (e.g., substituting '生喺' with Gan dialect forms like '生落' or '生咯'), and particles to reflect Gan grammar and speech rhythm. The terminology for the 'wise men' or 'magi' (currently '贤士') should be reviewed to select more natural Gan dialect terms consistent with conservative Christian reverence. Additionally, place names such as '耶路撒冷' should be smoothly integrated into Gan phonology or phrasing without Mandarin interference. Sentence structures must avoid Mandarin grammatical patterns, favoring Gan syntax for fluency and naturalness. The translation should maintain a reverent and doctrinally faithful tone, avoiding overly casual expressions or mixing dialect elements. No content additions or doctrinal changes are necessary. Implementing these linguistic and stylistic adjustments will produce a translation that is both theologically accurate and authentically expressive in the Gan Chinese dialect, meeting the project's requirements.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 耶稣生喺犹太伯利恒嗰辰光，正值希律王当朝哩辰光。有几位东边来个贤士，走咯耶路撒冷哩。
+new: 耶稣生落犹太伯利恒时，正当希律王统治之际。有几位东方来个明士，走到耶路撒冷去。
+
+2025-04-21 13:23:21 - Average grade: 87.07 - reflected on verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:24 - Average grade: 87.01 - added grade number 1 on loop 9 of grade 82 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:28 - Average grade: 86.86 - added grade number 2 on loop 9 of grade 75 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:32 - Average grade: 86.95 - added grade number 3 on loop 9 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:37 - Average grade: 87.00 - added grade number 4 on loop 9 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:40 - Average grade: 86.98 - added grade number 5 on loop 9 of grade 80 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+2025-04-21 13:23:44 - Average grade: 86.99 - added grade number 6 on loop 9 of grade 82 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 2
+Working on verse MAT 2:1 which has grade 81.5
+
+Peer reviews confirm the translation accurately conveys Matthew 2:1's conservative Christian meaning but criticize its reliance on standard Mandarin vocabulary and syntax rather than authentic Gan Chinese dialect. To improve, the translation should incorporate Gan-specific expressions by: 1) Replacing Mandarin temporal phrases like "正当希律王统治之际" with idiomatic Gan equivalents; 2) Using locally appropriate Gan terms for "wise men" such as "博士" or "贤士" instead of "明士"; 3) Adapting verbs, sentence particles, and connectors to reflect Gan dialect grammar and speech rhythm; 4) Adjusting place names ("犹太伯利恒") to conform to Gan phonology where feasible; and 5) Ensuring sentence structure avoids Mandarin grammatical patterns to maintain fluency in Gan Chinese. These linguistic and stylistic adjustments will produce a translation that is faithful to conservative Christian theology while sounding natural and authentic to Gan Chinese speakers, without introducing new content or altering doctrinal meaning.
+
+source: Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλεὲμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα
+old: 耶稣生落犹太伯利恒时，正当希律王统治之际。有几位东方来个明士，走到耶路撒冷去。
+new: 耶稣生下喺犹太伯利恒个辰光，正系希律王在朝个时辰，吓咧有几个东方来个博士，行到耶路撒冷去。
+
+2025-04-21 13:24:03 - Average grade: 86.99 - reflected on verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:07 - Average grade: 87.14 - added grade number 1 on loop 10 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:10 - Average grade: 87.14 - added grade number 2 on loop 10 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:13 - Average grade: 87.14 - added grade number 3 on loop 10 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:16 - Average grade: 87.06 - added grade number 4 on loop 10 of grade 78 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:20 - Average grade: 87.08 - added grade number 5 on loop 10 of grade 85 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+2025-04-21 13:24:23 - Average grade: 87.01 - added grade number 6 on loop 10 of grade 75 to verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 3
+Finilizing MAT 2:1
+
+old: 耶稣生下喺犹太伯利恒个辰光，正系希律王在朝个时辰，吓咧有几个东方来个博士，行到耶路撒冷去。
+new: 耶稣生在犹太伯利恒个辰头，正是希律王统治个辰头。有几位来自东方个智者走到耶路撒冷来咯。
+
+old grade: 82.16666666666667
+new grade: 86.0
+
+2025-04-21 13:24:23 - Average grade: 87.18 - finalized verse MAT 2:1 - Best grade: 87.18 - Iterations without improvement: 4
+Working on verse MAT 2:6 which has grade 86.0
+
+The peer review affirms that the current translation of Matthew 2:6 is faithful and theologically accurate from a conservative Christian viewpoint. However, to better serve the target audience speaking Gan Chinese, the translation should incorporate more Gan-specific vocabulary, sentence structures, and colloquial particles. This includes replacing formal Mandarin terms such as '村落' with Gan vernacular like '最细个村', modifying phrases like '犹大地方里' to Gan expressions such as '犹大厢' or '犹大坳里', and adding sentence-final particles or syntactic patterns typical of Gan speech. These adjustments will improve the translation's naturalness, fluency, and accessibility for Gan speakers, without changing the original meaning or theological content. The goal is a stylistically authentic Gan Chinese rendering that preserves conservative Christian theological accuracy.
+
+source: καὶ σὺ Βηθλεέμ, γῆ Ἰούδα, οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα· ἐκ σοῦ γὰρ ἐξελεύσεται ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ.
+old: “伯利恒啊，犹大地方里你可不是最小的村落，因为有一位领袖要从你那儿出来，牧养我以色列的子民。”
+new: “伯利恒啊，犹大坳里你可唔系最细个村落嘞，因有一位领袖要从你坳里出来，牧养我以色列个子民嘞。”
+
+2025-04-21 13:24:35 - Average grade: 87.18 - reflected on verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:24:38 - Average grade: 87.27 - added grade number 1 on loop 3 of grade 88 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:24:41 - Average grade: 87.20 - added grade number 2 on loop 3 of grade 85 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:24:45 - Average grade: 87.18 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:24:48 - Average grade: 87.20 - added grade number 4 on loop 3 of grade 88 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:24:55 - Average grade: 87.19 - added grade number 5 on loop 3 of grade 85 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+2025-04-21 13:25:00 - Average grade: 87.20 - added grade number 6 on loop 3 of grade 88 to verse MAT 2:6 - Best grade: 87.18 - Iterations without improvement: 5
+New best grade: 87.20289855072464 after 6 iterations.  Improvement of 0.021739130434781373
+Working on verse MAT 2:7 which has grade 86.0
+
+The translation of Matthew 2:7 is accurate and faithfully expresses the conservative Christian perspective. However, to better align with Gan Chinese dialect, the student should replace Mandarin-style phrases such as '暗中召见' with more colloquial Gan expressions like '暗地叫来', '悄悄叫来', or '偷偷叫来'. Similarly, '仔细查问' should be rendered with Gan-style phrases like '细细问清楚', '打听清楚', or '详细问清楚'. Additionally, adjusting demonstratives from '那几位智者' to '嗰些智者' will reflect Gan pronoun usage. These vocabulary and sentence structure changes will enhance the translation's authenticity and naturalness in Gan Chinese, while maintaining its clear, reverent, and conservative tone.
+
+source: Τότε Ἡρῴδης λάθρα καλέσας τοὺς μάγους ἠκρίβωσε παρ᾽ αὐτῶν τὸν χρόνον τοῦ φαινομένου ἀστέρος,
+old: 于是， 希律 暗中召见那几位智者，仔细查问那星出现的准确时间，
+new: 于是，希律暗地叫来嗰些智者，细细问清楚那星出现个准确时间，
+
+2025-04-21 13:25:09 - Average grade: 87.20 - reflected on verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:13 - Average grade: 87.16 - added grade number 1 on loop 2 of grade 85 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:17 - Average grade: 87.27 - added grade number 2 on loop 2 of grade 90 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:22 - Average grade: 87.28 - added grade number 3 on loop 2 of grade 88 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:26 - Average grade: 87.25 - added grade number 4 on loop 2 of grade 85 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:29 - Average grade: 87.23 - added grade number 5 on loop 2 of grade 85 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+2025-04-21 13:25:33 - Average grade: 87.22 - added grade number 6 on loop 2 of grade 85 to verse MAT 2:7 - Best grade: 87.20 - Iterations without improvement: 0
+New best grade: 87.21739130434784 after 1 iterations.  Improvement of 0.014492753623201793
+Working on verse MAT 2:13 which has grade 86.0
+
+The current translation of Matthew 2:13 faithfully conveys the conservative Christian theological message and aligns well with the original Greek text. However, all reviewers identify that the translation leans heavily towards standard Mandarin Chinese in vocabulary, sentence structure, and idiomatic expression, which reduces its authenticity for Gan Chinese speakers. To improve, the translation should incorporate more regionally specific Gan dialect elements, including replacing Mandarin phrases such as '揽着', '赶紧走去', and '底界住' with Gan-specific vocabulary and syntax. Phrases like '主公个使者' could be rendered using more typical Gan terms like '天公使者' or '天主个使者'. Additionally, the sentence structures should be simplified and adjusted to reflect common Gan spoken patterns, using Gan particles and idioms to better express urgency and familial relationships. These adjustments will enhance the naturalness and cultural relevance of the translation without compromising theological accuracy or clarity. Overall, the main actionable corrections involve replacing Mandarin-influenced words and phrases with Gan dialectal equivalents, adapting sentence structures for Gan rhythm, and employing idiomatic Gan expressions throughout the verse.
+
+source: Ἀναχωρησάντων δὲ αὐτῶν ἰδοὺ ἄγγελος Κυρίου φαίνεται κατ᾽ ὄναρ τῷ Ἰωσὴφ λέγων· ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ φεῦγε εἰς Αἴγυπτον, καὶ ἴσθι ἐκεῖ ἕως ἂν εἴπω σοι· μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον τοῦ ἀπολέσαι αὐτό.
+old: 厾哩离开咯后，主公个使者梦里向约瑟显现，话：“你起身，揽着囝仔同祂娘亲，赶紧走去埃及底界住，等我再跟你讲，因为希律老早想找该囝仔，想剿杀祂。”
+new: 佢哩几个走开咯，天主个使者梦里显现向约瑟讲：“你起身，抱牢囡仔同祂个阿娘，赶紧走去埃及，喺嗰边住落来，等我再跟你讲。因为希律老早想搵该囡仔，想剿杀祂。”
+
+2025-04-21 13:25:46 - Average grade: 87.22 - reflected on verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:25:51 - Average grade: 87.17 - added grade number 1 on loop 3 of grade 85 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:25:55 - Average grade: 87.28 - added grade number 2 on loop 3 of grade 90 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:26:00 - Average grade: 87.25 - added grade number 3 on loop 3 of grade 85 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:26:03 - Average grade: 87.26 - added grade number 4 on loop 3 of grade 88 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:26:08 - Average grade: 87.29 - added grade number 5 on loop 3 of grade 90 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+2025-04-21 13:26:12 - Average grade: 87.29 - added grade number 6 on loop 3 of grade 88 to verse MAT 2:13 - Best grade: 87.22 - Iterations without improvement: 0
+New best grade: 87.28985507246378 after 1 iterations.  Improvement of 0.07246376811593791
+Working on verse MAT 2:22 which has grade 86.0
+
+The translation of Matthew 2:22 accurately conveys the original Greek text and aligns with conservative Christian theology, maintaining clarity about Joseph's fear and divine guidance via a dream. However, to enhance authenticity in Gan Chinese dialect, the following corrections are recommended: 1) Replace certain phrases that lean toward Mandarin or other dialects with regionally specific Gan vocabulary and idiomatic expressions. For example, consider alternatives to "心肝怕怕" and "勿敢回到彼个所在去" using more typical Gan phrasing such as "弗敢回去彼个所在." 2) Adjust syntax and sentence structures to better reflect Gan Chinese patterns, including negation, verb usage, and sentence rhythm. 3) Substitute pronouns and particles with those distinctive to Gan Chinese, and consider more natural Gan equivalents for verbs like "晓佢" (tell/instruct), potentially using expressions such as "梦里跟佢讲" or "梦里话佢." 4) Localize references to familial terms (e.g., "老豆" for father) and place descriptors to better align with Gan speech. 5) Consider replacing transitional words like "后来" with Gan dialect equivalents such as "后尾." These adjustments will preserve theological accuracy and clarity while enhancing the naturalness, contemporaneity, and regional linguistic identity of the translation in Gan Chinese. Care should be taken not to reintroduce any previously removed content or compromise doctrinal fidelity.
+
+source: ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει ἐπὶ τῆς Ἰουδαίας ἀντὶ Ἡρῴδου τοῦ πατρὸς αὐτοῦ, ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ᾽ ὄναρ ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας,
+old: 约瑟听讲亚基劳接替他老豆希律做犹太王，心肝怕怕，勿敢回到彼个所在去。后来，主的天使梦中晓佢，佢就转到加利利厝边去啦。
+new: 约瑟听讲亚基劳做他老豆希律代个犹太王，心肝惊惊，弗敢回去彼个所在。后尾，主的天使梦里跟佢讲，佢就转到加利利厝边去啦。
+
+2025-04-21 13:26:26 - Average grade: 87.29 - reflected on verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:30 - Average grade: 87.38 - added grade number 1 on loop 5 of grade 88 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:33 - Average grade: 87.31 - added grade number 2 on loop 5 of grade 85 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:36 - Average grade: 87.33 - added grade number 3 on loop 5 of grade 88 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:42 - Average grade: 87.34 - added grade number 4 on loop 5 of grade 88 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:46 - Average grade: 87.35 - added grade number 5 on loop 5 of grade 88 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+2025-04-21 13:26:49 - Average grade: 87.33 - added grade number 6 on loop 5 of grade 85 to verse MAT 2:22 - Best grade: 87.29 - Iterations without improvement: 0
+New best grade: 87.33333333333334 after 1 iterations.  Improvement of 0.043478260869562746
+2025-04-21 13:26:49 - Average grade: 87.33 - lowest grade 86.33333333333333 is above highest grade to reflect 86 - Best grade: 87.33 - Iterations without improvement: 0
