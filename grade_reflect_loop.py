@@ -431,6 +431,11 @@ def perform_reflection( selected_verse, common_context, client, config ):
 
     user_message_array += [ "The the current verse is ", vref, "\n" ]
 
+    if 'dictionary' in config:
+        if 'dictionary_description' in config:
+            user_message_array += ["\n" + config['dictionary_description'] + "\n" ]
+        user_message_array.append( json.dumps( config['dictionary'] ) + "\n" )
+
 
     #check if the config has the boolean summarize_corrections
     correction_summarization_result = None
