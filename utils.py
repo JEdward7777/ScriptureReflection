@@ -362,3 +362,70 @@ def save_jsonl_updates(filename, data, unmodifed_data, reference_key ):
         fresh_loaded = data
 
     return fresh_loaded
+
+
+def normalize_ranges( content, reference_key, translation_key, source_key ):
+    """
+    Normalize a list of verses such that if there are any ranges (<range> in the source or translation)
+    it will combine the previous verse with the current one (if there is one) into a single verse
+    with a combined reference and source and translation.
+
+    The idea is that if there are any ranges in the source or translation, this function will
+    combine the previous verse with the current one into a single verse with a combined reference
+    and source and translation.  If there are not any ranges, then the result is the same as the
+    input.
+
+    This function assumes that the input verses are sorted in the correct order.
+
+    :param content: The list of verses to normalize.
+    :param reference_key: The key to look for the reference in the verse objects.
+    :param translation_key: The key to look for the translation in the verse objects.
+    :param source_key: The key to look for the source in the verse objects.
+    :return: A list of verses with any ranges combined into a single verse.
+    """
+    normalized = []
+    for this_verse in content:
+        this_translation = look_up_key( this_verse, translation_key, default="" ).strip()
+        this_source = look_up_key( this_verse, source_key, default="" ).strip()
+        if this_translation == "<range>" or this_source == "<range>" and len(normalized) > 0:
+            last_verse = normalized.pop(-1)
+
+            #combine the reference.
+            last_reference = look_up_key( last_verse, reference_key )
+            this_reference = look_up_key( this_verse, reference_key )
+            last_book, last_chapter, last_start_verse, _              = split_ref2( last_reference )
+            this_book, this_chapter, _               , this_end_verse = split_ref2( this_reference )
+            assert last_book == this_book, "Ranges across books not supported."
+            assert last_chapter == this_chapter, "Ranges across chapters not supported."
+            reference = f"{last_book} {last_chapter}:{last_start_verse}-{this_end_verse}"
+
+            #combine the source
+            last_source = look_up_key( last_verse, source_key, default="" )
+            if this_source == "<range>":
+                source = last_source
+            else:
+                source = (last_source + "\n" + this_source).strip()
+
+            #combine the translation
+            last_translation = look_up_key( last_verse, translation_key, default="" )
+            if this_translation == "<range>":
+                translation = last_translation
+            else:
+                translation = (last_translation + "\n" + this_translation).strip()
+
+            #now create the new structure.
+            #combined_verse = copy.deepcopy( this_verse )
+            combined_verse = {}
+            set_key( combined_verse, reference_key, reference )
+            if source:
+                set_key( combined_verse, source_key, source )
+            if translation:
+                set_key( combined_verse, translation_key, translation )
+
+            #add it to the result
+            normalized.append( combined_verse )
+        else:
+            normalized.append( this_verse )
+    return normalized
+
+         

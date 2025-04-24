@@ -619,8 +619,8 @@ configs:
 
     grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
 
-    start_line: 24759 # LUK 1:1
-    end_line: 24838 # LUK 1:80
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80
 
 
   Uyghur_reflect_grok:
@@ -667,5 +667,5 @@ configs:
 
     grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
 
-    start_line: 24759 # LUK 1:1
-    end_line: 24838 # LUK 1:80
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80

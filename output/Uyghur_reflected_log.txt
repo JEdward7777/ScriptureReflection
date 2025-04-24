@@ -530,3 +530,163 @@ Using the model gpt-4.1-mini
 2025-04-24 11:54:46 - Average grade: 83.90 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:80 - Best grade: 00.00 - Iterations without improvement: 0
 2025-04-24 11:54:48 - Average grade: 83.90 - added grade number 6 on loop 1 of grade 95 to verse LUK 1:80 - Best grade: 00.00 - Iterations without improvement: 0
 2025-04-24 11:54:48 - Average grade: 83.90 - done because grading is complete and configuration is in manual_edit_mode. - Best grade: 00.00 - Iterations without improvement: 0
+Running config Uyghur_reflect
+Focusing on and after start_line 24759
+Focusing on and before end_line 24838
+Using the model gpt-4.1-mini
+2025-04-24 12:30:01 - Average grade: 95.00 - added grade number 1 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:04 - Average grade: 95.00 - added grade number 2 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:06 - Average grade: 95.00 - added grade number 3 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:08 - Average grade: 95.00 - added grade number 4 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:10 - Average grade: 95.00 - added grade number 5 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:12 - Average grade: 95.00 - added grade number 6 on loop 1 of grade 95 to verse LUK 3:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:14 - Average grade: 95.00 - added grade number 1 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:16 - Average grade: 95.00 - added grade number 2 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:22 - Average grade: 95.00 - added grade number 3 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:24 - Average grade: 95.00 - added grade number 4 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:26 - Average grade: 95.00 - added grade number 5 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:28 - Average grade: 95.00 - added grade number 6 on loop 1 of grade 95 to verse LUK 3:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:31 - Average grade: 95.00 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:33 - Average grade: 95.00 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:35 - Average grade: 94.67 - added grade number 3 on loop 1 of grade 92 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:38 - Average grade: 94.75 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:40 - Average grade: 94.80 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:43 - Average grade: 94.83 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:46 - Average grade: 94.88 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:49 - Average grade: 94.88 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:51 - Average grade: 94.88 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:30:57 - Average grade: 94.69 - added grade number 4 on loop 1 of grade 92 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:00 - Average grade: 94.72 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:01 - Average grade: 94.75 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:05 - Average grade: 94.80 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:08 - Average grade: 94.80 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:09 - Average grade: 94.80 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:11 - Average grade: 94.80 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:13 - Average grade: 94.80 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:18 - Average grade: 94.80 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:20 - Average grade: 94.83 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:23 - Average grade: 94.83 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:25 - Average grade: 94.83 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:27 - Average grade: 94.83 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:29 - Average grade: 94.83 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:31 - Average grade: 94.83 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:37 - Average grade: 94.86 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:40 - Average grade: 94.86 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:42 - Average grade: 94.86 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:46 - Average grade: 94.86 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:49 - Average grade: 94.80 - added grade number 5 on loop 1 of grade 93 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:52 - Average grade: 94.81 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:55 - Average grade: 94.83 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:31:58 - Average grade: 94.83 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:00 - Average grade: 94.83 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:03 - Average grade: 94.83 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:05 - Average grade: 94.83 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:08 - Average grade: 94.83 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:13 - Average grade: 94.85 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:16 - Average grade: 94.85 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:18 - Average grade: 94.85 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:22 - Average grade: 94.85 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:25 - Average grade: 94.85 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:27 - Average grade: 94.85 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:29 - Average grade: 94.87 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:32 - Average grade: 94.87 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:35 - Average grade: 94.87 - added grade number 3 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:37 - Average grade: 94.87 - added grade number 4 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:39 - Average grade: 94.87 - added grade number 5 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:41 - Average grade: 94.87 - added grade number 6 on loop 1 of grade 95 to verse LUK 4:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:47 - Average grade: 94.88 - added grade number 1 on loop 1 of grade 95 to verse LUK 4:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:32:49 - Average grade: 94.88 - added grade number 2 on loop 1 of grade 95 to verse LUK 4:9 - Best grade: 00.00 - Iterations without improvement: 0
+Running config Uyghur_reflect
+Focusing on and after start_line 24599
+Focusing on and before end_line 24670
+Using the model gpt-4.1-mini
+2025-04-24 12:34:55 - Average grade: 92.83 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:34:58 - Average grade: 92.83 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:01 - Average grade: 92.83 - added grade number 3 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:03 - Average grade: 92.83 - added grade number 4 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:05 - Average grade: 92.83 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:09 - Average grade: 92.82 - added grade number 6 on loop 1 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:11 - Average grade: 92.83 - added grade number 1 on loop 1 of grade 93 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:14 - Average grade: 92.84 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:16 - Average grade: 92.85 - added grade number 3 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:17 - Average grade: 92.85 - added grade number 4 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:19 - Average grade: 92.85 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:21 - Average grade: 92.85 - added grade number 6 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:24 - Average grade: 92.88 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:27 - Average grade: 92.87 - added grade number 2 on loop 1 of grade 93 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:31 - Average grade: 92.87 - added grade number 3 on loop 1 of grade 95 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:35 - Average grade: 92.87 - added grade number 4 on loop 1 of grade 95 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:38 - Average grade: 92.88 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:40 - Average grade: 92.87 - added grade number 6 on loop 1 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:43 - Average grade: 92.90 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:45 - Average grade: 92.90 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:47 - Average grade: 92.88 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:50 - Average grade: 92.88 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:53 - Average grade: 92.88 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:35:57 - Average grade: 92.88 - added grade number 6 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:00 - Average grade: 92.91 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:02 - Average grade: 92.91 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:06 - Average grade: 92.91 - added grade number 3 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:10 - Average grade: 92.90 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:12 - Average grade: 92.89 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:16 - Average grade: 92.89 - added grade number 6 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:36:16 - Average grade: 92.89 - done because grading is complete and configuration is in manual_edit_mode. - Best grade: 00.00 - Iterations without improvement: 0
+Running config Uyghur_reflect
+Focusing on and after start_line 24599
+Focusing on and before end_line 24670
+Using the model gpt-4.1-mini
+2025-04-24 12:45:42 - Average grade: 92.89 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:44 - Average grade: 92.89 - added grade number 1 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:46 - Average grade: 92.89 - added grade number 2 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:48 - Average grade: 92.89 - added grade number 3 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:49 - Average grade: 92.89 - added grade number 4 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:51 - Average grade: 92.89 - added grade number 5 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:52 - Average grade: 92.89 - added grade number 6 on loop 2 of grade 0 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:45:52 - Average grade: 92.89 - done because grading is complete and configuration is in manual_edit_mode. - Best grade: 00.00 - Iterations without improvement: 0
+Running config Uyghur_reflect
+Focusing on and after start_line 24599
+Focusing on and before end_line 24670
+Using the model gpt-4.1-mini
+2025-04-24 12:57:00 - Average grade: 94.21 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:02 - Average grade: 94.19 - added grade number 2 on loop 1 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:06 - Average grade: 94.20 - added grade number 3 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:09 - Average grade: 94.20 - added grade number 4 on loop 1 of grade 95 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:12 - Average grade: 94.19 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:16 - Average grade: 94.19 - added grade number 6 on loop 1 of grade 93 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:20 - Average grade: 94.20 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:24 - Average grade: 94.20 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:27 - Average grade: 94.19 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:32 - Average grade: 94.18 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:39 - Average grade: 94.19 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:42 - Average grade: 94.19 - added grade number 6 on loop 1 of grade 95 to verse LUK 1:41-42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:45 - Average grade: 94.20 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:48 - Average grade: 94.20 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:50 - Average grade: 94.19 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:52 - Average grade: 94.18 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:56 - Average grade: 94.18 - added grade number 5 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:57:59 - Average grade: 94.19 - added grade number 6 on loop 1 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:03 - Average grade: 94.15 - added grade number 1 on loop 1 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:07 - Average grade: 94.15 - added grade number 2 on loop 1 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:11 - Average grade: 94.15 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:14 - Average grade: 94.17 - added grade number 4 on loop 1 of grade 95 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:17 - Average grade: 94.16 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:19 - Average grade: 94.16 - added grade number 6 on loop 1 of grade 93 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:25 - Average grade: 94.10 - added grade number 1 on loop 1 of grade 90 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:28 - Average grade: 94.12 - added grade number 2 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:30 - Average grade: 94.12 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:33 - Average grade: 94.13 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:36 - Average grade: 94.13 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:39 - Average grade: 94.13 - added grade number 6 on loop 1 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:43 - Average grade: 94.14 - added grade number 1 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:48 - Average grade: 94.14 - added grade number 2 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:53 - Average grade: 94.13 - added grade number 3 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:58:58 - Average grade: 94.12 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:02 - Average grade: 94.12 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:05 - Average grade: 94.12 - added grade number 6 on loop 1 of grade 95 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:11 - Average grade: 94.13 - added grade number 1 on loop 1 of grade 95 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:14 - Average grade: 94.13 - added grade number 2 on loop 1 of grade 95 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:17 - Average grade: 94.12 - added grade number 3 on loop 1 of grade 93 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:21 - Average grade: 94.13 - added grade number 4 on loop 1 of grade 95 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:25 - Average grade: 94.13 - added grade number 5 on loop 1 of grade 95 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:29 - Average grade: 94.13 - added grade number 6 on loop 1 of grade 95 to verse LUK 2:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-24 12:59:30 - Average grade: 94.13 - done because grading is complete and configuration is in manual_edit_mode. - Best grade: 00.00 - Iterations without improvement: 0

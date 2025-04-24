@@ -736,6 +736,15 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     else:
         #otherwise load the existing translation and blank out all the translation keys.
         reflection_output = copy.deepcopy( translation_input )
+
+    #the patch saver doesn't work with verses being dropped so just go ahead and do the fix here.
+    if config.get( "normalize_ranges", True ):
+        length_before = len( reflection_output )
+        reflection_output = utils.normalize_ranges( reflection_output, config['reference_key'], config['translation_key'], config['source_key'] )
+        length_after = len( reflection_output )
+        if length_before != length_after:
+            utils.save_jsonl( reflection_output_filename, reflection_output )
+
     reflection_output_unmodified = copy.deepcopy( reflection_output )
 
     try:
