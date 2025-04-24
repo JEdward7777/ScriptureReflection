@@ -423,7 +423,7 @@ configs:
 
 
   chinese_gan:
-    active: true
+    active: false
 
     manual_edit_mode: false
 
@@ -575,3 +575,97 @@ configs:
       去: 去
       喜欢: 喜欢
 
+  Uyghur_reflect:
+    active: true
+
+    manual_edit_mode: true
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: "Purpose: To adapt the Uigara Bible (which is more literal) to create the second Full Uigara Bible (which is more natural & readable)\nStyle: Use a contemporary and modern style for Uigara but hold to conservative Christain interpretations.\n"
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    reflection_output: output/Uyghur_reflected.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/Uyghur_reflected.csv
+    tee_output_filename:   output/Uyghur_reflected_log.txt
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
+
+    start_line: 24759 # LUK 1:1
+    end_line: 24838 # LUK 1:80
+
+
+  Uyghur_reflect_grok:
+    active: true
+
+    manual_edit_mode: true
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    #api_key: [ryders_key,key]
+    api_key: [mm_key_grok,key]
+    translation_objective: "Purpose: To adapt the Uigara Bible (which is more literal) to create the second Full Uigara Bible (which is more natural & readable)\nStyle: Use a contemporary and modern style for Uigara but hold to conservative Christain interpretations.\n"
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    #model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    reflection_output: output/Uyghur_reflected_grok.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/Uyghur_reflected_grok.csv
+    tee_output_filename:   output/Uyghur_reflected_grok_log.txt
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary."
+
+    start_line: 24759 # LUK 1:1
+    end_line: 24838 # LUK 1:80
