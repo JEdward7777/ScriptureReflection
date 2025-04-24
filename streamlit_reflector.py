@@ -1045,7 +1045,10 @@ def main():
 
 
                 # Create a slider to navigate through pages
-                page = st.slider("Go to page", 1, num_pages, key="page_slider")
+                if num_pages > 1:
+                    page = st.slider("Go to page", 1, num_pages, key="page_slider")
+                else:
+                    page = 1
 
                 checkpoint( "sorter tab: slider" )
 

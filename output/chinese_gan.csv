@@ -8407,3 +8407,354 @@ time,average_grade,action_done,best_grade_found,iterations_without_improvement
 2025-04-22 12:05:46,87.30000000000001,finalized verse MRK 3:32,87.30000000000001,3
 2025-04-22 12:05:46,87.30000000000001,finalized verse MRK 3:31,87.30000000000001,4
 2025-04-22 12:05:46,87.30000000000001,Didn't find a verse to reflect on.  So done.,87.30000000000001,5
+2025-04-24 08:59:38,20.0,added grade number 1 on loop 1 of grade 20 to verse MRK 3:31,0,0
+2025-04-24 08:59:50,22.5,added grade number 2 on loop 1 of grade 25 to verse MRK 3:31,0,0
+2025-04-24 09:00:02,21.666666666666668,added grade number 3 on loop 1 of grade 20 to verse MRK 3:31,0,0
+2025-04-24 09:00:13,18.75,added grade number 4 on loop 1 of grade 10 to verse MRK 3:31,0,0
+2025-04-24 09:00:23,17.0,added grade number 5 on loop 1 of grade 10 to verse MRK 3:31,0,0
+2025-04-24 09:00:35,17.5,added grade number 6 on loop 1 of grade 20 to verse MRK 3:31,0,0
+2025-04-24 09:00:46,13.75,added grade number 1 on loop 1 of grade 10 to verse MRK 3:32,0,0
+2025-04-24 09:01:00,16.25,added grade number 2 on loop 1 of grade 20 to verse MRK 3:32,0,0
+2025-04-24 09:01:09,17.916666666666664,added grade number 3 on loop 1 of grade 25 to verse MRK 3:32,0,0
+2025-04-24 09:01:21,18.75,added grade number 4 on loop 1 of grade 25 to verse MRK 3:32,0,0
+2025-04-24 09:01:31,17.75,added grade number 5 on loop 1 of grade 10 to verse MRK 3:32,0,0
+2025-04-24 09:01:43,17.916666666666664,added grade number 6 on loop 1 of grade 20 to verse MRK 3:32,0,0
+2025-04-24 09:01:52,18.61111111111111,added grade number 1 on loop 1 of grade 20 to verse MRK 3:33,0,0
+2025-04-24 09:02:02,16.944444444444443,added grade number 2 on loop 1 of grade 10 to verse MRK 3:33,0,0
+2025-04-24 09:02:14,15.277777777777777,added grade number 3 on loop 1 of grade 0 to verse MRK 3:33,0,0
+2025-04-24 09:02:24,16.11111111111111,added grade number 4 on loop 1 of grade 20 to verse MRK 3:33,0,0
+2025-04-24 09:02:34,15.944444444444443,added grade number 5 on loop 1 of grade 10 to verse MRK 3:33,0,0
+2025-04-24 09:02:42,16.944444444444443,added grade number 6 on loop 1 of grade 30 to verse MRK 3:33,0,0
+2025-04-24 09:02:53,20.208333333333332,added grade number 1 on loop 1 of grade 30 to verse MRK 3:34,0,0
+2025-04-24 09:03:07,18.958333333333332,added grade number 2 on loop 1 of grade 20 to verse MRK 3:34,0,0
+2025-04-24 09:03:21,18.541666666666664,added grade number 3 on loop 1 of grade 20 to verse MRK 3:34,0,0
+2025-04-24 09:03:32,18.645833333333332,added grade number 4 on loop 1 of grade 25 to verse MRK 3:34,0,0
+2025-04-24 09:03:43,17.708333333333332,added grade number 5 on loop 1 of grade 5 to verse MRK 3:34,0,0
+2025-04-24 09:03:55,17.916666666666664,added grade number 6 on loop 1 of grade 25 to verse MRK 3:34,0,0
+2025-04-24 09:04:06,18.333333333333332,added grade number 1 on loop 1 of grade 20 to verse MRK 3:35,0,0
+2025-04-24 09:04:17,19.333333333333332,added grade number 2 on loop 1 of grade 30 to verse MRK 3:35,0,0
+2025-04-24 09:04:29,18.999999999999996,added grade number 3 on loop 1 of grade 20 to verse MRK 3:35,0,0
+2025-04-24 09:04:39,18.833333333333332,added grade number 4 on loop 1 of grade 20 to verse MRK 3:35,0,0
+2025-04-24 09:04:50,18.73333333333333,added grade number 5 on loop 1 of grade 20 to verse MRK 3:35,0,0
+2025-04-24 09:05:01,18.833333333333332,added grade number 6 on loop 1 of grade 25 to verse MRK 3:35,0,0
+2025-04-24 09:05:20,18.833333333333332,reflected on verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:05:34,24.833333333333332,added grade number 1 on loop 2 of grade 45 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:05:46,25.833333333333332,added grade number 2 on loop 2 of grade 55 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:06:04,26.166666666666664,added grade number 3 on loop 2 of grade 55 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:06:19,26.833333333333332,added grade number 4 on loop 2 of grade 65 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:06:33,27.23333333333333,added grade number 5 on loop 2 of grade 65 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:06:46,27.5,added grade number 6 on loop 2 of grade 65 to verse MRK 3:33,18.833333333333332,0
+2025-04-24 09:07:12,27.5,reflected on verse MRK 3:31,27.5,0
+2025-04-24 09:07:26,36.6,added grade number 1 on loop 2 of grade 63 to verse MRK 3:31,27.5,0
+2025-04-24 09:07:42,33.3,added grade number 2 on loop 2 of grade 30 to verse MRK 3:31,27.5,0
+2025-04-24 09:07:59,34.53333333333334,added grade number 3 on loop 2 of grade 65 to verse MRK 3:31,27.5,0
+2025-04-24 09:08:12,34.15,added grade number 4 on loop 2 of grade 45 to verse MRK 3:31,27.5,0
+2025-04-24 09:08:25,33.92,added grade number 5 on loop 2 of grade 45 to verse MRK 3:31,27.5,0
+2025-04-24 09:08:38,35.1,added grade number 6 on loop 2 of grade 85 to verse MRK 3:31,27.5,0
+2025-04-24 09:09:06,35.1,reflected on verse MRK 3:32,35.1,0
+2025-04-24 09:09:19,46.43333333333334,added grade number 1 on loop 2 of grade 75 to verse MRK 3:32,35.1,0
+2025-04-24 09:09:34,45.43333333333334,added grade number 2 on loop 2 of grade 65 to verse MRK 3:32,35.1,0
+2025-04-24 09:09:47,43.43333333333334,added grade number 3 on loop 2 of grade 40 to verse MRK 3:32,35.1,0
+2025-04-24 09:10:01,41.68333333333334,added grade number 4 on loop 2 of grade 25 to verse MRK 3:32,35.1,0
+2025-04-24 09:10:16,42.233333333333334,added grade number 5 on loop 2 of grade 65 to verse MRK 3:32,35.1,0
+2025-04-24 09:10:29,41.93333333333334,added grade number 6 on loop 2 of grade 45 to verse MRK 3:32,35.1,0
+2025-04-24 09:10:57,41.93333333333334,reflected on verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:11:09,44.766666666666666,added grade number 1 on loop 2 of grade 35 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:11:25,47.766666666666666,added grade number 2 on loop 2 of grade 65 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:11:40,47.43333333333334,added grade number 3 on loop 2 of grade 45 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:11:55,47.266666666666666,added grade number 4 on loop 2 of grade 45 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:12:12,47.36666666666667,added grade number 5 on loop 2 of grade 50 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:12:29,48.266666666666666,added grade number 6 on loop 2 of grade 75 to verse MRK 3:34,41.93333333333334,0
+2025-04-24 09:12:58,48.266666666666666,reflected on verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:13:13,56.76666666666667,added grade number 1 on loop 2 of grade 65 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:13:29,56.76666666666667,added grade number 2 on loop 2 of grade 65 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:13:42,58.1,added grade number 3 on loop 2 of grade 85 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:13:55,56.76666666666667,added grade number 4 on loop 2 of grade 45 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:14:10,57.16666666666667,added grade number 5 on loop 2 of grade 75 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:14:21,57.1,added grade number 6 on loop 2 of grade 65 to verse MRK 3:35,48.266666666666666,0
+2025-04-24 09:14:48,57.1,reflected on verse MRK 3:32,57.1,0
+2025-04-24 09:15:01,61.6,added grade number 1 on loop 3 of grade 75 to verse MRK 3:32,57.1,0
+2025-04-24 09:15:14,59.6,added grade number 2 on loop 3 of grade 55 to verse MRK 3:32,57.1,0
+2025-04-24 09:15:26,59.6,added grade number 3 on loop 3 of grade 65 to verse MRK 3:32,57.1,0
+2025-04-24 09:15:41,59.75,added grade number 4 on loop 3 of grade 68 to verse MRK 3:32,57.1,0
+2025-04-24 09:15:52,59.52,added grade number 5 on loop 3 of grade 60 to verse MRK 3:32,57.1,0
+2025-04-24 09:16:07,59.366666666666674,added grade number 6 on loop 3 of grade 60 to verse MRK 3:32,57.1,0
+2025-04-24 09:16:34,59.366666666666674,reflected on verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:16:53,61.866666666666674,added grade number 1 on loop 3 of grade 65 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:17:10,59.866666666666674,added grade number 2 on loop 3 of grade 45 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:17:25,60.53333333333334,added grade number 3 on loop 3 of grade 65 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:17:38,58.866666666666674,added grade number 4 on loop 3 of grade 25 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:17:53,59.466666666666676,added grade number 5 on loop 3 of grade 65 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:18:07,59.866666666666674,added grade number 6 on loop 3 of grade 65 to verse MRK 3:34,59.366666666666674,0
+2025-04-24 09:18:39,59.866666666666674,reflected on verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:18:55,57.866666666666674,added grade number 1 on loop 4 of grade 45 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:19:09,58.866666666666674,added grade number 2 on loop 4 of grade 55 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:19:23,57.53333333333334,added grade number 3 on loop 4 of grade 30 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:19:36,58.616666666666674,added grade number 4 on loop 4 of grade 65 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:19:50,58.466666666666676,added grade number 5 on loop 4 of grade 45 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:20:04,58.366666666666674,added grade number 6 on loop 4 of grade 45 to verse MRK 3:34,59.866666666666674,0
+2025-04-24 09:20:34,58.366666666666674,reflected on verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:20:47,60.866666666666674,added grade number 1 on loop 5 of grade 60 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:21:00,58.866666666666674,added grade number 2 on loop 5 of grade 40 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:21:12,60.53333333333334,added grade number 3 on loop 5 of grade 75 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:21:26,61.366666666666674,added grade number 4 on loop 5 of grade 75 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:21:42,61.06666666666668,added grade number 5 on loop 5 of grade 55 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:21:55,61.2,added grade number 6 on loop 5 of grade 65 to verse MRK 3:34,59.866666666666674,1
+2025-04-24 09:22:32,61.2,reflected on verse MRK 3:31,61.2,0
+2025-04-24 09:22:45,62.1,added grade number 1 on loop 3 of grade 60 to verse MRK 3:31,61.2,0
+2025-04-24 09:22:59,63.6,added grade number 2 on loop 3 of grade 75 to verse MRK 3:31,61.2,0
+2025-04-24 09:23:12,64.1,added grade number 3 on loop 3 of grade 75 to verse MRK 3:31,61.2,0
+2025-04-24 09:23:27,63.85,added grade number 4 on loop 3 of grade 65 to verse MRK 3:31,61.2,0
+2025-04-24 09:23:39,64.1,added grade number 5 on loop 3 of grade 75 to verse MRK 3:31,61.2,0
+2025-04-24 09:23:54,64.26666666666667,added grade number 6 on loop 3 of grade 75 to verse MRK 3:31,61.2,0
+2025-04-24 09:24:16,64.26666666666667,reflected on verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:24:29,67.6,added grade number 1 on loop 3 of grade 75 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:24:42,68.6,added grade number 2 on loop 3 of grade 85 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:24:55,67.6,added grade number 3 on loop 3 of grade 65 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:25:09,66.6,added grade number 4 on loop 3 of grade 55 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:25:21,66.4,added grade number 5 on loop 3 of grade 65 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:25:35,66.6,added grade number 6 on loop 3 of grade 75 to verse MRK 3:33,64.26666666666667,0
+2025-04-24 09:26:05,66.6,reflected on verse MRK 3:34,66.6,0
+2025-04-24 09:26:20,63.266666666666666,added grade number 1 on loop 6 of grade 45 to verse MRK 3:34,66.6,0
+2025-04-24 09:26:35,64.26666666666667,added grade number 2 on loop 6 of grade 55 to verse MRK 3:34,66.6,0
+2025-04-24 09:26:49,65.93333333333334,added grade number 3 on loop 6 of grade 75 to verse MRK 3:34,66.6,0
+2025-04-24 09:27:03,66.76666666666667,added grade number 4 on loop 6 of grade 75 to verse MRK 3:34,66.6,0
+2025-04-24 09:27:18,66.06666666666666,added grade number 5 on loop 6 of grade 45 to verse MRK 3:34,66.6,0
+2025-04-24 09:27:31,65.43333333333334,added grade number 6 on loop 6 of grade 40 to verse MRK 3:34,66.6,0
+2025-04-24 09:27:59,65.43333333333334,reflected on verse MRK 3:34,66.6,1
+2025-04-24 09:28:13,69.26666666666667,added grade number 1 on loop 7 of grade 75 to verse MRK 3:34,66.6,1
+2025-04-24 09:28:29,65.76666666666667,added grade number 2 on loop 7 of grade 40 to verse MRK 3:34,66.6,1
+2025-04-24 09:28:45,65.6,added grade number 3 on loop 7 of grade 55 to verse MRK 3:34,66.6,1
+2025-04-24 09:28:59,66.51666666666667,added grade number 4 on loop 7 of grade 75 to verse MRK 3:34,66.6,1
+2025-04-24 09:29:13,67.06666666666666,added grade number 5 on loop 7 of grade 75 to verse MRK 3:34,66.6,1
+2025-04-24 09:29:27,67.43333333333334,added grade number 6 on loop 7 of grade 75 to verse MRK 3:34,66.6,1
+2025-04-24 09:29:51,67.43333333333334,reflected on verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:30:05,67.66666666666666,added grade number 1 on loop 4 of grade 65 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:30:19,68.66666666666666,added grade number 2 on loop 4 of grade 75 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:30:31,69.0,added grade number 3 on loop 4 of grade 75 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:30:46,69.16666666666666,added grade number 4 on loop 4 of grade 75 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:30:59,68.86666666666666,added grade number 5 on loop 4 of grade 65 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:31:13,69.33333333333334,added grade number 6 on loop 4 of grade 85 to verse MRK 3:32,67.43333333333334,0
+2025-04-24 09:31:41,69.33333333333334,reflected on verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:31:55,69.16666666666666,added grade number 1 on loop 8 of grade 65 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:32:08,70.16666666666666,added grade number 2 on loop 8 of grade 75 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:32:22,69.83333333333334,added grade number 3 on loop 8 of grade 65 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:32:36,68.41666666666666,added grade number 4 on loop 8 of grade 40 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:32:49,68.56666666666666,added grade number 5 on loop 8 of grade 65 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:33:03,68.66666666666666,added grade number 6 on loop 8 of grade 65 to verse MRK 3:34,69.33333333333334,0
+2025-04-24 09:33:29,68.66666666666666,reflected on verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:33:42,65.16666666666666,added grade number 1 on loop 9 of grade 45 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:33:55,66.16666666666666,added grade number 2 on loop 9 of grade 55 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:34:10,64.83333333333334,added grade number 3 on loop 9 of grade 30 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:34:26,66.41666666666666,added grade number 4 on loop 9 of grade 75 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:34:40,65.76666666666667,added grade number 5 on loop 9 of grade 35 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:34:54,65.5,added grade number 6 on loop 9 of grade 40 to verse MRK 3:34,69.33333333333334,1
+2025-04-24 09:35:24,65.5,reflected on verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:35:38,69.16666666666666,added grade number 1 on loop 10 of grade 65 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:35:50,70.16666666666666,added grade number 2 on loop 10 of grade 75 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:36:05,70.5,added grade number 3 on loop 10 of grade 75 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:36:20,70.66666666666666,added grade number 4 on loop 10 of grade 75 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:36:33,70.76666666666667,added grade number 5 on loop 10 of grade 75 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:36:47,70.83333333333334,added grade number 6 on loop 10 of grade 75 to verse MRK 3:34,69.33333333333334,2
+2025-04-24 09:37:13,70.83333333333334,reflected on verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:37:28,65.5,added grade number 1 on loop 3 of grade 40 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:37:41,67.0,added grade number 2 on loop 3 of grade 55 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:37:53,69.5,added grade number 3 on loop 3 of grade 85 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:38:06,69.25,added grade number 4 on loop 3 of grade 55 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:38:17,70.3,added grade number 5 on loop 3 of grade 85 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:38:32,70.0,added grade number 6 on loop 3 of grade 55 to verse MRK 3:35,70.83333333333334,0
+2025-04-24 09:38:59,70.0,reflected on verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:39:11,70.5,added grade number 1 on loop 4 of grade 65 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:39:23,71.5,added grade number 2 on loop 4 of grade 75 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:39:36,72.5,added grade number 3 on loop 4 of grade 85 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:39:51,72.5,added grade number 4 on loop 4 of grade 75 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:40:04,72.5,added grade number 5 on loop 4 of grade 75 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:40:18,72.83333333333334,added grade number 6 on loop 4 of grade 85 to verse MRK 3:35,70.83333333333334,1
+2025-04-24 09:40:44,72.83333333333334,reflected on verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:40:57,69.83333333333334,added grade number 1 on loop 4 of grade 55 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:41:12,68.83333333333334,added grade number 2 on loop 4 of grade 45 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:41:25,70.5,added grade number 3 on loop 4 of grade 75 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:41:40,71.33333333333334,added grade number 4 on loop 4 of grade 75 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:41:55,71.43333333333334,added grade number 5 on loop 4 of grade 65 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:42:10,71.83333333333334,added grade number 6 on loop 4 of grade 75 to verse MRK 3:33,72.83333333333334,0
+2025-04-24 09:42:38,71.83333333333334,reflected on verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:42:52,71.83333333333334,added grade number 1 on loop 5 of grade 65 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:43:07,72.83333333333334,added grade number 2 on loop 5 of grade 75 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:43:20,73.16666666666666,added grade number 3 on loop 5 of grade 75 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:43:35,73.33333333333334,added grade number 4 on loop 5 of grade 75 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:43:47,72.23333333333333,added grade number 5 on loop 5 of grade 45 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:44:02,72.16666666666666,added grade number 6 on loop 5 of grade 65 to verse MRK 3:33,72.83333333333334,1
+2025-04-24 09:44:30,72.16666666666666,reflected on verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:44:42,73.83333333333334,added grade number 1 on loop 6 of grade 75 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:44:57,74.83333333333334,added grade number 2 on loop 6 of grade 85 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:45:11,74.5,added grade number 3 on loop 6 of grade 75 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:45:23,74.33333333333334,added grade number 4 on loop 6 of grade 75 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:45:34,74.23333333333333,added grade number 5 on loop 6 of grade 75 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:45:48,73.83333333333334,added grade number 6 on loop 6 of grade 65 to verse MRK 3:33,72.83333333333334,2
+2025-04-24 09:46:20,73.83333333333334,reflected on verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:46:34,72.66666666666666,added grade number 1 on loop 4 of grade 65 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:46:49,72.66666666666666,added grade number 2 on loop 4 of grade 65 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:47:01,72.66666666666666,added grade number 3 on loop 4 of grade 65 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:47:15,73.16666666666666,added grade number 4 on loop 4 of grade 75 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:47:30,73.46666666666667,added grade number 5 on loop 4 of grade 75 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:47:43,74.0,added grade number 6 on loop 4 of grade 85 to verse MRK 3:31,73.83333333333334,0
+2025-04-24 09:48:10,74.0,reflected on verse MRK 3:31,74.0,0
+2025-04-24 09:48:23,76.66666666666666,added grade number 1 on loop 5 of grade 85 to verse MRK 3:31,74.0,0
+2025-04-24 09:48:38,74.66666666666666,added grade number 2 on loop 5 of grade 65 to verse MRK 3:31,74.0,0
+2025-04-24 09:48:50,75.53333333333333,added grade number 3 on loop 5 of grade 88 to verse MRK 3:31,74.0,0
+2025-04-24 09:49:04,75.81666666666666,added grade number 4 on loop 5 of grade 85 to verse MRK 3:31,74.0,0
+2025-04-24 09:49:16,75.98666666666666,added grade number 5 on loop 5 of grade 85 to verse MRK 3:31,74.0,0
+2025-04-24 09:49:31,75.76666666666667,added grade number 6 on loop 5 of grade 75 to verse MRK 3:31,74.0,0
+2025-04-24 09:50:00,75.76666666666667,reflected on verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:50:13,78.1,added grade number 1 on loop 5 of grade 85 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:50:27,78.6,added grade number 2 on loop 5 of grade 90 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:50:39,78.43333333333334,added grade number 3 on loop 5 of grade 85 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:50:52,78.35,added grade number 4 on loop 5 of grade 85 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:51:07,77.7,added grade number 5 on loop 5 of grade 70 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:51:20,77.43333333333334,added grade number 6 on loop 5 of grade 75 to verse MRK 3:32,75.76666666666667,0
+2025-04-24 09:51:22,77.43333333333334,finalized verse MRK 3:34,77.43333333333334,0
+2025-04-24 09:51:47,77.43333333333334,reflected on verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:52:02,77.43333333333334,added grade number 1 on loop 7 of grade 75 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:52:17,77.43333333333334,added grade number 2 on loop 7 of grade 75 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:52:28,76.76666666666668,added grade number 3 on loop 7 of grade 65 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:52:43,76.68333333333334,added grade number 4 on loop 7 of grade 70 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:52:58,76.43333333333334,added grade number 5 on loop 7 of grade 65 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:53:12,75.43333333333334,added grade number 6 on loop 7 of grade 40 to verse MRK 3:33,77.43333333333334,1
+2025-04-24 09:53:39,75.43333333333334,reflected on verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:53:54,76.43333333333334,added grade number 1 on loop 8 of grade 70 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:54:08,76.93333333333334,added grade number 2 on loop 8 of grade 75 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:54:21,77.76666666666668,added grade number 3 on loop 8 of grade 85 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:54:35,77.68333333333334,added grade number 4 on loop 8 of grade 75 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:54:46,75.83333333333334,added grade number 5 on loop 8 of grade 30 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:55:00,76.1,added grade number 6 on loop 8 of grade 75 to verse MRK 3:33,77.43333333333334,2
+2025-04-24 09:55:27,76.1,reflected on verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:55:40,77.43333333333334,added grade number 1 on loop 9 of grade 75 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:55:52,77.43333333333334,added grade number 2 on loop 9 of grade 75 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:56:04,76.76666666666668,added grade number 3 on loop 9 of grade 65 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:56:18,75.68333333333334,added grade number 4 on loop 9 of grade 50 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:56:32,76.43333333333334,added grade number 5 on loop 9 of grade 85 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:56:47,76.93333333333334,added grade number 6 on loop 9 of grade 85 to verse MRK 3:33,77.43333333333334,3
+2025-04-24 09:57:19,76.93333333333334,reflected on verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:57:35,77.43333333333334,added grade number 1 on loop 10 of grade 75 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:57:49,77.43333333333334,added grade number 2 on loop 10 of grade 75 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:58:02,78.1,added grade number 3 on loop 10 of grade 85 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:58:16,77.93333333333334,added grade number 4 on loop 10 of grade 75 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:58:30,77.83333333333334,added grade number 5 on loop 10 of grade 75 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:58:44,77.76666666666668,added grade number 6 on loop 10 of grade 75 to verse MRK 3:33,77.43333333333334,4
+2025-04-24 09:58:46,77.76666666666668,finalized verse MRK 3:33,77.76666666666668,0
+2025-04-24 09:59:17,77.76666666666668,reflected on verse MRK 3:35,77.76666666666668,1
+2025-04-24 09:59:32,77.43333333333334,added grade number 1 on loop 5 of grade 75 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 09:59:47,77.43333333333334,added grade number 2 on loop 5 of grade 75 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 10:00:02,77.43333333333334,added grade number 3 on loop 5 of grade 75 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 10:00:19,76.93333333333334,added grade number 4 on loop 5 of grade 65 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 10:00:30,77.55333333333333,added grade number 5 on loop 5 of grade 88 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 10:00:44,77.53333333333333,added grade number 6 on loop 5 of grade 75 to verse MRK 3:35,77.76666666666668,1
+2025-04-24 10:01:12,77.53333333333333,reflected on verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:01:27,77.43333333333334,added grade number 1 on loop 6 of grade 75 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:01:41,77.43333333333334,added grade number 2 on loop 6 of grade 75 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:01:55,78.56666666666668,added grade number 3 on loop 6 of grade 92 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:02:10,78.28333333333333,added grade number 4 on loop 6 of grade 75 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:02:24,78.51333333333335,added grade number 5 on loop 6 of grade 85 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:02:38,78.66666666666667,added grade number 6 on loop 6 of grade 85 to verse MRK 3:35,77.76666666666668,2
+2025-04-24 10:03:07,78.66666666666667,reflected on verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:03:21,77.56666666666668,added grade number 1 on loop 6 of grade 75 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:03:34,77.56666666666668,added grade number 2 on loop 6 of grade 75 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:03:47,76.9,added grade number 3 on loop 6 of grade 65 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:04:02,77.56666666666668,added grade number 4 on loop 6 of grade 85 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:04:16,77.56666666666668,added grade number 5 on loop 6 of grade 75 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:04:30,77.9,added grade number 6 on loop 6 of grade 85 to verse MRK 3:31,78.66666666666667,0
+2025-04-24 10:04:55,77.9,reflected on verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:05:08,75.56666666666668,added grade number 1 on loop 7 of grade 65 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:05:23,76.56666666666668,added grade number 2 on loop 7 of grade 75 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:05:37,76.9,added grade number 3 on loop 7 of grade 75 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:05:50,77.06666666666668,added grade number 4 on loop 7 of grade 75 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:06:04,76.76666666666668,added grade number 5 on loop 7 of grade 65 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:06:19,76.9,added grade number 6 on loop 7 of grade 75 to verse MRK 3:31,78.66666666666667,1
+2025-04-24 10:06:52,76.9,reflected on verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:07:05,79.56666666666668,added grade number 1 on loop 8 of grade 85 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:07:17,78.56666666666668,added grade number 2 on loop 8 of grade 75 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:07:29,78.9,added grade number 3 on loop 8 of grade 85 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:07:42,78.31666666666668,added grade number 4 on loop 8 of grade 70 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:07:56,77.76666666666668,added grade number 5 on loop 8 of grade 65 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:08:08,77.73333333333333,added grade number 6 on loop 8 of grade 75 to verse MRK 3:31,78.66666666666667,2
+2025-04-24 10:08:42,77.73333333333333,reflected on verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:08:54,80.16666666666667,added grade number 1 on loop 9 of grade 88 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:09:05,80.36666666666667,added grade number 2 on loop 9 of grade 90 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:09:20,80.1,added grade number 3 on loop 9 of grade 85 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:09:34,79.46666666666667,added grade number 4 on loop 9 of grade 75 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:09:47,79.48666666666666,added grade number 5 on loop 9 of grade 85 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:10:00,79.5,added grade number 6 on loop 9 of grade 85 to verse MRK 3:31,78.66666666666667,3
+2025-04-24 10:10:35,79.5,reflected on verse MRK 3:35,79.5,0
+2025-04-24 10:10:49,80.26666666666667,added grade number 1 on loop 7 of grade 85 to verse MRK 3:35,79.5,0
+2025-04-24 10:11:04,80.26666666666667,added grade number 2 on loop 7 of grade 85 to verse MRK 3:35,79.5,0
+2025-04-24 10:11:18,80.26666666666667,added grade number 3 on loop 7 of grade 85 to verse MRK 3:35,79.5,0
+2025-04-24 10:11:32,79.76666666666667,added grade number 4 on loop 7 of grade 75 to verse MRK 3:35,79.5,0
+2025-04-24 10:11:46,79.06666666666666,added grade number 5 on loop 7 of grade 65 to verse MRK 3:35,79.5,0
+2025-04-24 10:12:00,79.5,added grade number 6 on loop 7 of grade 92 to verse MRK 3:35,79.5,0
+2025-04-24 10:12:28,79.5,reflected on verse MRK 3:35,79.5,1
+2025-04-24 10:12:44,78.26666666666667,added grade number 1 on loop 8 of grade 75 to verse MRK 3:35,79.5,1
+2025-04-24 10:12:57,79.26666666666667,added grade number 2 on loop 8 of grade 85 to verse MRK 3:35,79.5,1
+2025-04-24 10:13:11,79.6,added grade number 3 on loop 8 of grade 85 to verse MRK 3:35,79.5,1
+2025-04-24 10:13:26,79.76666666666667,added grade number 4 on loop 8 of grade 85 to verse MRK 3:35,79.5,1
+2025-04-24 10:13:38,79.86666666666666,added grade number 5 on loop 8 of grade 85 to verse MRK 3:35,79.5,1
+2025-04-24 10:13:52,79.93333333333332,added grade number 6 on loop 8 of grade 85 to verse MRK 3:35,79.5,1
+2025-04-24 10:14:19,79.93333333333332,reflected on verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:14:33,81.2,added grade number 1 on loop 6 of grade 88 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:14:48,80.9,added grade number 2 on loop 6 of grade 85 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:15:01,80.8,added grade number 3 on loop 6 of grade 85 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:15:16,80.75,added grade number 4 on loop 6 of grade 85 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:15:28,80.84,added grade number 5 on loop 6 of grade 88 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:15:42,80.8,added grade number 6 on loop 6 of grade 85 to verse MRK 3:32,79.93333333333332,0
+2025-04-24 10:16:10,80.8,reflected on verse MRK 3:35,80.8,0
+2025-04-24 10:16:25,79.13333333333334,added grade number 1 on loop 9 of grade 75 to verse MRK 3:35,80.8,0
+2025-04-24 10:16:38,80.13333333333334,added grade number 2 on loop 9 of grade 85 to verse MRK 3:35,80.8,0
+2025-04-24 10:16:53,79.8,added grade number 3 on loop 9 of grade 75 to verse MRK 3:35,80.8,0
+2025-04-24 10:17:04,78.13333333333334,added grade number 4 on loop 9 of grade 45 to verse MRK 3:35,80.8,0
+2025-04-24 10:17:17,78.85333333333332,added grade number 5 on loop 9 of grade 88 to verse MRK 3:35,80.8,0
+2025-04-24 10:17:33,78.9,added grade number 6 on loop 9 of grade 75 to verse MRK 3:35,80.8,0
+2025-04-24 10:17:59,78.9,reflected on verse MRK 3:35,80.8,1
+2025-04-24 10:18:13,79.13333333333334,added grade number 1 on loop 10 of grade 75 to verse MRK 3:35,80.8,1
+2025-04-24 10:18:31,80.13333333333334,added grade number 2 on loop 10 of grade 85 to verse MRK 3:35,80.8,1
+2025-04-24 10:18:44,79.8,added grade number 3 on loop 10 of grade 75 to verse MRK 3:35,80.8,1
+2025-04-24 10:18:58,80.13333333333334,added grade number 4 on loop 10 of grade 85 to verse MRK 3:35,80.8,1
+2025-04-24 10:19:11,80.45333333333333,added grade number 5 on loop 10 of grade 88 to verse MRK 3:35,80.8,1
+2025-04-24 10:19:27,80.56666666666668,added grade number 6 on loop 10 of grade 85 to verse MRK 3:35,80.8,1
+2025-04-24 10:19:29,80.8,finalized verse MRK 3:35,80.8,2
+2025-04-24 10:19:59,80.8,reflected on verse MRK 3:31,80.8,3
+2025-04-24 10:20:13,79.86666666666666,added grade number 1 on loop 10 of grade 80 to verse MRK 3:31,80.8,3
+2025-04-24 10:20:26,80.36666666666666,added grade number 2 on loop 10 of grade 85 to verse MRK 3:31,80.8,3
+2025-04-24 10:20:41,80.53333333333333,added grade number 3 on loop 10 of grade 85 to verse MRK 3:31,80.8,3
+2025-04-24 10:20:55,80.76666666666667,added grade number 4 on loop 10 of grade 88 to verse MRK 3:31,80.8,3
+2025-04-24 10:21:08,80.78666666666666,added grade number 5 on loop 10 of grade 85 to verse MRK 3:31,80.8,3
+2025-04-24 10:21:22,80.46666666666667,added grade number 6 on loop 10 of grade 75 to verse MRK 3:31,80.8,3
+2025-04-24 10:21:24,80.8,finalized verse MRK 3:31,80.8,4
+2025-04-24 10:23:01,80.8,reflected on verse MRK 3:32,80.8,5
+2025-04-24 10:23:13,82.0,added grade number 1 on loop 7 of grade 92 to verse MRK 3:32,80.8,5
+2025-04-24 10:23:27,81.3,added grade number 2 on loop 7 of grade 85 to verse MRK 3:32,80.8,5
+2025-04-24 10:23:41,81.06666666666666,added grade number 3 on loop 7 of grade 85 to verse MRK 3:32,80.8,5
+2025-04-24 10:23:57,80.95,added grade number 4 on loop 7 of grade 85 to verse MRK 3:32,80.8,5
+2025-04-24 10:24:09,81.0,added grade number 5 on loop 7 of grade 88 to verse MRK 3:32,80.8,5
+2025-04-24 10:24:24,80.93333333333332,added grade number 6 on loop 7 of grade 85 to verse MRK 3:32,80.8,5
+2025-04-24 10:24:49,80.93333333333332,reflected on verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:25:01,82.0,added grade number 1 on loop 8 of grade 92 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:25:15,81.3,added grade number 2 on loop 8 of grade 85 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:25:29,80.4,added grade number 3 on loop 8 of grade 75 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:25:42,80.95,added grade number 4 on loop 8 of grade 95 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:25:55,80.47999999999999,added grade number 5 on loop 8 of grade 75 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:26:09,80.5,added grade number 6 on loop 8 of grade 85 to verse MRK 3:32,80.93333333333332,0
+2025-04-24 10:26:37,80.5,reflected on verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:26:51,81.2,added grade number 1 on loop 9 of grade 88 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:27:04,80.9,added grade number 2 on loop 9 of grade 85 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:27:16,80.8,added grade number 3 on loop 9 of grade 85 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:27:31,80.9,added grade number 4 on loop 9 of grade 88 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:27:43,81.11999999999999,added grade number 5 on loop 9 of grade 92 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:27:57,81.13333333333333,added grade number 6 on loop 9 of grade 88 to verse MRK 3:32,80.93333333333332,1
+2025-04-24 10:28:26,81.13333333333333,reflected on verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:28:39,80.6,added grade number 1 on loop 10 of grade 85 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:28:52,79.6,added grade number 2 on loop 10 of grade 75 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:29:06,80.13333333333333,added grade number 3 on loop 10 of grade 88 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:29:19,80.25,added grade number 4 on loop 10 of grade 85 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:29:31,80.44,added grade number 5 on loop 10 of grade 88 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:29:43,80.46666666666667,added grade number 6 on loop 10 of grade 85 to verse MRK 3:32,81.13333333333333,0
+2025-04-24 10:29:45,81.13333333333333,finalized verse MRK 3:32,81.13333333333333,1
+2025-04-24 10:29:47,81.13333333333333,Didn't find a verse to reflect on.  So done.,81.13333333333333,2

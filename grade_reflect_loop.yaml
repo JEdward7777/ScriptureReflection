@@ -432,16 +432,18 @@ configs:
     source_key: [source]
     translation_key: [fresh_translation,text]
 
-    api_key: [ryders_key,key]
+    #api_key: [ryders_key,key]
+    api_key: [mm_key_grok,key]
     translation_objective: "Purpose: To adapt the Bible from Mandarin Chinese to Gan Chinese.\nStyle: Use a contemporary and modern style but hold to conservative Christain interpretations.\n"
 
     num_context_verses_before: 10
     num_context_verses_after: 10
 
     #model: gpt-4o-mini
-    model: gpt-4.1-mini
+    #model: gpt-4.1-mini
     #model: gpt-4.5-preview
-    reflection-model: gpt-4.5-preview
+    model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
     temperature: 1.2
     top_p: 0.9
     translation_input: output/open_bible_chinese_mandarin_simplified.jsonl

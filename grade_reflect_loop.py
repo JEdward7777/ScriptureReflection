@@ -481,6 +481,17 @@ def perform_reflection( selected_verse, common_context, client, config ):
 
     return result
 
+def get_llm_url( api_keys, config ):
+    """
+    Return the url for the llm given the config and api_keys.
+    """
+    if 'api_key' not in config:
+        return None
+    api_key = config['api_key']
+    if len( api_key ) == 0:
+        return None
+    url_key = api_key[:-1] + ['url']
+    return utils.look_up_key( api_keys, url_key )
 
 def run_config__n_loops( config, api_keys, save_timeout ):
     """
@@ -488,7 +499,12 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
     Each verse is iterated through a specified number of times.
     """
-    client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
+    llm_url = get_llm_url( api_keys, config )
+    if llm_url:
+        client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ),
+                       base_url=llm_url )
+    else:
+        client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
     reflection_output_filename = config['reflection_output']
 
@@ -682,8 +698,12 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     Run the reflection loop but with the priority of which verse to process next
     determined by the lowest average grade of the verses.
     """
-
-    client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
+    llm_url = get_llm_url( api_keys, config )
+    if llm_url:
+        client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ),
+                       base_url=llm_url )
+    else:
+        client = OpenAI(api_key=utils.look_up_key( api_keys, config['api_key'] ))
 
     reflection_output_filename = config['reflection_output']
 
