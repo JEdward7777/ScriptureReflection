@@ -1,9 +1,10 @@
-import utils
 import os
 from lxml import etree
 from collections import OrderedDict, defaultdict
 from usfm_grammar import USFMParser
+import copy
 
+import utils
 import output_formats
 
 
@@ -188,6 +189,75 @@ def merge_source_and_target( settings, source, target, reference_key, source_key
     
 
     return result
+
+def normalize_ranges( content, reference_key, translation_key, source_key ):
+    """
+    Normalize a list of verses such that if there are any ranges (<range> in the source or translation)
+    it will combine the previous verse with the current one (if there is one) into a single verse
+    with a combined reference and source and translation.
+
+    The idea is that if there are any ranges in the source or translation, this function will
+    combine the previous verse with the current one into a single verse with a combined reference
+    and source and translation.  If there are not any ranges, then the result is the same as the
+    input.
+
+    This function assumes that the input verses are sorted in the correct order.
+
+    :param content: The list of verses to normalize.
+    :param reference_key: The key to look for the reference in the verse objects.
+    :param translation_key: The key to look for the translation in the verse objects.
+    :param source_key: The key to look for the source in the verse objects.
+    :return: A list of verses with any ranges combined into a single verse.
+    """
+    normalized = []
+    for this_verse in content:
+        this_translation = utils.look_up_key( this_verse, translation_key, default="" ).strip()
+        this_source = utils.look_up_key( this_verse, source_key, default="" ).strip()
+        if this_translation == "<range>" or this_source == "<range>" and len(normalized) > 0:
+            last_verse = normalized.pop(-1)
+
+            #combine the reference.
+            last_reference = utils.look_up_key( last_verse, reference_key )
+            this_reference = utils.look_up_key( this_verse, reference_key )
+            last_book, last_chapter, last_start_verse, _              = utils.split_ref2( last_reference )
+            this_book, this_chapter, _               , this_end_verse = utils.split_ref2( this_reference )
+            assert last_book == this_book, "Ranges across books not supported."
+            assert last_chapter == this_chapter, "Ranges across chapters not supported."
+            reference = f"{last_book} {last_chapter}:{last_start_verse}-{this_end_verse}"
+
+            #combine the source
+            last_source = utils.look_up_key( last_verse, source_key, default="" )
+            if this_source == "<range>":
+                source = last_source
+            else:
+                source = (last_source + "\n" + this_source).strip()
+
+            #combine the translation
+            last_translation = utils.look_up_key( last_verse, translation_key, default="" )
+            if this_translation == "<range>":
+                translation = last_translation
+            else:
+                translation = (last_translation + "\n" + this_translation).strip()
+
+            #now create the new structure.
+            #combined_verse = copy.deepcopy( this_verse )
+            combined_verse = {}
+            utils.set_key( combined_verse, reference_key, reference )
+            if source:
+                utils.set_key( combined_verse, source_key, source )
+            if translation:
+                utils.set_key( combined_verse, translation_key, translation )
+
+            #add it to the result
+            normalized.append( combined_verse )
+        else:
+            normalized.append( this_verse )
+    return normalized
+
+            
+            
+
+
 def main():
     configs = utils.load_yaml_configuration( 'input_formats.yaml' )['configs']
 
@@ -206,6 +276,8 @@ def main():
                                      source_key)
         
         combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
+
+        combined = normalize_ranges( combined, reference_key, translation_key, source_key )
 
         #now save it out.
         utils.save_jsonl( os.path.join( "output", f"{name}.jsonl" ), combined )
