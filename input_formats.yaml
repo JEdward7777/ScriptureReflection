@@ -27,10 +27,24 @@ configs:
       missing_level: warning
 
   open_bible_chinese_mandarin_simplified:
-    active: true
+    active: false
     input_target:
       format: USX
       folder: ../open_bible_chinese_mandarin_simplified_usx/release/USX_1
+    input_source: 
+      format: biblenlp
+      vref: ../../ebible/metadata/vref.txt
+      source: ../../ebible/corpus/grc-grcbyz.txt
+    merge:
+      missing_white_list: [GEN,EXO,LEV,NUM,DEU,JOS,JDG,RUT,1SA,2SA,1KI,2KI,1CH,2CH,EZR,NEH,EST,JOB,PSA,PRO,ECC,SNG,ISA,JER,LAM,EZK,DAN,HOS,JOL,AMO,OBA,JON,MIC,NAM,HAB,ZEP,HAG,ZEC,MAL,MRK 7:16,ACT 19:41,ROM 16:25,ROM 16:26,ROM 16:27]
+      missing_level: warning
+      
+  ebible_uig_uigara:
+    active: true
+    input_target:
+      format: biblenlp
+      vref: ../../ebible/metadata/vref.txt
+      source: ../../ebible/corpus/uig-uigara.txt
     input_source: 
       format: biblenlp
       vref: ../../ebible/metadata/vref.txt
