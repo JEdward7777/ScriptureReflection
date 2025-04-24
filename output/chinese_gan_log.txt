@@ -9758,3 +9758,791 @@ new: 耶稣环头看一圈边上坐勒个人，就话：“啵，这些就系我
 2025-04-22 10:41:55 - Average grade: 89.37 - added grade number 6 on loop 7 of grade 75 to verse MRK 3:34 - Best grade: 88.73 - Iterations without improvement: 3
 New best grade: 89.36666666666666 after 4 iterations.  Improvement of 0.6333333333333258
 2025-04-22 10:41:55 - Average grade: 89.37 - lowest grade 87.0 is above highest grade to reflect 86 - Best grade: 89.37 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 24207
+Focusing on and before end_line 24211
+Using the model gpt-4.1-mini
+2025-04-22 10:55:45 - Average grade: 60.00 - added grade number 1 on loop 1 of grade 60 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:55:48 - Average grade: 60.00 - added grade number 2 on loop 1 of grade 60 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:55:51 - Average grade: 60.00 - added grade number 3 on loop 1 of grade 60 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:55:53 - Average grade: 61.25 - added grade number 4 on loop 1 of grade 65 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:55:56 - Average grade: 62.00 - added grade number 5 on loop 1 of grade 65 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:02 - Average grade: 60.83 - added grade number 6 on loop 1 of grade 55 to verse MRK 3:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:07 - Average grade: 62.92 - added grade number 1 on loop 1 of grade 65 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:10 - Average grade: 62.92 - added grade number 2 on loop 1 of grade 65 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:12 - Average grade: 59.58 - added grade number 3 on loop 1 of grade 45 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:14 - Average grade: 57.92 - added grade number 4 on loop 1 of grade 45 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:18 - Average grade: 58.92 - added grade number 5 on loop 1 of grade 65 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:21 - Average grade: 59.58 - added grade number 6 on loop 1 of grade 65 to verse MRK 3:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:24 - Average grade: 53.06 - added grade number 1 on loop 1 of grade 40 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:28 - Average grade: 54.72 - added grade number 2 on loop 1 of grade 50 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:31 - Average grade: 55.28 - added grade number 3 on loop 1 of grade 50 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:33 - Average grade: 55.97 - added grade number 4 on loop 1 of grade 55 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:36 - Average grade: 57.06 - added grade number 5 on loop 1 of grade 65 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:40 - Average grade: 57.50 - added grade number 6 on loop 1 of grade 60 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:43 - Average grade: 55.62 - added grade number 1 on loop 1 of grade 50 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:45 - Average grade: 55.00 - added grade number 2 on loop 1 of grade 45 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:47 - Average grade: 56.04 - added grade number 3 on loop 1 of grade 60 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:52 - Average grade: 56.56 - added grade number 4 on loop 1 of grade 60 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:56:55 - Average grade: 56.62 - added grade number 5 on loop 1 of grade 55 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:00 - Average grade: 56.88 - added grade number 6 on loop 1 of grade 60 to verse MRK 3:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:04 - Average grade: 58.50 - added grade number 1 on loop 1 of grade 65 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:09 - Average grade: 57.50 - added grade number 2 on loop 1 of grade 55 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:13 - Average grade: 58.50 - added grade number 3 on loop 1 of grade 75 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:17 - Average grade: 58.50 - added grade number 4 on loop 1 of grade 65 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:20 - Average grade: 58.30 - added grade number 5 on loop 1 of grade 60 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 10:57:23 - Average grade: 58.33 - added grade number 6 on loop 1 of grade 65 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 24207
+Focusing on and before end_line 24211
+Using the model gpt-4.1-mini
+Using the model gpt-4.5-preview for reflection.
+2025-04-22 11:03:02 - Average grade: 56.17 - added grade number 3 on loop 1 of grade 40 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:03:05 - Average grade: 56.50 - added grade number 4 on loop 1 of grade 60 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:03:08 - Average grade: 56.70 - added grade number 5 on loop 1 of grade 60 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:03:12 - Average grade: 56.17 - added grade number 6 on loop 1 of grade 40 to verse MRK 3:35 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 56.166666666666664 after 1 iterations.  Improvement of 56.166666666666664
+Working on verse MRK 3:33 which has grade 53.333333333333336
+
+All peer review comments agree that the translation of Mark 3:33, though theologically faithful and clear, uses standard Mandarin Chinese instead of the required Gan Chinese dialect. To address this, the translation must be revised to incorporate Gan Chinese vocabulary and grammatical structures, reflecting its unique phonology, lexicon, and syntax. This linguistic adaptation is essential to meet the translation's objective of producing a Bible text accessible and authentic to Gan Chinese speakers, while maintaining conservative Christian theological integrity. The main corrective action is to retranslate the verse into Gan Chinese, ensuring both word choice and sentence construction align with the Gan dialect's characteristics.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣说：“谁是我的母亲？谁是我的兄弟？”
+new: 耶稣讲：“谁是我娘？谁是我兄弟？”
+
+2025-04-22 11:04:16 - Average grade: 56.17 - reflected on verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:20 - Average grade: 53.50 - added grade number 1 on loop 2 of grade 40 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:23 - Average grade: 52.50 - added grade number 2 on loop 2 of grade 30 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:26 - Average grade: 52.83 - added grade number 3 on loop 2 of grade 40 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:29 - Average grade: 54.25 - added grade number 4 on loop 2 of grade 65 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:31 - Average grade: 54.90 - added grade number 5 on loop 2 of grade 60 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:04:34 - Average grade: 55.33 - added grade number 6 on loop 2 of grade 60 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+Running config chinese_gan
+Focusing on and after start_line 24207
+Focusing on and before end_line 24211
+Using the model gpt-4.1-mini
+Using the model gpt-4.5-preview for reflection.
+2025-04-22 11:07:51 - Average grade: 57.50 - added grade number 1 on loop 3 of grade 60 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:07:57 - Average grade: 57.00 - added grade number 2 on loop 3 of grade 55 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:08:14 - Average grade: 55.83 - added grade number 3 on loop 3 of grade 40 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:08:17 - Average grade: 56.00 - added grade number 4 on loop 3 of grade 55 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:08:22 - Average grade: 56.30 - added grade number 5 on loop 3 of grade 60 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-22 11:08:26 - Average grade: 56.17 - added grade number 6 on loop 3 of grade 50 to verse MRK 3:33 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 56.166666666666664 after 1 iterations.  Improvement of 56.166666666666664
+Working on verse MRK 3:33 which has grade 53.333333333333336
+
+The peer reviewers unanimously agree that the translation of Mark 3:33, although faithful to the conservative Christian theological message, fails to meet the key project requirement of using Gan Chinese dialect. The current version employs standard Mandarin vocabulary and syntax (e.g., '耶稣', '讲', '娘', '兄弟'), which must be replaced with authentic Gan Chinese lexical items and grammatical structures. The corrective action is to revise the verse to accurately reflect Gan Chinese phonology, lexicon, and syntax while preserving the original meaning and theological integrity. This means producing a translation that is accessible, natural, and stylistically appropriate for Gan Chinese speakers, avoiding Mandarin forms previously removed. The translation must not only be theologically accurate but also linguistically genuine to Gan Chinese, fulfilling the explicit project objectives.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣讲：“谁是我娘？谁是我兄弟？”
+new: 耶稣答应讲：“哪嗰是我娘？哪嗰是我兄弟？”
+
+2025-04-22 11:08:48 - Average grade: 56.17 - reflected on verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:08:53 - Average grade: 59.50 - added grade number 1 on loop 4 of grade 70 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:09:00 - Average grade: 61.80 - added grade number 2 on loop 4 of grade 93 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:09:05 - Average grade: 60.70 - added grade number 3 on loop 4 of grade 65 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:09:09 - Average grade: 60.15 - added grade number 4 on loop 4 of grade 65 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:09:13 - Average grade: 59.62 - added grade number 5 on loop 4 of grade 60 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+2025-04-22 11:09:16 - Average grade: 60.27 - added grade number 6 on loop 4 of grade 90 to verse MRK 3:33 - Best grade: 56.17 - Iterations without improvement: 0
+New best grade: 60.266666666666666 after 1 iterations.  Improvement of 4.100000000000001
+Working on verse MRK 3:35 which has grade 53.333333333333336
+
+All peer reviews agree that the translation of Mark 3:35 is doctrinally faithful and reflects a conservative Christian understanding accurately. However, the major issue across all comments is that the translation uses standard Mandarin Chinese vocabulary and grammar instead of the required Gan Chinese linguistic features. The project's explicit objective is to adapt the Bible into Gan Chinese using its unique vocabulary and grammatical structures. The current translation does not meet this criterion, leading to significant penalties in grading. To address these corrections, the translation should be revised to incorporate appropriate Gan Chinese vocabulary and sentence patterns, ensuring that the theological meaning remains intact while fulfilling the linguistic adaptation requirement.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡遵行上帝旨意的人都是我的弟兄、姊妹和母亲。”
+new: 凡遵行上帝旨意嗰人，都系我嗰兄弟姊妹同我娘。
+
+2025-04-22 11:09:27 - Average grade: 60.27 - reflected on verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:31 - Average grade: 68.60 - added grade number 1 on loop 2 of grade 95 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:35 - Average grade: 68.60 - added grade number 2 on loop 2 of grade 95 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:37 - Average grade: 66.60 - added grade number 3 on loop 2 of grade 65 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:41 - Average grade: 67.10 - added grade number 4 on loop 2 of grade 95 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:46 - Average grade: 66.20 - added grade number 5 on loop 2 of grade 65 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+2025-04-22 11:09:49 - Average grade: 66.50 - added grade number 6 on loop 2 of grade 92 to verse MRK 3:35 - Best grade: 60.27 - Iterations without improvement: 0
+New best grade: 66.5 after 1 iterations.  Improvement of 6.233333333333334
+Working on verse MRK 3:34 which has grade 55.0
+
+The peer reviewers consistently commend the translation for its accurate and faithful rendering of the original Greek text with proper conservative Christian theological meaning. However, the main correction needed is that the translation uses standard Mandarin Chinese vocabulary and grammar rather than the required Gan Chinese dialect. To fulfill the assignment objectives, the translation must be revised to incorporate authentic Gan Chinese lexical choices and syntactical structures. This includes adapting both vocabulary and sentence patterns to reflect contemporary Gan Chinese usage, ensuring the text reads naturally for Gan Chinese speakers while preserving the doctrinal content and reverent tone. Addressing this linguistic adaptation is essential for meeting the translation goals and improving the grade.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 然后祂望着周围坐着的人说：“看啊，我的母亲和我的兄弟！
+new: 然后祂望住周围坐哩嗰些人讲：“你望，我嗰娘、我嗰兄弟就在这里！
+
+2025-04-22 11:09:59 - Average grade: 66.50 - reflected on verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:02 - Average grade: 69.50 - added grade number 1 on loop 2 of grade 70 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:05 - Average grade: 69.00 - added grade number 2 on loop 2 of grade 65 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:08 - Average grade: 68.83 - added grade number 3 on loop 2 of grade 65 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:12 - Average grade: 68.50 - added grade number 4 on loop 2 of grade 60 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:14 - Average grade: 68.50 - added grade number 5 on loop 2 of grade 65 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+2025-04-22 11:10:17 - Average grade: 68.50 - added grade number 6 on loop 2 of grade 65 to verse MRK 3:34 - Best grade: 66.50 - Iterations without improvement: 0
+New best grade: 68.5 after 1 iterations.  Improvement of 2.0
+Working on verse MRK 3:32 which has grade 58.333333333333336
+
+The translation of Mark 3:32 accurately reflects the original text's meaning and maintains a conservative Christian perspective. However, the primary issue is that it uses Mandarin Chinese vocabulary and grammatical structures rather than the required Gan Chinese dialect. To meet the assignment requirements, the translation should be revised to incorporate distinctive Gan Chinese vocabulary and syntax while preserving theological accuracy and clarity.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 有许多人围坐在耶稣身边，他们告诉祂说：“看啊！你的母亲和兄弟在外面找你。”
+new: 有多个人围坐在耶稣身边，他们跟祂讲：“看，你嗰娘同兄弟在外头找你。
+
+2025-04-22 11:10:26 - Average grade: 68.50 - reflected on verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:32 - Average grade: 67.83 - added grade number 1 on loop 2 of grade 55 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:34 - Average grade: 69.33 - added grade number 2 on loop 2 of grade 70 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:38 - Average grade: 68.83 - added grade number 3 on loop 2 of grade 55 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:43 - Average grade: 69.08 - added grade number 4 on loop 2 of grade 65 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:46 - Average grade: 69.23 - added grade number 5 on loop 2 of grade 65 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+2025-04-22 11:10:50 - Average grade: 69.33 - added grade number 6 on loop 2 of grade 65 to verse MRK 3:32 - Best grade: 68.50 - Iterations without improvement: 0
+New best grade: 69.33333333333334 after 1 iterations.  Improvement of 0.8333333333333428
+Working on verse MRK 3:31 which has grade 60.833333333333336
+
+The translation of Mark 3:31 is theologically accurate and clearly conveys the conservative Christian meaning, but it predominantly uses Mandarin Chinese vocabulary and grammar instead of Gan Chinese. To fully meet the translation objective, revise the passage by incorporating distinct contemporary Gan Chinese vocabulary and grammatical structures. Maintain the clear, reverent tone and conservative Christian interpretation while ensuring the linguistic style authentically reflects Gan Chinese usage.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 这时候，耶稣的母亲和兄弟来了，他们站在外面，托人叫耶稣。
+new: 到此阵，耶稣嗰娘同兄弟都来了，他们站在屋外，叫人入去喊耶稣出来。
+
+2025-04-22 11:10:58 - Average grade: 69.33 - reflected on verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:06 - Average grade: 74.77 - added grade number 1 on loop 2 of grade 88 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:08 - Average grade: 72.47 - added grade number 2 on loop 2 of grade 65 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:14 - Average grade: 72.03 - added grade number 3 on loop 2 of grade 70 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:18 - Average grade: 71.57 - added grade number 4 on loop 2 of grade 65 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:22 - Average grade: 71.69 - added grade number 5 on loop 2 of grade 75 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+2025-04-22 11:11:25 - Average grade: 72.33 - added grade number 6 on loop 2 of grade 92 to verse MRK 3:31 - Best grade: 69.33 - Iterations without improvement: 0
+New best grade: 72.33333333333333 after 1 iterations.  Improvement of 2.999999999999986
+Working on verse MRK 3:32 which has grade 62.5
+
+The translation of Mark 3:32 accurately conveys the conservative Christian message but falls short in using authentic Gan Chinese dialect. Reviewers note that the vocabulary and grammatical structures are predominantly Mandarin or influenced by other southern dialects like Cantonese, lacking distinctive Gan lexical and syntactic features. To address this, the translation should be revised to consistently incorporate genuine Gan Chinese vocabulary and grammar while preserving doctrinal accuracy and clarity. This approach will improve linguistic authenticity and ensure the scripture is accessible and faithful to the Gan-speaking audience without compromising conservative Christian theology.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 有多个人围坐在耶稣身边，他们跟祂讲：“看，你嗰娘同兄弟在外头找你。
+new: 有一大帮人围在耶稣身边，他们告诉祂：“望，你娘同你兄弟在外头找你。”
+
+2025-04-22 11:11:40 - Average grade: 72.33 - reflected on verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:43 - Average grade: 72.83 - added grade number 1 on loop 3 of grade 65 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:47 - Average grade: 73.33 - added grade number 2 on loop 3 of grade 70 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:50 - Average grade: 73.17 - added grade number 3 on loop 3 of grade 65 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:53 - Average grade: 73.58 - added grade number 4 on loop 3 of grade 75 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:55 - Average grade: 73.43 - added grade number 5 on loop 3 of grade 65 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+2025-04-22 11:11:58 - Average grade: 73.17 - added grade number 6 on loop 3 of grade 60 to verse MRK 3:32 - Best grade: 72.33 - Iterations without improvement: 0
+New best grade: 73.16666666666666 after 1 iterations.  Improvement of 0.8333333333333286
+Working on verse MRK 3:34 which has grade 65.0
+
+The translation of Mark 3:34 accurately reflects the original Greek text and conservative Christian theological meaning. However, it primarily employs standard Mandarin vocabulary and grammar rather than authentic Gan Chinese dialect. To meet the translation objectives, it is necessary to revise the text to include distinct Gan Chinese lexical items and syntactic structures, ensuring the translation authentically represents the Gan dialect. This linguistic adaptation should preserve the doctrinal content and reverent tone while making the scripture sound natural and idiomatic for Gan-speaking readers. Addressing this will fulfill the stylistic and linguistic requirements without compromising the theological accuracy already present.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 然后祂望住周围坐哩嗰些人讲：“你望，我嗰娘、我嗰兄弟就在这里！
+new: 耶稣望住四周坐哩个人讲：“你看，我嗰娘同兄弟都在这儿哩！”
+
+2025-04-22 11:12:09 - Average grade: 73.17 - reflected on verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:13 - Average grade: 73.17 - added grade number 1 on loop 3 of grade 65 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:18 - Average grade: 73.17 - added grade number 2 on loop 3 of grade 65 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:23 - Average grade: 73.50 - added grade number 3 on loop 3 of grade 70 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:26 - Average grade: 73.67 - added grade number 4 on loop 3 of grade 70 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:33 - Average grade: 73.97 - added grade number 5 on loop 3 of grade 75 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+2025-04-22 11:12:37 - Average grade: 74.17 - added grade number 6 on loop 3 of grade 75 to verse MRK 3:34 - Best grade: 73.17 - Iterations without improvement: 0
+New best grade: 74.16666666666666 after 1 iterations.  Improvement of 1.0
+Working on verse MRK 3:32 which has grade 66.66666666666667
+
+The translation of Mark 3:32 faithfully preserves the conservative Christian message but does not sufficiently employ the Gan Chinese dialect as required. All peer reviewers agree that the vocabulary and grammatical structures are predominantly Mandarin Chinese rather than authentic Gan Chinese. To meet the assignment objectives, the translation should be revised to incorporate distinctive Gan Chinese lexical items and syntactic patterns while maintaining theological accuracy and clarity. This revision will ensure the scripture is both faithful to the original text and accessible to Gan-speaking readers, fulfilling the linguistic and doctrinal requirements without altering the content.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 有一大帮人围在耶稣身边，他们告诉祂：“望，你娘同你兄弟在外头找你。”
+new: 有一大帮人围在耶稣四边，嗰人就跟祂讲：“你望，你嗰娘同兄弟在外头寻你哩。”
+
+2025-04-22 11:12:49 - Average grade: 74.17 - reflected on verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:12:52 - Average grade: 79.83 - added grade number 1 on loop 4 of grade 95 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:12:58 - Average grade: 77.83 - added grade number 2 on loop 4 of grade 75 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:13:02 - Average grade: 76.83 - added grade number 3 on loop 4 of grade 70 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:13:05 - Average grade: 76.08 - added grade number 4 on loop 4 of grade 65 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:13:08 - Average grade: 76.03 - added grade number 5 on loop 4 of grade 75 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+2025-04-22 11:13:11 - Average grade: 75.33 - added grade number 6 on loop 4 of grade 55 to verse MRK 3:32 - Best grade: 74.17 - Iterations without improvement: 0
+New best grade: 75.33333333333333 after 1 iterations.  Improvement of 1.1666666666666714
+Working on verse MRK 3:34 which has grade 70.0
+
+The translation accurately conveys the conservative Christian theological meaning of Mark 3:34 and faithfully represents the original Greek text. However, the primary issue is the insufficient use of authentic Gan Chinese dialect. The vocabulary and grammar currently reflect Mandarin Chinese more than Gan, with examples such as "望住四周坐哩个人讲" and "你看，我嗰娘同兄弟都在这儿哩！" demonstrating Mandarin sentence structures and lexicon with only minor Gan elements. To improve, the translation should incorporate more distinct Gan vocabulary and syntactical patterns to create a natural and idiomatic Gan Chinese rendition. This includes adopting regionally appropriate expressions and grammatical constructions unique to Gan Chinese, ensuring that the text reads smoothly and authentically to Gan speakers while maintaining the original theological message and tone. Avoid Mandarin-influenced phrasing and enhance the dialectal consistency. Implementing these changes will fulfill the translation objectives and elevate the quality of the Gan Chinese Bible adaptation.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望住四周坐哩个人讲：“你看，我嗰娘同兄弟都在这儿哩！”
+new: 耶稣望到围坐边个人讲：“你看，我嗰娘同我兄弟伢们都在这里！”
+
+2025-04-22 11:13:29 - Average grade: 75.33 - reflected on verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:32 - Average grade: 79.73 - added grade number 1 on loop 4 of grade 92 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:35 - Average grade: 80.03 - added grade number 2 on loop 4 of grade 95 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:41 - Average grade: 80.33 - added grade number 3 on loop 4 of grade 98 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:46 - Average grade: 78.83 - added grade number 4 on loop 4 of grade 65 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:50 - Average grade: 79.13 - added grade number 5 on loop 4 of grade 95 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+2025-04-22 11:13:53 - Average grade: 78.33 - added grade number 6 on loop 4 of grade 65 to verse MRK 3:34 - Best grade: 75.33 - Iterations without improvement: 0
+New best grade: 78.33333333333333 after 1 iterations.  Improvement of 3.0
+Working on verse MRK 3:32 which has grade 72.5
+
+The translation of Mark 3:32 accurately and faithfully conveys the conservative Christian meaning but falls short of fully employing authentic Gan Chinese dialect. Although some colloquial Gan expressions appear, key vocabulary and grammatical structures predominantly reflect Mandarin Chinese, including phrases like "一大帮人," "跟祂讲," and "望." To meet the translation objective, it is necessary to revise the text to incorporate distinctive Gan Chinese lexical items and syntactic patterns consistently throughout, ensuring natural resonance with Gan-speaking readers. These changes should maintain the theological accuracy, reverent tone, and clarity of the original content while fulfilling the linguistic requirements of using genuine Gan Chinese dialect. No additional content should be introduced or restored if it was previously removed intentionally. The focus is on deepening the integration of Gan language features to fully achieve the assignment goals.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 有一大帮人围在耶稣四边，嗰人就跟祂讲：“你望，你嗰娘同兄弟在外头寻你哩。”
+new: 围到耶稣身边的人好多，嗰人就对祂讲：“你看啵，你娘同兄弟都在外头寻你咧！”
+
+2025-04-22 11:14:05 - Average grade: 78.33 - reflected on verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:09 - Average grade: 78.83 - added grade number 1 on loop 5 of grade 75 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:14 - Average grade: 78.83 - added grade number 2 on loop 5 of grade 75 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:17 - Average grade: 78.50 - added grade number 3 on loop 5 of grade 70 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:20 - Average grade: 78.33 - added grade number 4 on loop 5 of grade 70 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:22 - Average grade: 78.23 - added grade number 5 on loop 5 of grade 70 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-22 11:14:26 - Average grade: 78.00 - added grade number 6 on loop 5 of grade 65 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 0
+Working on verse MRK 3:32 which has grade 70.83333333333333
+
+The main correction for MRK 3:32 is to revise the translation to authentically incorporate Gan Chinese vocabulary and grammatical structures throughout the text. Although the current translation faithfully conveys the conservative Christian meaning and maintains clarity and reverence, it leans heavily on Mandarin Chinese phrasing and expressions with only minimal Gan influence. To meet the assignment objective, the translation should avoid Mandarin-centric syntax and lexical choices such as "围到耶稣身边的人好多" and "嗰人就对祂讲" and instead use distinctive Gan dialect features consistently. No content additions or restorations are needed; the focus is on deepening the linguistic adaptation to Gan Chinese to achieve a natural, contemporary style that clearly distinguishes the target dialect from Mandarin, while preserving theological accuracy and the conservative Christian perspective.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 围到耶稣身边的人好多，嗰人就对祂讲：“你看啵，你娘同兄弟都在外头寻你咧！”
+new: 耶稣身边围了一大帮人，有人就对祂讲：“你娘同兄弟在外头寻你咧！”
+
+2025-04-22 11:14:39 - Average grade: 78.00 - reflected on verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:14:42 - Average grade: 76.83 - added grade number 1 on loop 6 of grade 65 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:14:45 - Average grade: 79.53 - added grade number 2 on loop 6 of grade 92 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:14:53 - Average grade: 78.63 - added grade number 3 on loop 6 of grade 65 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:14:56 - Average grade: 77.93 - added grade number 4 on loop 6 of grade 60 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:15:00 - Average grade: 77.31 - added grade number 5 on loop 6 of grade 55 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+2025-04-22 11:15:03 - Average grade: 77.40 - added grade number 6 on loop 6 of grade 70 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 1
+Working on verse MRK 3:32 which has grade 67.83333333333333
+
+The translation of Mark 3:32 effectively conveys the conservative Christian meaning and maintains clarity and reverence. However, it heavily leans on Mandarin Chinese vocabulary and grammar, lacking the distinctive lexical, phonological, and syntactic features of authentic Gan Chinese dialect. To address this, the translation should be revised to consistently incorporate genuine Gan Chinese vocabulary and sentence structures that differentiate it clearly from Mandarin. This includes replacing Mandarin-centric expressions like '你娘,' '身边围了一大帮人,' and '寻你咧' with appropriate Gan dialect alternatives. The revision must preserve the theological accuracy, conservative Christian viewpoint, and overall clarity without introducing new content or restoring previously removed text. This approach will ensure the scripture resonates naturally with Gan-speaking readers and meets the assignment's linguistic and doctrinal objectives.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 耶稣身边围了一大帮人，有人就对祂讲：“你娘同兄弟在外头寻你咧！”
+new: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+
+2025-04-22 11:15:14 - Average grade: 77.40 - reflected on verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:17 - Average grade: 82.23 - added grade number 1 on loop 7 of grade 92 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:22 - Average grade: 82.53 - added grade number 2 on loop 7 of grade 95 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:25 - Average grade: 82.43 - added grade number 3 on loop 7 of grade 92 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:28 - Average grade: 82.28 - added grade number 4 on loop 7 of grade 90 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:32 - Average grade: 82.39 - added grade number 5 on loop 7 of grade 95 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+2025-04-22 11:15:34 - Average grade: 81.47 - added grade number 6 on loop 7 of grade 65 to verse MRK 3:32 - Best grade: 78.33 - Iterations without improvement: 2
+New best grade: 81.46666666666667 after 3 iterations.  Improvement of 3.13333333333334
+Working on verse MRK 3:33 which has grade 73.83333333333333
+
+The peer reviews agree the current translation of Mark 3:33, though theologically faithful and clear, insufficiently uses authentic Gan Chinese vocabulary and grammar, relying too much on Mandarin forms. While some Gan elements like “哪嗰” are present, key phrases such as “答应讲” and overall sentence structure reflect Mandarin influence, reducing linguistic authenticity and naturalness for Gan speakers. To correct this, the translation must be revised to replace Mandarin vocabulary and syntax with genuine Gan equivalents, reflecting Gan phonology, lexicon, and grammatical norms. The conservative Christian theological meaning should be preserved fully. Avoid reintroducing standard Mandarin forms removed in past edits. Improving verb phrase naturalness and sentence flow in true Gan style is essential. This will ensure the Bible text is both doctrinally sound and linguistically appropriate for Gan Chinese-speaking believers, meeting the project's strict dialectal requirements.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣答应讲：“哪嗰是我娘？哪嗰是我兄弟？”
+new: 耶稣答讲：“哪个是我娘？哪个是我兄弟？”
+
+2025-04-22 11:15:50 - Average grade: 81.47 - reflected on verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:15:52 - Average grade: 78.70 - added grade number 1 on loop 5 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:15:56 - Average grade: 78.20 - added grade number 2 on loop 5 of grade 55 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:15:59 - Average grade: 77.70 - added grade number 3 on loop 5 of grade 50 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:16:02 - Average grade: 76.95 - added grade number 4 on loop 5 of grade 40 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:16:06 - Average grade: 77.30 - added grade number 5 on loop 5 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+2025-04-22 11:16:12 - Average grade: 77.53 - added grade number 6 on loop 5 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 0
+Working on verse MRK 3:33 which has grade 54.166666666666664
+
+The peer review comments consistently indicate that the translation of Mark 3:33 is theologically accurate but fails to meet the essential project requirement of using authentic Gan Chinese dialect. The current translation relies heavily on standard Mandarin vocabulary and grammatical structures (e.g., '哪个', '娘', '兄弟', '答讲'), which do not represent Gan Chinese phonology, lexicon, or syntax. To correct this, the translation must be revised to fully incorporate genuine Gan Chinese vocabulary and sentence construction, ensuring it sounds natural and stylistically appropriate to Gan speakers. The conservative Christian theological meaning should remain intact without any loss of clarity. Past corrections have removed Mandarin forms, and these must not be reintroduced. The translation should avoid Mandarin-influenced words and grammar, instead using Gan dialect-specific equivalents. This linguistic adaptation is critical to produce a Bible text that is both doctrinally faithful and linguistically authentic for Gan Chinese-speaking believers, thus fully meeting the project's strict dialectal objectives.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣答讲：“哪个是我娘？哪个是我兄弟？”
+new: 耶稣回答讲：“哪个是我娘？哪个是我兄弟？”
+
+2025-04-22 11:16:26 - Average grade: 77.53 - reflected on verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:29 - Average grade: 79.70 - added grade number 1 on loop 6 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:35 - Average grade: 78.70 - added grade number 2 on loop 6 of grade 55 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:37 - Average grade: 78.37 - added grade number 3 on loop 6 of grade 55 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:40 - Average grade: 78.45 - added grade number 4 on loop 6 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:44 - Average grade: 79.10 - added grade number 5 on loop 6 of grade 75 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+2025-04-22 11:16:48 - Average grade: 79.03 - added grade number 6 on loop 6 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 1
+Working on verse MRK 3:33 which has grade 61.666666666666664
+
+The translation of Mark 3:33, currently "耶稣回答讲：“哪个是我娘？哪个是我兄弟？”", accurately conveys the biblical message from a conservative Christian viewpoint but fails to meet the project's key linguistic objective of using authentic Gan Chinese dialect. Peer reviews consistently note that the vocabulary and grammar used are standard Mandarin rather than Gan Chinese, lacking distinct Gan lexical and syntactic features. Past corrections aimed to introduce Gan elements have not fully succeeded, often retaining Mandarin influence. To correct this, the translation must be revised to fully replace Mandarin vocabulary and sentence structures with genuine Gan Chinese equivalents, reflecting Gan phonology, lexicon, and grammar. The conservative theological meaning must remain intact without reintroducing Mandarin terms previously removed. This linguistic adaptation is crucial to produce a Bible text both doctrinally faithful and linguistically authentic to Gan Chinese-speaking believers, fulfilling the strict dialectal requirements of the project.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣回答讲：“哪个是我娘？哪个是我兄弟？”
+new: 耶稣应他们讲：“哪个系我娘？哪个系我兄弟？”
+
+2025-04-22 11:17:04 - Average grade: 79.03 - reflected on verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:11 - Average grade: 79.70 - added grade number 1 on loop 7 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:13 - Average grade: 79.70 - added grade number 2 on loop 7 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:15 - Average grade: 79.70 - added grade number 3 on loop 7 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:17 - Average grade: 79.70 - added grade number 4 on loop 7 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:19 - Average grade: 80.10 - added grade number 5 on loop 7 of grade 75 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+2025-04-22 11:17:21 - Average grade: 79.87 - added grade number 6 on loop 7 of grade 60 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 2
+Working on verse MRK 3:33 which has grade 65.83333333333333
+
+All peer review comments agree that the current translation of Mark 3:33, while theologically accurate from a conservative Christian perspective, uses vocabulary and grammar characteristic of standard Mandarin rather than authentic Gan Chinese dialect. Specifically, words like “哪个”, “应”, and Mandarin sentence constructions are present, which do not reflect Gan Chinese phonology, lexicon, or syntax. Previous edits have attempted to incorporate Gan Chinese features but have not fully succeeded and sometimes retain Mandarin influences. To correct this, the translation must be revised to employ genuine Gan Chinese vocabulary and grammatical structures exclusively, ensuring the sentence sounds natural and stylistically appropriate to Gan speakers. Importantly, the conservative theological meaning should remain fully intact. Care must be taken not to reintroduce Mandarin forms removed in past edits. This correction will fulfill the project’s essential objective of producing a Bible text that is both doctrinally faithful and linguistically authentic for Gan Chinese-speaking believers.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣应他们讲：“哪个系我娘？哪个系我兄弟？”
+new: 耶稣答佢哋讲：“谁系我娘？谁系我兄弟？”
+
+2025-04-22 11:17:35 - Average grade: 79.87 - reflected on verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:37 - Average grade: 79.70 - added grade number 1 on loop 8 of grade 65 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:40 - Average grade: 81.70 - added grade number 2 on loop 8 of grade 85 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:44 - Average grade: 82.83 - added grade number 3 on loop 8 of grade 92 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:48 - Average grade: 83.55 - added grade number 4 on loop 8 of grade 95 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:50 - Average grade: 83.78 - added grade number 5 on loop 8 of grade 90 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+2025-04-22 11:17:54 - Average grade: 84.00 - added grade number 6 on loop 8 of grade 92 to verse MRK 3:33 - Best grade: 81.47 - Iterations without improvement: 3
+New best grade: 84.0 after 4 iterations.  Improvement of 2.5333333333333314
+Working on verse MRK 3:31 which has grade 75.83333333333333
+
+The translation of Mark 3:31 successfully conveys the conservative Christian meaning and includes some Gan Chinese vocabulary such as '嗰娘'. However, it relies too much on Mandarin vocabulary, grammar, and pronouns, notably the phrase '到此阵', the pronouns '他们', and sentence structures like '叫人入去喊耶稣出来'. To improve, the translation should: 1) Replace '到此阵' with a clearer, more authentic Gan Chinese expression indicating time or sequence. 2) Substitute Mandarin pronouns and syntax with their Gan Chinese counterparts to reflect authentic Gan grammar. 3) Increase the use of distinctive contemporary Gan vocabulary and idiomatic expressions throughout the sentence, ensuring naturalness and fluency. 4) Preserve the current theological clarity and respectful tone consistent with a conservative Christian perspective. By implementing these changes, the translation will better meet the objective of producing a culturally and linguistically authentic Gan Chinese Bible text while maintaining doctrinal accuracy.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 到此阵，耶稣嗰娘同兄弟都来了，他们站在屋外，叫人入去喊耶稣出来。
+new: 这个时候，耶稣嗰娘和兄弟伢来了，站在屋外头，请人进去叫祂出来。
+
+2025-04-22 11:18:10 - Average grade: 84.00 - reflected on verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:13 - Average grade: 81.83 - added grade number 1 on loop 3 of grade 65 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:16 - Average grade: 84.83 - added grade number 2 on loop 3 of grade 95 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:19 - Average grade: 84.50 - added grade number 3 on loop 3 of grade 75 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:23 - Average grade: 84.33 - added grade number 4 on loop 3 of grade 75 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:26 - Average grade: 84.91 - added grade number 5 on loop 3 of grade 92 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+2025-04-22 11:18:28 - Average grade: 85.30 - added grade number 6 on loop 3 of grade 92 to verse MRK 3:31 - Best grade: 84.00 - Iterations without improvement: 0
+New best grade: 85.3 after 1 iterations.  Improvement of 1.2999999999999972
+Working on verse MRK 3:31 which has grade 82.33333333333333
+
+The translation accurately preserves the conservative Christian meaning of Mark 3:31, but improvements are needed to enhance its authenticity as contemporary Gan Chinese. Specifically, increase the use of distinctive Gan vocabulary and idiomatic expressions beyond '嗰娘' and '兄弟伢', and revise sentence structures that currently resemble Mandarin syntax. Phrases like '请人进去叫祂出来' should be replaced with natural Gan equivalents to improve fluency and reflect Gan grammar more faithfully. Ensure the entire passage flows naturally in Gan Chinese while maintaining theological clarity and respectful tone. Minor stylistic refinements can further improve readability without compromising doctrinal accuracy. Avoid repeating previously removed Mandarin-influenced expressions to keep the translation consistent with project goals.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 这个时候，耶稣嗰娘和兄弟伢来了，站在屋外头，请人进去叫祂出来。
+new: 这个时候，耶稣嗰娘同祂兄弟伢来了，站在屋外头，让人进去喊祂出来。
+
+2025-04-22 11:18:43 - Average grade: 85.30 - reflected on verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:18:45 - Average grade: 83.83 - added grade number 1 on loop 4 of grade 75 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:18:48 - Average grade: 85.33 - added grade number 2 on loop 4 of grade 90 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:18:52 - Average grade: 85.83 - added grade number 3 on loop 4 of grade 90 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:18:56 - Average grade: 85.33 - added grade number 4 on loop 4 of grade 75 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:18:58 - Average grade: 85.83 - added grade number 5 on loop 4 of grade 95 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+2025-04-22 11:19:00 - Average grade: 86.07 - added grade number 6 on loop 4 of grade 92 to verse MRK 3:31 - Best grade: 85.30 - Iterations without improvement: 0
+New best grade: 86.06666666666668 after 1 iterations.  Improvement of 0.7666666666666799
+Working on verse MRK 3:35 which has grade 84.5
+
+The translation of Mark 3:35 accurately reflects a conservative Christian understanding, emphasizing spiritual kinship through obedience to God's will. Peer reviewers commend the use of Gan Chinese vocabulary such as '嗰人' and grammatical structures including '系,' which align with Gan dialect patterns and distinguish it from Mandarin. However, some reviewers note that the translation occasionally leans towards Mandarin vocabulary and syntax rather than fully authentic Gan Chinese. To improve, the translation should enhance the use of distinctive Gan lexical items and sentence constructions to better represent the Gan language's contemporary style without compromising theological meaning. The choice of '上帝' for God is acceptable within conservative Christian contexts, so no change is necessary there. Overall, the translation meets the theological requirements and largely fulfills the linguistic adaptation goal but would benefit from deeper integration of authentic Gan linguistic features to fully satisfy the project's objectives.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡遵行上帝旨意嗰人，都系我嗰兄弟姊妹同我娘。
+new: 凡依从上帝旨意嗰人，都系我兄弟伢、姊妹同我嗰娘。
+
+2025-04-22 11:19:13 - Average grade: 86.07 - reflected on verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:17 - Average grade: 84.77 - added grade number 1 on loop 3 of grade 78 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:20 - Average grade: 83.47 - added grade number 2 on loop 3 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:25 - Average grade: 85.03 - added grade number 3 on loop 3 of grade 95 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:29 - Average grade: 85.82 - added grade number 4 on loop 3 of grade 95 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:32 - Average grade: 86.29 - added grade number 5 on loop 3 of grade 95 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+2025-04-22 11:19:35 - Average grade: 85.60 - added grade number 6 on loop 3 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 0
+Working on verse MRK 3:35 which has grade 82.16666666666667
+
+The translation of Mark 3:35 faithfully conveys the conservative Christian theological meaning, emphasizing that those who do God's will are Jesus' spiritual family. However, peer reviews consistently note that the current translation leans too much on Mandarin Chinese vocabulary and grammatical structures, such as '凡依从' and '上帝旨意,' which diminishes the authenticity of the Gan Chinese adaptation. While elements like '嗰人', '系', '兄弟伢', '姊妹', and '嗰娘' appropriately reflect Gan dialect usage, more consistent and deeper integration of Gan-specific vocabulary and syntactic patterns is needed. To improve, the translation should replace remaining Mandarin terms with regionally specific Gan equivalents and enhance sentence structures to better reflect contemporary Gan Chinese style without compromising doctrinal accuracy. Conservative Christian theological terms such as '上帝' should be retained as they are appropriate. Overall, the key actionable corrections are to strengthen the Gan linguistic features throughout the verse to fully meet the project's objective of an authentic Gan Chinese Bible translation while maintaining the conservative Christian interpretation.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡依从上帝旨意嗰人，都系我兄弟伢、姊妹同我嗰娘。
+new: 凡听上帝话、照祂意思做嗰人，就系我兄弟伢、姐姐老妹同我娘。
+
+2025-04-22 11:19:45 - Average grade: 85.60 - reflected on verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:19:49 - Average grade: 82.17 - added grade number 1 on loop 4 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:19:53 - Average grade: 83.17 - added grade number 2 on loop 4 of grade 75 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:19:58 - Average grade: 83.50 - added grade number 3 on loop 4 of grade 75 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:20:01 - Average grade: 84.52 - added grade number 4 on loop 4 of grade 92 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:20:05 - Average grade: 84.05 - added grade number 5 on loop 4 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+2025-04-22 11:20:08 - Average grade: 83.73 - added grade number 6 on loop 4 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 1
+Working on verse MRK 3:35 which has grade 72.83333333333333
+
+The translation of Mark 3:35 faithfully represents conservative Christian doctrine, emphasizing that those who do God's will are Jesus' spiritual family. However, multiple peer reviews point out that the current translation leans heavily on Mandarin Chinese vocabulary and grammar rather than authentically reflecting Gan Chinese linguistic features. Actionable corrections include replacing Mandarin-based words and phrases such as '凡听', '话', '照', and '意思' with appropriate Gan Chinese equivalents, and adapting sentence structures to align with Gan syntactic patterns. The use of '上帝' and Gan terms like '伢' and '娘' is appropriate and should be retained. The translation should aim for a modern, contemporary Gan style that distinctly differentiates from Mandarin while preserving doctrinal accuracy and clarity. Avoid introducing interpretive expansions beyond the original Greek text, and maintain the conservative theological emphasis throughout. Implementing these linguistic refinements will ensure the translation meets both the theological and dialectical objectives of the project.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡听上帝话、照祂意思做嗰人，就系我兄弟伢、姐姐老妹同我娘。
+new: 所有听上帝讲话，又照祂心思做个，就系我嗰兄弟伢、姐姐老妹，同我娘。
+
+2025-04-22 11:20:30 - Average grade: 83.73 - reflected on verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:37 - Average grade: 87.17 - added grade number 1 on loop 5 of grade 90 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:41 - Average grade: 85.17 - added grade number 2 on loop 5 of grade 70 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:46 - Average grade: 85.83 - added grade number 3 on loop 5 of grade 90 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:49 - Average grade: 86.42 - added grade number 4 on loop 5 of grade 95 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:53 - Average grade: 85.77 - added grade number 5 on loop 5 of grade 70 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+2025-04-22 11:20:57 - Average grade: 85.33 - added grade number 6 on loop 5 of grade 70 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 2
+Working on verse MRK 3:35 which has grade 80.83333333333333
+
+The peer review feedback for Mark 3:35 praises the translation's doctrinal faithfulness and conservative Christian theological accuracy, especially its emphasis on 'doing the will of God' as the foundation for spiritual kinship with Jesus. However, all reviewers highlight that the current translation relies too much on Mandarin vocabulary and syntax, detracting from its authenticity as a Gan Chinese adaptation. Although some Gan dialect words such as '兄弟伢', '姐姐老妹', and '娘' are used, key phrases like '听上帝讲话' and sentence structures lean toward Mandarin. To improve, the translation should replace Mandarin expressions with distinctive Gan vocabulary and syntactic constructions, fully reflecting Gan Chinese linguistic features in a modern, natural style. The theological terms like '上帝' are appropriate and should be retained. Care must be taken to maintain doctrinal clarity without adding interpretive expansions. Overall, the main correction is to strengthen and deepen the Gan linguistic identity throughout the verse while preserving the conservative Christian doctrinal meaning, ensuring the translation meets both theological and dialectical objectives without repeating past errors or introducing unintended content.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 所有听上帝讲话，又照祂心思做个，就系我嗰兄弟伢、姐姐老妹，同我娘。
+new: 凡听了上帝的话，又照祂意思行的，就系我嘅兄弟、老妹、同我娘。
+
+2025-04-22 11:21:12 - Average grade: 85.33 - reflected on verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:16 - Average grade: 87.57 - added grade number 1 on loop 6 of grade 92 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:20 - Average grade: 85.87 - added grade number 2 on loop 6 of grade 75 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:24 - Average grade: 86.43 - added grade number 3 on loop 6 of grade 92 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:27 - Average grade: 86.72 - added grade number 4 on loop 6 of grade 92 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:32 - Average grade: 85.81 - added grade number 5 on loop 6 of grade 65 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+2025-04-22 11:21:35 - Average grade: 86.10 - added grade number 6 on loop 6 of grade 92 to verse MRK 3:35 - Best grade: 86.07 - Iterations without improvement: 3
+New best grade: 86.10000000000001 after 4 iterations.  Improvement of 0.03333333333333144
+Working on verse MRK 3:35 which has grade 84.66666666666667
+
+The translation of Mark 3:35 faithfully communicates the conservative Christian theological meaning and incorporates some Gan Chinese vocabulary and grammar. To improve, the translation should further reduce Mandarin influence by replacing Mandarin words like '听了' and '照祂意思行的' with authentic Gan lexical items and syntactic patterns. The use of key Gan elements such as '系我嘅' and '老妹' is appropriate and should be retained. Avoid adding interpretive expansions beyond the original Greek text. The goal is to produce a translation that is doctrinally accurate, clear, and stylistically representative of modern Gan Chinese, fully meeting the project's linguistic and theological objectives without repeating past errors.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡听了上帝的话，又照祂意思行的，就系我嘅兄弟、老妹、同我娘。
+new: 凡听到上帝个话又照祂意思做个，就系我个兄弟、老妹、同我娘。
+
+2025-04-22 11:21:51 - Average grade: 86.10 - reflected on verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:21:54 - Average grade: 82.17 - added grade number 1 on loop 7 of grade 65 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:21:57 - Average grade: 84.87 - added grade number 2 on loop 7 of grade 92 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:22:00 - Average grade: 85.97 - added grade number 3 on loop 7 of grade 95 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:22:04 - Average grade: 85.52 - added grade number 4 on loop 7 of grade 75 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:22:06 - Average grade: 85.93 - added grade number 5 on loop 7 of grade 92 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+2025-04-22 11:22:09 - Average grade: 86.30 - added grade number 6 on loop 7 of grade 95 to verse MRK 3:35 - Best grade: 86.10 - Iterations without improvement: 0
+New best grade: 86.30000000000001 after 1 iterations.  Improvement of 0.20000000000000284
+Working on verse MRK 3:34 which has grade 85.0
+
+The translation of Mark 3:34 accurately conveys the original Greek text and conservative Christian theological meaning, effectively identifying Jesus' spiritual family. However, to fully meet the objective of adapting the Bible into Gan Chinese dialect, the translation must further reduce Mandarin Chinese influence in vocabulary and grammar. Although some Gan words like '嗰娘' and '伢们' are present, the sentence structure and expressions often reflect Mandarin norms (e.g., use of '你看' and Mandarin syntax). The translation should incorporate more authentic Gan lexical items and distinct Gan syntactic patterns, ensuring the text reads naturally and idiomatically for Gan speakers. This includes replacing Mandarin-influenced phrases with regionally appropriate Gan dialect expressions and constructions. Maintaining the theological accuracy and reverent tone is essential while achieving a faithful and linguistically authentic Gan Chinese rendition. Addressing these linguistic refinements will fulfill the translation goals and improve the translation's quality for Gan-speaking Christian audiences.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望到围坐边个人讲：“你看，我嗰娘同我兄弟伢们都在这里！”
+new: 耶稣望围哒坐的人讲：“望望，这是我嗰娘同兄弟伢们。”
+
+2025-04-22 11:22:22 - Average grade: 86.30 - reflected on verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:26 - Average grade: 87.70 - added grade number 1 on loop 5 of grade 92 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:30 - Average grade: 88.00 - added grade number 2 on loop 5 of grade 95 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:33 - Average grade: 88.10 - added grade number 3 on loop 5 of grade 95 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:35 - Average grade: 88.15 - added grade number 4 on loop 5 of grade 95 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:38 - Average grade: 86.98 - added grade number 5 on loop 5 of grade 65 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+2025-04-22 11:22:41 - Average grade: 86.53 - added grade number 6 on loop 5 of grade 75 to verse MRK 3:34 - Best grade: 86.30 - Iterations without improvement: 0
+New best grade: 86.53333333333335 after 1 iterations.  Improvement of 0.23333333333333428
+Working on verse MRK 3:35 which has grade 85.66666666666667
+
+The translation of Mark 3:35 faithfully reflects conservative Christian doctrine but needs stronger incorporation of authentic Gan Chinese linguistic features. To improve, replace remaining Mandarin vocabulary and grammatical patterns (e.g., '凡', '听到', '照祂意思做个') with regionally specific Gan terms and sentence structures. Maintain appropriate Gan elements such as the possessive particle '个', and vernacular words like '老妹' and '娘'. Avoid interpretive expansions or additions beyond the original Greek text. The conservative theological term '上帝' should be retained as it is appropriate. Aim for a contemporary, natural Gan Chinese style that clearly differentiates from Mandarin, fully meeting the project’s dialectical and doctrinal objectives without repeating past errors or introducing unintended content.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡听到上帝个话又照祂意思做个，就系我个兄弟、老妹、同我娘。
+new: 那个依上帝个意思去做个，就系我个兄弟、老妹、同我娘。
+
+2025-04-22 11:22:53 - Average grade: 86.53 - reflected on verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:22:56 - Average grade: 83.40 - added grade number 1 on loop 8 of grade 70 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:23:00 - Average grade: 85.60 - added grade number 2 on loop 8 of grade 92 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:23:03 - Average grade: 85.20 - added grade number 3 on loop 8 of grade 75 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:23:07 - Average grade: 85.85 - added grade number 4 on loop 8 of grade 92 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:23:09 - Average grade: 86.36 - added grade number 5 on loop 8 of grade 95 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+2025-04-22 11:23:12 - Average grade: 86.60 - added grade number 6 on loop 8 of grade 92 to verse MRK 3:35 - Best grade: 86.53 - Iterations without improvement: 0
+New best grade: 86.60000000000001 after 1 iterations.  Improvement of 0.06666666666666288
+Working on verse MRK 3:35 which has grade 86.0
+
+The translation is doctrinally sound and conveys a conservative Christian perspective faithfully. However, to meet the project's linguistic objectives, it needs deeper integration of authentic Gan Chinese vocabulary and grammar, minimizing Mandarin influence evident in certain words and sentence structures. Key conservative terms like "上帝" should be retained. The translation should aim for a modern, natural Gan Chinese style that clearly distinguishes itself from Mandarin while preserving theological clarity and avoiding any interpretive expansion beyond the original Greek text. Implementing these corrections will ensure the translation fulfills both theological and dialectical requirements without repeating past errors or introducing unintended content.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 那个依上帝个意思去做个，就系我个兄弟、老妹、同我娘。
+new: 凡是遵照上帝心意做事的，那就是我的兄弟伢、老妹、还有我娘。
+
+2025-04-22 11:23:24 - Average grade: 86.60 - reflected on verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:32 - Average grade: 82.40 - added grade number 1 on loop 9 of grade 65 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:34 - Average grade: 85.40 - added grade number 2 on loop 9 of grade 95 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:37 - Average grade: 85.07 - added grade number 3 on loop 9 of grade 75 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:39 - Average grade: 85.75 - added grade number 4 on loop 9 of grade 92 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:42 - Average grade: 85.08 - added grade number 5 on loop 9 of grade 65 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:23:46 - Average grade: 84.80 - added grade number 6 on loop 9 of grade 70 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 0
+Working on verse MRK 3:35 which has grade 77.0
+
+The translation of Mark 3:35 accurately conveys conservative Christian theology but consistently relies too much on Mandarin vocabulary and grammar, detracting from the goal of authentic Gan Chinese adaptation. To improve, the translation should deepen the use of distinctive Gan vocabulary and sentence structures, replacing Mandarin expressions such as "凡是遵照上帝心意做事的," "老妹," and "还有我娘" with authentic Gan equivalents. The key theological terms like "上帝" should be kept. The style must be modern, natural, and representative of contemporary Gan Chinese, avoiding interpretive expansions beyond the original text. These changes will ensure the translation meets both theological clarity and linguistic authenticity, fulfilling the project’s objectives without repeating past mistakes.
+
+source: ὃς γὰρ ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφή μου καὶ μήτηρ ἐστί.
+old: 凡是遵照上帝心意做事的，那就是我的兄弟伢、老妹、还有我娘。
+new: 凡遵上帝意思做事个，就系我个哥哥、姐姐、老弟妹，同娘。
+
+2025-04-22 11:23:58 - Average grade: 84.80 - reflected on verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:01 - Average grade: 88.40 - added grade number 1 on loop 10 of grade 95 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:04 - Average grade: 85.90 - added grade number 2 on loop 10 of grade 70 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:06 - Average grade: 86.73 - added grade number 3 on loop 10 of grade 95 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:10 - Average grade: 87.15 - added grade number 4 on loop 10 of grade 95 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:14 - Average grade: 86.40 - added grade number 5 on loop 10 of grade 70 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:24:16 - Average grade: 86.40 - added grade number 6 on loop 10 of grade 85 to verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 1
+Finilizing MRK 3:35
+
+old: 凡遵上帝意思做事个，就系我个哥哥、姐姐、老弟妹，同娘。
+new: 那个依上帝个意思去做个，就系我个兄弟、老妹、同我娘。
+
+old grade: 85.0
+new grade: 86.0
+
+2025-04-22 11:24:16 - Average grade: 86.60 - finalized verse MRK 3:35 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:24:16 - Average grade: 86.60 - lowest grade 86.16666666666667 is above highest grade to reflect 86 - Best grade: 86.60 - Iterations without improvement: 3
+Running config chinese_gan
+Focusing on and after start_line 24207
+Focusing on and before end_line 24211
+Using the model gpt-4.1-mini
+Using the model gpt-4.5-preview for reflection.
+New best grade: 86.60000000000001 after 1 iterations.  Improvement of 86.60000000000001
+Working on verse MRK 3:31 which has grade 86.16666666666667
+
+The peer reviewers confirm that the translation accurately preserves the original meaning and conservative Christian viewpoint in Mark 3:31. However, they recommend enhancing the authenticity of the Gan Chinese dialect by reducing reliance on Mandarin vocabulary and syntax. Specifically, phrases such as '站在屋外头，让人进去喊祂出来' should be replaced with more idiomatic and grammatically correct Gan expressions. The use of Gan vocabulary like '嗰娘' and '兄弟伢' is praised and should be retained. Overall, the translation should incorporate more distinctive Gan linguistic features throughout, ensuring natural fluency and consistent dialectal style while maintaining clear, reverent theological content. Avoid reintroducing Mandarin-like expressions that have been previously removed to fully meet the translation objectives.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 这个时候，耶稣嗰娘同祂兄弟伢来了，站在屋外头，让人进去喊祂出来。
+new: 这阵子，耶稣嗰娘同兄弟伢到了，站在屋外头，叫人进去喊祂出来。
+
+2025-04-22 11:56:09 - Average grade: 86.60 - reflected on verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:12 - Average grade: 84.37 - added grade number 1 on loop 5 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:18 - Average grade: 84.37 - added grade number 2 on loop 5 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:23 - Average grade: 85.50 - added grade number 3 on loop 5 of grade 92 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:26 - Average grade: 86.07 - added grade number 4 on loop 5 of grade 92 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:30 - Average grade: 85.33 - added grade number 5 on loop 5 of grade 65 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+2025-04-22 11:56:34 - Average grade: 85.73 - added grade number 6 on loop 5 of grade 92 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 0
+Working on verse MRK 3:31 which has grade 81.83333333333333
+
+The peer reviews commend the translation for accurately conveying the conservative Christian meaning and maintaining theological clarity. However, they consistently identify that the translation still relies heavily on Mandarin vocabulary and grammar, lacking distinct and authentic Gan Chinese linguistic features. To address this, the translation should increase the use of characteristic contemporary Gan vocabulary and idiomatic expressions beyond existing words like '嗰娘' and '兄弟伢'. Sentence structures should be revised to reflect authentic Gan grammar, replacing Mandarin-influenced phrases such as '这阵子', '站在屋外头', and '叫人进去喊祂出来' with natural Gan equivalents. Mandarin pronouns and syntax should be substituted with Gan counterparts to enhance dialectal authenticity. It is critical to avoid reintroducing previously removed Mandarin-like expressions to preserve consistency. Throughout, the translation must retain a clear, reverent tone and uphold the conservative Christian doctrinal perspective. Implementing these changes will ensure the translation fulfills its objective of producing a culturally and linguistically authentic Gan Chinese Bible text while maintaining doctrinal accuracy and respectful style.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 这阵子，耶稣嗰娘同兄弟伢到了，站在屋外头，叫人进去喊祂出来。
+new: 跟到咯时候，耶稣个娘跟兄弟伢来了，站到外头，叫人入屋喊佢出来。
+
+2025-04-22 11:56:51 - Average grade: 85.73 - reflected on verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:56:54 - Average grade: 84.37 - added grade number 1 on loop 6 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:56:58 - Average grade: 84.37 - added grade number 2 on loop 6 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:57:03 - Average grade: 85.50 - added grade number 3 on loop 6 of grade 92 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:57:06 - Average grade: 85.22 - added grade number 4 on loop 6 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:57:08 - Average grade: 84.85 - added grade number 5 on loop 6 of grade 70 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+2025-04-22 11:57:12 - Average grade: 84.43 - added grade number 6 on loop 6 of grade 65 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 1
+Working on verse MRK 3:31 which has grade 75.33333333333333
+
+The translation of Mark 3:31 accurately conveys the conservative Christian meaning but relies heavily on Mandarin vocabulary, grammar, and syntax, limiting its authenticity as contemporary Gan Chinese. To improve, the translation should: 1) Replace Mandarin-influenced phrases such as '跟到咯时候', '个娘', '叫人入屋喊佢出来', and pronouns like '佢' with authentic Gan Chinese vocabulary and grammatical structures. 2) Increase the use of distinctive contemporary Gan idiomatic expressions and sentence patterns to enhance natural fluency and reflect Gan linguistic norms. 3) Substitute Mandarin-like pronouns and sentence constructions with their Gan equivalents to maintain dialectal consistency. 4) Preserve the clear, reverent theological tone consistent with a conservative Christian viewpoint, ensuring doctrinal accuracy. 5) Avoid reintroducing previously removed Mandarin-like expressions or informal dialectal terms that do not align with standard Gan Chinese. Implementing these corrections will yield a culturally and linguistically authentic Gan Chinese Bible translation that remains faithful to its conservative Christian foundation.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 跟到咯时候，耶稣个娘跟兄弟伢来了，站到外头，叫人入屋喊佢出来。
+new: 到了这个时候，耶稣个娘同兄弟伢来了，站在屋外头，叫人进去喊祂出来。
+
+2025-04-22 11:57:27 - Average grade: 84.43 - reflected on verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:30 - Average grade: 87.77 - added grade number 1 on loop 7 of grade 92 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:34 - Average grade: 86.07 - added grade number 2 on loop 7 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:37 - Average grade: 86.50 - added grade number 3 on loop 7 of grade 90 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:41 - Average grade: 86.62 - added grade number 4 on loop 7 of grade 88 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:44 - Average grade: 85.97 - added grade number 5 on loop 7 of grade 70 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+2025-04-22 11:57:47 - Average grade: 86.37 - added grade number 6 on loop 7 of grade 95 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 2
+Working on verse MRK 3:31 which has grade 85.0
+
+The peer reviews affirm that the translation of Mark 3:31 faithfully preserves the conservative Christian meaning and incorporates some authentic Gan Chinese vocabulary such as '个娘' and '兄弟伢'. Nevertheless, there is a consistent concern about the translation's heavy reliance on Mandarin Chinese vocabulary, grammar, and sentence structures, which reduces its authenticity as a contemporary Gan Chinese text. Specific recommendations include replacing Mandarin-influenced conjunctions like '同', pronouns, and phrases such as '叫人进去喊祂出来' with more idiomatic, natural, and grammatically accurate Gan Chinese expressions. The translation should emphasize unique Gan phonology, syntax, and idiomatic vocabulary to achieve cultural and linguistic authenticity. All revisions must maintain a clear, respectful, and reverent tone aligned with a conservative Christian theological viewpoint and avoid reintroducing previously removed Mandarin features. Implementing these changes will produce a more fluent and dialectally consistent Gan Chinese Bible translation without compromising doctrinal accuracy.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 到了这个时候，耶稣个娘同兄弟伢来了，站在屋外头，叫人进去喊祂出来。
+new: 就到这个时候，耶稣个娘哒兄弟伢来哒，站到屋外头，使人进去喊祂。
+
+2025-04-22 11:58:01 - Average grade: 86.37 - reflected on verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:05 - Average grade: 84.37 - added grade number 1 on loop 8 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:10 - Average grade: 83.37 - added grade number 2 on loop 8 of grade 65 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:14 - Average grade: 83.70 - added grade number 3 on loop 8 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:16 - Average grade: 83.37 - added grade number 4 on loop 8 of grade 65 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:19 - Average grade: 84.17 - added grade number 5 on loop 8 of grade 90 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+2025-04-22 11:58:23 - Average grade: 83.87 - added grade number 6 on loop 8 of grade 65 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 3
+Working on verse MRK 3:31 which has grade 72.5
+
+The peer reviews unanimously commend the translation for accurately preserving the conservative Christian meaning of Mark 3:31 but identify a consistent overreliance on Mandarin vocabulary, grammar, and sentence structures that undermines the authenticity of the Gan Chinese dialect. Key actionable corrections include: (1) Increase the use of distinctive contemporary Gan Chinese vocabulary and idiomatic expressions beyond currently used words such as '个娘哒' and '兄弟伢'; (2) Replace Mandarin-influenced phrases and syntax like '就到这个时候', '站到屋外头', and '使人进去喊祂' with natural, idiomatic Gan sentence patterns that reflect Gan phonology and grammar; (3) Substitute Mandarin pronouns, particles, and conjunctions with Gan equivalents to enhance dialectal consistency; (4) Maintain a clear, reverent theological tone consistent with conservative Christian doctrine; (5) Avoid reintroducing previously removed Mandarin-like expressions or informal dialectal terms inconsistent with standard Gan usage. Implementing these recommendations will produce a fluent, culturally and linguistically authentic Gan Chinese Bible translation that remains faithful to its conservative Christian foundation.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 就到这个时候，耶稣个娘哒兄弟伢来哒，站到屋外头，使人进去喊祂。
+new: 个辰光，耶稣个娘同兄弟伢来了，站到门外头，让人进去喊祂。
+
+2025-04-22 11:58:34 - Average grade: 83.87 - reflected on verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:38 - Average grade: 84.37 - added grade number 1 on loop 9 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:42 - Average grade: 84.37 - added grade number 2 on loop 9 of grade 75 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:47 - Average grade: 85.70 - added grade number 3 on loop 9 of grade 95 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:51 - Average grade: 86.37 - added grade number 4 on loop 9 of grade 95 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:54 - Average grade: 86.77 - added grade number 5 on loop 9 of grade 95 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+2025-04-22 11:58:59 - Average grade: 86.80 - added grade number 6 on loop 9 of grade 88 to verse MRK 3:31 - Best grade: 86.60 - Iterations without improvement: 4
+New best grade: 86.80000000000001 after 5 iterations.  Improvement of 0.20000000000000284
+Working on verse MRK 3:34 which has grade 86.16666666666667
+
+The peer reviewers commend the translation for accurately conveying the original Greek text and maintaining a conservative Christian theological meaning. However, the primary correction needed is to further reduce Mandarin Chinese influence and increase the use of authentic Gan Chinese dialect features. This includes incorporating more distinctive Gan vocabulary, idiomatic expressions, and grammatical structures to make the text sound natural and idiomatic for Gan speakers. Although some Gan elements like "嗰娘" and "伢们" are present, sentence structures often reflect Mandarin syntax and phrasing. The translation should avoid Mandarin-influenced constructions and instead adopt regionally appropriate Gan dialect forms, ensuring a smooth, fluent reading experience for Gan-speaking Christian audiences. These linguistic refinements should be made without compromising the doctrinal accuracy, reverent tone, and clarity of the message. Implementing these changes will fulfill the translation objectives of authentic Gan dialect adaptation while preserving theological soundness.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望围哒坐的人讲：“望望，这是我嗰娘同兄弟伢们。”
+new: 耶稣望哒围到坐的人讲：“你望哒哩啰，恁些就是我娘同我个兄弟伢。”
+
+2025-04-22 11:59:13 - Average grade: 86.80 - reflected on verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:16 - Average grade: 88.57 - added grade number 1 on loop 6 of grade 95 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:19 - Average grade: 86.57 - added grade number 2 on loop 6 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:22 - Average grade: 87.03 - added grade number 3 on loop 6 of grade 92 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:25 - Average grade: 85.92 - added grade number 4 on loop 6 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:32 - Average grade: 85.65 - added grade number 5 on loop 6 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+2025-04-22 11:59:37 - Average grade: 85.13 - added grade number 6 on loop 6 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 0
+Working on verse MRK 3:34 which has grade 77.83333333333333
+
+The peer reviews affirm that the translation of Mark 3:34 accurately reflects the original Greek text and conservative Christian theological meaning, presenting Jesus' identification of His true family clearly and reverently. However, the primary correction needed is to enhance the linguistic authenticity by increasing the use of genuine Gan Chinese dialect features. Although some Gan vocabulary and particles are included, the translation still relies too much on Mandarin Chinese vocabulary, syntax, and sentence structure, which detracts from the goal of producing a natural and idiomatic Gan Chinese Bible translation. To address this, the translation should further incorporate distinct Gan lexical items, idiomatic expressions, and unique grammatical patterns native to Gan Chinese, replacing Mandarin-influenced phrases and syntax. These linguistic refinements should maintain the doctrinal accuracy, reverent tone, and clarity of the message without introducing new content or altering theological meaning. By focusing on deepening the Gan dialect features while preserving conservative Christian theology, the translation will better fulfill the assignment objectives and resonate authentically with Gan-speaking Christian audiences.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望哒围到坐的人讲：“你望哒哩啰，恁些就是我娘同我个兄弟伢。”
+new: 耶稣望到坐起祂周围个伢哋讲：“你看咯，箇些人就系我个娘同我个兄弟。”
+
+2025-04-22 11:59:50 - Average grade: 85.13 - reflected on verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 11:59:53 - Average grade: 87.97 - added grade number 1 on loop 7 of grade 92 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 11:59:58 - Average grade: 85.77 - added grade number 2 on loop 7 of grade 70 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 12:00:01 - Average grade: 84.70 - added grade number 3 on loop 7 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 12:00:04 - Average grade: 84.17 - added grade number 4 on loop 7 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 12:00:07 - Average grade: 85.05 - added grade number 5 on loop 7 of grade 95 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+2025-04-22 12:00:11 - Average grade: 84.97 - added grade number 6 on loop 7 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 1
+Working on verse MRK 3:34 which has grade 77.0
+
+The peer reviews consistently confirm that the translation of Mark 3:34 accurately conveys the original Greek text and maintains conservative Christian theological meaning. However, the main correction needed is to reduce Mandarin Chinese influence and enhance the use of authentic Gan Chinese dialect features. This includes incorporating more distinct Gan vocabulary, idiomatic expressions, and grammatical structures unique to Gan Chinese. The sentence structure should reflect Gan syntactic patterns rather than Mandarin norms, avoiding Mandarin-influenced phrasing and grammar. While some Gan elements are present, they are insufficient for a truly natural and idiomatic Gan reading experience. These linguistic refinements should preserve all doctrinal content, reverent tone, and clarity without adding or removing any theological nuance. Implementing these changes will fulfill the translation objectives of producing a contemporary, conservative Christian Bible translation that is linguistically authentic and fluent for Gan-speaking audiences.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望到坐起祂周围个伢哋讲：“你看咯，箇些人就系我个娘同我个兄弟。”
+new: 耶稣望了一下坐到祂身边个伢们，讲：“你看哩，箇些就是我娘同我兄弟伢。”
+
+2025-04-22 12:00:27 - Average grade: 84.97 - reflected on verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:31 - Average grade: 82.57 - added grade number 1 on loop 8 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:34 - Average grade: 83.07 - added grade number 2 on loop 8 of grade 70 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:37 - Average grade: 82.90 - added grade number 3 on loop 8 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:41 - Average grade: 82.82 - added grade number 4 on loop 8 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:44 - Average grade: 83.17 - added grade number 5 on loop 8 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+2025-04-22 12:00:51 - Average grade: 83.40 - added grade number 6 on loop 8 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 2
+Working on verse MRK 3:34 which has grade 69.16666666666667
+
+The translation of Mark 3:34 is theologically accurate and clearly conveys the conservative Christian meaning consistent with the original Greek text. However, the translation consistently relies on Mandarin Chinese vocabulary, phrasing, and grammatical structures, which detracts from the objective of producing a natural and idiomatic Gan Chinese Bible translation. To address this, the translation should incorporate more authentic Gan Chinese dialect features, including distinctive Gan vocabulary, idiomatic expressions, and syntactical patterns unique to Gan Chinese. Mandarin-influenced phrases and sentence structures should be replaced with regionally appropriate Gan dialect forms to enhance linguistic authenticity. These adjustments should maintain the existing doctrinal content, reverent tone, and clarity without introducing new content or altering theological meaning. Implementing these linguistic refinements will fulfill the translation goals of delivering a faithful, contemporary, and conservative Christian Bible rendition in authentic Gan Chinese.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望了一下坐到祂身边个伢们，讲：“你看哩，箇些就是我娘同我兄弟伢。”
+new: 耶稣望了一下坐佢身边个伢们，讲：“你看哪，箇些就是我娘同我兄弟伢。”
+
+2025-04-22 12:01:08 - Average grade: 83.40 - reflected on verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:10 - Average grade: 82.57 - added grade number 1 on loop 9 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:14 - Average grade: 85.57 - added grade number 2 on loop 9 of grade 95 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:17 - Average grade: 84.57 - added grade number 3 on loop 9 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:20 - Average grade: 84.07 - added grade number 4 on loop 9 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:23 - Average grade: 83.97 - added grade number 5 on loop 9 of grade 70 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+2025-04-22 12:01:27 - Average grade: 84.07 - added grade number 6 on loop 9 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 3
+Working on verse MRK 3:34 which has grade 72.5
+
+The peer reviews affirm that the translation of Mark 3:34 accurately conveys the original Greek text and conservative Christian theological meaning. The key corrective action is to enhance the linguistic authenticity by reducing Mandarin Chinese vocabulary, grammar, and syntactic structures, and increasing the consistent use of genuine Gan Chinese dialect features. This includes incorporating more distinct Gan lexical items, idiomatic expressions, and grammatical patterns unique to Gan Chinese to produce a natural and idiomatic translation for Gan speakers. Mandarin-influenced phrasing and sentence constructions should be replaced with regionally appropriate Gan dialect forms. These linguistic refinements must preserve all doctrinal content, reverent tone, and clarity without introducing new content or altering theological meaning. Implementing these adjustments will better fulfill the translation objectives and improve the translation’s quality and authenticity for Gan-speaking Christian audiences.
+
+source: καὶ περιβλεψάμενος κύκλῳ τοὺς περὶ αὐτὸν καθημένους λέγει· ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου·
+old: 耶稣望了一下坐佢身边个伢们，讲：“你看哪，箇些就是我娘同我兄弟伢。”
+new: 耶稣望了一圈坐祂身边个人，讲：“你们望着，箇些就系我娘同我兄弟伢。”
+
+2025-04-22 12:01:44 - Average grade: 84.07 - reflected on verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:01:47 - Average grade: 88.57 - added grade number 1 on loop 10 of grade 95 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:01:51 - Average grade: 86.57 - added grade number 2 on loop 10 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:01:54 - Average grade: 87.03 - added grade number 3 on loop 10 of grade 92 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:01:57 - Average grade: 85.92 - added grade number 4 on loop 10 of grade 65 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:02:01 - Average grade: 85.65 - added grade number 5 on loop 10 of grade 75 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+2025-04-22 12:02:04 - Average grade: 85.97 - added grade number 6 on loop 10 of grade 90 to verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 4
+Finilizing MRK 3:34
+
+old: 耶稣望了一圈坐祂身边个人，讲：“你们望着，箇些就系我娘同我兄弟伢。”
+new: 耶稣望围哒坐的人讲：“望望，这是我嗰娘同兄弟伢们。”
+
+old grade: 82.0
+new grade: 86.16666666666667
+
+2025-04-22 12:02:04 - Average grade: 86.80 - finalized verse MRK 3:34 - Best grade: 86.80 - Iterations without improvement: 5
+Working on verse MRK 3:33 which has grade 86.5
+
+The translation of Mark 3:33 accurately preserves the conservative Christian theological meaning and uses appropriate Gan Chinese vocabulary and grammatical structures, such as '佢哋' and '系', distinguishing it from Mandarin. It conveys the original text clearly and naturally for Gan speakers. Peer reviews suggest minor improvements could include adding more localized Gan dialect expressions for greater authenticity but emphasize avoiding any Mandarin forms previously removed. The current version meets the project's requirements for doctrinal faithfulness and linguistic authenticity, and no significant corrections are necessary.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣答佢哋讲：“谁系我娘？谁系我兄弟？”
+new: 耶稣答佢哋讲：“谁系我娘？谁系我兄弟？”
+
+2025-04-22 12:02:16 - Average grade: 86.80 - reflected on verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:22 - Average grade: 88.10 - added grade number 1 on loop 9 of grade 93 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:26 - Average grade: 85.30 - added grade number 2 on loop 9 of grade 65 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:30 - Average grade: 86.17 - added grade number 3 on loop 9 of grade 92 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:34 - Average grade: 86.75 - added grade number 4 on loop 9 of grade 95 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:38 - Average grade: 87.02 - added grade number 5 on loop 9 of grade 93 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+2025-04-22 12:02:41 - Average grade: 86.10 - added grade number 6 on loop 9 of grade 60 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 6
+Working on verse MRK 3:33 which has grade 83.0
+
+The translation of Mark 3:33 faithfully conveys the conservative Christian theological meaning but requires further linguistic revision to fully align with authentic Gan Chinese dialect. Specifically, the words "谁" (who) and "娘" (mother) should be replaced with genuine Gan Chinese vocabulary to eliminate Mandarin influence. While "答佢哋讲" (answered them saying), "系" (is), and "佢哋" (they) appropriately reflect Gan Chinese usage, more authentic Gan lexical and grammatical structures are needed to meet the project's dialectal requirements. Sentence construction should be adjusted to Gan phonology, lexicon, and syntax to ensure naturalness and accessibility for Gan speakers. Importantly, the conservative Christian theological meaning must remain intact without any doctrinal compromise. Care must be taken to avoid reintroducing Mandarin forms previously removed. Implementing these corrections will fulfill the project objective of producing a Bible text that is both doctrinally faithful and linguistically authentic to Gan Chinese-speaking believers.
+
+source: καὶ ἀπεκρίθη αὐτοῖς λέγων· τίς ἐστιν ἡ μήτηρ μου ἢ οἱ ἀδελφοί μου;
+old: 耶稣答佢哋讲：“谁系我娘？谁系我兄弟？”
+new: 耶稣答佢哋讲：“哪亻系我姆妈？哪亻系我兄弟？”
+
+2025-04-22 12:02:57 - Average grade: 86.10 - reflected on verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:04 - Average grade: 88.50 - added grade number 1 on loop 10 of grade 95 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:07 - Average grade: 85.50 - added grade number 2 on loop 10 of grade 65 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:11 - Average grade: 84.50 - added grade number 3 on loop 10 of grade 65 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:14 - Average grade: 85.50 - added grade number 4 on loop 10 of grade 95 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:17 - Average grade: 86.10 - added grade number 5 on loop 10 of grade 95 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+2025-04-22 12:03:22 - Average grade: 86.40 - added grade number 6 on loop 10 of grade 92 to verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 7
+Finilizing MRK 3:33
+
+old: 耶稣答佢哋讲：“哪亻系我姆妈？哪亻系我兄弟？”
+new: 耶稣答佢哋讲：“谁系我娘？谁系我兄弟？”
+
+old grade: 84.5
+new grade: 86.5
+
+2025-04-22 12:03:22 - Average grade: 86.80 - finalized verse MRK 3:33 - Best grade: 86.80 - Iterations without improvement: 8
+Working on verse MRK 3:31 which has grade 87.16666666666667
+
+The peer reviews unanimously affirm that the translation of Mark 3:31 accurately preserves the conservative Christian meaning and maintains theological clarity and reverence. However, they consistently identify the translation's overreliance on Mandarin Chinese vocabulary, grammar, and sentence structures, which compromises its authenticity as a contemporary Gan Chinese text. To address this, the translation should: (1) Increase the use of distinctive contemporary Gan Chinese vocabulary and idiomatic expressions beyond currently used words like '个辰光', '个娘', and '兄弟伢' to enhance dialectal authenticity. (2) Revise sentence structures and syntax to better reflect natural Gan Chinese grammar and idiomatic patterns, avoiding Mandarin-influenced phrasing. (3) Substitute Mandarin pronouns, conjunctions, and particles with their Gan equivalents for consistent dialectal style. (4) Clarify the agency in the passage to indicate that Jesus' mother and brothers themselves were standing outside calling Him, rather than implying that others were sent to call Him, ensuring alignment with the original text. (5) Maintain a clear, respectful, and reverent theological tone consistent with conservative Christian doctrine throughout. (6) Avoid reintroducing previously removed Mandarin-like expressions or informal terms inconsistent with standard Gan usage. Implementing these corrections will produce a culturally and linguistically authentic Gan Chinese Bible translation faithful to conservative Christian theology and suitable for contemporary Gan-speaking audiences.
+
+source: Ἔρχονται οὖν ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω ἑστῶτες ἀπέστειλαν πρὸς αὐτὸν φωνοῦντες αὐτόν.
+old: 个辰光，耶稣个娘同兄弟伢来了，站到门外头，让人进去喊祂。
+new: 这辰光，耶稣的娘同兄弟伢来了，站在门外头喊祂。
+
+2025-04-22 12:03:39 - Average grade: 86.80 - reflected on verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:03:42 - Average grade: 88.37 - added grade number 1 on loop 10 of grade 95 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:03:45 - Average grade: 88.07 - added grade number 2 on loop 10 of grade 92 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:03:48 - Average grade: 87.97 - added grade number 3 on loop 10 of grade 92 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:03:51 - Average grade: 87.92 - added grade number 4 on loop 10 of grade 92 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:03:59 - Average grade: 87.21 - added grade number 5 on loop 10 of grade 75 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+2025-04-22 12:04:07 - Average grade: 87.30 - added grade number 6 on loop 10 of grade 92 to verse MRK 3:31 - Best grade: 86.80 - Iterations without improvement: 9
+New best grade: 87.30000000000001 after 10 iterations.  Improvement of 0.5
+Working on verse MRK 3:32 which has grade 88.16666666666667
+
+The primary correction for MRK 3:32 is to ensure consistent use of authentic Gan Chinese vocabulary and grammatical structures throughout the translation, avoiding Mandarin Chinese expressions. The current translation effectively conveys the conservative Christian meaning and aligns well with Gan dialect features, as confirmed by peer reviews. It uses natural Gan expressions such as "耶稣坐到个里头", "有多多个人围住祂", and "有人同祂讲". No content additions or restorations are necessary. Minor stylistic refinements to enhance dialectal authenticity may be considered but are optional and should not compromise theological clarity or the conservative Christian perspective. Overall, the translation meets the doctrinal and linguistic objectives well and should be maintained with attention to preserving its Gan Chinese character and scriptural faithfulness.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+new: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+
+2025-04-22 12:04:26 - Average grade: 87.30 - reflected on verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:32 - Average grade: 87.67 - added grade number 1 on loop 8 of grade 90 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:35 - Average grade: 86.17 - added grade number 2 on loop 8 of grade 75 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:39 - Average grade: 85.00 - added grade number 3 on loop 8 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:42 - Average grade: 85.92 - added grade number 4 on loop 8 of grade 95 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:45 - Average grade: 86.39 - added grade number 5 on loop 8 of grade 93 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+2025-04-22 12:04:48 - Average grade: 86.67 - added grade number 6 on loop 8 of grade 92 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 0
+Working on verse MRK 3:32 which has grade 85.0
+
+The main corrections across peer reviews for Mark 3:32 are: (1) Ensure consistent and authentic use of Gan Chinese vocabulary and grammatical structures, avoiding Mandarin Chinese expressions; (2) Maintain the conservative Christian interpretation clearly and reverently; (3) Preserve the contemporary and clear style suitable for the target Gan-speaking audience; (4) Avoid adding or restoring any previously removed content; (5) Minor stylistic refinements may be considered to enhance Gan dialect authenticity, but are optional and should not compromise clarity or theological accuracy. The current translation version effectively meets these objectives, employing genuine Gan Chinese expressions such as '耶稣坐到个里头', '有多多个人围住祂', and '有人同祂讲'. Therefore, the focus should be on maintaining this high standard of Gan linguistic authenticity and theological fidelity without unnecessary changes.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+new: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+
+2025-04-22 12:04:59 - Average grade: 86.67 - reflected on verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:02 - Average grade: 82.67 - added grade number 1 on loop 9 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:06 - Average grade: 82.67 - added grade number 2 on loop 9 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:10 - Average grade: 82.67 - added grade number 3 on loop 9 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:14 - Average grade: 82.67 - added grade number 4 on loop 9 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:17 - Average grade: 82.47 - added grade number 5 on loop 9 of grade 60 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+2025-04-22 12:05:21 - Average grade: 83.33 - added grade number 6 on loop 9 of grade 90 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 1
+Working on verse MRK 3:32 which has grade 68.33333333333333
+
+The translation of Mark 3:32 accurately preserves the conservative Christian meaning and is clear and contemporary; however, it predominantly uses Mandarin Chinese vocabulary and grammatical structures rather than authentic Gan Chinese dialect features. The primary correction is to revise the translation to consistently incorporate genuine Gan Chinese lexical items, phonological elements, and syntactic patterns throughout, avoiding Mandarin-centric or Cantonese-influenced expressions such as "嗰" and "个里头." No additional content should be added or restored, as the theological accuracy and clarity are sufficient. Minor stylistic refinements to enhance Gan dialect authenticity may be applied cautiously, ensuring that the conservative Christian perspective and scriptural faithfulness remain intact. Implementing these changes will ensure the translation resonates naturally with Gan-speaking readers and fulfills the linguistic and doctrinal objectives of the assignment.
+
+source: καὶ ἐκάθητο περὶ αὐτὸν ὄχλος· εἶπον δὲ αὐτῷ· ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου ἔξω ζητοῦσί σε.
+old: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+new: 耶稣坐到屋里，有好多人围着祂，有人跟祂讲：“你娘跟兄弟在外头找你。”
+
+2025-04-22 12:05:32 - Average grade: 83.33 - reflected on verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:34 - Average grade: 77.67 - added grade number 1 on loop 10 of grade 40 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:37 - Average grade: 80.17 - added grade number 2 on loop 10 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:38 - Average grade: 81.33 - added grade number 3 on loop 10 of grade 70 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:41 - Average grade: 82.17 - added grade number 4 on loop 10 of grade 75 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:44 - Average grade: 82.07 - added grade number 5 on loop 10 of grade 60 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+2025-04-22 12:05:46 - Average grade: 82.17 - added grade number 6 on loop 10 of grade 65 to verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 2
+Finilizing MRK 3:32
+
+old: 耶稣坐到屋里，有好多人围着祂，有人跟祂讲：“你娘跟兄弟在外头找你。”
+new: 耶稣坐到个里头，有多多个人围住祂，有人同祂讲：“你嗰娘同兄弟在外头找你。”
+
+old grade: 62.5
+new grade: 88.16666666666667
+
+2025-04-22 12:05:46 - Average grade: 87.30 - finalized verse MRK 3:32 - Best grade: 87.30 - Iterations without improvement: 3
+Finilizing MRK 3:31
+
+old: 这辰光，耶稣的娘同兄弟伢来了，站在门外头喊祂。
+new: 这辰光，耶稣的娘同兄弟伢来了，站在门外头喊祂。
+
+old grade: 89.66666666666667
+new grade: 89.66666666666667
+
+2025-04-22 12:05:46 - Average grade: 87.30 - finalized verse MRK 3:31 - Best grade: 87.30 - Iterations without improvement: 4
+2025-04-22 12:05:46 - Average grade: 87.30 - Didn't find a verse to reflect on.  So done. - Best grade: 87.30 - Iterations without improvement: 5

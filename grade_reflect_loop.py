@@ -434,7 +434,7 @@ def perform_reflection( selected_verse, common_context, client, config ):
     if 'dictionary' in config:
         if 'dictionary_description' in config:
             user_message_array += ["\n" + config['dictionary_description'] + "\n" ]
-        user_message_array.append( json.dumps( config['dictionary'] ) + "\n" )
+        user_message_array.append( json.dumps( config['dictionary'], ensure_ascii=False ) + "\n\n" )
 
 
     #check if the config has the boolean summarize_corrections
@@ -707,6 +707,8 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
         print( "Focusing on and before end_line", config['end_line'] )
 
     print( f"Using the model {config['model']}" )
+    if 'reflection-model' in config:
+        print( f"Using the model {config['reflection-model']} for reflection.")
 
     #load the result if we didn't finish last time.
     if os.path.exists(reflection_output_filename):
@@ -893,7 +895,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                     #have a check to make sure the lowest grade found is below the finish limit.
                     if lowest_grade_found is not None and \
                             lowest_grade_found > config.get('highest_grade_to_reflect', float('inf')):
-                        action_done = f"lowest grade {lowest_grade_found} is above highest grade to reflect {config['highest_grade_to_reflect']}"
+                        action_done = f"lowest unfinalized grade {lowest_grade_found} is above highest grade to reflect {config['highest_grade_to_reflect']}"
                         done = True
 
                     elif lowest_graded_verse is not None:

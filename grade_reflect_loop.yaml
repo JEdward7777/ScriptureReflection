@@ -456,8 +456,10 @@ configs:
 
     mode: lowest_grade_priority
     #iterations_without_improvement_max: 30
-    highest_grade_to_reflect: 86
-
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
     reflection_loops_per_verse: 10
 
     grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nStrongly enforce that the student uses Gan Chinese vocabulary instead of Mandarin.\nStrongly verify that the student also uses Gan Chinese grammatical structures."
