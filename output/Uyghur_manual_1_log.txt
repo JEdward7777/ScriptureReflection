@@ -1,0 +1,28 @@
+Running config Uyghur_manual_1
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 09:38:10 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:38:14 - Average grade: 85.00 - added grade number 2 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:38:18 - Average grade: 86.67 - added grade number 3 on loop 1 of grade 90 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:38:23 - Average grade: 86.25 - added grade number 4 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:38:26 - Average grade: 86.00 - added grade number 5 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:38:32 - Average grade: 86.67 - added grade number 6 on loop 1 of grade 90 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 86.66666666666667 after 1 iterations.  Improvement of 86.66666666666667
+Working on verse LUK 1:9 which has grade 86.66666666666667
+
+The peer reviews affirm that the translation of Luke 1:9 faithfully and conservatively captures the original Greek meaning and theological intent, highlighting the priestly custom and the allotment of incense burning duties. However, the specific phrase translating 'he was chosen by lot'—"چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى"—is consistently identified as awkward, unclear, and somewhat redundant in modern Uyghur. Reviewers recommend revising this phrase to a more natural, straightforward, and fluent expression that clearly conveys the idea of being allotted the duty by lot. This improvement will enhance readability and clarity for contemporary readers without compromising theological fidelity. Overall, the translation is accurate and doctrinally sound but would benefit from stylistic refinements to ensure smooth, natural, and accessible language.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئەدەتى بويىچە، ئۇ خۇدا ئالدىغا كىرىپ، خۇشبۇي سېلىش ۋەزىپىسىنى ئالدى؛ بۇ نۆۋەتنى تاقىم ئارقىلىق ئالدى.
+
+2025-04-25 09:38:44 - Average grade: 86.67 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:38:47 - Average grade: 95.00 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:38:51 - Average grade: 95.00 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:38:52 - Average grade: 95.00 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:38:55 - Average grade: 95.00 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:38:59 - Average grade: 95.00 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 09:39:03 - Average grade: 95.00 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+New best grade: 95.0 after 1 iterations.  Improvement of 8.333333333333329
+2025-04-25 09:39:03 - Average grade: 95.00 - lowest unfinalized grade 95.0 is above highest grade to reflect 90 - Best grade: 95.00 - Iterations without improvement: 0

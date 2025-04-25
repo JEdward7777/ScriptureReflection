@@ -1,0 +1,28 @@
+Running config Uyghur_grok_manual_1
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model grok-3-mini-beta
+2025-04-25 09:56:15 - Average grade: 92.00 - added grade number 1 on loop 1 of grade 92 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:56:27 - Average grade: 90.00 - added grade number 2 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:56:43 - Average grade: 88.33 - added grade number 3 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:56:56 - Average grade: 89.25 - added grade number 4 on loop 1 of grade 92 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:57:10 - Average grade: 89.00 - added grade number 5 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:57:21 - Average grade: 88.83 - added grade number 6 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 88.83333333333333 after 1 iterations.  Improvement of 88.83333333333333
+Working on verse LUK 1:9 which has grade 88.83333333333333
+
+The peer reviews for the translation of Luke 1:9 affirm its overall faithfulness to the original Greek text and its alignment with a conservative Christian perspective, particularly through the use of reverent terms like 'پەرۋەردىگار' for 'Lord' and 'مۇقەددەس جاي' for the holy place, making it contemporary and readable in Uyghur. Strengths include accurate conveyance of priestly customs and the selection process. However, common criticisms highlight minor ambiguities in phrasing, such as the use of 'ئۇلار' (they), which may imply a group action rather than focusing specifically on Zacharias, leading to convoluted sentence structures. Actionable recommendations include: refining phrasing for greater directness and conciseness to enhance clarity and flow without altering the doctrinal integrity; simplifying complex sentences to better emphasize Zacharias' individual role; and ensuring the translation maintains precision in line with traditional biblical interpretations for improved readability and accuracy.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئادىتى بويىچە، زەكەرىيا پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي سېلىش ئۈچۈن چەك تاشلىنىپ تاللانغان بولدى.
+
+2025-04-25 09:57:44 - Average grade: 88.83 - reflected on verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:57:57 - Average grade: 98.00 - added grade number 1 on loop 2 of grade 98 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:58:11 - Average grade: 96.50 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:58:25 - Average grade: 96.00 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:58:40 - Average grade: 95.75 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:58:53 - Average grade: 95.60 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+2025-04-25 09:59:05 - Average grade: 95.00 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 88.83 - Iterations without improvement: 0
+New best grade: 95.0 after 1 iterations.  Improvement of 6.166666666666671
+2025-04-25 09:59:05 - Average grade: 95.00 - lowest unfinalized grade 95.0 is above highest grade to reflect 90 - Best grade: 95.00 - Iterations without improvement: 0
