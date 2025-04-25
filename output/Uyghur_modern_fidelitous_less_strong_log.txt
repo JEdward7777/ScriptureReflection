@@ -1,0 +1,28 @@
+Running config Uyghur_modern_fidelitous_less_strong
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 09:03:50 - Average grade: 78.00 - added grade number 1 on loop 1 of grade 78 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:03:53 - Average grade: 76.50 - added grade number 2 on loop 1 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:03:57 - Average grade: 77.00 - added grade number 3 on loop 1 of grade 78 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:04:03 - Average grade: 76.50 - added grade number 4 on loop 1 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:04:07 - Average grade: 77.20 - added grade number 5 on loop 1 of grade 80 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:04:09 - Average grade: 78.50 - added grade number 6 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 78.5 after 1 iterations.  Improvement of 78.5
+Working on verse LUK 1:9 which has grade 78.5
+
+The peer review comments collectively recommend improving the Uyghur translation of Luke 1:9 by replacing the awkward and unclear phrase "چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى" with a more straightforward, natural, and contemporary expression. This change will enhance readability and flow without compromising the faithful, conservative Christian meaning or the theological integrity of the verse. Additionally, simplifying the wording to avoid convoluted or archaic terms is advised to better suit modern readers, while preserving key terms such as "مۇقەددەس جاي" for the Lord's temple. Overall, the translation is accurate but would benefit from stylistic refinements to improve clarity and naturalness.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئەنئەنىسى بويىچە، ئۇ پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي سېلىش نوبىتىگە چۈشتى.
+
+2025-04-25 09:04:20 - Average grade: 78.50 - reflected on verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:22 - Average grade: 92.00 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:26 - Average grade: 93.50 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:28 - Average grade: 94.00 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:34 - Average grade: 94.25 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:36 - Average grade: 94.40 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+2025-04-25 09:04:39 - Average grade: 94.50 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 78.50 - Iterations without improvement: 0
+New best grade: 94.5 after 1 iterations.  Improvement of 16.0
+2025-04-25 09:04:39 - Average grade: 94.50 - lowest unfinalized grade 94.5 is above highest grade to reflect 90 - Best grade: 94.50 - Iterations without improvement: 0

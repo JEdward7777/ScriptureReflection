@@ -1,0 +1,5 @@
+Running config Uyghur_modern_fidelitous_loss_strong
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 09:01:14 - Average grade: 70.00 - added grade number 1 on loop 1 of grade 70 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0

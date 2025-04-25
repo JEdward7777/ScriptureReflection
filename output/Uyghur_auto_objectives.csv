@@ -1,0 +1,15 @@
+time,average_grade,action_done,best_grade_found,iterations_without_improvement
+2025-04-25 09:21:36,60.0,added grade number 1 on loop 1 of grade 60 to verse LUK 1:9,0,0
+2025-04-25 09:21:48,62.5,added grade number 2 on loop 1 of grade 65 to verse LUK 1:9,0,0
+2025-04-25 09:22:06,69.0,added grade number 3 on loop 1 of grade 82 to verse LUK 1:9,0,0
+2025-04-25 09:22:20,70.5,added grade number 4 on loop 1 of grade 75 to verse LUK 1:9,0,0
+2025-04-25 09:22:30,69.4,added grade number 5 on loop 1 of grade 65 to verse LUK 1:9,0,0
+2025-04-25 09:22:42,70.33333333333333,added grade number 6 on loop 1 of grade 75 to verse LUK 1:9,0,0
+2025-04-25 09:22:52,70.33333333333333,reflected on verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:01,95.0,added grade number 1 on loop 2 of grade 95 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:12,95.5,added grade number 2 on loop 2 of grade 96 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:25,95.0,added grade number 3 on loop 2 of grade 94 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:36,95.25,added grade number 4 on loop 2 of grade 96 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:43,95.0,added grade number 5 on loop 2 of grade 94 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:50,95.16666666666667,added grade number 6 on loop 2 of grade 96 to verse LUK 1:9,70.33333333333333,0
+2025-04-25 09:23:50,95.16666666666667,lowest unfinalized grade 95.16666666666667 is above highest grade to reflect 90,95.16666666666667,0

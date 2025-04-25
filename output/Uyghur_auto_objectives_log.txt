@@ -1,0 +1,28 @@
+Running config Uyghur_auto_objectives
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 09:21:36 - Average grade: 60.00 - added grade number 1 on loop 1 of grade 60 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:21:48 - Average grade: 62.50 - added grade number 2 on loop 1 of grade 65 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:22:06 - Average grade: 69.00 - added grade number 3 on loop 1 of grade 82 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:22:20 - Average grade: 70.50 - added grade number 4 on loop 1 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:22:30 - Average grade: 69.40 - added grade number 5 on loop 1 of grade 65 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 09:22:42 - Average grade: 70.33 - added grade number 6 on loop 1 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 70.33333333333333 after 1 iterations.  Improvement of 70.33333333333333
+Working on verse LUK 1:9 which has grade 70.33333333333333
+
+The translation of Luke 1:9 requires significant revision to better align with the original Greek text and conservative Christian theology. Specifically, remove any added or inaccurate phrases implying restrictions or prohibitions, such as "چەك تاشلىغاندا" (casting restrictions), which are not present in the Greek and confuse the meaning. Clarify that Zacharias was "chosen by lot according to the custom of the priesthood" to enter the Lord's temple and offer incense, rendering "ἔλαχε" precisely and concisely without unnecessary additions. Use culturally and theologically appropriate and standardized terminology for "temple of the Lord," preferably "رەبنىڭ مەبەدى" or "ئىبادەتخانا," to reflect the sacred setting clearly. Simplify and restructure the sentence for naturalness and readability in modern Uyghur, avoiding convoluted or informal expressions such as "شۇنداق بولدى" that disrupt flow and clarity. A recommended phrasing would be: "كاھىنلارنىڭ ئادىتى بويىچە، ئۇ رەبنىڭ مەبەدىگە كىرىپ خۇشبۇي سېلىشقا تاللانغان." This maintains fidelity, theological accuracy, clarity, and readability, meeting the standards of conservative Christian biblical translation.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلارنىڭ ئادىتى بويىچە، ئۇ رەبنىڭ مەبەدىگە كىرىپ خۇشبۇي سېلىشقا تاللانغان.
+
+2025-04-25 09:22:52 - Average grade: 70.33 - reflected on verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:01 - Average grade: 95.00 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:12 - Average grade: 95.50 - added grade number 2 on loop 2 of grade 96 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:25 - Average grade: 95.00 - added grade number 3 on loop 2 of grade 94 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:36 - Average grade: 95.25 - added grade number 4 on loop 2 of grade 96 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:43 - Average grade: 95.00 - added grade number 5 on loop 2 of grade 94 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+2025-04-25 09:23:50 - Average grade: 95.17 - added grade number 6 on loop 2 of grade 96 to verse LUK 1:9 - Best grade: 70.33 - Iterations without improvement: 0
+New best grade: 95.16666666666667 after 1 iterations.  Improvement of 24.833333333333343
+2025-04-25 09:23:50 - Average grade: 95.17 - lowest unfinalized grade 95.16666666666667 is above highest grade to reflect 90 - Best grade: 95.17 - Iterations without improvement: 0

@@ -1043,7 +1043,22 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                 reflection_output_unmodified, reference_key )
             reflection_output_unmodified = copy.deepcopy( reflection_output )
 
+def set_some_defaults( config_name, config ):
+    """
+    Set default values for some configuration parameters.
 
+    If the configuration parameter is not already set, set the following:
+    - reflection_output: config_name.jsonl
+    - average_grade_csv_log: config_name.csv
+    - tee_output_filename: config_name_log.txt
+    """
+    if 'reflection_output' not in config:
+        config['reflection_output'] = f"output/{config_name}.jsonl"
+    if 'average_grade_csv_log' not in config:
+        config['average_grade_csv_log'] = f"output/{config_name}.csv"
+    if 'tee_output_filename' not in config:
+        config['tee_output_filename'] = f"output/{config_name}_log.txt"
+        
 def main():
     """
     Run the reflection and grade loop as defined in the grade_reflect_loop.yaml file.
@@ -1067,7 +1082,7 @@ def main():
     for config_name, config in grade_reflect_loop_yaml['configs'].items():
         if config['active']:
 
-
+            set_some_defaults( config_name, config )
 
 
             if 'tee_output_filename' in config:

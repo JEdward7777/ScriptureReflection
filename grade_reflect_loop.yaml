@@ -576,7 +576,7 @@ configs:
       喜欢: 喜欢
 
   Uyghur_modern:
-    active: true
+    active: false
 
     manual_edit_mode: false
 
@@ -623,7 +623,7 @@ configs:
     end_line: 24669 # LUK 1:80
 
   Uyghur_reflect:
-    active: true
+    active: false
 
     manual_edit_mode: true
 
@@ -671,7 +671,7 @@ configs:
 
 
   Uyghur_reflect_grok:
-    active: true
+    active: false
 
     manual_edit_mode: true
 
@@ -721,7 +721,7 @@ configs:
 
 
   Uyghur_modern_fidelitous:
-    active: true
+    active: false
 
     manual_edit_mode: false
 
@@ -766,3 +766,106 @@ configs:
 
     start_line: 24599 # LUK 1:1
     end_line: 24669 # LUK 1:80
+
+
+
+  Uyghur_modern_fidelitous_less_strong:
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: "Purpose: To adapt the Uyghur Bible (which is more literal) to create the second Full Uyghur Bible (which is more natural & readable)\nStyle: Use a contemporary and modern style for Uyghur but hold to conservative Christian interpretations.\n"
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nEnforce that the student uses a modern contemporary style which is natural and readable without compromising fidelity to the Greek."
+
+    #start_line: 24599 # LUK 1:1
+    #end_line: 24669 # LUK 1:80
+    start_line: 24607 # LUK 1:9
+    end_line: 24607 # LUk 1:9
+
+
+  Uyghur_auto_objectives:
+    active: true
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To adapt the existing Uyghur Bible (which is more literal) into the second Full Uyghur Bible, prioritizing a natural, readable, and contemporary Uyghur style while maintaining strict fidelity to the Greek text and conservative Christian interpretations.
+      Style: Use modern, idiomatic Uyghur that is accessible to contemporary readers, ensuring clarity and natural flow. Preserve the theological and cultural nuances of the original text, including significant terms and practices, without adding interpretive elements not present in the Greek. Standardize key terms for consistency across the translation.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade the translation of {vref} according to the translation objective. Evaluate only the translation, excluding footnotes or commentary. Use the following criteria:
+      Fidelity to the Greek (40%): Ensure the translation accurately reflects the Greek text, including key terms, grammatical structure, and theological intent. Identify any omissions, additions, or misrepresentations.
+      Theological and Cultural Accuracy (20%): Verify alignment with conservative Christian interpretations and preservation of cultural practices. Check for consistency with standardized terms.
+      Naturalness and Readability (30%): Assess whether the translation uses modern, idiomatic Uyghur that is clear, engaging, and accessible to contemporary readers. Ensure natural flow without oversimplification.
+      Clarity and Precision (10%): Confirm the translation is concise and unambiguous, avoiding vague or overly complex phrasing.
+      Provide a detailed explanation of strengths and weaknesses for each criterion, citing specific examples. Recommend precise corrections to align with the translation objective, prioritizing fidelity and theological accuracy while enhancing naturalness.
+
+    #start_line: 24599 # LUK 1:1
+    #end_line: 24669 # LUK 1:80
+    start_line: 24607 # LUK 1:9
+    end_line: 24607 # LUk 1:9
+
+    
