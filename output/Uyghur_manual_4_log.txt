@@ -1,0 +1,139 @@
+Running config Uyghur_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+Running config Uyghur_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+Adapting verse LUK 1:9
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلارنىڭ ئەتىر سېلىش ئەتىر كىلىشىدىكەن، پەرۋەردىگارنىڭ مۇقەددەس ئورنىغا كىرىپ، چەك قوينغاندا، چەك ئۇنىڭ قولىغا تۈشتى.
+
+Running config Uyghur_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+Adapting verse MRK 16:19
+old: شۇڭا رەب ئۇلارغا بۇ سۆزلەرنى قىلىپ بولغاندىن كېيىن، ئاسمانغا كۆتۈرۈلدى، خۇدانىڭ ئوڭ يېنىدا ئولتۇردى.
+new: ئۆزى بۇ سۆزلەرنى ئېيتىپ بولغاندىن كېيىن، ئۇ ئاسمانغا كۆتۈرۈلۈپ، خۇدانىڭ ئوڭ تەرىپىدە ئولتۇردى.
+
+Adapting verse MRK 16:20
+old: مۇخلىسلار چىقىپ، ھەر يەرگە بېرىپ خۇش خەۋەرنى جاكارلاپ يۈردى. رەب ئۇلار بىلەن تەڭ ئىشلەپ، سۆز-كالامىغا ھەمراھ بولۇپ ئەگەشكەن مۆجىزىلىك ئالامەتلەر بىلەن ئۇنىڭغا ئىسپات بەردى.
+new: دۇنيا بويىچە مەخسۇس شۇنىڭدىن چىقىپ، خۇش خەۋەرنى تارقاتتى. رەب ئۇلار بىلەن بىرگە بولۇپ، سۆزلەرگە كۈچ ۋە ئىمكان بېرىپ، باشقىلارغا نىمىلەر بولغانلىقىنى كۆرسىتىش ئۈچۈن گۇۋاھلىق ئالامەتلىرى بىلەن ئىشنى راۋاجلاندۇردى.
+
+Adapting verse LUK 1:1
+old: گەرچە نۇرغۇن ئادەملەر ئارىمىزدا مۇتلەق ئىشەنچلىك دەپ قارالغان ئىشلارنى توپلاپ يېزىشقا كىرىشكەن بولسىمۇ،
+new: ئەلۋەتتە، كۆپ ئادەملەر ئارىسىدا ئەمەلدىن چۇقۇم ئىشەنچلىك دەپ قارالغان ئىشلارنى توپلاپ، يېزىشقا باشلىغانلار بولدى,
+
+Adapting verse LUK 1:2
+old: (خۇددى سۆز-كالامغا باشتىن-ئاخىر ئۆز كۆزى بىلەن گۇۋاھچى بولغانلار، شۇنداقلا ئۇنى ساقلاپ يەتكۈزگۈچىلەرنىڭ بىزگە ئامانەت قىلغان بايانلىرىدەك)،
+new: (ئۇ سۆزلەرنى باشتىن-ئاخىر ئۆز كۆزى بىلەن كۆرگەن ۋە ئاڭلىغان كىشىلەر بار، ئۇلار شۇنى بىزگە سەمىمىيلىك بىلەن ئىنكاس قىلىپ، ئامانەت قىلدى)
+
+Adapting verse LUK 1:3
+old: مەنمۇ بارلىق ئىشلارنى باشتىن تەپسىلىي تەكشۈرۈپ ئېنىقلىغاندىن كېيىن، ئى ھۆرمەتلىك تېئوفىلۇس جانابلىرى، سىلىگە بۇ ئىشلارنى تەرتىپى بويىچە يېزىشنى لايىق تاپتىم.
+new: مەن بارلىق ئىشلارنى باشتىن توشۇق-تۇشۇق تەكشۈرۈپ چىقتىن كېيىن، تېئوفىلۇس، بۇ ئىشلارنى تەرتىپ بىلەن سىلىگە يېزىپ بېرەي دېدىم.
+
+Adapting verse LUK 1:4
+old: بۇنىڭدىن مەقسەت، سىلى قوبۇل قىلغان تەلىملەرنىڭ مۇتلەق ھەقىقەت ئىكەنلىكىگە جەزم قىلىشلىرى ئۈچۈندۇر.
+new: ماقسىتىم سىزگە ئۆگىتىلگەن ئىشلارنىڭ ھەقىقەتلىك ئىكەنلىكىنى ئىشەنچ بىلەن بىلدۈرىشىڭىزگە ياردەم بېرىش.
+
+Adapting verse LUK 1:5
+old: يەھۇدىيە ئۆلكىسىگە پادىشاھ بولغان ھېرود سەلتەنەت قىلغان كۈنلىرىدە، «ئابىيا» كاھىنلىق نۆۋىتىدىن بىر كاھىن بار بولۇپ، ئىسمى زەكەرىيا ئىدى. ئۇنىڭ ئايالىمۇ ھارۇننىڭ ئەۋلادىدىن بولۇپ، ئىسمى ئېلىزابىت ئىدى.
+new: يەھۇدىيە ئۆلكىسىگە پادىشاھ بولغان ھېرودنىڭ پادىشاھلىقىدا، «ئابىيا» كاھىن نۆۋىتىدە بىر كاھىن بار ئىدى، نامى زەكەرىيا. ئۇنىڭ ئايالىمۇ ھارۇننىڭ نىسىپىدىن، نامى ئېلىزابىت ئىدى.
+
+Adapting verse LUK 1:6
+old: ئۇلار ئىككىسى خۇدانىڭ ئالىدىدا ھەققانىي كىشىلەر بولۇپ، پەرۋەردىگارنىڭ پۈتۈن ئەمر-بەلگىلىمىلىرى بويىچە ئەيىبسىز ماڭاتتى.
+new: ئۇلار ئىككىسىمۇ خۇدانىڭ قارىشىدا ياخشى كىشىلەر بولۇپ، پەرۋەردىگارنىڭ ھەممە نەرسىنى ئۆزىگە بوي سۇنۇپ، ھېچقانداق خاتالىق قىلمىغان ئىدى.
+
+Adapting verse LUK 1:7
+old: ئەمما ئېلىزابىت تۇغماس بولغاچقا، ئۇلار پەرزەنت كۆرمىگەنىدى. ئۇنىڭ ئۈستىگە ئۇلار ئىككىسى خېلىلا ياشىنىپ قالغانىدى.
+new: ئېلىزابىت بالىلىق كۆرمىدى، چۈنكى ئۇ بولا ئالمايدى، ئۈستىگە ئەر-ئايالىمۇ ياشلىرى ئۆتۈپ كەتتى.
+
+Adapting verse LUK 1:8
+old: ئۇ ئۆز تۈركۈمىدىكى كاھىنلار ئارىسىدا ئىبادەتخانىدا نۆۋەتچىلىك ۋەزىپىسىنى خۇدا ئالدىدا ئادا قىلىۋاتقاندا،
+new: ئۇ ئۆز قاھىنداشلىرى بىلەن بىرگە ئىبادەتخانەدە نۆۋەتتىكى ئىشلىرىنى خۇدانىڭ ئالدىدا ئادا قىلغان چاغىدى.
+
+Adapting verse LUK 1:10
+old: ئەمدى ئۇ خۇشبۇي سېلىۋاتقان ۋاقتىدا، جامائەت تاشقىرىدا تۇرۇپ دۇئا قىلىشىۋاتاتتى.
+new: ئۆز ئىشىنى قىلىۋاتقاندا، جامائەت چىقىپ تۇرۇپ دۇئا قىلدى.
+
+Adapting verse LUK 1:11
+old: تۇيۇقسىز پەرۋەردىگارنىڭ بىر پەرىشتىسى ئۇنىڭغا خۇشبۇيگاھنىڭ ئوڭ تەرىپىدە كۆرۈندى.
+new: خۇدا پەرىشتىسى ناھايىتى ئۈستىدە خۇشبۇيگاھنىڭ ئوڭ ياندا ناھايىتى ئۆزىگە كۆرۈندى.
+
+Adapting verse LUK 1:12
+old: ئۇنى كۆرگەن زەكەرىيا ھودۇقۇپ قورقۇنچقا چۆمۈپ كەتتى.
+new: زەكەرىيا ئۇنى كۆرۈپ ناھايىتى قورقۇپ كەتتى.
+
+Adapting verse LUK 1:13
+old: بىراق پەرىشتە ئۇنىڭغا: ــ ئەي زەكەرىيا، قورقمىغىن! چۈنكى تىلىكىڭ ئىجابەت قىلىندى، ئايالىڭ ئېلىزابىت ساڭا بىر ئوغۇل تۇغۇپ بېرىدۇ، سەن ئۇنىڭ ئىسمىنى يەھيا قويغىن.
+new: زەكەرىيا، قورقمە، آرزۇڭ قوبۇل بولدى؛ ئايالىڭ ئېلىزابىت ساڭا بىر ئوغۇل بېرىدۇ، ئۇنىڭ ئىسمىنى يەھيا دەپ قويغىن.
+
+Adapting verse LUK 1:14
+old: ئۇ ساڭا شاد-خۇراملىق ئېلىپ كېلىدۇ، ئۇنىڭ دۇنياغا كېلىشى بىلەن نۇرغۇن كىشىلەر شادلىنىدۇ.
+new: ئۇ سەنلەرگە بەك خوشاللىق ۋە خۇشالچىلىق بەردى، ئۇنىڭ تۇغۇلغانىغا نۇرغۇنلار ھەقىقەتەن خوشال بولىدۇ.
+
+Adapting verse LUK 1:15
+old: چۈنكى ئۇ پەرۋەردىگارنىڭ نەزىرىدە ئۇلۇغ بولىدۇ. ئۇ ھېچقانداق ھاراق-شاراب ئىچمەسلىكى كېرەك؛ ھەتتا ئانىسىنىڭ قورسىقىدىكى ۋاقتىدىن تارتىپمۇ مۇقەددەس روھقا تولدۇرۇلغان بولىدۇ.
+new: چۈنكى ئۇ خۇدا ياقىشىدىغان ئادەم بولىدۇ. ھېچقانداق ئايلاق، ئىچكىلىك ئىچمەيدۇ، ئەمدى بالىلىقتىن باشلاپ، ئانىسىنىڭ قورسىقىدا ئىكەنلىكىدىن تارتىپ مۇقەددەس روھ بىلەن تولغان.
+
+Adapting verse LUK 1:16
+old: ئۇ ئىسرائىللاردىن نۇرغۇنلىرىنى پەرۋەردىگار خۇداسىنىڭ يېنىغا قايتۇرىدۇ.
+new: ئۇنىڭ بىلەن ئىسرائىلدىن كۆپچىلىكنى خۇداغا قايتۇرۇپ كەلدى.
+
+Adapting verse LUK 1:17
+old: ئۇ رەبنىڭ ئالدىدا ئىلىياس پەيغەمبەرگە خاس بولغان روھ ۋە كۈچ-قۇدرەتتە بولۇپ، ئاتىلارنىڭ قەلبلىرىنى بالىلارغا مايىل قىلىپ، ئىتائەتسىزلەرنى ھەققانىيلارنىڭ ئاقىلانىلىكىگە كىرگۈزۈپ، رەب ئۈچۈن تەييارلانغان بىر خەلقنى ھازىر قىلىش ئۈچۈن ئۇنىڭ ئالدىدا ماڭىدۇ، ــ دېدى.
+new: ئۇ رەبنىڭ ئالدىدا ئىلىيەس پەيغەمبەرگە ئۆزگىچە بىر روھ ۋە كۈچ بەرگەن؛ ئاتا-ئانىلارنىڭ دىلىنى بالىلارغا ئېغىرلىق قىلدى، ئىتائەتسىزلەرنى توغرا يولغا چۈشۈردى، رەب ئۈچۈن تەييار بولغان بىر خەلقنى قولغا كەلتۈرۈش ئۈچۈن ئالدىدا ماڭىدۇ، — دەپ ئېيتىلدى.
+
+Adapting verse LUK 1:18
+old: زەكەرىيا بولسا پەرىشتىدىن: مەنمۇ قېرىپ قالغان، ئايالىممۇ خېلى ياشىنىپ قالغان تۇرسا، بۇ ئىشنى قانداق جەزم قىلالايمەن؟ ــ دەپ سورىدى.
+new: زەكەرىيا پەرىشتىگە: «مەن ئەمدى ياشنى ئالدىم، ئايالىممۇ كۈنلىرىم ئۆتكەن، بۇ ئىشنىڭ راست-يالغانلىقىنى قانداق بىلەي؟» — دەپ سۆرەدى.
+
+Adapting verse LUK 1:19
+old: پەرىشتە جاۋابەن: ــ مەن خۇدانىڭ ھۇزۇرىدا تۇرغۇچى جەبرائىلمەن. ساڭا سۆز قىلىشقا، بۇ خۇش خەۋەرنى ساڭا يەتكۈزۈشكە مەن ئەۋەتىلدىم.
+new: پەرىشتە جاۋابەن: ــ مېنىڭ ئىسمىم جەبرائىل، مەن خۇدانىڭ ھۇزۇرىدا تۇرۇپ، سەنگە مۇشۇ ياخشى خەۋەرلەرنى ئېيتىش ئۈچۈن ئەۋەتىلدىم.
+
+2025-04-27 11:59:36 - Average grade: 85.00 - added grade number 1 on loop 2 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 11:59:41 - Average grade: 87.50 - added grade number 2 on loop 2 of grade 90 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 11:59:44 - Average grade: 89.33 - added grade number 3 on loop 2 of grade 93 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 11:59:48 - Average grade: 85.75 - added grade number 4 on loop 2 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 11:59:52 - Average grade: 85.00 - added grade number 5 on loop 2 of grade 82 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 11:59:54 - Average grade: 85.50 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 85.5 after 1 iterations.  Improvement of 85.5
+Working on verse LUK 1:9 which has grade 85.5
+
+The peer review comments commend the overall faithfulness of the LUK 1:9 translation to the Greek text and the effort to use contemporary, natural Uyghur language. However, several issues need correction: 
+1. The phrase "كاھىنلارنىڭ ئەتىر سېلىش ئەتىر كىلىشىدىكەن" is somewhat redundant, awkward, and occasionally archaic, needing revision to improve fluency and naturalness.
+2. The wording "چەك قوينغاندا" and "چەك ئۇنىڭ قولىغا تۈشتى" is somewhat ambiguous and less natural; it should be clarified to convey that the priest's lot or portion to burn incense was assigned to him, not that the incense itself literally fell into his hand.
+3. The translation could better reflect the act of the priest entering the Lord's temple to burn incense and drawing the lot in a clearer, more fluid way without awkward or overly colloquial phrasing.
+4. Minor word order shifts are acceptable if they improve readability, but archaic, overly formal, or repetitive expressions should be avoided.
+5. The translation should maintain a reverent tone consistent with conservative Christian values, respecting the holiness of the temple.
+
+Actionable recommendations: revise the first phrase to avoid redundancy and awkwardness; clarify the expression of drawing lots to prevent misinterpretation; smooth the phrasing for natural modern Uyghur readability while preserving faithfulness and reverence; avoid colloquial or archaic words; and ensure the translation clearly conveys the original Greek meaning without ambiguity.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: كاھىنلارنىڭ ئەتىر سېلىش ئەتىر كىلىشىدىكەن، پەرۋەردىگارنىڭ مۇقەددەس ئورنىغا كىرىپ، چەك قوينغاندا، چەك ئۇنىڭ قولىغا تۈشتى.
+new: كاھىنلىق ئەدەبىياتىغا ئاساسەن، ئۇ قادىر پەرۋەردىگارنىڭ مۇقەددەس مەبەدىگە كىرىپ، ئەتىر سېلىشقا تاقسىم قىلىنغان نۆۋتىنى ئالدى.
+
+2025-04-27 12:01:26 - Average grade: 85.50 - reflected on verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:28 - Average grade: 95.00 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:31 - Average grade: 92.50 - added grade number 2 on loop 3 of grade 90 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:33 - Average grade: 93.33 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:37 - Average grade: 92.50 - added grade number 4 on loop 3 of grade 90 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:39 - Average grade: 93.00 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+2025-04-27 12:01:41 - Average grade: 93.33 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:9 - Best grade: 85.50 - Iterations without improvement: 0
+New best grade: 93.33333333333333 after 1 iterations.  Improvement of 7.833333333333329
+2025-04-27 12:01:41 - Average grade: 93.33 - lowest unfinalized grade 93.33333333333333 is above highest grade to reflect 90 - Best grade: 93.33 - Iterations without improvement: 0
+Running config Uyghur_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+New best grade: 93.33333333333333 after 1 iterations.  Improvement of 93.33333333333333
+2025-04-27 12:18:20 - Average grade: 93.33 - lowest unfinalized grade 93.33333333333333 is above highest grade to reflect 90 - Best grade: 93.33 - Iterations without improvement: 0
+Running config Uyghur_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+New best grade: 93.33333333333333 after 1 iterations.  Improvement of 93.33333333333333
+2025-04-27 12:22:02 - Average grade: 93.33 - lowest unfinalized grade 93.33333333333333 is above highest grade to reflect 90 - Best grade: 93.33 - Iterations without improvement: 0

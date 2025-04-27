@@ -816,7 +816,7 @@ configs:
 
 
   Uyghur_auto_objectives:
-    active: true
+    active: false
 
     manual_edit_mode: false
 
@@ -867,5 +867,527 @@ configs:
     #end_line: 24669 # LUK 1:80
     start_line: 24607 # LUK 1:9
     end_line: 24607 # LUk 1:9
+  
+  Uyghur_manual_1:
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Enforce that the student remains faithful to the Greek while using a modern contemporary style which is natural and readable.
+
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80
+    #start_line: 24607 # LUK 1:9
+    #end_line: 24607 # LUk 1:9
 
     
+  
+  Uyghur_grok_manual_1:
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    #api_key: [ryders_key,key]
+    api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    #model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Enforce that the student remains faithful to the Greek while using a modern contemporary style which is natural and readable.
+
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80
+    #start_line: 24607 # LUK 1:9
+    #end_line: 24607 # LUk 1:9
+
+
+
+  
+  Uyghur_manual_2:
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+        - Target a blend of the Modern Standard Register (for clarity, accessibility, and respectfulness) and the Colloquial Register (for relatability and engagement)
+        - Avoid the archaic Literary/Historical Register or Religious Register
+        - Use short sentences with minimal use of formal conjunctions.
+        - Use Turkic-based vocabulary, simple syntax, and standardized orthography.
+        - Maintain a dignified tone to avoid offending traditional readers.
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+        - Target a blend of the Modern Standard Register (for clarity, accessibility, and respectfulness) and the Colloquial Register (for relatability and engagement)
+        - Avoid the archaic Literary/Historical Register or Religious Register
+        - Use short sentences with minimal use of formal conjunctions.
+        - Use Turkic-based vocabulary, simple syntax, and standardized orthography.
+        - Maintain a dignified tone to avoid offending traditional readers.
+
+    #start_line: 24599 # LUK 1:1
+    #end_line: 24669 # LUK 1:80
+    start_line: 24607 # LUK 1:9
+    end_line: 24607 # LUk 1:9
+
+  
+  Uyghur_manual_3:
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    api_key: [ryders_key,key]
+    #api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Enforce that the student remains faithful to the Greek while using a blend of the Modern Standard Register and Colloquial Register.
+      Penalize the student for using archaic Literary/Historical Register or Religious Register.
+
+    #start_line: 24599 # LUK 1:1
+    #end_line: 24669 # LUK 1:80
+    start_line: 24607 # LUK 1:9
+    end_line: 24607 # LUk 1:9
+
+
+  Uyghur_manual_4:
+    #The expirement with this one is to use a transfer run before the reflection loops.
+    #The idea is that the context of the untransformed verses is a huge bias to not follow the prompt
+    #so looking at each verse one by one with no context in a transfer step will help it follow the prompt
+    #and then it can use context to fix things which got messed up.
+
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    api_key: [ryders_key,key]
+
+    adaptation_prompt: |
+      Adapt the translation to a blend of Modern Standard Register and Colloquial Register and out of archaic Literary/Historical Register or Religious Register in Uyghur.
+      Push the adaptation to a modern Uyghur register hard.  Followup passes will clean up translation inaccuracies.
+
+
+    #api_key: [mm_key_grok,key]
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    #model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Enforce that the student remains faithful to the Greek while using a blend of the Modern Standard Register and Colloquial Register.
+      Penalize the student for using archaic Literary/Historical Register or Religious Register.
+
+
+    #start_line: 24599 # LUK 1:1
+    #end_line: 24669 # LUK 1:80
+    start_line: 24607 # LUK 1:9
+    end_line: 24607 # LUk 1:9
+
+  Uyghur_grok_manual_4:
+    #The expirement with this one is to use a transfer run before the reflection loops.
+    #The idea is that the context of the untransformed verses is a huge bias to not follow the prompt
+    #so looking at each verse one by one with no context in a transfer step will help it follow the prompt
+    #and then it can use context to fix things which got messed up.
+
+    active: true
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+    #api_key: [ryders_key,key]
+    api_key: [mm_key_grok,key]
+
+    adaptation_prompt: |
+      Adapt the translation to a blend of Modern Standard Register and Colloquial Register and out of archaic Literary/Historical Register or Religious Register in Uyghur Arabic Script.
+      Push the adaptation to a modern Uyghur register hard.  Followup passes will clean up translation inaccuracies.
+
+
+    translation_objective: |
+      Purpose: To translate a natural and readable Bible in Uyghur Arabic Script.
+      Style: Use a contemporary and modern style
+      Constraints: 
+        - Preserve faithfulness to the original Greek.
+        - Hold to conservative Christian interpretations
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    #model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/ebible_uig_uigara.jsonl
+    grades_per_reflection_loop: 6
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: |
+      Grade {vref} in accordance to the translation objective.
+      Grade just the translation, not footnotes or commentary.
+      Enforce that the student remains faithful to the Greek while using a blend of the Modern Standard Register and Colloquial Register.
+      Penalize the student for using archaic Literary/Historical Register or Religious Register.
+
+
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80
+    #start_line: 24607 # LUK 1:9
+    #end_line: 24607 # LUk 1:9
+
+  chinese_gan_grok_adapted_1:
+    #The expirement with this one is to utilize the adaptation prompt which
+    #helps get past the context mass which prevents conversion to a new format.
+
+    adaptation_prompt: |
+      Adapt the translation to the Gan Chinese dialect using Gan words and syntax.
+      Push the adaptation to Gan hard.  Follow up passes will clean up translation inaccuracies.
+
+    active: false
+
+    manual_edit_mode: false
+
+    #debug_force_vref: JHN 3:32
+    reference_key: [vref]
+    source_key: [source]
+    translation_key: [fresh_translation,text]
+
+    #api_key: [ryders_key,key]
+    api_key: [mm_key_grok,key]
+    translation_objective: "Purpose: To adapt the Bible from Mandarin Chinese to Gan Chinese.\nStyle: Use a contemporary and modern style but hold to conservative Christian interpretations.\n"
+
+    num_context_verses_before: 10
+    num_context_verses_after: 10
+
+    #model: gpt-4o-mini
+    #model: gpt-4.1-mini
+    #model: gpt-4.5-preview
+    model: grok-3-mini-beta
+    #reflection-model: gpt-4.5-preview
+    temperature: 1.2
+    top_p: 0.9
+    translation_input: output/open_bible_chinese_mandarin_simplified.jsonl
+    reflection_output: output/chinese_gan.jsonl
+    grades_per_reflection_loop: 6
+
+    average_grade_csv_log: output/chinese_gan.csv
+    tee_output_filename:   output/chinese_gan_log.txt
+
+    summarize_corrections: true
+    summarize_instructions: "Instructions: Review the peer review comments, summarize the corrections in English in an actionable way."
+
+    mode: lowest_grade_priority
+    #iterations_without_improvement_max: 30
+    #highest_grade_to_reflect: 86
+    highest_grade_to_reflect: 90
+    iterations_without_improvement_max: 15
+    
+    reflection_loops_per_verse: 10
+
+    grading_prompt: "Grade {vref} in accordance to the translation objective.\nGrade just the translation, not footnotes or commentary.\nStrongly enforce that the student uses Gan Chinese vocabulary instead of Mandarin.\nStrongly verify that the student also uses Gan Chinese grammatical structures."
+
+    #start_line: 23033 # MAT 1:1 This file
+    #end_line: 24103 # MAT 28:20 This file
+    #start_line: 23058 # MAT 2:1
+    #end_line: 23080 # MAT 2:23
+    #start_line: 24207 # MRK 3:31
+    #end_line: 24211 # MRK 3:35
+    start_line: 24785 # LUK 1:9
+    end_line: 24785 # LUk 1:9
+    dictionary_description: This gives the Gan equivalent of Mandarin.
+    dictionary:
+      吃饭: 食饭
+      喝水: 食水
+      睡觉: 困觉
+      洗澡: 洗浴
+      穿衣服: 着衫
+      脱衣服: 脱衫
+      洗脸: 洗面
+      刷牙: 洗口
+      梳头: 梳头
+      回家: 归屋
+      父亲: 爷
+      母亲: 娘
+      爷爷: 公公
+      奶奶: 婆婆
+      儿子: 崽
+      女儿: 妹崽
+      哥哥: 哥哥
+      姐姐: 姐姐
+      弟弟: 老弟
+      妹妹: 老妹
+      太阳: 日头
+      月亮: 月光
+      下雨: 落雨
+      刮风: 起风
+      打雷: 响雷
+      下雪: 落雪
+      晴天: 好天
+      阴天: 乌天
+      星星: 星子
+      云: 云
+      米饭: 饭
+      面条: 面
+      粥: 稀饭
+      鸡蛋: 鸡子
+      猪肉: 肉
+      鱼: 鱼
+      蔬菜: 菜
+      水果: 果子
+      茶: 茶
+      酒: 酒
+      头: 脑壳
+      眼睛: 眼珠
+      鼻子: 鼻公
+      嘴巴: 口
+      耳朵: 耳
+      手: 手
+      脚: 脚
+      肚子: 肚
+      头发: 头发
+      牙齿: 牙齿
+      今天: 今朝
+      明天: 明朝
+      昨天: 昨日子
+      早上: 早晨
+      晚上: 夜边
+      前面: 前头
+      后面: 后头
+      左边: 左边
+      右边: 右边
+      中间: 中间
+      走: 行
+      跑: 走
+      看: 望
+      听: 听
+      说: 讲
+      笑: 笑
+      哭: 哭
+      坐: 坐
+      站: 站
+      拿: 拿
+      狗: 狗
+      猫: 猫
+      鸡: 鸡
+      鸭: 鸭
+      猪: 猪
+      树: 树
+      花: 花
+      草: 草
+      叶子: 叶子
+      根: 根
+      一: 一
+      二: 二
+      三: 三
+      多: 多
+      少: 少
+      大: 大
+      小: 细
+      高: 高
+      低: 低
+      长: 长
+      钱: 钱
+      书: 书
+      字: 字
+      学校: 学堂
+      工作: 做事
+      买: 买
+      卖: 卖
+      来: 来
+      去: 去
+      喜欢: 喜欢

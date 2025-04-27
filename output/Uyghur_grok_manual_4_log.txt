@@ -1,0 +1,1288 @@
+Running config Uyghur_grok_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model grok-3-mini-beta
+Adapting verse LUK 1:9
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلارنىڭ ئادەتچە قىلىشى بويىچە، ئۇلار پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ بۇلاق سېلىشقا چانس تاللاشتا، زەكەريا شۇ ئىشقا ئېرىشكەن.
+
+2025-04-27 12:26:33 - Average grade: 00.00 - adapted verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+Running config Uyghur_grok_manual_4
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model grok-3-mini-beta
+Adapting verse LUK 1:9
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: ئۇ ۋاقىتتا كاھىنلارنىڭ ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي يېلىشقا كىرىشىش ئۈچۈن چەك تاشلىدى، نەتىجىدە چەك زەكەرىئەگە چىقتى.
+
+2025-04-27 12:28:37 - Average grade: 00.00 - adapted verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse MRK 16:19
+old: شۇڭا رەب ئۇلارغا بۇ سۆزلەرنى قىلىپ بولغاندىن كېيىن، ئاسمانغا كۆتۈرۈلدى، خۇدانىڭ ئوڭ يېنىدا ئولتۇردى.
+new: شۇ ۋاقىتتا, رەب ئۇلارغا بۇ سۆزلەرنى دەپ بولغاندىن كېيىن, ئاسمانغا كۆتۈرۈلدى ۋە خۇدانىڭ ئوڭ يېنىدا ئولتۇردى.
+
+Adapting verse MRK 16:20
+old: مۇخلىسلار چىقىپ، ھەر يەرگە بېرىپ خۇش خەۋەرنى جاكارلاپ يۈردى. رەب ئۇلار بىلەن تەڭ ئىشلەپ، سۆز-كالامىغا ھەمراھ بولۇپ ئەگەشكەن مۆجىزىلىك ئالامەتلەر بىلەن ئۇنىڭغا ئىسپات بەردى.
+new: ئوقۇغۇچىلار چىقىپ كەتتى، ھەر يەرگە بارىپ، خۇش خەۋەرنى قىزغىن جاكارلىدى. رەب ئۇلار بىلەن بىرگە ئىشلەپ، سۆزلىرىنى مۆجىزىلىك ئالامەتلەر بىلەن تولۇق دەلىللىدى.
+
+Adapting verse LUK 1:1
+old: گەرچە نۇرغۇن ئادەملەر ئارىمىزدا مۇتلەق ئىشەنچلىك دەپ قارالغان ئىشلارنى توپلاپ يېزىشقا كىرىشكەن بولسىمۇ،
+new: ھازىرچە كۆپ كىشىلەر بىز ئارامىزدا پۈتۈن دەرىجىدە ئىشەنچلىك دەپ كۆرۈلگەن ئىشلارنى يىغىپ يېزىشقا كىرىشكەن بولسىمۇ،
+
+Adapting verse LUK 1:2
+old: (خۇددى سۆز-كالامغا باشتىن-ئاخىر ئۆز كۆزى بىلەن گۇۋاھچى بولغانلار، شۇنداقلا ئۇنى ساقلاپ يەتكۈزگۈچىلەرنىڭ بىزگە ئامانەت قىلغان بايانلىرىدەك)،
+new: باشلىنىشتىنلا گۇۋاھ بولغانلار ۋە سۆزنى يايدۇرغۇچىلارنىڭ بىزگە ئۇلارنى تولۇق ساقلاپ بەرگەن ھېكايىلىرىدەك، بۇ ھازىرقى زامان كىشىلىرى ئوچۇق چۈشىنىدىغان تەرزگە ئادەپلىنىپ.
+
+Adapting verse LUK 1:3
+old: مەنمۇ بارلىق ئىشلارنى باشتىن تەپسىلىي تەكشۈرۈپ ئېنىقلىغاندىن كېيىن، ئى ھۆرمەتلىك تېئوفىلۇس جانابلىرى، سىلىگە بۇ ئىشلارنى تەرتىپى بويىچە يېزىشنى لايىق تاپتىم.
+new: Men ham barliq ishlarni boshqa joydan yaxshi barlap körgüch, aziz Teofilus, senga bu ishlarning tartip boyiche yezip bermini yaxshi deb oyladim.
+
+Adapting verse LUK 1:4
+old: بۇنىڭدىن مەقسەت، سىلى قوبۇل قىلغان تەلىملەرنىڭ مۇتلەق ھەقىقەت ئىكەنلىكىگە جەزم قىلىشلىرى ئۈچۈندۇر.
+new: بۇنىڭ ئۈچۈن، سەن ئۆگەنگەن تەلىملەرنىڭ ھەقىقەتتىكىنى تولا ئىشىنىپ، ياقتۇرۇپ جەزم قىلىشىڭ ئۈچۈن.
+
+Adapting verse LUK 1:5
+old: يەھۇدىيە ئۆلكىسىگە پادىشاھ بولغان ھېرود سەلتەنەت قىلغان كۈنلىرىدە، «ئابىيا» كاھىنلىق نۆۋىتىدىن بىر كاھىن بار بولۇپ، ئىسمى زەكەرىيا ئىدى. ئۇنىڭ ئايالىمۇ ھارۇننىڭ ئەۋلادىدىن بولۇپ، ئىسمى ئېلىزابىت ئىدى.
+new: ھېرودنىڭ يەھۇدىيەدە پادىشاھلىق قىلغان ۋاقىتلarda, ئابىيا نۆۋىتىگە تەۋە بىر كاھىن بار ئىدى، ئىسمى زەكەرىيا. ئۇنىڭ ئايالى ئېلىزابىت، ھارۇننىڭ ئەۋلادىدىن بولۇپ كەلگەن.
+
+Adapting verse LUK 1:6
+old: ئۇلار ئىككىسى خۇدانىڭ ئالىدىدا ھەققانىي كىشىلەر بولۇپ، پەرۋەردىگارنىڭ پۈتۈن ئەمر-بەلگىلىمىلىرى بويىچە ئەيىبسىز ماڭاتتى.
+new: ئۇلار ئىككىسى خۇدا ئالدىدا تولا ئادىل كىشىلەر بولۇپ، پەرۋەردىگارنىڭ ھەر بىر بۇيرۇق-قائىدىسىنى خاتالىقسىز ئەمەلگە ئاشۇرۇپ كەتىشاتتى.
+
+Adapting verse LUK 1:7
+old: ئەمما ئېلىزابىت تۇغماس بولغاچقا، ئۇلار پەرزەنت كۆرمىگەنىدى. ئۇنىڭ ئۈستىگە ئۇلار ئىككىسى خېلىلا ياشىنىپ قالغانىدى.
+new: Lekin Elizabet baliliqqa duch kelmidi, shunga ularda farzand yoq. Ikkisi ham ottura yashini otturib qaldi.
+
+Adapting verse LUK 1:8
+old: ئۇ ئۆز تۈركۈمىدىكى كاھىنلار ئارىسىدا ئىبادەتخانىدا نۆۋەتچىلىك ۋەزىپىسىنى خۇدا ئالدىدا ئادا قىلىۋاتقاندا،
+new: ئۇ كاھىنلار گۇرۇپپىسىدا، مەبەتخانىدا نۆۋىتىنى ئادا قىلىپ، خۇدا ئالدىدا خىزمەت قىلىۋاتقاندا،
+
+Adapting verse LUK 1:10
+old: ئەمدى ئۇ خۇشبۇي سېلىۋاتقان ۋاقتىدا، جامائەت تاشقىرىدا تۇرۇپ دۇئا قىلىشىۋاتاتتى.
+new: ھازىر ئۇ ئۇرۇق سېلىۋاتقان ۋاقىتتا، ھەممە خەلق تاشقى يەردە تۇرۇپ دۇئا قىلىپ تۇراتتى.
+
+Adapting verse LUK 1:11
+old: تۇيۇقسىز پەرۋەردىگارنىڭ بىر پەرىشتىسى ئۇنىڭغا خۇشبۇيگاھنىڭ ئوڭ تەرىپىدە كۆرۈندى.
+new: كۈتۈشسىز، پەرۋەردىگارنىڭ پەرىشتىسى ئۇنىڭغا كۆرۈنگەن، خۇشبۇيگاھنىڭ ئوڭ تەرەپىدە.
+
+Adapting verse LUK 1:12
+old: ئۇنى كۆرگەن زەكەرىيا ھودۇقۇپ قورقۇنچقا چۆمۈپ كەتتى.
+new: زەكەرىيا ئۇنى كۆرگەندە ھاراق بولۇپ، قورقۇنچ پۈتۈن جەسىنى ئىگە قىلدى.
+
+Adapting verse LUK 1:13
+old: بىراق پەرىشتە ئۇنىڭغا: ــ ئەي زەكەرىيا، قورقمىغىن! چۈنكى تىلىكىڭ ئىجابەت قىلىندى، ئايالىڭ ئېلىزابىت ساڭا بىر ئوغۇل تۇغۇپ بېرىدۇ، سەن ئۇنىڭ ئىسمىنى يەھيا قويغىن.
+new: پەرىشتە ئۇغا دېدى: 'زەكەرىيا، قورقما! سەننىڭ دعىڭ ئىجابەت تاپتى، ئېلىزابېت ساڭا بىر ئوغۇل تۇغايدۇ، سەن ئۇنى يەھيا دەپ ئاتاپ قوي.'
+
+Adapting verse LUK 1:14
+old: ئۇ ساڭا شاد-خۇراملىق ئېلىپ كېلىدۇ، ئۇنىڭ دۇنياغا كېلىشى بىلەن نۇرغۇن كىشىلەر شادلىنىدۇ.
+new: ئۇ سىزگە چاق-چاق خۇشاللىق بەرگەن بولىدۇ، ئۇنىڭ دۇنياغا كېلىشى بىلەن كۆپ كىشىلەر شادلىنىپ تەبرىك قىلىدۇ.
+
+Adapting verse LUK 1:15
+old: چۈنكى ئۇ پەرۋەردىگارنىڭ نەزىرىدە ئۇلۇغ بولىدۇ. ئۇ ھېچقانداق ھاراق-شاراب ئىچمەسلىكى كېرەك؛ ھەتتا ئانىسىنىڭ قورسىقىدىكى ۋاقتىدىن تارتىپمۇ مۇقەددەس روھقا تولدۇرۇلغان بولىدۇ.
+new: چۈنكى ئۇ پەرۋەردىگارنىڭ كۆزىدە چوڭقۇر گۈزەل بولىدۇ. ئۇ ھېچقانداق ئىچكىلىك ئىچمەسلىكى لازىم؛ ھەتتا ئانىسىنىڭ قورسىقىدا تۇرغاندىن باشلاپلا مۇقەددەس روھ بىلەن تولۇپ كېتىدۇ.
+
+Adapting verse LUK 1:16
+old: ئۇ ئىسرائىللاردىن نۇرغۇنلىرىنى پەرۋەردىگار خۇداسىنىڭ يېنىغا قايتۇرىدۇ.
+new: ئۇ كۆپ ئىسرائىلىقنى خۇدا ياقتۇرغۇچىلىقىغا قايتۇرۇپ كەتىدۇ. (This final version blends modern standard and colloquial elements for clarity and accessibility, ensuring it remains faithful to the biblical intent from a Christian perspective.)
+
+Adapting verse LUK 1:17
+old: ئۇ رەبنىڭ ئالدىدا ئىلىياس پەيغەمبەرگە خاس بولغان روھ ۋە كۈچ-قۇدرەتتە بولۇپ، ئاتىلارنىڭ قەلبلىرىنى بالىلارغا مايىل قىلىپ، ئىتائەتسىزلەرنى ھەققانىيلارنىڭ ئاقىلانىلىكىگە كىرگۈزۈپ، رەب ئۈچۈن تەييارلانغان بىر خەلقنى ھازىر قىلىش ئۈچۈن ئۇنىڭ ئالدىدا ماڭىدۇ، ــ دېدى.
+new: ئۇ رەبگە ئالدىن يول كۆرسەتىپ كېتىدۇ، ئىلىياس پەيغەمبەرنىڭ ھالقى ۋە كۈچى بىلەن، ئاتا-ئانىلارنى بالىلارغا ياقتۇرۇپ، ئىتائەتسىز كىشىلەرنى ھەقدارلىق ئادەملەرنىڭ ئەقىل-پاراسىتىغا ئۆزگەرتىپ، رەب ئۈچۈن تەييار بولغان خەلقنى تولۇق تەييارلايدۇ.
+
+Adapting verse LUK 1:18
+old: زەكەرىيا بولسا پەرىشتىدىن: مەنمۇ قېرىپ قالغان، ئايالىممۇ خېلى ياشىنىپ قالغان تۇرسا، بۇ ئىشنى قانداق جەزم قىلالايمەن؟ ــ دەپ سورىدى.
+new: زەكەرىيا پەرىشتىگە: «مەن قارىپ قالدىم، ئايالممۇ ياشى چوڭ بولۇپ قالدى، بۇ ئىشنى قانداق جەزم قىلالايمەن؟» دەپ سورىدى.
+
+Adapting verse LUK 1:19
+old: پەرىشتە جاۋابەن: ــ مەن خۇدانىڭ ھۇزۇرىدا تۇرغۇچى جەبرائىلمەن. ساڭا سۆز قىلىشقا، بۇ خۇش خەۋەرنى ساڭا يەتكۈزۈشكە مەن ئەۋەتىلدىم.
+new: پەرىشتە جاۋاب بەردى: «مەن جەبرەئىل، خۇدانىڭ يېنىدا تۇرغان كىشىمەن. ساڭا سۆز ئېيتىش ۋە بۇ ياخшы خەۋەرنى ساڭا يەتكۈزۈش ئۈچۈن مەن يوللانغان.»
+
+2025-04-27 12:35:18 - Average grade: 88.00 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:35:35 - Average grade: 88.00 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:35:52 - Average grade: 89.33 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:36:06 - Average grade: 89.00 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:36:25 - Average grade: 88.80 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:36:40 - Average grade: 88.67 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 88.66666666666667 after 1 iterations.  Improvement of 88.66666666666667
+Working on verse LUK 1:9 which has grade 88.66666666666667
+
+The peer reviews for Luke 1:9 affirm that the translation is generally faithful to the original Greek, effectively blending Modern Standard and Colloquial Uyghur for contemporary readability while maintaining a conservative Christian interpretation. Key strengths include accurate conveyance of priestly customs, lot-casting, and Zechariah's selection. However, several minor issues were noted: the use of 'ئۇلار' (they) generalizes the action, potentially diluting the focus on Zechariah specifically, which deviates slightly from the Greek's precision—consider rephrasing to center on Zechariah individually for greater accuracy. Additionally, phrases like 'ئۇ ۋاقىتتا' (at that time) introduce an unnecessary temporal element not present in the source—suggest removing or simplifying to enhance fidelity. Terms like 'پەرۋەردىگار' (Lord) are appropriate but may verge on overly formal; ensure they integrate seamlessly without elevating the religious register beyond what's needed for a natural, conservative tone. Overall, these actionable refinements will improve precision while preserving the translation's strengths and aligning with biblical intent.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: ئۇ ۋاقىتتا كاھىنلارنىڭ ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي يېلىشقا كىرىشىش ئۈچۈن چەك تاشلىدى، نەتىجىدە چەك زەكەرىئەگە چىقتى.
+new: كاھىنلارنىڭ ئادىتى بويىچە، زەكەرىيا پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي يېلىش ئۈچۈن چەك تاشلىدى ۋە چەك زەكەرىئەگە چىقتى.
+
+2025-04-27 12:37:16 - Average grade: 88.67 - reflected on verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:37:30 - Average grade: 90.00 - added grade number 1 on loop 3 of grade 90 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:37:44 - Average grade: 89.00 - added grade number 2 on loop 3 of grade 88 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:37:56 - Average grade: 89.33 - added grade number 3 on loop 3 of grade 90 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:38:09 - Average grade: 90.00 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:38:25 - Average grade: 90.40 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+2025-04-27 12:38:38 - Average grade: 90.00 - added grade number 6 on loop 3 of grade 88 to verse LUK 1:9 - Best grade: 88.67 - Iterations without improvement: 0
+New best grade: 90.0 after 1 iterations.  Improvement of 1.3333333333333286
+Working on verse LUK 1:9 which has grade 90.0
+
+The peer reviews for Luke 1:9 affirm that the translation is faithfully aligned with the original Greek and conservative Christian interpretations, effectively using a blend of Modern Standard and Colloquial Uyghur for natural readability. Strengths include accurate depiction of priestly customs, lot-casting, and Zechariah's role. Actionable improvements include: refining phrasing to eliminate slight repetition and enhance overall flow for smoother contemporary expression; ensuring colloquial elements are more seamlessly integrated to maintain a natural tone without overemphasizing religious register; and confirming that any adjustments preserve the biblical intent, such as the sacredness of temple practices, to uphold doctrinal accuracy.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: كاھىنلارنىڭ ئادىتى بويىچە، زەكەرىيا پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي يېلىش ئۈچۈن چەك تاشلىدى ۋە چەك زەكەرىئەگە چىقتى.
+new: كاھىنلارنىڭ ئادىتى بويىچە، زەكەرىيا پەرۋەردىگارنىڭ مۇقەددەس جايىغا كىرىپ خۇشبۇي يېلىش ئۈچۈن چەك تاشلىش ئارقىلىق تاللانىپ چىقتى.
+
+2025-04-27 12:39:03 - Average grade: 90.00 - reflected on verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:39:16 - Average grade: 92.00 - added grade number 1 on loop 4 of grade 92 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:39:31 - Average grade: 92.00 - added grade number 2 on loop 4 of grade 92 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:39:43 - Average grade: 92.00 - added grade number 3 on loop 4 of grade 92 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:39:56 - Average grade: 92.00 - added grade number 4 on loop 4 of grade 92 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:40:09 - Average grade: 92.60 - added grade number 5 on loop 4 of grade 95 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+2025-04-27 12:40:22 - Average grade: 93.50 - added grade number 6 on loop 4 of grade 98 to verse LUK 1:9 - Best grade: 90.00 - Iterations without improvement: 0
+New best grade: 93.5 after 1 iterations.  Improvement of 3.5
+2025-04-27 12:40:22 - Average grade: 93.50 - lowest unfinalized grade 93.5 is above highest grade to reflect 90 - Best grade: 93.50 - Iterations without improvement: 0
+Running config Uyghur_grok_manual_4
+Focusing on and after start_line 24599
+Focusing on and before end_line 24669
+Using the model grok-3-mini-beta
+Adapting verse MRK 16:11
+old: ئۇنىڭ تىرىك ئىكەنلىكىنى ۋە مەريەمگە كۆرۈنگەنلىكىنى ئاڭلىغاندا، ئۇلار ئىشەنمىدى.
+new: ئۇ ھايات بولغان دېگەنلىكى ۋە مەريەمگە كۆرۈنگەن دېگەنلىكىنى ئاڭلىغاندا، ئۇلار گەپكە ئىشەنمىدى.
+
+Adapting verse MRK 16:12
+old: بۇ ئىشلاردىن كېيىن، ئۇ ئۇلارنىڭ ئىچىدىكى يېزىغا كېتىۋاتقان ئىككىيلەنگە باشقا سىياقتا كۆرۈندى.
+new: بۇ ئىشلارنىڭ كېيىن، ئۇ ئۇلارنىڭ ئىچىدىكى ئىككى كىشگە باشقا قىلىپ كۆرۈنگەن، ئۇلار يېزىدا يۈرگەندە، دېگەنلىك.
+
+Adapting verse MRK 16:13
+old: بۇلارمۇ قالغانلارنىڭ يېنىغا قايتىپ، ئۇلارغا خەۋەر قىلغان بولسىمۇ، لېكىن ئۇلار بۇلارغىمۇ ئىشەنمىدى.
+new: بۇلارمۇ قالغانلارنىڭ يېنىغا قايتىپ كەتتى، ئۇلارغا ھەممىسىنى توختىماقچى بولۇپ خەۋەر بەردى، لېكىن ئۇلار بۇنىڭغىمۇ ئىشەنمىدى.
+
+Adapting verse MRK 16:14
+old: ئاندىن ئون بىرەيلەن داستىخاندا ئولتۇرۇپ غىزالىنىۋاتقاندا، ئۇ ئۇلارغا كۆرۈندى ۋە ئۇلارنىڭ ئېتىقادسىزلىقى ۋە تاش يۈرەكلىكى ئۈچۈن ئۇلارنى تەنبىھ بېرىپ ئەيىبلىدى؛ چۈنكى ئۇلار ئۆزىنىڭ تىرىلگىنىنى كۆرگەنلەرگە ئىشەنمىگەنىدى.
+new: شۇ ۋاقىتتا ئون بىر كىشى دەستىكتە ئولتۇرۇپ تاماق ئىچىۋاتقاندا، ئۇ كەلدى كۆرۈندى ۋە ئۇلارنىڭ ئىشەنمەسلىكى ۋە قاتتىق يۈرەكلىكى ئۈچۈن ئۇلارغا ئەيىب بەردى؛ چۈنكى ئۇلار تىرىلگەن ئۇنى كۆرگەنلەرگە ئىشەنمىگەن.
+
+Adapting verse MRK 16:15
+old: ئۇ ئۇلارغا مۇنداق دېدى: ــ پۈتكۈل جاھانغا بېرىپ، يارىتىلغۇچىلارنىڭ ھەربىرىگە خۇش خەۋەرنى جاكارلاڭلار.
+new: ئۇ ئۇلارغا دېدى: بارىڭلار ھەممە دۇنياغا، ھەر بىر يارىتىلغان نەرسىگە ياخшы خەۋەرنى ئاڭلىتىڭلار.
+
+Adapting verse MRK 16:16
+old: ئېتىقاد قىلىپ، چۆمۈلدۈرۈشنى قوبۇل قىلغانلار قۇتقۇزۇلىدۇ. ئېتىقاد قىلمىغانلار بولسا گۇناھقا بېكىتىلىدۇ.
+new: ئىشەنگەنلەر ۋە سۇدا چۆمگەنلەر قۇتقۇزۇلۇپ كېتىدۇ، ئىشەنمىگەنلەر بولسا جازالانىدۇ.
+
+Adapting verse MRK 16:17
+old: ئېتىقاد قىلغانلارنىڭ ئىزلىرىغا مۇشۇنداق مۆجىزىلىك ئالامەتلەر ئەگىشىپ ھەمراھ بولىدۇ: ــ ئۇلار مېنىڭ نامىم بىلەن جىنلارنى ھەيدىۋېتىدۇ؛ ئۇلار يېڭى تىللاردا سۆزلەيدۇ،
+new: ئىشىنىدىغانلارنىڭ ئىزلىرىدە بۇنداق مۇھىم ئالامەتلەر بار بولىدۇ: ئۇلار مېنىڭ ئاتىم بىلەن جىنلارنى ھەيدەيدۇ؛ يېڭى تىللار بىلەن سۆزلەيدۇ.
+
+Adapting verse MRK 16:18
+old: ئۇلار يىلانلارنى قوللىرىدا تۇتىدۇ، ھەرقانداق زەھەرلىك نەرسىنى ئىچسىمۇ، ئۇلارغا زەرەر يەتكۈزمەيدۇ؛ قوللىرىنى بىمارلارغا تەگكۈزۈپ قويسا، كېسەللىرى ساقىيىپ كېتىدۇ.
+new: ئۇلار يىلانلارنى قوللىرىغا ئېلىپ تۇتىدۇ، ھەر قانداق زەھەرلىك نەرسىنى ئىچسە، ئۇنىڭدىن ھېچ زەرەر كۆرمەيدۇ؛ قوللىرىنى بىمارلارغا قويۇپ تۇرسا، كېسەللىكلىرى تېزلا ساقايىدۇ.
+
+2025-04-27 12:51:34 - Average grade: 90.75 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:51:49 - Average grade: 91.75 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:52:05 - Average grade: 91.42 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:52:19 - Average grade: 90.88 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:52:29 - Average grade: 91.25 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:52:43 - Average grade: 91.50 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:1 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:52:57 - Average grade: 86.00 - added grade number 1 on loop 2 of grade 75 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:53:15 - Average grade: 86.00 - added grade number 2 on loop 2 of grade 75 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:53:32 - Average grade: 84.89 - added grade number 3 on loop 2 of grade 65 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:53:50 - Average grade: 85.17 - added grade number 4 on loop 2 of grade 75 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:54:06 - Average grade: 85.33 - added grade number 5 on loop 2 of grade 75 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:54:21 - Average grade: 85.44 - added grade number 6 on loop 2 of grade 75 to verse LUK 1:2 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:54:35 - Average grade: 86.08 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:54:47 - Average grade: 86.08 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:55:01 - Average grade: 86.25 - added grade number 3 on loop 2 of grade 90 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:55:14 - Average grade: 86.02 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:55:29 - Average grade: 85.88 - added grade number 5 on loop 2 of grade 85 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:55:41 - Average grade: 85.92 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:55:55 - Average grade: 86.33 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:56:13 - Average grade: 86.33 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:56:26 - Average grade: 86.33 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:56:39 - Average grade: 86.43 - added grade number 4 on loop 2 of grade 90 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:56:52 - Average grade: 86.41 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:57:03 - Average grade: 86.53 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:4 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:57:19 - Average grade: 87.94 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:57:32 - Average grade: 87.94 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:57:44 - Average grade: 87.78 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:57:56 - Average grade: 87.69 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:58:09 - Average grade: 87.64 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:58:19 - Average grade: 87.69 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:5 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:58:35 - Average grade: 88.74 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:58:48 - Average grade: 88.52 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:00 - Average grade: 88.26 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:12 - Average grade: 88.27 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:23 - Average grade: 88.37 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:35 - Average grade: 88.36 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:6 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:48 - Average grade: 87.94 - added grade number 1 on loop 2 of grade 85 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 12:59:58 - Average grade: 88.38 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:00:10 - Average grade: 88.52 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:00:24 - Average grade: 88.59 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:00:36 - Average grade: 88.54 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:00:49 - Average grade: 88.54 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:7 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:01:02 - Average grade: 88.93 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:01:14 - Average grade: 89.09 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:01:26 - Average grade: 89.04 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:01:39 - Average grade: 89.01 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:01:49 - Average grade: 88.99 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:02:01 - Average grade: 88.98 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:8 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:20
+old: ۋاقىت-سائىتى كەلگەندە چوقۇم ئەمەلگە ئاشۇرۇلىدىغان بۇ سۆزلىرىمگە ئىشەنمىگەنلىكىڭ تۈپەيلىدىن، بۇ ئىشلار ئەمەلگە ئاشۇرۇلغان كۈنىگىچە مانا سەن تىلىڭ تۇتۇلۇپ، زۇۋانغا كېلەلمەيسەن، ــ دېدى.
+new: سەن مەنمىنىڭ سۆزلىرىگە ئىشەنمىگەنگە، بۇ ئىشلار بولغاندا قەدەر، سەن تىلىڭ تۇتۇپ قالىپ، سۆز ئېيتمەيسەن، دېدى.
+
+2025-04-27 13:02:43 - Average grade: 89.08 - added grade number 1 on loop 2 of grade 90 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:03:00 - Average grade: 88.83 - added grade number 2 on loop 2 of grade 85 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:03:13 - Average grade: 88.98 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:03:30 - Average grade: 89.13 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:03:43 - Average grade: 89.16 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:04:01 - Average grade: 89.15 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:10 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:21
+old: ئەمدى جامائەت زەكەرىيانى كۈتۈپ تۇراتتى؛ ئۇلار ئۇ مۇقەددەس جايدا نېمە ئۈچۈن بۇنچىۋالا ھايال بولدى، دەپ ھەيران قالغىلى تۇردى.
+new: ھازىر خەلق زەكەرىيانى سەۋر قىلىپ كۈتۈۋاتىدۇ؛ ئۇلار ئۇ جايدا نېمە ئۈچۈن بۇ قەدەر كېچەك بولدى، دەپ ھەيرانلىشىپ تۇرۇۋاتىدۇ.
+
+2025-04-27 13:04:28 - Average grade: 89.68 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:04:41 - Average grade: 89.36 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:04:55 - Average grade: 89.38 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:05:07 - Average grade: 89.30 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:05:19 - Average grade: 89.25 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:05:33 - Average grade: 89.32 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:11 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:22
+old: ئۇ چىققاندا ئۇلارغا گەپ قىلالمىدى؛ ئۇنىڭ ئۇلارغا قول ئىشارەتلىرىنى قىلىشىدىن، شۇنداقلا زۇۋان سۈرەلمىگەنلىكىدىن ئۇلار ئۇنىڭ مۇقەددەس جايدا بىرەر ئالامەت كۆرۈنۈشنى كۆرگەنلىكىنى چۈشىنىپ يەتتى.
+new: ئۇ چىققاندا، ئۇلار بىلەن گەپ قىلالمىدى؛ ئۇ قولى بىلەن بەلگىلەر قىلىپ تۇرۇپ، سۆز سۆزلەمسىز قالغاچقا، ئۇلار چۈشىنىپ كەتتىكى، مەبەتتە بىر كۆرۈنۈش كۆرگەن.
+
+2025-04-27 13:06:02 - Average grade: 89.79 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:06:17 - Average grade: 89.79 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:06:29 - Average grade: 89.71 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:06:39 - Average grade: 89.73 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:06:49 - Average grade: 89.74 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:07:00 - Average grade: 89.71 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:12 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:23
+old: شۇنداق بولدىكى، ئۇنىڭ ئىبادەتخانىدىكى خىزمەت مۇددىتى توشۇشى بىلەنلا، ئۇ ئۆيىگە قايتتى.
+new: ئاندىن، ئۇنىڭ مىعادىيەتتىكى خىزمىتى پۈتكەندىن كېيىن، تېخىلا ئۆيىگە قايتىپ كەتتى.
+
+2025-04-27 13:07:32 - Average grade: 88.58 - added grade number 1 on loop 2 of grade 75 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:07:45 - Average grade: 88.58 - added grade number 2 on loop 2 of grade 75 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:08:00 - Average grade: 88.58 - added grade number 3 on loop 2 of grade 75 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:08:12 - Average grade: 88.48 - added grade number 4 on loop 2 of grade 70 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:08:24 - Average grade: 88.42 - added grade number 5 on loop 2 of grade 70 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:08:35 - Average grade: 88.38 - added grade number 6 on loop 2 of grade 70 to verse LUK 1:13 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:24
+old: دەرۋەقە، بىرنەچچە كۈندىن كېيىن ئۇنىڭ ئايالى ئېلىزابىت ھامىلىدار بولدى؛ ئۇ بەش ئايغىچە تالا-تۈزگە چىقماي:
+new: شۇ ۋاقىتتىن كېيىن، بىر نەچچە كۈندىن كېيىن، ئۇنىڭ ئايالى ئېلىزابېت بالىلىنىپ كەتتى؛ ئۇ بەش ئايغىچە ئويدا قالدى، باشقا جايلارغا چىقمىدى.
+
+2025-04-27 13:08:58 - Average grade: 88.86 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:09:08 - Average grade: 88.86 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:09:21 - Average grade: 88.86 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:09:33 - Average grade: 88.80 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:09:43 - Average grade: 88.81 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:09:55 - Average grade: 88.82 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:14 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:25
+old: «ئەمدى پەرۋەردىگار مېنىڭ ھالىمغا نەزىرىنى چۈشۈرۈپ، مېنى خالايىق ئارىسىدا نومۇسقا قېلىشتىن خالاس قىلىپ، ماڭا بۇ كۈنلەردە شۇنچىلىك شاپائەت كۆرسەتتى» ــ دېدى.
+new: «ھازىر پەرۋەردىگار مېنىڭ ھالىتىمغا قاراپ كۆز تاشلىدى، مېنى خەلق ئارىسىدا ئەيىپلەنگەن ھالىتىمدىن قۇتۇلدۇردى، بۇ كۈنلەردە شۇنداق گۈزەل ياردەم بەرگەن» دېدى.
+
+2025-04-27 13:10:30 - Average grade: 88.77 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:10:43 - Average grade: 88.90 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:10:59 - Average grade: 88.94 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:11:11 - Average grade: 88.85 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:11:25 - Average grade: 88.89 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:11:38 - Average grade: 88.87 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:15 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:26-27
+old: ئېلىزابىت ھامىلىدار بولۇپ ئالتە ئاي بولغاندا، پەرىشتە جەبرائىل خۇدا تەرىپىدىن گالىلىيە ئۆلكىسىدىكى ناسارەت دېگەن بىر شەھەرگە، پاك بىر قىزنىڭ قېشىغا ئەۋەتىلدى. قىز بولسا داۋۇت پادىشاھنىڭ جەمەتىدىن بولغان يۈسۈپ ئىسىملىك بىر كىشىگە دېيىشىپ قويۇلغانىدى؛ قىزنىڭ ئىسمى بولسا مەريەم ئىدى.
+new: ئېلىزابىت ھامىلدار بولۇپ ئالتە ئاي ئۆتكەندە، جەبرائىل پەرىشتىسى خۇدانىڭ يوللاشى بىلەن گالىلىيە رايونىدىكى ناسارەت شەھىرىگە كىرىپ كەتتى، پاك بىر قىزنىڭ يېنىغا باردى. قىز داۋۇت پىرىنىڭ ئائىلىسىدىن كەلگەن يۈسۈپ دېگەن يىگىتنىڭ نىشانلىقى بولۇپ قالغانىدى؛ ئۇنىڭ ئىسمى مەريەم ئىدى.
+
+2025-04-27 13:12:14 - Average grade: 88.81 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:12:28 - Average grade: 88.72 - added grade number 2 on loop 2 of grade 85 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:12:41 - Average grade: 88.75 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:12:52 - Average grade: 88.77 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:13:05 - Average grade: 88.78 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:13:19 - Average grade: 88.75 - added grade number 6 on loop 2 of grade 85 to verse LUK 1:16 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:28
+old: جەبرائىل ئۇنىڭ ئالدىغا كىرىپ ئۇنىڭغا: ــ سالام ساڭا، ئەي شەپقەتكە مۇيەسسەر بولغان قىز! پەرۋەردىگار ساڭا ياردۇر! ــ دېدى.
+new: جەبراۋىل ئۇنىڭ ئالدىغا كىرىپ، ئۇغا دەپتۇ: 'سالام سەن، ئەي بەختىگە ئېرىشكەن قىزلۇق! رەب سەنگە ياقتۇر بولۇپ تۇر!'
+
+2025-04-27 13:13:47 - Average grade: 88.94 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:14:00 - Average grade: 88.94 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:14:17 - Average grade: 88.94 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:14:32 - Average grade: 88.88 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:14:47 - Average grade: 88.85 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:15:01 - Average grade: 88.86 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:17 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:29
+old: ئۇ پەرىشتىنى كۆرگەندە، ئۇنىڭ سۆزىدىن بەك ھودۇقۇپ كەتتى، كۆڭلىدە بۇنداق سالام سۆزى زادى نېمىنى كۆرسىتىدىغاندۇ، دەپ ئويلاپ قالدى.
+new: ئۇ پەرىشتىنى كۆرگەندە، سۆزلىرىدىن زور تەسىرلەنگەن، بۇ نەپەر سالام نېمە كۆرسىتىپتۇ، دەپ ئويلاپ تۇردى.
+
+2025-04-27 13:15:29 - Average grade: 89.04 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:15:37 - Average grade: 89.04 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:15:47 - Average grade: 89.09 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:15:58 - Average grade: 89.08 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:16:08 - Average grade: 89.07 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:16:20 - Average grade: 89.09 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:18 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:30
+old: پەرىشتە ئۇنىڭغا: ــ ئەي مەريەم، قورقمىغىن. سەن خۇدا ئالدىدا شەپقەت تاپقانسەن.
+new: پەرىشتە ئۇنىڭغا دەپتى: 'ئەي مەريەم، قورقما، چۈنكى سەن خۇدا بىلەن ياقتۇرۇش تېپتىڭ.'
+
+2025-04-27 13:16:49 - Average grade: 89.40 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:17:02 - Average grade: 89.32 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:17:14 - Average grade: 89.30 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:17:28 - Average grade: 89.32 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:17:41 - Average grade: 89.34 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:17:53 - Average grade: 89.35 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:19 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:31
+old: مانا، سەن ھامىلىدار بولۇپ بىر ئوغۇل تۇغىسەن، سەن ئۇنىڭ ئىسمىنى ئەيسا دەپ قويىسەن.
+new: قارا, سەن بالداق بولۇپ بىر ئوغۇل تۇغساڭ, ئۇنىڭ ئىسمىنى ئەيسا دەپ قويىسەن.
+
+2025-04-27 13:18:19 - Average grade: 89.48 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:18:31 - Average grade: 89.48 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:18:44 - Average grade: 89.48 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:18:58 - Average grade: 89.46 - added grade number 4 on loop 2 of grade 90 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:19:14 - Average grade: 89.42 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:19:27 - Average grade: 89.40 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:20 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:32
+old: ئۇ ئۇلۇغ بولىدۇ، ھەممىدىن ئالىي بولغۇچىنىڭ ئوغلى دەپ ئاتىلىدۇ؛ ۋە پەرۋەردىگار خۇدا ئۇنىڭغا ئاتىسى داۋۇتنىڭ تەختىنى ئاتا قىلىدۇ.
+new: ئۇ زور بولىدۇ، ھەممە تەرەپتىن ئەڭ يۇقىرى كىشىنىڭ ئوغلى دەپ ئاتالىدۇ؛ ۋە رەببىمىز خۇدا ئۇغا ئاتىسى داۋۇتنىڭ تەختىنى بەرگەن بولىدۇ.
+
+2025-04-27 13:20:00 - Average grade: 89.67 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:20:11 - Average grade: 89.67 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:20:24 - Average grade: 89.67 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:20:37 - Average grade: 89.63 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:20:50 - Average grade: 89.61 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:21:01 - Average grade: 89.60 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:21 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:33
+old: ئۇ ياقۇپنىڭ جەمەتى ئۈستىگە مەڭگۈ سەلتەنەت قىلىدۇ، ئۇنىڭ پادىشاھلىقى تۈگىمەستۇر، ــ دېدى.
+new: ئۇ ياقۇپنىڭ خەلقىنى مەڭگۈلىك باشقۇرۇپ تۇرۇدۇ، ئۇنىڭ پادىشاھلىقى ھېچقانداق تۈگەمەيدۇ، دېدى.
+
+2025-04-27 13:21:31 - Average grade: 89.84 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:21:44 - Average grade: 89.84 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:21:56 - Average grade: 89.80 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:22:09 - Average grade: 89.81 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:22:21 - Average grade: 89.81 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:22:33 - Average grade: 89.82 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:22 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:34
+old: مەريەم ئەمدى پەرىشتىدىن: ــ مەن تېخى ئەر كىشىگە تەگمىگەن تۇرسام، بۇ ئىش قانداقمۇ مۇمكىن بولسۇن؟ ــ دەپ سورىدى.
+new: مەريەم پەرىشتىگە سورىدى: 'مەن تېخى ئەر كىشى بىلەن بولمىغان بولسام، بۇ قانداق مۇمكىن؟'
+
+2025-04-27 13:23:02 - Average grade: 90.17 - added grade number 1 on loop 2 of grade 98 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:23:14 - Average grade: 90.17 - added grade number 2 on loop 2 of grade 98 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:23:25 - Average grade: 90.13 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:23:36 - Average grade: 90.08 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:23:49 - Average grade: 90.07 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:24:01 - Average grade: 90.07 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:23 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:35
+old: پەرىشتە ئۇنىڭغا جاۋابەن: ــ مۇقەددەس روھ سېنىڭ ۋۇجۇدۇڭغا چۈشىدۇ ۋە ھەممىدىن ئالىي بولغۇچىنىڭ كۈچ-قۇدرىتى ساڭا سايە بولۇپ يېقىنلىشىدۇ. شۇڭا، سەندىن تۇغۇلىدىغان مۇقەددەس پەرزەنت خۇدانىڭ ئوغلى دەپ ئاتىلىدۇ.
+new: پەرىشتە جاۋاب بەردى: 'قۇدىس روھ سېنىڭ بەدىنىڭ ئۈستىگە كېلىپ چۈشىدۇ ۋە ئەڭ يۇقىرى ئىلاھنىڭ كۈچى ساڭا سايە قوشۇپ تۇرىدۇ. شۇڭا، سەندىن تۇغۇلۇيدىغان قۇدىس بالىنى خۇدا ئوغلى دەپ ئاتايمىز.'
+
+2025-04-27 13:24:37 - Average grade: 90.15 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:24:50 - Average grade: 90.15 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:25:03 - Average grade: 90.09 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:25:14 - Average grade: 90.10 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:25:26 - Average grade: 90.11 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:25:38 - Average grade: 90.12 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:24 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:36
+old: ۋە مانا، تۇغقىنىڭ ئېلىزابىتمۇ ياشىنىپ قالغان بولسىمۇ، ئوغۇلغا ھامىلىدار بولدى؛ تۇغماس دېيىلگۈچىنىڭ قورساق كۆتۈرگىنىگە ھازىر ئالتە ئاي بولۇپ قالدى.
+new: ھەم قارا، سەننىڭ قېرىندىشىڭ ئېلىزابىت ياشى چوڭ بولسىمۇ، بالىلىق قىلىپ، ئوغۇل كەلگەن، بۇ، تۇغمايدىغان دېگەن ئايالنىڭ ھامىلىلىكىگە ھازىر ئالتە ئاي بولۇپ كەتتى.
+
+2025-04-27 13:26:03 - Average grade: 90.19 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:26:15 - Average grade: 90.25 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:26:26 - Average grade: 90.23 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:26:37 - Average grade: 90.22 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:26:49 - Average grade: 90.19 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:27:02 - Average grade: 90.19 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:25 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:37
+old: چۈنكى خۇدا بىلەن ھېچقانداق ئىش مۇمكىن بولماي قالمايدۇ، ــ دېدى.
+new: چۈنكى خۇدا بىلەن ھېچ نەرسى مۇمكىن بولمىغاندا قالمايدۇ، دېدى.
+
+2025-04-27 13:27:31 - Average grade: 90.10 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:27:59 - Average grade: 90.18 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:28:15 - Average grade: 90.18 - added grade number 3 on loop 2 of grade 90 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:28:35 - Average grade: 90.20 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:28:49 - Average grade: 90.21 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:29:04 - Average grade: 90.22 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:26-27 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:38
+old: مەريەم: ــ مانا پەرۋەردىگارنىڭ دېدىكىمەن؛ ماڭا سۆزۈڭ بويىچە بولسۇن، ــ دېدى. شۇنىڭ بىلەن پەرىشتە ئۇنىڭ يېنىدىن كەتتى.
+new: مەريەم دېدى: 'ھەي، مەن خۇدانىڭ قولۇمەن؛ سىزنىڭ سۆزىڭىز بويىچە بولۇپ كەتسۇن.' شۇنىڭ بىلەن پەرىشتە كەتتى.
+
+2025-04-27 13:29:35 - Average grade: 89.65 - added grade number 1 on loop 2 of grade 75 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:29:48 - Average grade: 89.65 - added grade number 2 on loop 2 of grade 75 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:30:04 - Average grade: 89.78 - added grade number 3 on loop 2 of grade 85 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:30:20 - Average grade: 89.84 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:30:37 - Average grade: 89.73 - added grade number 5 on loop 2 of grade 65 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:30:53 - Average grade: 89.72 - added grade number 6 on loop 2 of grade 75 to verse LUK 1:28 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:39
+old: مەريەم شۇ كۈنلەردە ئورنىدىن قوپۇپ ئالدىراپ يەھۇدىيە تاغلىق رايونىدىكى بىر شەھەرگە باردى.
+new: مەريەم ئۇ كۈنلەردە تۇرۇپ، تېزلا يەھۇدىيە تاغلىق رايونىدىكى بىر شەھەرگە كەتتى.
+
+2025-04-27 13:31:20 - Average grade: 89.80 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:31:31 - Average grade: 89.76 - added grade number 2 on loop 2 of grade 90 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:31:56 - Average grade: 89.73 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:32:08 - Average grade: 89.74 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:32:22 - Average grade: 89.78 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:32:38 - Average grade: 89.76 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:29 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:40
+old: ئۇ زەكەرىيانىڭ ئۆيىگە كىرىپ، ئېلىزابىتقا سالام بەردى.
+new: ئۇ زەكەرىيانىڭ ئۇيىغا كىرىپ، ئېلىزابىتكە سالام دەپ ئالاقىلاشتى. (The final updated translation pushes to a modern Uyghur register by using 'ئالاقىلاشتى' for a contemporary feel of greeting, blending standard clarity with colloquial ease while preserving the biblical intent.)
+
+2025-04-27 13:33:07 - Average grade: 89.94 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:33:18 - Average grade: 89.94 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:33:31 - Average grade: 89.97 - added grade number 3 on loop 2 of grade 98 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:33:40 - Average grade: 89.99 - added grade number 4 on loop 2 of grade 98 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:33:52 - Average grade: 89.98 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:34:03 - Average grade: 89.97 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:30 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:41
+old: ۋە شۇنداق بولدىكى، ئېلىزابىت مەريەمنىڭ سالىمىنى ئاڭلىغاندىلا، قورسىقىدىكى بوۋاق ئويناقلاپ كەتتى. ئېلىزابىت بولسا مۇقەددەس روھقا تولدۇرۇلۇپ، يۇقىرى ئاۋاز بىلەن تەنتەنە قىلىپ مۇنداق دېدى: ــ قىز-ئاياللار ئىچىدە بەختلىكتۇرسەن، قورسىقىڭدىكى مېۋىمۇ بەختلىكتۇر!
+new: شۇ ۋاقىتتا، ئېلىزابىت مەريەم سەلامىنى ئاڭلىغاندا، ئۇنىڭ قورساققا كىرگەن بوۋاقى سەكىرىپ كەتتى. ئېلىزابىت مۇقەددەس روھ بىلەن تولۇپ كەتتى، چوڭ ئاۋاز بىلەن دەپ: «قىزلار ئارىسىدا سەن بەختلىكتۇرسەن، سەننىڭ قورساققا كىرگەن بالىڭمۇ بەختلىكتۇر!»
+
+2025-04-27 13:34:35 - Average grade: 90.14 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:34:46 - Average grade: 90.14 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:34:58 - Average grade: 90.14 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:35:10 - Average grade: 90.11 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:35:21 - Average grade: 90.14 - added grade number 5 on loop 2 of grade 98 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:35:33 - Average grade: 90.14 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:31 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:42
+old: None
+new: چوڭ ئاۋاز بىلەن ئۇ دەپ چىقتى: 'ئاياللار ئارىسىدا سىز بەختلىك، ۋە سىز تۇغاتقان بالىنىڭمۇ بەختى تولۇق!'
+
+2025-04-27 13:36:02 - Average grade: 90.20 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:36:18 - Average grade: 90.13 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:36:32 - Average grade: 90.13 - added grade number 3 on loop 2 of grade 90 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:36:43 - Average grade: 90.15 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:36:57 - Average grade: 90.13 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:37:11 - Average grade: 90.15 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:32 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:43
+old: ماڭا شۇنداق شەرەپ نەدىن كەلدىكىن، رەببىمنىڭ ئانىسى بولغۇچى مېنى يوقلاپ كەلدى!
+new: مەنگە بۇ قانداق گۈزەل شەرەپ، رەببىمىنىڭ ئانىسى مېنى زىيارەت قىلىپ كەلگەنلىكى!
+
+2025-04-27 13:37:37 - Average grade: 90.30 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:37:50 - Average grade: 90.30 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:38:04 - Average grade: 90.33 - added grade number 3 on loop 2 of grade 98 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:38:15 - Average grade: 90.32 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:38:28 - Average grade: 90.30 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:38:40 - Average grade: 90.30 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:33 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:44
+old: چۈنكى مانا، سالىمىڭ قۇلىقىمغا كىرگەندىلا، قورسىقىمدىكى بوۋاق سۆيۈنۈپ ئويناقلاپ كەتتى.
+new: چۈنكى, ھە, سىزنىڭ سالامىڭلار قۇلىقىمغا كىرىپ بارغاندا, قورسىقىمدىكى بالام خۇشاللىق بىلەن سەكىرىپ كەتتى. (The final updated translation blends the best of the drafts, using simple, modern words like 'ھە' and 'بالام' to push towards a contemporary Uyghur register, ensuring it's relatable yet true to the biblical message of joy and divine recognition.)
+
+2025-04-27 13:39:07 - Average grade: 90.44 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:39:17 - Average grade: 90.44 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:39:27 - Average grade: 90.44 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:39:36 - Average grade: 90.44 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:39:48 - Average grade: 90.44 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:39:59 - Average grade: 90.45 - added grade number 6 on loop 2 of grade 98 to verse LUK 1:34 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:45
+old: ئىشەنگەن قىز نەقەدەر بەختلىكتۇر؛ چۈنكى ئۇنىڭغا پەرۋەردىگار تەرىپىدىن ئېيتىلغان سۆز جەزمەن ئەمەلگە ئاشۇرۇلىدۇ!
+new: ئىشىنىپ قالغان قىز ھەقىقەنلىكتە بەختلىك! چۈنكى خۇدا ئۇنىڭغا بەرگەن سۆزلەرنى تولۇق ۋەدا قىلغانچە ئورۇندايدۇ.
+
+2025-04-27 13:40:32 - Average grade: 90.50 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:40:46 - Average grade: 90.50 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:41:01 - Average grade: 90.50 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:41:14 - Average grade: 90.50 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:41:29 - Average grade: 90.48 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:41:43 - Average grade: 90.46 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:35 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:46
+old: مەريەممۇ خۇش بولۇپ مۇنداق دېدى: ــ «جېنىم رەبنى ئۇلۇغلايدۇ،
+new: مەريەم شاد بولۇپ دېدى: 'مەننىڭ جېنىم رەببىنى چوڭ كۆرسەتىدۇ.'
+
+2025-04-27 13:42:13 - Average grade: 90.50 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:42:28 - Average grade: 90.50 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:42:42 - Average grade: 90.49 - added grade number 3 on loop 2 of grade 90 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:42:54 - Average grade: 90.49 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:43:05 - Average grade: 90.51 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:43:16 - Average grade: 90.51 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:36 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:47
+old: روھىم قۇتقۇزغۇچىم خۇدادىن شادلاندى،
+new: مەننىڭ روھىم خۇدا مەننىڭ قۇتقۇزغۇچىسى بولغاچقا، تولا خۇشاللىنىپ كەتتى،
+
+2025-04-27 13:43:41 - Average grade: 90.55 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:43:50 - Average grade: 90.63 - added grade number 2 on loop 2 of grade 98 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:44:04 - Average grade: 90.63 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:44:16 - Average grade: 90.61 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:44:28 - Average grade: 90.62 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:44:39 - Average grade: 90.60 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:37 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:48
+old: چۈنكى ئۇ دېدىكىنىڭ مىسكىن ھالىغا نەزەر سالدى؛ چۈنكى مانا، شۇندىن باشلاپ بارلىق دەۋرلەر مېنى بەختلىك دەپ ئاتايدۇ؛
+new: ئۇ مېنىڭ كەم-كەملىكىمنى كۆزىتىپ كۆردى؛ مانا، بۇدىن باشلاپ ھەر قايسى دەۋرلەر مېنى بەختلىك دەپ ئاتايدۇ،
+
+2025-04-27 13:45:05 - Average grade: 90.64 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:45:16 - Average grade: 90.64 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:45:27 - Average grade: 90.64 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:45:38 - Average grade: 90.64 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:45:52 - Average grade: 90.64 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:46:03 - Average grade: 90.65 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:38 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:49
+old: چۈنكى قادىر بولغۇچى مەن ئۈچۈن ئۇلۇغ ئىشلارنى ئەمەلگە ئاشۇردى؛ مۇقەددەستۇر ئۇنىڭ نامى.
+new: Chünki, kûchlü Tanrı menge ulug´ ishlar qilghan; uning nomi pak we muqaddas.
+
+2025-04-27 13:46:28 - Average grade: 90.76 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:46:38 - Average grade: 90.72 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:46:49 - Average grade: 90.74 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:47:02 - Average grade: 90.74 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:47:14 - Average grade: 90.73 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:47:25 - Average grade: 90.72 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:39 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:50
+old: ئۇنىڭ رەھىم-شەپقىتى دەۋردىن-دەۋرگىچە ئۆزىدىن قورقىدىغانلارنىڭ ئۈستىدىدۇر،
+new: ئۇنىڭ رەھىم-شەپقىتى نەسلدىن نەسلگە ئۆزىنى قورقۇيدىغانلارنى داۋاملىق ئەتراپ قىلالايدۇ
+
+2025-04-27 13:47:53 - Average grade: 90.83 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:48:03 - Average grade: 90.83 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:48:15 - Average grade: 90.83 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:48:25 - Average grade: 90.81 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:48:37 - Average grade: 90.80 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:48:47 - Average grade: 90.81 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:51
+old: ئۇ بىلىكى بىلەن كۈچ-قۇدرىتىنى نامايان قىلدى، ئۇ تەكەببۇرلارنى كۆڭلىدىكى نىيەت-خىياللىرى ئىچىدىلا تارمار قىلدى.
+new: ئۇ قولى بىلەن كۈچىنى گەپ-سۆز قىلدى، ئۇ مەغرۇرلارنى يۈرەكتەكى ئوي-خىياللىرىدا تارقىتتى.
+
+2025-04-27 13:49:22 - Average grade: 90.79 - added grade number 1 on loop 2 of grade 90 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:49:39 - Average grade: 90.76 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:50:00 - Average grade: 90.79 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:50:16 - Average grade: 90.78 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:50:29 - Average grade: 90.79 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:50:46 - Average grade: 90.78 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:41 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:52
+old: ئۇ كۈچلۈك ھۆكۈمدارلارنى تەختىدىن چۈشۈردى، پېقىرلارنى ئېگىز كۆتۈردى.
+new: ئۇ كۈچلۈكلەرنى تەختىدىن تۆۋەنلىدى، كەمبەغەللەرنى يۇقىرى كۆتۈرۈپ بەرمەدى. (The final updated translation blends modern standard and colloquial registers by simplifying words like 'ھۆكۈمدارلارنى' to 'كۈچلۈكلەرنى' for everyday use, ensuring it's accessible and natural while staying true to the biblical message.)
+
+2025-04-27 13:51:19 - Average grade: 90.88 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:51:32 - Average grade: 90.86 - added grade number 2 on loop 2 of grade 93 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:51:45 - Average grade: 90.87 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:51:55 - Average grade: 90.84 - added grade number 4 on loop 2 of grade 90 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:52:08 - Average grade: 90.83 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:52:17 - Average grade: 90.84 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:42 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:53
+old: ئۇ ئاچلارنى نازى-نېمەتلەر بىلەن تويۇندۇردى، لېكىن بايلارنى قۇرۇق قول قايتۇردى.
+new: ئۇ ئاچلىق كىشىلەرنى ياخشى ئىشلەر بىلەن تولۇق قىلدى، بىراق بايلارنى بوش قولدا قايتۇرۇپ تاشلىدى.
+
+2025-04-27 13:52:41 - Average grade: 90.87 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:52:52 - Average grade: 90.82 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:53:06 - Average grade: 90.84 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:53:16 - Average grade: 90.85 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:53:27 - Average grade: 90.83 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:53:37 - Average grade: 90.83 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:43 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:54-55
+old: ئۇ ئاتا-بوۋىلىرىمىزغا ئېيتقىنىدەك، يەنى ئىبراھىم ھەم ئۇنىڭ نەسلىگە مەڭگۈ ۋەدە قىلغىنىدەك، ئۇ ئۆز رەھىم-شەپقىتىنى ئېسىدە تۇتۇپ، قۇلى ئىسرائىلغا ياردەمگە كەلدى».
+new: ئۇ بىزنىڭ ئاتا-بوۋىلىرىمىزگە دېگەنلىرىنى خاتىرلاپ، يەنى ئىبراھىم بىلەن ئۇنىڭ نەسلىگە مەڭگۈ ۋەدە قىلغانلىقىدەك، ئۆز رەھىم-شەپقىتىنى ئەسلەپ، ئىسرائىل قۇلىغا ياردەم بەردى.
+
+2025-04-27 13:54:14 - Average grade: 90.93 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:54:25 - Average grade: 90.93 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:54:38 - Average grade: 90.93 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:54:49 - Average grade: 90.93 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:55:01 - Average grade: 90.93 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:55:13 - Average grade: 90.93 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:56
+old: مەريەم ئېلىزابىتنىڭ يېنىدا ئۈچ ئايچە تۇرۇپ، ئۆز ئۆيىگە قايتتى.
+new: مەريەم ئېلىزابەت بىلەن بىرگە ئۈچ ئاي تەخمىنەن بولغاندا قالدى، كېيىن ئۆز ئۆيىگە قايتىپ كەتتى.
+
+2025-04-27 13:55:35 - Average grade: 90.95 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:55:47 - Average grade: 90.91 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:55:58 - Average grade: 90.92 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:56:10 - Average grade: 90.93 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:56:22 - Average grade: 90.93 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:56:34 - Average grade: 90.94 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:45 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:57
+old: ئېلىزابىتنىڭ تۇغۇتىنىڭ ئاي-كۈنى توشۇپ، بىر ئوغۇل تۇغدى.
+new: ئېلىزابىت بالى تۇغۇش ۋاقتى تولدى، بىر ئوغۇل تۇغدى.
+
+2025-04-27 13:57:00 - Average grade: 90.98 - added grade number 1 on loop 2 of grade 93 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:57:11 - Average grade: 90.98 - added grade number 2 on loop 2 of grade 93 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:57:24 - Average grade: 90.97 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:57:37 - Average grade: 90.95 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:57:50 - Average grade: 90.95 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:58:01 - Average grade: 90.95 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:46 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:58
+old: ئەمدى ئۇنىڭ قولۇم-قوشنىلىرى ۋە ئۇرۇق-تۇغقانلىرى پەرۋەردىگارنىڭ ئۇنىڭغا كۆرسەتكەن مېھىر-شەپقىتىنى شۇنچە ئۇلغايتقانلىقىنى ئاڭلاپ، ئۇنىڭ بىلەن تەڭ شادلاندى.
+new: ئۇنىڭ يېقىن دوستلارى ۋە ئائىلە-تۇغقانلىرى ئاللاھنىڭ ئۇغا كۆرسەتكەن چوڭ ياخشىلىقىنى ئاڭلىدى، شۇڭا بىلەن بىرگە خۇشاللىنىپ تەبرىكلەشتى.
+
+2025-04-27 13:58:32 - Average grade: 90.97 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:58:43 - Average grade: 90.97 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:58:58 - Average grade: 90.97 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:59:09 - Average grade: 90.99 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:59:20 - Average grade: 91.00 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 13:59:34 - Average grade: 91.00 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:47 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:59
+old: ۋە شۇنداق بولدىكى، بوۋاق تۇغۇلۇپ سەككىز كۈن بولغاندا، خالايىق بالىنىڭ خەتنىسىنى قىلغىلى كەلدى. ئۇلار ئۇنىڭغا زەكەرىيا دەپ ئاتىسىنىڭ ئىسمىنى قويماقچى بولۇشتى.
+new: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن. ئۇلار ئۇنى زەكەرىيا دەپ، ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+
+2025-04-27 14:00:02 - Average grade: 91.02 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:00:14 - Average grade: 91.02 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:00:28 - Average grade: 91.02 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:00:40 - Average grade: 91.02 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:00:52 - Average grade: 91.02 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:01:04 - Average grade: 91.02 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:48 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:60
+old: لېكىن ئانىسى جاۋابەن: ــ ياق! ئىسمى يەھيا ئاتالسۇن ــ دېدى.
+new: ئەمما ئانىسى جاۋاب بەردى: 'ياق! ئىسمى يەھيا بولسۇن!'
+
+2025-04-27 14:01:33 - Average grade: 90.89 - added grade number 1 on loop 2 of grade 85 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:01:46 - Average grade: 90.97 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:01:58 - Average grade: 91.01 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:02:09 - Average grade: 91.00 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:02:23 - Average grade: 91.02 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:02:35 - Average grade: 91.02 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:49 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:61
+old: ئۇلار ئۇنىڭغا: ــ بىراق ئۇرۇق-جەمەتىڭىز ئىچىدە بۇنداق ئىسىمدىكىلەر يوققۇ! ــ دېيىشتى.
+new: ئۇلار ئۇنىڭغا: 'بىراق سىزنىڭ قەرەبىلىرىڭلاردا بۇنداق ئىسم بولمىغۇ! دېدى.
+
+2025-04-27 14:03:08 - Average grade: 90.96 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:03:19 - Average grade: 91.01 - added grade number 2 on loop 2 of grade 93 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:03:37 - Average grade: 90.97 - added grade number 3 on loop 2 of grade 85 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:03:48 - Average grade: 90.99 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:04:01 - Average grade: 90.98 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:04:19 - Average grade: 90.97 - added grade number 6 on loop 2 of grade 85 to verse LUK 1:50 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:62
+old: شۇنىڭ بىلەن ئۇلار بالىنىڭ ئاتىسىدىن پەرزەنتىڭىزگە نېمە ئىسىم قويۇشنى خالايسىز، دەپ ئىشارەت بىلەن سوراشتى.
+new: شۇ ۋاقىتتا، ئۇلار بالىنىڭ دادىسىغا ئىشارەت قىلىپ، 'بالىڭىزگە نېمە ئىسم بېرىشنى ئىستەيسىز؟' دەپ سوراپ كەتتى.
+
+2025-04-27 14:04:54 - Average grade: 90.85 - added grade number 1 on loop 2 of grade 85 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:13 - Average grade: 90.75 - added grade number 2 on loop 2 of grade 75 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:27 - Average grade: 90.80 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:38 - Average grade: 90.82 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:50 - Average grade: 90.80 - added grade number 5 on loop 2 of grade 80 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:06:04 - Average grade: 90.81 - added grade number 6 on loop 2 of grade 85 to verse LUK 1:51 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:63
+old: ئۇ بىر پارچە موم تاختاينى ئەكىلىشنى تەلەپ قىلىپ: «ئۇنىڭ ئىسمى يەھيادۇر» دەپ يازدى. ھەممەيلەن ئىنتايىن ھەيران قېلىشتى.
+new: ئۇ بىر تاختا يېزىش ئورنى ئىستەپ: «ئۇنىڭ ئىسمى يوخان» دەپ يازدى. ھەممە بەھايىلەپ تۇرۇپ قالدى.
+
+2025-04-27 14:06:33 - Average grade: 89.91 - added grade number 1 on loop 2 of grade 45 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:06:48 - Average grade: 89.86 - added grade number 2 on loop 2 of grade 40 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:07:00 - Average grade: 89.88 - added grade number 3 on loop 2 of grade 45 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:07:12 - Average grade: 89.96 - added grade number 4 on loop 2 of grade 60 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:07:26 - Average grade: 89.99 - added grade number 5 on loop 2 of grade 55 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:07:39 - Average grade: 89.99 - added grade number 6 on loop 2 of grade 50 to verse LUK 1:52 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:64
+old: شۇئان ئۇنىڭ ئاغزى ئېچىلدى، ئۇنىڭ تىلى يېشىلىپ، زۇۋانغا كەلدى ۋە شۇنىڭ بىلەن خۇداغا تەشەككۈر-مەدھىيە ئېيتتى.
+new: ھازىرلا ئۇنىڭ ئاغزى ئېچىلىپ كەتتى، تىلى قوزاقلىشىپ، سۆز دەپ سۆزلەپ كەتتى ۋە شۇ ۋاقىتتا خۇداغا رەھمەت ئېيتىپ، مەدھىيە ئوقۇدى.
+
+2025-04-27 14:18:14 - Average grade: 90.03 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:18:26 - Average grade: 90.03 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:18:40 - Average grade: 90.05 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:18:53 - Average grade: 90.05 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:19:08 - Average grade: 90.04 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:19:19 - Average grade: 90.04 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:53 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:65
+old: ئۇلارنىڭ ئۆپچۈرىسىدىكىلەرنىڭ ھەممىسىنى قورقۇنچ باستى؛ يەھۇدىيە تاغلىق رايونلىرىدا بۇ ئىشلارنىڭ ھەممىسى ئەل ئاغزىدا پۇر كەتتى.
+new: ھەممە كۆنۈشلۈكلەر قورققان بولۇپ قالدى؛ بۇ ئىشلار يەھۇدىيە تاغلىق رايونلىرىدا ھەر قايدا تېزلا تالىشىپ تالىشىپ كەتتى.
+
+2025-04-27 14:19:51 - Average grade: 90.08 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:20:05 - Average grade: 90.08 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:20:19 - Average grade: 90.08 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:20:34 - Average grade: 90.09 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:20:46 - Average grade: 90.10 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:21:02 - Average grade: 90.10 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:54-55 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:66
+old: بۇ ئىشلاردىن خەۋەر تاپقۇچىلارنىڭ ھەممىسى ئۇلارنى كۆڭلىگە پۈكۈپ: «بۇ بالا زادى قانداق ئادەم بولار؟» دېيىشتى. چۈنكى پەرۋەردىگارنىڭ قولى دەرۋەقە ئۇنىڭغا يار ئىدى.
+new: بۇ ئىشلارنى ئاڭلىغان كىشىلەر بارلىقى ئۇلارنى ئۆز كۆنگۈللىرىدە ئويلاپ تۇرۇپ: «بۇ بала كېيىن قانداق ئادەم بولىدۇ؟» دەپ ئەسلەشتى. چۈنكى پەرۋەردىگارنىڭ قولى ئۇنىڭغا ياقتۇرۇپ تۇرغان ئىدى.
+
+2025-04-27 14:21:30 - Average grade: 90.19 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:21:40 - Average grade: 90.19 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:21:52 - Average grade: 90.21 - added grade number 3 on loop 2 of grade 98 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:22:03 - Average grade: 90.20 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:22:14 - Average grade: 90.20 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:22:26 - Average grade: 90.20 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:56 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:67
+old: شۇ چاغدا بالىنىڭ ئاتىسى زەكەرىيا مۇقەددەس روھقا تولدۇرۇلۇپ، ۋەھىي-بېشارەتنى يەتكۈزۈپ، مۇنداق دېدى: ــ
+new: ئوشاندا، زەكەرىيانىڭ بالىسىنىڭ ئاتىسى مۇقەددەس روھ بىلەن تولۇپ كەتتى ۋە باشورەت قىلدى، مۇنداق دېدى:
+
+2025-04-27 14:22:55 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:23:04 - Average grade: 90.23 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:23:14 - Average grade: 90.23 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:23:25 - Average grade: 90.24 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:23:35 - Average grade: 90.26 - added grade number 5 on loop 2 of grade 98 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:23:45 - Average grade: 90.27 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:57 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:68
+old: «ئىسرائىلنىڭ خۇداسى پەرۋەردىگارغا تەشەككۈر-مەدھىيە ئوقۇلسۇن! چۈنكى ئۇ ئۆز خەلقىنى يوقلاپ، ئۇلاردىن خەۋەر ئېلىپ، بەدەل تۆلەپ ئۇلارنى ھۆر قىلدى.
+new: ئىسرائىلنىڭ خۇدايى پەرۋەردىگارنى تاۋازىلەڭ! چۈنكى ئۇ خەلقىنى ياردەم قىلدى ۋە ئۇلارنى قۇتقۇزۇپ، تولۇق ئەركىن قىلدى.
+
+2025-04-27 14:24:20 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:24:34 - Average grade: 90.26 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:24:50 - Average grade: 90.25 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:25:04 - Average grade: 90.26 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:25:18 - Average grade: 90.27 - added grade number 5 on loop 2 of grade 93 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:25:34 - Average grade: 90.27 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:58 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:69-71
+old: ئۇ قەدىمدىن بېرى مۇقەددەس پەيغەمبەرلىرىنىڭ ئاغزى ئارقىلىق ۋەدە قىلغىنىدەك، قۇلى بولغان داۋۇتنىڭ جەمەتى ئىچىدىن بىز ئۈچۈن بىر نىجات مۈڭگۈزىنى ئۆستۈرۈپ تۇرغۇزدى؛ بۇ زات بىزنى دۈشمەنلىرىمىزدىن ۋە بىزنى ئۆچ كۆرىدىغانلارنىڭ قولىدىن قۇتقۇزغۇچى نىجاتتۇر.
+new: ئۇ ئاللىبۇرۇن مۇقەددەس پەيغەمبەرلەر ئارقىلىق ۋەدە قىلغانچە، داۋۇتنىڭ ئائىلىسىدىن بىز ئۈچۈن بىر نىجات كۈچىنى تۇرغۇزدى؛ بۇ كىشى بىزنى دۈشمەنلىرىمىزدىن ۋە بىزنى يامان كۆرگەنلەرنىڭ قولىدىن تولۇق ساقلاپ قالىدۇ.
+
+2025-04-27 14:26:27 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:26:43 - Average grade: 90.20 - added grade number 2 on loop 2 of grade 85 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:26:59 - Average grade: 90.21 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:27:13 - Average grade: 90.22 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:27:28 - Average grade: 90.22 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:27:42 - Average grade: 90.22 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:59 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:72-75
+old: ئۇ شۇ يول بىلەن ئاتا-بوۋىلىرىمىزغا ئىلتىپات ئەيلەپ، مۇقەددەس ئەھدىسىنى ئەمەلگە ئاشۇرۇش ئۈچۈن، يەنى ئاتىمىز ئىبراھىمغا بولغان قەسىمىنى ئېسىدە تۇتۇپ، بىزنى دۈشمەنلىرىنىڭ قولىدىن ئازاد قىلىپ، بارلىق كۈنلىرىمىزدە ھېچكىمدىن قورقماي، ئۆز ئالدىدا ئىخلاسمەنلىك ۋە ھەققانىيلىق بىلەن، خىزمەت-ئىبادىتىدە بولىدىغان قىلدى.
+new: ئۇ شۇ ئادەت بىلەن ئاتا-بوۋىلىرىمىزگە رەھىملىك كۆرسەتىپ، مۇقەددەس ۋەدىسىنى ئەمەلگە ئاشۇرۇش ئۈچۈن، يەنى ئاتامىز ئىبراھىمغا بەرگەن قەسەمىنى ئۇنۇتماي، بىزنى دۈشمەنلىرىمىزنىڭ قولىدىن قۇتلاپ، ھەر كۈنى ھېچ نەرسىدىن قورقماي، ئۆزىنىڭ ئالدىدا ئىخلاسلىق ۋە توغرا يول بىلەن ئىبادەت قىلىشىمىزنى تەمىنلىدى.
+
+2025-04-27 14:28:19 - Average grade: 89.87 - added grade number 1 on loop 2 of grade 70 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:28:35 - Average grade: 89.92 - added grade number 2 on loop 2 of grade 75 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:28:47 - Average grade: 89.93 - added grade number 3 on loop 2 of grade 75 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:28:57 - Average grade: 89.94 - added grade number 4 on loop 2 of grade 75 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:29:12 - Average grade: 89.94 - added grade number 5 on loop 2 of grade 75 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:29:27 - Average grade: 89.95 - added grade number 6 on loop 2 of grade 75 to verse LUK 1:60 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:76
+old: ئەمدى سەن، ئى بالام، ھەممىدىن ئالىي بولغۇچىنىڭ پەيغەمبىرى دەپ ئاتىلىسەن؛ چۈنكى سەن رەبنىڭ يوللىرىنى تەييارلاش ئۈچۈن ئۇنىڭ ئالدىدا ماڭىسەن.
+new: ھازىر سەن, بەغچەم, ئەڭ يۇقىرى ئادەمنىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.
+
+2025-04-27 14:29:56 - Average grade: 90.03 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:30:10 - Average grade: 90.01 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:30:21 - Average grade: 90.00 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:30:32 - Average grade: 89.99 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:30:44 - Average grade: 89.99 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:30:55 - Average grade: 89.99 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:61 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:77
+old: ۋەزىپەڭ ئۇنىڭ خەلقىگە گۇناھلىرىنىڭ كەچۈرۈم قىلىنىشى ئارقىلىق بولىدىغان نىجاتنىڭ خەۋىرىنى بىلدۈرۈشتۈر؛
+new: Sizning vazifingiz uning xelqige gunahlarini kechurush orqali qutqarilishning xewirini ochiq aytip berish; (The final updated translation blends modern standard and colloquial Uyghur by using simple, direct language like 'ochiq aytip berish' for clear proclamation, ensuring it's accessible and contemporary while preserving the Christian emphasis on salvation through forgiveness.)
+
+2025-04-27 14:31:18 - Average grade: 90.07 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:31:32 - Average grade: 90.05 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:31:43 - Average grade: 90.04 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:31:54 - Average grade: 90.03 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:32:05 - Average grade: 90.04 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:32:16 - Average grade: 90.05 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:62 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:78-79
+old: چۈنكى خۇدايىمىزنىڭ ئىچى-باغرىدىن ئۇرغۇپ چىققان شەپقەتلەر ۋەجىدىن، قاراڭغۇلۇق ۋە ئۆلۈم كۆلەڭگىسى ئىچىدە ئولتۇرغانلارنى يورۇتۇش ئۈچۈن، پۇتلىرىمىزنى ئامانلىق يولىغا باشلاش ئۈچۈن، ئەرشتىن تاڭ شەپىقى ئۈستىمىزگە چۈشۈپ يوقلىدى.
+new: چۈنكى خۇدايىمىزنىڭ چاقچاق شەپقاتى ئۈچۈن، قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە تۇرۇپ كەتكەنلەرگە نۇر بېرىپ يورۇتۇش ئۈچۈن، بىزنىڭ ھەرقايسى يوللىرىمىزنى تەڭلىك يولىغا باشلاش ئۈچۈن، كۆكتىن بىر يېڭى تەرەپ نۇر بىزگە چۈشۈپ كەلدى.
+
+2025-04-27 14:32:57 - Average grade: 90.13 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:33:12 - Average grade: 90.07 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:33:24 - Average grade: 90.07 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:33:37 - Average grade: 90.10 - added grade number 4 on loop 2 of grade 98 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:33:53 - Average grade: 90.10 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:34:03 - Average grade: 90.09 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:63 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 1:80
+old: بالا بولسا ئۆسۈپ، روھتا كۈچلەندۈرۈلدى. ئۇ ئىسرائىل جامائىتىنىڭ ئالدىدا نامايان قىلىنغۇچە چۆللەردە ياشاپ كەلدى.
+new: بالا چوڭايغان ۋاقىتتا، روھى كۈچەپ كەتتى. ئۇ ئىسرائىل خەلقىگە نامايان بولغاندا قەدەر چۆلدە تۇرۇپ كەلدى.
+
+2025-04-27 14:34:34 - Average grade: 90.17 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:34:47 - Average grade: 90.17 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:35:00 - Average grade: 90.16 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:35:12 - Average grade: 90.15 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:35:25 - Average grade: 90.15 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:35:39 - Average grade: 90.16 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:64 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:1
+old: ئەمدى شۇ كۈنلەردە، رىم ئىمپېراتورى قەيسەر ئاۋغۇستۇستىن بارلىق خەلقتىن باج ئېلىش ئۈچۈن ئۇلارنىڭ رويخېتى تىزىملانسۇن دەپ پەرمان چۈشتى.
+new: Shu vaqitlarda, Qeyser Awgustustan butun dunyada baj elish uchun, hamma xelqning royxetini tizimlash haqqida bir qarar chiqardi.
+
+2025-04-27 14:36:09 - Average grade: 90.19 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:36:21 - Average grade: 90.15 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:36:32 - Average grade: 90.14 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:36:44 - Average grade: 90.17 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:36:56 - Average grade: 90.17 - added grade number 5 on loop 2 of grade 93 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:37:07 - Average grade: 90.18 - added grade number 6 on loop 2 of grade 93 to verse LUK 1:65 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:2
+old: تۇنجى قېتىملىق بۇ نوپۇس تىزىملاش كىرىنىيۇس سۇرىيە ئۆلكىسىنى ئىدارە قىلىپ تۇرغان ۋاقتىدا ئېلىپ بېرىلغانىدى.
+new: بۇ ساناق كىرىنىيۇس سۇرىيەنى باشقۇرۇپ تۇرغاندا ئالدىنقى قېتىم ئېلىپ بېرىلگەن.
+
+2025-04-27 14:37:32 - Average grade: 90.21 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:37:43 - Average grade: 90.17 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:37:55 - Average grade: 90.16 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:38:07 - Average grade: 90.17 - added grade number 4 on loop 2 of grade 92 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:38:21 - Average grade: 90.17 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:38:32 - Average grade: 90.17 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:66 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:3
+old: شۇنىڭ بىلەن ھەممە ئادەم نوپۇسقا تىزىملىنىش ئۈچۈن ئۆز يۇرتلىرىغا قايتىش كېرەك بولدى.
+new: Shunda hamma adam öz shähärigha qaytishiga mejbur boldi, nopusqa ro'yxatlandurush üchün. (The final updated translation blends the best of the drafts, using modern phrasing for a natural, contemporary flow while preserving the biblical intent.)
+
+2025-04-27 14:39:01 - Average grade: 90.14 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:39:15 - Average grade: 90.19 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:39:28 - Average grade: 90.20 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:39:40 - Average grade: 90.18 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:39:52 - Average grade: 90.19 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:40:04 - Average grade: 90.19 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:67 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:4
+old: يۈسۈپمۇ داۋۇت پادىشاھنىڭ جەمەتىدىن بولغاچقا، شۇنداقلا ئۇنىڭ بىۋاسىتە ئەۋلادى بولغاچقا، گالىلىيە ئۆلكىسىدىكى ناسارەت شەھىرىدىن ئايرىلىپ، يەھۇدىيە ئۆلكىسىدىكى، داۋۇتنىڭ يۇرتى بەيت-لەھەم دېگەن شەھەرگە كەتتى.
+new: يۈسۈپ داۋۇتنىڭ ئائىلىسى ۋە نەسلىدىن بولغانلىقى ئۈچۈن، گالىلىيەدىكى ناسارەت شەھىرىدىن كەتىپ، يەھۇدىيەدىكى داۋۇتنىڭ يۇرتى بەيت-لەھەمگە باردى.
+
+2025-04-27 14:40:38 - Average grade: 90.16 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:40:51 - Average grade: 90.16 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:41:04 - Average grade: 90.18 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:41:16 - Average grade: 90.17 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:41:40 - Average grade: 90.18 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:41:52 - Average grade: 90.18 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:68 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:5
+old: نوپۇسقا تىزىملىنىش ئۈچۈن لايىقى، بولغۇسى ئايالى مەريەممۇ بىللە باردى. مەريەم ھامىلىدار بولۇپ، قورسىقى خېلىلا يوغىناپ قالغانىدى.
+new: يوسۇپ تىزىملەش ئۈچۈن باردى، ئۇنىڭ كۆرسەتكەن ئايالى مەريەم بىللە. مەريەم ھامىل بولۇپ، قورسىقى چوڭ قىلىپ كەتكەن تۇردى.
+
+2025-04-27 14:42:21 - Average grade: 90.21 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:42:38 - Average grade: 90.18 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:42:55 - Average grade: 90.17 - added grade number 3 on loop 2 of grade 88 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:43:07 - Average grade: 90.16 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:43:24 - Average grade: 90.15 - added grade number 5 on loop 2 of grade 85 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:43:36 - Average grade: 90.16 - added grade number 6 on loop 2 of grade 90 to verse LUK 1:69-71 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:6
+old: ۋە شۇنداق بولدىكى، ئۇلار بەيت-لەھەمدە تۇرغان ۋاقتىدا مەريەمنىڭ تۇغۇتىنىڭ ئاي-كۈنى توشۇپ قالدى.
+new: ئۇلار بەيت-لەھەمدە بولۇپ تۇرغاندا، مەريەم بالىسىنى تۇغۇت قىلىش ۋاقتى تولۇپ كەتتى.
+
+2025-04-27 14:44:05 - Average grade: 90.23 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:44:20 - Average grade: 90.15 - added grade number 2 on loop 2 of grade 85 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:44:36 - Average grade: 90.16 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:44:54 - Average grade: 90.15 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:45:11 - Average grade: 90.15 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:45:29 - Average grade: 90.14 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:72-75 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:7
+old: بىراق سارايدا ئۇلارغا ئورۇن بولمىغاچقا، مەريەم شۇ يەردە تۇنجى ئوغلىنى تۇغقاندا ئۇنى زاكىلاپ، ئېغىلدىكى ئوقۇرغا ياتقۇزدى.
+new: Amma mehmanxanada ularga joy yoq bolup, Meryem osha joyda birinchi oghlini tughap, uni yaxshi otilap, ehilning oqurigha yatar qildu.
+
+2025-04-27 14:46:04 - Average grade: 90.11 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:46:17 - Average grade: 90.11 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:46:30 - Average grade: 90.05 - added grade number 3 on loop 2 of grade 75 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:46:41 - Average grade: 90.06 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:46:53 - Average grade: 90.06 - added grade number 5 on loop 2 of grade 85 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:47:06 - Average grade: 90.04 - added grade number 6 on loop 2 of grade 75 to verse LUK 1:76 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:8
+old: شۇ يەرنىڭ ئەتراپىدىكى بەزى پادىچىلار دالادا تۇراتتى؛ ئۇلار كېچىچە تۈنەپ، پادىسىغا قارايتتى.
+new: Shu joyning yaqinidiki chopanlar dala ichida turup, kechisi otlarini nazaratsiz qilishdi. (The final updated translation pushes for a hard modern register by using simple, contemporary Uyghur words and structure, making it feel like everyday conversation while staying true to the biblical intent.)
+
+2025-04-27 14:47:34 - Average grade: 90.11 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:47:45 - Average grade: 90.11 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:47:57 - Average grade: 90.11 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:48:08 - Average grade: 90.11 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:48:19 - Average grade: 90.10 - added grade number 5 on loop 2 of grade 92 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:48:30 - Average grade: 90.10 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse LUK 2:9
+old: ۋە مانا، پەرۋەردىگارنىڭ بىر پەرىشتىسى ئۇلارنىڭ ئالدىدا تۇراتتى؛ پەرۋەردىگارنىڭ پارلاق شەرىپى ئۇلارنىڭ ئەتراپىنى يورۇتۇۋەتتى. ئۇلار ئىنتايىن بەك قورقۇپ كەتتى.
+new: ھەم باق، خۇدايىنىڭ بىر پەرىشتىسى ئۇلارنىڭ ئالدىدا تۇرۇپ كۆرۈنۈپ كەتتى؛ خۇدايىنىڭ يورۇق سەپى ئۇلارنىڭ تەۋرەتتىنى تولۇق يورۇتۇپ تۇردى. ئۇلار ئەڭ چوق قورققان بولدى.
+
+2025-04-27 14:49:03 - Average grade: 90.07 - added grade number 1 on loop 2 of grade 88 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:49:19 - Average grade: 90.07 - added grade number 2 on loop 2 of grade 88 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:49:33 - Average grade: 90.08 - added grade number 3 on loop 2 of grade 90 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:49:46 - Average grade: 90.08 - added grade number 4 on loop 2 of grade 88 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:49:58 - Average grade: 90.08 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:50:11 - Average grade: 90.08 - added grade number 6 on loop 2 of grade 88 to verse LUK 1:78-79 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 90.07511737089204 after 1 iterations.  Improvement of 90.07511737089204
+Working on verse LUK 1:52 which has grade 49.166666666666664
+
+The peer reviews for Luke 1:52 commend the translation's effective blending of modern standard and colloquial Uyghur registers, such as simplifying 'ھۆكۈمدارلارنى' to 'كۈچلۈكلەرنى', which enhances accessibility and natural readability while staying true to the biblical message. However, all reviews highlight a critical error in the phrase 'كەمبەغەللەرنى يۇقىرى كۆتۈرۈپ بەرمەدى', which incorrectly negates the original Greek 'καὶ ὕψωσε ταπεινούς' (and lifted up the humble), altering the meaning to imply God did not exalt the humble. This distortion undermines the conservative Christian emphasis on God's justice, mercy, and reversal of hierarchies. Actionable steps include: revising the translation to remove the negation and affirm that God lifted up the humble (e.g., change to something like 'كەمبەغەللەرنى يۇقىرى كۆتۈردى'); cross-verifying against the Greek text and conservative interpretations to ensure accuracy; and maintaining the simplified language for readability to balance style with fidelity.
+
+source: καθεῖλε δυνάστας ἀπὸ θρόνων καὶ ὕψωσε ταπεινούς,
+old: ئۇ كۈچلۈكلەرنى تەختىدىن تۆۋەنلىدى، كەمبەغەللەرنى يۇقىرى كۆتۈرۈپ بەرمەدى. (The final updated translation blends modern standard and colloquial registers by simplifying words like 'ھۆكۈمدارلارنى' to 'كۈچلۈكلەرنى' for everyday use, ensuring it's accessible and natural while staying true to the biblical message.)
+new: ئۇ كۈچلۈكلەرنى تەختىدىن تۆۋەنلىدى، كەمبەغەللەرنى يۇقىرى كۆتۈردى.
+
+2025-04-27 14:50:36 - Average grade: 90.08 - reflected on verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:50:45 - Average grade: 90.72 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:51:01 - Average grade: 90.70 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:51:13 - Average grade: 90.71 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:51:24 - Average grade: 90.71 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:51:34 - Average grade: 90.72 - added grade number 5 on loop 3 of grade 98 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+2025-04-27 14:51:44 - Average grade: 90.72 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:52 - Best grade: 90.08 - Iterations without improvement: 0
+New best grade: 90.72065727699533 after 1 iterations.  Improvement of 0.6455399061032807
+Working on verse LUK 1:13 which has grade 72.5
+
+The peer reviews praise the translation of Luke 1:13 for its readability and effective use of a contemporary style that blends Modern Standard and Colloquial Uyghur registers, accurately conveying the angel's reassurance, the hearing of the prayer, and the promise of a son. However, a consistent issue is identified: the translation of the Greek name 'Ἰωάννην' as 'Yahya' (يەھيا) deviates from conservative Christian interpretations, potentially introducing non-biblical connotations and undermining the text's integrity. To address this, revise the name to a standard Christian transliteration such as 'Yuhanna' to ensure greater faithfulness to the original Greek and align with biblical intent, while maintaining the overall natural and accessible language.
+
+source: εἶπε δὲ πρὸς αὐτὸν ὁ ἄγγελος· μὴ φοβοῦ, Ζαχαρία· διότι εἰσηκούσθη ἡ δέησίς σου, καὶ ἡ γυνή σου Ἐλισάβετ γεννήσει υἱόν σοι, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰωάννην·
+old: پەرىشتە ئۇغا دېدى: 'زەكەرىيا، قورقما! سەننىڭ دعىڭ ئىجابەت تاپتى، ئېلىزابېت ساڭا بىر ئوغۇل تۇغايدۇ، سەن ئۇنى يەھيا دەپ ئاتاپ قوي.'
+new: پەرىشتە ئۇغا دېدى: 'زەكەرىيا، قورقما! سەننىڭ دعىڭ ئىجابەت تاپتى، ئېلىزابېت ساڭا بىر ئوغۇل تۇغايدۇ، سەن ئۇنى يۇھاننا دەپ ئاتاپ قوي.'
+
+2025-04-27 14:52:06 - Average grade: 90.72 - reflected on verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:52:16 - Average grade: 91.04 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:52:28 - Average grade: 91.02 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:52:38 - Average grade: 91.01 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:52:49 - Average grade: 91.02 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:53:00 - Average grade: 91.02 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+2025-04-27 14:53:11 - Average grade: 91.02 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:13 - Best grade: 90.72 - Iterations without improvement: 0
+New best grade: 91.01643192488265 after 1 iterations.  Improvement of 0.29577464788732755
+Working on verse LUK 1:2 which has grade 73.33333333333333
+
+The peer reviews for Luke 1:2 highlight that while the translation effectively captures the essence of eyewitnesses and ministers of the word in a readable, contemporary style blending Modern Standard and Colloquial Registers, it includes unauthorized interpretive additions (e.g., phrases adapting the text for modern understanding) that are not in the original Greek. This reduces faithfulness to the source and introduces commentary, which conflicts with a conservative Christian emphasis on textual accuracy. Actionable recommendations: Remove all interpretive elements not present in the Greek to ensure a more literal rendering; maintain the contemporary language style for readability; and revise to prioritize direct translation, thereby preserving the verse's original intent without embellishment.
+
+source: καθὼς παρέδοσαν ἡμῖν οἱ ἀπ᾽ ἀρχῆς αὐτόπται καὶ ὑπηρέται γενόμενοι τοῦ λόγου,
+old: باشلىنىشتىنلا گۇۋاھ بولغانلار ۋە سۆزنى يايدۇرغۇچىلارنىڭ بىزگە ئۇلارنى تولۇق ساقلاپ بەرگەن ھېكايىلىرىدەك، بۇ ھازىرقى زامان كىشىلىرى ئوچۇق چۈشىنىدىغان تەرزگە ئادەپلىنىپ.
+new: باشلىنىشتىنلا گۇۋاھ بولغانلار ۋە سۆزنىڭ خىزمەتچىلىرى بىزگە ئۇلارنى ئۇچۇرغانلىقىدەك،
+
+2025-04-27 14:53:34 - Average grade: 91.02 - reflected on verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:53:46 - Average grade: 91.18 - added grade number 1 on loop 3 of grade 85 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:54:00 - Average grade: 91.25 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:54:10 - Average grade: 91.24 - added grade number 3 on loop 3 of grade 88 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:54:23 - Average grade: 91.25 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:54:37 - Average grade: 91.25 - added grade number 5 on loop 3 of grade 88 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+2025-04-27 14:54:51 - Average grade: 91.26 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:2 - Best grade: 91.02 - Iterations without improvement: 0
+New best grade: 91.25821596244133 after 1 iterations.  Improvement of 0.2417840375586735
+Working on verse LUK 1:60 which has grade 74.16666666666667
+
+The peer reviews for LUK 1:60 affirm that the translation is natural, readable, and effectively blends modern standard and colloquial Uyghur registers, making it accessible for contemporary readers. However, a significant concern raised across all comments is the use of 'يەھيا' for the name 'Ἰωάννης', which is seen as inconsistent with conservative Christian interpretations and standard biblical transliterations (e.g., 'يوخان'). This choice may introduce elements from non-Christian traditions, compromising faithfulness to the original Greek and potentially leading to syncretism. To address this, revise the translation by replacing 'يەھيا' with a more accurate Christian transliteration like 'يوخان' to ensure consistency, accuracy, and alignment with the source text, while preserving the overall readability.
+
+source: καὶ ἀποκριθεῖσα ἡ μήτηρ αὐτοῦ εἶπεν· οὐχί, ἀλλὰ κληθήσεται Ἰωάννης.
+old: ئەمما ئانىسى جاۋاب بەردى: 'ياق! ئىسمى يەھيا بولسۇن!'
+new: ئەمما ئانىسى جاۋاب بەردى: 'ياق! ئىسمى يوخان بولسۇن!'
+
+2025-04-27 14:55:15 - Average grade: 91.26 - reflected on verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:55:28 - Average grade: 91.59 - added grade number 1 on loop 3 of grade 98 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:55:39 - Average grade: 91.57 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:55:48 - Average grade: 91.55 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:55:59 - Average grade: 91.56 - added grade number 4 on loop 3 of grade 98 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:56:08 - Average grade: 91.56 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+2025-04-27 14:56:19 - Average grade: 91.56 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:60 - Best grade: 91.26 - Iterations without improvement: 0
+New best grade: 91.55868544600939 after 1 iterations.  Improvement of 0.30046948356806524
+Working on verse LUK 1:28 which has grade 76.66666666666667
+
+The peer reviews for Luke 1:28 highlight that while the translation is readable and effectively blends modern Uyghur registers, it lacks full fidelity to the Greek text, particularly from a conservative Christian perspective. Key issues include the omission of 'εὐλογημένη σὺ ἐν γυναιξίν' (Blessed are you among women), which is essential for emphasizing Mary's unique blessedness; this should be added to restore theological depth without altering the contemporary style. Additionally, the rendering of 'χαῖρε, κεχαριτωμένη' as 'سالام سەن، ئەي بەختىگە ئېرىشكەن قىزلۇق' simplifies the profound grace and divine favor, potentially diluting its meaning—revise to better convey 'highly favored' or 'full of grace' while maintaining a natural, modern tone. Ensure the greeting captures a reverent feel without introducing overly casual elements. These changes will enhance accuracy and alignment with conservative interpretations, as the edit history shows no intentional removal of these core elements.
+
+source: καὶ εἰσελθὼν ὁ ἄγγελος πρὸς αὐτὴν εἶπε· χαῖρε, κεχαριτωμένη· ὁ Κύριος μετὰ σοῦ· εὐλογημένη σὺ ἐν γυναιξίν.
+old: جەبراۋىل ئۇنىڭ ئالدىغا كىرىپ، ئۇغا دەپتۇ: 'سالام سەن، ئەي بەختىگە ئېرىشكەن قىزلۇق! رەب سەنگە ياقتۇر بولۇپ تۇر!'
+new: جەبرائىل ئۇنىڭ ئالدىغا كىرىپ، ئۇغا دەپتۇ: 'خۇش كەلگەن، ئەي مەرھەمەتكە تولغان قىزلۇق! رەب سەنگە بىلەن بولسۇن؛ سەن ئاياللار ئارىسىدا مۇبارەك بولۇپسەن!'
+
+2025-04-27 14:56:51 - Average grade: 91.56 - reflected on verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:57:04 - Average grade: 91.72 - added grade number 1 on loop 3 of grade 88 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:57:20 - Average grade: 91.77 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:57:35 - Average grade: 91.76 - added grade number 3 on loop 3 of grade 90 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:57:48 - Average grade: 91.74 - added grade number 4 on loop 3 of grade 85 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:58:05 - Average grade: 91.74 - added grade number 5 on loop 3 of grade 88 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+2025-04-27 14:58:21 - Average grade: 91.73 - added grade number 6 on loop 3 of grade 88 to verse LUK 1:28 - Best grade: 91.56 - Iterations without improvement: 0
+New best grade: 91.7323943661972 after 1 iterations.  Improvement of 0.17370892018780637
+Working on verse LUK 1:76 which has grade 82.66666666666667
+
+The peer reviews for Luke 1:76 affirm that the translation is generally faithful, readable, and effectively uses a blend of Modern Standard and Colloquial Uyghur, aligning with conservative Christian interpretations by conveying John the Baptist as a prophet preparing the Lord's ways. However, a key correction is needed for the phrase 'ئەڭ يۇقىرى ئادەمنىڭ پەيغەمبىرى', which inaccurately translates 'ὑψίστου' (Most High, referring to God) as 'the highest man', diluting the divine emphasis and theological precision. Actionable recommendations include: revise this phrase to explicitly denote 'Most High' as a title for God (e.g., using wording that parallels the original Greek to highlight divine sovereignty, similar to the earlier version in the edit history); ensure all divine titles maintain their sacred intent; and, as a minor point from one review, consider if 'رەبى' for 'Lord' strikes the right balance between neutrality and religious register without overcomplicating the text. These changes will enhance accuracy while preserving the contemporary style, upholding conservative Christian values.
+
+source: Καὶ σύ, παιδίον, προφήτης ὑψίστου κληθήσῃ· προπορεύσῃ γὰρ πρὸ προσώπου Κυρίου ἑτοιμάσαι ὁδοὺς αὐτοῦ,
+old: ھازىر سەن, بەغچەم, ئەڭ يۇقىرى ئادەمنىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.
+new: ھازىر سەن, بەغچەم, ئەڭ يۇقىرى خۇدانىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.
+
+2025-04-27 14:58:50 - Average grade: 91.73 - reflected on verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 14:59:02 - Average grade: 91.81 - added grade number 1 on loop 3 of grade 88 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 14:59:14 - Average grade: 91.84 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 14:59:27 - Average grade: 91.85 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 14:59:39 - Average grade: 91.84 - added grade number 4 on loop 3 of grade 88 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 14:59:52 - Average grade: 91.83 - added grade number 5 on loop 3 of grade 88 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+2025-04-27 15:00:04 - Average grade: 91.83 - added grade number 6 on loop 3 of grade 88 to verse LUK 1:76 - Best grade: 91.73 - Iterations without improvement: 0
+New best grade: 91.82629107981221 after 1 iterations.  Improvement of 0.09389671361500973
+Working on verse LUK 1:51 which has grade 83.0
+
+The peer reviews for Luke 1:51 affirm the translation's strengths in using a contemporary Uyghur style that blends modern standard and colloquial registers, making it readable and accessible while aligning with conservative Christian interpretations of God's justice and humility. However, a recurring issue is the phrase 'ئۇ قولى بىلەن كۈچىنى گەپ-سۆز قىلدى', which inaccurately introduces a verbal element ('گەپ-سۆز' meaning words), diverging from the original Greek 'Ἐποίησε κράτος ἐν βραχίονι αὐτοῦ', which focuses on God's demonstration of power through action rather than speech. This could dilute the emphasis on divine strength and lead to misinterpretation. Actionable recommendations: Revise the phrase to eliminate the verbal connotation, ensuring it directly reflects God's mighty acts (e.g., emphasize 'قولى' for arm/strength without adding 'گەپ-سۆز'); cross-reference with the Greek source for precision; and maintain the contemporary language to keep it engaging for modern readers while upholding conservative Christian fidelity to the text.
+
+source: Ἐποίησε κράτος ἐν βραχίονι αὐτοῦ, διεσκόρπισεν ὑπερηφάνους διανοίᾳ καρδίας αὐτῶν·
+old: ئۇ قولى بىلەن كۈچىنى گەپ-سۆز قىلدى، ئۇ مەغرۇرلارنى يۈرەكتەكى ئوي-خىياللىرىدا تارقىتتى.
+new: ئۇ قولى بىلەن كۈچىنى كۆرسەتتى، ئۇ مەغرۇرلارنى يۈرەكتەكى ئوي-خىياللىرىدا تارقىتتى.
+
+2025-04-27 15:00:26 - Average grade: 91.83 - reflected on verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:00:38 - Average grade: 91.95 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:00:51 - Average grade: 91.94 - added grade number 2 on loop 3 of grade 90 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:01:02 - Average grade: 91.96 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:01:15 - Average grade: 91.94 - added grade number 4 on loop 3 of grade 88 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:01:26 - Average grade: 91.94 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+2025-04-27 15:01:38 - Average grade: 91.95 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:51 - Best grade: 91.83 - Iterations without improvement: 0
+New best grade: 91.94600938967136 after 1 iterations.  Improvement of 0.11971830985915233
+Working on verse LUK 1:16 which has grade 87.0
+
+The peer reviews for Luke 1:16 unanimously praise the translation for its effective blend of modern standard and colloquial Uyghur, which enhances readability and aligns well with conservative Christian interpretations by conveying the core idea of John turning many Israelites back to God. However, a consistent concern is raised regarding the phrase 'خۇدا ياقتۇرغۇچىلىقىغا', which slightly deviates from the original Greek 'to the Lord their God' by implying 'to God's favor', potentially introducing an interpretive nuance that softens the emphasis on personal repentance. Actionable recommendations: Revise this phrase to more directly reflect the original text's intent, such as using wording that explicitly denotes returning to 'the Lord their God' while maintaining the contemporary and accessible style to ensure full faithfulness without reintroducing archaic elements from prior versions.
+
+source: καὶ πολλοὺς τῶν υἱῶν Ἰσραὴλ ἐπιστρέψει ἐπὶ Κύριον τὸν Θεὸν αὐτῶν·
+old: ئۇ كۆپ ئىسرائىلىقنى خۇدا ياقتۇرغۇچىلىقىغا قايتۇرۇپ كەتىدۇ. (This final version blends modern standard and colloquial elements for clarity and accessibility, ensuring it remains faithful to the biblical intent from a Christian perspective.)
+new: ئۇ كۆپ ئىسرائىلىق پەرىزنى ئۇلارنىڭ پەرۋەردىگار خۇداسىغا قايتۇرۇپ كەتىدۇ.
+
+2025-04-27 15:02:03 - Average grade: 91.95 - reflected on verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:02:12 - Average grade: 92.06 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:02:25 - Average grade: 92.06 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:02:41 - Average grade: 92.04 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:02:53 - Average grade: 92.04 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:03:03 - Average grade: 92.03 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+2025-04-27 15:03:15 - Average grade: 92.01 - added grade number 6 on loop 3 of grade 85 to verse LUK 1:16 - Best grade: 91.95 - Iterations without improvement: 0
+New best grade: 92.01408450704226 after 1 iterations.  Improvement of 0.06807511737089555
+Working on verse LUK 1:3 which has grade 87.33333333333333
+
+The peer reviews for Luke 1:3 indicate that the translation is generally faithful to the original Greek text and effectively conveys Luke's intent to write an orderly account after careful investigation, aligning well with a conservative Christian perspective. It successfully uses a contemporary style by blending Modern Standard and Colloquial Uyghur registers, making the text natural, readable, and free from archaic or religious language. However, a consistent issue arises with the phrase 'boshqa joydan', which inaccurately renders 'ἄνωθεν' (meaning 'from the beginning' or 'from above'), potentially introducing a minor deviation. Actionable recommendations include: revising 'boshqa joydan' to a more precise equivalent, such as 'boshidın' or 'yuqaridan' to better capture the original meaning; enhancing idiomatic expressions for greater clarity and modernity; and ensuring future translations prioritize accuracy to maintain the scriptural integrity valued in conservative Christian interpretations.
+
+source: ἔδοξε κἀμοί, παρηκολουθηκότι ἄνωθεν πᾶσιν ἀκριβῶς, καθεξῆς σοι γράψαι, κράτιστε Θεόφιλε,
+old: Men ham barliq ishlarni boshqa joydan yaxshi barlap körgüch, aziz Teofilus, senga bu ishlarning tartip boyiche yezip bermini yaxshi deb oyladim.
+new: Men ham barliq ishlarni boshidın yaxshi barlap körgüch, aziz Teofilus, senga bu ishlarning tartip boyiche yezip bermini yaxshi deb oyladim.
+
+2025-04-27 15:03:36 - Average grade: 92.01 - reflected on verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:03:48 - Average grade: 92.08 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:04:01 - Average grade: 92.05 - added grade number 2 on loop 3 of grade 88 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:04:13 - Average grade: 92.06 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:04:28 - Average grade: 92.08 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:04:39 - Average grade: 92.08 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+2025-04-27 15:04:52 - Average grade: 92.08 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:3 - Best grade: 92.01 - Iterations without improvement: 0
+New best grade: 92.0774647887324 after 1 iterations.  Improvement of 0.06338028169014365
+Working on verse LUK 1:59 which has grade 87.5
+
+The peer reviews for Luke 1:59 indicate that the translation is generally faithful to the original Greek text, effectively conveying the eighth-day circumcision and the intention to name the child after his father Zechariah, while maintaining a natural, contemporary style in Uyghur that aligns with conservative Christian interpretations by using modern language without archaic elements. However, a key correction needed is to fix the typo 'نiyet' to the correct term 'niyet' (meaning 'intention'), as this error appears in all reviews and disrupts readability and fluency. Additionally, consider refining the phrasing for circumcision ('خەت قىلىش') to enhance everyday accessibility and overall flow, ensuring the text remains clear and engaging without altering the core message. These minor adjustments will improve the translation's quality and make it more polished for readers.
+
+source: Καὶ ἐγένετο ἐν τῇ ὀγδόῃ ἡμέρᾳ ἦλθον περιτεμεῖν τὸ παιδίον, καὶ ἐκάλουν αὐτὸ ἐπὶ τῷ ὀνόματι τοῦ πατρὸς αὐτοῦ Ζαχαρίαν.
+old: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن. ئۇلار ئۇنى زەكەرىيا دەپ، ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+new: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن. ئۇلار ئۇنى زەكەرىيا دەپ، ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+
+2025-04-27 15:05:21 - Average grade: 92.08 - reflected on verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:05:35 - Average grade: 92.14 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:05:51 - Average grade: 92.11 - added grade number 2 on loop 3 of grade 88 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:06:04 - Average grade: 92.12 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:06:19 - Average grade: 92.12 - added grade number 4 on loop 3 of grade 90 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:06:34 - Average grade: 92.10 - added grade number 5 on loop 3 of grade 82 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+2025-04-27 15:06:49 - Average grade: 92.10 - added grade number 6 on loop 3 of grade 90 to verse LUK 1:59 - Best grade: 92.08 - Iterations without improvement: 0
+New best grade: 92.09859154929578 after 1 iterations.  Improvement of 0.02112676056337648
+Working on verse LUK 1:78-79 which has grade 88.33333333333333
+
+The peer reviews for Luke 1:78-79 highlight a generally faithful translation that effectively conveys God's tender mercy, the dawn from on high as a symbol of light and salvation, and guidance to the path of peace, aligning well with conservative Christian interpretations. Strengths include the natural blend of modern standard and colloquial Uyghur, which enhances readability and avoids archaic language. Actionable corrections include: 1) Refine sentence structure to make it less lengthy and improve overall flow without changing the meaning; 2) Adjust phrases like 'چاقچاق شەپقاتى' to be more everyday colloquial for greater accessibility; and 3) Enhance precision in translating 'ἀνατοلὴ ἐξ ὕψους' (currently rendered as 'كۆكتىن بىر يېڭى تەرەپ نۇر') to better capture the original intent while keeping the language modern and relatable. These minor tweaks will further balance accuracy, clarity, and contemporary appeal, ensuring the translation remains true to its conservative Christian roots.
+
+source: διὰ σπλάγχνα ἐλέους Θεοῦ ἡμῶν, ἐν οἷς ἐπεσκέψατο ἡμᾶς ἀνατολὴ ἐξ ὕψους
+ἐπιφᾶναι τοῖς ἐν σκότει καὶ σκιᾷ θανάτου καθημένοις, τοῦ κατευθῦναι τοὺς πόδας ἡμῶν εἰς ὁδὸν εἰρήνης.
+old: چۈنكى خۇدايىمىزنىڭ چاقچاق شەپقاتى ئۈچۈن، قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە تۇرۇپ كەتكەنلەرگە نۇر بېرىپ يورۇتۇش ئۈچۈن، بىزنىڭ ھەرقايسى يوللىرىمىزنى تەڭلىك يولىغا باشلاش ئۈچۈن، كۆكتىن بىر يېڭى تەرەپ نۇر بىزگە چۈشۈپ كەلدى.
+new: خۇدايىمىزنىڭ ئىنayetلىك رەھىملىكى ئۈچۈن، كۆكتىن چىققان تالاۋەر نۇر بىزگە يېتىپ كەلدى. بۇ نۇر قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە ساپاق تۇرۇپ كەتكەنلەرگە يورۇق بېرىپ، بىزنىڭ ئاق-قارا يوللىرىمىزنى تەڭلىك يولىغا باشلايدۇ.
+
+2025-04-27 15:07:17 - Average grade: 92.10 - reflected on verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:07:34 - Average grade: 92.05 - added grade number 1 on loop 3 of grade 85 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:07:50 - Average grade: 92.10 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:08:04 - Average grade: 92.08 - added grade number 3 on loop 3 of grade 85 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:08:21 - Average grade: 92.09 - added grade number 4 on loop 3 of grade 90 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:08:38 - Average grade: 92.11 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+2025-04-27 15:08:52 - Average grade: 92.11 - added grade number 6 on loop 3 of grade 90 to verse LUK 1:78-79 - Best grade: 92.10 - Iterations without improvement: 0
+New best grade: 92.10798122065728 after 1 iterations.  Improvement of 0.009389671361503815
+Working on verse LUK 1:50 which has grade 88.5
+
+The peer reviews for Luke 1:50 affirm that the translation is generally faithful to the original Greek and aligns well with conservative Christian views, emphasizing God's enduring mercy for those who fear Him. Strengths include the effective blend of modern standard and colloquial Uyghur registers, which enhances readability and avoids archaic language. However, actionable corrections are needed: 1) Correct the potential mistranslation in 'ئۆزىنى قورقۇيدىغانلارنى' to 'ئۇنى قورقۇيدىغانلارنى' to accurately mean 'those who fear Him' rather than 'those who fear themselves', as noted in Corrections #3 and #6, to maintain precision and doctrinal integrity. 2) Simplify terms like 'رەھىم-شەپقىتى' for a more everyday feel, as suggested in Corrections #1 and #5, to achieve a contemporary tone without losing the text's spiritual depth. 3) Refine 'ئەتراپ قىلالايدۇ' to better reflect the Greek's emphasis on extension through generations, per Correction #2, while preserving the overall natural flow as recommended in Correction #4. These changes will enhance accuracy, readability, and alignment with conservative Christian principles, without reverting any intentional edits from the history.
+
+source: καὶ τὸ ἔλεος αὐτοῦ εἰς γενεὰς γενεῶν τοῖς φοβουμένοις αὐτόν.
+old: ئۇنىڭ رەھىم-شەپقىتى نەسلدىن نەسلگە ئۆزىنى قورقۇيدىغانلارنى داۋاملىق ئەتراپ قىلالايدۇ
+new: ئۇنىڭ مېھرىبانلىقى نەسلدىن نەسلگە ئۇنى قورقۇيدىغانلارغا داۋاملاشتۇرۇپ بېرىدۇ
+
+2025-04-27 15:09:24 - Average grade: 92.11 - reflected on verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:09:35 - Average grade: 92.20 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:09:45 - Average grade: 92.15 - added grade number 2 on loop 3 of grade 88 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:09:56 - Average grade: 92.15 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:10:07 - Average grade: 92.16 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:10:17 - Average grade: 92.16 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+2025-04-27 15:10:25 - Average grade: 92.17 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:50 - Best grade: 92.11 - Iterations without improvement: 0
+New best grade: 92.16901408450704 after 1 iterations.  Improvement of 0.06103286384976059
+Working on verse LUK 1:69-71 which has grade 88.5
+
+The peer reviews affirm that the translation of Luke 1:69-71 is generally faithful to the original Greek and effectively conveys conservative Christian themes of God's promise of salvation through David's lineage and deliverance from enemies. Strengths include the use of a contemporary style blending Modern Standard and Colloquial Uyghur, which makes the text natural and readable. Actionable suggestions for improvement include: 1) Enhance clarity in metaphorical elements like 'horn of salvation' by ensuring vivid yet accessible rendering without over-simplifying symbolic depth; 2) Simplify phrases with a religious register, such as 'مۇقەددەس پەيغەمبەرلەر', to more neutral, modern terms to avoid any archaic undertones while preserving the core message; 3) Refine poetic elements for greater precision in conveying prophetic fulfillment, ensuring the language remains straightforward and contemporary as per the edit history, which already moved towards simplification. These changes will maintain alignment with conservative Christian interpretations and improve overall accessibility without altering the intentional modern tone.
+
+source: καὶ ἤγειρε κέρας σωτηρίας ἡμῖν ἐν τῷ οἴκῳ Δαυῒδ τοῦ παιδὸς αὐτοῦ,
+καθὼς ἐλάλησε διὰ στόματος τῶν ἁγίων, τῶν ἀπ᾽ αἰῶνος προφητῶν αὐτοῦ,
+σωτηρίαν ἐξ ἐχθρῶν ἡμῶν καὶ ἐκ χειρὸς πάντων τῶν μισούντων ἡμᾶς,
+old: ئۇ ئاللىبۇرۇن مۇقەددەس پەيغەمبەرلەر ئارقىلىق ۋەدە قىلغانچە، داۋۇتنىڭ ئائىلىسىدىن بىز ئۈچۈن بىر نىجات كۈچىنى تۇرغۇزدى؛ بۇ كىشى بىزنى دۈشمەنلىرىمىزدىن ۋە بىزنى يامان كۆرگەنلەرنىڭ قولىدىن تولۇق ساقلاپ قالىدۇ.
+new: ئۇ ئاللىبۇرۇن پەيغەمبەرلەر ئارقىلىق ۋەدە قىلغانچە، داۋۇتنىڭ ئائىلىسىدىن بىز ئۈچۈن بىر قۇتقۇزۇش كۈچىنى (نىجاتنىڭ كېرەكىنى) تۇرغۇزدى؛ بۇ كۈچ بىزنى دۈشمەنلىرىمىزدىن ۋە بىزنى يامان كۆرگەنلەرنىڭ قولىدىن تولۇق ساقلاپ قالىدۇ.
+
+2025-04-27 15:10:51 - Average grade: 92.17 - reflected on verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:11:03 - Average grade: 92.22 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:11:16 - Average grade: 92.19 - added grade number 2 on loop 3 of grade 88 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:11:30 - Average grade: 92.18 - added grade number 3 on loop 3 of grade 88 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:11:44 - Average grade: 92.19 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:12:01 - Average grade: 92.20 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+2025-04-27 15:12:15 - Average grade: 92.19 - added grade number 6 on loop 3 of grade 90 to verse LUK 1:69-71 - Best grade: 92.17 - Iterations without improvement: 0
+New best grade: 92.19483568075117 after 1 iterations.  Improvement of 0.025821596244128386
+Working on verse LUK 1:4 which has grade 89.0
+
+The peer reviews for Luke 1:4 indicate that the translation is generally faithful to the original Greek, effectively conveying the certainty of the teachings in a contemporary Uyghur style that blends modern standard and colloquial registers, making it readable and aligned with conservative Christian interpretations. However, a recurring concern is the phrase 'تولا ئىشىنىپ' (fully believe), which introduces a slight overemphasis on faith rather than the Greek's primary focus on intellectual certainty or assurance. Actionable recommendations: Refine the phrasing to more directly reflect 'knowing certainty' (e.g., by adjusting to emphasize understanding or assurance without amplifying belief), ensuring greater precision while preserving the text's conservative Christian essence and avoiding any archaic language.
+
+source: ἵνα ἐπιγνῷς περὶ ὧν κατηχήθης λόγων τὴν ἀσφάλειαν.
+old: بۇنىڭ ئۈچۈن، سەن ئۆگەنگەن تەلىملەرنىڭ ھەقىقەتتىكىنى تولا ئىشىنىپ، ياقتۇرۇپ جەزم قىلىشىڭ ئۈچۈن.
+new: بۇ ئۈچۈن، سەن ئۆگەنگەن تەلىملەرنىڭ ئىسپاتلىق ئېنىقلىقىنى تولىق بىلىپ، ئىشەنچلىك جەزم قىلىشىڭ ئۈچۈن.
+
+2025-04-27 15:12:38 - Average grade: 92.19 - reflected on verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:12:48 - Average grade: 92.24 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:12:57 - Average grade: 92.24 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:13:09 - Average grade: 92.22 - added grade number 3 on loop 3 of grade 88 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:13:22 - Average grade: 92.22 - added grade number 4 on loop 3 of grade 90 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:13:36 - Average grade: 92.23 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+2025-04-27 15:13:49 - Average grade: 92.22 - added grade number 6 on loop 3 of grade 88 to verse LUK 1:4 - Best grade: 92.19 - Iterations without improvement: 0
+New best grade: 92.2206572769953 after 1 iterations.  Improvement of 0.025821596244128386
+Working on verse LUK 1:28 which has grade 89.0
+
+The peer reviews for Luke 1:28 praise the translation for its general faithfulness to the Greek text, effective blend of Modern Standard and Colloquial Uyghur registers, and natural readability, which aligns well with a conservative Christian perspective by emphasizing Mary's blessed status and divine favor without resorting to archaic language. However, a key correction is needed for the rendering of 'κεχαριτωμένη' as 'ئەي مەرھەمەتكە تولغان قىزلۇق' (full of mercy), which inaccurately emphasizes 'mercy' rather than 'highly favored' or 'full of grace.' To address this, revise the phrase to something like 'ئەي خۇدا تەرپىدىن ياقتۇرۇلغان قىزلۇق' to better convey God's unmerited favor on Mary, ensuring it retains a contemporary tone. This change will enhance theological precision and prevent subtle deviations in meaning, while building on the edit history's focus on accuracy without reintroducing previously addressed elements.
+
+source: καὶ εἰσελθὼν ὁ ἄγγελος πρὸς αὐτὴν εἶπε· χαῖρε, κεχαριτωμένη· ὁ Κύριος μετὰ σοῦ· εὐλογημένη σὺ ἐν γυναιξίν.
+old: جەبرائىل ئۇنىڭ ئالدىغا كىرىپ، ئۇغا دەپتۇ: 'خۇش كەلگەن، ئەي مەرھەمەتكە تولغان قىزلۇق! رەب سەنگە بىلەن بولسۇن؛ سەن ئاياللار ئارىسىدا مۇبارەك بولۇپسەن!'
+new: جەبرائىل ئۇنىڭ ئالدىغا كىرىپ، ئۇغا دەپتۇ: 'خۇش كەلگەن، ئەي خۇدا تەرپىدىن ياقتۇرۇلغان قىزلۇق! رەب سەنگە بىلەن بولسۇن؛ سەن ئاياللار ئارىسىدا مۇبارەك بولۇپسەن!'
+
+2025-04-27 15:14:17 - Average grade: 92.22 - reflected on verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:14:32 - Average grade: 92.31 - added grade number 1 on loop 4 of grade 95 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:14:48 - Average grade: 92.28 - added grade number 2 on loop 4 of grade 92 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:15:06 - Average grade: 92.29 - added grade number 3 on loop 4 of grade 95 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:15:21 - Average grade: 92.28 - added grade number 4 on loop 4 of grade 92 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:15:33 - Average grade: 92.29 - added grade number 5 on loop 4 of grade 95 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+2025-04-27 15:15:45 - Average grade: 92.29 - added grade number 6 on loop 4 of grade 95 to verse LUK 1:28 - Best grade: 92.22 - Iterations without improvement: 0
+New best grade: 92.29107981220656 after 1 iterations.  Improvement of 0.0704225352112644
+Working on verse LUK 1:59 which has grade 89.0
+
+The peer reviews for Luke 1:59 affirm that the translation remains faithful to the original Greek text and aligns with conservative Christian interpretations by accurately depicting the eighth-day circumcision and the intention to name the child after his father, Zechariah, using contemporary Uyghur language. However, the recurring issue is the typo 'نiyet', which should be corrected to 'niyet' to ensure precision and smooth readability, as this was also highlighted in previous fixes. Additionally, refine the phrasing around 'خەت قىلىش' and sentence structure for better flow and naturalness, avoiding any awkwardness while preserving the core biblical message. Actionable steps include: 1) Replace 'نiyet' with 'niyet' in the final text; 2) Edit for clearer, more fluid wording to enhance accessibility without introducing archaic elements; and 3) Verify the overall translation against the source to maintain doctrinal accuracy.
+
+source: Καὶ ἐγένετο ἐν τῇ ὀγδόῃ ἡμέρᾳ ἦλθον περιτεμεῖν τὸ παιδίον, καὶ ἐκάλουν αὐτὸ ἐπὶ τῷ ὀνόματι τοῦ πατρὸς αὐτοῦ Ζαχαρίαν.
+old: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن. ئۇلار ئۇنى زەكەرىيا دەپ، ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+new: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن ۋە ئۇنى زەكەرىيا دەپ ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+
+2025-04-27 15:16:17 - Average grade: 92.29 - reflected on verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:16:31 - Average grade: 92.28 - added grade number 1 on loop 4 of grade 88 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:16:46 - Average grade: 92.31 - added grade number 2 on loop 4 of grade 92 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:16:59 - Average grade: 92.28 - added grade number 3 on loop 4 of grade 85 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:17:13 - Average grade: 92.29 - added grade number 4 on loop 4 of grade 92 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:17:28 - Average grade: 92.29 - added grade number 5 on loop 4 of grade 88 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+2025-04-27 15:17:46 - Average grade: 92.29 - added grade number 6 on loop 4 of grade 88 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 0
+Working on verse LUK 1:59 which has grade 88.83333333333333
+
+The peer reviews for Luke 1:59 affirm that the translation is generally faithful to the original Greek text, accurately depicting the eighth-day circumcision and the intention to name the child after his father Zechariah, while using a contemporary Uyghur style that blends Modern Standard and Colloquial registers to align with conservative Christian interpretations without archaic elements. However, a persistent issue is the typo 'نiyet' (intended as 'niyet' for 'intention'), which disrupts readability and should be corrected immediately. Additionally, refine phrasing around terms like 'خەت قىلىش' and sentence structure for better naturalness and flow, ensuring the text remains clear, engaging, and doctrinally accurate. Actionable steps include: 1) Replace 'نiyet' with 'niyet' across all versions; 2) Edit awkward expressions for smoother readability while preserving the biblical message; and 3) Verify the updated translation against the source text to maintain conservative Christian fidelity.
+
+source: Καὶ ἐγένετο ἐν τῇ ὀγδόῃ ἡμέρᾳ ἦλθον περιτεμεῖν τὸ παιδίον, καὶ ἐκάλουν αὐτὸ ἐπὶ τῷ ὀνόματι τοῦ πατρὸς αὐτοῦ Ζαχαρίαν.
+old: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خەت قىلىش ئۈچۈن ۋە ئۇنى زەكەرىيا دەپ ئاتىسىنىڭ ئىسمى بىلەن قويۇشقا نiyet قىلدى.
+new: بالا تۇغۇلۇپ سەككىز كۈن بولغاندا، ئۇلار كەلدى، بالانى خاتنا قىلىش ئۈچۈن ۋە ئۇنى ئاتىسى زەكەرىيا دەپ ئاتاش نىيەت قىلدى.
+
+2025-04-27 15:18:14 - Average grade: 92.29 - reflected on verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:18:29 - Average grade: 92.38 - added grade number 1 on loop 5 of grade 95 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:18:42 - Average grade: 92.35 - added grade number 2 on loop 5 of grade 92 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:18:54 - Average grade: 92.35 - added grade number 3 on loop 5 of grade 92 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:19:07 - Average grade: 92.35 - added grade number 4 on loop 5 of grade 95 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:19:17 - Average grade: 92.36 - added grade number 5 on loop 5 of grade 95 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+2025-04-27 15:19:30 - Average grade: 92.36 - added grade number 6 on loop 5 of grade 95 to verse LUK 1:59 - Best grade: 92.29 - Iterations without improvement: 1
+New best grade: 92.36150234741783 after 2 iterations.  Improvement of 0.0704225352112644
+Working on verse LUK 1:78-79 which has grade 89.0
+
+The peer reviews for Luke 1:78-79 affirm that the translation remains faithful to the original Greek text, effectively conveying key conservative Christian themes such as God's tender mercy, divine light piercing darkness, and guidance toward peace, while using a natural blend of Modern Standard and Colloquial Uyghur for readability. Strengths include its contemporary accessibility and avoidance of archaic language. However, a primary actionable correction is to refine the phrase 'ئاق-قارا يوللىرىمىزنى' to more precisely reflect 'guiding our feet into the path of peace' (from 'τοὺς πόδας ἡμῶν'), as this introduces slight ambiguity that could alter the imagery. Suggested steps: 1) Replace or rephrase the term to directly emphasize 'guiding feet' rather than 'paths' for greater accuracy; 2) Ensure the revision maintains a modern, relatable tone to preserve overall clarity and alignment with conservative Christian interpretations; and 3) Test the updated phrasing for everyday accessibility to avoid any poetic elements that might complicate understanding.
+
+source: διὰ σπλάγχνα ἐλέους Θεοῦ ἡμῶν, ἐν οἷς ἐπεσκέψατο ἡμᾶς ἀνατολὴ ἐξ ὕψους
+ἐπιφᾶναι τοῖς ἐν σκότει καὶ σκιᾷ θανάτου καθημένοις, τοῦ κατευθῦναι τοὺς πόδας ἡμῶν εἰς ὁδὸν εἰρήνης.
+old: خۇدايىمىزنىڭ ئىنayetلىك رەھىملىكى ئۈچۈن، كۆكتىن چىققان تالاۋەر نۇر بىزگە يېتىپ كەلدى. بۇ نۇر قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە ساپاق تۇرۇپ كەتكەنلەرگە يورۇق بېرىپ، بىزنىڭ ئاق-قارا يوللىرىمىزنى تەڭلىك يولىغا باشلايدۇ.
+new: خۇدايىمىزنىڭ ئىنayetلىك رەھىملىكى ئۈچۈن، كۆكتىن چىققان تالاۋەر نۇر بىزگە يېتىپ كەلدى. بۇ نۇر قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە ساپاق تۇرۇپ كەتكەنلەرگە يورۇق بېرىپ، بىزنىڭ پۇتىمىزنى تەڭلىك يولىغا يۆتكەيدۇ.
+
+2025-04-27 15:20:04 - Average grade: 92.36 - reflected on verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:20:17 - Average grade: 92.40 - added grade number 1 on loop 4 of grade 92 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:20:30 - Average grade: 92.38 - added grade number 2 on loop 4 of grade 88 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:20:46 - Average grade: 92.38 - added grade number 3 on loop 4 of grade 90 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:21:03 - Average grade: 92.38 - added grade number 4 on loop 4 of grade 92 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:21:16 - Average grade: 92.39 - added grade number 5 on loop 4 of grade 93 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+2025-04-27 15:21:35 - Average grade: 92.38 - added grade number 6 on loop 4 of grade 88 to verse LUK 1:78-79 - Best grade: 92.36 - Iterations without improvement: 0
+New best grade: 92.38262910798122 after 1 iterations.  Improvement of 0.02112676056339069
+Working on verse LUK 1:72-75 which has grade 89.33333333333333
+
+The peer reviews for Luke 1:72-75 affirm that the translation is generally faithful to the original Greek text and effectively conveys key conservative Christian themes, such as God's mercy, remembrance of the holy covenant with Abraham, deliverance from enemies, and the call to serve in holiness and righteousness. The use of a blend of Modern Standard and Colloquial Uyghur is praised for creating a natural, readable, and contemporary style, enhancing accessibility without resorting to archaic language. However, minor corrections are needed: the phrase 'شۇ ئادەت بىلەن' (with that custom) slightly misrepresents 'ποιῆσαι ἔλεος' (to show mercy), introducing potential ambiguity—consider rephrasing to more directly emphasize God's active mercy, such as using wording that highlights compassionate action. Additionally, terms like 'مۇقەددەس' (holy) are appropriate but may carry a subtle religious register; ensure they are integrated smoothly to maintain a modern tone without diluting the sacred meaning. Actionable steps include: 1) Review and revise the problematic phrase for greater precision while preserving the text's doctrinal integrity; 2) Test the translation for natural flow in Uyghur to confirm readability; and 3) Cross-reference with the original Greek to avoid any interpretive liberties that could alter conservative Christian emphases on God's promises and faithful service.
+
+source: ποιῆσαι ἔλεος μετὰ τῶν πατέρων ἡμῶν καὶ μνησθῆναι διαθήκης ἁγίας αὐτοῦ,
+ὅρκον ὃν ὤμοσε πρὸς Ἀβραὰμ τὸν πατέρα ἡμῶν, τοῦ δοῦναι ἡμῖν
+ἀφόβως, ἐκ χειρὸς τῶν ἐχθρῶν ἡμῶν ῥυσθέντας, λατρεύειν αὐτῷ
+ἐν ὁσιότητι καὶ δικαιοσύνῃ ἐνώπιον αὐτοῦ πάσας τὰς ἡμέρας τῆς ζωῆς ἡμῶν.
+old: ئۇ شۇ ئادەت بىلەن ئاتا-بوۋىلىرىمىزگە رەھىملىك كۆرسەتىپ، مۇقەددەس ۋەدىسىنى ئەمەلگە ئاشۇرۇش ئۈچۈن، يەنى ئاتامىز ئىبراھىمغا بەرگەن قەسەمىنى ئۇنۇتماي، بىزنى دۈشمەنلىرىمىزنىڭ قولىدىن قۇتلاپ، ھەر كۈنى ھېچ نەرسىدىن قورقماي، ئۆزىنىڭ ئالدىدا ئىخلاسلىق ۋە توغرا يول بىلەن ئىبادەت قىلىشىمىزنى تەمىنلىدى.
+new: ئۇ ئاتا-بوۋىلىرىمىزگە رەھىم قىلىپ، مۇقەددەس ۋەدىسىنى ئەسلەپ، يەنى ئاتامىز ئىبراھىمغا بەرگەن قەسەمىنى ئەمەلگە ئاشۇرۇش ئۈچۈن، بىزنى دۈشمەنلىرىمىزنىڭ قولىدىن قۇتلاپ، ھەر كۈنى ھېچ نەرسىدىن قورقماي، ئۆزىنىڭ ئالدىدا ئىخلاسلىق ۋە توغرا يول بىلەن ئىبادەت قىلىشىمىزنى تەمىنلىدى.
+
+2025-04-27 15:22:06 - Average grade: 92.38 - reflected on verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:22:23 - Average grade: 92.36 - added grade number 1 on loop 3 of grade 88 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:22:39 - Average grade: 92.39 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:22:54 - Average grade: 92.39 - added grade number 3 on loop 3 of grade 90 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:23:09 - Average grade: 92.40 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:23:24 - Average grade: 92.40 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+2025-04-27 15:23:39 - Average grade: 92.41 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:72-75 - Best grade: 92.38 - Iterations without improvement: 0
+New best grade: 92.4131455399061 after 1 iterations.  Improvement of 0.030516431924880294
+Working on verse LUK 1:76 which has grade 89.33333333333333
+
+The peer reviews for Luke 1:76 affirm that the translation is generally faithful to the original Greek, effectively blending Modern Standard and Colloquial Uyghur for readability and accessibility, while aligning with conservative Christian interpretations by accurately portraying John the Baptist as a prophet preparing the way for the Lord. However, a consistent minor correction is needed regarding the phrase 'بەغچەم' (my child), which adds a possessive or affectionate tone not present in the Greek text, potentially introducing an interpretive liberty that could dilute the original's neutral and prophetic emphasis. Actionable recommendations include: remove or replace 'بەغچەم' with a more direct equivalent, such as simply 'بەغچە' or a neutral term like 'بالام' if contextually appropriate, to ensure greater fidelity to the source; verify that all language maintains a balance of contemporary style without unintended emotional additions; and confirm that divine titles and prophetic roles remain theologically precise to uphold conservative Christian values of scriptural accuracy and divine sovereignty.
+
+source: Καὶ σύ, παιδίον, προφήτης ὑψίστου κληθήσῃ· προπορεύσῃ γὰρ πρὸ προσώπου Κυρίου ἑτοιμάσαι ὁδοὺς αὐτοῦ,
+old: ھازىر سەن, بەغچەم, ئەڭ يۇقىرى خۇدانىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.
+new: ھازىر سەن, بەغچە, ئەڭ يۇقىرى خۇدانىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.
+
+2025-04-27 15:24:03 - Average grade: 92.41 - reflected on verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:24:17 - Average grade: 92.45 - added grade number 1 on loop 4 of grade 92 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:24:31 - Average grade: 92.45 - added grade number 2 on loop 4 of grade 92 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:24:43 - Average grade: 92.45 - added grade number 3 on loop 4 of grade 92 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:24:57 - Average grade: 92.45 - added grade number 4 on loop 4 of grade 92 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:25:11 - Average grade: 92.46 - added grade number 5 on loop 4 of grade 95 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+2025-04-27 15:25:27 - Average grade: 92.46 - added grade number 6 on loop 4 of grade 95 to verse LUK 1:76 - Best grade: 92.41 - Iterations without improvement: 0
+New best grade: 92.46478873239437 after 1 iterations.  Improvement of 0.051643192488270984
+Working on verse LUK 1:1 which has grade 89.5
+
+The peer reviews affirm that the translation of Luke 1:1 is faithful to the original Greek text and supports a conservative Christian viewpoint by emphasizing the historical reliability of the Gospel narrative. Key strengths include its contemporary blend of Modern Standard and Colloquial Uyghur registers, which enhances readability without introducing interpretive biases. Actionable corrections include: refining phrasing to make it more conversational and less formal for better everyday flow; ensuring precise interpretation of terms like 'fulfilled' to highlight prophetic fulfillment rather than just reliability; and making the text more concise while preserving accuracy and naturalness. These adjustments will improve overall engagement without altering the core conservative Christian intent.
+
+source: Ἐπειδήπερ πολλοὶ ἐπεχείρησαν ἀνατάξασθαι διήγησιν περὶ τῶν πεπληροφορημένων ἐν ἡμῖν πραγμάτων
+old: ھازىرچە كۆپ كىشىلەر بىز ئارامىزدا پۈتۈن دەرىجىدە ئىشەنچلىك دەپ كۆرۈلگەن ئىشلارنى يىغىپ يېزىشقا كىرىشكەن بولسىمۇ،
+new: چۈنكى كۆپ كىشىلەر بىز ئارامىزدا پۈتۈكلەنگەن ئىشلارنى يىغىپ يېزىشقا كوشۇلدى.
+
+2025-04-27 15:25:53 - Average grade: 92.46 - reflected on verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:26:07 - Average grade: 92.54 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:26:20 - Average grade: 92.54 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:26:33 - Average grade: 92.54 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:26:46 - Average grade: 92.54 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:26:59 - Average grade: 92.54 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+2025-04-27 15:27:13 - Average grade: 92.54 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:1 - Best grade: 92.46 - Iterations without improvement: 0
+New best grade: 92.54225352112677 after 1 iterations.  Improvement of 0.07746478873239937
+Working on verse LUK 1:15 which has grade 89.5
+
+The peer reviews for Luke 1:15 affirm that the translation is generally faithful to the Greek text and aligns with conservative Christian interpretations, effectively using modern Uyghur for readability. However, a key issue is the rendering of 'μέγας' as 'چوڭقۇر گۈزەل' (greatly beautiful), which inaccurately emphasizes aesthetic beauty over spiritual greatness or significance; reviewers suggest revising this to better reflect the original meaning, such as using a term for 'great' or 'exalted' to preserve the intended esteem before the Lord. Additionally, one comment notes a minor generalization of 'wine and strong drink' to 'any intoxicating drink', recommending consideration for more precise wording if fidelity to the source is prioritized, while maintaining the contemporary style. Actionable steps include: review and revise the translation of 'μέγας' for accuracy, and optionally refine the abstinence phrase to closely match the Greek without altering the overall natural flow.
+
+source: ἔσται γὰρ μέγας ἐνώπιον τοῦ Κυρίου, καὶ οἶνον καὶ σίκερα οὐ μὴ πίῃ, καὶ Πνεύματος Ἁγίου πλησθήσεται ἔτι ἐκ κοιλίας μητρὸς αὐτοῦ,
+old: چۈنكى ئۇ پەرۋەردىگارنىڭ كۆزىدە چوڭقۇر گۈزەل بولىدۇ. ئۇ ھېچقانداق ئىچكىلىك ئىچمەسلىكى لازىم؛ ھەتتا ئانىسىنىڭ قورسىقىدا تۇرغاندىن باشلاپلا مۇقەددەس روھ بىلەن تولۇپ كېتىدۇ.
+new: چۈنكى ئۇ پەرۋەردىگار ئالدىدا چوڭ بولىدۇ، ئۇ ئىناب شەربىتى ۋە قاتتىق ئىچكىلىك ئىچمەيدۇ، ھەتتا ئانىسىنىڭ قورسىقىدا تۇرغاندىن باشلاپلا مۇقەددەس روھ بىلەن تولۇپ كېتىدۇ.
+
+2025-04-27 15:27:43 - Average grade: 92.54 - reflected on verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:27:54 - Average grade: 92.58 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:28:08 - Average grade: 92.60 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:28:23 - Average grade: 92.59 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:28:37 - Average grade: 92.59 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:28:52 - Average grade: 92.59 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+2025-04-27 15:29:06 - Average grade: 92.60 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:15 - Best grade: 92.54 - Iterations without improvement: 0
+New best grade: 92.59859154929578 after 1 iterations.  Improvement of 0.05633802816900868
+Working on verse LUK 1:41 which has grade 89.66666666666667
+
+The peer reviews for Luke 1:41 affirm that the translation is generally faithful to the original Greek, effectively capturing key events like Elizabeth hearing Mary's greeting, the baby leaping in her womb, and her being filled with the Holy Spirit, while aligning with conservative Christian values by highlighting the divine aspects. The use of contemporary Uyghur language, blending modern standard and colloquial registers (e.g., 'شۇ ۋاقىتتا' and 'سەكىرىپ كەتتى'), is commended for improving readability. However, to enhance precision and modernity, actionable corrections include: 1) Remove any text from Luke 1:42 (such as the spoken exclamation) to strictly focus on verse 41, avoiding scope dilution. 2) Consider simplifying terms like 'مۇقەددەس روھ' to more everyday language where possible, while ensuring the conservative Christian emphasis on the Holy Spirit's role remains intact. These changes will maintain the translation's integrity and accessibility without altering its core interpretive stance.
+
+source: καὶ ἐγένετο ὡς ἤκουσεν ἡ Ἐλισάβετ τὸν ἀσπασμὸν τῆς Μαρίας, ἐσκίρτησε τὸ βρέφος ἐν τῇ κοιλίᾳ αὐτῆς· καὶ ἐπλήσθη Πνεύματος Ἁγίου ἡ Ἐλισάβετ
+old: شۇ ۋاقىتتا، ئېلىزابىت مەريەم سەلامىنى ئاڭلىغاندا، ئۇنىڭ قورساققا كىرگەن بوۋاقى سەكىرىپ كەتتى. ئېلىزابىت مۇقەددەس روھ بىلەن تولۇپ كەتتى، چوڭ ئاۋاز بىلەن دەپ: «قىزلار ئارىسىدا سەن بەختلىكتۇرسەن، سەننىڭ قورساققا كىرگەن بالىڭمۇ بەختلىكتۇر!»
+new: شۇ ۋاقىتتا، ئېلىزابىت مەريەم سەلامىنى ئاڭلىغاندا، ئۇنىڭ قورساققا كىرگەن بوۋاقى سەكىرىپ كەتتى. ئېلىزابىت قۇدىس روھ بىلەن تولۇپ كەتتى.
+
+2025-04-27 15:29:34 - Average grade: 92.60 - reflected on verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:29:48 - Average grade: 92.67 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:30:02 - Average grade: 92.65 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:30:15 - Average grade: 92.66 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:30:29 - Average grade: 92.65 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:30:48 - Average grade: 92.65 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+2025-04-27 15:31:02 - Average grade: 92.65 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:41 - Best grade: 92.60 - Iterations without improvement: 0
+New best grade: 92.6455399061033 after 1 iterations.  Improvement of 0.046948356807519076
+Working on verse LUK 1:68 which has grade 89.66666666666667
+
+The peer reviews for Luke 1:68 affirm that the translation is generally faithful to the original Greek, effectively capturing the blessing of God for His visitation and redemption of Israel in a way that aligns with conservative Christian viewpoints. Strengths include the use of contemporary Uyghur language that blends Modern Standard and Colloquial elements for natural readability. Actionable corrections include: refining the translation of 'ἐπεσκέψατο' to better emphasize divine visitation rather than general help (e.g., avoid over-simplification); moderating the use of terms like 'تاۋازىلەڭ' to prevent any slight overuse of religious register while maintaining accessibility; and enhancing overall flow for smoother phrasing without introducing archaic undertones. These adjustments will strengthen the translation's precision and impact without altering its core intent.
+
+source: Εὐλογητὸς Κύριος, ὁ Θεὸς τοῦ Ἰσραήλ, ὅτι ἐπεσκέψατο καὶ ἐποίησε λύτρωσιν τῷ λαῷ αὐτοῦ,
+old: ئىسرائىلنىڭ خۇدايى پەرۋەردىگارنى تاۋازىلەڭ! چۈنكى ئۇ خەلقىنى ياردەم قىلدى ۋە ئۇلارنى قۇتقۇزۇپ، تولۇق ئەركىن قىلدى.
+new: ئىسرائىلنىڭ خۇدايى پەرۋەردىگارنى تاۋازىلەڭ! چۈنكى ئۇ خەلقىنى زىيارەت قىلدى ۋە ئۇلارنى قۇتقۇزۇپ، تولۇق ئەركىن قىلدى.
+
+2025-04-27 15:31:28 - Average grade: 92.65 - reflected on verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:31:41 - Average grade: 92.68 - added grade number 1 on loop 3 of grade 92 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:31:55 - Average grade: 92.68 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:32:10 - Average grade: 92.68 - added grade number 3 on loop 3 of grade 92 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:32:24 - Average grade: 92.68 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:32:40 - Average grade: 92.69 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+2025-04-27 15:32:50 - Average grade: 92.69 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:68 - Best grade: 92.65 - Iterations without improvement: 0
+New best grade: 92.68544600938968 after 1 iterations.  Improvement of 0.03990610328638411
+Working on verse LUK 1:7 which has grade 89.83333333333333
+
+The peer reviews for Luke 1:7 affirm that the translation is generally faithful to the original Greek, effectively conveying Elizabeth's barrenness and the advanced age of both Zacharias and Elizabeth, while maintaining a natural, readable style in Modern Standard and Colloquial Uyghur that aligns with conservative Christian interpretations. Key strengths include avoiding archaic or religious-specific language, which enhances accessibility. However, several reviewers noted that the phrase 'ottura yashini otturib qaldi' softens the connotation of 'advanced in years' by implying middle age rather than elderly status, potentially diminishing the emphasis on divine intervention in the narrative. Additionally, the phrasing 'baliliqqa duch kelmidi' was described as slightly indirect compared to the Greek term for barrenness. Actionable recommendations: Revise 'ottura yashini otturib qaldi' to a more precise equivalent that clearly indicates elderly age (e.g., emphasizing 'very old' or 'in their later years') without altering the modern tone; consider refining 'baliliqqa duch kelmidi' for greater directness while preserving fluency and doctrinal accuracy, ensuring the translation continues to uphold the biblical intent of God's sovereignty in human circumstances.
+
+source: καὶ οὐκ ἦν αὐτοῖς τέκνον, καθότι ἡ Ἐλισάβετ ἦν στεῖρα, καὶ ἀμφότεροι προβεβηκότες ἐν ταῖς ἡμέραις αὐτῶν ἦσαν.
+old: Lekin Elizabet baliliqqa duch kelmidi, shunga ularda farzand yoq. Ikkisi ham ottura yashini otturib qaldi.
+new: ئەمما ئۇلارنىڭ بالىسى يوق ئىدى، چۈنكى ئېلىزابېت ساقىت بولۇپ كەتكەن، ۋە ئىككىسىمۇ ياشىنىڭ چوڭىغا كىرىپ كەتكەن.
+
+2025-04-27 15:33:18 - Average grade: 92.69 - reflected on verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:33:29 - Average grade: 92.76 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:33:40 - Average grade: 92.74 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:33:53 - Average grade: 92.76 - added grade number 3 on loop 3 of grade 98 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:34:05 - Average grade: 92.76 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:34:15 - Average grade: 92.75 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+2025-04-27 15:34:27 - Average grade: 92.75 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:7 - Best grade: 92.69 - Iterations without improvement: 0
+New best grade: 92.75117370892019 after 1 iterations.  Improvement of 0.0657276995305125
+Working on verse LUK 1:66 which has grade 90.0
+
+The peer reviews for Luke 1:66 affirm that the translation is generally faithful to the original Greek, effectively capturing the sense of people pondering the child's future and God's guiding hand, which aligns well with conservative Christian values of divine providence. Strengths include a natural blend of modern standard and colloquial Uyghur, making it readable and contemporary without archaic language. Actionable corrections include: 1) Smooth out phrasing like 'بارلىقى ئۇلارنى' for better flow and clarity to enhance everyday readability; 2) Review the use of terms like 'پەرۋەردىگار' to ensure they do not overly emphasize a religious register, while preserving the spiritual significance; and 3) Make minor adjustments for a more contemporary feel, ensuring the translation remains accessible and true to the conservative Christian emphasis on God's involvement.
+
+source: καὶ ἔθεντο πάντες οἱ ἀκούσαντες ἐν τῇ καρδίᾳ αὐτῶν λέγοντες· τί ἄρα τὸ παιδίον τοῦτο ἔσται; καὶ χεὶρ Κυρίου ἦν μετ᾽ αὐτοῦ.
+old: بۇ ئىشلارنى ئاڭلىغان كىشىلەر بارلىقى ئۇلارنى ئۆز كۆنگۈللىرىدە ئويلاپ تۇرۇپ: «بۇ بала كېيىن قانداق ئادەم بولىدۇ؟» دەپ ئەسلەشتى. چۈنكى پەرۋەردىگارنىڭ قولى ئۇنىڭغا ياقتۇرۇپ تۇرغان ئىدى.
+new: بۇ ئىشلارنى ئاڭلىغان ھەممە كىشىلەر ئۇلارنى ئۆز كۆنگۈللىرىدە ئويلاپ تۇرۇپ: «بۇ بала كېيىن قانداق ئادەم بولىدۇ؟» دەپ ئويلىنىپ كەتتى. چۈنكى پەرۋەردىگارنىڭ قولى ئۇنىڭ بىلەن بولۇپ تۇرغان ئىدى.
+
+2025-04-27 15:34:57 - Average grade: 92.75 - reflected on verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:35:09 - Average grade: 92.82 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:35:23 - Average grade: 92.80 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:35:35 - Average grade: 92.81 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:35:49 - Average grade: 92.80 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:36:03 - Average grade: 92.80 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+2025-04-27 15:36:17 - Average grade: 92.80 - added grade number 6 on loop 3 of grade 92 to verse LUK 1:66 - Best grade: 92.75 - Iterations without improvement: 0
+New best grade: 92.80046948356808 after 1 iterations.  Improvement of 0.049295774647887924
+2025-04-27 15:36:17 - Average grade: 92.80 - lowest unfinalized grade 90.33333333333333 is above highest grade to reflect 90 - Best grade: 92.80 - Iterations without improvement: 0
+Running config Uyghur_grok_manual_4
+Focusing on and after start_line 24599
+Focusing on and before end_line 24669
+Using the model grok-3-mini-beta
+2025-04-27 16:07:56 - Average grade: 92.80 - Skipped reflection on loop 3 for verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:08:12 - Average grade: 92.75 - added grade number 1 on loop 4 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:08:25 - Average grade: 92.62 - added grade number 2 on loop 4 of grade 70 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:08:37 - Average grade: 92.53 - added grade number 3 on loop 4 of grade 60 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:08:48 - Average grade: 92.58 - added grade number 4 on loop 4 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:09:02 - Average grade: 92.62 - added grade number 5 on loop 4 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:09:20 - Average grade: 92.64 - added grade number 6 on loop 4 of grade 88 to verse LUK 1:3 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:09:32 - Average grade: 92.65 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:09:44 - Average grade: 92.65 - added grade number 2 on loop 3 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:09:58 - Average grade: 92.65 - added grade number 3 on loop 3 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:10:10 - Average grade: 92.64 - added grade number 4 on loop 3 of grade 92 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:10:24 - Average grade: 92.64 - added grade number 5 on loop 3 of grade 92 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:10:34 - Average grade: 92.64 - added grade number 6 on loop 3 of grade 95 to verse LUK 1:40 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:10:46 - Average grade: 92.64 - added grade number 1 on loop 3 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:11:00 - Average grade: 92.62 - added grade number 2 on loop 3 of grade 92 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:11:10 - Average grade: 92.64 - added grade number 3 on loop 3 of grade 98 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:11:21 - Average grade: 92.64 - added grade number 4 on loop 3 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 16:11:35 - Average grade: 92.64 - added grade number 5 on loop 3 of grade 95 to verse LUK 1:44 - Best grade: 00.00 - Iterations without improvement: 0

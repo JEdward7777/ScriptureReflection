@@ -1,0 +1,84 @@
+Running config Uyghur_manual_2
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 10:49:29 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:49:37 - Average grade: 86.50 - added grade number 2 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:49:42 - Average grade: 86.00 - added grade number 3 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:49:48 - Average grade: 82.00 - added grade number 4 on loop 1 of grade 70 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:49:54 - Average grade: 79.60 - added grade number 5 on loop 1 of grade 70 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:49:58 - Average grade: 81.33 - added grade number 6 on loop 1 of grade 90 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 81.33333333333333 after 1 iterations.  Improvement of 81.33333333333333
+Working on verse LUK 1:9 which has grade 81.33333333333333
+
+The translation of Luke 1:9 accurately conveys the conservative Christian meaning but needs refinement for better clarity and naturalness. Specifically, replace the awkward and unclear phrase 'چەك تاشلىغاندا شۇنداق بولدىكى' and the word 'چەك' used in this context, as they do not clearly or idiomatically express 'being chosen by lot.' Simplify and clarify this concept with more straightforward phrasing, such as 'he was chosen by lot to enter the Lord's temple to burn incense.' Shorten and simplify the sentence structure for improved readability, using modern, Turkic-based vocabulary while preserving a dignified and respectful tone. Avoid archaic, colloquial, or potentially misleading terms to maintain faithfulness to the original Greek text and ensure the translation is accessible and engaging to contemporary readers.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئەدەبىي ئىقتىدارىغا ئاساسەن، ئۇ پەرۋەردىگارنىڭ مەبۇتىغا كىرىپ خۇشبۇي سېلىشقا تەڭشەنگەن.
+
+2025-04-25 10:50:12 - Average grade: 81.33 - reflected on verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:15 - Average grade: 95.00 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:18 - Average grade: 93.50 - added grade number 2 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:21 - Average grade: 94.00 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:25 - Average grade: 94.25 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:29 - Average grade: 94.40 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+2025-04-25 10:50:34 - Average grade: 94.00 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 81.33 - Iterations without improvement: 0
+New best grade: 94.0 after 1 iterations.  Improvement of 12.666666666666671
+2025-04-25 10:50:34 - Average grade: 94.00 - lowest unfinalized grade 94.0 is above highest grade to reflect 90 - Best grade: 94.00 - Iterations without improvement: 0
+Running config Uyghur_manual_2
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 10:53:22 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:53:26 - Average grade: 81.50 - added grade number 2 on loop 1 of grade 78 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:53:30 - Average grade: 82.67 - added grade number 3 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:53:33 - Average grade: 83.25 - added grade number 4 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:53:39 - Average grade: 83.60 - added grade number 5 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 10:53:42 - Average grade: 82.67 - added grade number 6 on loop 1 of grade 78 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 82.66666666666667 after 1 iterations.  Improvement of 82.66666666666667
+Working on verse LUK 1:9 which has grade 82.66666666666667
+
+The peer review consistently indicates that the translation effectively conveys the conservative Christian meaning of Luke 1:9, preserving the priestly custom of incense offering in the Lord's temple. However, the phrase "چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى" used to express the casting of lots and the priest being chosen is awkward, unclear, and may confuse readers. This expression lacks naturalness and clarity in contemporary Uyghur and could be simplified and clarified to better reflect the original Greek ritual without ambiguity. The rest of the translation maintains a dignified, respectful tone with appropriate Turkic vocabulary and syntax, meeting the style and length guidelines. Therefore, the primary corrective action is to revise the wording regarding the lot casting to produce a clearer, more straightforward, and natural phrasing that upholds faithfulness, accessibility, and the conservative Christian viewpoint.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلار ئادىتىگە بىنائەن، ئۇ نۆۋەتتە چەك تاشلاش ئارقىلىق تەيىنلىنىپ، رەبنىڭ مۇقدەس مەڭگۈرىگە كىرىپ خۇشبۇي سېلىشقا مۇھتاج بولدى.
+
+2025-04-25 10:53:56 - Average grade: 82.67 - reflected on verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:03 - Average grade: 92.00 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:08 - Average grade: 93.50 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:11 - Average grade: 93.00 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:17 - Average grade: 93.50 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:20 - Average grade: 93.80 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+2025-04-25 10:54:22 - Average grade: 93.50 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 82.67 - Iterations without improvement: 0
+New best grade: 93.5 after 1 iterations.  Improvement of 10.833333333333329
+2025-04-25 10:54:22 - Average grade: 93.50 - lowest unfinalized grade 93.5 is above highest grade to reflect 90 - Best grade: 93.50 - Iterations without improvement: 0
+Running config Uyghur_manual_2
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 11:02:53 - Average grade: 88.00 - added grade number 1 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:02:58 - Average grade: 86.50 - added grade number 2 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:03:03 - Average grade: 86.00 - added grade number 3 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:03:06 - Average grade: 85.75 - added grade number 4 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:03:08 - Average grade: 87.00 - added grade number 5 on loop 1 of grade 92 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:03:13 - Average grade: 86.67 - added grade number 6 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 86.66666666666667 after 1 iterations.  Improvement of 86.66666666666667
+Working on verse LUK 1:9 which has grade 86.66666666666667
+
+The peer reviews agree that the translation accurately conveys the original text's meaning and aligns with conservative Christian perspectives. However, the repeated phrase 'چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى' is unclear and awkward, leading to ambiguity and potential confusion. It is recommended to rephrase this segment for greater clarity and precision, directly reflecting the Greek 'κατὰ τὸ ἔθος τῆς ἱερατείας' as 'according to the custom of the priesthood' and clearly stating that Zacharias was chosen by lot to enter the Lord's temple to burn incense. Sentence structure should be improved by breaking up longer sentences into shorter ones to enhance readability and flow. Vocabulary and tone are appropriate, maintaining a dignified, respectful style without archaic or overly formal language. Overall, minor stylistic refinements focusing on clarity, sentence brevity, and precise wording will enhance the translation's quality while preserving its faithful and conservative Christian content.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئادىتىگە ماس ھالدا، زەكەرىيا نۆۋەت تەڭشىلىكى ئارقىلىق ساپ كىلىپ، پەرۋەردىگارنىڭ مەبېدگە كىرىپ خۇشبۇي سېلىشقا تاللانغان ئىدى.
+
+2025-04-25 11:03:29 - Average grade: 86.67 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:32 - Average grade: 92.00 - added grade number 1 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:35 - Average grade: 93.50 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:40 - Average grade: 93.00 - added grade number 3 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:44 - Average grade: 93.50 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:47 - Average grade: 93.40 - added grade number 5 on loop 2 of grade 93 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-25 11:03:50 - Average grade: 93.67 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+New best grade: 93.66666666666667 after 1 iterations.  Improvement of 7.0
+2025-04-25 11:03:50 - Average grade: 93.67 - lowest unfinalized grade 93.66666666666667 is above highest grade to reflect 90 - Best grade: 93.67 - Iterations without improvement: 0

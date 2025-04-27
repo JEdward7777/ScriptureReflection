@@ -1001,12 +1001,13 @@ def main():
                 if 'reflection_loops' in verse:
                     reflection_loops = verse['reflection_loops']
                     if reflection_loops:
-                        first_reflection_loop = reflection_loops[0]
-                        first_grade = grade_reflect_loop.compute_grade_for_reflection_loop(
-                            first_reflection_loop, fake_config_for_grade_reflect_loop )
+                        #first_reflection_loop = reflection_loops[0]
+                        for earlier_reflection_loop in reflection_loops:
+                            earlier_grade = grade_reflect_loop.compute_grade_for_reflection_loop(
+                                earlier_reflection_loop, fake_config_for_grade_reflect_loop )
 
-                        if first_grade is not None:
-                            return final_grade-first_grade
+                            if earlier_grade is not None:
+                                return final_grade-earlier_grade
                 return None
 
 

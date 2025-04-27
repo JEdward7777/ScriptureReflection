@@ -165,7 +165,7 @@ def compute_grade_for_reflection_loop( reflection_loop, config ):
     #if there is at least one grade, go ahead and average it.
     grade_count = 0
     grade_sum = 0
-    for grade in reflection_loop['grades']:
+    for grade in reflection_loop.get('grades', []):
         grade_count += 1
         grade_sum += grade['grade']
 
@@ -246,7 +246,7 @@ def construct_translation_objective( verse, config, indexed_comments ):
     return result
 
 def build_common_context( selected_verse, reflection_output, config, over_ridden_references,
-        indexed_comments ):
+        indexed_comments, client ):
     """
     There are different LLM operations but they have common context.  This builds it.
     """
@@ -265,6 +265,11 @@ def build_common_context( selected_verse, reflection_output, config, over_ridden
     for index in range( first_included_index, last_included_index + 1 ):
         verse_reference = utils.look_up_key( reflection_output[index], config['reference_key'] )
         if verse_reference is not None and verse_reference not in over_ridden_references:
+
+            #if this verse is going to be used for context, make sure the adaptation pass has happened
+            #for it.
+            run_adaptation_pass( reflection_output[index], client, config )
+
             translation = utils.look_up_key( reflection_output[index], config['translation_key'] )
             source = utils.look_up_key( reflection_output[index], config['source_key'] )
 
@@ -300,7 +305,14 @@ def grade_verse( selected_verse, common_context, client, config ):
         "conservitive Christian viewpoint."
 
     user_message_array = [
-        common_context, "\n",
+        common_context, "\n" ]
+
+    if 'dictionary' in config:
+        if 'dictionary_description' in config:
+            user_message_array += ["\n" + config['dictionary_description'] + "\n" ]
+        user_message_array.append( json.dumps( config['dictionary'], ensure_ascii=False ) + "\n\n" )
+
+    user_message_array += [
         "Instructions: Review the students work translating ", vref, " from a conservative ",
         "Christian perspective and give it a grade comment and a grade from 0 to 100 where 0 is ",
         "failing and 100 is perfection.\n"
@@ -571,7 +583,7 @@ def run_config__n_loops( config, api_keys, save_timeout ):
 
 
                 common_context = build_common_context( selected_verse, reflection_output, config,
-                    over_ridden_references, indexed_comments )
+                    over_ridden_references, indexed_comments, client )
 
 
                 #add a new reflection loop if the current last one is None or is complete.
@@ -693,6 +705,114 @@ def load_and_index_comments( config ):
             indexed_comments[vref].append( comment )
     return indexed_comments
 
+def run_adaptation_inference( selected_verse, client, config ):
+    """
+    Run a single pass on the verse to adapt the translation outside of context,
+    so that we can switch modes without the context weighing us done.
+    Normal grading and reflection rounds will happen afterwards within context
+    of the source verse and surounding context.
+    """
+
+    system_message = "You are a conservative Bible Translator who is translating the Bible from a Christain perspective."
+
+    current_translation = utils.look_up_key( selected_verse, config['translation_key'] )
+    vref = utils.look_up_key( selected_verse, config['reference_key'] )
+
+    user_message_array = [
+        "The current translation of ", vref, " is:\n\n```\n", current_translation, "\n```\n\n",
+        config.get( 'adaptation_prompt', '' ).format( vref ), "\n\n",
+        "Run two draft translations before the final updated translation.\n",
+        "Don't add any parenthetical comment to the translation.\n"
+    ]
+
+    if 'dictionary' in config:
+        if 'dictionary_description' in config:
+            user_message_array += ["\n" + config['dictionary_description'] + "\n" ]
+        user_message_array.append( json.dumps( config['dictionary'], ensure_ascii=False ) + "\n\n" )
+
+    user_message = "".join(str(s) for s in user_message_array)
+
+    class AdaptationResponse(BaseModel):
+        """A def for structured response from ChatGPT"""
+        planning_thoughts: str
+        reference: str
+        draft_translation_1: str
+        draft_translation_2: str
+        updated_translation: str
+
+    response = utils.use_model( client,
+        model=config.get( 'adaption-model', config['model'] ),
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": user_message},
+        ],
+        temperature=config['temperature'],
+        top_p=config['top_p'],
+        response_format=AdaptationResponse
+    )
+    result = response.choices[0].message.parsed.model_dump()
+
+    return result
+
+def run_adaptation_pass( verse, client, config ):
+    """
+    Run the adaptation pass on the verse if there is no history in it.
+    If there is a history, don't touch the verse.
+    """
+    if 'adaptation_prompt' not in config:
+        return False
+    
+    if verse.get( 'adapted', False ):
+        return False
+
+    adaptation_result = run_adaptation_inference( verse, client, config )
+
+    reference_key = config['reference_key']
+    translation_key = config['translation_key']
+    translation_comment_key = config.get('translation_comment_key', None)
+
+    print( f"Adapting verse {utils.look_up_key( verse, reference_key )}" )
+    print( f"old: {utils.look_up_key( verse, translation_key )}" )
+    print( f"new: {adaptation_result['updated_translation']}\n")
+
+
+    #Add a new reflection loop if the there isn't one currently,
+    #or if the last one in there already has a graded_verse set in it.
+
+    #make sure reflection_loops exist
+    if 'reflection_loops' not in verse:
+        verse['reflection_loops'] = []
+    reflection_loops = verse['reflection_loops']
+    #Make sure last_reflection_loop exists
+    if len(reflection_loops) == 0:
+        reflection_loops.append( {} )
+    last_reflection_loop = reflection_loops[-1]
+    if 'graded_verse' in last_reflection_loop:
+        last_reflection_loop = {}
+        reflection_loops.append( last_reflection_loop )
+
+    #now stash the adaptation result into the history.
+    if translation_comment_key:
+        last_reflection_loop['graded_verse_comment'] = utils.\
+            look_up_key( verse, translation_comment_key )
+    last_reflection_loop['graded_verse'] = utils.look_up_key(
+        verse, translation_key
+    )
+    last_reflection_loop['is_adaptation'] = True
+
+    #now replace it.
+    utils.set_key( verse, translation_key, adaptation_result['updated_translation'] )
+    if translation_comment_key:
+        utils.set_key( verse, translation_comment_key, adaptation_result['planning_thoughts'] )
+
+    if verse.get( 'human_reviewed', False ):
+        verse['human_reviewed'] = False
+
+    verse['adapted'] = True
+
+    return True
+
+
 def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     """
     Run the reflection loop but with the priority of which verse to process next
@@ -789,6 +909,16 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
                 vref = utils.look_up_key( verse, reference_key )
                 if vref is not None and not vref in over_ridden_references:
+                    #Before we do grading, if this config has an adaptation pass
+                    #we run the adaptation pass as long as this verse doesn't
+                    #have any history in it yet and the config has an adaption pass.
+                    if run_adaptation_pass( verse, client, config ):
+                        output_dirty = True
+                        action_done = f"adapted verse {vref}"
+                        break
+
+
+
                     #check to see if this verse actually needs a reflection skip.
                     #This happens if a comment was applied to the verse, then the latest
                     #grades are not valid anymore so we need a new grading round before
@@ -834,7 +964,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         selected_verse = verse
 
                         common_context = build_common_context( selected_verse, reflection_output,
-                            config, over_ridden_references, indexed_comments )
+                            config, over_ridden_references, indexed_comments, client )
                         new_grade = grade_verse( selected_verse, common_context, client, config )
 
                         #add the new grade to the reflection loop
@@ -950,7 +1080,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
 
                             common_context = build_common_context( selected_verse,
                                 reflection_output, config, over_ridden_references,
-                                indexed_comments )
+                                indexed_comments, client )
                             reflection_result = perform_reflection( selected_verse, common_context,
                                 client, config )
 

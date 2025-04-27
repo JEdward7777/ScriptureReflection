@@ -1,0 +1,38 @@
+Running config Uyghur_manual_3
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 11:25:22 - Average grade: 85.00 - added grade number 1 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:25:26 - Average grade: 85.00 - added grade number 2 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:25:33 - Average grade: 83.33 - added grade number 3 on loop 1 of grade 80 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:25:40 - Average grade: 85.00 - added grade number 4 on loop 1 of grade 90 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:25:46 - Average grade: 85.00 - added grade number 5 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:25:50 - Average grade: 85.00 - added grade number 6 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 85.0 after 1 iterations.  Improvement of 85.0
+Working on verse LUK 1:9 which has grade 85.0
+
+The peer review comments collectively identify that the translation of LUK 1:9 faithfully reflects the Greek original and maintains a conservative Christian perspective. However, the phrase "چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى" intended to express the priest being chosen by casting lots is awkward, unclear, and somewhat archaic or ambiguous in contemporary Uyghur. It should be revised to a clearer, more natural expression that accurately conveys the concept without confusion or unnecessary literalism. Additionally, while "مۇقەددەس جاي" effectively translates "temple of the Lord," considering a slightly more natural or common phrase like "رەبنىڭ مەسچىتى" could enhance readability without compromising theological accuracy. Overall, the translation should maintain its faithfulness and doctrinal integrity while adopting smoother, modern Uyghur phrasing to improve clarity and flow for contemporary readers.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: شۇ چاغدىكى كاھىنلىق ئادىتى بويىچە، ئۇلار پەرۋەردىگارنىڭ «مۇقەددەس جاي»ىغا كىرىپ خۇشبۇي سېلىشقا مۇيەسسەر بولۇشقا چەك تاشلىغاندا شۇنداق بولدىكى، چەك ئۇنىڭغا چىقتى.
+new: كاھىنلىق ئەتىرنى سېلىشنىڭ ئادىتى بويىچە، زەكەرىيا ئۆز نۆۋىتىگە توغرا كەلگەندە، رەبنىڭ مەسچىتىگە كىرىپ، ئەتىر سېلىشقا مۇيەسسەر بولدى.
+
+2025-04-25 11:26:05 - Average grade: 85.00 - reflected on verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:08 - Average grade: 95.00 - added grade number 1 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:11 - Average grade: 95.00 - added grade number 2 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:13 - Average grade: 95.00 - added grade number 3 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:16 - Average grade: 95.00 - added grade number 4 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:19 - Average grade: 95.00 - added grade number 5 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+2025-04-25 11:26:22 - Average grade: 95.00 - added grade number 6 on loop 2 of grade 95 to verse LUK 1:9 - Best grade: 85.00 - Iterations without improvement: 0
+New best grade: 95.0 after 1 iterations.  Improvement of 10.0
+2025-04-25 11:26:22 - Average grade: 95.00 - lowest unfinalized grade 95.0 is above highest grade to reflect 90 - Best grade: 95.00 - Iterations without improvement: 0
+Running config Uyghur_manual_3
+Focusing on and after start_line 24607
+Focusing on and before end_line 24607
+Using the model gpt-4.1-mini
+2025-04-25 11:47:04 - Average grade: 88.00 - added grade number 1 on loop 1 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:47:11 - Average grade: 86.50 - added grade number 2 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:47:15 - Average grade: 86.00 - added grade number 3 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:47:21 - Average grade: 85.75 - added grade number 4 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:47:27 - Average grade: 85.60 - added grade number 5 on loop 1 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-25 11:47:34 - Average grade: 83.83 - added grade number 6 on loop 1 of grade 75 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0

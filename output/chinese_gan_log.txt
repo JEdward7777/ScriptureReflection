@@ -11327,3 +11327,244 @@ new grade: 87.66666666666667
 
 2025-04-24 10:29:45 - Average grade: 81.13 - finalized verse MRK 3:32 - Best grade: 81.13 - Iterations without improvement: 1
 2025-04-24 10:29:47 - Average grade: 81.13 - Didn't find a verse to reflect on.  So done. - Best grade: 81.13 - Iterations without improvement: 2
+Running config chinese_gan_grok_adapted_1
+Focusing on and after start_line 24785
+Focusing on and before end_line 24785
+Using the model grok-3-mini-beta
+Adapting verse LUK 1:9
+old: 他们按照祭司的规矩抽签，抽中 撒迦利亚 到主的殿里去烧香。
+new: 伊哋按祭司个规矩拈签，拈中撒迦利亚到主个殿里头去烧香。
+
+2025-04-27 13:57:56 - Average grade: 00.00 - adapted verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+Adapting verse MRK 16:17
+old: 必有神迹随着信我的人，他们能奉我的名赶鬼，说新的方言，
+new: 必定有神迹跟随信我个儂，伊哋能够用我个名赶鬼，讲新个方言。
+
+Adapting verse MRK 16:18
+old: 又能用手拿蛇，万一喝了什么毒物，也不会受害。他们把手按在病人身上，病人就能痊愈。”
+new: 又能用手拿蛇，万一食了甚毒物，也无受害。伊哋把手按在病仔身上，病仔就能够痊愈。
+
+Adapting verse MRK 16:19
+old: 主耶稣说完这些话，就被接到天上，坐在上帝的右边。
+new: 主耶稣讲完额滴话，就被接到天上，坐落上帝个右边。
+
+Adapting verse MRK 16:20
+old: 门徒出去到处传扬福音，主和他们一同做工，以神迹相伴来证实他们所传的道。
+new: 门徒行出四处讲福音，主和他们一齐做事，以神迹相伴来证实他们所讲个道。
+
+Adapting verse LUK 1:1-3
+old: 提阿非罗 大人，已经有很多人根据最初的目击者和传道者给我们的口述，把我们中间发生的事记载下来。我把一切事情从头至尾仔细查考后，决定按次序写出来，
+new: 提阿非罗 大人，今朝好多仁根据最初个望者和讲道者个口述，记咱们中间发生个事。俺细查一应事情从头至尾后，决定按次序写出来，
+
+Adapting verse LUK 1:4
+old: 使你知道自己所学的道真实可靠。
+new: 令你知到自家所学个道真稳可靠。 (Final version combines elements from drafts, using '知到' for '知道', '自家' for '自己', '所学个' for '所学的', and '真稳可靠' to blend '真实' and '可靠' into a more concise Gan expression, ensuring the translation upholds the biblical truth of the reliability of the Gospel teachings.)
+
+Adapting verse LUK 1:5
+old: 犹太 王 希律 执政期间， 亚比雅 班里有位祭司名叫 撒迦利亚 ，他妻子 伊丽莎白 是 亚伦 的后裔。
+new: 犹太 王 希律 执政辰光里， 亚比雅 班里有位祭司名 撒迦利亚 ，他老婆 伊丽莎白 是 亚伦 个后生。
+
+Adapting verse LUK 1:6
+old: 夫妻二人遵行主的一切诫命和条例，无可指责，在上帝眼中是义人。
+new: 爷和娘两人，行主个一切命令和规矩，冇得指责，在上帝眼珠里系正直人。
+
+Adapting verse LUK 1:7
+old: 但他们没有孩子，因为 伊丽莎白 不能生育，二人又年纪老迈。
+new: 但是伊等无有细崽妹，因为 伊丽莎白 唔能生育，两个人口又年岁老迈。
+
+Adapting verse LUK 1:8
+old: 有一天，轮到 撒迦利亚 那一班祭司在上帝面前司职，
+new: 一日子，轮到 撒迦利亚 那班祭司 在上帝前头 做事，
+
+Adapting verse LUK 1:10
+old: 他烧香的时候，众百姓都在外面祷告。
+new: 伊烧香个时，众百姓都外头祈祷。
+
+Adapting verse LUK 1:11
+old: 那时，主的天使站在香坛的右边向 撒迦利亚 显现，
+new: 彼阵，主个天使站落香坛个右头，向撒迦利亚显现。
+
+Adapting verse LUK 1:12
+old: 撒迦利亚 见了，又惊又怕。
+new: 撒迦利亚 望见，又惊又怕。
+
+Adapting verse LUK 1:13
+old: 天使对他说：“ 撒迦利亚 ，不要害怕，你的祷告已蒙垂听。你的妻子 伊丽莎白 要为你生一个儿子，你要给他取名叫 约翰 。
+new: 天使对伊讲：「撒迦利亚，莫惊，汝个祷告己听咗。汝个妻伊丽莎白要替汝生个崽，汝要给伊取名约翰。」
+
+Adapting verse LUK 1:14
+old: 你必欢喜快乐，许多人也会因为他的诞生而欣喜雀跃，
+new: 汝必喜乐快活，多个个也会因为伊个出世而欣喜跳跃，
+
+Adapting verse LUK 1:15
+old: 因为他将成为主眼中伟大的仆人。他必滴酒不沾，并且在母腹里就被圣灵充满。
+new: 因为伊会成为主个眼珠中大个仆人。伊必食酒不沾，并且在娘个肚里就被圣灵充满。
+
+Adapting verse LUK 1:16
+old: 他将使许多 以色列 人回心转意，归顺主——他们的上帝。
+new: 伊会叫多以色列个归心转意，归顺主——哋个上帝。
+
+Adapting verse LUK 1:17
+old: 他将以先知 以利亚 的心志和能力做主的先锋，使父亲的心转向儿女，使叛逆的人转向义人的智慧，为主预备合用的子民。”
+new: 伊行先以先知 以利亚 个心志和能力做主个先锋，教爷个心转向崽，教叛逆个仔转向义人个智慧，为主预备合用个子民。
+
+Adapting verse LUK 1:18
+old: 撒迦利亚 对天使说：“我已经老了，我的妻子也上了年纪，我怎么能确定这件事呢？”
+new: 撒迦利亚 对天使讲：“我已经老了，个妻子也上了年纪，我怎能确定个事呢？”
+
+Adapting verse LUK 1:19
+old: 天使回答说：“我是侍立在上帝面前的 加百列 ，奉命来向你报这喜讯。
+new: 天神回答讲：“俺是站落上帝前头个 加百列， 奉命来向汝讲个喜信。”
+
+2025-04-27 14:05:05 - Average grade: 85.00 - added grade number 1 on loop 2 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:19 - Average grade: 85.00 - added grade number 2 on loop 2 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:33 - Average grade: 85.00 - added grade number 3 on loop 2 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:44 - Average grade: 85.00 - added grade number 4 on loop 2 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:05:57 - Average grade: 85.60 - added grade number 5 on loop 2 of grade 88 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:06:10 - Average grade: 86.67 - added grade number 6 on loop 2 of grade 92 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 86.66666666666667 after 1 iterations.  Improvement of 86.66666666666667
+Working on verse LUK 1:9 which has grade 86.66666666666667
+
+The peer reviews for Luke 1:9 indicate that the translation is generally accurate and faithfully upholds a conservative Christian interpretation by preserving the original Greek's description of priestly customs and religious significance. Strengths include effective use of Gan Chinese vocabulary such as '伊哋' for 'they' and '个' as a particle, which supports a contemporary style while maintaining biblical truth. However, to enhance authenticity, consider refining phrases like '按祭司个规矩' and '拈签' to more distinctly align with Gan grammatical patterns and avoid potential Mandarin influences—such as by consulting native Gan speakers or resources for alternative expressions. Overall, these adjustments will strengthen the translation's cultural fit without altering its core conservative Christian message.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 伊哋按祭司个规矩拈签，拈中撒迦利亚到主个殿里头去烧香。
+new: 依祭司个老例，伊哋抽签中着撒迦利亚，进主个殿里头去烧香。
+
+2025-04-27 14:06:35 - Average grade: 86.67 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:06:49 - Average grade: 85.00 - added grade number 1 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:07:03 - Average grade: 85.00 - added grade number 2 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:07:16 - Average grade: 85.00 - added grade number 3 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:07:28 - Average grade: 85.00 - added grade number 4 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:07:42 - Average grade: 85.00 - added grade number 5 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+2025-04-27 14:07:56 - Average grade: 85.00 - added grade number 6 on loop 3 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 0
+Working on verse LUK 1:9 which has grade 85.0
+
+The peer reviews for Luke 1:9 affirm that the translation faithfully upholds a conservative Christian viewpoint by accurately conveying the biblical account of Zechariah's selection for temple duties, with strengths in incorporating Gan Chinese elements like '伊哋' and '个' for a contemporary yet faithful style. However, recurring issues include potential Mandarin influences in phrases such as '依祭司个老例', '抽签中着', and '进主个殿里头去烧香', which do not fully align with authentic Gan grammatical structures. To address this without repeating past fixes, actionable recommendations are: 1) Consult native Gan speakers or dialect resources to replace '依' and similar elements with more distinctly Gan expressions; 2) Refine verb structures in '抽签中着' to better reflect Gan syntax while preserving the sacred context; and 3) Ensure overall consistency in Gan patterns to enhance cultural authenticity, thereby strengthening the translation's fidelity to the original Greek without compromising conservative Christian principles.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 依祭司个老例，伊哋抽签中着撒迦利亚，进主个殿里头去烧香。
+new: 照祭司个规矩，伊哋抽签拣着撒迦利亚，进主个殿里烧香。
+
+2025-04-27 14:08:25 - Average grade: 85.00 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:08:38 - Average grade: 65.00 - added grade number 1 on loop 4 of grade 65 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:08:52 - Average grade: 75.00 - added grade number 2 on loop 4 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:09:03 - Average grade: 78.33 - added grade number 3 on loop 4 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:09:16 - Average grade: 75.00 - added grade number 4 on loop 4 of grade 65 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:09:28 - Average grade: 75.00 - added grade number 5 on loop 4 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+2025-04-27 14:09:42 - Average grade: 76.67 - added grade number 6 on loop 4 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 1
+Working on verse LUK 1:9 which has grade 76.66666666666667
+
+The peer reviews for Luke 1:9 affirm that the translation effectively upholds a conservative Christian interpretation by accurately conveying the biblical account of Zechariah's selection for burning incense, with strengths in incorporating Gan elements like '伊哋' and '个' for a contemporary style. However, common issues include Mandarin influences in phrases such as '照祭司个规矩' and '抽签拣着', which do not fully align with authentic Gan grammar and vocabulary. To address this without repeating past recommendations, actionable steps include: 1) Research and integrate more idiomatic Gan expressions through dialect-specific resources; 2) Refine sentence structures to better reflect natural Gan syntax while ensuring the sacred context remains intact; and 3) Conduct a comparative review against original Greek to confirm that adjustments enhance cultural fit without altering core biblical meanings, thereby improving overall authenticity.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 照祭司个规矩，伊哋抽签拣着撒迦利亚，进主个殿里烧香。
+new: 依祭司个老例，伊哋拈签着撒迦利亚，进主个殿里烧香。
+
+2025-04-27 14:10:05 - Average grade: 76.67 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:10:19 - Average grade: 75.00 - added grade number 1 on loop 5 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:10:33 - Average grade: 81.50 - added grade number 2 on loop 5 of grade 88 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:10:46 - Average grade: 83.67 - added grade number 3 on loop 5 of grade 88 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:10:59 - Average grade: 81.50 - added grade number 4 on loop 5 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:11:10 - Average grade: 81.20 - added grade number 5 on loop 5 of grade 80 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+2025-04-27 14:11:23 - Average grade: 83.00 - added grade number 6 on loop 5 of grade 92 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 2
+Working on verse LUK 1:9 which has grade 83.0
+
+The peer reviews for Luke 1:9 affirm that the translation effectively upholds a conservative Christian interpretation by accurately depicting the priestly custom of drawing lots for temple duties, with strengths in incorporating Gan elements like '伊哋' for 'they' and the particle '个' to create a contemporary style. However, recurring issues include Mandarin influences in phrases such as '依祭司个老例', '拈签着', and '进主个殿里烧香', which dilute authentic Gan grammar and vocabulary. To address this without repeating prior recommendations, actionable steps include: 1) Explore Gan-specific historical or cultural texts to identify and integrate idiomatic alternatives for religious terms; 2) Adjust sentence structures by emphasizing Gan syntactic patterns, such as native verb conjugations or particle usage, through targeted dialect analysis; and 3) Perform a side-by-side comparison with other Gan translations of similar biblical passages to ensure enhancements maintain scriptural integrity and improve overall cultural resonance.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 依祭司个老例，伊哋拈签着撒迦利亚，进主个殿里烧香。
+new: 照祭司个老规矩，撒迦利亚抽着签，行入主个殿里烧香。
+
+2025-04-27 14:11:48 - Average grade: 83.00 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:12:02 - Average grade: 75.00 - added grade number 1 on loop 6 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:12:16 - Average grade: 75.00 - added grade number 2 on loop 6 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:12:28 - Average grade: 75.00 - added grade number 3 on loop 6 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:12:42 - Average grade: 72.50 - added grade number 4 on loop 6 of grade 65 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:12:55 - Average grade: 73.00 - added grade number 5 on loop 6 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+2025-04-27 14:13:09 - Average grade: 73.33 - added grade number 6 on loop 6 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 3
+Working on verse LUK 1:9 which has grade 73.33333333333333
+
+The peer reviews for Luke 1:9 confirm that the translation effectively maintains a conservative Christian interpretation by accurately depicting Zechariah's selection for burning incense, with strengths in elements like the particle '个' and '行入' that add a contemporary style. However, the primary issue is the persistent Mandarin influence in phrases such as '照祭司个老规矩' and '抽着签', which undermine the use of authentic Gan Chinese vocabulary and grammatical structures. To address this without repeating past fixes, actionable steps include: 1) Conduct targeted research into Gan dialect archives or historical texts to identify and substitute more idiomatic Gan equivalents for affected terms; 2) Restructure sentences to prioritize native Gan syntax patterns, ensuring they align with the original Greek's emphasis on divine order; and 3) Perform an internal audit of the translation against established Gan biblical adaptations to verify improvements enhance cultural resonance while upholding scriptural accuracy.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 照祭司个老规矩，撒迦利亚抽着签，行入主个殿里烧香。
+new: 依祭司个老例，撒迦利亚中签，行入主个殿里烧香。
+
+2025-04-27 14:13:37 - Average grade: 73.33 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:13:51 - Average grade: 85.00 - added grade number 1 on loop 7 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:14:06 - Average grade: 85.00 - added grade number 2 on loop 7 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:14:19 - Average grade: 85.00 - added grade number 3 on loop 7 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:14:33 - Average grade: 85.75 - added grade number 4 on loop 7 of grade 88 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:14:44 - Average grade: 83.60 - added grade number 5 on loop 7 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+2025-04-27 14:14:57 - Average grade: 82.17 - added grade number 6 on loop 7 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 4
+Working on verse LUK 1:9 which has grade 82.16666666666667
+
+The peer reviews for Luke 1:9 affirm that the translation effectively preserves a conservative Christian interpretation by accurately depicting Zechariah's divine selection for burning incense, emphasizing God's sovereignty and the sacredness of priestly duties without any doctrinal alterations. Strengths include the use of Gan elements like the particle '个' and phrases such as '行入', which contribute to a contemporary style while staying true to the original Greek. However, common concerns involve subtle Mandarin influences in vocabulary and phrasing, such as '依' and '中签', which could undermine the authenticity of Gan dialect adaptation. To address this in a fresh way, actionable recommendations include: 1) Develop a dedicated Gan adaptation framework that cross-references historical religious texts for idiomatic alternatives, ensuring seamless integration; 2) Refine sentence structures through iterative dialect testing to prioritize native Gan patterns, maintaining scriptural integrity; and 3) Establish a review protocol with conservative Christian scholars familiar with regional dialects to validate enhancements, thereby fostering a more culturally resonant translation that honors biblical truths.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 依祭司个老例，撒迦利亚中签，行入主个殿里烧香。
+new: 按祭司个老例，撒迦利亚抽签中，行入主个殿里烧香。
+
+2025-04-27 14:15:24 - Average grade: 82.17 - reflected on verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+2025-04-27 14:15:37 - Average grade: 85.00 - added grade number 1 on loop 8 of grade 85 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+2025-04-27 14:15:52 - Average grade: 80.00 - added grade number 2 on loop 8 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+2025-04-27 14:16:06 - Average grade: 78.33 - added grade number 3 on loop 8 of grade 75 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+2025-04-27 14:16:20 - Average grade: 75.00 - added grade number 4 on loop 8 of grade 65 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+2025-04-27 14:16:33 - Average grade: 73.00 - added grade number 5 on loop 8 of grade 65 to verse LUK 1:9 - Best grade: 86.67 - Iterations without improvement: 5
+Running config chinese_gan_grok_adapted_1
+Focusing on and after start_line 24785
+Focusing on and before end_line 24785
+Using the model grok-3-mini-beta
+2025-04-27 14:27:07 - Average grade: 77.00 - added grade number 5 on loop 8 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-27 14:27:22 - Average grade: 78.33 - added grade number 6 on loop 8 of grade 85 to verse LUK 1:9 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 78.33333333333333 after 1 iterations.  Improvement of 78.33333333333333
+Working on verse LUK 1:9 which has grade 78.33333333333333
+
+The peer reviews for Luke 1:9 affirm that the current translation effectively maintains a conservative Christian interpretation by accurately depicting Zechariah's selection by lot for burning incense, preserving the biblical emphasis on divine order and priestly duties. Strengths include the use of Gan elements like the particle '个' and '行入', which contribute to a contemporary style while staying true to the original Greek. However, persistent issues involve Mandarin influences in phrases such as '按祭司个老例' and '抽签中', which undermine authentic Gan vocabulary and grammatical structures. To address this without repeating prior recommendations, actionable steps include: 1) Develop a customized Gan adaptation toolkit, drawing from historical dialect sources to identify and integrate idiomatic alternatives for religious terms; 2) Restructure sentences through pattern analysis tools to prioritize native Gan syntax, ensuring alignment with scriptural integrity; and 3) Collaborate with conservative Christian linguists to conduct dialect-specific audits, enhancing cultural resonance while safeguarding the translation's doctrinal accuracy.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 按祭司个老例，撒迦利亚抽签中，行入主个殿里烧香。
+new: 照祭司个规矩，撒迦利亚中签，行入主个殿里烧香。
+
+2025-04-27 14:27:48 - Average grade: 78.33 - reflected on verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:28:00 - Average grade: 85.00 - added grade number 1 on loop 9 of grade 85 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:28:15 - Average grade: 85.00 - added grade number 2 on loop 9 of grade 85 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:28:28 - Average grade: 85.00 - added grade number 3 on loop 9 of grade 85 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:28:43 - Average grade: 85.00 - added grade number 4 on loop 9 of grade 85 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:28:58 - Average grade: 85.00 - added grade number 5 on loop 9 of grade 85 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+2025-04-27 14:29:14 - Average grade: 83.33 - added grade number 6 on loop 9 of grade 75 to verse LUK 1:9 - Best grade: 78.33 - Iterations without improvement: 0
+New best grade: 83.33333333333333 after 1 iterations.  Improvement of 5.0
+Working on verse LUK 1:9 which has grade 83.33333333333333
+
+The peer reviews for Luke 1:9 affirm that the translation effectively maintains a conservative Christian interpretation, accurately depicting Zechariah's selection by lot to burn incense in the Lord's temple, with strengths in incorporating authentic Gan elements like the particle '个' for possession and '行入' for entering, which enhance a contemporary style while preserving biblical fidelity. However, common issues persist with Mandarin-influenced phrases such as '照祭司个规矩' and '中签', which dilute genuine Gan vocabulary and grammar. To address this without echoing past suggestions, actionable recommendations include: 1) Curate a list of Gan-specific synonyms from historical texts to replace affected terms, ensuring they align with the original Greek's emphasis on divine order; 2) Test revised structures through Gan language workshops to prioritize native syntax patterns, thereby strengthening cultural authenticity; and 3) Engage conservative Christian editors with dialect expertise for a final validation layer, confirming that enhancements uphold scriptural integrity and improve overall resonance.
+
+source: κατὰ τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν τοῦ Κυρίου·
+old: 照祭司个规矩，撒迦利亚中签，行入主个殿里烧香。
+new: 依祭司个老例，撒迦利亚抽着签，行入主个殿里烧香。
+
+2025-04-27 14:29:42 - Average grade: 83.33 - reflected on verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:29:56 - Average grade: 88.00 - added grade number 1 on loop 10 of grade 88 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:30:10 - Average grade: 86.50 - added grade number 2 on loop 10 of grade 85 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:30:24 - Average grade: 87.00 - added grade number 3 on loop 10 of grade 88 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:30:36 - Average grade: 86.50 - added grade number 4 on loop 10 of grade 85 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:30:53 - Average grade: 86.20 - added grade number 5 on loop 10 of grade 85 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+2025-04-27 14:31:07 - Average grade: 86.00 - added grade number 6 on loop 10 of grade 85 to verse LUK 1:9 - Best grade: 83.33 - Iterations without improvement: 0
+New best grade: 86.0 after 1 iterations.  Improvement of 2.6666666666666714
+Finilizing LUK 1:9
+
+old: 依祭司个老例，撒迦利亚抽着签，行入主个殿里烧香。
+new: 伊哋按祭司个规矩拈签，拈中撒迦利亚到主个殿里头去烧香。
+
+old grade: 86.0
+new grade: 86.66666666666667
+
+2025-04-27 14:31:07 - Average grade: 86.67 - finalized verse LUK 1:9 - Best grade: 86.00 - Iterations without improvement: 0
+New best grade: 86.66666666666667 after 1 iterations.  Improvement of 0.6666666666666714
+2025-04-27 14:31:07 - Average grade: 86.67 - Didn't find a verse to reflect on.  So done. - Best grade: 86.67 - Iterations without improvement: 0
+Running config chinese_gan_grok_adapted_1
+Focusing on and after start_line 24785
+Focusing on and before end_line 24785
+Using the model grok-3-mini-beta
+New best grade: 86.66666666666667 after 1 iterations.  Improvement of 86.66666666666667
+2025-04-27 16:07:16 - Average grade: 86.67 - Didn't find a verse to reflect on.  So done. - Best grade: 86.67 - Iterations without improvement: 0
