@@ -643,3 +643,33 @@ time,average_grade,action_done,best_grade_found,iterations_without_improvement
 2025-04-27 16:11:10,92.63849765258217,added grade number 3 on loop 3 of grade 98 to verse LUK 1:44,0,0
 2025-04-27 16:11:21,92.63849765258217,added grade number 4 on loop 3 of grade 95 to verse LUK 1:44,0,0
 2025-04-27 16:11:35,92.63849765258217,added grade number 5 on loop 3 of grade 95 to verse LUK 1:44,0,0
+2025-04-27 16:11:53,92.62206572769954,added grade number 6 on loop 3 of grade 88 to verse LUK 1:44,0,0
+2025-04-27 16:11:53,92.62206572769954,Skipped reflection on loop 2 for verse LUK 1:49,0,0
+2025-04-27 16:12:08,92.32394366197182,added grade number 1 on loop 3 of grade 70 to verse LUK 1:49,0,0
+2025-04-27 16:12:23,92.28873239436619,added grade number 2 on loop 3 of grade 65 to verse LUK 1:49,0,0
+2025-04-27 16:12:35,92.40375586854461,added grade number 3 on loop 3 of grade 92 to verse LUK 1:49,0,0
+2025-04-27 16:12:51,92.38380281690141,added grade number 4 on loop 3 of grade 70 to verse LUK 1:49,0,0
+2025-04-27 16:13:06,92.3718309859155,added grade number 5 on loop 3 of grade 70 to verse LUK 1:49,0,0
+2025-04-27 16:13:21,92.3755868544601,added grade number 6 on loop 3 of grade 75 to verse LUK 1:49,0,0
+2025-04-27 16:13:21,92.3755868544601,Skipped reflection on loop 2 for verse LUK 1:77,0,0
+2025-04-27 16:13:32,92.31220657276995,added grade number 1 on loop 3 of grade 90 to verse LUK 1:77,0,0
+2025-04-27 16:13:46,92.31220657276995,added grade number 2 on loop 3 of grade 90 to verse LUK 1:77,0,0
+2025-04-27 16:13:58,92.32159624413147,added grade number 3 on loop 3 of grade 92 to verse LUK 1:77,0,0
+2025-04-27 16:14:11,92.31924882629109,added grade number 4 on loop 3 of grade 90 to verse LUK 1:77,0,0
+2025-04-27 16:14:23,92.33192488262911,added grade number 5 on loop 3 of grade 95 to verse LUK 1:77,0,0
+2025-04-27 16:14:37,92.34037558685446,added grade number 6 on loop 3 of grade 95 to verse LUK 1:77,0,0
+2025-04-27 16:15:00,92.34037558685446,reflected on verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:15:14,92.59859154929578,added grade number 1 on loop 4 of grade 92 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:15:27,92.59859154929578,added grade number 2 on loop 4 of grade 92 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:15:40,92.59859154929578,added grade number 3 on loop 4 of grade 92 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:15:57,92.58450704225352,added grade number 4 on loop 4 of grade 88 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:16:14,92.58732394366197,added grade number 5 on loop 4 of grade 92 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:16:29,92.58920187793427,added grade number 6 on loop 4 of grade 92 to verse LUK 1:49,92.34037558685446,0
+2025-04-27 16:17:00,92.58920187793427,reflected on verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:17:14,92.75352112676056,added grade number 1 on loop 5 of grade 92 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:17:28,92.75352112676056,added grade number 2 on loop 5 of grade 92 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:17:44,92.76760563380282,added grade number 3 on loop 5 of grade 95 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:17:57,92.76408450704226,added grade number 4 on loop 5 of grade 92 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:18:11,92.75633802816901,added grade number 5 on loop 5 of grade 90 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:18:24,92.75586854460093,added grade number 6 on loop 5 of grade 92 to verse LUK 1:3,92.58920187793427,0
+2025-04-27 16:18:24,92.75586854460093,lowest unfinalized grade 90.33333333333333 is above highest grade to reflect 90,92.75586854460093,0
