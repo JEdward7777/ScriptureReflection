@@ -1234,11 +1234,11 @@ configs:
     #The expirement with this one is to utilize the adaptation prompt which
     #helps get past the context mass which prevents conversion to a new format.
 
+    active: false
+
     adaptation_prompt: |
       Adapt the translation to the Gan Chinese dialect using Gan words and syntax.
       Push the adaptation to Gan hard.  Follow up passes will clean up translation inaccuracies.
-
-    active: false
 
     manual_edit_mode: false
 

@@ -1335,3 +1335,31 @@ new: مەن ھەم بارلىق ئىشلارنى باشلىنىشتىنلا ئە
 2025-04-27 16:18:24 - Average grade: 92.76 - added grade number 6 on loop 5 of grade 92 to verse LUK 1:3 - Best grade: 92.59 - Iterations without improvement: 0
 New best grade: 92.75586854460093 after 1 iterations.  Improvement of 0.1666666666666572
 2025-04-27 16:18:24 - Average grade: 92.76 - lowest unfinalized grade 90.33333333333333 is above highest grade to reflect 90 - Best grade: 92.76 - Iterations without improvement: 0
+Running config Uyghur_grok_manual_4
+Focusing on and after start_line 24599
+Focusing on and before end_line 24669
+Using the model grok-3-mini-beta
+2025-04-29 08:47:12 - Average grade: 92.70 - added grade number 1 on loop 4 of grade 88 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-29 08:47:22 - Average grade: 92.75 - added grade number 2 on loop 4 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-29 08:47:42 - Average grade: 92.75 - added grade number 3 on loop 4 of grade 92 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-29 08:47:52 - Average grade: 92.73 - added grade number 4 on loop 4 of grade 85 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-29 08:48:12 - Average grade: 92.74 - added grade number 5 on loop 4 of grade 95 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+2025-04-29 08:48:23 - Average grade: 92.70 - added grade number 6 on loop 4 of grade 75 to verse LUK 1:77 - Best grade: 00.00 - Iterations without improvement: 0
+New best grade: 92.70422535211266 after 1 iterations.  Improvement of 92.70422535211266
+Working on verse LUK 1:77 which has grade 88.33333333333333
+
+The peer reviews for Luke 1:77 affirm that the translation is largely faithful to the original Greek, effectively conveying the knowledge of salvation through the forgiveness of sins in line with conservative Christian views. It successfully blends modern standard and colloquial Uyghur for a natural, readable style, avoiding archaic or overly religious language as intended in the edit history. Actionable improvements include: 1) Refine phrasing for better conversational flow and clarity, such as ensuring seamless integration with surrounding context to enhance everyday feel without altering the core meaning. 2) Address the critical issue of using Latin script instead of the required Arabic script to meet translation objectives and maintain authenticity. Overall, these minor adjustments will strengthen the translation while preserving its accessible and contemporary approach.
+
+source: τοῦ δοῦναι γνῶσιν σωτηρίας τῷ λαῷ αὐτοῦ, ἐν ἀφέσει ἁμαρτιῶν αὐτῶν
+old: Sizning vazifingiz uning xelqige gunahlarini kechurush orqali qutqarilishning xewirini ochiq aytip berish;
+new: سىزنىڭ ۋازىپىڭىز، ئۇنىڭ خەلقىغا گۇناھلىرىنى كېچۇرۇش ئارقىلىق قۇتۋارىلىشنىڭ بىلىمىنى ئېنىق ئېيىتىپ بېرىش؛
+
+2025-04-29 08:49:00 - Average grade: 92.70 - reflected on verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:49:06 - Average grade: 92.80 - added grade number 1 on loop 5 of grade 95 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:49:16 - Average grade: 92.78 - added grade number 2 on loop 5 of grade 92 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:50:04 - Average grade: 92.77 - added grade number 3 on loop 5 of grade 92 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:50:21 - Average grade: 92.77 - added grade number 4 on loop 5 of grade 92 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:50:36 - Average grade: 92.77 - added grade number 5 on loop 5 of grade 95 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+2025-04-29 08:50:53 - Average grade: 92.77 - added grade number 6 on loop 5 of grade 92 to verse LUK 1:77 - Best grade: 92.70 - Iterations without improvement: 0
+New best grade: 92.76995305164318 after 1 iterations.  Improvement of 0.0657276995305267
+2025-04-29 08:50:53 - Average grade: 92.77 - lowest unfinalized grade 90.33333333333333 is above highest grade to reflect 90 - Best grade: 92.77 - Iterations without improvement: 0

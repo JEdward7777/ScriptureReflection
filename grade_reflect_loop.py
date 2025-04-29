@@ -832,11 +832,6 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     output_dirty = False
 
 
-    best_grade_found = 0
-    iterations_without_improvement = 0
-    iterations_without_improvement_max = config.get('iterations_without_improvement_max', float('inf') )
-
-
     indexed_comments = load_and_index_comments( config )
 
 
@@ -856,6 +851,11 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
     else:
         #otherwise load the existing translation and blank out all the translation keys.
         reflection_output = copy.deepcopy( translation_input )
+
+
+    best_grade_found = compute_translation_grade( reflection_output, config )
+    iterations_without_improvement = 0
+    iterations_without_improvement_max = config.get('iterations_without_improvement_max', float('inf') )
 
     #the patch saver doesn't work with verses being dropped so just go ahead and do the fix here.
     if config.get( "normalize_ranges", True ):
