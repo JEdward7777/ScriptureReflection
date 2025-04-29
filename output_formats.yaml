@@ -178,3 +178,14 @@ configs:
     api_key: [mm_key,key]
     reports:
       suggested_translation: open_bible_nueva_Biblia__reflected
+
+  Uyghur_grok_manual_4:
+    markdown_format:
+      outputs:
+        source language: Greek
+        source text name: grc-grcbyz
+        source text description: 1904 Patriarchal Greek New Testament with 20 corrections from later editions
+        source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
+        target language: Uyghur
+    start_line: 24599 # LUK 1:1
+    end_line: 24669 # LUK 1:80

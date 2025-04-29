@@ -826,8 +826,8 @@ def main():
                 time.sleep( 5 )
 
 if __name__ == "__main__":
-    #main()
+    main()
 
-    convert_to_sorted_report( "open_bible_nueva_Biblia.jsonl" )
+    #convert_to_sorted_report( "open_bible_nueva_Biblia.jsonl" )
 
     print( "Done!" )
