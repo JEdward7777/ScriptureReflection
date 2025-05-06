@@ -1180,7 +1180,8 @@ configs:
     source_key: [source]
     translation_key: [fresh_translation,text]
     #api_key: [ryders_key,key]
-    api_key: [mm_key_grok,key]
+    #api_key: [mm_key_grok,key]
+    api_key: [Jessica_grok_key,key]
 
     adaptation_prompt: |
       Adapt the translation to a blend of Modern Standard Register and Colloquial Register and out of archaic Literary/Historical Register or Religious Register in Uyghur Arabic Script.
@@ -1214,7 +1215,7 @@ configs:
     #iterations_without_improvement_max: 30
     #highest_grade_to_reflect: 86
     highest_grade_to_reflect: 90
-    iterations_without_improvement_max: 15
+    #iterations_without_improvement_max: 15
     
     reflection_loops_per_verse: 10
 
@@ -1226,9 +1227,10 @@ configs:
 
 
     start_line: 24599 # LUK 1:1
-    end_line: 24669 # LUK 1:80
+    #end_line: 24669 # LUK 1:80
     #start_line: 24607 # LUK 1:9
     #end_line: 24607 # LUk 1:9
+    end_line: 25731 # LUK 24:53
 
   chinese_gan_grok_adapted_1:
     #The expirement with this one is to utilize the adaptation prompt which
