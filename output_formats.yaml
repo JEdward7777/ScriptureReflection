@@ -188,4 +188,5 @@ configs:
         source text link: https://github.com/BibleNLP/ebible/blob/main/corpus/grc-grcbyz.txt
         target language: Uyghur
     start_line: 24599 # LUK 1:1
-    end_line: 24669 # LUK 1:80
+    #end_line: 24669 # LUK 1:80
+    end_line: 25731 # LUK 24:53

@@ -1,7 +1,7 @@
 # LUK 1
 [Book List](../README.md)
 
-1 
+1 [2](./chapter_2.md) [3](./chapter_3.md) [4](./chapter_4.md) [5](./chapter_5.md) [6](./chapter_6.md) [7](./chapter_7.md) [8](./chapter_8.md) [9](./chapter_9.md) [10](./chapter_10.md) [11](./chapter_11.md) [12](./chapter_12.md) [13](./chapter_13.md) [14](./chapter_14.md) [15](./chapter_15.md) [16](./chapter_16.md) [17](./chapter_17.md) [18](./chapter_18.md) [19](./chapter_19.md) [20](./chapter_20.md) [21](./chapter_21.md) [22](./chapter_22.md) [23](./chapter_23.md) [24](./chapter_24.md) [->](./chapter_2.md)
 
 | Reference | Verse | Translation Notes |
 |:---------:|-------|-------------------|
@@ -76,6 +76,7 @@
 |LUK 1:76|ھازىر سەن, بەغچە, ئەڭ يۇقىرى خۇدانىڭ پەيغەمبىرى دەپ ئاتالايسەن; چۈنكى سەن رەبىنىڭ يوللىرىنى ئالدىن تەييارلاپ, ئۇنىڭ ئالدىدا بارىپ تۇرۇۋېلىسەن.||
 |LUK 1:77|سىزنىڭ ۋازىپىڭىز، ئۇنىڭ خەلقىغا گۇناھلىرىنى كېچۇرۇش ئارقىلىق قۇتۋارىلىشنىڭ بىلىمىنى ئېنىق ئېيىتىپ بېرىش؛||
 |LUK 1:78-79|خۇدايىمىزنىڭ ئىنayetلىك رەھىملىكى ئۈچۈن، كۆكتىن چىققان تالاۋەر نۇر بىزگە يېتىپ كەلدى. بۇ نۇر قاراڭغۇلۇقتا ۋە ئۆلۈم كۆلەڭگىسىدە ساپاق تۇرۇپ كەتكەنلەرگە يورۇق بېرىپ، بىزنىڭ پۇتىمىزنى تەڭلىك يولىغا يۆتكەيدۇ.||
+|LUK 1:80|بالا چوڭايغان ۋاقىتتا، روھى كۈچەپ كەتتى. ئۇ ئىسرائىل خەلقىگە نامايان بولغاندا قەدەر چۆلدە تۇرۇپ كەلدى.||
 
 
-1 
+1 [2](./chapter_2.md) [3](./chapter_3.md) [4](./chapter_4.md) [5](./chapter_5.md) [6](./chapter_6.md) [7](./chapter_7.md) [8](./chapter_8.md) [9](./chapter_9.md) [10](./chapter_10.md) [11](./chapter_11.md) [12](./chapter_12.md) [13](./chapter_13.md) [14](./chapter_14.md) [15](./chapter_15.md) [16](./chapter_16.md) [17](./chapter_17.md) [18](./chapter_18.md) [19](./chapter_19.md) [20](./chapter_20.md) [21](./chapter_21.md) [22](./chapter_22.md) [23](./chapter_23.md) [24](./chapter_24.md) [->](./chapter_2.md)
