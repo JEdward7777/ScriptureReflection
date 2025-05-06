@@ -190,3 +190,4 @@ configs:
     start_line: 24599 # LUK 1:1
     #end_line: 24669 # LUK 1:80
     end_line: 25731 # LUK 24:53
+    generate_before_and_after: true
