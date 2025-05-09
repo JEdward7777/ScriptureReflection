@@ -3,3 +3,4 @@ key.yaml
 venv/*
 __pycache__
 .~lock*
+.stfolder

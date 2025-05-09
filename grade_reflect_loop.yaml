@@ -1225,12 +1225,13 @@ configs:
       Enforce that the student remains faithful to the Greek while using a blend of the Modern Standard Register and Colloquial Register.
       Penalize the student for using archaic Literary/Historical Register or Religious Register.
 
-
-    start_line: 24599 # LUK 1:1
+    start_line: 22860 # MAT 1:1
+    #start_line: 24599 # LUK 1:1
     #end_line: 24669 # LUK 1:80
     #start_line: 24607 # LUK 1:9
     #end_line: 24607 # LUk 1:9
-    end_line: 25731 # LUK 24:53
+    #end_line: 25731 # LUK 24:53
+    end_line: 30692 # REV 22:21
 
   chinese_gan_grok_adapted_1:
     #The expirement with this one is to utilize the adaptation prompt which
