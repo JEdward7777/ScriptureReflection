@@ -197,7 +197,8 @@ def use_model( client, model, messages, temperature, top_p, response_format ):
                 messages=messages,
                 temperature=temperature,
                 top_p=top_p,
-                response_format=response_format
+                response_format=response_format,
+                timeout=120,
             )
 
             finished = True
