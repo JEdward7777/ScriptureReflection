@@ -554,7 +554,17 @@ def normalize_review_header( report, report_language, translate_label ):
         swaps += translate_label( swap, include_synonyms=True )
 
     if report_language == "Spanish":
-        swaps += [ "**Reseña General**:", "**Revisión Resumida**", "**Revisión combinada**:", "**Revisión Consolidada**:" ]
+        swaps += [ "**Reseña General**:",
+         "**Revisión Resumida**", 
+         "**Revisión combinada**:", 
+         "**Revisión Consolidada**:",
+         "**Resumen de Revisiones**:",
+         "### Resumen de Revisiónes:",
+           "**Resumen de Revisiónes**: ",
+           "**Resumen de Revisión**: ",
+         "### Revisión Consolidada:",
+         "**Revisión**: ",
+          ]
 
     reg_swaps = ["\\*\\*Combined Review\\*\\*:?(?!\n)", "\\*\\*Combined Review\\*\\*:?[ \n:]*(_\\((Overall|Average)? ?Grade [^)]*\\)_[ \n:]*)?"]
     #reg_swaps = [ translate_label(x) for x in reg_swaps ]
@@ -562,6 +572,7 @@ def normalize_review_header( report, report_language, translate_label ):
     if report_language == "Spanish":
         reg_swaps += [
             "\\*\\*(((R|r)eseña)|((R|r)evisión)) (((G|g)eneral)|((R|r)esumida)|((C|c)ombinada)|((C|c)onsolidada))\\*\\*[ \n:]*",
+            #"\\*\\*Revisión\\*\\*( _\\(Calificación \\d+\\)_)[ \n:]*", 
         ]
 
     for swap in swaps:
