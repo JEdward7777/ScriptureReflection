@@ -76,10 +76,17 @@ def load_format( settings, reference_key, translation_key ):
                     dict_output = my_parser.to_biblenlp_format( ignore_errors=settings.get('ignore_errors', True) )
 
                     for vref,text in zip( dict_output['vref'], dict_output['text'] ):
-                        new_verse = {}
-                        utils.set_key(new_verse, reference_key, vref)
-                        utils.set_key(new_verse, translation_key, text)
-                        result.append(new_verse)
+                        try:
+                            utils.split_ref( vref )
+                            new_verse = {}
+                            utils.set_key(new_verse, reference_key, vref)
+                            utils.set_key(new_verse, translation_key, text)
+                            result.append(new_verse)
+                        except ValueError:
+                            #don't include "verses" without parsable
+                            #references.
+                            print( f"Unparsable reference in {filename}:\n   {vref}: {text}" )
+    
 
         result = sort_verses( result, reference_key )
         return result

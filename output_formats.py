@@ -10,6 +10,7 @@ from datetime import datetime
 import yaml #pip install pyyaml
 from pydantic import BaseModel
 from openai import OpenAI
+from typing import List
 
 import utils
 import grade_reflect_loop
@@ -349,7 +350,7 @@ def convert_to_markdown(file):
                             chapter_out.write(f"[->](./chapter_{str(int(chapter_num)+1)}.md)")
 
 
-def get_sorted_verses( translation_data, reference_key ):
+def get_sorted_verses( translation_data, reference_key, sort_on_first = False ):
     """Returns the next verse as sorted by grades"""
     fake_config_for_grade_reflect_loop = {
         'reference_key': reference_key,
@@ -357,9 +358,18 @@ def get_sorted_verses( translation_data, reference_key ):
     }
 
     def get_grade( verse ):
-        grade = grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
-        if grade is not None:
-            return grade
+        if sort_on_first:
+            reflection_loops = verse.get('reflection_loops', [])
+            if reflection_loops:
+                first_loop = reflection_loops[0]
+                grades = first_loop.get('grades', [])
+                if grades:
+                    grade = sum( [grade['grade'] for grade in grades] ) / len(grades)
+                    return grade
+        else:
+            grade = grade_reflect_loop.compute_verse_grade( verse, fake_config_for_grade_reflect_loop )
+            if grade is not None:
+                return grade
         return float('inf')
 
     sorted_verses = sorted( translation_data, key=get_grade )
@@ -371,15 +381,15 @@ def summarize_verse_report( client, raw_report, config, just_summarize=False ):
     system_message = "You are translation consultant, who is compiling correction for review from " + \
         "a Conservative Christian perspective."
 
-    target_language = config.get("language", "English")
+    target_language = config.get("report language", "English")
 
     if not just_summarize:
         user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
-        "Please modify the report so that it is easier to review by the translators.\n",
+        "Please modify the report so that it is easier to review by the translators who speak ", target_language, ".\n",
         "Provide a reference translation in ", target_language, 
         " for every string which is in another language.  Add it in parrenthesis after the content being translated.\n",
         "Combine the multiple reviewed into a single review in ", target_language, " combining the essence of the individual reviews.\n"
-        "Don't add any new content to the report, except for translations and summerizations.  Make sure not to any of the **Source** or **Translation** text. Output in Markdown.",]
+        "Don't add any new content to the report, except for translations and summerizations.  Make sure not to change any of the **Source** or **Translation** text. Output in Markdown.",]
     else:
         user_message_array = [ "The following report was generated for a translated verse of the Bible.\n",
         "Copy through the Source and Translation sections without modification.\n",
@@ -422,7 +432,7 @@ def translate_verse_report( client, raw_report, config ):
 
         system_message = "You are a translator adding translations to reviews in a Conservative Christian context."
 
-        target_language = config.get("language", "English")
+        target_language = config.get("report language", "English")
 
         user_message_array = [ "Please review the following content and everywhere there is text ",
             f"in a language other than {target_language}, add in a translation after it in parenthesis in ",
@@ -466,7 +476,7 @@ def translate_verse_report( client, raw_report, config ):
     print()
     return result
 
-def run_report_checks( report, source, translation, suggested_translation ):
+def run_report_checks( report, source, translation, suggested_translation, report_language, translate_label ):
     #So the report has to have the source and the translation still in it.
     #It also needs to have a review in it.
 
@@ -478,7 +488,7 @@ def run_report_checks( report, source, translation, suggested_translation ):
         if suggested_translation:
             suggested_translation = suggested_translation.replace(char, '')
         report = report.replace(char, '')
-    
+
     if source not in report:
         #see if each word of the source is in the report because ChatGPT might have
         #put the translations inline.
@@ -502,58 +512,86 @@ def run_report_checks( report, source, translation, suggested_translation ):
                     print( f"Missed suggested translation word: {word}" )
                     return False
 
-    if 'review' not in report.lower():
+    review_finding_options = []
+    review_finding_options += translate_label( 'Review', include_synonyms=True )
+    review_finding_options += translate_label( '**Combined Review**', include_synonyms=True )
+    review_finding_options += translate_label( '**Consolidated Review**', include_synonyms=True )
+    review_finding_options += translate_label( '**Overall Review**', include_synonyms=True )
+    review_finding_options += translate_label( '**Overall Review Summary**', include_synonyms=True )
+
+    if report_language == "Spanish":
+        review_finding_options += [ 'Reseña' ]
+
+    for option in review_finding_options:
+        if option.lower() in report.lower():
+            break
+    else:
         print( "Missed review" )
         return False
 
     return True
 
-def normalize_review_header( report ):
+def normalize_review_header( report, report_language, translate_label ):
     #we want to go with "**Combined Review**:\n" and all other versions should be replaced with it.
 
-    if "**Combined Review**:" in report.split('\n'):
+    if translate_label("**Combined Review**") + ":" in report.split('\n'):
         return report
 
     #here we only have things to fix.
-    swaps = [
-        "**Review Summary**:", 
+    swaps_before_translated = [
+        "**Combined Review**",
+        "**Review Summary**:",
         "**Combined Review Summary**:",
         "**Overall Review Summary**:",
         "**Overall Review**:",
         "### Combined Review",
     ]
+    swaps = []
+    for swap in swaps_before_translated:
+        swaps += translate_label( swap, include_synonyms=True )
+
+    if report_language == "Spanish":
+        swaps += [ "**Reseña General**:", "**Revisión Resumida**", "**Revisión combinada**:", "**Revisión Consolidada**:" ]
+
     reg_swaps = ["\\*\\*Combined Review\\*\\*:?(?!\n)", "\\*\\*Combined Review\\*\\*:?[ \n:]*(_\\((Overall|Average)? ?Grade [^)]*\\)_[ \n:]*)?"]
+    #reg_swaps = [ translate_label(x) for x in reg_swaps ]
+
+    if report_language == "Spanish":
+        reg_swaps += [
+            "\\*\\*(((R|r)eseña)|((R|r)evisión)) (((G|g)eneral)|((R|r)esumida)|((C|c)ombinada)|((C|c)onsolidada))\\*\\*:?(?!\n)",
+        ]
 
     for swap in swaps:
-        report = report.replace(swap, "**Combined Review**:\n")
-        
+        if swap in report:
+            report = report.replace(swap, translate_label("**Combined Review**") + ":\n")
+            break
     for reg_swap in reg_swaps:
-        report = re.sub(reg_swap, "**Combined Review**:\n", report)
+        report = re.sub(reg_swap, translate_label("**Combined Review**") + ":\n", report)
 
-    if "**Combined Review**:" in report.split('\n'):
+    if translate_label("**Combined Review**") + ":" in report.split('\n'):
         return report
 
     return report
 
-def copy_over_summary( raw_report, summarized_report ):
+def copy_over_summary( raw_report, summarized_report, target_language, translate_label ):
     """
     We are having trouble having the source and translation getting modified by ChatGPT,
-    so here we try to just snip off the summarized oprtion of the report and use
+    so here we try to just snip off the summarized portion of the report and use
     it on the raw report.
     """
-    summarized_report = normalize_review_header( summarized_report )
+    summarized_report = normalize_review_header( summarized_report, target_language, translate_label )
 
     spliced_report = []
 
     for line in raw_report.split('\n'):
-        if not line.startswith( "**Review 1**"):
+        if not line.startswith( "**" + translate_label("Review") + " 1**" ):
             spliced_report.append( line )
         else:
             break
 
     found_review_line = False
     for line in summarized_report.split('\n'):
-        if line.startswith( "**Combined Review**" ):
+        if line.startswith( translate_label("**Combined Review**") ):
             found_review_line = True
 
         if found_review_line:
@@ -582,7 +620,16 @@ def convert_to_sorted_report(file):
     reference_key = this_config.get( 'reference_key', ['vref'] )
     source_key = this_config.get( 'source_key', ['source'] )
 
+    report_first_iteration = this_config.get('reports',{}).get('report first iteration', False )
+
     original_content = utils.load_jsonl(f"output/{file}")
+
+    if "end_line" in this_config:
+        end_line = this_config["end_line"]-1
+        original_content = original_content[:end_line+1]
+    if "start_line" in this_config:
+        start_line = this_config["start_line"]-1
+        original_content = original_content[start_line:]
 
     if "suggested_translation" in this_config.get( "reports", {} ):
         suggested_translation_filename = this_config["reports"]["suggested_translation"]
@@ -603,7 +650,7 @@ def convert_to_sorted_report(file):
     translation_cache_save_time = time.time()
 
     #now sort it by the grade.
-    sorted_content, get_grade = get_sorted_verses( original_content, reference_key )
+    sorted_content, get_grade = get_sorted_verses( original_content, reference_key, sort_on_first=report_first_iteration )
 
     sorted_content = [x for x in sorted_content if get_grade(x) != float('inf')]
 
@@ -612,7 +659,92 @@ def convert_to_sorted_report(file):
         with open( 'key.yaml', encoding='utf-8' ) as keys_f:
             api_keys = yaml.load(keys_f, Loader=yaml.FullLoader)
             client = OpenAI(api_key=utils.look_up_key( api_keys, this_config['api_key'] ))
-        
+
+    report_language = this_config.get( 'reports', {} ).get( "report language", "English" )
+
+    def translate_label( label, instruction = '', include_synonyms = False ):
+        if report_language == "English":
+            if include_synonyms:
+                return [label]
+            return label
+
+        system_message = "You are a translation consultant, creating labels in a target language"
+        user_message_array = []
+        if instruction:
+            user_message_array += [ "Translate the following label which ", instruction, " into " + report_language + " preserving the markdown formating:" ]
+        else:
+            user_message_array += [ "Translate the following label into " + report_language + " preserving the markdown formating:" ]
+
+        user_message_array += [ "\n{\"label\": \"", label, "\"}" ]
+        user_message = "".join(user_message_array)
+
+        if user_message in translation_cache:
+            result = json.loads(translation_cache[user_message])
+            if include_synonyms:
+                return [result['translated_label']] + result['synonyms']
+            else:
+                return result['translated_label']
+
+        if not client:
+            if include_synonyms:
+                return [label]
+            return label
+
+        class LabelResponse(BaseModel):
+            translated_label: str
+            synonyms: List[str]
+
+        completion = utils.use_model( client,
+            model=this_config.get( 'model', 'gpt-4o-mini' ),
+            messages=[
+                { "role": "system", "content": system_message },
+                { "role": "user", "content": user_message }
+            ],
+            temperature=this_config.get('temperature', 1.2),
+            top_p=this_config.get('top_p', 0.9),
+            response_format=LabelResponse
+        )
+
+        model_dump = completion.choices[0].message.parsed.model_dump()
+        translated_label = model_dump['translated_label']
+
+        #don't let the model add markdown markers.
+        if "*" not in label and "*" in translated_label:
+            translated_label = translated_label.replace("*", "")
+
+        if label.startswith( "**" ):
+            for i in range( len( model_dump['synonyms'] ) ):
+                if not model_dump['synonyms'][i].startswith( "**" ):
+                    model_dump['synonyms'][i] = "**" + model_dump['synonyms'][i]
+
+        if label.startswith( "### " ):
+            for i in range( len( model_dump['synonyms'] ) ):
+                if not model_dump['synonyms'][i].startswith( "### " ):
+                    model_dump['synonyms'][i] = "### " + model_dump['synonyms'][i]
+
+        if label.endswith( "**" ):
+            for i in range( len( model_dump['synonyms'] ) ):
+                if not model_dump['synonyms'][i].endswith( "**" ):
+                    model_dump['synonyms'][i] = model_dump['synonyms'][i] + "**"
+
+        if label.endswith( "**:" ):
+            for i in range( len( model_dump['synonyms'] ) ):
+                if not model_dump['synonyms'][i].endswith( "**:" ):
+                    model_dump['synonyms'][i] = model_dump['synonyms'][i] + "**:"
+
+
+        translation_cache[user_message] = json.dumps(model_dump)
+        nonlocal translation_cache_modified
+        translation_cache_modified = True
+
+
+        if include_synonyms:
+            return [translated_label] + model_dump['synonyms']
+        else:
+            return translated_label
+
+
+
 
     if sorted_content:
 
@@ -628,53 +760,77 @@ def convert_to_sorted_report(file):
             elapsed_time = current_time - start_time
             estimated_end_time = len(sorted_content)/(verse_i+1) * elapsed_time + current_time
             print( f"Processing verse {verse_i+1} of {len(sorted_content)} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
-            
+
             vref = utils.look_up_key(verse, reference_key)
             translation = utils.look_up_key(verse, translation_key)
-            source = utils.look_up_key(verse, source_key)
             grade = get_grade(verse)
+            source = utils.look_up_key(verse, source_key, translate_label("*Source missing*"))
+
+            #if we are doing a first iteration report,
+            #then let the translation be what the first reflection loop was grading.
+            #also the grade is that.
+            if report_first_iteration:
+                reflection_loop = verse.get( 'reflection_loops', [] )
+                if reflection_loop:
+                    first_loop = reflection_loop[0]
+                    graded_verse = first_loop.get( 'graded_verse', '' )
+                    if graded_verse:
+                        if graded_verse != translation:
+                            translation = graded_verse
+
 
             raw_report_array = [
-                f"**{vref}**: _(Grade {grade:.1f})_\n\n",
-                "**Source**:\n",
+                f"**{vref}**: _(", translate_label( "Grade", "Specifies the reviewers grade." ), f" {grade:.1f})_\n\n",
+                translate_label( "**Source**", "Specifies the source text." ), ":\n",
                 "\n".join( f"> {line}" for line in source.split('\n') ),
                 "\n\n",
-                "**Translation**:\n",
+                translate_label( "**Translation**", "Specifies the translated text." ), ":\n",
                 "\n".join( f"> {line}" for line in translation.split('\n') ),
                 "\n\n", ]
 
+            suggested_translation = None
             if hashed_suggested_translation:
                 suggested_verse = hashed_suggested_translation.get( vref, None )
                 suggested_translation = utils.look_up_key( suggested_verse, translation_key )
-                if suggested_translation and suggested_translation != translation:
-                    raw_report_array.append( "**Suggested Translation**:\n" )
-                    raw_report_array.append( "\n".join( f"> {line}" for line in suggested_translation.split('\n') ) )
-                    raw_report_array.append( "\n\n" )
-                else:
+                if not suggested_translation or suggested_translation == translation:
                     suggested_translation = None
-            else:
-                suggested_translation = None
+            elif report_first_iteration:
+                #if we are doing a report on the verse which was graded first,
+                #then if there was iteration, then that can be the suggested translation.
+                current_translation = utils.look_up_key( verse, translation_key )
+                if current_translation and current_translation != translation:
+                    suggested_translation = current_translation
+
+
+            if suggested_translation:
+                raw_report_array.append( translate_label( "**Suggested Translation**", "Specifies the suggested translation for this verse." ) + ":\n" )
+                raw_report_array.append( "\n".join( f"> {line}" for line in suggested_translation.split('\n') ) )
+                raw_report_array.append( "\n\n" )
 
             reflection_loops = verse.get( 'reflection_loops', [] )
             if reflection_loops:
-                reflection_loop = None
-                if verse.get( 'reflection_is_finalized', False ):
-                    #if the verse is finalized, the comments need to be found from the verse which got nominated.
-                    for loop in reflection_loops:
-                        if loop.get( 'graded_verse', '' ) == translation:
-                            reflection_loop = loop
-                            break
+                if not report_first_iteration:
+                    reflection_loop = None
+                    if verse.get( 'reflection_is_finalized', False ):
+                        #if the verse is finalized, the comments need to be found from the verse which got nominated.
+                        for loop in reflection_loops:
+                            if loop.get( 'graded_verse', '' ) == translation:
+                                reflection_loop = loop
+                                break
+                    else:
+                        last_reflection_loop = reflection_loops[-1]
+                        graded_verse = last_reflection_loop.get( 'graded_verse', '' )
+                        if graded_verse == '' or graded_verse == translation:
+                            reflection_loop = reflection_loops[-1]
                 else:
-                    last_reflection_loop = reflection_loops[-1]
-                    graded_verse = last_reflection_loop.get( 'graded_verse', '' )
-                    if graded_verse == '' or graded_verse == translation:
-                        reflection_loop = reflection_loops[-1]
+                    #if we want just the first iteration, then just use the first loop
+                    reflection_loop = reflection_loops[0]
 
                 #if we were able to find a loop that is the official loop.
                 if reflection_loop:
                     for grade_i,grade in enumerate(reflection_loop.get("grades",[])):
-                        raw_report_array.append( f"**Review {grade_i+1}** "
-                            f"_(Grade {grade['grade']})_: {grade['comment']}\n\n" )
+                        raw_report_array.append( "**" + translate_label("Review", "Labels text as from a reviewer." ) + f" {grade_i+1}** " )
+                        raw_report_array.append( "_(" + translate_label("Grade", "Labels a grade from a reviewer." ) + f" {grade['grade']})_: {grade['comment']}\n\n" )
 
 
             raw_report = "".join( raw_report_array )
@@ -698,14 +854,14 @@ def convert_to_sorted_report(file):
 
                         if failed_count >= COPY_OVER_SUMMARY_THRESHOLD:
                             print( "Copying over summary" )
-                            summarized_report = copy_over_summary( raw_report, summarized_report )
+                            summarized_report = copy_over_summary( raw_report, summarized_report, report_language, translate_label )
 
                         summary_cache[raw_report] = summarized_report
                         summary_cache_modified = True
                     else:
                         summarized_report = summary_cache[raw_report]
 
-                    if not run_report_checks( summarized_report, source, translation, suggested_translation ):
+                    if not run_report_checks( summarized_report, source, translation, suggested_translation, report_language, translate_label ):
                         del summary_cache[raw_report]
                         print( f"Failed checks 1 fail count {failed_count+1}" )
                         passed_checks = False
@@ -716,7 +872,7 @@ def convert_to_sorted_report(file):
                         print( "Skipping summarization" )
                         summarized_report = raw_report
                         passed_checks = True
-                        
+
                 failed_count = 0
                 passed_checks = False
                 while not passed_checks:
@@ -729,7 +885,7 @@ def convert_to_sorted_report(file):
                     else:
                         translated_report = translation_cache[summarized_report]
 
-                    if not run_report_checks( summarized_report, source, translation, suggested_translation ):
+                    if not run_report_checks( translated_report, source, translation, suggested_translation, report_language, translate_label ):
                         del translation_cache[summarized_report]
                         print( f"Failed checks 2 fail count {failed_count+1}" )
                         passed_checks = False
@@ -741,8 +897,8 @@ def convert_to_sorted_report(file):
                         translated_report = summarized_report
                         passed_checks = True
 
-                translated_report = normalize_review_header( translated_report )
-                
+                translated_report = normalize_review_header( translated_report, report_language, translate_label )
+
             else:
                 translated_report = None
 
@@ -758,7 +914,7 @@ def convert_to_sorted_report(file):
                 translation_cache_modified = False
                 translation_cache_save_time = time.time()
                 print( "Saved translation cache" )
-            
+
             if raw_report:
                 if is_first_raw:
                     mode = "w"
@@ -785,7 +941,7 @@ def convert_to_sorted_report(file):
         utils.save_json( f"output/summary_cache/{output_file}.json", summary_cache )
 
     if translation_cache_modified:
-        utils.save_json( f"output/translation_cache/{output_file}.json", translation_cache )           
+        utils.save_json( f"output/translation_cache/{output_file}.json", translation_cache )
 
 def create_before_and_after_output( file ):
     """Converts the output to a before and after markdown format which
@@ -811,9 +967,6 @@ def create_before_and_after_output( file ):
     content = utils.load_jsonl( f"output/{file}" )
 
     start_time = time.time()
-
-    current_book = None
-    current_chapter = None
 
     with open( f"output/before_after/{output_file}.md", "wt", encoding='utf-8' ) as fout:
         #write table header.
@@ -857,7 +1010,7 @@ def create_before_and_after_output( file ):
 
             #Let's try this as a table instead.
             fout.write( f"| {vref} | {translation_0} | {translation} |\n" )
-            
+
 
 
 
@@ -874,29 +1027,29 @@ def main():
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
 
-            # try:
-            #     convert_to_sorted_report(file)
-            # except Exception as ex:
-            #     print( f"Problem running convert_to_sorted_report for {file}: {ex}")
-            #     time.sleep( 5 )
+            try:
+                convert_to_sorted_report(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_sorted_report for {file}: {ex}")
+                time.sleep( 5 )
 
-            # try:
-            #     convert_to_ryder_jsonl_format(file)
-            # except Exception as ex:
-            #     print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
-            #     time.sleep( 5 )
+            try:
+                convert_to_ryder_jsonl_format(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_ryder_jsonl_format for {file}: {ex}")
+                time.sleep( 5 )
 
-            # try:
-            #     convert_to_usfm(file)
-            # except Exception as ex:
-            #     print( f"Problem running convert_to_usfm for {file}: {ex}")
-            #     time.sleep( 5 )
+            try:
+                convert_to_usfm(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_usfm for {file}: {ex}")
+                time.sleep( 5 )
 
-            # try:
-            #     convert_to_markdown(file)
-            # except Exception as ex:
-            #     print( f"Problem running convert_to_markdown for {file}: {ex}")
-            #     time.sleep( 5 )
+            try:
+                convert_to_markdown(file)
+            except Exception as ex:
+                print( f"Problem running convert_to_markdown for {file}: {ex}")
+                time.sleep( 5 )
 
             try:
                 create_before_and_after_output(file)
