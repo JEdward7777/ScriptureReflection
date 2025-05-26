@@ -1,12 +1,71 @@
 import os
+import copy, re
 from lxml import etree
 from collections import OrderedDict, defaultdict
 from usfm_grammar import USFMParser
-import copy
 
 import utils
 import output_formats
 
+
+def chop_with_regex( content, regex ):
+    last_capture = None
+
+    result = {}
+
+    for capture in re.finditer( regex, content ):
+        if last_capture is not None:
+            capture_number = int(last_capture.group(1))
+            chopped_content = content[last_capture.end()+1:capture.start()]
+            result[capture_number] = chopped_content
+
+        last_capture = capture
+
+    capture_number = int(last_capture.group(1))
+    chopped_content = content[last_capture.end()+1:]
+
+    result[capture_number] = chopped_content
+
+    return result
+
+def hacked_usfm_parser( text ):
+    """The reason for this is that the usfm library I am using keeps on not working,
+     so this is a hacked version which will just get the job done even if there are problems.
+    """
+    #so first chop everything up into chapters.
+    chapter_regex = r'\\c (\d+)'
+    verse_regex = r'\\v (\d+)'
+    book_finder = r'\\toc3 (\w+)'
+
+    book_match = re.search( book_finder, text )
+    book_name = book_match.group(1).upper()
+    
+    chapter_content = chop_with_regex( text, chapter_regex )
+
+    vref = []
+    text = []
+
+    reg_exp_to_drop = [ r'\\s\d+', r'\\p', r'\\q(\d+)?', r'\\m', r'\\f (.*)\\f\*', r'\\b',
+        r'\\f (.*)\\fqa', r'\\1', r'\\nb']
+
+    for chapter_number, chapter_content in chapter_content.items():
+        verse_content = chop_with_regex( chapter_content, verse_regex )
+
+        for verse_number, verse_content in verse_content.items():
+            for reg_exp in reg_exp_to_drop:
+                verse_content = re.sub( reg_exp, '', verse_content )
+
+            if '\\' in verse_content:
+                print( f"Found \\ in {verse_content}" )
+            
+            vref.append( f"{book_name} {chapter_number}:{verse_number}" )
+            text.append( verse_content )
+
+    return {'vref':vref, 'text':text }
+
+
+    #then chop the chapters into verses.
+    #Then try and strip out all misc stuff.
 
 
 def sort_verses( verses, reference_key ):
@@ -48,6 +107,30 @@ def load_format( settings, reference_key, translation_key ):
                     my_parser = USFMParser(from_usx=usx_obj)
 
                     dict_output = my_parser.to_biblenlp_format( ignore_errors=settings.get('ignore_errors', True) )
+
+                    for vref,text in zip( dict_output['vref'], dict_output['text'] ):
+                        new_verse = {}
+                        utils.set_key(new_verse, reference_key, vref)
+                        utils.set_key(new_verse, translation_key, text)
+                        result.append(new_verse)
+
+        result = sort_verses( result, reference_key )
+        return result
+    elif settings['format'] == 'hacked_usfm':
+        result = []
+        import_folder = settings['folder']
+        #iterate through the usfm files:
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.usfm') or filename.lower().endswith('.sfm'):
+                print(f"Loading {filename}")
+                full_filename = os.path.join(import_folder, filename)
+                
+                # Load the usfm file
+                #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
+                with open( full_filename, 'r', encoding='utf-8' ) as f:
+                    usfm_string = f.read()
+
+                    dict_output = hacked_usfm_parser( usfm_string )
 
                     for vref,text in zip( dict_output['vref'], dict_output['text'] ):
                         new_verse = {}
