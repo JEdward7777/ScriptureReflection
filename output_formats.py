@@ -436,7 +436,8 @@ def translate_verse_report( client, raw_report, config ):
 
         user_message_array = [ "Please review the following content and everywhere there is text ",
             f"in a language other than {target_language}, add in a translation after it in parenthesis in ",
-            f"{target_language} if it is missing. Make sure the short quotes in the summary are translated in parenthesis as well." ]
+            f"{target_language} if it is missing. Make sure the short quotes in the summary are translated in parenthesis as well."
+            f"Besides adding parenthesized translations in {target_language}, don't change anything else.", ]
 
         user_message_array += [
             "\n\n**content**:\n"
@@ -489,29 +490,6 @@ def run_report_checks( report, source, translation, suggested_translation, repor
             suggested_translation = suggested_translation.replace(char, '')
         report = report.replace(char, '')
 
-    if source not in report:
-        #see if each word of the source is in the report because ChatGPT might have
-        #put the translations inline.
-        for word in source.split():
-            if word not in report:
-                print( f"Missed source word: {word}" )
-                return False
-
-    if translation not in report:
-        #see if each word of the translation is in the report because ChatGPT might have
-        #put the translations inline.
-        for word in translation.split():
-            if word not in report:
-                print( f"Missed translation word: {word}" )
-                return False
-
-    if suggested_translation:
-        if suggested_translation not in report:
-            for word in suggested_translation.split():
-                if word not in report:
-                    print( f"Missed suggested translation word: {word}" )
-                    return False
-
     review_finding_options = []
     review_finding_options += translate_label( 'Review', include_synonyms=True )
     review_finding_options += translate_label( '**Combined Review**', include_synonyms=True )
@@ -520,14 +498,39 @@ def run_report_checks( report, source, translation, suggested_translation, repor
     review_finding_options += translate_label( '**Overall Review Summary**', include_synonyms=True )
 
     if report_language == "Spanish":
-        review_finding_options += [ 'Reseña' ]
+        review_finding_options += [ 'Reseña', 'Revisiones Combinadas', 'Resumen de Revisiones' ]
 
     for option in review_finding_options:
         if option.lower() in report.lower():
+            index_of_review = report.lower().find( option.lower() )
+            portion_before_review = report[:index_of_review]
             break
     else:
         print( "Missed review" )
         return False
+
+    if source not in portion_before_review:
+        #see if each word of the source is in the report because ChatGPT might have
+        #put the translations inline.
+        for word in source.split():
+            if word not in portion_before_review:
+                print( f"Missed source word: {word}" )
+                return False
+
+    if translation not in portion_before_review:
+        #see if each word of the translation is in the report because ChatGPT might have
+        #put the translations inline.
+        for word in translation.split():
+            if word not in portion_before_review:
+                print( f"Missed translation word: {word}" )
+                return False
+
+    if suggested_translation:
+        if suggested_translation not in portion_before_review:
+            for word in suggested_translation.split():
+                if word not in portion_before_review:
+                    print( f"Missed suggested translation word: {word}" )
+                    return False
 
     return True
 
@@ -558,7 +561,7 @@ def normalize_review_header( report, report_language, translate_label ):
 
     if report_language == "Spanish":
         reg_swaps += [
-            "\\*\\*(((R|r)eseña)|((R|r)evisión)) (((G|g)eneral)|((R|r)esumida)|((C|c)ombinada)|((C|c)onsolidada))\\*\\*:?(?!\n)",
+            "\\*\\*(((R|r)eseña)|((R|r)evisión)) (((G|g)eneral)|((R|r)esumida)|((C|c)ombinada)|((C|c)onsolidada))\\*\\*[ \n:]*",
         ]
 
     for swap in swaps:
