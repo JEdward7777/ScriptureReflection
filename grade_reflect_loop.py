@@ -294,7 +294,7 @@ def build_common_context( selected_verse, reflection_output, config, over_ridden
     return result
 
 
-def grade_verse( selected_verse, common_context, client, config ):
+def grade_verse( selected_verse, common_context, client, config, multi_grade=None ):
     """
     Grade the translation of a verse.
     """
@@ -337,12 +337,18 @@ def grade_verse( selected_verse, common_context, client, config ):
         ],
         temperature=config['temperature'],
         top_p=config['top_p'],
-        response_format=GradeResponse
+        response_format=GradeResponse,
+        n=multi_grade if multi_grade is not None else 1
     )
 
-    result = completion.choices[0].message.parsed.model_dump()
-
-    return result
+    if multi_grade is None:
+        result = completion.choices[0].message.parsed.model_dump()
+        return result
+    
+    results = []
+    for i in range(multi_grade):
+        results.append( completion.choices[i].message.parsed.model_dump() )
+    return results
 
 def summarize_corrections( selected_verse, client, config ):
     """
@@ -959,13 +965,17 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                     #It needs another grade if the current number of grades is less then the
                     #requirement or if the graded verse reference is set which means the grade was
                     #already used.
-                    if compute_number_unanswered_grades( verse, config ) < \
-                            config['grades_per_reflection_loop']:
+                    unanswered_grades = compute_number_unanswered_grades( verse, config )
+                    if unanswered_grades < config['grades_per_reflection_loop']:
                         selected_verse = verse
 
                         common_context = build_common_context( selected_verse, reflection_output,
                             config, over_ridden_references, indexed_comments, client )
-                        new_grade = grade_verse( selected_verse, common_context, client, config )
+
+                        needed_grades = config['grades_per_reflection_loop']-unanswered_grades
+                        if not config.get('grade_mode_enabled', True ):
+                            needed_grades = 1
+                        new_grades = grade_verse( selected_verse, common_context, client, config, multi_grade=needed_grades )
 
                         #add the new grade to the reflection loop
                         if 'reflection_loops' not in selected_verse:
@@ -977,17 +987,23 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         last_reflection_loop = selected_verse['reflection_loops'][-1]
                         if 'grades' not in last_reflection_loop:
                             last_reflection_loop['grades'] = []
-                        last_reflection_loop['grades'].append(new_grade)
+                        last_reflection_loop['grades'] += new_grades
                         #Revert finilization
                         if verse.get( 'reflection_is_finalized', False ):
                             verse['reflection_is_finalized'] = False
                         if verse.get( 'human_reviewed', False ):
                             verse['human_reviewed'] = False
                         output_dirty = True
-                        action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
-                            f"on loop {len(selected_verse['reflection_loops'])} " \
-                            f"of grade {new_grade['grade']} " \
-                            f"to verse {utils.look_up_key( selected_verse, reference_key )}"
+                        if len(new_grades) == 1:
+                            action_done = f"added grade number {len(last_reflection_loop['grades'])} " \
+                                f"on loop {len(selected_verse['reflection_loops'])} " \
+                                f"of grade {new_grades[0]['grade']} " \
+                                f"to verse {utils.look_up_key( selected_verse, reference_key )}"
+                        else:
+                            action_done = f"added {len(new_grades)} up to grade number {len(last_reflection_loop['grades'])} " \
+                                f"on loop {len(selected_verse['reflection_loops'])} " \
+                                f"of grades {str([new_grade['grade'] for new_grade in new_grades])} " \
+                                f"to verse {utils.look_up_key( selected_verse, reference_key )}"
 
                         #now break so we can get to the save section.
                         break
