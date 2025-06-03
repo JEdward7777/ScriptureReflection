@@ -1171,7 +1171,7 @@ configs:
     #so looking at each verse one by one with no context in a transfer step will help it follow the prompt
     #and then it can use context to fix things which got messed up.
 
-    active: true
+    active: false
 
     manual_edit_mode: false
 
