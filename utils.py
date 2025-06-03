@@ -6,7 +6,11 @@ Moved them here so that the scripts don't import eachother so much.
 import json
 import os
 import time
+from typing import Callable, Any
+import functools
+
 import yaml
+
 
 def split_ref( reference ):
     """
@@ -430,3 +434,29 @@ def normalize_ranges( content, reference_key, translation_key, source_key ):
     return normalized
 
          
+def cache_decorator(cache_key: str, enabled: bool) -> Callable:
+    def decorator(func: Callable) -> Callable:
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs) -> Any:
+            if enabled:
+                # Create a unique key from function arguments
+                arg_key = str(args) + str(kwargs)
+                
+                # Load cache from JSON file
+                cache_file = f"{cache_key}.json"
+                cache = load_json(cache_file, {})
+                
+                # Check if result is in cache
+                if arg_key in cache:
+                    return cache[arg_key]
+                
+                # Call the function and cache the result
+                result = func(*args, **kwargs)
+                cache[arg_key] = result
+                save_json(cache_file, cache)
+                
+                return result
+            else:
+                return func(*args, **kwargs)
+        return wrapper
+    return decorator
