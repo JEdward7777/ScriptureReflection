@@ -190,13 +190,14 @@ def load_yaml_configuration( file ):
     return None
 
 
-def use_model( client, model, messages, temperature, top_p, response_format ):
+def use_model( client, model, messages, temperature, top_p, response_format, n=1 ):
     """This calls ChatGPT but wraps it in a try/catch to auto rehandle exceptions."""
 
     finished = False
     while not finished:
         try:
             completion = client.beta.chat.completions.parse(
+                n=n,
                 model=model,
                 messages=messages,
                 temperature=temperature,
