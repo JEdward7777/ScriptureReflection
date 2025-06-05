@@ -1171,7 +1171,7 @@ configs:
     #so looking at each verse one by one with no context in a transfer step will help it follow the prompt
     #and then it can use context to fix things which got messed up.
 
-    active: false
+    active: true
 
     manual_edit_mode: false
 
@@ -1180,8 +1180,8 @@ configs:
     source_key: [source]
     translation_key: [fresh_translation,text]
     #api_key: [ryders_key,key]
-    #api_key: [mm_key_grok,key]
-    api_key: [Jessica_grok_key,key]
+    api_key: [mm_key_grok,key]
+    #api_key: [Jessica_grok_key,key]
 
     adaptation_prompt: |
       Adapt the translation to a blend of Modern Standard Register and Colloquial Register and out of archaic Literary/Historical Register or Religious Register in Uyghur Arabic Script.
@@ -1214,7 +1214,8 @@ configs:
     mode: lowest_grade_priority
     #iterations_without_improvement_max: 30
     #highest_grade_to_reflect: 86
-    highest_grade_to_reflect: 90
+    #highest_grade_to_reflect: 90
+    highest_grade_to_reflect: 89.4
     #iterations_without_improvement_max: 15
     
     reflection_loops_per_verse: 10
