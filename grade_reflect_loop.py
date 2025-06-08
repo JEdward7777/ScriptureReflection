@@ -1227,7 +1227,6 @@ def main():
 
     for config_name, config in grade_reflect_loop_yaml['configs'].items():
         if config['active']:
-
             set_some_defaults( config_name, config )
 
 
@@ -1250,7 +1249,8 @@ def main():
             else:
                 run_mode(config_name, config)
 
-
+        else:
+            print( f"Skipping config {config_name}" )
 
 
 
