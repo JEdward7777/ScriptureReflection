@@ -74,10 +74,10 @@ def sort_verses( verses, reference_key ):
         found_index = -1
         book, chapter, verse = utils.split_ref( utils.look_up_key( verse, reference_key ))
         for i, key in enumerate( output_formats.USFM_NAME.keys() ):
-            if book in key:
+            if book.upper() in key.upper():
                 found_index = i
                 break
-        assert found_index != -1, "Didn't find the book name in known book names"
+        assert found_index != -1, f"Didn't find the book \"{book}\" in known book names"
         if isinstance(verse, str) and '-' in verse:
             verse = int(verse.split('-')[0])
 
@@ -186,8 +186,52 @@ def load_format( settings, reference_key, translation_key ):
                 utils.set_key( new_verse, reference_key, vref )
                 utils.set_key( new_verse, translation_key, source_verse )
                 result.append(new_verse)
-        #result = sort_verses( result, reference_key, translation_key )
+        #result = sort_verses( result, reference_key )
         return result
+
+    elif settings['format'] == 'sblgnt_txt':
+
+        #find a way to convert book names to the standardized 3 letter code.
+        ref_reverse_hash = {}
+        for key, value in output_formats.USFM_NAME.items():
+            if len( key ) == 3:
+                ref_reverse_hash[value] = key
+        normalization_hash = {}
+        for key, value in output_formats.USFM_NAME.items():
+            normalization_hash[ key ] = ref_reverse_hash[ value ]
+
+
+        import_folder = settings['folder']
+        result = []
+        #iterate through the txt files in the sblgnt or sblgnt like folder
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.txt'):
+                with open( os.path.join(import_folder, filename), 'r', encoding='utf-8' ) as f:
+                    for line in f:
+                        if '\t' in line:
+                            vref, text = line.split('\t')
+                            book, chapter, start_verse, end_verse = utils.split_ref2( vref )
+                            if book.upper() not in normalization_hash and book not in normalization_hash:
+                                assert False, f"Unknown book name {book} in {filename}"
+                            if book in normalization_hash:
+                                book = normalization_hash[ book ]
+                            elif book.upper() in normalization_hash:
+                                book = normalization_hash[ book.upper() ]
+                            if start_verse == end_verse:
+                                vref = f"{book} {chapter}:{start_verse}"
+                            else:
+                                vref = f"{book} {chapter}:{start_verse}-{end_verse}"
+
+                            new_verse = {}
+                            utils.set_key(new_verse, reference_key, vref.strip().upper())
+                            utils.set_key(new_verse, translation_key, text.strip())
+                            result.append(new_verse)
+        result = sort_verses( result, reference_key )
+        return result
+
+
+
+
 
     assert False, f"Unrecognized format {settings['format']}"
 
