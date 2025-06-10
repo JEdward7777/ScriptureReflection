@@ -15,11 +15,15 @@ from openai import OpenAI
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Spacer, Paragraph, PageBreak, HRFlowable, Flowable # pylint: disable=E0401
-from reportlab.lib.units import inch, mm
+from reportlab.lib.units import inch
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.enums import TA_LEFT,TA_CENTER
 from reportlab.lib import colors
+
+from reportlab.lib.colors import Color
+from reportlab.platypus import Table, TableStyle
+import colorsys
 
 import utils
 import grade_reflect_loop
@@ -692,7 +696,7 @@ def convert_to_sorted_report(file):
     sorted_content = [x for x in sorted_content if get_grade(x) != float('inf')]
 
     client = None
-    if 'api_key' in this_config:
+    if 'api_key' in this_config and this_config.get( 'reports', {} ).get( 'summarized sorted report enabled', False ):
         with open( 'key.yaml', encoding='utf-8' ) as keys_f:
             api_keys = yaml.load(keys_f, Loader=yaml.FullLoader)
             client = OpenAI(api_key=utils.look_up_key( api_keys, this_config['api_key'] ))
@@ -1201,13 +1205,190 @@ class BookmarkFlowable(Flowable):
         # This flowable takes no space
         return (0, 0)
 
+
+
+def create_heat_map_table(verses, config, r_get_grade, r_get_ref):
+    """
+    Create a heat map table for verses organized by book and chapter.
+    
+    Args:
+        verses: List of verse objects
+        config: Configuration dict that may contain 'low_grade', 'high_grade', and 'wrap_number'
+    
+    Returns:
+        Table object for the PDF
+    """
+    
+    # Get wrap number from config (default 20)
+    wrap_number = config.get('wrap_number', 20) if config else 20
+    
+    # Get all grades to determine min/max
+    all_grades = [r_get_grade(verse) for verse in verses]
+    
+    # Determine grade range
+    if config and 'low_grade' in config and 'high_grade' in config:
+        min_grade = config['low_grade']
+        max_grade = config['high_grade']
+    else:
+        min_grade = min(all_grades)
+        max_grade = max(all_grades)
+    
+    # Organize verses by book and chapter
+    book_chapter_verses = {}
+    for verse in verses:
+        ref = r_get_ref(verse)
+        book, chapter, verse_start, verse_end = utils.split_ref2(ref)
+        
+        if book not in book_chapter_verses:
+            book_chapter_verses[book] = {}
+        if chapter not in book_chapter_verses[book]:
+            book_chapter_verses[book][chapter] = []
+        
+        book_chapter_verses[book][chapter].append(verse)
+    
+    # Initialize style commands
+    style_commands = [
+        ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('ALIGN', (0, 0), (0, -1), 'RIGHT'),  # Right align book/chapter labels
+        ('ALIGN', (1, 0), (-1, -1), 'CENTER'),  # Center align verse squares
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.lightgrey),
+        # Make squares smaller by reducing cell width and height
+        ('COLWIDTH', (1, 0), (-1, -1), 12),  # Reduce column width for verse squares
+        ('ROWHEIGHT', (0, 0), (-1, -1), 12),  # Reduce row height for all rows
+    ]
+    
+    # Create table data
+    table_data = []
+    
+    for book in sorted(book_chapter_verses.keys()):
+        for chapter in sorted(book_chapter_verses[book].keys()):
+            # Sort verses by verse number
+            chapter_verses = book_chapter_verses[book][chapter]
+            chapter_verses.sort(key=lambda v: utils.split_ref2(r_get_ref(v))[2])  # Sort by verse_start
+            
+            # Split verses into chunks based on wrap_number
+            verse_chunks = []
+            for i in range(0, len(chapter_verses), wrap_number):
+                verse_chunks.append(chapter_verses[i:i + wrap_number])
+            
+            # Create a row for each chunk
+            for chunk_idx, verse_chunk in enumerate(verse_chunks):
+                row_idx = len(table_data)  # Current row index
+                
+                # For first chunk, use "Book Chapter", for subsequent use empty or continuation indicator
+                if chunk_idx == 0:
+                    row_label = f"{book} {chapter}"
+                else:
+                    row_label = f"  ↳"  # Continuation indicator
+                
+                row = [row_label]
+                
+                # Create colored squares for each verse and add color styling
+                for col_idx, verse in enumerate(verse_chunk, 1):
+                    ref = r_get_ref(verse)
+                    book_name, chapter_num, verse_start, verse_end = utils.split_ref2(ref)
+                    
+                    grade = r_get_grade(verse)
+                    color = grade_to_color(grade, min_grade, max_grade)
+                    
+                    # Use verse number as cell content
+                    cell_content = str(verse_start)
+                    row.append(cell_content)
+                    
+                    # Add color styling for this cell
+                    style_commands.append(
+                        ('BACKGROUND', (col_idx, row_idx), (col_idx, row_idx), color)
+                    )
+                
+                table_data.append(row)
+    
+    # Determine maximum number of verses in any chapter for consistent table width
+    max_verses = max(len(row) - 1 for row in table_data) if table_data else 0
+    
+    # Pad shorter rows with empty cells
+    for row in table_data:
+        while len(row) <= max_verses:
+            row.append("")
+    
+    # Create table
+    if table_data:
+        table = Table(table_data)
+        
+        table.setStyle(TableStyle(style_commands))
+        return table
+    
+    return None
+
+def grade_to_color(grade, min_grade, max_grade):
+    """
+    Convert a grade to a color between blue (low) and red (high).
+    
+    Args:
+        grade: The grade value
+        min_grade: Minimum grade (will be blue)
+        max_grade: Maximum grade (will be red)
+    
+    Returns:
+        Color object
+    """
+    if max_grade == min_grade:
+        # All grades are the same, use neutral color
+        return Color(0.5, 0.5, 0.5)
+    
+    # Normalize grade to 0-1 range
+    normalized = (grade - min_grade) / (max_grade - min_grade)
+    
+    # Create color gradient from blue to red
+    # Blue: hue=240°, Red: hue=0°
+    # We'll interpolate in HSV space for better color transition
+    hue = (1 - normalized) * 240 / 360  # 240° to 0° (blue to red)
+    saturation = 0.8
+    value = 0.9
+    
+    # Convert HSV to RGB
+    r, g, b = colorsys.hsv_to_rgb(hue, saturation, value)
+    
+    return Color(r, g, b)
+
+# Add this to your existing PDF generation code, after the title page and before the verses:
+
+def add_heat_map_to_story(story, verses, config, r_get_label, r_get_grade, r_get_ref, header_style, body_text_style):
+    """
+    Add heat map section to the PDF story.
+    
+    Args:
+        story: The PDF story list to append to
+        verses: List of all verses
+        config: Configuration dictionary
+    """
+    # Add heat map title
+    story.append(Paragraph(f"{r_get_label('Grade Heat Map')}", header_style))
+    story.append(Spacer(1, 0.2*inch))
+    
+    # Add legend
+    story.append(Paragraph(f"{r_get_label('Blue: Low grades, Red: High grades')}", body_text_style))
+    story.append(Spacer(1, 0.1*inch))
+    
+    # Create and add heat map table
+    heat_map_table = create_heat_map_table(verses, config, r_get_grade=r_get_grade, r_get_ref=r_get_ref)
+    if heat_map_table:
+        story.append(heat_map_table)
+        story.append(Spacer(1, 0.3*inch))
+        story.append(PageBreak())
+
 def convert_to_report( file ):
     """
     This export creates a single file markdown export
     of the file with the worse verses at the top,
     and the rest in order further down.
     """
-    this_config = get_config_for( file )
+    this_config = get_config_for( file ) or {}
+
+    if not this_config.get( 'reports', {} ).get( 'pdf report enabled', False ):
+        print( f"{file} does not have pdf report enabled" )
+        return
 
 
     config_font_name = this_config.get( 'font_name', 'DejaVuSans' )
@@ -1257,7 +1438,8 @@ def convert_to_report( file ):
     os.makedirs( output_folder, exist_ok=True )
 
 
-    num_sd_to_report = this_config.get( 'num_sd_to_report', 2 )
+    num_sd_to_report = this_config.get( "pdf_reports", {} ).get( 'num_sd_to_report', 2 )
+    percentage_sorted = this_config.get( "pdf_reports", {} ).get( 'percentage sorted', None )
 
 
     client = None
@@ -1507,9 +1689,24 @@ def convert_to_report( file ):
         story.append(Spacer(1, 2 * inch))
         story.append(PageBreak())
 
+
+        # Add heat map
+        heat_map_config = this_config.get( "pdf_reports", {} ).get( "heat_map", {} )
+        add_heat_map_to_story(story, verses, config=heat_map_config, r_get_label=r_get_label, r_get_grade=r_get_grade, r_get_ref=r_get_ref, header_style=header_style, body_text_style=body_text_style)
+
         #first thing we do is output a configured number of sd verses which are on the low end.
-        grade_cut_off = compute_std_devs( [ r_get_grade(verse) for verse in verses ], num_sd_to_report )[0]
-        low_end_verses = [ verse for verse in verses if r_get_grade(verse) <= grade_cut_off ]
+        if percentage_sorted is not None:
+            low_end_verses = []
+            sorted_verses = sorted( verses, key=r_get_grade )
+            for verse in sorted_verses:
+                if len(low_end_verses) < percentage_sorted*len(verses)/100:
+                    low_end_verses.append(verse)
+                else:
+                    break
+
+        else:
+            grade_cut_off = compute_std_devs( [ r_get_grade(verse) for verse in verses ], num_sd_to_report )[0]
+            low_end_verses = [ verse for verse in verses if r_get_grade(verse) <= grade_cut_off ]
 
 
         story.append(Paragraph(f"<b>{r_get_label('Lowest sorted by grade')}</b>", header_style))
@@ -1522,8 +1719,11 @@ def convert_to_report( file ):
             story.append(Spacer(1, 0.1*inch))
 
             story.append(Paragraph(f"<b>{r_get_label('Source')}</b>:", body_text_style))
-            story.append(Paragraph(r_get_source(verse), greek_source_style))
-            story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+            if r_get_source(verse):
+                story.append(Paragraph(r_get_source(verse), greek_source_style))
+                story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+            else:
+                story.append(Paragraph(f"<i>{r_get_label('No source')}</i>", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
 
             story.append(Paragraph(f"<b>{r_get_label('Translation')}</b>:", body_text_style))
@@ -1579,8 +1779,11 @@ def convert_to_report( file ):
             story.append(Spacer(1, 0.1*inch))
 
             story.append(Paragraph(f"<b>{r_get_label('Source')}</b>:", body_text_style))
-            story.append(Paragraph(r_get_source(verse), greek_source_style))
-            story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+            if r_get_source(verse):
+                story.append(Paragraph(r_get_source(verse), greek_source_style))
+                story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+            else:
+                story.append(Paragraph(f"<i>{r_get_label('No source')}</i>", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
 
             story.append(Paragraph(f"<b>{r_get_label('Translation')}</b>:", body_text_style))
