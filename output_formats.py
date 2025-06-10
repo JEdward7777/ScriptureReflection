@@ -1207,7 +1207,7 @@ class BookmarkFlowable(Flowable):
 
 
 
-def create_heat_map_table(verses, config, r_get_grade, r_get_ref):
+def create_heat_map_table(verses, config, r_get_grade, r_get_ref, r_get_href, cell_text_style):
     """
     Create a heat map table for verses organized by book and chapter.
     
@@ -1219,8 +1219,8 @@ def create_heat_map_table(verses, config, r_get_grade, r_get_ref):
         Table object for the PDF
     """
     
-    # Get wrap number from config (default 20)
-    wrap_number = config.get('wrap_number', 20) if config else 20
+    # Get wrap number from config
+    wrap_number = config.get('wrap_number', 25)
     
     # Get all grades to determine min/max
     all_grades = [r_get_grade(verse) for verse in verses]
@@ -1257,7 +1257,13 @@ def create_heat_map_table(verses, config, r_get_grade, r_get_ref):
         # Make squares smaller by reducing cell width and height
         ('COLWIDTH', (1, 0), (-1, -1), 12),  # Reduce column width for verse squares
         ('ROWHEIGHT', (0, 0), (-1, -1), 12),  # Reduce row height for all rows
+
+        ('LEFTPADDING', (1, 0), (-1, -1), 1),   # Minimal left padding for verse cells
+        ('RIGHTPADDING', (1, 0), (-1, -1), 1),  # Minimal right padding for verse cells
+        ('TOPPADDING', (0, 0), (-1, -1), 1),    # Minimal top padding
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 1), # Minimal bottom padding
     ]
+
     
     # Create table data
     table_data = []
@@ -1294,7 +1300,7 @@ def create_heat_map_table(verses, config, r_get_grade, r_get_ref):
                     color = grade_to_color(grade, min_grade, max_grade)
                     
                     # Use verse number as cell content
-                    cell_content = str(verse_start)
+                    cell_content = Paragraph(f"<link href='#{r_get_href(verse)}' color='#000000'>{str(verse_start)}</link>", cell_text_style)
                     row.append(cell_content)
                     
                     # Add color styling for this cell
@@ -1354,7 +1360,7 @@ def grade_to_color(grade, min_grade, max_grade):
 
 # Add this to your existing PDF generation code, after the title page and before the verses:
 
-def add_heat_map_to_story(story, verses, config, r_get_label, r_get_grade, r_get_ref, header_style, body_text_style):
+def add_heat_map_to_story(story, verses, config, r_get_label, r_get_grade, r_get_ref, r_get_href, header_style, body_text_style, cell_text_style):
     """
     Add heat map section to the PDF story.
     
@@ -1372,7 +1378,7 @@ def add_heat_map_to_story(story, verses, config, r_get_label, r_get_grade, r_get
     story.append(Spacer(1, 0.1*inch))
     
     # Create and add heat map table
-    heat_map_table = create_heat_map_table(verses, config, r_get_grade=r_get_grade, r_get_ref=r_get_ref)
+    heat_map_table = create_heat_map_table(verses, config, r_get_grade=r_get_grade, r_get_ref=r_get_ref, r_get_href=r_get_href, cell_text_style=cell_text_style)
     if heat_map_table:
         story.append(heat_map_table)
         story.append(Spacer(1, 0.3*inch))
@@ -1657,6 +1663,26 @@ def convert_to_report( file ):
         alignment=TA_LEFT
     )
 
+    # cell_text_style = ParagraphStyle(
+    #     'BodyText',
+    #     parent=styles['Normal'],
+    #     fontName=font_name,
+    #     fontSize=8,
+    #     leading=14,
+    #     alignment=TA_LEFT
+    # )
+    cell_text_style = ParagraphStyle(
+        'TableCell',
+        parent=body_text_style,
+        fontSize=8,
+        leading=8,  # Line height same as font size
+        leftIndent=0,
+        rightIndent=0,
+        spaceAfter=0,
+        spaceBefore=0,
+        alignment=1,  # Center alignment
+    )
+
     greek_source_style = ParagraphStyle(
         'GreekSourceText',
         parent=styles['Normal'],
@@ -1692,7 +1718,7 @@ def convert_to_report( file ):
 
         # Add heat map
         heat_map_config = this_config.get( "pdf_reports", {} ).get( "heat_map", {} )
-        add_heat_map_to_story(story, verses, config=heat_map_config, r_get_label=r_get_label, r_get_grade=r_get_grade, r_get_ref=r_get_ref, header_style=header_style, body_text_style=body_text_style)
+        add_heat_map_to_story(story, verses, config=heat_map_config, r_get_label=r_get_label, r_get_grade=r_get_grade, r_get_ref=r_get_ref, r_get_href=r_get_href, header_style=header_style, body_text_style=body_text_style, cell_text_style=cell_text_style)
 
         #first thing we do is output a configured number of sd verses which are on the low end.
         if percentage_sorted is not None:
@@ -1851,6 +1877,13 @@ def main():
             except Exception as ex:
                 print( f"Problem running create_before_and_after_output for {file}: {ex}")
                 time.sleep( 5 )
+
+            #try:
+            if True:
+                convert_to_report(file)
+            #except Exception as ex:
+            #    print( f"Problem running convert_to_report for {file}: {ex}")
+            #    time.sleep( 5 )
 
 if __name__ == "__main__":
     main()

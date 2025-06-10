@@ -6,7 +6,7 @@ Moved them here so that the scripts don't import eachother so much.
 import json
 import os
 import time
-from typing import Callable, Any
+from typing import Callable, Any, Dict
 import functools
 
 import yaml
@@ -435,6 +435,9 @@ def normalize_ranges( content, reference_key, translation_key, source_key ):
     return normalized
 
          
+# Global in-memory cache to store loaded disk caches
+_memory_cache: Dict[str, Dict[str, Any]] = {}
+
 def cache_decorator(cache_key: str, enabled: bool) -> Callable:
     def decorator(func: Callable) -> Callable:
         @functools.wraps(func)
@@ -443,9 +446,13 @@ def cache_decorator(cache_key: str, enabled: bool) -> Callable:
                 # Create a unique key from function arguments
                 arg_key = str(args) + str(kwargs)
                 
-                # Load cache from JSON file
-                cache_file = f"{cache_key}.json"
-                cache = load_json(cache_file, {})
+                # Check if cache is already loaded in memory
+                if cache_key not in _memory_cache:
+                    # Load cache from JSON file only if not in memory
+                    cache_file = f"{cache_key}.json"
+                    _memory_cache[cache_key] = load_json(cache_file, {})
+                
+                cache = _memory_cache[cache_key]
                 
                 # Check if result is in cache
                 if arg_key in cache:
@@ -454,6 +461,9 @@ def cache_decorator(cache_key: str, enabled: bool) -> Callable:
                 # Call the function and cache the result
                 result = func(*args, **kwargs)
                 cache[arg_key] = result
+                
+                # Save to disk and update memory cache
+                cache_file = f"{cache_key}.json"
                 save_json(cache_file, cache)
                 
                 return result
