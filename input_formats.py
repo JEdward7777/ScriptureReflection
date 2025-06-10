@@ -236,7 +236,7 @@ def load_format( settings, reference_key, translation_key ):
     assert False, f"Unrecognized format {settings['format']}"
 
 def merge_source_and_target( settings, source, target, reference_key, source_key, translation_key ):
-    #so to make it so that both the source adn the target can be ranges,
+    #so to make it so that both the source and the target can be ranges,
     #what I will do is do the group thing where there
     #is a leader which is in change of each group,
     #and then we will go through each verse injecting
