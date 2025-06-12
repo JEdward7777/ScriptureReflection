@@ -1,3 +1,4 @@
 PyYAML
 gradio
 openai
+reportlab
