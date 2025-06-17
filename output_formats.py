@@ -1417,7 +1417,9 @@ def convert_to_report( file ):
 
     report_first_iteration = this_config.get('reports',{}).get('report first iteration', False )
     report_language = this_config.get( 'reports', {} ).get( "report language", "English" )
-    target_language = this_config.get( 'markdown_format', {} ).get( "outputs", {} ).get( "target language", "English" )
+    target_language = this_config.get( 'markdown_format', {} ).get( "outputs", {} ).get( "target language", None )
+    if target_language is None:
+        target_language = this_config.get( 'reports', {} ).get( "target language", "English" )
 
 
     #now split it into books if the config requests it.
@@ -1739,8 +1741,24 @@ def convert_to_report( file ):
         story.append(Spacer(1, 0.2*inch))
 
 
+        start_time = time.time()
+
         #now iterate through these veses.
-        for verse in low_end_verses:
+        for verse_i, verse in enumerate(low_end_verses):
+
+            current_time = time.time()
+            elapsed_time = current_time - start_time
+            # estimated_end_time = len(book_to_verses[book])/(verse_i+1) * elapsed_time + current_time
+            
+            # Calculate estimated total time needed
+            estimated_total_time = len(book_to_verses[book]) / (verse_i + 1) * elapsed_time
+            # Estimated end time is start time + total estimated duration
+            estimated_end_time = start_time + estimated_total_time
+
+            print( f"Processing low end verse {verse_i+1} of {len(low_end_verses)} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
+
+
+
             story.append(Paragraph(f"<u><link href='#{r_get_href(verse)}' color='#FF5500'>{r_get_ref(verse)}</link></u>: <font name=\"{config_font_name}\">({r_get_label('Grade')} {r_get_grade(verse):.1f})</font>", section_title_style))
             story.append(Spacer(1, 0.1*inch))
 
@@ -1755,14 +1773,14 @@ def convert_to_report( file ):
             story.append(Paragraph(f"<b>{r_get_label('Translation')}</b>:", body_text_style))
             story.append(Paragraph(r_get_translation(verse), greek_source_style))
             if not r_translation_is_report_language:
-                story.append(Paragraph(f"({r_get_literal_translation(r_get_translation(verse), to_language=target_language)})", greek_source_style))
+                story.append(Paragraph(f"({r_get_literal_translation(r_get_translation(verse), to_language=report_language)})", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
 
             if r_get_suggested_translation(verse):
                 story.append(Paragraph(f"<b>{r_get_label('Suggested Translation')}</b>:", body_text_style))
                 story.append(Paragraph(r_get_suggested_translation(verse), greek_source_style))
                 if not r_translation_is_report_language:
-                    story.append(Paragraph(f"({r_get_literal_translation(r_get_suggested_translation(verse), to_language=target_language)})", greek_source_style))
+                    story.append(Paragraph(f"({r_get_literal_translation(r_get_suggested_translation(verse), to_language=report_language)})", greek_source_style))
 
             story.append(Paragraph(f"<b>{r_get_label('Review')}</b>:", body_text_style))
             story.append(Paragraph(r_get_review(verse), greek_source_style))
@@ -1815,14 +1833,14 @@ def convert_to_report( file ):
             story.append(Paragraph(f"<b>{r_get_label('Translation')}</b>:", body_text_style))
             story.append(Paragraph(r_get_translation(verse), greek_source_style))
             if not r_translation_is_report_language:
-                story.append(Paragraph(f"({r_get_literal_translation(r_get_translation(verse), to_language=target_language)})", greek_source_style))
+                story.append(Paragraph(f"({r_get_literal_translation(r_get_translation(verse), to_language=report_language)})", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
 
             if r_get_suggested_translation(verse):
                 story.append(Paragraph(f"<b>{r_get_label('Suggested Translation')}</b>:", body_text_style))
                 story.append(Paragraph(r_get_suggested_translation(verse), greek_source_style))
                 if not r_translation_is_report_language:
-                    story.append(Paragraph(f"({r_get_literal_translation(r_get_suggested_translation(verse), to_language=target_language)})", greek_source_style))
+                    story.append(Paragraph(f"({r_get_literal_translation(r_get_suggested_translation(verse), to_language=report_language)})", greek_source_style))
 
             story.append(Paragraph(f"<b>{r_get_label('Review')}</b>:", body_text_style))
             story.append(Paragraph(r_get_review(verse), greek_source_style))
