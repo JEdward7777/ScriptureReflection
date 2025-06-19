@@ -72,7 +72,7 @@ def compute_number_unanswered_grades( verse, config ):
 
     return len(last_reflection_loop['grades'])
 
-def verse_needs_finialization( verse, config ):
+def verse_needs_finalization( verse, config ):
     """
     A verse needs finilized if there has been the correct number
     of loops and the last set of grades have been reflected on.
@@ -116,7 +116,7 @@ def finalize_verse( verse, config ):
     if verse_is_finalized( verse ):
         return
 
-    if not verse_needs_finialization( verse, config ):
+    if not verse_needs_finalization( verse, config ):
         return
 
     #compute_verse_grade has a side effect of making all
@@ -1080,7 +1080,7 @@ def run_config__lowest_grade_priority( config, api_keys, save_timeout ):
                         #If the verse has enough loops on it, then it needs to be finalized
                         #where we just pick the version which had the highest grade, make it
                         #the active translation and then mark the verse as finalized.
-                        if verse_needs_finialization( selected_verse, config ):
+                        if verse_needs_finalization( selected_verse, config ):
                             finalize_verse( selected_verse, config )
                             action_done = f"finalized verse {utils.look_up_key( selected_verse, reference_key )}"
                             output_dirty = True

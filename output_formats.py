@@ -1751,7 +1751,7 @@ def convert_to_report( file ):
             # estimated_end_time = len(book_to_verses[book])/(verse_i+1) * elapsed_time + current_time
             
             # Calculate estimated total time needed
-            estimated_total_time = len(book_to_verses[book]) / (verse_i + 1) * elapsed_time
+            estimated_total_time = len(low_end_verses) / (verse_i + 1) * elapsed_time
             # Estimated end time is start time + total estimated duration
             estimated_end_time = start_time + estimated_total_time
 
