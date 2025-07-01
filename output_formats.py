@@ -1420,6 +1420,7 @@ def convert_to_report( file ):
     target_language = this_config.get( 'markdown_format', {} ).get( "outputs", {} ).get( "target language", None )
     if target_language is None:
         target_language = this_config.get( 'reports', {} ).get( "target language", "English" )
+    source_language = this_config.get( "reports", {} ).get( "source language", None )
 
 
     #now split it into books if the config requests it.
@@ -1765,7 +1766,8 @@ def convert_to_report( file ):
             story.append(Paragraph(f"<b>{r_get_label('Source')}</b>:", body_text_style))
             if r_get_source(verse):
                 story.append(Paragraph(r_get_source(verse), greek_source_style))
-                story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+                if source_language != report_language:
+                    story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
             else:
                 story.append(Paragraph(f"<i>{r_get_label('No source')}</i>", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
@@ -1825,7 +1827,8 @@ def convert_to_report( file ):
             story.append(Paragraph(f"<b>{r_get_label('Source')}</b>:", body_text_style))
             if r_get_source(verse):
                 story.append(Paragraph(r_get_source(verse), greek_source_style))
-                story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
+                if source_language != report_language:
+                    story.append(Paragraph(f"({r_get_literal_translation(r_get_source(verse))})", greek_source_style))
             else:
                 story.append(Paragraph(f"<i>{r_get_label('No source')}</i>", greek_source_style))
             story.append(Spacer(1, 0.1*inch))
