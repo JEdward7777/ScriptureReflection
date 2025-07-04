@@ -6,6 +6,8 @@ import re
 import time
 import json
 import math
+import zlib
+import base64
 from collections import defaultdict, OrderedDict
 from datetime import datetime
 from typing import List
@@ -1853,6 +1855,388 @@ def convert_to_report( file ):
 
         #now output the story.
         doc.build(story)
+
+
+def convert_to_html_report( file ):
+    """
+    This export creates a single file self-contained html export
+    of the file with the worse verses at the top,
+    and the rest in order further down.
+    """
+    this_config = get_config_for( file ) or {}
+
+    if not this_config.get( 'reports', {} ).get( 'html report enabled', False ):
+        print( f"{file} does not have html report enabled" )
+        return
+
+
+    config_font_name = this_config.get( 'font_name', 'DejaVuSans' )
+
+
+    original_content = utils.load_jsonl(f"output/{file}")
+
+    #now strip original_content by start_line end_line
+    if "end_line" in this_config:
+        end_line = this_config["end_line"]-1
+        original_content = original_content[:end_line+1]
+    if "start_line" in this_config:
+        start_line = this_config["start_line"]-1
+        original_content = original_content[start_line:]
+
+    #get the keys
+    translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
+    reference_key = this_config.get( 'reference_key', ['vref'] )
+    source_key = this_config.get( 'source_key', ['source'] )
+
+    report_first_iteration = this_config.get('reports',{}).get('report first iteration', False )
+    report_language = this_config.get( 'reports', {} ).get( "report language", "English" )
+    target_language = this_config.get( 'markdown_format', {} ).get( "outputs", {} ).get( "target language", None )
+    if target_language is None:
+        target_language = this_config.get( 'reports', {} ).get( "target language", "English" )
+    source_language = this_config.get( "reports", {} ).get( "source language", None )
+
+
+    #now split it into books if the config requests it.
+    if this_config.get( 'split_by_book', True ):
+        book_to_verses = defaultdict( lambda: [] )
+        for verse in original_content:
+            vref = utils.look_up_key(verse, reference_key)
+            book = utils.split_ref2( vref )[0]
+            book_to_verses[book].append( verse )
+    else:
+        book_to_verses = { "": original_content }
+
+    #now sort stuffs.
+    book_to_sorted_verses = {
+        book: get_sorted_verses( verses, reference_key, sort_on_first=report_first_iteration )[0]
+        for book, verses in book_to_verses.items()
+    }
+
+
+
+    #Get the output folder ready.
+    base_filename = this_config.get( 'output_file', os.path.splitext(file)[0] )
+    output_folder = this_config.get( 'output_folder', f"output/html_reports/{base_filename}" )
+    os.makedirs( output_folder, exist_ok=True )
+
+
+    num_sd_to_report = this_config.get( "pdf_reports", {} ).get( 'num_sd_to_report', 2 )
+    percentage_sorted = this_config.get( "pdf_reports", {} ).get( 'percentage sorted', None )
+
+
+    client = None
+    if 'api_key' in this_config:
+        with open( 'key.yaml', encoding='utf-8' ) as keys_f:
+            api_keys = yaml.load(keys_f, Loader=yaml.FullLoader)
+            client = OpenAI(api_key=utils.look_up_key( api_keys, this_config['api_key'] ))
+
+    #what we report from the verse object can change based on settings so we break out all the logic
+    #for that here with the r_ functions and the reporting below doesn't have to know about it.
+    r_get_ref = lambda verse: utils.look_up_key(verse, reference_key)
+    r_get_source = lambda verse: utils.look_up_key(verse, source_key)
+    r_get_grade = get_sorted_verses( [], reference_key, sort_on_first=report_first_iteration )[1]
+
+    def r_get_href(verse):
+        ref = r_get_ref(verse)
+        result = ''.join(c if c.isalnum() else '_' for c in ref)
+        return result
+
+
+    def r_get_translation( verse ):
+        translation = utils.look_up_key(verse, translation_key)
+
+        #if we are doing a first iteration report,
+        #then let the translation be what the first reflection loop was grading.
+        #also the grade is that.
+        if report_first_iteration:
+            reflection_loop = verse.get( 'reflection_loops', [] )
+            if reflection_loop:
+                first_loop = reflection_loop[0]
+                graded_verse = first_loop.get( 'graded_verse', '' )
+                if graded_verse:
+                    if graded_verse != translation:
+                        translation = graded_verse
+
+        return translation
+
+    def r_get_grades( verse ):
+        translation = r_get_translation( verse )
+        reflection_loops = verse.get('reflection_loops', [])
+
+        #iterate through the loops backwards and if we find a matching
+        #verse that is what we want, otherwise return the last one and
+        #other wise just return an empty list.
+        if not reflection_loops: return []
+        for loop in reversed( reflection_loops ):
+            if loop.get( 'graded_verse', '' ) == translation:
+                return loop.get( 'grades', [] )
+
+        return reflection_loops[-1].get( 'grades', [] )
+
+    r_translation_is_report_language = report_language == target_language
+
+    def r_get_label( label ):
+        if report_language == "English": return label
+        return r_get_label_wrapped( label, report_language )
+
+    @utils.cache_decorator( f"{output_folder}_cache/labels", enabled=client is not None )
+    def r_get_label_wrapped( label, to_language ):
+        if to_language == "English": return label
+
+        system_message = "You are a translation consultant, creating labels in a target language"
+        user_message_array = []
+        user_message_array += [ "Translate the following label into " + to_language + " preserving the markdown formating:" ]
+
+        user_message_array += [ "\n", json.dumps( {"label": label}, ensure_ascii=False ) ]
+        user_message = "".join(user_message_array)
+
+        if not client: return label
+
+        class LabelResponse(BaseModel):
+            translated_label: str
+
+        completion = utils.use_model( client,
+            model=this_config.get( 'model', 'gpt-4o-mini' ),
+            messages=[
+                { "role": "system", "content": system_message },
+                { "role": "user", "content": user_message }
+            ],
+            temperature=this_config.get('temperature', 1.2),
+            top_p=this_config.get('top_p', 0.9),
+            response_format=LabelResponse
+        )
+
+        model_dump = completion.choices[0].message.parsed.model_dump()
+        translated_label = model_dump['translated_label']
+
+        #don't let the model add markdown markers.
+        if "*" not in label and "*" in translated_label:
+            translated_label = translated_label.replace("*", "")
+
+        if label.startswith( "**" ):
+            if not translated_label.startswith( "**" ):
+                translated_label = "**" + translated_label
+
+        if label.startswith( "### " ):
+            if not translated_label.startswith( "### " ):
+                translated_label = "### " + translated_label
+
+        if label.endswith( "**" ):
+            if not translated_label.endswith( "**" ):
+                translated_label = translated_label + "**"
+
+        if label.endswith( "**:" ):
+            if not translated_label.endswith( "**:" ):
+                translated_label = translated_label + "**:"
+
+        return translated_label
+
+    def r_get_literal_translation( text, from_language=None, to_language=None ):
+        if not client: return text
+
+        if to_language is None:
+            to_language = this_config.get( 'reports', {} ).get("report language", "English" )
+
+        return r_get_literal_translation_wrapped( text, from_language, to_language )
+
+    @utils.cache_decorator( f"{output_folder}_cache/literal_translation", enabled=client is not None )
+    def r_get_literal_translation_wrapped( text, from_language, to_language ):
+        return get_literal_translation( client, this_config, text, from_language, to_language )
+
+    @utils.cache_decorator( f"{output_folder}_cache/summerization", enabled=client is not None )
+    def r_run_summary( raw_report, to_language ):
+        return summarize_verse_report( client, raw_report, this_config.get( "reports", {} ), just_summarize=True, no_label=True, output_in_markdown=False, to_language=to_language )
+
+
+    @utils.cache_decorator( f"{output_folder}_cache/parenthesis_translation", enabled=client is not None )
+    def r_add_parenthesis_translation( text, to_language ):
+        return translate_verse_report( client, text, this_config.get( "reports", {} ), to_language=to_language )
+
+    def r_get_review( verse ):
+        grades = r_get_grades( verse )
+
+        raw_report_array = []
+        for grade_i,grade in enumerate(grades):
+            raw_report_array.append( "**" + r_get_label("Review" ) + f" {grade_i+1}** " )
+            raw_report_array.append( "_(" + r_get_label("Grade" ) + f" {grade['grade']})_: {grade['comment']}\n\n" )
+        raw_report = "".join(raw_report_array)
+
+        summarized_report = r_run_summary( raw_report, to_language=report_language )
+
+        #also add in translations
+        translated_report = r_add_parenthesis_translation( summarized_report, to_language=report_language )
+
+        return translated_report
+
+    if "suggested_translation" in this_config.get( "reports", {} ):
+        suggested_translation_filename = this_config["reports"]["suggested_translation"]
+        if not suggested_translation_filename.endswith( ".jsonl" ):
+            suggested_translation_filename += ".jsonl"
+        suggested_translation = utils.load_jsonl( os.path.join( "output", suggested_translation_filename ) )
+        hashed_suggested_translation = { utils.look_up_key( x, reference_key ): x for x in suggested_translation }
+    else:
+        hashed_suggested_translation = None
+    def r_get_suggested_translation( verse ):
+        if hashed_suggested_translation:
+            return hashed_suggested_translation.get( r_get_ref(verse) )
+
+        if report_first_iteration:
+            last_translation = utils.look_up_key(verse, translation_key)
+            if last_translation and last_translation != r_get_translation(verse):
+                return last_translation
+
+        return None
+
+    #now we will loop through the book names.
+    for book, verses in book_to_sorted_verses.items():
+        report_data = []
+
+        html_name = book if book else base_filename
+
+        html_prefix = this_config.get( "html_reports", {} ).get( "output_prefix", "")
+        if html_prefix:
+            html_name = f"{html_prefix}{html_name}"
+
+        output_filename = f"{output_folder}/{html_name}.html"
+
+        # --- Title Page ---
+        title = this_config.get( "html_reports", {} ).get( "title", f"{base_filename} {book} Report").format( book=book )
+
+        #first thing we do is output a configured number of sd verses which are on the low end.
+        if percentage_sorted is not None:
+            low_end_verses = []
+            sorted_verses = sorted( verses, key=r_get_grade )
+            for verse in sorted_verses:
+                if len(low_end_verses) < percentage_sorted*len(verses)/100:
+                    low_end_verses.append(verse)
+                else:
+                    break
+
+        else:
+            grade_cut_off = compute_std_devs( [ r_get_grade(verse) for verse in verses ], num_sd_to_report )[0]
+            low_end_verses = [ verse for verse in verses if r_get_grade(verse) <= grade_cut_off ]
+
+
+        start_time = time.time()
+
+        #now iterate through these veses.
+        for verse_i, verse in enumerate(low_end_verses):
+
+            current_time = time.time()
+            elapsed_time = current_time - start_time
+            # estimated_end_time = len(book_to_verses[book])/(verse_i+1) * elapsed_time + current_time
+
+            # Calculate estimated total time needed
+            estimated_total_time = len(low_end_verses) / (verse_i + 1) * elapsed_time
+            # Estimated end time is start time + total estimated duration
+            estimated_end_time = start_time + estimated_total_time
+
+            print( f"Processing low end verse {verse_i+1} of {len(low_end_verses)} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
+
+            verse_data = {
+                "vref": r_get_ref(verse),
+                "grade": f"{r_get_grade(verse):.1f}",
+                "source": r_get_source(verse),
+                "translation": r_get_translation(verse),
+                "suggested_translation": r_get_suggested_translation(verse),
+                "review": r_get_review(verse)
+            }
+            report_data.append(verse_data)
+
+
+        start_time = time.time()
+        #now iterate through all the verses in natural order.
+        for verse_i,verse in enumerate(book_to_verses[book]):
+
+            current_time = time.time()
+            elapsed_time = current_time - start_time
+            # estimated_end_time = len(book_to_verses[book])/(verse_i+1) * elapsed_time + current_time
+
+            # Calculate estimated total time needed
+            estimated_total_time = len(book_to_verses[book]) / (verse_i + 1) * elapsed_time
+            # Estimated end time is start time + total estimated duration
+            estimated_end_time = start_time + estimated_total_time
+
+            print( f"Processing verse {verse_i+1} of {len(book_to_verses[book])} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
+
+            verse_data = {
+                "vref": r_get_ref(verse),
+                "grade": f"{r_get_grade(verse):.1f}",
+                "source": r_get_source(verse),
+                "translation": r_get_translation(verse),
+                "suggested_translation": r_get_suggested_translation(verse),
+                "review": r_get_review(verse)
+            }
+            report_data.append(verse_data)
+
+        json_string = json.dumps(report_data, ensure_ascii=False)
+        compressed_data = zlib.compress(json_string.encode('utf-8'))
+        base64_data = base64.b64encode(compressed_data).decode('utf-8')
+
+        html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{title}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js"></script>
+    <style>
+        body {{ font-family: sans-serif; }}
+        .verse {{ border-bottom: 1px solid #ccc; padding: 10px; }}
+        .vref {{ font-weight: bold; font-size: 1.2em; }}
+        .grade {{ font-style: italic; }}
+        .label {{ font-weight: bold; }}
+    </style>
+</head>
+<body>
+    <h1>{title}</h1>
+    <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
+    <button id="download-jsonl">Download JSONL</button>
+    <div id="report-content"></div>
+
+    <script>
+        const base64Data = '{base64_data}';
+        const compressedData = Uint8Array.from(atob(base64Data), c => c.charCodeAt(0));
+        const jsonString = pako.inflate(compressedData, {{ to: 'string' }});
+        const reportData = JSON.parse(jsonString);
+
+        const reportContent = document.getElementById('report-content');
+
+        reportData.forEach(verse => {{
+            const verseDiv = document.createElement('div');
+            verseDiv.className = 'verse';
+
+            verseDiv.innerHTML = `
+                <div class="vref">${{verse.vref}} <span class="grade">(Grade: ${{verse.grade}})</span></div>
+                <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
+                <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
+                ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span> <div>${{verse.suggested_translation}}</div></div>` : ''}}
+                <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
+            `;
+            reportContent.appendChild(verseDiv);
+        }});
+
+        document.getElementById('download-jsonl').addEventListener('click', () => {{
+            let jsonlContent = '';
+            reportData.forEach(item => {{
+                jsonlContent += JSON.stringify(item) + '\n';
+            }});
+
+            const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = '{html_name}.jsonl';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }});
+    </script>
+</body>
+</html>
+"""
+        with open(output_filename, "w", encoding="utf-8") as f:
+            f.write(html_content)
 
 
 
