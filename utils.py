@@ -471,3 +471,7 @@ def cache_decorator(cache_key: str, enabled: bool) -> Callable:
                 return func(*args, **kwargs)
         return wrapper
     return decorator
+
+
+
+SLASH_N = "\\n"

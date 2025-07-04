@@ -50,7 +50,7 @@ def run( file ):
     target_language = this_config.get( 'markdown_format', {} ).get( "outputs", {} ).get( "target language", None )
     if target_language is None:
         target_language = this_config.get( 'reports', {} ).get( "target language", "English" )
-    #source_language = this_config.get( "reports", {} ).get( "source language", None )
+    source_language = this_config.get( "reports", {} ).get( "source language", None )
 
 
     #now split it into books if the config requests it.
@@ -192,6 +192,9 @@ def run( file ):
         if to_language is None:
             to_language = this_config.get( 'reports', {} ).get("report language", "English" )
 
+        if this_config.get( 'html_reports', {} ).get( 'hide_source_language_in_back_translations', False ):
+            from_language = None
+
         return r_get_literal_translation_wrapped( text, from_language, to_language )
 
     @utils.cache_decorator( f"{pdf_report_output_folder}_cache/literal_translation", enabled=client is not None )
@@ -206,6 +209,21 @@ def run( file ):
     @utils.cache_decorator( f"{pdf_report_output_folder}_cache/parenthesis_translation", enabled=client is not None )
     def r_add_parenthesis_translation( text, to_language ):
         return translate_verse_report( client, text, this_config.get( "reports", {} ), to_language=to_language )
+
+    def r_get_translation_translated( verse ):
+        if target_language != report_language:
+            return r_get_literal_translation( r_get_translation(verse), from_language=target_language, to_language=report_language )
+        return None
+
+    def r_get_source_translated( verse ):
+        if source_language != report_language:
+            return r_get_literal_translation( r_get_source(verse), from_language=source_language, to_language=report_language )
+        return None
+
+    def r_get_suggested_translation_translated( verse ):
+        if target_language != report_language:
+            return r_get_literal_translation( r_get_suggested_translation( verse ), from_language=target_language, to_language=report_language )
+        return None
 
     def r_get_review( verse ):
         grades = r_get_grades( verse )
@@ -282,13 +300,18 @@ def run( file ):
                 "suggested_translation": r_get_suggested_translation(verse),
                 "review": r_get_review(verse)
             }
+            if r_get_source_translated(verse):
+                verse_data["source_translated"] = r_get_source_translated(verse)
+            if r_get_translation_translated(verse):
+                verse_data["translation_translated"] = r_get_translation_translated(verse)
+            if r_get_suggested_translation_translated(verse):
+                verse_data["suggested_translation_translated"] = r_get_suggested_translation_translated(verse)
+
             report_data.append(verse_data)
 
         json_string = json.dumps(report_data, ensure_ascii=False)
         compressed_data = zlib.compress(json_string.encode('utf-8'))
         base64_data = base64.b64encode(compressed_data).decode('utf-8')
-
-        slash_n = "\\n"
         html_content = f"""
 <!DOCTYPE html>
 <html>
@@ -342,9 +365,26 @@ def run( file ):
 
             verseDiv.innerHTML = `
                 <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
-                <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
-                <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
-                ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span> <div>${{verse.suggested_translation}}</div></div>` : ''}}
+                <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>`;
+            if( verse.source_translated ){{
+                verseDiv.innterHTML += `
+                <div>(${{verse.source_translated}})</div>`;
+            }}
+            verseDiv.innerHTML += `
+                <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>`;
+            if( verse.translation_translated ){{
+                verseDiv.innerHTML += `
+                <div>(${{verse.translation_translated}})</div>`;
+            }}
+            if( verse.suggested_translation ){{
+                verseDiv.innerHTML += `
+                <div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>`;
+                if( verse.suggested_translation_translated ){{
+                    verseDiv.innerHTML += `
+                <div>(${{verse.suggested_translation_translated}})</div>`;
+                }}
+            }}
+            verseDiv.innerHTML += `
                 <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
             `;
             return verseDiv;
@@ -381,7 +421,7 @@ def run( file ):
             let jsonlContent = '';
             reportData.forEach(item => {{
                 const itemForJsonl = {{...item, grade: item.grade.toFixed(1)}};
-                jsonlContent += JSON.stringify(itemForJsonl) + '{slash_n}';
+                jsonlContent += JSON.stringify(itemForJsonl) + '{utils.SLASH_N}';
             }});
 
             const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
