@@ -1919,6 +1919,8 @@ def convert_to_html_report( file ):
     output_folder = this_config.get( 'output_folder', f"output/html_reports/{base_filename}" )
     os.makedirs( output_folder, exist_ok=True )
 
+    pdf_report_output_folder = this_config.get( 'output_folder', f"output/pdf_reports/{base_filename}" )
+
 
     num_sd_to_report = this_config.get( "pdf_reports", {} ).get( 'num_sd_to_report', 2 )
     percentage_sorted = this_config.get( "pdf_reports", {} ).get( 'percentage sorted', None )
@@ -1979,7 +1981,7 @@ def convert_to_html_report( file ):
         if report_language == "English": return label
         return r_get_label_wrapped( label, report_language )
 
-    @utils.cache_decorator( f"{output_folder}_cache/labels", enabled=client is not None )
+    @utils.cache_decorator( f"{pdf_report_output_folder}_cache/labels", enabled=client is not None )
     def r_get_label_wrapped( label, to_language ):
         if to_language == "English": return label
 
@@ -2039,16 +2041,16 @@ def convert_to_html_report( file ):
 
         return r_get_literal_translation_wrapped( text, from_language, to_language )
 
-    @utils.cache_decorator( f"{output_folder}_cache/literal_translation", enabled=client is not None )
+    @utils.cache_decorator( f"{pdf_report_output_folder}_cache/literal_translation", enabled=client is not None )
     def r_get_literal_translation_wrapped( text, from_language, to_language ):
         return get_literal_translation( client, this_config, text, from_language, to_language )
 
-    @utils.cache_decorator( f"{output_folder}_cache/summerization", enabled=client is not None )
+    @utils.cache_decorator( f"{pdf_report_output_folder}_cache/summerization", enabled=client is not None )
     def r_run_summary( raw_report, to_language ):
         return summarize_verse_report( client, raw_report, this_config.get( "reports", {} ), just_summarize=True, no_label=True, output_in_markdown=False, to_language=to_language )
 
 
-    @utils.cache_decorator( f"{output_folder}_cache/parenthesis_translation", enabled=client is not None )
+    @utils.cache_decorator( f"{pdf_report_output_folder}_cache/parenthesis_translation", enabled=client is not None )
     def r_add_parenthesis_translation( text, to_language ):
         return translate_verse_report( client, text, this_config.get( "reports", {} ), to_language=to_language )
 
@@ -2093,7 +2095,7 @@ def convert_to_html_report( file ):
 
         html_name = book if book else base_filename
 
-        html_prefix = this_config.get( "html_reports", {} ).get( "output_prefix", "")
+        html_prefix = this_config.get( "html_reports", {} ).get( "output_prefix", "" )
         if html_prefix:
             html_name = f"{html_prefix}{html_name}"
 
@@ -2218,7 +2220,7 @@ def convert_to_html_report( file ):
         document.getElementById('download-jsonl').addEventListener('click', () => {{
             let jsonlContent = '';
             reportData.forEach(item => {{
-                jsonlContent += JSON.stringify(item) + '\n';
+                jsonlContent += JSON.stringify(item) + '\\n';
             }});
 
             const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
