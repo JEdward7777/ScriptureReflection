@@ -15,9 +15,6 @@ import output_formatters.html_report
 USFM_NAME = output_formatters.usfm.USFM_NAME
 
 
-#from output_formatters.usfm import USFM_NAME  # Ensure the import statement correctly references the module and attribute
-
-
 def main():
     """
     Main function.

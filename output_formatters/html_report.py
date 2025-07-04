@@ -4,6 +4,7 @@ from datetime import datetime
 import json
 import zlib
 import base64
+from collections import defaultdict
 
 
 from output_formatters.pdf_report import get_literal_translation, summarize_verse_report, translate_verse_report, compute_std_devs
@@ -14,7 +15,6 @@ from pydantic import BaseModel
 from openai import OpenAI
 
 import utils
-from collections import defaultdict
 from format_utilities import get_config_for, get_sorted_verses
 
 def run( file ):
@@ -261,47 +261,6 @@ def run( file ):
         # --- Title Page ---
         title = this_config.get( "html_reports", {} ).get( "title", f"{base_filename} {book} Report").format( book=book )
 
-        #first thing we do is output a configured number of sd verses which are on the low end.
-        if percentage_sorted is not None:
-            low_end_verses = []
-            sorted_verses = sorted( verses, key=r_get_grade )
-            for verse in sorted_verses:
-                if len(low_end_verses) < percentage_sorted*len(verses)/100:
-                    low_end_verses.append(verse)
-                else:
-                    break
-
-        else:
-            grade_cut_off = compute_std_devs( [ r_get_grade(verse) for verse in verses ], num_sd_to_report )[0]
-            low_end_verses = [ verse for verse in verses if r_get_grade(verse) <= grade_cut_off ]
-
-
-        start_time = time.time()
-
-        #now iterate through these veses.
-        for verse_i, verse in enumerate(low_end_verses):
-
-            current_time = time.time()
-            elapsed_time = current_time - start_time
-            # estimated_end_time = len(book_to_verses[book])/(verse_i+1) * elapsed_time + current_time
-
-            # Calculate estimated total time needed
-            estimated_total_time = len(low_end_verses) / (verse_i + 1) * elapsed_time
-            # Estimated end time is start time + total estimated duration
-            estimated_end_time = start_time + estimated_total_time
-
-            print( f"Processing low end verse {verse_i+1} of {len(low_end_verses)} - {elapsed_time:.2f} seconds elapsed - estimated {estimated_end_time - current_time:.2f} seconds left, estimated end time {datetime.fromtimestamp(estimated_end_time).strftime('%Y-%m-%d %I:%M:%S %p')}" )
-
-            verse_data = {
-                "vref": r_get_ref(verse),
-                "grade": f"{r_get_grade(verse):.1f}",
-                "source": r_get_source(verse),
-                "translation": r_get_translation(verse),
-                "suggested_translation": r_get_suggested_translation(verse),
-                "review": r_get_review(verse)
-            }
-            report_data.append(verse_data)
-
 
         start_time = time.time()
         #now iterate through all the verses in natural order.
@@ -320,7 +279,7 @@ def run( file ):
 
             verse_data = {
                 "vref": r_get_ref(verse),
-                "grade": f"{r_get_grade(verse):.1f}",
+                "grade": r_get_grade(verse),
                 "source": r_get_source(verse),
                 "translation": r_get_translation(verse),
                 "suggested_translation": r_get_suggested_translation(verse),
@@ -332,6 +291,7 @@ def run( file ):
         compressed_data = zlib.compress(json_string.encode('utf-8'))
         base64_data = base64.b64encode(compressed_data).decode('utf-8')
 
+        slash_n = "\\n"
         html_content = f"""
 <!DOCTYPE html>
 <html>
@@ -350,7 +310,12 @@ def run( file ):
     <h1>{title}</h1>
     <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
     <button id="download-jsonl">Download JSONL</button>
-    <div id="report-content"></div>
+    
+    <h2>Poorest Graded Verses</h2>
+    <div id="poor-verses"></div>
+
+    <h2>All Verses</h2>
+    <div id="all-verses"></div>
 
     <script>
         const base64Data = '{base64_data}';
@@ -358,26 +323,58 @@ def run( file ):
         const jsonString = pako.inflate(compressedData, {{ to: 'string' }});
         const reportData = JSON.parse(jsonString);
 
-        const reportContent = document.getElementById('report-content');
+        const num_sd_to_report = {num_sd_to_report};
+        const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
 
-        reportData.forEach(verse => {{
+        const poorVersesContent = document.getElementById('poor-verses');
+        const allVersesContent = document.getElementById('all-verses');
+
+        function renderVerse(verse) {{
             const verseDiv = document.createElement('div');
             verseDiv.className = 'verse';
 
             verseDiv.innerHTML = `
-                <div class="vref">${{verse.vref}} <span class="grade">(Grade: ${{verse.grade}})</span></div>
+                <div class="vref">${{verse.vref}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
                 <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
                 <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
                 ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span> <div>${{verse.suggested_translation}}</div></div>` : ''}}
                 <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
             `;
-            reportContent.appendChild(verseDiv);
+            return verseDiv;
+        }}
+
+        // Populate poor verses
+        let poorVerses = [];
+        if (percentage_sorted !== null) {{
+            const sortedByGrade = [...reportData].sort((a, b) => a.grade - b.grade);
+            const count = Math.floor(percentage_sorted * reportData.length / 100);
+            poorVerses = sortedByGrade.slice(0, count);
+        }} else {{
+            const grades = reportData.map(v => v.grade);
+            if (grades.length > 0) {{
+                const mean = grades.reduce((a, b) => a + b, 0) / grades.length;
+                const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / grades.length);
+                const gradeCutOff = mean - num_sd_to_report * stdDev;
+                poorVerses = reportData.filter(v => v.grade <= gradeCutOff);
+                poorVerses.sort((a, b) => a.grade - b.grade);
+            }}
+        }}
+
+        poorVerses.forEach(verse => {{
+            poorVersesContent.appendChild(renderVerse(verse));
         }});
+
+        // Populate all verses
+        reportData.forEach(verse => {{
+            allVersesContent.appendChild(renderVerse(verse));
+        }});
+
 
         document.getElementById('download-jsonl').addEventListener('click', () => {{
             let jsonlContent = '';
             reportData.forEach(item => {{
-                jsonlContent += JSON.stringify(item) + '\\n';
+                const itemForJsonl = {{...item, grade: item.grade.toFixed(1)}};
+                jsonlContent += JSON.stringify(itemForJsonl) + '{slash_n}';
             }});
 
             const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
