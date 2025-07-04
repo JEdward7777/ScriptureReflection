@@ -63,11 +63,7 @@ def run( file ):
     else:
         book_to_verses = { "": original_content }
 
-    #now sort stuffs.
-    book_to_sorted_verses = {
-        book: get_sorted_verses( verses, reference_key, sort_on_first=report_first_iteration )[0]
-        for book, verses in book_to_verses.items()
-    }
+    # Sorting by grade is handled in the HTML file with javascript.
 
 
 
@@ -247,7 +243,7 @@ def run( file ):
         return None
 
     #now we will loop through the book names.
-    for book, verses in book_to_sorted_verses.items():
+    for book, verses in book_to_verses.items():
         report_data = []
 
         html_name = book if book else base_filename
