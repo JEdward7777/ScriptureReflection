@@ -275,6 +275,7 @@ def run( file ):
 
             verse_data = {
                 "vref": r_get_ref(verse),
+                "href": r_get_href(verse),
                 "grade": r_get_grade(verse),
                 "source": r_get_source(verse),
                 "translation": r_get_translation(verse),
@@ -325,12 +326,22 @@ def run( file ):
         const poorVersesContent = document.getElementById('poor-verses');
         const allVersesContent = document.getElementById('all-verses');
 
-        function renderVerse(verse) {{
+        function renderVerse(verse, isPoor) {{
             const verseDiv = document.createElement('div');
             verseDiv.className = 'verse';
+            if (!isPoor) {{
+                verseDiv.id = verse.href;
+            }}
+
+            let vref_html;
+            if (isPoor) {{
+                vref_html = `<a href="#${{verse.href}}">${{verse.vref}}</a>`;
+            }} else {{
+                vref_html = verse.vref;
+            }}
 
             verseDiv.innerHTML = `
-                <div class="vref">${{verse.vref}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
+                <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
                 <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
                 <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
                 ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span> <div>${{verse.suggested_translation}}</div></div>` : ''}}
@@ -357,12 +368,12 @@ def run( file ):
         }}
 
         poorVerses.forEach(verse => {{
-            poorVersesContent.appendChild(renderVerse(verse));
+            poorVersesContent.appendChild(renderVerse(verse, true));
         }});
 
         // Populate all verses
         reportData.forEach(verse => {{
-            allVersesContent.appendChild(renderVerse(verse));
+            allVersesContent.appendChild(renderVerse(verse, false));
         }});
 
 
