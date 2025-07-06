@@ -324,6 +324,35 @@ def run( file ):
         .vref {{ font-weight: bold; font-size: 1.2em; }}
         .grade {{ font-style: italic; }}
         .label {{ font-weight: bold; }}
+        #heat-map {{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 5px;
+            margin-bottom: 20px;
+        }}
+        .heat-map-row {{
+            display: contents;
+        }}
+        .heat-map-label {{
+            font-weight: bold;
+            text-align: right;
+            padding-right: 10px;
+        }}
+        .heat-map-verses {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }}
+        .heat-map-square {{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+        }}
     </style>
 </head>
 <body>
@@ -331,6 +360,10 @@ def run( file ):
     <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
     <button id="download-jsonl">Download JSONL</button>
     
+    <h2>Grade Heat Map</h2>
+    <p>Blue: Low grades, Red: High grades</p>
+    <div id="heat-map"></div>
+
     <h2>Poorest Graded Verses</h2>
     <div id="poor-verses"></div>
 
@@ -348,6 +381,34 @@ def run( file ):
 
         const poorVersesContent = document.getElementById('poor-verses');
         const allVersesContent = document.getElementById('all-verses');
+        const heatMapContent = document.getElementById('heat-map');
+
+        function gradeToColor(grade, minGrade, maxGrade) {{
+            if (maxGrade === minGrade) {{
+                return 'rgb(128, 128, 128)';
+            }}
+            const normalized = (grade - minGrade) / (maxGrade - minGrade);
+            const hue = (1 - normalized) * 240;
+            return `hsl(${{hue}}, 80%, 60%)`;
+        }}
+
+        function splitRef(reference) {{
+            const lastSpaceIndex = reference.lastIndexOf(' ');
+            if (lastSpaceIndex === -1) {{
+                return [reference, null, null];
+            }}
+            const bookSplit = reference.substring(0, lastSpaceIndex);
+            const chapterVerseStr = reference.substring(lastSpaceIndex + 1);
+            if (!chapterVerseStr.includes(':')) {{
+                return [bookSplit, parseInt(chapterVerseStr), null];
+            }}
+            const [chapterNum, verseNum] = chapterVerseStr.split(':');
+            if (verseNum.includes('-')) {{
+                const [startVerse, endVerse] = verseNum.split('-').map(Number);
+                return [bookSplit, parseInt(chapterNum), startVerse, endVerse];
+            }}
+            return [bookSplit, parseInt(chapterNum), parseInt(verseNum), parseInt(verseNum)];
+        }}
 
         function renderVerse(verse, isPoor) {{
             const verseDiv = document.createElement('div');
@@ -389,6 +450,52 @@ def run( file ):
             `;
             return verseDiv;
         }}
+
+        // Populate heat map
+        const bookChapterVerses = {{}};
+        reportData.forEach(verse => {{
+            const [book, chapter, startVerse, endVerse] = splitRef(verse.vref);
+            if (!bookChapterVerses[book]) {{
+                bookChapterVerses[book] = {{}};
+            }}
+            if (!bookChapterVerses[book][chapter]) {{
+                bookChapterVerses[book][chapter] = [];
+            }}
+            bookChapterVerses[book][chapter].push(verse);
+        }});
+
+        const allGrades = reportData.map(v => v.grade);
+        const minGrade = Math.min(...allGrades);
+        const maxGrade = Math.max(...allGrades);
+
+        Object.keys(bookChapterVerses).sort().forEach(book => {{
+            Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
+                const chapterVerses = bookChapterVerses[book][chapter];
+                chapterVerses.sort((a, b) => splitRef(a.vref)[2] - splitRef(b.vref)[2]);
+
+                const row = document.createElement('div');
+                row.className = 'heat-map-row';
+
+                const label = document.createElement('div');
+                label.className = 'heat-map-label';
+                label.textContent = `${{book}} ${{chapter}}`;
+                row.appendChild(label);
+
+                const versesContainer = document.createElement('div');
+                versesContainer.className = 'heat-map-verses';
+
+                chapterVerses.forEach(verse => {{
+                    const square = document.createElement('a');
+                    square.className = 'heat-map-square';
+                    square.href = `#${{verse.href}}`;
+                    square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
+                    square.textContent = splitRef(verse.vref)[2];
+                    versesContainer.appendChild(square);
+                }});
+                row.appendChild(versesContainer);
+                heatMapContent.appendChild(row);
+            }});
+        }});
 
         // Populate poor verses
         let poorVerses = [];
