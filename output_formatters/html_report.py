@@ -309,27 +309,94 @@ def run( file ):
 
             report_data.append(verse_data)
 
+        # Read and encode the font
+        font_path = 'fonts/NotoSans-Regular.ttf'
+        if os.path.exists(font_path):
+            with open(font_path, 'rb') as f:
+                font_data = f.read()
+            base64_font = base64.b64encode(font_data).decode('utf-8')
+        else:
+            base64_font = ''
+
         json_string = json.dumps(report_data, ensure_ascii=False)
         compress_obj = zlib.compressobj(level=-1, method=zlib.DEFLATED, wbits=-15)
         compressed_data = compress_obj.compress(json_string.encode('utf-8'))
         compressed_data += compress_obj.flush()
         base64_data = base64.b64encode(compressed_data).decode('utf-8')
-        html_content = f"""
+        html_content = f'''
 <!DOCTYPE html>
 <html>
 <head>
     <title>{title}</title>
     <style>
-        body {{ font-family: sans-serif; }}
-        .verse {{ border-bottom: 1px solid #ccc; padding: 10px; }}
-        .vref {{ font-weight: bold; font-size: 1.2em; }}
-        .grade {{ font-style: italic; }}
-        .label {{ font-weight: bold; }}
+        @font-face {{
+            font-family: 'NotoSans';
+            src: url(data:font/truetype;charset=utf-8;base64,{base64_font}) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }}
+        body {{
+            font-family: 'NotoSans', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }}
+        .container {{
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        h1, h2 {{
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }}
+        h1 {{
+            text-align: center;
+            font-size: 2.5em;
+        }}
+        h2 {{
+            font-size: 1.8em;
+        }}
+        .verse {{
+            border: 1px solid #e0e0e0;
+            background-color: #fafafa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }}
+        .vref {{
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #0056b3;
+        }}
+        .grade {{
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+        }}
+        .label {{
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+            display: block;
+        }}
         #heat-map {{
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 5px;
             margin-bottom: 20px;
+            background: #fdfdfd;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
         }}
         .heat-map-row {{
             display: contents;
@@ -338,11 +405,12 @@ def run( file ):
             font-weight: bold;
             text-align: right;
             padding-right: 10px;
+            align-self: center;
         }}
         .heat-map-verses {{
             display: flex;
             flex-wrap: wrap;
-            gap: 2px;
+            gap: 3px;
         }}
         .heat-map-square {{
             width: 24px;
@@ -352,24 +420,46 @@ def run( file ):
             justify-content: center;
             color: black;
             text-decoration: none;
-            font-size: 12px;
+            font-size: 11px;
+            border-radius: 4px;
+            transition: transform 0.1s ease-in-out;
+        }}
+        .heat-map-square:hover {{
+            transform: scale(1.2);
+            z-index: 10;
+        }}
+        #download-jsonl {{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }}
+        #download-jsonl:hover {{
+            background-color: #0056b3;
         }}
     </style>
 </head>
 <body>
-    <h1>{title}</h1>
-    <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
-    <button id="download-jsonl">Download JSONL</button>
-    
-    <h2>Grade Heat Map</h2>
-    <p>Blue: Low grades, Red: High grades</p>
-    <div id="heat-map"></div>
+    <div class="container">
+        <h1>{title}</h1>
+        <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
+        <button id="download-jsonl">Download JSONL</button>
+        
+        <h2>Grade Heat Map</h2>
+        <p>Blue: Low grades, Red: High grades</p>
+        <div id="heat-map"></div>
 
-    <h2>Poorest Graded Verses</h2>
-    <div id="poor-verses"></div>
+        <h2>Poorest Graded Verses</h2>
+        <div id="poor-verses"></div>
 
-    <h2>All Verses</h2>
-    <div id="all-verses"></div>
+        <h2>All Verses</h2>
+        <div id="all-verses"></div>
+    </div>
 
     <script>
         const base64Data = '{base64_data}';
@@ -444,7 +534,7 @@ def run( file ):
                     <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
                     <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>`;
                 if( verse.source_translated ){{
-                    verseDiv.innterHTML += `
+                    verseDiv.innerHTML += `
                     <div>(${{verse.source_translated}})</div>`;
                 }}
                 verseDiv.innerHTML += `
@@ -561,6 +651,6 @@ def run( file ):
     </script>
 </body>
 </html>
-"""
+'''
         with open(output_filename, "w", encoding="utf-8") as f:
             f.write(html_content)
