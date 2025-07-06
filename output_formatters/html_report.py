@@ -310,14 +310,15 @@ def run( file ):
             report_data.append(verse_data)
 
         json_string = json.dumps(report_data, ensure_ascii=False)
-        compressed_data = zlib.compress(json_string.encode('utf-8'))
+        compress_obj = zlib.compressobj(level=-1, method=zlib.DEFLATED, wbits=-15)
+        compressed_data = compress_obj.compress(json_string.encode('utf-8'))
+        compressed_data += compress_obj.flush()
         base64_data = base64.b64encode(compressed_data).decode('utf-8')
         html_content = f"""
 <!DOCTYPE html>
 <html>
 <head>
     <title>{title}</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js"></script>
     <style>
         body {{ font-family: sans-serif; }}
         .verse {{ border-bottom: 1px solid #ccc; padding: 10px; }}
@@ -373,173 +374,189 @@ def run( file ):
     <script>
         const base64Data = '{base64_data}';
         const compressedData = Uint8Array.from(atob(base64Data), c => c.charCodeAt(0));
-        const jsonString = pako.inflate(compressedData, {{ to: 'string' }});
-        const reportData = JSON.parse(jsonString);
-
-        const num_sd_to_report = {num_sd_to_report};
-        const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
-
-        const poorVersesContent = document.getElementById('poor-verses');
-        const allVersesContent = document.getElementById('all-verses');
-        const heatMapContent = document.getElementById('heat-map');
-
-        function gradeToColor(grade, minGrade, maxGrade) {{
-            if (maxGrade === minGrade) {{
-                return 'rgb(128, 128, 128)';
+        
+        async function decompressData(data) {{
+            const ds = new DecompressionStream('deflate-raw');
+            const writer = ds.writable.getWriter();
+            writer.write(data);
+            writer.close();
+            
+            const reader = ds.readable.getReader();
+            let jsonString = '';
+            while (true) {{
+                const {{ value, done }} = await reader.read();
+                if (done) break;
+                jsonString += new TextDecoder().decode(value);
             }}
-            const normalized = (grade - minGrade) / (maxGrade - minGrade);
-            const hue = (1 - normalized) * 240;
-            return `hsl(${{hue}}, 80%, 60%)`;
+            return JSON.parse(jsonString);
         }}
 
-        function splitRef(reference) {{
-            const lastSpaceIndex = reference.lastIndexOf(' ');
-            if (lastSpaceIndex === -1) {{
-                return [reference, null, null];
-            }}
-            const bookSplit = reference.substring(0, lastSpaceIndex);
-            const chapterVerseStr = reference.substring(lastSpaceIndex + 1);
-            if (!chapterVerseStr.includes(':')) {{
-                return [bookSplit, parseInt(chapterVerseStr), null];
-            }}
-            const [chapterNum, verseNum] = chapterVerseStr.split(':');
-            if (verseNum.includes('-')) {{
-                const [startVerse, endVerse] = verseNum.split('-').map(Number);
-                return [bookSplit, parseInt(chapterNum), startVerse, endVerse];
-            }}
-            return [bookSplit, parseInt(chapterNum), parseInt(verseNum), parseInt(verseNum)];
-        }}
+        decompressData(compressedData).then(reportData => {{
+            const num_sd_to_report = {num_sd_to_report};
+            const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
 
-        function renderVerse(verse, isPoor) {{
-            const verseDiv = document.createElement('div');
-            verseDiv.className = 'verse';
-            if (!isPoor) {{
-                verseDiv.id = verse.href;
+            const poorVersesContent = document.getElementById('poor-verses');
+            const allVersesContent = document.getElementById('all-verses');
+            const heatMapContent = document.getElementById('heat-map');
+
+            function gradeToColor(grade, minGrade, maxGrade) {{
+                if (maxGrade === minGrade) {{
+                    return 'rgb(128, 128, 128)';
+                }}
+                const normalized = (grade - minGrade) / (maxGrade - minGrade);
+                const hue = (1 - normalized) * 240;
+                return `hsl(${{hue}}, 80%, 60%)`;
             }}
 
-            let vref_html;
-            if (isPoor) {{
-                vref_html = `<a href="#${{verse.href}}">${{verse.vref}}</a>`;
-            }} else {{
-                vref_html = verse.vref;
+            function splitRef(reference) {{
+                const lastSpaceIndex = reference.lastIndexOf(' ');
+                if (lastSpaceIndex === -1) {{
+                    return [reference, null, null];
+                }}
+                const bookSplit = reference.substring(0, lastSpaceIndex);
+                const chapterVerseStr = reference.substring(lastSpaceIndex + 1);
+                if (!chapterVerseStr.includes(':')) {{
+                    return [bookSplit, parseInt(chapterVerseStr), null];
+                }}
+                const [chapterNum, verseNum] = chapterVerseStr.split(':');
+                if (verseNum.includes('-')) {{
+                    const [startVerse, endVerse] = verseNum.split('-').map(Number);
+                    return [bookSplit, parseInt(chapterNum), startVerse, endVerse];
+                }}
+                return [bookSplit, parseInt(chapterNum), parseInt(verseNum), parseInt(verseNum)];
             }}
 
-            verseDiv.innerHTML = `
-                <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
-                <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>`;
-            if( verse.source_translated ){{
-                verseDiv.innterHTML += `
-                <div>(${{verse.source_translated}})</div>`;
-            }}
-            verseDiv.innerHTML += `
-                <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>`;
-            if( verse.translation_translated ){{
+            function renderVerse(verse, isPoor) {{
+                const verseDiv = document.createElement('div');
+                verseDiv.className = 'verse';
+                if (!isPoor) {{
+                    verseDiv.id = verse.href;
+                }}
+
+                let vref_html;
+                if (isPoor) {{
+                    vref_html = `<a href="#${{verse.href}}">${{verse.vref}}</a>`;
+                }} else {{
+                    vref_html = verse.vref;
+                }}
+
+                verseDiv.innerHTML = `
+                    <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
+                    <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>`;
+                if( verse.source_translated ){{
+                    verseDiv.innterHTML += `
+                    <div>(${{verse.source_translated}})</div>`;
+                }}
                 verseDiv.innerHTML += `
-                <div>(${{verse.translation_translated}})</div>`;
-            }}
-            if( verse.suggested_translation ){{
-                verseDiv.innerHTML += `
-                <div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>`;
-                if( verse.suggested_translation_translated ){{
+                    <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>`;
+                if( verse.translation_translated ){{
                     verseDiv.innerHTML += `
-                <div>(${{verse.suggested_translation_translated}})</div>`;
+                    <div>(${{verse.translation_translated}})</div>`;
+                }}
+                if( verse.suggested_translation ){{
+                    verseDiv.innerHTML += `
+                    <div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>`;
+                    if( verse.suggested_translation_translated ){{
+                        verseDiv.innerHTML += `
+                    <div>(${{verse.suggested_translation_translated}})</div>`;
+                    }}
+                }}
+                verseDiv.innerHTML += `
+                    <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
+                `;
+                return verseDiv;
+            }}
+
+            // Populate heat map
+            const bookChapterVerses = {{}};
+            reportData.forEach(verse => {{
+                const [book, chapter, startVerse, endVerse] = splitRef(verse.vref);
+                if (!bookChapterVerses[book]) {{
+                    bookChapterVerses[book] = {{}};
+                }}
+                if (!bookChapterVerses[book][chapter]) {{
+                    bookChapterVerses[book][chapter] = [];
+                }}
+                bookChapterVerses[book][chapter].push(verse);
+            }});
+
+            const allGrades = reportData.map(v => v.grade);
+            const minGrade = Math.min(...allGrades);
+            const maxGrade = Math.max(...allGrades);
+
+            Object.keys(bookChapterVerses).sort().forEach(book => {{
+                Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
+                    const chapterVerses = bookChapterVerses[book][chapter];
+                    chapterVerses.sort((a, b) => splitRef(a.vref)[2] - splitRef(b.vref)[2]);
+
+                    const row = document.createElement('div');
+                    row.className = 'heat-map-row';
+
+                    const label = document.createElement('div');
+                    label.className = 'heat-map-label';
+                    label.textContent = `${{book}} ${{chapter}}`;
+                    row.appendChild(label);
+
+                    const versesContainer = document.createElement('div');
+                    versesContainer.className = 'heat-map-verses';
+
+                    chapterVerses.forEach(verse => {{
+                        const square = document.createElement('a');
+                        square.className = 'heat-map-square';
+                        square.href = `#${{verse.href}}`;
+                        square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
+                        square.textContent = splitRef(verse.vref)[2];
+                        versesContainer.appendChild(square);
+                    }});
+                    row.appendChild(versesContainer);
+                    heatMapContent.appendChild(row);
+                }});
+            }});
+
+            // Populate poor verses
+            let poorVerses = [];
+            if (percentage_sorted !== null) {{
+                const sortedByGrade = [...reportData].sort((a, b) => a.grade - b.grade);
+                const count = Math.floor(percentage_sorted * reportData.length / 100);
+                poorVerses = sortedByGrade.slice(0, count);
+            }} else {{
+                const grades = reportData.map(v => v.grade);
+                if (grades.length > 0) {{
+                    const mean = grades.reduce((a, b) => a + b, 0) / grades.length;
+                    const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / grades.length);
+                    const gradeCutOff = mean - num_sd_to_report * stdDev;
+                    poorVerses = reportData.filter(v => v.grade <= gradeCutOff);
+                    poorVerses.sort((a, b) => a.grade - b.grade);
                 }}
             }}
-            verseDiv.innerHTML += `
-                <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
-            `;
-            return verseDiv;
-        }}
 
-        // Populate heat map
-        const bookChapterVerses = {{}};
-        reportData.forEach(verse => {{
-            const [book, chapter, startVerse, endVerse] = splitRef(verse.vref);
-            if (!bookChapterVerses[book]) {{
-                bookChapterVerses[book] = {{}};
-            }}
-            if (!bookChapterVerses[book][chapter]) {{
-                bookChapterVerses[book][chapter] = [];
-            }}
-            bookChapterVerses[book][chapter].push(verse);
-        }});
+            poorVerses.forEach(verse => {{
+                poorVersesContent.appendChild(renderVerse(verse, true));
+            }});
 
-        const allGrades = reportData.map(v => v.grade);
-        const minGrade = Math.min(...allGrades);
-        const maxGrade = Math.max(...allGrades);
+            // Populate all verses
+            reportData.forEach(verse => {{
+                allVersesContent.appendChild(renderVerse(verse, false));
+            }});
 
-        Object.keys(bookChapterVerses).sort().forEach(book => {{
-            Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
-                const chapterVerses = bookChapterVerses[book][chapter];
-                chapterVerses.sort((a, b) => splitRef(a.vref)[2] - splitRef(b.vref)[2]);
 
-                const row = document.createElement('div');
-                row.className = 'heat-map-row';
-
-                const label = document.createElement('div');
-                label.className = 'heat-map-label';
-                label.textContent = `${{book}} ${{chapter}}`;
-                row.appendChild(label);
-
-                const versesContainer = document.createElement('div');
-                versesContainer.className = 'heat-map-verses';
-
-                chapterVerses.forEach(verse => {{
-                    const square = document.createElement('a');
-                    square.className = 'heat-map-square';
-                    square.href = `#${{verse.href}}`;
-                    square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
-                    square.textContent = splitRef(verse.vref)[2];
-                    versesContainer.appendChild(square);
+            document.getElementById('download-jsonl').addEventListener('click', () => {{
+                let jsonlContent = '';
+                reportData.forEach(item => {{
+                    const itemForJsonl = {{...item, grade: item.grade.toFixed(1)}};
+                    jsonlContent += JSON.stringify(itemForJsonl) + '{utils.SLASH_N}';
                 }});
-                row.appendChild(versesContainer);
-                heatMapContent.appendChild(row);
+
+                const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = '{html_name}.jsonl';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             }});
-        }});
-
-        // Populate poor verses
-        let poorVerses = [];
-        if (percentage_sorted !== null) {{
-            const sortedByGrade = [...reportData].sort((a, b) => a.grade - b.grade);
-            const count = Math.floor(percentage_sorted * reportData.length / 100);
-            poorVerses = sortedByGrade.slice(0, count);
-        }} else {{
-            const grades = reportData.map(v => v.grade);
-            if (grades.length > 0) {{
-                const mean = grades.reduce((a, b) => a + b, 0) / grades.length;
-                const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / grades.length);
-                const gradeCutOff = mean - num_sd_to_report * stdDev;
-                poorVerses = reportData.filter(v => v.grade <= gradeCutOff);
-                poorVerses.sort((a, b) => a.grade - b.grade);
-            }}
-        }}
-
-        poorVerses.forEach(verse => {{
-            poorVersesContent.appendChild(renderVerse(verse, true));
-        }});
-
-        // Populate all verses
-        reportData.forEach(verse => {{
-            allVersesContent.appendChild(renderVerse(verse, false));
-        }});
-
-
-        document.getElementById('download-jsonl').addEventListener('click', () => {{
-            let jsonlContent = '';
-            reportData.forEach(item => {{
-                const itemForJsonl = {{...item, grade: item.grade.toFixed(1)}};
-                jsonlContent += JSON.stringify(itemForJsonl) + '{utils.SLASH_N}';
-            }});
-
-            const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = '{html_name}.jsonl';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
         }});
     </script>
 </body>
