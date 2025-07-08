@@ -208,21 +208,26 @@ def run( file ):
 
     @utils.cache_decorator( f"{pdf_report_output_folder}_cache/parenthesis_translation", enabled=client is not None )
     def r_add_parenthesis_translation( text, to_language ):
-        return translate_verse_report( client, text, this_config.get( "reports", {} ), to_language=to_language )
+        if text:
+            return translate_verse_report( client, text, this_config.get( "reports", {} ), to_language=to_language )
+        return text
 
     def r_get_translation_translated( verse ):
         if target_language != report_language:
-            return r_get_literal_translation( r_get_translation(verse), from_language=target_language, to_language=report_language )
+            if r_get_translation(verse):
+                return r_get_literal_translation( r_get_translation(verse), from_language=target_language, to_language=report_language )
         return None
 
     def r_get_source_translated( verse ):
         if source_language != report_language:
-            return r_get_literal_translation( r_get_source(verse), from_language=source_language, to_language=report_language )
+            if r_get_source(verse):
+                return r_get_literal_translation( r_get_source(verse), from_language=source_language, to_language=report_language )
         return None
 
     def r_get_suggested_translation_translated( verse ):
         if target_language != report_language:
-            return r_get_literal_translation( r_get_suggested_translation( verse ), from_language=target_language, to_language=report_language )
+            if r_get_suggested_translation( verse ):
+                return r_get_literal_translation( r_get_suggested_translation( verse ), from_language=target_language, to_language=report_language )
         return None
 
     def r_get_review( verse ):
