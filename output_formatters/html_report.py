@@ -676,9 +676,6 @@ def run( file ):
                     const lowHsl = hexToHsl(settings.lowColor);
                     const highHsl = hexToHsl(settings.highColor);
                     let hueDiff = highHsl.h - lowHsl.h;
-                    if (Math.abs(hueDiff) > 180) {{ // Spin the shorter way around the wheel
-                        hueDiff = hueDiff > 0 ? hueDiff - 360 : hueDiff + 360;
-                    }}
                     const hue = lowHsl.h + hueDiff * clampedNormalized;
                     return `hsl(${{hue}}, 80%, 60%)`;
                 }}
@@ -708,9 +705,6 @@ def run( file ):
                     const lowHsl = hexToHsl(settings.lowColor);
                     const highHsl = hexToHsl(settings.highColor);
                     let hueDiff = highHsl.h - lowHsl.h;
-                    if (Math.abs(hueDiff) > 180) {{
-                        hueDiff = hueDiff > 0 ? hueDiff - 360 : hueDiff + 360;
-                    }}
                     const stops = [];
                     for (let i = 0; i <= 10; i++) {{
                         const normalized = i / 10;
