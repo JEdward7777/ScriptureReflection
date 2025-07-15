@@ -447,9 +447,17 @@ def run( file ):
         #download-jsonl:hover {{
             background-color: #0056b3;
         }}
+        .heat-map-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }}
+        .heat-map-header h2 {{
+            margin: 0;
+        }}
         #settings-container {{
             position: relative;
-            margin-bottom: 10px;
         }}
         #settings-toggle {{
             background: #eee;
@@ -468,6 +476,10 @@ def run( file ):
             margin-top: 10px;
             background: #f9f9f9;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: absolute;
+            right: 0;
+            z-index: 20;
+            width: 400px;
         }}
         .setting-row {{
             display: flex;
@@ -504,47 +516,48 @@ def run( file ):
         <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
         <button id="download-jsonl">Download JSONL</button>
         
-        <div id="settings-container">
-            <button id="settings-toggle" title="Settings">...</button>
-            <div id="settings-panel">
-                <h3>Heat Map Settings</h3>
-                <div class="setting-row">
-                    <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
-                </div>
-                <div class="setting-row">
-                    <label for="low-color">Low Grade Color:</label>
-                    <input type="color" id="low-color">
-                    <label for="high-color">High Grade Color:</label>
-                    <input type="color" id="high-color">
-                </div>
-                <div class="setting-row">
-                    <label for="low-grade-slider">Low Grade:</label>
-                    <input type="range" id="low-grade-slider" min="0" max="100" step="1">
-                    <span id="low-grade-value"></span>
-                    <label><input type="checkbox" id="low-grade-auto"> Auto</label>
-                </div>
-                <div class="setting-row">
-                    <label for="high-grade-slider">High Grade:</label>
-                    <input type="range" id="high-grade-slider" min="0" max="100" step="1">
-                    <span id="high-grade-value"></span>
-                    <label><input type="checkbox" id="high-grade-auto"> Auto</label>
-                </div>
-                <div class="setting-row">
-                    <label>Presets:</label>
-                    <div id="presets">
-                        <button data-preset="1">Red-Green</button>
-                        <button data-preset="2">Neutral</button>
-                        <button data-preset="3">Diverging</button>
-                        <button data-preset="4">Monochrome</button>
-                        <button data-preset="5">The Blues</button>
-                        <button data-preset="6">Rainbow</button>
+        <div class="heat-map-header">
+            <h2>Grade Heat Map</h2>
+            <div id="settings-container">
+                <button id="settings-toggle" title="Settings">...</button>
+                <div id="settings-panel">
+                    <h3>Heat Map Settings</h3>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
                     </div>
+                    <div class="setting-row">
+                        <label for="low-color">Low Grade Color:</label>
+                        <input type="color" id="low-color">
+                        <label for="high-color">High Grade Color:</label>
+                        <input type="color" id="high-color">
+                    </div>
+                    <div class="setting-row">
+                        <label for="low-grade-slider">Low Grade:</label>
+                        <input type="range" id="low-grade-slider" min="0" max="100" step="1">
+                        <span id="low-grade-value"></span>
+                        <label><input type="checkbox" id="low-grade-auto"> Auto</label>
+                    </div>
+                    <div class="setting-row">
+                        <label for="high-grade-slider">High Grade:</label>
+                        <input type="range" id="high-grade-slider" min="0" max="100" step="1">
+                        <span id="high-grade-value"></span>
+                        <label><input type="checkbox" id="high-grade-auto"> Auto</label>
+                    </div>
+                    <div class="setting-row">
+                        <label>Presets:</label>
+                        <div id="presets">
+                            <button data-preset="1">Red-Green</button>
+                            <button data-preset="2">Neutral</button>
+                            <button data-preset="3">Diverging</button>
+                            <button data-preset="4">Monochrome</button>
+                            <button data-preset="5">The Blues</button>
+                            <button data-preset="6">Rainbow</button>
+                        </div>
+                    </div>
+                    <button id="collapse-settings">Close Settings</button>
                 </div>
-                <button id="collapse-settings">Close Settings</button>
             </div>
         </div>
-
-        <h2>Grade Heat Map</h2>
         <div id="legend"></div>
         <div id="heat-map"></div>
 
