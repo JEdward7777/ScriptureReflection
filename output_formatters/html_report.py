@@ -451,13 +451,13 @@ def run( file ):
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }}
         .heat-map-header h2 {{
             margin: 0;
         }}
         #settings-container {{
-            position: relative;
+            display: inline-block;
         }}
         #settings-toggle {{
             background: #eee;
@@ -467,29 +467,63 @@ def run( file ):
             cursor: pointer;
             font-size: 1.5em;
             line-height: 1;
+            transition: background-color 0.2s ease;
+        }}
+        #settings-toggle:hover {{
+            background-color: #ddd;
         }}
         #settings-panel {{
-            display: none;
             border: 1px solid #ccc;
             border-radius: 8px;
-            padding: 20px;
+            padding: 0 20px;
             margin-top: 10px;
+            margin-bottom: 0;
             background: #f9f9f9;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: absolute;
-            right: 0;
-            z-index: 20;
-            width: 400px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+        }}
+        #settings-panel.expanded {{
+            max-height: 1000px;
+            opacity: 1;
+            padding: 20px;
+            margin-bottom: 20px;
         }}
         .setting-row {{
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 1fr;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             margin-bottom: 15px;
-            flex-wrap: wrap;
+        }}
+        .setting-row.color-row {{
+            grid-template-columns: auto auto auto auto;
         }}
         .setting-row label {{
             font-weight: bold;
+            white-space: nowrap;
+        }}
+        @media (max-width: 600px) {{
+            .setting-row {{
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }}
+            .setting-row.color-row {{
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }}
+            .setting-row.color-row > label:first-child,
+            .setting-row.color-row > label:nth-child(3) {{
+                grid-column: 1 / -1;
+            }}
+            #settings-panel {{
+                padding: 15px;
+            }}
+            .container {{
+                padding: 10px 20px;
+            }}
         }}
         #presets button {{
             background-color: #e0e0e0;
@@ -520,43 +554,44 @@ def run( file ):
             <h2>Grade Heat Map</h2>
             <div id="settings-container">
                 <button id="settings-toggle" title="Settings">...</button>
-                <div id="settings-panel">
-                    <h3>Heat Map Settings</h3>
-                    <div class="setting-row">
-                        <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
-                    </div>
-                    <div class="setting-row">
-                        <label for="low-color">Low Grade Color:</label>
-                        <input type="color" id="low-color">
-                        <label for="high-color">High Grade Color:</label>
-                        <input type="color" id="high-color">
-                    </div>
-                    <div class="setting-row">
-                        <label for="low-grade-slider">Low Grade:</label>
-                        <input type="range" id="low-grade-slider" min="0" max="100" step="1">
-                        <span id="low-grade-value"></span>
-                        <label><input type="checkbox" id="low-grade-auto"> Auto</label>
-                    </div>
-                    <div class="setting-row">
-                        <label for="high-grade-slider">High Grade:</label>
-                        <input type="range" id="high-grade-slider" min="0" max="100" step="1">
-                        <span id="high-grade-value"></span>
-                        <label><input type="checkbox" id="high-grade-auto"> Auto</label>
-                    </div>
-                    <div class="setting-row">
-                        <label>Presets:</label>
-                        <div id="presets">
-                            <button data-preset="1">Red-Green</button>
-                            <button data-preset="2">Neutral</button>
-                            <button data-preset="3">Diverging</button>
-                            <button data-preset="4">Monochrome</button>
-                            <button data-preset="5">The Blues</button>
-                            <button data-preset="6">Rainbow</button>
-                        </div>
-                    </div>
-                    <button id="collapse-settings">Close Settings</button>
+            </div>
+        </div>
+        <div id="settings-panel">
+            <h3>Heat Map Settings</h3>
+            <div class="setting-row">
+                <label for="color-mode-fade">Color Mode:</label>
+                <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
+            </div>
+            <div class="setting-row color-row">
+                <label for="low-color">Low Grade Color:</label>
+                <input type="color" id="low-color">
+                <label for="high-color">High Grade Color:</label>
+                <input type="color" id="high-color">
+            </div>
+            <div class="setting-row">
+                <label for="low-grade-slider">Low Grade:</label>
+                <input type="range" id="low-grade-slider" min="0" max="100" step="1">
+                <span id="low-grade-value"></span>
+                <label><input type="checkbox" id="low-grade-auto"> Auto</label>
+            </div>
+            <div class="setting-row">
+                <label for="high-grade-slider">High Grade:</label>
+                <input type="range" id="high-grade-slider" min="0" max="100" step="1">
+                <span id="high-grade-value"></span>
+                <label><input type="checkbox" id="high-grade-auto"> Auto</label>
+            </div>
+            <div class="setting-row">
+                <label>Presets:</label>
+                <div id="presets">
+                    <button data-preset="1">Red-Green</button>
+                    <button data-preset="2">Neutral</button>
+                    <button data-preset="3">Diverging</button>
+                    <button data-preset="4">Monochrome</button>
+                    <button data-preset="5">The Blues</button>
+                    <button data-preset="6">Rainbow</button>
                 </div>
             </div>
+            <button id="collapse-settings">Close Settings</button>
         </div>
         <div id="legend"></div>
         <div id="heat-map"></div>
@@ -623,18 +658,22 @@ def run( file ):
             }};
 
             function saveSettings() {{
-                document.cookie = `reportSettings=${{JSON.stringify(settings)}};path=/;max-age=31536000;samesite=strict`;
+                try {{
+                    localStorage.setItem('reportSettings', JSON.stringify(settings));
+                }} catch (e) {{
+                    console.error("Could not save settings to localStorage", e);
+                }}
             }}
 
             function loadSettings() {{
-                const cookie = document.cookie.split('; ').find(row => row.startsWith('reportSettings='));
-                if (cookie) {{
-                    try {{
-                        const loadedSettings = JSON.parse(cookie.split('=')[1]);
+                try {{
+                    const savedSettings = localStorage.getItem('reportSettings');
+                    if (savedSettings) {{
+                        const loadedSettings = JSON.parse(savedSettings);
                         Object.assign(settings, loadedSettings);
-                    }} catch (e) {{
-                        console.error("Could not parse settings cookie", e);
                     }}
+                }} catch (e) {{
+                    console.error("Could not load settings from localStorage", e);
                 }}
             }}
 
@@ -801,11 +840,21 @@ def run( file ):
 
             function setupEventListeners() {{
                 settingsToggleBtn.addEventListener('click', () => {{
-                    const isHidden = window.getComputedStyle(settingsPanel).display === 'none';
-                    settingsPanel.style.display = isHidden ? 'block' : 'none';
+                    const isExpanded = settingsPanel.classList.contains('expanded');
+                    if (isExpanded) {{
+                        settingsPanel.classList.remove('expanded');
+                        settingsToggleBtn.textContent = '...';
+                        settingsToggleBtn.title = 'Settings';
+                    }} else {{
+                        settingsPanel.classList.add('expanded');
+                        settingsToggleBtn.innerHTML = '&times;';
+                        settingsToggleBtn.title = 'Close Settings';
+                    }}
                 }});
                 collapseSettingsBtn.addEventListener('click', () => {{
-                    settingsPanel.style.display = 'none';
+                    settingsPanel.classList.remove('expanded');
+                    settingsToggleBtn.textContent = '...';
+                    settingsToggleBtn.title = 'Settings';
                 }});
 
                 const update = () => {{
