@@ -428,6 +428,7 @@ def run( file ):
             font-size: 11px;
             border-radius: 4px;
             transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
         }}
         .heat-map-square:hover {{
             transform: scale(1.2);
