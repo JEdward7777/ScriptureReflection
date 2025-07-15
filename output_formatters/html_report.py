@@ -864,19 +864,19 @@ def run( file ):
         <div class="nav-links">
             <a href="#heat-map" class="nav-link">
                 <span class="icon">🗺️</span>
-                <span class="text">Heat Map</span>
+                <span class="text">{r_get_label("Heat Map")}</span>
             </a>
             <a href="#poor-verses" class="nav-link">
                 <span class="icon">⚠️</span>
-                <span class="text">Poor Verses</span>
+                <span class="text">{r_get_label("Poor Verses")}</span>
             </a>
             <a href="#all-verses" class="nav-link">
                 <span class="icon">📖</span>
-                <span class="text">All Verses</span>
+                <span class="text">{r_get_label("All Verses")}</span>
             </a>
             <a href="#top" class="nav-link">
                 <span class="icon">⬆️</span>
-                <span class="text">Top</span>
+                <span class="text">{r_get_label("Top")}</span>
             </a>
         </div>
     </nav>
@@ -887,7 +887,7 @@ def run( file ):
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <h3>Table of Contents</h3>
+            <h3>{r_get_label("Table of Contents")}</h3>
         </div>
         <div class="sidebar-content" id="sidebar-content">
             <!-- Content will be populated by JavaScript -->
@@ -902,59 +902,59 @@ def run( file ):
         </div>
         
         <h1>{title}</h1>
-        <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
-        <button id="download-jsonl">Download JSONL</button>
+        <p>{r_get_label("Generated on")}: {datetime.today().strftime('%B %d, %Y')}</p>
+        <button id="download-jsonl">{r_get_label("Download JSONL")}</button>
         
         <div class="heat-map-header">
-            <h2 id="heat-map">Grade Heat Map</h2>
+            <h2 id="heat-map">{r_get_label("Grade Heat Map")}</h2>
             <div id="settings-container">
-                <button id="settings-toggle" title="Settings">...</button>
+                <button id="settings-toggle" title="{r_get_label("Settings")}">...</button>
             </div>
         </div>
         <div id="settings-panel">
-            <h3>Heat Map Settings</h3>
+            <h3>{r_get_label("Heat Map Settings")}</h3>
             <div class="setting-row">
-                <label for="color-mode-fade">Color Mode:</label>
-                <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
+                <label for="color-mode-fade">{r_get_label("Color Mode")}:</label>
+                <label><input type="checkbox" id="color-mode-fade"> {r_get_label("Use fade instead of spectrum")}</label>
             </div>
             <div class="setting-row color-row">
-                <label for="low-color">Low Grade Color:</label>
+                <label for="low-color">{r_get_label("Low Grade Color")}:</label>
                 <input type="color" id="low-color">
-                <label for="high-color">High Grade Color:</label>
+                <label for="high-color">{r_get_label("High Grade Color")}:</label>
                 <input type="color" id="high-color">
             </div>
             <div class="setting-row">
-                <label for="low-grade-slider">Low Grade:</label>
+                <label for="low-grade-slider">{r_get_label("Low Grade")}:</label>
                 <input type="range" id="low-grade-slider" min="0" max="100" step="1">
                 <span id="low-grade-value"></span>
-                <label><input type="checkbox" id="low-grade-auto"> Auto</label>
+                <label><input type="checkbox" id="low-grade-auto"> {r_get_label("Auto")}</label>
             </div>
             <div class="setting-row">
-                <label for="high-grade-slider">High Grade:</label>
+                <label for="high-grade-slider">{r_get_label("High Grade")}:</label>
                 <input type="range" id="high-grade-slider" min="0" max="100" step="1">
                 <span id="high-grade-value"></span>
-                <label><input type="checkbox" id="high-grade-auto"> Auto</label>
+                <label><input type="checkbox" id="high-grade-auto"> {r_get_label("Auto")}</label>
             </div>
             <div class="setting-row">
-                <label>Presets:</label>
+                <label>{r_get_label("Presets")}:</label>
                 <div id="presets">
-                    <button data-preset="1">Red-Green</button>
-                    <button data-preset="2">Neutral</button>
-                    <button data-preset="3">Diverging</button>
-                    <button data-preset="4">Monochrome</button>
-                    <button data-preset="5">The Blues</button>
-                    <button data-preset="6">Rainbow</button>
+                    <button data-preset="1">{r_get_label("Red-Green")}</button>
+                    <button data-preset="2">{r_get_label("Neutral")}</button>
+                    <button data-preset="3">{r_get_label("Diverging")}</button>
+                    <button data-preset="4">{r_get_label("Monochrome")}</button>
+                    <button data-preset="5">{r_get_label("The Blues")}</button>
+                    <button data-preset="6">{r_get_label("Rainbow")}</button>
                 </div>
             </div>
-            <button id="collapse-settings">Close Settings</button>
+            <button id="collapse-settings">{r_get_label("Close Settings")}</button>
         </div>
         <div id="legend"></div>
         <div id="heat-map-content"></div>
 
-        <h2 id="poor-verses">Poorest Graded Verses</h2>
+        <h2 id="poor-verses">{r_get_label("Poorest Graded Verses")}</h2>
         <div id="poor-verses-content"></div>
 
-        <h2 id="all-verses">All Verses</h2>
+        <h2 id="all-verses">{r_get_label("All Verses")}</h2>
         <div id="all-verses-content"></div>
     </div>
 
@@ -1345,13 +1345,13 @@ def run( file ):
                 let vref_html = isPoor ? `<a href="#${{verse.href}}">${{verse.vref}}</a>` : verse.vref;
 
                 verseDiv.innerHTML = `
-                    <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
-                    <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
+                    <div class="vref">${{vref_html}} <span class="grade">({r_get_label("Grade")}: ${{verse.grade.toFixed(1)}})</span></div>
+                    <div><span class="label">{r_get_label("Source")}:</span> <div>${{verse.source}}</div></div>
                     ${{verse.source_translated ? `<div>(${{verse.source_translated}})</div>` : ''}}
-                    <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
+                    <div><span class="label">{r_get_label("Translation")}:</span> <div>${{verse.translation}}</div></div>
                     ${{verse.translation_translated ? `<div>(${{verse.translation_translated}})</div>` : ''}}
-                    ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>${{verse.suggested_translation_translated ? `<div>(${{verse.suggested_translation_translated}})</div>` : ''}}</div>` : ''}}
-                    <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
+                    ${{verse.suggested_translation ? `<div><span class="label">{r_get_label("Suggested Translation")}:</span><div>${{verse.suggested_translation}}</div>${{verse.suggested_translation_translated ? `<div>(${{verse.suggested_translation_translated}})</div>` : ''}}</div>` : ''}}
+                    <div><span class="label">{r_get_label("Review")}:</span> <div>${{verse.review}}</div></div>
                 `;
                 return verseDiv;
             }}
@@ -1418,9 +1418,9 @@ def run( file ):
 
             // 3. Populate sidebar with table of contents
             const sidebarSections = [
-                {{ title: 'Heat Map', href: '#heat-map' }},
-                {{ title: 'Poor Verses', href: '#poor-verses', count: poorVerses.length }},
-                {{ title: 'All Verses', href: '#all-verses' }}
+                {{ title: '{r_get_label("Heat Map")}', href: '#heat-map' }},
+                {{ title: '{r_get_label("Poor Verses")}', href: '#poor-verses', count: poorVerses.length }},
+                {{ title: '{r_get_label("All Verses")}', href: '#all-verses' }}
             ];
 
             sidebarSections.forEach(section => {{
@@ -1434,11 +1434,11 @@ def run( file ):
                 const link = document.createElement('a');
                 link.href = section.href;
                 link.className = 'sidebar-link';
-                link.textContent = `Go to ${{section.title}}`;
+                link.textContent = `{r_get_label("Go to")} ${{section.title}}`;
                 sectionDiv.appendChild(link);
                 
                 // Add chapter links for All Verses section
-                if (section.title === 'All Verses') {{
+                if (section.title === '{r_get_label("All Verses")}') {{
                     Object.keys(bookChapterVerses).sort().forEach(book => {{
                         Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
                             const chapterLink = document.createElement('a');
