@@ -427,7 +427,7 @@ def run( file ):
             text-decoration: none;
             font-size: 11px;
             border-radius: 4px;
-            transition: transform 0.1s ease-in-out;
+            transition: transform 0.1s ease-in-out, background-color 0.3s ease;
         }}
         .heat-map-square:hover {{
             transform: scale(1.2);
@@ -447,6 +447,55 @@ def run( file ):
         #download-jsonl:hover {{
             background-color: #0056b3;
         }}
+        #settings-container {{
+            position: relative;
+            margin-bottom: 10px;
+        }}
+        #settings-toggle {{
+            background: #eee;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 2px 8px;
+            cursor: pointer;
+            font-size: 1.5em;
+            line-height: 1;
+        }}
+        #settings-panel {{
+            display: none;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 10px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }}
+        .setting-row {{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }}
+        .setting-row label {{
+            font-weight: bold;
+        }}
+        #presets button {{
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 5px;
+        }}
+        #presets button:hover {{
+            background-color: #d0d0d0;
+        }}
+        #legend {{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }}
     </style>
 </head>
 <body>
@@ -455,8 +504,48 @@ def run( file ):
         <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
         <button id="download-jsonl">Download JSONL</button>
         
+        <div id="settings-container">
+            <button id="settings-toggle" title="Settings">...</button>
+            <div id="settings-panel">
+                <h3>Heat Map Settings</h3>
+                <div class="setting-row">
+                    <label><input type="checkbox" id="color-mode-fade"> Use fade instead of spectrum</label>
+                </div>
+                <div class="setting-row">
+                    <label for="low-color">Low Grade Color:</label>
+                    <input type="color" id="low-color">
+                    <label for="high-color">High Grade Color:</label>
+                    <input type="color" id="high-color">
+                </div>
+                <div class="setting-row">
+                    <label for="low-grade-slider">Low Grade:</label>
+                    <input type="range" id="low-grade-slider" min="0" max="100" step="1">
+                    <span id="low-grade-value"></span>
+                    <label><input type="checkbox" id="low-grade-auto"> Auto</label>
+                </div>
+                <div class="setting-row">
+                    <label for="high-grade-slider">High Grade:</label>
+                    <input type="range" id="high-grade-slider" min="0" max="100" step="1">
+                    <span id="high-grade-value"></span>
+                    <label><input type="checkbox" id="high-grade-auto"> Auto</label>
+                </div>
+                <div class="setting-row">
+                    <label>Presets:</label>
+                    <div id="presets">
+                        <button data-preset="1">Red-Green</button>
+                        <button data-preset="2">Neutral</button>
+                        <button data-preset="3">Diverging</button>
+                        <button data-preset="4">Monochrome</button>
+                        <button data-preset="5">The Blues</button>
+                        <button data-preset="6">Rainbow</button>
+                    </div>
+                </div>
+                <button id="collapse-settings">Close Settings</button>
+            </div>
+        </div>
+
         <h2>Grade Heat Map</h2>
-        <p>Blue: Low grades, Red: High grades</p>
+        <div id="legend"></div>
         <div id="heat-map"></div>
 
         <h2>Poorest Graded Verses</h2>
@@ -493,26 +582,215 @@ def run( file ):
             const poorVersesContent = document.getElementById('poor-verses');
             const allVersesContent = document.getElementById('all-verses');
             const heatMapContent = document.getElementById('heat-map');
+            const legendContent = document.getElementById('legend');
+
+            // --- Settings ---
+            const settingsPanel = document.getElementById('settings-panel');
+            const settingsToggleBtn = document.getElementById('settings-toggle');
+            const collapseSettingsBtn = document.getElementById('collapse-settings');
+            const colorModeFadeCheck = document.getElementById('color-mode-fade');
+            const lowColorPicker = document.getElementById('low-color');
+            const highColorPicker = document.getElementById('high-color');
+            const lowGradeSlider = document.getElementById('low-grade-slider');
+            const highGradeSlider = document.getElementById('high-grade-slider');
+            const lowGradeValue = document.getElementById('low-grade-value');
+            const highGradeValue = document.getElementById('high-grade-value');
+            const lowGradeAutoCheck = document.getElementById('low-grade-auto');
+            const highGradeAutoCheck = document.getElementById('high-grade-auto');
+            const presetsContainer = document.getElementById('presets');
+
+            let settings = {{
+                colorMode: 'spectrum', // 'spectrum' or 'fade'
+                lowColor: '#B2182B',
+                highColor: '#2166AC',
+                hueStart: 240, // blue
+                hueEnd: 0, // red
+                lowGrade: 0,
+                highGrade: 100,
+                autoLowGrade: true,
+                autoHighGrade: true,
+            }};
+
+            function saveSettings() {{
+                document.cookie = `reportSettings=${{JSON.stringify(settings)}};path=/;max-age=31536000;samesite=strict`;
+            }}
+
+            function loadSettings() {{
+                const cookie = document.cookie.split('; ').find(row => row.startsWith('reportSettings='));
+                if (cookie) {{
+                    try {{
+                        const loadedSettings = JSON.parse(cookie.split('=')[1]);
+                        Object.assign(settings, loadedSettings);
+                    }} catch (e) {{
+                        console.error("Could not parse settings cookie", e);
+                    }}
+                }}
+            }}
+
+            function hexToRgb(hex) {{
+                var result = /^#?([a-f\d]{{2}})([a-f\d]{{2}})([a-f\d]{{2}})$/i.exec(hex);
+                return result ? {{
+                    r: parseInt(result[1], 16),
+                    g: parseInt(result[2], 16),
+                    b: parseInt(result[3], 16)
+                }} : null;
+            }}
 
             function gradeToColor(grade, minGrade, maxGrade) {{
-                if (maxGrade === minGrade) {{
-                    return 'rgb(128, 128, 128)';
+                const low = settings.autoLowGrade ? minGrade : settings.lowGrade;
+                const high = settings.autoHighGrade ? maxGrade : settings.highGrade;
+
+                if (high <= low) return settings.lowColor;
+
+                const normalized = (grade - low) / (high - low);
+                const clampedNormalized = Math.max(0, Math.min(1, normalized));
+
+                if (settings.colorMode === 'fade') {{
+                    const lowRGB = hexToRgb(settings.lowColor);
+                    const highRGB = hexToRgb(settings.highColor);
+                    if (!lowRGB || !highRGB) return '#ccc';
+                    const r = Math.round(lowRGB.r + (highRGB.r - lowRGB.r) * clampedNormalized);
+                    const g = Math.round(lowRGB.g + (highRGB.g - lowRGB.g) * clampedNormalized);
+                    const b = Math.round(lowRGB.b + (highRGB.b - lowRGB.b) * clampedNormalized);
+                    return `rgb(${{r}}, ${{g}}, ${{b}})`;
+                }} else {{ // spectrum
+                    const hue = settings.hueStart + (settings.hueEnd - settings.hueStart) * clampedNormalized;
+                    return `hsl(${{hue}}, 80%, 60%)`;
                 }}
-                const normalized = (grade - minGrade) / (maxGrade - minGrade);
-                const hue = (1 - normalized) * 240;
-                return `hsl(${{hue}}, 80%, 60%)`;
+            }}
+
+            function updateHeatMapAndLegend() {{
+                const allGrades = reportData.map(v => v.grade);
+                const minGrade = Math.min(...allGrades);
+                const maxGrade = Math.max(...allGrades);
+
+                document.querySelectorAll('.heat-map-square').forEach(square => {{
+                    const vref = square.getAttribute('data-vref');
+                    const verse = reportData.find(v => v.vref === vref);
+                    if (verse) {{
+                        square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
+                    }}
+                }});
+
+                // Update Legend
+                const legendMin = settings.autoLowGrade ? Math.floor(minGrade) : settings.lowGrade;
+                const legendMax = settings.autoHighGrade ? Math.ceil(maxGrade) : settings.highGrade;
+
+                let gradient;
+                if (settings.colorMode === 'fade') {{
+                    gradient = `linear-gradient(to right, ${{settings.lowColor}}, ${{settings.highColor}})`;
+                }} else {{
+                    const stops = [];
+                    for (let i = 0; i <= 10; i++) {{
+                        const normalized = i / 10;
+                        const hue = settings.hueStart + (settings.hueEnd - settings.hueStart) * normalized;
+                        stops.push(`hsl(${{hue}}, 80%, 60%)`);
+                    }}
+                    gradient = `linear-gradient(to right, ${{stops.join(', ')}})`;
+                }}
+
+                legendContent.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span>${{legendMin.toFixed(0)}}</span>
+                        <div style="flex-grow: 1; height: 20px; background: ${{gradient}}; border-radius: 5px;"></div>
+                        <span>${{legendMax.toFixed(0)}}</span>
+                    </div>
+                `;
+            }}
+            
+            function updateControlsFromSettings() {{
+                colorModeFadeCheck.checked = settings.colorMode === 'fade';
+                lowColorPicker.value = settings.lowColor;
+                highColorPicker.value = settings.highColor;
+                lowGradeSlider.value = settings.lowGrade;
+                highGradeSlider.value = settings.highGrade;
+                lowGradeValue.textContent = settings.lowGrade;
+                highGradeValue.textContent = settings.highGrade;
+                lowGradeAutoCheck.checked = settings.autoLowGrade;
+                highGradeAutoCheck.checked = settings.autoHighGrade;
+                lowGradeSlider.disabled = settings.autoLowGrade;
+                highGradeSlider.disabled = settings.autoHighGrade;
+            }}
+
+            function applyPreset(presetId) {{
+                switch(presetId) {{
+                    case '1': // Red-Green
+                        settings.colorMode = 'spectrum';
+                        settings.hueStart = 0; // Red
+                        settings.hueEnd = 120; // Green
+                        break;
+                    case '2': // Neutral sequential
+                        settings.colorMode = 'fade';
+                        settings.lowColor = '#FDE725';
+                        settings.highColor = '#440154';
+                        break;
+                    case '3': // Traditional diverging
+                        settings.colorMode = 'fade';
+                        settings.lowColor = '#2166AC';
+                        settings.highColor = '#B2182B';
+                        break;
+                    case '4': // Monochrome
+                        settings.colorMode = 'fade';
+                        settings.lowColor = '#F7FBFF';
+                        settings.highColor = '#08306B';
+                        break;
+                    case '5': // The Blues
+                        settings.colorMode = 'fade';
+                        settings.lowColor = '#ADD8E6';
+                        settings.highColor = '#00008B';
+                        break;
+                    case '6': // Rainbow
+                        settings.colorMode = 'spectrum';
+                        settings.hueStart = 270; // Violet
+                        settings.hueEnd = 0; // Red
+                        break;
+                }}
+                updateControlsFromSettings();
+                updateHeatMapAndLegend();
+                saveSettings();
+            }}
+
+            function setupEventListeners() {{
+                settingsToggleBtn.addEventListener('click', () => {{
+                    settingsPanel.style.display = settingsPanel.style.display === 'none' ? 'block' : 'none';
+                }});
+                collapseSettingsBtn.addEventListener('click', () => {{
+                    settingsPanel.style.display = 'none';
+                }});
+
+                const update = () => {{
+                    settings.colorMode = colorModeFadeCheck.checked ? 'fade' : 'spectrum';
+                    settings.lowColor = lowColorPicker.value;
+                    settings.highColor = highColorPicker.value;
+                    settings.lowGrade = parseInt(lowGradeSlider.value, 10);
+                    settings.highGrade = parseInt(highGradeSlider.value, 10);
+                    settings.autoLowGrade = lowGradeAutoCheck.checked;
+                    settings.autoHighGrade = highGradeAutoCheck.checked;
+                    updateControlsFromSettings();
+                    updateHeatMapAndLegend();
+                    saveSettings();
+                }};
+
+                [colorModeFadeCheck, lowColorPicker, highColorPicker, lowGradeAutoCheck, highGradeAutoCheck].forEach(el => el.addEventListener('change', update));
+                [lowGradeSlider, highGradeSlider].forEach(el => el.addEventListener('input', (e) => {{
+                    if (e.target.id === 'low-grade-slider') lowGradeValue.textContent = e.target.value;
+                    if (e.target.id === 'high-grade-slider') highGradeValue.textContent = e.target.value;
+                    update();
+                }}));
+                
+                presetsContainer.addEventListener('click', (e) => {{
+                    if (e.target.tagName === 'BUTTON') {{
+                        applyPreset(e.target.dataset.preset);
+                    }}
+                }});
             }}
 
             function splitRef(reference) {{
                 const lastSpaceIndex = reference.lastIndexOf(' ');
-                if (lastSpaceIndex === -1) {{
-                    return [reference, null, null];
-                }}
+                if (lastSpaceIndex === -1) return [reference, null, null];
                 const bookSplit = reference.substring(0, lastSpaceIndex);
                 const chapterVerseStr = reference.substring(lastSpaceIndex + 1);
-                if (!chapterVerseStr.includes(':')) {{
-                    return [bookSplit, parseInt(chapterVerseStr), null];
-                }}
+                if (!chapterVerseStr.includes(':')) return [bookSplit, parseInt(chapterVerseStr), null];
                 const [chapterNum, verseNum] = chapterVerseStr.split(':');
                 if (verseNum.includes('-')) {{
                     const [startVerse, endVerse] = verseNum.split('-').map(Number);
@@ -528,56 +806,33 @@ def run( file ):
                     verseDiv.id = verse.href;
                 }}
 
-                let vref_html;
-                if (isPoor) {{
-                    vref_html = `<a href="#${{verse.href}}">${{verse.vref}}</a>`;
-                }} else {{
-                    vref_html = verse.vref;
-                }}
+                let vref_html = isPoor ? `<a href="#${{verse.href}}">${{verse.vref}}</a>` : verse.vref;
 
                 verseDiv.innerHTML = `
                     <div class="vref">${{vref_html}} <span class="grade">(Grade: ${{verse.grade.toFixed(1)}})</span></div>
-                    <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>`;
-                if( verse.source_translated ){{
-                    verseDiv.innerHTML += `
-                    <div>(${{verse.source_translated}})</div>`;
-                }}
-                verseDiv.innerHTML += `
-                    <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>`;
-                if( verse.translation_translated ){{
-                    verseDiv.innerHTML += `
-                    <div>(${{verse.translation_translated}})</div>`;
-                }}
-                if( verse.suggested_translation ){{
-                    verseDiv.innerHTML += `
-                    <div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>`;
-                    if( verse.suggested_translation_translated ){{
-                        verseDiv.innerHTML += `
-                    <div>(${{verse.suggested_translation_translated}})</div>`;
-                    }}
-                }}
-                verseDiv.innerHTML += `
+                    <div><span class="label">Source:</span> <div>${{verse.source}}</div></div>
+                    ${{verse.source_translated ? `<div>(${{verse.source_translated}})</div>` : ''}}
+                    <div><span class="label">Translation:</span> <div>${{verse.translation}}</div></div>
+                    ${{verse.translation_translated ? `<div>(${{verse.translation_translated}})</div>` : ''}}
+                    ${{verse.suggested_translation ? `<div><span class="label">Suggested Translation:</span><div>${{verse.suggested_translation}}</div>${{verse.suggested_translation_translated ? `<div>(${{verse.suggested_translation_translated}})</div>` : ''}}</div>` : ''}}
                     <div><span class="label">Review:</span> <div>${{verse.review}}</div></div>
                 `;
                 return verseDiv;
             }}
 
-            // Populate heat map
+            // --- Main Execution ---
+            
+            // 1. Load settings from cookie
+            loadSettings();
+
+            // 2. Initial render of static content
             const bookChapterVerses = {{}};
             reportData.forEach(verse => {{
-                const [book, chapter, startVerse, endVerse] = splitRef(verse.vref);
-                if (!bookChapterVerses[book]) {{
-                    bookChapterVerses[book] = {{}};
-                }}
-                if (!bookChapterVerses[book][chapter]) {{
-                    bookChapterVerses[book][chapter] = [];
-                }}
+                const [book, chapter] = splitRef(verse.vref);
+                if (!bookChapterVerses[book]) bookChapterVerses[book] = {{}};
+                if (!bookChapterVerses[book][chapter]) bookChapterVerses[book][chapter] = [];
                 bookChapterVerses[book][chapter].push(verse);
             }});
-
-            const allGrades = reportData.map(v => v.grade);
-            const minGrade = Math.min(...allGrades);
-            const maxGrade = Math.max(...allGrades);
 
             Object.keys(bookChapterVerses).sort().forEach(book => {{
                 Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
@@ -586,7 +841,6 @@ def run( file ):
 
                     const row = document.createElement('div');
                     row.className = 'heat-map-row';
-
                     const label = document.createElement('div');
                     label.className = 'heat-map-label';
                     label.textContent = `${{book}} ${{chapter}}`;
@@ -594,12 +848,11 @@ def run( file ):
 
                     const versesContainer = document.createElement('div');
                     versesContainer.className = 'heat-map-verses';
-
                     chapterVerses.forEach(verse => {{
                         const square = document.createElement('a');
                         square.className = 'heat-map-square';
                         square.href = `#${{verse.href}}`;
-                        square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
+                        square.setAttribute('data-vref', verse.vref);
                         square.textContent = splitRef(verse.vref)[2];
                         versesContainer.appendChild(square);
                     }});
@@ -608,7 +861,6 @@ def run( file ):
                 }});
             }});
 
-            // Populate poor verses
             let poorVerses = [];
             if (percentage_sorted !== null) {{
                 const sortedByGrade = [...reportData].sort((a, b) => a.grade - b.grade);
@@ -616,32 +868,30 @@ def run( file ):
                 poorVerses = sortedByGrade.slice(0, count);
             }} else {{
                 const grades = reportData.map(v => v.grade);
-                if (grades.length > 0) {{
+                if (grades.length > 1) {{
                     const mean = grades.reduce((a, b) => a + b, 0) / grades.length;
-                    const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / grades.length);
+                    const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / (grades.length -1) );
                     const gradeCutOff = mean - num_sd_to_report * stdDev;
                     poorVerses = reportData.filter(v => v.grade <= gradeCutOff);
                     poorVerses.sort((a, b) => a.grade - b.grade);
                 }}
             }}
 
-            poorVerses.forEach(verse => {{
-                poorVersesContent.appendChild(renderVerse(verse, true));
-            }});
+            poorVerses.forEach(verse => poorVersesContent.appendChild(renderVerse(verse, true)));
+            reportData.forEach(verse => allVersesContent.appendChild(renderVerse(verse, false)));
 
-            // Populate all verses
-            reportData.forEach(verse => {{
-                allVersesContent.appendChild(renderVerse(verse, false));
-            }});
+            // 3. Set up UI controls and dynamic content
+            updateControlsFromSettings();
+            updateHeatMapAndLegend();
+            setupEventListeners();
 
-
+            // 4. Download button
             document.getElementById('download-jsonl').addEventListener('click', () => {{
                 let jsonlContent = '';
                 reportData.forEach(item => {{
                     const itemForJsonl = {{...item, grade: item.grade.toFixed(1)}};
                     jsonlContent += JSON.stringify(itemForJsonl) + '{utils.SLASH_N}';
                 }});
-
                 const blob = new Blob([jsonlContent], {{ type: 'application/jsonl' }});
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
