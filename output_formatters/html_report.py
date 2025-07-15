@@ -896,11 +896,6 @@ def run( file ):
 
     <div class="container" id="top">
         <!-- Debug Information -->
-        <div id="debug-info" style="background: #ffffcc; border: 2px solid #ffcc00; padding: 15px; margin-bottom: 20px; font-family: monospace; font-size: 12px;">
-            <h3 style="margin-top: 0; color: #cc6600;">Debug Information (Copy and paste this to help diagnose the issue)</h3>
-            <div id="debug-content">Loading debug info...</div>
-        </div>
-        
         <h1>{title}</h1>
         <p>{r_get_label("Generated on")}: {datetime.today().strftime('%B %d, %Y')}</p>
         <button id="download-jsonl">{r_get_label("Download JSONL")}</button>
@@ -981,58 +976,6 @@ def run( file ):
         decompressData(compressedData).then(reportData => {{
             const num_sd_to_report = {num_sd_to_report};
             const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
-
-            // Populate debug information
-            const debugContent = document.getElementById('debug-content');
-            const debugInfo = {{
-                'Screen Width': window.screen.width + 'px',
-                'Screen Height': window.screen.height + 'px',
-                'Window Inner Width': window.innerWidth + 'px',
-                'Window Inner Height': window.innerHeight + 'px',
-                'Device Pixel Ratio': window.devicePixelRatio,
-                'User Agent': navigator.userAgent,
-                'Container Computed Width': '',
-                'Container Computed Max-Width': '',
-                'Container Computed Margin': '',
-                'Container Computed Padding': '',
-                'Body Computed Width': '',
-                'Body Computed Padding': '',
-                'Applied Media Query': '',
-                'Viewport Meta Tag': document.querySelector('meta[name="viewport"]') ? document.querySelector('meta[name="viewport"]').content : 'Not found'
-            }};
-            
-            // Get computed styles
-            const container = document.querySelector('.container');
-            const body = document.body;
-            if (container) {{
-                const containerStyles = window.getComputedStyle(container);
-                debugInfo['Container Computed Width'] = containerStyles.width;
-                debugInfo['Container Computed Max-Width'] = containerStyles.maxWidth;
-                debugInfo['Container Computed Margin'] = containerStyles.margin;
-                debugInfo['Container Computed Padding'] = containerStyles.padding;
-            }}
-            
-            if (body) {{
-                const bodyStyles = window.getComputedStyle(body);
-                debugInfo['Body Computed Width'] = bodyStyles.width;
-                debugInfo['Body Computed Padding'] = bodyStyles.padding;
-            }}
-            
-            // Detect which media query is active
-            if (window.matchMedia('(max-width: 600px)').matches) {{
-                debugInfo['Applied Media Query'] = 'Mobile (max-width: 600px)';
-            }} else if (window.matchMedia('(min-width: 601px)').matches) {{
-                debugInfo['Applied Media Query'] = 'Desktop (min-width: 601px)';
-            }} else {{
-                debugInfo['Applied Media Query'] = 'Unknown';
-            }}
-            
-            // Format debug info for display
-            let debugHtml = '';
-            for (const [key, value] of Object.entries(debugInfo)) {{
-                debugHtml += `<strong>${{key}}:</strong> ${{value}}<br>`;
-            }}
-            debugContent.innerHTML = debugHtml;
 
             const poorVersesContent = document.getElementById('poor-verses-content');
             const allVersesContent = document.getElementById('all-verses-content');
