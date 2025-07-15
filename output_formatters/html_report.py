@@ -601,10 +601,8 @@ def run( file ):
 
             let settings = {{
                 colorMode: 'spectrum', // 'spectrum' or 'fade'
-                lowColor: '#B2182B',
-                highColor: '#2166AC',
-                hueStart: 240, // blue
-                hueEnd: 0, // red
+                lowColor: '#ff0000',
+                highColor: '#00ff00',
                 lowGrade: 0,
                 highGrade: 100,
                 autoLowGrade: true,
@@ -636,6 +634,27 @@ def run( file ):
                 }} : null;
             }}
 
+            function hexToHsl(hex) {{
+                const rgb = hexToRgb(hex);
+                if (!rgb) return {{ h: 0, s: 0, l: 0 }};
+                let r = rgb.r / 255, g = rgb.g / 255, b = rgb.b / 255;
+                const max = Math.max(r, g, b), min = Math.min(r, g, b);
+                let h, s, l = (max + min) / 2;
+                if (max === min) {{
+                    h = s = 0; // achromatic
+                }} else {{
+                    const d = max - min;
+                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                    switch (max) {{
+                        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                        case g: h = (b - r) / d + 2; break;
+                        case b: h = (r - g) / d + 4; break;
+                    }}
+                    h /= 6;
+                }}
+                return {{ h: h * 360, s: s, l: l }};
+            }}
+
             function gradeToColor(grade, minGrade, maxGrade) {{
                 const low = settings.autoLowGrade ? minGrade : settings.lowGrade;
                 const high = settings.autoHighGrade ? maxGrade : settings.highGrade;
@@ -654,7 +673,13 @@ def run( file ):
                     const b = Math.round(lowRGB.b + (highRGB.b - lowRGB.b) * clampedNormalized);
                     return `rgb(${{r}}, ${{g}}, ${{b}})`;
                 }} else {{ // spectrum
-                    const hue = settings.hueStart + (settings.hueEnd - settings.hueStart) * clampedNormalized;
+                    const lowHsl = hexToHsl(settings.lowColor);
+                    const highHsl = hexToHsl(settings.highColor);
+                    let hueDiff = highHsl.h - lowHsl.h;
+                    if (Math.abs(hueDiff) > 180) {{ // Spin the shorter way around the wheel
+                        hueDiff = hueDiff > 0 ? hueDiff - 360 : hueDiff + 360;
+                    }}
+                    const hue = lowHsl.h + hueDiff * clampedNormalized;
                     return `hsl(${{hue}}, 80%, 60%)`;
                 }}
             }}
@@ -680,10 +705,16 @@ def run( file ):
                 if (settings.colorMode === 'fade') {{
                     gradient = `linear-gradient(to right, ${{settings.lowColor}}, ${{settings.highColor}})`;
                 }} else {{
+                    const lowHsl = hexToHsl(settings.lowColor);
+                    const highHsl = hexToHsl(settings.highColor);
+                    let hueDiff = highHsl.h - lowHsl.h;
+                    if (Math.abs(hueDiff) > 180) {{
+                        hueDiff = hueDiff > 0 ? hueDiff - 360 : hueDiff + 360;
+                    }}
                     const stops = [];
                     for (let i = 0; i <= 10; i++) {{
                         const normalized = i / 10;
-                        const hue = settings.hueStart + (settings.hueEnd - settings.hueStart) * normalized;
+                        const hue = lowHsl.h + hueDiff * normalized;
                         stops.push(`hsl(${{hue}}, 80%, 60%)`);
                     }}
                     gradient = `linear-gradient(to right, ${{stops.join(', ')}})`;
@@ -713,11 +744,11 @@ def run( file ):
             }}
 
             function applyPreset(presetId) {{
-                switch(presetId) {{
-                    case '1': // Red-Green
+                switch(String(presetId)) {{
+                    case '1': // Red-Green (Red=bad, Green=good)
                         settings.colorMode = 'spectrum';
-                        settings.hueStart = 0; // Red
-                        settings.hueEnd = 120; // Green
+                        settings.lowColor = '#ff0000';
+                        settings.highColor = '#00ff00';
                         break;
                     case '2': // Neutral sequential
                         settings.colorMode = 'fade';
@@ -739,10 +770,10 @@ def run( file ):
                         settings.lowColor = '#ADD8E6';
                         settings.highColor = '#00008B';
                         break;
-                    case '6': // Rainbow
+                    case '6': // Rainbow (Violet=worst, Red=best)
                         settings.colorMode = 'spectrum';
-                        settings.hueStart = 270; // Violet
-                        settings.hueEnd = 0; // Red
+                        settings.lowColor = '#ee82ee'; // Violet
+                        settings.highColor = '#ff0000'; // Red
                         break;
                 }}
                 updateControlsFromSettings();
