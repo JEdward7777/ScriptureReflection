@@ -428,7 +428,6 @@ def run( file ):
             font-size: 11px;
             border-radius: 4px;
             transition: transform 0.1s ease-in-out, background-color 0.3s ease;
-            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
         }}
         .heat-map-square:hover {{
             transform: scale(1.2);
@@ -673,25 +672,35 @@ def run( file ):
                 const low = settings.autoLowGrade ? minGrade : settings.lowGrade;
                 const high = settings.autoHighGrade ? maxGrade : settings.highGrade;
 
-                if (high <= low) return settings.lowColor;
+                if (high <= low) return {{ backgroundColor: settings.lowColor, textColor: getTextColor(settings.lowColor) }};
 
                 const normalized = (grade - low) / (high - low);
                 const clampedNormalized = Math.max(0, Math.min(1, normalized));
 
+                let backgroundColor;
                 if (settings.colorMode === 'fade') {{
                     const lowRGB = hexToRgb(settings.lowColor);
                     const highRGB = hexToRgb(settings.highColor);
-                    if (!lowRGB || !highRGB) return '#ccc';
+                    if (!lowRGB || !highRGB) return {{ backgroundColor: '#ccc', textColor: 'black' }};
                     const r = Math.round(lowRGB.r + (highRGB.r - lowRGB.r) * clampedNormalized);
                     const g = Math.round(lowRGB.g + (highRGB.g - lowRGB.g) * clampedNormalized);
                     const b = Math.round(lowRGB.b + (highRGB.b - lowRGB.b) * clampedNormalized);
-                    return `rgb(${{r}}, ${{g}}, ${{b}})`;
+                    backgroundColor = `rgb(${{r}}, ${{g}}, ${{b}})`;
+                    
+                    // For RGB, we can calculate luminance directly
+                    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+                    const textColor = luminance > 0.5 ? 'black' : 'white';
+                    return {{ backgroundColor, textColor }};
                 }} else {{ // spectrum
                     const lowHsl = hexToHsl(settings.lowColor);
                     const highHsl = hexToHsl(settings.highColor);
                     let hueDiff = highHsl.h - lowHsl.h;
                     const hue = lowHsl.h + hueDiff * clampedNormalized;
-                    return `hsl(${{hue}}, 80%, 60%)`;
+                    backgroundColor = `hsl(${{hue}}, 80%, 60%)`;
+                    
+                    // For HSL with 60% lightness, we can determine text color more simply
+                    const textColor = 'black'; // 60% lightness is generally light enough for black text
+                    return {{ backgroundColor, textColor }};
                 }}
             }}
 
@@ -699,12 +708,13 @@ def run( file ):
                 const allGrades = reportData.map(v => v.grade);
                 const minGrade = Math.min(...allGrades);
                 const maxGrade = Math.max(...allGrades);
-
                 document.querySelectorAll('.heat-map-square').forEach(square => {{
                     const vref = square.getAttribute('data-vref');
                     const verse = reportData.find(v => v.vref === vref);
                     if (verse) {{
-                        square.style.backgroundColor = gradeToColor(verse.grade, minGrade, maxGrade);
+                        const colors = gradeToColor(verse.grade, minGrade, maxGrade);
+                        square.style.backgroundColor = colors.backgroundColor;
+                        square.style.color = colors.textColor;
                     }}
                 }});
 
@@ -791,7 +801,8 @@ def run( file ):
 
             function setupEventListeners() {{
                 settingsToggleBtn.addEventListener('click', () => {{
-                    settingsPanel.style.display = settingsPanel.style.display === 'none' ? 'block' : 'none';
+                    const isHidden = window.getComputedStyle(settingsPanel).display === 'none';
+                    settingsPanel.style.display = isHidden ? 'block' : 'none';
                 }});
                 collapseSettingsBtn.addEventListener('click', () => {{
                     settingsPanel.style.display = 'none';
