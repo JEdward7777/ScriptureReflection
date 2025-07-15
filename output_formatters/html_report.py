@@ -1250,7 +1250,8 @@ def run( file ):
                     saveSettings();
                 }};
 
-                [colorModeFadeCheck, lowColorPicker, highColorPicker, lowGradeAutoCheck, highGradeAutoCheck].forEach(el => el.addEventListener('change', update));
+                [colorModeFadeCheck, lowGradeAutoCheck, highGradeAutoCheck].forEach(el => el.addEventListener('change', update));
+                [lowColorPicker, highColorPicker].forEach(el => el.addEventListener('input', update));
                 [lowGradeSlider, highGradeSlider].forEach(el => el.addEventListener('input', (e) => {{
                     if (e.target.id === 'low-grade-slider') lowGradeValue.textContent = e.target.value;
                     if (e.target.id === 'high-grade-slider') highGradeValue.textContent = e.target.value;
