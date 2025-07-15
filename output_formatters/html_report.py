@@ -332,6 +332,8 @@ def run( file ):
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>{title}</title>
     <style>
         @font-face {{
@@ -347,6 +349,7 @@ def run( file ):
             margin: 0;
             padding: 60px 20px 20px 20px;
             line-height: 1.6;
+            font-size: 16px;
         }}
         .container {{
             max-width: 900px;
@@ -507,13 +510,31 @@ def run( file ):
         }}
         
         @media (max-width: 600px) {{
+            body {{
+                font-size: 20px;
+                padding-top: 90px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 100vw;
+                max-width: 100vw;
+                overflow-x: hidden;
+            }}
+            
+            .container {{
+                padding: 15px 20px;
+                max-width: 100vw !important;
+                width: 100vw !important;
+                margin: 0 !important;
+                box-sizing: border-box;
+            }}
+            
             .nav-links {{
                 gap: 10px;
             }}
             
             .nav-link {{
-                font-size: 12px;
-                padding: 6px 8px;
+                font-size: 24px !important;
+                padding: 12px 14px;
             }}
             
             .nav-link .text {{
@@ -522,19 +543,120 @@ def run( file ):
             
             .nav-link .icon {{
                 display: inline;
+                font-size: 30px !important;
             }}
             
             .sidebar {{
-                width: 80vw;
-                left: -80vw;
+                width: 85vw;
+                left: -85vw;
             }}
             
-            body {{
-                padding-top: 50px;
+            .sidebar-header {{
+                padding: 30px;
+            }}
+            
+            .sidebar-header h3 {{
+                font-size: 30px !important;
+                margin: 0;
+            }}
+            
+            .sidebar-section {{
+                margin-bottom: 30px;
+            }}
+            
+            .sidebar-section h4 {{
+                font-size: 26px !important;
+                margin: 0 0 20px 0;
+                padding-bottom: 10px;
+            }}
+            
+            .sidebar-link {{
+                font-size: 24px !important;
+                padding: 18px 25px;
+                margin-bottom: 8px;
+            }}
+            
+            .sidebar-link.chapter {{
+                font-size: 22px !important;
+                padding: 16px 20px 16px 50px;
+            }}
+            
+            .hamburger {{
+                padding: 16px;
+            }}
+            
+            .hamburger span {{
+                width: 32px;
+                height: 5px;
+                gap: 5px;
             }}
             
             .nav-bar {{
-                height: 50px;
+                height: 90px;
+                padding: 0 15px;
+                width: 100%;
+                box-sizing: border-box;
+            }}
+            
+            h1 {{
+                font-size: 2.4em;
+            }}
+            
+            h2 {{
+                font-size: 1.8em;
+            }}
+            
+            .verse {{
+                padding: 25px;
+                margin-bottom: 25px;
+                font-size: 1.1em;
+            }}
+            
+            .vref {{
+                font-size: 1.5em;
+            }}
+            
+            .grade {{
+                font-size: 1em;
+            }}
+            
+            .label {{
+                font-size: 1.2em;
+                margin-top: 15px;
+            }}
+            
+            #download-jsonl {{
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }}
+            
+            /* Keep heat map text small as requested */
+            .heat-map-label {{
+                font-size: 0.85em;
+            }}
+            
+            .heat-map-square {{
+                font-size: 9px;
+                width: 20px;
+                height: 20px;
+            }}
+            
+            /* Ensure full width usage */
+            #heat-map-content {{
+                padding: 10px;
+            }}
+            
+            /* Settings panel adjustments */
+            #settings-panel.expanded {{
+                padding: 20px 15px;
+            }}
+            
+            .setting-row {{
+                margin-bottom: 20px;
+            }}
+            
+            .setting-row label {{
+                font-size: 1.05em;
             }}
         }}
         
@@ -773,6 +895,12 @@ def run( file ):
     </div>
 
     <div class="container" id="top">
+        <!-- Debug Information -->
+        <div id="debug-info" style="background: #ffffcc; border: 2px solid #ffcc00; padding: 15px; margin-bottom: 20px; font-family: monospace; font-size: 12px;">
+            <h3 style="margin-top: 0; color: #cc6600;">Debug Information (Copy and paste this to help diagnose the issue)</h3>
+            <div id="debug-content">Loading debug info...</div>
+        </div>
+        
         <h1>{title}</h1>
         <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
         <button id="download-jsonl">Download JSONL</button>
@@ -853,6 +981,58 @@ def run( file ):
         decompressData(compressedData).then(reportData => {{
             const num_sd_to_report = {num_sd_to_report};
             const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
+
+            // Populate debug information
+            const debugContent = document.getElementById('debug-content');
+            const debugInfo = {{
+                'Screen Width': window.screen.width + 'px',
+                'Screen Height': window.screen.height + 'px',
+                'Window Inner Width': window.innerWidth + 'px',
+                'Window Inner Height': window.innerHeight + 'px',
+                'Device Pixel Ratio': window.devicePixelRatio,
+                'User Agent': navigator.userAgent,
+                'Container Computed Width': '',
+                'Container Computed Max-Width': '',
+                'Container Computed Margin': '',
+                'Container Computed Padding': '',
+                'Body Computed Width': '',
+                'Body Computed Padding': '',
+                'Applied Media Query': '',
+                'Viewport Meta Tag': document.querySelector('meta[name="viewport"]') ? document.querySelector('meta[name="viewport"]').content : 'Not found'
+            }};
+            
+            // Get computed styles
+            const container = document.querySelector('.container');
+            const body = document.body;
+            if (container) {{
+                const containerStyles = window.getComputedStyle(container);
+                debugInfo['Container Computed Width'] = containerStyles.width;
+                debugInfo['Container Computed Max-Width'] = containerStyles.maxWidth;
+                debugInfo['Container Computed Margin'] = containerStyles.margin;
+                debugInfo['Container Computed Padding'] = containerStyles.padding;
+            }}
+            
+            if (body) {{
+                const bodyStyles = window.getComputedStyle(body);
+                debugInfo['Body Computed Width'] = bodyStyles.width;
+                debugInfo['Body Computed Padding'] = bodyStyles.padding;
+            }}
+            
+            // Detect which media query is active
+            if (window.matchMedia('(max-width: 600px)').matches) {{
+                debugInfo['Applied Media Query'] = 'Mobile (max-width: 600px)';
+            }} else if (window.matchMedia('(min-width: 601px)').matches) {{
+                debugInfo['Applied Media Query'] = 'Desktop (min-width: 601px)';
+            }} else {{
+                debugInfo['Applied Media Query'] = 'Unknown';
+            }}
+            
+            // Format debug info for display
+            let debugHtml = '';
+            for (const [key, value] of Object.entries(debugInfo)) {{
+                debugHtml += `<strong>${{key}}:</strong> ${{value}}<br>`;
+            }}
+            debugContent.innerHTML = debugHtml;
 
             const poorVersesContent = document.getElementById('poor-verses-content');
             const allVersesContent = document.getElementById('all-verses-content');
