@@ -345,7 +345,7 @@ def run( file ):
             background-color: #f4f4f9;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 60px 20px 20px 20px;
             line-height: 1.6;
         }}
         .container {{
@@ -355,6 +355,193 @@ def run( file ):
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        
+        /* Sticky Navigation Bar */
+        .nav-bar {{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        
+        .nav-links {{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }}
+        
+        .nav-link {{
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }}
+        
+        .nav-link:hover {{
+            background-color: rgba(0, 86, 179, 0.1);
+        }}
+        
+        .hamburger {{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 4px;
+            gap: 3px;
+        }}
+        
+        .hamburger span {{
+            width: 20px;
+            height: 2px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }}
+        
+        .hamburger.active span:nth-child(1) {{
+            transform: rotate(45deg) translate(5px, 5px);
+        }}
+        
+        .hamburger.active span:nth-child(2) {{
+            opacity: 0;
+        }}
+        
+        .hamburger.active span:nth-child(3) {{
+            transform: rotate(-45deg) translate(7px, -6px);
+        }}
+        
+        /* Sidebar */
+        .sidebar-overlay {{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }}
+        
+        .sidebar-overlay.active {{
+            opacity: 1;
+            visibility: visible;
+        }}
+        
+        .sidebar {{
+            position: fixed;
+            top: 0;
+            left: -320px;
+            width: 320px;
+            height: 100vh;
+            background: #fff;
+            z-index: 1600;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }}
+        
+        .sidebar.active {{
+            left: 0;
+        }}
+        
+        .sidebar-header {{
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background: #f8f9fa;
+        }}
+        
+        .sidebar-header h3 {{
+            margin: 0;
+            color: #333;
+            font-size: 18px;
+        }}
+        
+        .sidebar-content {{
+            padding: 20px;
+        }}
+        
+        .sidebar-section {{
+            margin-bottom: 20px;
+        }}
+        
+        .sidebar-section h4 {{
+            margin: 0 0 10px 0;
+            color: #0056b3;
+            font-size: 16px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }}
+        
+        .sidebar-link {{
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 2px;
+            transition: background-color 0.2s ease;
+        }}
+        
+        .sidebar-link:hover {{
+            background-color: #f0f0f0;
+        }}
+        
+        .sidebar-link.chapter {{
+            padding-left: 24px;
+            font-size: 14px;
+            color: #666;
+        }}
+        
+        @media (max-width: 600px) {{
+            .nav-links {{
+                gap: 10px;
+            }}
+            
+            .nav-link {{
+                font-size: 12px;
+                padding: 6px 8px;
+            }}
+            
+            .nav-link .text {{
+                display: none;
+            }}
+            
+            .nav-link .icon {{
+                display: inline;
+            }}
+            
+            .sidebar {{
+                width: 80vw;
+                left: -80vw;
+            }}
+            
+            body {{
+                padding-top: 50px;
+            }}
+            
+            .nav-bar {{
+                height: 50px;
+            }}
+        }}
+        
+        @media (min-width: 601px) {{
+            .nav-link .icon {{
+                display: none;
+            }}
         }}
         h1, h2 {{
             color: #444;
@@ -545,13 +732,53 @@ def run( file ):
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Sticky Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#heat-map" class="nav-link">
+                <span class="icon">🗺️</span>
+                <span class="text">Heat Map</span>
+            </a>
+            <a href="#poor-verses" class="nav-link">
+                <span class="icon">⚠️</span>
+                <span class="text">Poor Verses</span>
+            </a>
+            <a href="#all-verses" class="nav-link">
+                <span class="icon">📖</span>
+                <span class="text">All Verses</span>
+            </a>
+            <a href="#top" class="nav-link">
+                <span class="icon">⬆️</span>
+                <span class="text">Top</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Table of Contents</h3>
+        </div>
+        <div class="sidebar-content" id="sidebar-content">
+            <!-- Content will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <div class="container" id="top">
         <h1>{title}</h1>
         <p>Generated on: {datetime.today().strftime('%B %d, %Y')}</p>
         <button id="download-jsonl">Download JSONL</button>
         
         <div class="heat-map-header">
-            <h2>Grade Heat Map</h2>
+            <h2 id="heat-map">Grade Heat Map</h2>
             <div id="settings-container">
                 <button id="settings-toggle" title="Settings">...</button>
             </div>
@@ -594,13 +821,13 @@ def run( file ):
             <button id="collapse-settings">Close Settings</button>
         </div>
         <div id="legend"></div>
-        <div id="heat-map"></div>
+        <div id="heat-map-content"></div>
 
-        <h2>Poorest Graded Verses</h2>
-        <div id="poor-verses"></div>
+        <h2 id="poor-verses">Poorest Graded Verses</h2>
+        <div id="poor-verses-content"></div>
 
-        <h2>All Verses</h2>
-        <div id="all-verses"></div>
+        <h2 id="all-verses">All Verses</h2>
+        <div id="all-verses-content"></div>
     </div>
 
     <script>
@@ -627,10 +854,40 @@ def run( file ):
             const num_sd_to_report = {num_sd_to_report};
             const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
 
-            const poorVersesContent = document.getElementById('poor-verses');
-            const allVersesContent = document.getElementById('all-verses');
-            const heatMapContent = document.getElementById('heat-map');
+            const poorVersesContent = document.getElementById('poor-verses-content');
+            const allVersesContent = document.getElementById('all-verses-content');
+            const heatMapContent = document.getElementById('heat-map-content');
             const legendContent = document.getElementById('legend');
+            const sidebarContent = document.getElementById('sidebar-content');
+            
+            // Navigation functionality
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+            
+            function toggleSidebar() {{
+                hamburger.classList.toggle('active');
+                sidebar.classList.toggle('active');
+                sidebarOverlay.classList.toggle('active');
+                document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+            }}
+            
+            function closeSidebar() {{
+                hamburger.classList.remove('active');
+                sidebar.classList.remove('active');
+                sidebarOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }}
+            
+            hamburger.addEventListener('click', toggleSidebar);
+            sidebarOverlay.addEventListener('click', closeSidebar);
+            
+            // Close sidebar on ESC key
+            document.addEventListener('keydown', (e) => {{
+                if (e.key === 'Escape' && sidebar.classList.contains('active')) {{
+                    closeSidebar();
+                }}
+            }});
 
             // --- Settings ---
             const settingsPanel = document.getElementById('settings-panel');
@@ -979,7 +1236,62 @@ def run( file ):
             poorVerses.forEach(verse => poorVersesContent.appendChild(renderVerse(verse, true)));
             reportData.forEach(verse => allVersesContent.appendChild(renderVerse(verse, false)));
 
-            // 3. Set up UI controls and dynamic content
+            // 3. Populate sidebar with table of contents
+            const sidebarSections = [
+                {{ title: 'Heat Map', href: '#heat-map' }},
+                {{ title: 'Poor Verses', href: '#poor-verses', count: poorVerses.length }},
+                {{ title: 'All Verses', href: '#all-verses' }}
+            ];
+
+            sidebarSections.forEach(section => {{
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'sidebar-section';
+                
+                const heading = document.createElement('h4');
+                heading.innerHTML = section.title + (section.count ? ` (${{section.count}})` : '');
+                sectionDiv.appendChild(heading);
+                
+                const link = document.createElement('a');
+                link.href = section.href;
+                link.className = 'sidebar-link';
+                link.textContent = `Go to ${{section.title}}`;
+                sectionDiv.appendChild(link);
+                
+                // Add chapter links for All Verses section
+                if (section.title === 'All Verses') {{
+                    Object.keys(bookChapterVerses).sort().forEach(book => {{
+                        Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
+                            const chapterLink = document.createElement('a');
+                            chapterLink.href = `#${{bookChapterVerses[book][chapter][0].href}}`;
+                            chapterLink.className = 'sidebar-link chapter';
+                            chapterLink.textContent = `${{book}} ${{chapter}}`;
+                            sectionDiv.appendChild(chapterLink);
+                        }});
+                    }});
+                }}
+                
+                sidebarContent.appendChild(sectionDiv);
+            }});
+
+            // 4. Add smooth scrolling for all navigation links
+            document.addEventListener('click', (e) => {{
+                if (e.target.matches('a[href^="#"]')) {{
+                    e.preventDefault();
+                    const target = document.querySelector(e.target.getAttribute('href'));
+                    if (target) {{
+                        target.scrollIntoView({{
+                            behavior: 'smooth',
+                            block: 'start'
+                        }});
+                        // Close sidebar if open
+                        if (sidebar.classList.contains('active')) {{
+                            closeSidebar();
+                        }}
+                    }}
+                }}
+            }});
+
+            // 5. Set up UI controls and dynamic content
             updateControlsFromSettings();
             updateHeatMapAndLegend();
             setupEventListeners();
