@@ -580,7 +580,7 @@ def run( file ):
             margin-top: 10px;
             display: block;
         }}
-        #heat-map {{
+        #heat-map-content {{
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 5px;
