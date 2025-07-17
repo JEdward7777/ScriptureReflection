@@ -868,7 +868,7 @@ def run( file ):
             </a>
             <a href="#poor-verses" class="nav-link">
                 <span class="icon">⚠️</span>
-                <span class="text">{r_get_label("Poor Verses")}</span>
+                <span class="text">{r_get_label("Lower Scoring Verses")}</span>
             </a>
             <a href="#all-verses" class="nav-link">
                 <span class="icon">📖</span>
@@ -898,6 +898,7 @@ def run( file ):
         <!-- Debug Information -->
         <h1>{title}</h1>
         <p>{r_get_label("Generated on")}: {datetime.today().strftime('%B %d, %Y')}</p>
+        <p>{r_get_label("Total Score")}: <span id="total-score"></span></p>
         <button id="download-jsonl">{r_get_label("Download JSONL")}</button>
         
         <div class="heat-map-header">
@@ -946,7 +947,7 @@ def run( file ):
         <div id="legend"></div>
         <div id="heat-map-content"></div>
 
-        <h2 id="poor-verses">{r_get_label("Poorest Graded Verses")}</h2>
+        <h2 id="poor-verses">{r_get_label("Lower Scoring Verses")}</h2>
         <div id="poor-verses-content"></div>
 
         <h2 id="all-verses">{r_get_label("All Verses")}</h2>
@@ -976,6 +977,11 @@ def run( file ):
         decompressData(compressedData).then(reportData => {{
             const num_sd_to_report = {num_sd_to_report};
             const percentage_sorted = {percentage_sorted if percentage_sorted is not None else 'null'};
+
+            const totalScoreElement = document.getElementById('total-score');
+            const grades = reportData.map(v => v.grade);
+            const averageGrade = grades.length > 0 ? grades.reduce((sum, grade) => sum + grade, 0) / grades.length : 0;
+            totalScoreElement.textContent = averageGrade.toFixed(1);
 
             const poorVersesContent = document.getElementById('poor-verses-content');
             const allVersesContent = document.getElementById('all-verses-content');
@@ -1363,7 +1369,7 @@ def run( file ):
             // 3. Populate sidebar with table of contents
             const sidebarSections = [
                 {{ title: '{r_get_label("Heat Map")}', href: '#heat-map' }},
-                {{ title: '{r_get_label("Poor Verses")}', href: '#poor-verses', count: poorVerses.length }},
+                {{ title: '{r_get_label("Lower Scoring Verses")}', href: '#poor-verses', count: poorVerses.length }},
                 {{ title: '{r_get_label("All Verses")}', href: '#all-verses' }}
             ];
 
