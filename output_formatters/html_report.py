@@ -866,7 +866,7 @@ def run( file ):
                 <span class="icon">🗺️</span>
                 <span class="text">{r_get_label("Heat Map")}</span>
             </a>
-            <a href="#poor-verses" class="nav-link">
+            <a href="#low-grade-verses" class="nav-link">
                 <span class="icon">⚠️</span>
                 <span class="text">{r_get_label("Lower Scoring Verses")}</span>
             </a>
@@ -895,7 +895,6 @@ def run( file ):
     </div>
 
     <div class="container" id="top">
-        <!-- Debug Information -->
         <h1>{title}</h1>
         <p>{r_get_label("Generated on")}: {datetime.today().strftime('%B %d, %Y')}</p>
         <p>{r_get_label("Total Score")}: <span id="total-score"></span></p>
@@ -947,8 +946,8 @@ def run( file ):
         <div id="legend"></div>
         <div id="heat-map-content"></div>
 
-        <h2 id="poor-verses">{r_get_label("Lower Scoring Verses")}</h2>
-        <div id="poor-verses-content"></div>
+        <h2 id="low-grade-verses">{r_get_label("Lower Scoring Verses")}</h2>
+        <div id="low-grade-content"></div>
 
         <h2 id="all-verses">{r_get_label("All Verses")}</h2>
         <div id="all-verses-content"></div>
@@ -983,7 +982,7 @@ def run( file ):
             const averageGrade = grades.length > 0 ? grades.reduce((sum, grade) => sum + grade, 0) / grades.length : 0;
             totalScoreElement.textContent = averageGrade.toFixed(1);
 
-            const poorVersesContent = document.getElementById('poor-verses-content');
+            const lowGradeContent = document.getElementById('low-grade-content');
             const allVersesContent = document.getElementById('all-verses-content');
             const heatMapContent = document.getElementById('heat-map-content');
             const legendContent = document.getElementById('legend');
@@ -1097,7 +1096,7 @@ def run( file ):
                 const low = settings.autoLowGrade ? minGrade : settings.lowGrade;
                 const high = settings.autoHighGrade ? maxGrade : settings.highGrade;
 
-                if (high <= low) return {{ backgroundColor: settings.lowColor, textColor: getTextColor(settings.lowColor) }};
+                if (high <= low) return {{ backgroundColor: '#ccc', textColor: 'black' }};
 
                 const normalized = (grade - low) / (high - low);
                 const clampedNormalized = Math.max(0, Math.min(1, normalized));
@@ -1347,29 +1346,29 @@ def run( file ):
                 }});
             }});
 
-            let poorVerses = [];
+            let lowGradeVerses = [];
             if (percentage_sorted !== null) {{
                 const sortedByGrade = [...reportData].sort((a, b) => a.grade - b.grade);
                 const count = Math.floor(percentage_sorted * reportData.length / 100);
-                poorVerses = sortedByGrade.slice(0, count);
+                lowGradeVerses = sortedByGrade.slice(0, count);
             }} else {{
                 const grades = reportData.map(v => v.grade);
                 if (grades.length > 1) {{
                     const mean = grades.reduce((a, b) => a + b, 0) / grades.length;
                     const stdDev = Math.sqrt(grades.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / (grades.length -1) );
                     const gradeCutOff = mean - num_sd_to_report * stdDev;
-                    poorVerses = reportData.filter(v => v.grade <= gradeCutOff);
-                    poorVerses.sort((a, b) => a.grade - b.grade);
+                    lowGradeVerses = reportData.filter(v => v.grade <= gradeCutOff);
+                    lowGradeVerses.sort((a, b) => a.grade - b.grade);
                 }}
             }}
 
-            poorVerses.forEach(verse => poorVersesContent.appendChild(renderVerse(verse, true)));
+            lowGradeVerses.forEach(verse => lowGradeContent.appendChild(renderVerse(verse, true)));
             reportData.forEach(verse => allVersesContent.appendChild(renderVerse(verse, false)));
 
             // 3. Populate sidebar with table of contents
             const sidebarSections = [
                 {{ title: '{r_get_label("Heat Map")}', href: '#heat-map' }},
-                {{ title: '{r_get_label("Lower Scoring Verses")}', href: '#poor-verses', count: poorVerses.length }},
+                {{ title: '{r_get_label("Lower Scoring Verses")}', href: '#low-grade-verses', count: lowGradeVerses.length }},
                 {{ title: '{r_get_label("All Verses")}', href: '#all-verses' }}
             ];
 
