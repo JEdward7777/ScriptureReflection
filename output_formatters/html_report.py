@@ -1434,17 +1434,26 @@ def run( file ):
                 
                 // Add chapter links for All Verses section
                 if (section.title === '{r_get_label("All Verses")}') {{
-                    Object.keys(bookChapterVerses).sort().forEach(book => {{
-                        Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
-                            const chapterLink = document.createElement('a');
-                            chapterLink.href = `#${{bookChapterVerses[book][chapter][0].href}}`;
-                            chapterLink.className = 'sidebar-link chapter';
-                            chapterLink.textContent = `${{book}} ${{chapter}}`;
-                            sectionDiv.appendChild(chapterLink);
+                    // Only add chapter links if we're using book/chapter grouping
+                    if (booksWithMultipleItems.length > 0 || books.length === 1) {{
+                        Object.keys(bookChapterVerses).sort().forEach(book => {{
+                            Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
+                                const chapterLink = document.createElement('a');
+                                chapterLink.href = `#${{bookChapterVerses[book][chapter][0].href}}`;
+                                chapterLink.className = 'sidebar-link chapter';
+                                
+                                // Don't show chapter if it's null
+                                if (chapter === 'null' || chapter === null) {{
+                                    chapterLink.textContent = book;
+                                }} else {{
+                                    chapterLink.textContent = `${{book}} ${{chapter}}`;
+                                }}
+                                sectionDiv.appendChild(chapterLink);
+                            }});
                         }});
-                    }});
+                    }}
                 }}
-                
+                                
                 sidebarContent.appendChild(sectionDiv);
             }});
 
@@ -1452,7 +1461,11 @@ def run( file ):
             document.addEventListener('click', (e) => {{
                 if (e.target.matches('a[href^="#"]')) {{
                     e.preventDefault();
-                    const target = document.querySelector(e.target.getAttribute('href'));
+                    const href = e.target.getAttribute('href');
+                    // Extract the ID part (remove the #) and escape it for CSS
+                    const targetId = href.substring(1);
+                    const escapedId = CSS.escape(targetId);
+                    const target = document.querySelector('#' + escapedId);
                     if (target) {{
                         target.scrollIntoView({{
                             behavior: 'smooth',
