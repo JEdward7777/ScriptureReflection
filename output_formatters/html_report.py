@@ -60,6 +60,13 @@ def run( file ):
             vref = utils.look_up_key(verse, reference_key)
             book = utils.split_ref2( vref )[0]
             book_to_verses[book].append( verse )
+        
+        # Check if we should disable book splitting for non-scripture content
+        # If every book has only one verse, it's likely non-scripture content
+        books_with_multiple_verses = sum(1 for verses in book_to_verses.values() if len(verses) > 1)
+        if books_with_multiple_verses == 0 and len(book_to_verses) > 1:
+            # All books have only one verse each - treat as non-scripture content
+            book_to_verses = { "": original_content }
     else:
         book_to_verses = { "": original_content }
 
@@ -1319,32 +1326,71 @@ def run( file ):
                 bookChapterVerses[book][chapter].push(verse);
             }});
 
-            Object.keys(bookChapterVerses).sort().forEach(book => {{
-                Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
-                    const chapterVerses = bookChapterVerses[book][chapter];
-                    chapterVerses.sort((a, b) => splitRef(a.vref)[2] - splitRef(b.vref)[2]);
-
-                    const row = document.createElement('div');
-                    row.className = 'heat-map-row';
-                    const label = document.createElement('div');
-                    label.className = 'heat-map-label';
-                    label.textContent = `${{book}} ${{chapter}}`;
-                    row.appendChild(label);
-
-                    const versesContainer = document.createElement('div');
-                    versesContainer.className = 'heat-map-verses';
-                    chapterVerses.forEach(verse => {{
-                        const square = document.createElement('a');
-                        square.className = 'heat-map-square';
-                        square.href = `#${{verse.href}}`;
-                        square.setAttribute('data-vref', verse.vref);
-                        square.textContent = splitRef(verse.vref)[2];
-                        versesContainer.appendChild(square);
-                    }});
-                    row.appendChild(versesContainer);
-                    heatMapContent.appendChild(row);
-                }});
+            // Check if we should group by book/chapter or treat as flat list
+            const books = Object.keys(bookChapterVerses);
+            const booksWithMultipleItems = books.filter(book => {{
+                const totalItems = Object.values(bookChapterVerses[book]).reduce((sum, chapters) => sum + chapters.length, 0);
+                return totalItems > 1;
             }});
+
+            // If no books have multiple items, treat as a flat list
+            if (booksWithMultipleItems.length === 0 && books.length > 1) {{
+                // Render as a single flat list without book/chapter grouping
+                const row = document.createElement('div');
+                row.className = 'heat-map-row';
+                const label = document.createElement('div');
+                label.className = 'heat-map-label';
+                label.textContent = 'Items';
+                row.appendChild(label);
+
+                const versesContainer = document.createElement('div');
+                versesContainer.className = 'heat-map-verses';
+                reportData.forEach((verse, index) => {{
+                    const square = document.createElement('a');
+                    square.className = 'heat-map-square';
+                    square.href = `#${{verse.href}}`;
+                    square.setAttribute('data-vref', verse.vref);
+                    square.textContent = (index + 1).toString();
+                    versesContainer.appendChild(square);
+                }});
+                row.appendChild(versesContainer);
+                heatMapContent.appendChild(row);
+            }} else {{
+                // Render with book/chapter grouping
+                Object.keys(bookChapterVerses).sort().forEach(book => {{
+                    Object.keys(bookChapterVerses[book]).sort((a, b) => a - b).forEach(chapter => {{
+                        const chapterVerses = bookChapterVerses[book][chapter];
+                        chapterVerses.sort((a, b) => splitRef(a.vref)[2] - splitRef(b.vref)[2]);
+
+                        const row = document.createElement('div');
+                        row.className = 'heat-map-row';
+                        const label = document.createElement('div');
+                        label.className = 'heat-map-label';
+                        
+                        // Don't show chapter if it's null
+                        if (chapter === 'null' || chapter === null) {{
+                            label.textContent = book;
+                        }} else {{
+                            label.textContent = `${{book}} ${{chapter}}`;
+                        }}
+                        row.appendChild(label);
+
+                        const versesContainer = document.createElement('div');
+                        versesContainer.className = 'heat-map-verses';
+                        chapterVerses.forEach(verse => {{
+                            const square = document.createElement('a');
+                            square.className = 'heat-map-square';
+                            square.href = `#${{verse.href}}`;
+                            square.setAttribute('data-vref', verse.vref);
+                            const verseNum = splitRef(verse.vref)[2];
+                            square.textContent = verseNum !== null ? verseNum : '•';
+                            versesContainer.appendChild(square);
+                        }});
+                        row.appendChild(versesContainer);
+                        heatMapContent.appendChild(row);
+                    }});
+                }});
+            }}
 
             let lowGradeVerses = [];
             if (percentage_sorted !== null) {{
