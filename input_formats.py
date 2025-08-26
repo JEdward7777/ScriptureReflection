@@ -1,11 +1,48 @@
 import os
 import copy, re
 from lxml import etree
+import xml.etree.ElementTree as ET
 from collections import OrderedDict, defaultdict
 from usfm_grammar import USFMParser
 
 import utils
 import output_formats
+
+
+def get_element_text(element):
+    """
+    Extract all text content from an XML element, including text from nested child elements.
+    This handles cases where XML elements contain mixed content (text + child elements).
+    
+    Args:
+        element: XML element from ElementTree
+        
+    Returns:
+        str: All text content concatenated together, or empty string if no text
+    """
+    if element is None:
+        return ""
+    
+    # Start with the element's direct text content
+    text_parts = []
+    if element.text:
+        text_parts.append(element.text.strip())
+    
+    # Recursively get text from all child elements
+    for child in element:
+        child_text = get_element_text(child)
+        if child_text:
+            text_parts.append(child_text)
+        # Also get the tail text (text that comes after the child element)
+        if child.tail:
+            text_parts.append(child.tail.strip())
+    
+    # Join all text parts with spaces and clean up extra whitespace
+    full_text = ' '.join(text_parts)
+    # Normalize whitespace (replace multiple spaces/newlines with single spaces)
+    full_text = ' '.join(full_text.split())
+    
+    return full_text
 
 
 def chop_with_regex( content, regex ):
@@ -88,7 +125,7 @@ def sort_verses( verses, reference_key ):
     return sorted_verses
 
 
-def load_format( settings, reference_key, translation_key ):
+def load_format( settings, reference_key, translation_key, source_key = None ):
     if settings['format'] == 'USX':
         result = []
         import_folder = settings['folder']
@@ -140,6 +177,75 @@ def load_format( settings, reference_key, translation_key ):
 
         result = sort_verses( result, reference_key )
         return result
+    elif settings['format'] == 'xliff':
+        result = []
+        import_folder = settings['folder']
+        #iterate through the xliff files:
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.xliff'):
+                print(f"Loading {filename}")
+                full_filename = os.path.join(import_folder, filename)
+                
+                #parse as xml
+                #https://docs.python.org/3/library/xml.etree.elementtree.html
+                tree = ET.parse(full_filename)
+                root = tree.getroot()
+            
+                #now recursively iterate and find trans-unit tags.
+                #https://docs.python.org/3/library/xml.etree.elementtree.html#tree-walk
+                for elem in root.iter():
+                    # Handle namespace-prefixed tags (e.g., {urn:oasis:names:tc:xliff:document:1.2}trans-unit)
+                    # We check the local name part to be flexible with different XLIFF versions
+                    if elem.tag == 'trans-unit' or elem.tag.endswith('}trans-unit'):
+                        # Extract namespace for finding child elements
+                        namespace = ''
+                        if elem.tag.endswith('}trans-unit'):
+                            namespace = elem.tag[:elem.tag.find('}')+1]
+                        
+                        new_verse = {}
+                        reference = elem.attrib['id']
+                        utils.set_key(new_verse, reference_key, reference)
+                        if source_key is None:
+                            # Use namespace-aware element finding
+                            target_elem = elem.find(f'{namespace}target') if namespace else elem.find('target')
+                            source_elem = elem.find(f'{namespace}source') if namespace else elem.find('source')
+                            
+                            # Use helper function to extract all text content, including from nested elements
+                            target_text = get_element_text(target_elem)
+                            source_text = get_element_text(source_elem)
+                            
+                            if target_text:
+                                utils.set_key( new_verse, translation_key, target_text )
+                            elif source_text:
+                                utils.set_key( new_verse, translation_key, source_text )
+                            else:
+                                raise Exception("Unable to find either target or source element with text in trans-unit")
+                        else:
+                            source_elem = elem.find(f'{namespace}source') if namespace else elem.find('source')
+                            if source_elem is None:
+                                raise Exception("Unable to find source element in trans-unit")
+                            
+                            source_text = get_element_text(source_elem)
+                            if not source_text:
+                                raise Exception("Source element has no text content")
+                            utils.set_key( new_verse, source_key, source_text )
+                            
+                            target_elem = elem.find(f'{namespace}target') if namespace else elem.find('target')
+                            if target_elem is None:
+                                raise Exception("Unable to find target element in trans-unit")
+                            
+                            target_text = get_element_text(target_elem)
+                            if not target_text:
+                                raise Exception("Target element has no text content")
+                            utils.set_key( new_verse, translation_key, target_text )
+
+                        result.append(new_verse)
+
+        if settings.get( "sort", True ):
+            result = sort_verses( result, reference_key )
+
+        return result
+    
     elif settings['format'] == 'usfm':
         result = []
         import_folder = settings['folder']
@@ -337,14 +443,21 @@ def main():
         reference_key = config.get('reference_key'  , ['vref'])
         translation_key = config.get('translation_key', ['fresh_translation','text'] )
         source_key = config.get('source_key'   , ['source'])
-        input_target  = load_format( config['input_target'], 
-                                     reference_key,
-                                     translation_key )
-        input_source  = load_format( config['input_source'],
-                                     reference_key,
-                                     source_key)
-        
-        combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
+
+        if 'input_source_target' in config:
+            combined = load_format( config['input_source_target'], 
+                                              reference_key,
+                                              translation_key, 
+                                              source_key = source_key )
+        else:
+            input_target  = load_format( config['input_target'], 
+                                        reference_key,
+                                        translation_key )
+            input_source  = load_format( config['input_source'],
+                                        reference_key,
+                                        source_key)
+            
+            combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
 
         combined = utils.normalize_ranges( combined, reference_key, translation_key, source_key )
 
