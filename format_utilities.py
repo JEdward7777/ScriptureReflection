@@ -7,12 +7,18 @@ import yaml
 
 import grade_reflect_loop
 
+from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def load_output_formats_yaml():
+    with open( 'output_formats.yaml', encoding='utf-8' ) as f:
+        return yaml.load(f, Loader=yaml.FullLoader)
+
 def get_config_for( file ):
     """
     Returns the config for the given file for the output_formats tool.
     """
-    with open( 'output_formats.yaml', encoding='utf-8' ) as f:
-        output_formats_yaml = yaml.load(f, Loader=yaml.FullLoader)
+    output_formats_yaml = load_output_formats_yaml()
     if os.path.splitext(file)[0] in output_formats_yaml['configs']:
         return output_formats_yaml['configs'][os.path.splitext(file)[0]]
     return None
