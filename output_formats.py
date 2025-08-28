@@ -35,9 +35,9 @@ def discover_formatters():
                 # Check if the module has a 'run' function
                 if hasattr(module, 'run') and callable(getattr(module, 'run')):
                     formatters.append((modname, module))
-                    print(f"Discovered formatter: {modname}")
-                else:
-                    print(f"Skipping {modname}: no 'run' function found")
+                #     print(f"Discovered formatter: {modname}")
+                # else:
+                #     print(f"Skipping {modname}: no 'run' function found")
                     
             except Exception as ex:
                 print(f"Failed to import formatter {modname}: {ex}")
@@ -66,7 +66,7 @@ def main( run_everything=True, throw_errors=False ):
     ran_something = False
     for file in os.listdir("output"):
         if file.endswith(".jsonl"):
-            print(f"Considering file {file}...")
+            #print(f"Considering file {file}...")
 
             
             # Run each discovered formatter
@@ -76,7 +76,7 @@ def main( run_everything=True, throw_errors=False ):
                     this_config = get_config_for( file )
                     if this_config is None: this_config = {}
                     if not this_config.get( 'active', False ):
-                        if formatter_name not in this_config.get( 'enabled', [] ):
+                        if this_config.get( 'enabled', [] ) is None or formatter_name not in this_config.get( 'enabled', [] ):
                             continue
 
 

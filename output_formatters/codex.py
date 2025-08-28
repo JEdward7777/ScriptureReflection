@@ -63,9 +63,36 @@ def run(file):
     #see if there is only one item per book, we will make everything just one file.
     num_more_than_ones = sum(1 for book in book_to_verses if len(book_to_verses[book]) > 1)
     if num_more_than_ones == 0:
+        content_name = this_config.get( 'codex', {} ).get( 'content_name', 'content' )
         #go ahead and stuff everything in as one "book".
-        new_book_to_verses = {'content': [verse for book in book_to_verses for verse in book_to_verses[book]]}
+        new_book_to_verses = {content_name: [verse for book in book_to_verses for verse in book_to_verses[book]]}
         book_to_verses = new_book_to_verses
+
+
+    #now going to scrub through and make sure all the IDs are "<book> <chapter>:<verse>" parsable.
+    #doing this as a pre-step to make sure the IDs assigned are consistent betwean the source and target
+    mapped_ids = {}
+    for book in book_to_verses:
+        last_chapter_number = 1
+        last_verse_number = 0
+
+        for verse in book_to_verses[book]:
+            vref = utils.look_up_key(verse, reference_key)
+            _,chapter_number,verse_start,verse_end = utils.split_ref2( vref )
+
+            used_chapter_num = chapter_number if chapter_number is not None else last_chapter_number
+            used_verse_start = verse_start if verse_start is not None else last_verse_number + 1
+            used_verse_end = verse_end if verse_end is not None else used_verse_start
+
+            if used_verse_start != used_verse_end:
+                reconstructed_vref = f"{book} {used_chapter_num}:{used_verse_start}-{used_verse_end}"
+            else:
+                reconstructed_vref = f"{book} {used_chapter_num}:{used_verse_start}"
+
+            mapped_ids[vref] = reconstructed_vref
+
+            last_chapter_number = used_chapter_num
+            last_verse_number = used_verse_end
 
     
     project_folder = this_config.get( 'codex', {} )['folder']
@@ -92,10 +119,12 @@ def run(file):
             for verse in book_to_verses[book]:
 
                 vref = utils.look_up_key(verse, reference_key)
+                reconstructed_vref = mapped_ids[vref]
+
                 content = utils.look_up_key(verse, side['content_key'], default="")
 
-                _,chapter_num,verse_start,verse_end = utils.split_ref2( vref )
-                in_range = verse_start != verse_end
+                _,chapter_num,verse_start,verse_end = utils.split_ref2( reconstructed_vref )
+
                 codex_cell = {}
                 codex_cells.append( codex_cell )
                 codex_cell['kind'] = 2
@@ -103,12 +132,17 @@ def run(file):
                 codex_cell['value'] = content
                 metadata = codex_cell.setdefault( 'metadata', {} )
                 metadata['type'] = 'text'
-                if in_range:
-                    metadata['id'] = f"{book} {chapter_num}:{verse_start}"
-                else:
-                    metadata['id'] = vref
+
+
+                metadata['id'] = f"{book} {chapter_num}:{verse_start}"
                 metadata['data'] = {}
                 metadata['cellLabel'] = str(verse_start)
+
+                in_range = verse_start != verse_end
+
+                if not in_range:
+                    if reconstructed_vref != vref:
+                        metadata['originalId'] = vref
 
                 if in_range:
                     for verse_num in range( verse_start+1, verse_end+1 ):
@@ -122,6 +156,7 @@ def run(file):
                         metadata['id'] = f"{book} {chapter_num}:{verse_num}"
                         metadata['data'] = {}
                         metadata['cellLabel'] = str(verse_num)
+
 
             book_metadata = codex_structure.setdefault( 'metadata', {} )
             book_metadata['id'] = book
