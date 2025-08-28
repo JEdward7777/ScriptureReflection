@@ -1,5 +1,7 @@
+#pylint: disable=multiple-statements
+
 import os
-import copy, re
+import copy, re, json
 from lxml import etree
 import xml.etree.ElementTree as ET
 from collections import OrderedDict, defaultdict
@@ -7,6 +9,7 @@ from usfm_grammar import USFMParser
 
 import utils
 import output_formats
+
 
 
 def get_element_text(element):
@@ -151,8 +154,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                         utils.set_key(new_verse, translation_key, text)
                         result.append(new_verse)
 
-        result = sort_verses( result, reference_key )
-        return result
+        if settings.get( "sort", True ): result = sort_verses( result, reference_key )
     elif settings['format'] == 'hacked_usfm':
         result = []
         import_folder = settings['folder']
@@ -175,8 +177,33 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                         utils.set_key(new_verse, translation_key, text)
                         result.append(new_verse)
 
-        result = sort_verses( result, reference_key )
-        return result
+        if settings.get( "sort", True ): result = sort_verses( result, reference_key )
+    elif settings['format'] == 'codex':
+        result = []
+        import_folder = settings['folder']
+        #iterate through the codex files:
+        for filename in os.listdir(import_folder):
+            if filename.lower().endswith('.codex') or filename.lower().endswith('.source'):
+                print( f"Loading {filename}" )
+                full_filename = os.path.join(import_folder, filename)
+
+                with open( full_filename, 'r', encoding='utf-8' ) as f:
+                    codex_structure = json.load(f)
+
+                    for codex_cell in codex_structure.get('cells', []):
+
+                        text = codex_cell.get('value', '' )
+                        vref = codex_cell.get('metadata', {} ).get('id', '' )
+                        cell_type = codex_cell.get('metadata', {} ).get('type', '' )
+
+                        assert cell_type == 'text', f'Unsupported type: {cell_type}'
+
+                        new_verse = {}
+
+                        utils.set_key(new_verse, reference_key, vref)
+                        utils.set_key(new_verse, translation_key, text)
+                        result.append(new_verse)
+
     elif settings['format'] == 'xliff':
         result = []
         import_folder = settings['folder']
@@ -244,8 +271,6 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
         if settings.get( "sort", True ):
             result = sort_verses( result, reference_key )
 
-        return result
-    
     elif settings['format'] == 'usfm':
         result = []
         import_folder = settings['folder']
@@ -277,8 +302,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                             print( f"Unparsable reference in {filename}:\n   {vref}: {text}" )
     
 
-        result = sort_verses( result, reference_key )
-        return result
+        if settings.get( "sort", True ): result = sort_verses( result, reference_key )
     elif settings['format'] == 'biblenlp':
         vref_file = settings['vref']
         source_file = settings['source']
@@ -293,7 +317,6 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                 utils.set_key( new_verse, translation_key, source_verse )
                 result.append(new_verse)
         #result = sort_verses( result, reference_key )
-        return result
 
     elif settings['format'] == 'sblgnt_txt':
 
@@ -332,14 +355,12 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                             utils.set_key(new_verse, reference_key, vref.strip().upper())
                             utils.set_key(new_verse, translation_key, text.strip())
                             result.append(new_verse)
-        result = sort_verses( result, reference_key )
-        return result
+        if settings.get( "sort", True ): result = sort_verses( result, reference_key )
 
+    else:
+        assert False, f"Unrecognized format {settings['format']}"
 
-
-
-
-    assert False, f"Unrecognized format {settings['format']}"
+    return result
 
 def merge_source_and_target( settings, source, target, reference_key, source_key, translation_key ):
     #so to make it so that both the source and the target can be ranges,
@@ -409,7 +430,7 @@ def merge_source_and_target( settings, source, target, reference_key, source_key
         vref = utils.look_up_key( verse_obj, reference_key )
         source_text = utils.look_up_key( verse_obj, source_key )
         target_text = utils.look_up_key( verse_obj, translation_key )
-        book, chapter, verse_num = utils.split_ref( vref )
+        book, chapter, _ = utils.split_ref( vref )
         missing_white_list = settings.get( 'missing_white_list', [] )
         missing_level = settings.get( 'missing_level', 'error' )
         if book not in missing_white_list and vref not in missing_white_list:
@@ -445,12 +466,24 @@ def main():
         source_key = config.get('source_key'   , ['source'])
 
         if 'input_source_target' in config:
-            combined = load_format( config['input_source_target'], 
+            if config['input_source_target'].get('format', '' ) == 'codex':
+                source_side = config['input_source_target'].copy()
+                source_side['folder'] = os.path.join( config['input_source_target']['folder'], '.project/sourceTexts' )
+                input_source = load_format( source_side, reference_key, source_key )
+
+                target_side = config['input_source_target'].copy()
+                target_side['folder'] = os.path.join( config['input_source_target']['folder'], 'files/target' )
+                input_target = load_format( target_side, reference_key, translation_key )
+
+                combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
+
+            else:    
+                combined = load_format( config['input_source_target'],
                                               reference_key,
-                                              translation_key, 
+                                              translation_key,
                                               source_key = source_key )
         else:
-            input_target  = load_format( config['input_target'], 
+            input_target  = load_format( config['input_target'],
                                         reference_key,
                                         translation_key )
             input_source  = load_format( config['input_source'],
