@@ -69,14 +69,14 @@ def chop_with_regex( content, regex ):
 
     return result
 
-def hacked_usfm_parser( text ):
+def hacked_usfm_parser( text, book_finder_id="toc3" ):
     """The reason for this is that the usfm library I am using keeps on not working,
      so this is a hacked version which will just get the job done even if there are problems.
     """
     #so first chop everything up into chapters.
     chapter_regex = r'\\c (\d+)'
     verse_regex = r'\\v (\d+)'
-    book_finder = r'\\toc3 (\w+)'
+    book_finder = r'\\' + book_finder_id + r' (\w+)'
 
     book_match = re.search( book_finder, text )
     if book_match is None:
@@ -173,7 +173,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                 with open( full_filename, 'r', encoding='utf-8' ) as f:
                     usfm_string = f.read()
 
-                    dict_output = hacked_usfm_parser( usfm_string )
+                    dict_output = hacked_usfm_parser( usfm_string, settings.get('book_finder_id','toc3') )
 
                     for vref,text in zip( dict_output['vref'], dict_output['text'] ):
                         new_verse = {}
