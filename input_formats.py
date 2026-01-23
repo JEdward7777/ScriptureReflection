@@ -61,10 +61,11 @@ def chop_with_regex( content, regex ):
 
         last_capture = capture
 
-    capture_number = int(last_capture.group(1))
-    chopped_content = content[last_capture.end()+1:]
+    if last_capture is not None:
+        capture_number = int(last_capture.group(1))
+        chopped_content = content[last_capture.end()+1:]
 
-    result[capture_number] = chopped_content
+        result[capture_number] = chopped_content
 
     return result
 
@@ -78,6 +79,9 @@ def hacked_usfm_parser( text ):
     book_finder = r'\\toc3 (\w+)'
 
     book_match = re.search( book_finder, text )
+    if book_match is None:
+        book_finder_2 = r'\\id (\w+)'
+        book_match = re.search( book_finder_2, text )
     book_name = book_match.group(1).upper()
     
     chapter_content = chop_with_regex( text, chapter_regex )
@@ -86,7 +90,7 @@ def hacked_usfm_parser( text ):
     text = []
 
     reg_exp_to_drop = [ r'\\s\d+', r'\\p', r'\\q(\d+)?', r'\\m', r'\\f (.*)\\f\*', r'\\b',
-        r'\\f (.*)\\fqa', r'\\1', r'\\nb']
+        r'\\f (.*)\\fqa', r'\\1', r'\\nb', r'\\s\d?.*[^\n]*', r'\\r' ]
 
     for chapter_number, chapter_content in chapter_content.items():
         verse_content = chop_with_regex( chapter_content, verse_regex )
