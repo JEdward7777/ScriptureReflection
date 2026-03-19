@@ -204,7 +204,7 @@ def _should_overwrite(cell_value, overwrite_filter):
 
 
 def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
-                        reference_key, strict_book_names, overwrite_filter):
+                        reference_key, strict_book_names, overwrite_filter, vrefs_to_ids):
     """
     Inject verse content into an existing codex file.
 
@@ -230,23 +230,42 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
         # Try to find existing cell
         _idx, existing_cell = _find_cell_by_ref(codex_cells, global_ref)
 
+        #see if perhaps the verse range is one cell.
+        single_cell_range = False
+        if not existing_cell and verse_start != verse_end:
+            _idx, existing_cell = _find_cell_by_ref(codex_cells, reconstructed_vref)
+            if existing_cell is not None:
+                single_cell_range = True
+
+
         if existing_cell is not None:
             # Cell exists — only update value if overwrite conditions are met
             if _should_overwrite(existing_cell.get('value', ''), overwrite_filter):
                 existing_cell['value'] = content
         else:
             # Cell doesn't exist — create and insert in correct position
+            reference_to_add = global_ref
+            if verse_start != verse_end and reconstructed_vref in vrefs_to_ids:
+                new_id = vrefs_to_ids[reconstructed_vref]
+                single_cell_range = True
+                reference_to_add = reconstructed_vref
+            elif global_ref in vrefs_to_ids:
+                new_id = vrefs_to_ids[global_ref]
+
+            else:
+                new_id = generate_cell_id_from_hash(global_ref)
+
             new_cell = {
                 'kind': 2,
                 'languageId': 'html',
                 'value': content,
                 'metadata': {
                     'type': 'text',
-                    'id': generate_cell_id_from_hash(global_ref),
+                    'id': new_id,
                     'data': {
-                        'globalReferences': [global_ref]
+                        'globalReferences': [reference_to_add]
                     },
-                    'cellLabel': str(verse_start)
+                    'cellLabel': str(verse_start) if not single_cell_range else f"{verse_start}-{verse_end}"
                 }
             }
             if reconstructed_vref != vref:
@@ -257,7 +276,7 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
 
         # Handle range continuation cells
         in_range = verse_start != verse_end
-        if in_range:
+        if in_range and not single_cell_range:
             for verse_num in range(verse_start + 1, verse_end + 1):
                 range_global_ref = f"{abbreviated_book} {chapter_num}:{verse_num}"
                 _range_idx, range_cell = _find_cell_by_ref(codex_cells, range_global_ref)
@@ -268,13 +287,18 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                     if _should_overwrite(range_cell.get('value', ''), overwrite_filter):
                         range_cell['value'] = range_content
                 else:
+                    if range_global_ref in vrefs_to_ids:
+                        range_id = vrefs_to_ids[range_global_ref]
+                    else:
+                        range_id = generate_cell_id_from_hash(range_global_ref)
+
                     new_range_cell = {
                         'kind': 2,
                         'languageId': 'html',
                         'value': range_content,
                         'metadata': {
                             'type': 'text',
-                            'id': generate_cell_id_from_hash(range_global_ref),
+                            'id': range_id,
                             'data': {
                                 'globalReferences': [range_global_ref]
                             },
@@ -287,7 +311,8 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
     codex_structure['cells'] = codex_cells
 
     with open(existing_file, 'w', encoding='utf-8') as f:
-        json.dump(codex_structure, f, ensure_ascii=False, indent=4)
+        json.dump(codex_structure, f, ensure_ascii=False, indent=2)
+        f.write('\n')
 
 
 def get_ot_nt_designator( book ):
@@ -393,17 +418,57 @@ def run(file):
 
     project_folder = this_config.get( 'codex', {} )['folder']
 
+
+
+    #need to collect as much verse to id mapping that we can so that we are most likely to create a valid
+    #target or source file which maps across.
     source_and_target = [
         {
             'folder': os.path.join( project_folder, '.project/sourceTexts' ),
             'extension': "source",
             'content_key': source_key,
         },{
+
             'folder': os.path.join( project_folder, 'files/target' ),
             'extension': "codex",
             'content_key': translation_key,
         }
     ]
+    vrefs_to_ids = {}
+    for side in source_and_target:
+        folder = side['folder']
+        #now iterate all the files here:
+        for filename in os.listdir(folder):
+            if filename.endswith( f".{side['extension']}" ):
+                filepath = os.path.join( folder, filename )
+                content = utils.load_json( filepath )
+                for cell in content.get( 'cells', [] ):
+                    metadata = cell.get( 'metadata', {} )
+                    data = metadata.get( 'data', {} )
+                    global_references = data.get( 'globalReferences', [] )
+                    for global_reference in global_references:
+                        vrefs_to_ids[global_reference] = metadata.get( 'id' )
+
+
+
+    #make it so that we can operate only on source or target or both.
+    which_part = this_config.get( 'codex', {} ).get( 'which_part', 'both' )
+
+
+    source_and_target = []
+    if which_part in ['both', 'source']:
+        source_and_target.append({
+            'folder': os.path.join( project_folder, '.project/sourceTexts' ),
+            'extension': "source",
+            'content_key': source_key,
+        })
+
+    if which_part in ['both', 'target']:
+        source_and_target.append({
+            'folder': os.path.join( project_folder, 'files/target' ),
+            'extension': "codex",
+            'content_key': translation_key,
+        })
 
     timestamp = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
 
@@ -434,6 +499,7 @@ def run(file):
                     reference_key=reference_key,
                     strict_book_names=strict_book_names,
                     overwrite_filter=overwrite_filter,
+                    vrefs_to_ids=vrefs_to_ids,
                 )
             else:
                 # Create mode: generate new file from scratch
@@ -462,19 +528,34 @@ def run(file):
                     metadata = codex_cell.setdefault( 'metadata', {} )
                     metadata['type'] = 'text'
 
-                    metadata['id'] = generate_cell_id_from_hash( global_ref )
-                    metadata['data'] = {
-                        'globalReferences': [ global_ref ]
-                    }
-                    metadata['cellLabel'] = str(verse_start)
 
                     in_range = verse_start != verse_end
+
+                    single_cell_range = False
+                    globalReference_to_use = global_ref
+                    if in_range and reconstructed_vref in vrefs_to_ids[reconstructed_vref]:
+                        cell_id = vrefs_to_ids[reconstructed_vref]
+                        single_cell_range = True
+                        globalReference_to_use = reconstructed_vref
+                    elif global_ref in vrefs_to_ids:
+                        cell_id = vrefs_to_ids[global_ref]
+                    else:
+                        cell_id = generate_cell_id_from_hash( global_ref )
+
+                    metadata['id'] = cell_id
+                    metadata['data'] = {
+                        'globalReferences': [ globalReference_to_use ]
+                    }
+                    if not single_cell_range:
+                        metadata['cellLabel'] = str(verse_start)
+                    else:
+                        metadata['cellLabel'] = f"{verse_start}-{verse_end}"
 
                     if not in_range:
                         if reconstructed_vref != vref:
                             metadata['originalId'] = vref
 
-                    if in_range:
+                    if in_range and not single_cell_range:
                         for verse_num in range( verse_start+1, verse_end+1 ):
                             range_global_ref = f"{abbreviated_book} {chapter_num}:{verse_num}"
                             codex_cell = {}
@@ -484,7 +565,13 @@ def run(file):
                             codex_cell['value'] = '<range>' if content else ''
                             metadata = codex_cell.setdefault( 'metadata', {} )
                             metadata['type'] = 'text'
-                            metadata['id'] = generate_cell_id_from_hash( range_global_ref )
+
+                            if range_global_ref in vrefs_to_ids:
+                                range_id = vrefs_to_ids[range_global_ref]
+                            else:
+                                range_id = generate_cell_id_from_hash( range_global_ref )
+
+                            metadata['id'] = range_id
                             metadata['data'] = {
                                 'globalReferences': [ range_global_ref ]
                             }
