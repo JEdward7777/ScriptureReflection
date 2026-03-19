@@ -1,10 +1,12 @@
 
 from collections import defaultdict
 import hashlib
-import os, json
+import os
+import json
+import re
+from datetime import datetime, timezone
 import utils
 from format_utilities import get_config_for
-from datetime import datetime, timezone
 
 from . import usfm
 
@@ -97,6 +99,197 @@ def abbreviate_book_name(book_name, strict=True):
         )
     return book_name
 
+def _parse_ref_for_sort(ref_str):
+    """
+    Parse a reference string like "GEN 1:1" into a sortable tuple (book, chapter, verse).
+    Returns (ref_str, 0, 0) if parsing fails.
+    """
+    if not ref_str or ' ' not in ref_str:
+        return (ref_str or '', 0, 0)
+    last_space = ref_str.rindex(' ')
+    book = ref_str[:last_space]
+    rest = ref_str[last_space+1:]
+    if ':' not in rest:
+        try:
+            return (book, int(rest), 0)
+        except ValueError:
+            return (book, 0, 0)
+    parts = rest.split(':')
+    try:
+        chapter = int(parts[0])
+        verse_str = parts[1].split('-')[0]  # Take start of range
+        verse = int(verse_str)
+        return (book, chapter, verse)
+    except ValueError:
+        return (book, 0, 0)
+
+
+def _find_cell_by_ref(cells, ref_str):
+    """
+    Find a cell in the cells list that matches the given reference string.
+    Matches by:
+      1. metadata.data.globalReferences containing the reference
+      2. metadata.id matching the reference (for older format compatibility)
+
+    Returns the index and cell, or (None, None) if not found.
+    """
+    for i, cell in enumerate(cells):
+        metadata = cell.get('metadata', {})
+        # Check globalReferences first
+        global_refs = metadata.get('data', {}).get('globalReferences', [])
+        if ref_str in global_refs:
+            return i, cell
+        # Fallback: check if id matches the reference directly (older format)
+        if metadata.get('id') == ref_str:
+            return i, cell
+    return None, None
+
+
+def _find_insert_position(cells, ref_str):
+    """
+    Find the correct position to insert a new cell based on verse order.
+    Compares the reference against existing cells' globalReferences to find
+    the right spot.  Skips non-text cells (e.g., milestones) when comparing.
+    """
+    new_sort_key = _parse_ref_for_sort(ref_str)
+
+    for i, cell in enumerate(cells):
+        metadata = cell.get('metadata', {})
+
+        # Skip non-text cells (milestones, etc.) — don't insert before them
+        if metadata.get('type') != 'text':
+            continue
+
+        global_refs = metadata.get('data', {}).get('globalReferences', [])
+        cell_id = metadata.get('id', '')
+
+        # Get the reference for this cell
+        cell_ref = global_refs[0] if global_refs else cell_id
+        cell_sort_key = _parse_ref_for_sort(cell_ref)
+
+        if cell_sort_key > new_sort_key:
+            return i
+
+    # If no cell has a greater reference, append at end
+    return len(cells)
+
+
+def _should_overwrite(cell_value, overwrite_filter):
+    """
+    Determine if a cell's value should be overwritten based on the filter.
+
+    Args:
+        cell_value: The current value of the cell
+        overwrite_filter: None (default: don't overwrite non-empty),
+                         "all" (always overwrite),
+                         or a regex pattern string (overwrite if value matches)
+
+    Returns:
+        True if the cell should be overwritten, False otherwise
+    """
+    # Empty cells are always overwritten
+    if not cell_value or not cell_value.strip():
+        return True
+
+    # Default behavior: don't overwrite non-empty cells
+    if overwrite_filter is None:
+        return False
+
+    # "all" means always overwrite
+    if overwrite_filter == "all":
+        return True
+
+    # Otherwise treat as regex pattern
+    return bool(re.search(overwrite_filter, cell_value))
+
+
+def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
+                        reference_key, strict_book_names, overwrite_filter):
+    """
+    Inject verse content into an existing codex file.
+
+    - Matches cells by globalReferences or id
+    - Only updates value field on existing cells
+    - Creates new cells in correct verse order if not found
+    - Respects overwrite_filter for non-empty cells
+    """
+    with open(existing_file, 'r', encoding='utf-8') as f:
+        codex_structure = json.load(f)
+
+    codex_cells = codex_structure.get('cells', [])
+
+    for verse in book_verses:
+        vref = utils.look_up_key(verse, reference_key)
+        reconstructed_vref = mapped_ids[vref]
+        content = utils.look_up_key(verse, side['content_key'], default="")
+
+        _, chapter_num, verse_start, verse_end = utils.split_ref2(reconstructed_vref)
+        abbreviated_book = abbreviate_book_name(book, strict=strict_book_names)
+        global_ref = f"{abbreviated_book} {chapter_num}:{verse_start}"
+
+        # Try to find existing cell
+        _idx, existing_cell = _find_cell_by_ref(codex_cells, global_ref)
+
+        if existing_cell is not None:
+            # Cell exists — only update value if overwrite conditions are met
+            if _should_overwrite(existing_cell.get('value', ''), overwrite_filter):
+                existing_cell['value'] = content
+        else:
+            # Cell doesn't exist — create and insert in correct position
+            new_cell = {
+                'kind': 2,
+                'languageId': 'html',
+                'value': content,
+                'metadata': {
+                    'type': 'text',
+                    'id': generate_cell_id_from_hash(global_ref),
+                    'data': {
+                        'globalReferences': [global_ref]
+                    },
+                    'cellLabel': str(verse_start)
+                }
+            }
+            if reconstructed_vref != vref:
+                new_cell['metadata']['originalId'] = vref
+
+            insert_pos = _find_insert_position(codex_cells, global_ref)
+            codex_cells.insert(insert_pos, new_cell)
+
+        # Handle range continuation cells
+        in_range = verse_start != verse_end
+        if in_range:
+            for verse_num in range(verse_start + 1, verse_end + 1):
+                range_global_ref = f"{abbreviated_book} {chapter_num}:{verse_num}"
+                _range_idx, range_cell = _find_cell_by_ref(codex_cells, range_global_ref)
+
+                range_content = '<range>' if content else ''
+
+                if range_cell is not None:
+                    if _should_overwrite(range_cell.get('value', ''), overwrite_filter):
+                        range_cell['value'] = range_content
+                else:
+                    new_range_cell = {
+                        'kind': 2,
+                        'languageId': 'html',
+                        'value': range_content,
+                        'metadata': {
+                            'type': 'text',
+                            'id': generate_cell_id_from_hash(range_global_ref),
+                            'data': {
+                                'globalReferences': [range_global_ref]
+                            },
+                            'cellLabel': str(verse_num)
+                        }
+                    }
+                    insert_pos = _find_insert_position(codex_cells, range_global_ref)
+                    codex_cells.insert(insert_pos, new_range_cell)
+
+    codex_structure['cells'] = codex_cells
+
+    with open(existing_file, 'w', encoding='utf-8') as f:
+        json.dump(codex_structure, f, ensure_ascii=False, indent=4)
+
+
 def get_ot_nt_designator( book ):
     book_names = list( usfm.USFM_NAME.keys() )
 
@@ -123,6 +316,16 @@ def run(file):
     # If strict_book_names is True (default), abbreviate_book_name will raise
     # an error for unrecognized book names.  Set to False in config for non-Bible content.
     strict_book_names = this_config.get( 'codex', {} ).get( 'strict_book_names', True )
+
+    # Mode: "create" to generate new files, "inject" to update existing files.
+    # If not specified and target files exist, an exception is raised.
+    codex_mode = this_config.get( 'codex', {} ).get( 'mode', None )
+
+    # Overwrite filter for injection mode:
+    #   None (default) = don't overwrite non-empty cells
+    #   "all" = overwrite everything
+    #   "<regex>" = overwrite cells whose value matches the regex
+    overwrite_filter = this_config.get( 'codex', {} ).get( 'overwrite_filter', None )
 
     translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
     source_key = this_config.get( 'source_key', ['source'] )
@@ -207,70 +410,99 @@ def run(file):
     for side in source_and_target:
         os.makedirs( side['folder'], exist_ok=True )
         for book in book_to_verses:
-            codex_structure = {}
-            codex_cells = codex_structure.setdefault( 'cells', [] )
-            for verse in book_to_verses[book]:
-
-                vref = utils.look_up_key(verse, reference_key)
-                reconstructed_vref = mapped_ids[vref]
-
-                content = utils.look_up_key(verse, side['content_key'], default="")
-
-                _,chapter_num,verse_start,verse_end = utils.split_ref2( reconstructed_vref )
-
-                abbreviated_book = abbreviate_book_name( book, strict=strict_book_names )
-                global_ref = f"{abbreviated_book} {chapter_num}:{verse_start}"
-
-                codex_cell = {}
-                codex_cells.append( codex_cell )
-                codex_cell['kind'] = 2
-                codex_cell['languageId'] = 'html'
-                codex_cell['value'] = content
-                metadata = codex_cell.setdefault( 'metadata', {} )
-                metadata['type'] = 'text'
-
-                metadata['id'] = generate_cell_id_from_hash( global_ref )
-                metadata['data'] = {
-                    'globalReferences': [ global_ref ]
-                }
-                metadata['cellLabel'] = str(verse_start)
-
-                in_range = verse_start != verse_end
-
-                if not in_range:
-                    if reconstructed_vref != vref:
-                        metadata['originalId'] = vref
-
-                if in_range:
-                    for verse_num in range( verse_start+1, verse_end+1 ):
-                        range_global_ref = f"{abbreviated_book} {chapter_num}:{verse_num}"
-                        codex_cell = {}
-                        codex_cells.append( codex_cell )
-                        codex_cell['kind'] = 2
-                        codex_cell['languageId'] = 'html'
-                        codex_cell['value'] = '<range>' if content else ''
-                        metadata = codex_cell.setdefault( 'metadata', {} )
-                        metadata['type'] = 'text'
-                        metadata['id'] = generate_cell_id_from_hash( range_global_ref )
-                        metadata['data'] = {
-                            'globalReferences': [ range_global_ref ]
-                        }
-                        metadata['cellLabel'] = str(verse_num)
-
-
-            book_metadata = codex_structure.setdefault( 'metadata', {} )
-            book_metadata['id'] = book
-            book_metadata['originalName'] = book
-            book_metadata['sourceFsPath'] = os.path.join( side['folder'], f".project/sourceTexts/{book}.source" )
-            if side['extension'] == 'codex':
-                book_metadata['codexFsPath'] = os.path.join( side['folder'], f"files/target/{book}.codex" )
-            book_metadata['navigation'] = []
-            #2025-06-19T21:29:54.808Z
-            book_metadata['sourceCreatedAt'] = timestamp
-            book_metadata['codexLastModified'] = timestamp
-            book_metadata['gitStatus'] = 'untracked'
-            book_metadata['corpusMarker'] = get_ot_nt_designator( book )
-
             output_filename = os.path.join( side['folder'], f"{book}.{side['extension']}" )
-            with open( output_filename, 'w', encoding='utf-8' ) as f:
-                json.dump( codex_structure, f, ensure_ascii=False, indent=4 )
+            file_exists = os.path.exists( output_filename )
+
+            # Determine effective mode for this file
+            effective_mode = codex_mode
+            if effective_mode is None:
+                if file_exists:
+                    raise RuntimeError(
+                        f"Target file '{output_filename}' already exists and codex.mode is not set. "
+                        f"Set codex.mode to 'create' to overwrite or 'inject' to update existing files."
+                    )
+                effective_mode = 'create'
+
+            if effective_mode == 'inject' and file_exists:
+                # Injection mode: update existing file
+                _inject_into_codex(
+                    existing_file=output_filename,
+                    book=book,
+                    book_verses=book_to_verses[book],
+                    side=side,
+                    mapped_ids=mapped_ids,
+                    reference_key=reference_key,
+                    strict_book_names=strict_book_names,
+                    overwrite_filter=overwrite_filter,
+                )
+            else:
+                # Create mode: generate new file from scratch
+                if effective_mode == 'inject' and not file_exists:
+                    print( f"  Warning: inject mode but '{output_filename}' does not exist. Creating new file." )
+
+                codex_structure = {}
+                codex_cells = codex_structure.setdefault( 'cells', [] )
+                for verse in book_to_verses[book]:
+
+                    vref = utils.look_up_key(verse, reference_key)
+                    reconstructed_vref = mapped_ids[vref]
+
+                    content = utils.look_up_key(verse, side['content_key'], default="")
+
+                    _,chapter_num,verse_start,verse_end = utils.split_ref2( reconstructed_vref )
+
+                    abbreviated_book = abbreviate_book_name( book, strict=strict_book_names )
+                    global_ref = f"{abbreviated_book} {chapter_num}:{verse_start}"
+
+                    codex_cell = {}
+                    codex_cells.append( codex_cell )
+                    codex_cell['kind'] = 2
+                    codex_cell['languageId'] = 'html'
+                    codex_cell['value'] = content
+                    metadata = codex_cell.setdefault( 'metadata', {} )
+                    metadata['type'] = 'text'
+
+                    metadata['id'] = generate_cell_id_from_hash( global_ref )
+                    metadata['data'] = {
+                        'globalReferences': [ global_ref ]
+                    }
+                    metadata['cellLabel'] = str(verse_start)
+
+                    in_range = verse_start != verse_end
+
+                    if not in_range:
+                        if reconstructed_vref != vref:
+                            metadata['originalId'] = vref
+
+                    if in_range:
+                        for verse_num in range( verse_start+1, verse_end+1 ):
+                            range_global_ref = f"{abbreviated_book} {chapter_num}:{verse_num}"
+                            codex_cell = {}
+                            codex_cells.append( codex_cell )
+                            codex_cell['kind'] = 2
+                            codex_cell['languageId'] = 'html'
+                            codex_cell['value'] = '<range>' if content else ''
+                            metadata = codex_cell.setdefault( 'metadata', {} )
+                            metadata['type'] = 'text'
+                            metadata['id'] = generate_cell_id_from_hash( range_global_ref )
+                            metadata['data'] = {
+                                'globalReferences': [ range_global_ref ]
+                            }
+                            metadata['cellLabel'] = str(verse_num)
+
+
+                book_metadata = codex_structure.setdefault( 'metadata', {} )
+                book_metadata['id'] = book
+                book_metadata['originalName'] = book
+                book_metadata['sourceFsPath'] = os.path.join( side['folder'], f".project/sourceTexts/{book}.source" )
+                if side['extension'] == 'codex':
+                    book_metadata['codexFsPath'] = os.path.join( side['folder'], f"files/target/{book}.codex" )
+                book_metadata['navigation'] = []
+                #2025-06-19T21:29:54.808Z
+                book_metadata['sourceCreatedAt'] = timestamp
+                book_metadata['codexLastModified'] = timestamp
+                book_metadata['gitStatus'] = 'untracked'
+                book_metadata['corpusMarker'] = get_ot_nt_designator( book )
+
+                with open( output_filename, 'w', encoding='utf-8' ) as f:
+                    json.dump( codex_structure, f, ensure_ascii=False, indent=4 )
