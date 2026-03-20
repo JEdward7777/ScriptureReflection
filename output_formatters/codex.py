@@ -203,8 +203,27 @@ def _should_overwrite(cell_value, overwrite_filter):
     return bool(re.search(overwrite_filter, cell_value))
 
 
+def _strip_content(content, strip_chars):
+    """
+    Strip specified characters from content.
+
+    Args:
+        content: The text content to clean
+        strip_chars: A string of characters to remove, or None to skip stripping
+
+    Returns:
+        The cleaned content string
+    """
+    if not strip_chars or not content:
+        return content
+    for ch in strip_chars:
+        content = content.replace(ch, '')
+    return content
+
+
 def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
-                        reference_key, strict_book_names, overwrite_filter, vrefs_to_ids):
+                        reference_key, strict_book_names, overwrite_filter, vrefs_to_ids,
+                        strip_chars=None):
     """
     Inject verse content into an existing codex file.
 
@@ -221,7 +240,10 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
     for verse in book_verses:
         vref = utils.look_up_key(verse, reference_key)
         reconstructed_vref = mapped_ids[vref]
-        content = utils.look_up_key(verse, side['content_key'], default="")
+        content = _strip_content(
+            utils.look_up_key(verse, side['content_key'], default=""),
+            strip_chars
+        )
 
         _, chapter_num, verse_start, verse_end = utils.split_ref2(reconstructed_vref)
         abbreviated_book = abbreviate_book_name(book, strict=strict_book_names)
@@ -351,6 +373,10 @@ def run(file):
     #   "all" = overwrite everything
     #   "<regex>" = overwrite cells whose value matches the regex
     overwrite_filter = this_config.get( 'codex', {} ).get( 'overwrite_filter', None )
+
+    # strip_chars: a string of characters to strip from content before injecting/creating.
+    # e.g., strip_chars: "\n\r" would remove all newlines and carriage returns.
+    strip_chars = this_config.get( 'codex', {} ).get( 'strip_chars', None )
 
     translation_key = this_config.get( 'translation_key', ['fresh_translation','text'] )
     source_key = this_config.get( 'source_key', ['source'] )
@@ -500,6 +526,7 @@ def run(file):
                     strict_book_names=strict_book_names,
                     overwrite_filter=overwrite_filter,
                     vrefs_to_ids=vrefs_to_ids,
+                    strip_chars=strip_chars,
                 )
             else:
                 # Create mode: generate new file from scratch
@@ -513,7 +540,10 @@ def run(file):
                     vref = utils.look_up_key(verse, reference_key)
                     reconstructed_vref = mapped_ids[vref]
 
-                    content = utils.look_up_key(verse, side['content_key'], default="")
+                    content = _strip_content(
+                        utils.look_up_key(verse, side['content_key'], default=""),
+                        strip_chars
+                    )
 
                     _,chapter_num,verse_start,verse_end = utils.split_ref2( reconstructed_vref )
 
