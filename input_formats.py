@@ -16,21 +16,21 @@ def get_element_text(element):
     """
     Extract all text content from an XML element, including text from nested child elements.
     This handles cases where XML elements contain mixed content (text + child elements).
-    
+
     Args:
         element: XML element from ElementTree
-        
+
     Returns:
         str: All text content concatenated together, or empty string if no text
     """
     if element is None:
         return ""
-    
+
     # Start with the element's direct text content
     text_parts = []
     if element.text:
         text_parts.append(element.text.strip())
-    
+
     # Recursively get text from all child elements
     for child in element:
         child_text = get_element_text(child)
@@ -39,12 +39,12 @@ def get_element_text(element):
         # Also get the tail text (text that comes after the child element)
         if child.tail:
             text_parts.append(child.tail.strip())
-    
+
     # Join all text parts with spaces and clean up extra whitespace
     full_text = ' '.join(text_parts)
     # Normalize whitespace (replace multiple spaces/newlines with single spaces)
     full_text = ' '.join(full_text.split())
-    
+
     return full_text
 
 
@@ -55,14 +55,14 @@ def chop_with_regex( content, regex ):
 
     for capture in re.finditer( regex, content ):
         if last_capture is not None:
-            capture_number = int(last_capture.group(1))
+            capture_number = last_capture.group(1)
             chopped_content = content[last_capture.end()+1:capture.start()]
             result[capture_number] = chopped_content
 
         last_capture = capture
 
     if last_capture is not None:
-        capture_number = int(last_capture.group(1))
+        capture_number = last_capture.group(1)
         chopped_content = content[last_capture.end()+1:]
 
         result[capture_number] = chopped_content
@@ -75,7 +75,7 @@ def hacked_usfm_parser( text, book_finder_id="toc3" ):
     """
     #so first chop everything up into chapters.
     chapter_regex = r'\\c (\d+)'
-    verse_regex = r'\\v (\d+)'
+    verse_regex = r'\\v (\d+(-\d+)?)'
     book_finder = r'\\' + book_finder_id + r' (\w+)'
 
     book_match = re.search( book_finder, text )
@@ -83,7 +83,7 @@ def hacked_usfm_parser( text, book_finder_id="toc3" ):
         book_finder_2 = r'\\id (\w+)'
         book_match = re.search( book_finder_2, text )
     book_name = book_match.group(1).upper()
-    
+
     chapter_content = chop_with_regex( text, chapter_regex )
 
     vref = []
@@ -93,15 +93,15 @@ def hacked_usfm_parser( text, book_finder_id="toc3" ):
         r'\\f (.*)\\fqa', r'\\1', r'\\nb', r'\\s\d?.*[^\n]*', r'\\r' ]
 
     for chapter_number, chapter_content in chapter_content.items():
-        verse_content = chop_with_regex( chapter_content, verse_regex )
+        verse_content_blob = chop_with_regex( chapter_content, verse_regex )
 
-        for verse_number, verse_content in verse_content.items():
+        for verse_number, verse_content in verse_content_blob.items():
             for reg_exp in reg_exp_to_drop:
                 verse_content = re.sub( reg_exp, '', verse_content )
 
             if '\\' in verse_content:
                 print( f"Found \\ in {verse_content}" )
-            
+
             vref.append( f"{book_name} {chapter_number}:{verse_number}" )
             text.append( verse_content )
 
@@ -141,7 +141,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
             if filename.lower().endswith('.usx'):
                 print(f"Loading {filename}")
                 usx_file = os.path.join(import_folder, filename)
-                
+
                 # Load the XML file
                 #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
                 with open( usx_file, 'r', encoding='utf-8' ) as f:
@@ -167,7 +167,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
             if filename.lower().endswith('.usfm') or filename.lower().endswith('.sfm'):
                 print(f"Loading {filename}")
                 full_filename = os.path.join(import_folder, filename)
-                
+
                 # Load the usfm file
                 #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
                 with open( full_filename, 'r', encoding='utf-8' ) as f:
@@ -216,12 +216,12 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
             if filename.lower().endswith('.xliff'):
                 print(f"Loading {filename}")
                 full_filename = os.path.join(import_folder, filename)
-                
+
                 #parse as xml
                 #https://docs.python.org/3/library/xml.etree.elementtree.html
                 tree = ET.parse(full_filename)
                 root = tree.getroot()
-            
+
                 #now recursively iterate and find trans-unit tags.
                 #https://docs.python.org/3/library/xml.etree.elementtree.html#tree-walk
                 for elem in root.iter():
@@ -232,7 +232,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                         namespace = ''
                         if elem.tag.endswith('}trans-unit'):
                             namespace = elem.tag[:elem.tag.find('}')+1]
-                        
+
                         new_verse = {}
                         reference = elem.attrib['id']
                         utils.set_key(new_verse, reference_key, reference)
@@ -240,11 +240,11 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                             # Use namespace-aware element finding
                             target_elem = elem.find(f'{namespace}target') if namespace else elem.find('target')
                             source_elem = elem.find(f'{namespace}source') if namespace else elem.find('source')
-                            
+
                             # Use helper function to extract all text content, including from nested elements
                             target_text = get_element_text(target_elem)
                             source_text = get_element_text(source_elem)
-                            
+
                             if target_text:
                                 utils.set_key( new_verse, translation_key, target_text )
                             elif source_text:
@@ -255,16 +255,16 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                             source_elem = elem.find(f'{namespace}source') if namespace else elem.find('source')
                             if source_elem is None:
                                 raise Exception("Unable to find source element in trans-unit")
-                            
+
                             source_text = get_element_text(source_elem)
                             if not source_text:
                                 raise Exception("Source element has no text content")
                             utils.set_key( new_verse, source_key, source_text )
-                            
+
                             target_elem = elem.find(f'{namespace}target') if namespace else elem.find('target')
                             if target_elem is None:
                                 raise Exception("Unable to find target element in trans-unit")
-                            
+
                             target_text = get_element_text(target_elem)
                             if not target_text:
                                 raise Exception("Target element has no text content")
@@ -283,7 +283,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
             if filename.lower().endswith('.usfm') or filename.lower().endswith('.sfm'):
                 print(f"Loading {filename}")
                 full_filename = os.path.join(import_folder, filename)
-                
+
                 # Load the usfm file
                 #https://pypi.org/project/usfm-grammar/#:~:text=USX%20TO%20USFM%2C%20USJ%20OR%20TABLE
                 with open( full_filename, 'r', encoding='utf-8' ) as f:
@@ -304,7 +304,7 @@ def load_format( settings, reference_key, translation_key, source_key = None ):
                             #don't include "verses" without parsable
                             #references.
                             print( f"Unparsable reference in {filename}:\n   {vref}: {text}" )
-    
+
 
         if settings.get( "sort", True ): result = sort_verses( result, reference_key )
     elif settings['format'] == 'biblenlp':
@@ -450,12 +450,12 @@ def merge_source_and_target( settings, source, target, reference_key, source_key
                 else:
                     if not target_text:
                         print( f"For {vref} missing target text" )
-                        
-    
+
+
 
     return result
-   
-            
+
+
 
 
 def main():
@@ -481,7 +481,7 @@ def main():
 
                 combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
 
-            else:    
+            else:
                 combined = load_format( config['input_source_target'],
                                               reference_key,
                                               translation_key,
@@ -493,7 +493,7 @@ def main():
             input_source  = load_format( config['input_source'],
                                         reference_key,
                                         source_key)
-            
+
             combined = merge_source_and_target( config.get('merge',{}), input_source, input_target, reference_key, source_key, translation_key )
 
         combined = utils.normalize_ranges( combined, reference_key, translation_key, source_key )
@@ -503,7 +503,7 @@ def main():
         print( "loaded")
 
 
-    
+
 if __name__ == '__main__':
     main()
     print( "Done" )
