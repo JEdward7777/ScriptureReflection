@@ -4,6 +4,7 @@ import hashlib
 import os
 import json
 import re
+import time
 from datetime import datetime, timezone
 import utils
 from format_utilities import get_config_for
@@ -221,6 +222,92 @@ def _strip_content(content, strip_chars):
     return content
 
 
+def _create_edit_history_entry(value, timestamp_ms, edit_type="user-edit",
+                                author="easy_draft"):
+    """
+    Create an edit history entry compatible with the Codex editor's EditHistory type.
+
+    The Codex editor's merge resolution system (resolveCodexCustomMerge) uses edit
+    history entries to determine which content is authoritative during merges.
+    Specifically, getCellValueData() in sharedUtils finds the latest edit where
+    editMap is ["value"] and the value matches the current cell content. Without a
+    matching edit entry with a current timestamp, injected content gets dropped
+    during merge because it appears to be from an older state.
+
+    Args:
+        value: The cell value (content string) associated with this edit
+        timestamp_ms: Unix timestamp in milliseconds (matching JS Date.now())
+        edit_type: One of the EditType enum values from the codex-editor:
+                   "user-edit", "llm-edit", "llm-generation",
+                   "initial-import", "merge", "migration"
+        author: The author/username string for this edit
+
+    Returns:
+        A dict matching the codex-editor EditHistory structure:
+        {
+            editMap: ["value"],
+            value: <content>,
+            timestamp: <ms timestamp>,
+            type: <edit_type>,
+            author: <author>,
+            validatedBy: []
+        }
+    """
+    return {
+        'editMap': ['value'],
+        'value': value,
+        'timestamp': timestamp_ms,
+        'type': edit_type,
+        'author': author,
+        'validatedBy': [],
+    }
+
+
+def _add_edit_history_to_cell(cell, value, timestamp_ms, edit_type="user-edit",
+                               author="easy_draft"):
+    """
+    Add an edit history entry to a cell's metadata.edits array.
+
+    If the cell has an existing value but no edit history, an initial-import entry
+    is first created (backdated by 1 second) to preserve the original value in
+    history, matching the pattern used by codexDocument.updateCellContent().
+
+    Args:
+        cell: The cell dict to modify (must have 'metadata' key)
+        value: The new value being set on the cell
+        timestamp_ms: Unix timestamp in milliseconds
+        edit_type: The edit type string (default: "user-edit")
+        author: The author string (default: "easy_draft")
+    """
+    metadata = cell.get('metadata', {})
+    if 'edits' not in metadata:
+        metadata['edits'] = []
+    cell['metadata'] = metadata
+
+    edits = metadata['edits']
+
+    # If this is the first edit and the cell had a previous value, record an
+    # initial-import entry for the old value (backdated by 1 second) so the
+    # merge resolver can see the full history. This matches the pattern in
+    # codexDocument.ts updateCellContent() lines 365-375.
+    previous_value = cell.get('value', '')
+    if len(edits) == 0 and previous_value and previous_value.strip():
+        edits.append(_create_edit_history_entry(
+            value=previous_value,
+            timestamp_ms=timestamp_ms - 1000,
+            edit_type='initial-import',
+            author=author,
+        ))
+
+    # Add the new edit entry
+    edits.append(_create_edit_history_entry(
+        value=value,
+        timestamp_ms=timestamp_ms,
+        edit_type=edit_type,
+        author=author,
+    ))
+
+
 def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                         reference_key, strict_book_names, overwrite_filter, vrefs_to_ids,
                         strip_chars=None):
@@ -231,11 +318,17 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
     - Only updates value field on existing cells
     - Creates new cells in correct verse order if not found
     - Respects overwrite_filter for non-empty cells
+    - Adds edit history entries so the Codex editor's merge resolution
+      recognizes the injected content as authoritative (latest timestamp wins)
     """
     with open(existing_file, 'r', encoding='utf-8') as f:
         codex_structure = json.load(f)
 
     codex_cells = codex_structure.get('cells', [])
+
+    # Use a millisecond timestamp matching JavaScript's Date.now() for
+    # compatibility with the Codex editor's edit history system.
+    timestamp_ms = int(time.time() * 1000)
 
     for verse in book_verses:
         vref = utils.look_up_key(verse, reference_key)
@@ -264,6 +357,11 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
             # Cell exists — only update value if overwrite conditions are met
             if _should_overwrite(existing_cell.get('value', ''), overwrite_filter):
                 existing_cell['value'] = content
+                # Add edit history so the merge resolver sees this as the latest edit
+                _add_edit_history_to_cell(
+                    existing_cell, content, timestamp_ms,
+                    edit_type='user-edit', author='easy_draft'
+                )
         else:
             # Cell doesn't exist — create and insert in correct position
             reference_to_add = global_ref
@@ -284,6 +382,12 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                 'metadata': {
                     'type': 'text',
                     'id': new_id,
+                    'edits': [_create_edit_history_entry(
+                        value=content,
+                        timestamp_ms=timestamp_ms,
+                        edit_type='initial-import',
+                        author='easy_draft',
+                    )],
                     'data': {
                         'globalReferences': [reference_to_add]
                     },
@@ -308,6 +412,11 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                 if range_cell is not None:
                     if _should_overwrite(range_cell.get('value', ''), overwrite_filter):
                         range_cell['value'] = range_content
+                        # Add edit history for range continuation cells too
+                        _add_edit_history_to_cell(
+                            range_cell, range_content, timestamp_ms,
+                            edit_type='user-edit', author='easy_draft'
+                        )
                 else:
                     if range_global_ref in vrefs_to_ids:
                         range_id = vrefs_to_ids[range_global_ref]
@@ -321,6 +430,12 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                         'metadata': {
                             'type': 'text',
                             'id': range_id,
+                            'edits': [_create_edit_history_entry(
+                                value=range_content,
+                                timestamp_ms=timestamp_ms,
+                                edit_type='initial-import',
+                                author='easy_draft',
+                            )],
                             'data': {
                                 'globalReferences': [range_global_ref]
                             },
