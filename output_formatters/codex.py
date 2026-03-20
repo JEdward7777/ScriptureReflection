@@ -175,7 +175,7 @@ def _find_insert_position(cells, ref_str):
     return len(cells)
 
 
-def _should_overwrite(cell_value, overwrite_filter):
+def _should_overwrite(cell_value, overwrite_filter, new_content=None):
     """
     Determine if a cell's value should be overwritten based on the filter.
 
@@ -184,10 +184,16 @@ def _should_overwrite(cell_value, overwrite_filter):
         overwrite_filter: None (default: don't overwrite non-empty),
                          "all" (always overwrite),
                          or a regex pattern string (overwrite if value matches)
+        new_content: The new content to write. If provided and identical to
+                     cell_value, returns False (no-op: content isn't changing).
 
     Returns:
         True if the cell should be overwritten, False otherwise
     """
+    # If the content isn't actually changing, no overwrite needed
+    if new_content is not None and cell_value == new_content:
+        return False
+
     # Empty cells are always overwritten
     if not cell_value or not cell_value.strip():
         return True
@@ -355,7 +361,7 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
 
         if existing_cell is not None:
             # Cell exists — only update value if overwrite conditions are met
-            if _should_overwrite(existing_cell.get('value', ''), overwrite_filter):
+            if _should_overwrite(existing_cell.get('value', ''), overwrite_filter, new_content=content):
                 existing_cell['value'] = content
                 # Add edit history so the merge resolver sees this as the latest edit
                 _add_edit_history_to_cell(
@@ -410,7 +416,7 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                 range_content = '<range>' if content else ''
 
                 if range_cell is not None:
-                    if _should_overwrite(range_cell.get('value', ''), overwrite_filter):
+                    if _should_overwrite(range_cell.get('value', ''), overwrite_filter, new_content=range_content):
                         range_cell['value'] = range_content
                         # Add edit history for range continuation cells too
                         _add_edit_history_to_cell(
