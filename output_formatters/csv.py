@@ -17,7 +17,7 @@ def run( file ):
     csv_config = this_config.get( 'csv', {} )
     if not csv_config:
         return
-    
+
     # Ensure csv_config is a dict
     if not isinstance(csv_config, dict):
         csv_config = {}
@@ -27,7 +27,13 @@ def run( file ):
     if( "output_file" in csv_config ):
         output_file = csv_config['output_file']
     else:
-        output_file = this_config.get( 'output_file', os.path.splitext(file)[0] )
+        if 'output_file' in this_config:
+            base = this_config['output_file']
+        else:
+            base = os.path.join( 'output', 'csv', os.path.basename( os.path.splitext(file)[0] ) )
+        if not base.endswith('.csv'):
+            base = base + '.csv'
+        output_file = base
 
     # Create path up to file if it doesn't exist
     output_dir = os.path.dirname(output_file)
@@ -51,12 +57,14 @@ def run( file ):
     rows.append([verse_id,source_label, target_label])
 
     for verse_i, verse_object in enumerate(content):
-        if this_config.get( 'start_line', None ) is not None:
-            if verse_i < this_config.get( 'start_line', None )-1:
+        start_line = this_config.get( 'start_line', None )
+        if start_line is not None:
+            if verse_i < start_line - 1:
                 continue
 
-        if this_config.get( 'end_line', None ) is not None:
-            if verse_i > this_config.get( 'end_line', None )-1:
+        end_line = this_config.get( 'end_line', None )
+        if end_line is not None:
+            if verse_i > end_line - 1:
                 break
 
         current_time = time.time()
@@ -78,7 +86,7 @@ def run( file ):
                 source = source.replace("\n", " ").replace("\r", " ").replace( "  ", " " )
             if isinstance(translation, str):
                 translation = translation.replace("\n", " ").replace("\r", " ").replace( "  ", " " )
-        
+
         if not csv_config.get( "require_target", True ) or translation:
             rows.append([vref, source, translation])
 
