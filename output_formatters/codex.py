@@ -202,6 +202,9 @@ def _should_overwrite(cell_value, overwrite_filter, new_content=None):
     if overwrite_filter is None:
         return False
 
+    if overwrite_filter == "no erase":
+        return len(new_content.strip()) > 0
+
     # "all" means always overwrite
     if overwrite_filter == "all":
         return True
@@ -269,8 +272,8 @@ def _create_edit_history_entry(value, timestamp_ms, edit_type="user-edit",
     }
 
 
-def _add_edit_history_to_cell(cell, value, timestamp_ms, edit_type="user-edit",
-                               author="easy_draft"):
+def _add_edit_history_to_cell(cell, value, timestamp_ms, previous_value,
+                                edit_type="user-edit", author="easy_draft"):
     """
     Add an edit history entry to a cell's metadata.edits array.
 
@@ -282,6 +285,9 @@ def _add_edit_history_to_cell(cell, value, timestamp_ms, edit_type="user-edit",
         cell: The cell dict to modify (must have 'metadata' key)
         value: The new value being set on the cell
         timestamp_ms: Unix timestamp in milliseconds
+        previous_value: The cell's value before the current edit. Callers must
+            capture this before overwriting cell['value'], since the cell may
+            already have been mutated by the time this function runs.
         edit_type: The edit type string (default: "user-edit")
         author: The author string (default: "easy_draft")
     """
@@ -296,7 +302,6 @@ def _add_edit_history_to_cell(cell, value, timestamp_ms, edit_type="user-edit",
     # initial-import entry for the old value (backdated by 1 second) so the
     # merge resolver can see the full history. This matches the pattern in
     # codexDocument.ts updateCellContent() lines 365-375.
-    previous_value = cell.get('value', '')
     if len(edits) == 0 and previous_value and previous_value.strip():
         edits.append(_create_edit_history_entry(
             value=previous_value,
@@ -361,11 +366,13 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
 
         if existing_cell is not None:
             # Cell exists — only update value if overwrite conditions are met
-            if _should_overwrite(existing_cell.get('value', ''), overwrite_filter, new_content=content):
+            previous_value = existing_cell.get('value', '')
+            if _should_overwrite(previous_value, overwrite_filter, new_content=content):
                 existing_cell['value'] = content
                 # Add edit history so the merge resolver sees this as the latest edit
                 _add_edit_history_to_cell(
                     existing_cell, content, timestamp_ms,
+                    previous_value=previous_value,
                     edit_type='user-edit', author='easy_draft'
                 )
         else:
@@ -416,11 +423,13 @@ def _inject_into_codex(existing_file, book, book_verses, side, mapped_ids,
                 range_content = '<range>' if content else ''
 
                 if range_cell is not None:
-                    if _should_overwrite(range_cell.get('value', ''), overwrite_filter, new_content=range_content):
+                    range_previous_value = range_cell.get('value', '')
+                    if _should_overwrite(range_previous_value, overwrite_filter, new_content=range_content):
                         range_cell['value'] = range_content
                         # Add edit history for range continuation cells too
                         _add_edit_history_to_cell(
                             range_cell, range_content, timestamp_ms,
+                            previous_value=range_previous_value,
                             edit_type='user-edit', author='easy_draft'
                         )
                 else:
