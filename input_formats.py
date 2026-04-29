@@ -90,7 +90,7 @@ def hacked_usfm_parser( text, book_finder_id="toc3" ):
     text = []
 
     reg_exp_to_drop = [ r'\\s\d+', r'\\p', r'\\q(\d+)?', r'\\m', r'\\f (.*)\\f\*', r'\\b',
-        r'\\f (.*)\\fqa', r'\\1', r'\\nb', r'\\s\d?.*[^\n]*', r'\\r', r'\\wj\*?', r'\\li1' ]
+        r'\\f (.*)\\fqa', r'\\1', r'\\nb', r'\\s\d?.*[^\n]*', r'\\r', r'\\wj\*?', r'\\li1', r'\\li2' ]
 
     for chapter_number, chapter_content in chapter_content.items():
         verse_content_blob = chop_with_regex( chapter_content, verse_regex )
